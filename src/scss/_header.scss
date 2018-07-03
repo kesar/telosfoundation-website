@@ -1,0 +1,39 @@
+.main_header {
+	background: $orange_gradient;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 50px;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	&::before {
+		content: " ";
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		bottom: 0;
+		left: -10px;
+		z-index: -1;
+		transform: rotateZ(1.5deg);
+		background: $orange_gradient;
+	}
+
+	&::after {
+		content: " ";
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		bottom: 0;
+		left: -10px;
+		z-index: -1;
+		transform: rotateZ(-1.5deg);
+		background: $orange_gradient;
+	}
+}
+
+.header_logo {
+	cursor: pointer;
+}

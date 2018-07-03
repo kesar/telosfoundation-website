@@ -1,0 +1,49 @@
+.front_page_sidebar {
+	padding-top: 130px;
+
+	blockquote {
+		color: $dark_red;
+		font-size: 1.25em;
+		border: none;
+		margin-bottom: 130px;
+	}
+
+	cite {
+		color: $dark_red;
+	}
+
+	& blockquote:last-child {
+		margin-bottom: 0;
+	}
+}
+
+@media(max-width: 991px){
+	.front_page_sidebar {
+		display: none;
+	}
+}
+
+.blockquote_mobile {
+	color: $dark_red;
+	font-size: 1.25em;
+	border: none;
+	display: none;
+
+	p {
+		text-align: center;
+	}
+
+	footer {
+		text-align: right;
+	}
+
+	cite {
+		color: $dark_red;
+	}
+}
+
+@media(max-width: 991px){
+	.blockquote_mobile {
+		display: block;
+	}
+}

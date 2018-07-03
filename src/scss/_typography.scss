@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Trebuchet';
+    src: 	url(../fonts/trebuchet/Trebuchet_MS.ttf) format('truetype'),
+    		url(../fonts/trebuchet/Trebuchet_MS_Bold.ttf) format('truetype'),
+    		url(../fonts/trebuchet/Trebuchet_MS_Bold_Italic.ttf) format('truetype'),
+    		url(../fonts/trebuchet/Trebuchet_MS_Italic.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Avenir';
+	src:	url(../fonts/avenir/Avenir-Black.ttf) format('truetype'),
+			url(../fonts/avenir/Avenir-BlackOblique.ttf) format('truetype'),
+			url(../fonts/avenir/Avenir-Book.ttf) format('truetype'),
+			url(../fonts/avenir/Avenir-BookOblique.ttf) format('truetype'),
+			url(../fonts/avenir/Avenir-Heavy.ttf) format('truetype'),
+			url(../fonts/avenir/Avenir-HeavyOblique.ttf) format('truetype'),
+			url(../fonts/avenir/Avenir-Light.ttf) format('truetype'),
+			url(../fonts/avenir/Avenir-LightOblique.ttf) format('truetype'),
+			url(../fonts/avenir/Avenir-Medium.ttf) format('truetype'),
+			url(../fonts/avenir/Avenir-MediumOblique.ttf) format('truetype'),
+			url(../fonts/avenir/Avenir-Oblique.ttf) format('truetype'),
+			url(../fonts/avenir/Avenir-Roman.ttf) format('truetype');
+}
+
+html {
+	font-size: 1em;
+}
+
+body {
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #333;
+  font-size: 1em;
+}
+
+p {
+  margin-bottom: 1.3em;
+  text-align: justify;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+  font-family: 'Avenir', sans-serif;
+  color: $dark_red;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+
+h2 {font-size: 2.369em;}
+
+h3 {font-size: 1.777em;}
+
+h4 {font-size: 1.333em;}
+
+small, .font_small {font-size: 0.75em;}
