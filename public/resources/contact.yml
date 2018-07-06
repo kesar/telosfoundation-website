@@ -1,0 +1,8 @@
+# contact
+
+name_label: "Name"
+name_placeholder: "First and last name"
+email_label: "Email"
+email_placeholder: "person@email.com"
+message_label: "Message"
+message_placeholder: "Type your message here."

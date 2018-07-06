@@ -1,0 +1,103 @@
+# telos advantage
+
+page_title: "The Telos Advantage"
+page_intro:
+  paragraphs:
+    - "Telos is a new network based on Eos. It offers many advantages over the Eos Mainnet."
+  for_developers_heading: "For Developers"
+  for_holders_heading: "For Token Holders"
+  for_producers_heading: "For Block Producers"
+  for_developers_list:
+    - "Proprietary DApps allowed"
+    - "Lower cost DApp deployment"
+    - "Fewer network pauses"
+    - "Enhanced Security"
+    - "Public testnet operated by BPs"
+    - "Telos/Eos mainnet compatibility"
+  for_holders_list:
+    - "Meaningful voting for all"
+    - "Higher equity per token"
+    - "Developer focus builds value"
+    - "Lower inflation"
+    - "Pre-activation resolution of stolen tokens"
+  for_producers_list:
+    - "Equitable payout model"
+    - "Equitable voting"
+    - "Smart contract enforced block producer requirements"
+    - "Regular downtime for node maintenance"
+for_developers:
+  heading: "FOR DEVELOPERS"
+  intro:
+    - "The Telos network exists to provide a reliable, affordable, well managed network for developers to release DApps. Telos offers the following advantages over the Eos mainnet:"
+  items:
+    - heading: "Proprietary DApps Allowed"
+      content:
+        - "All DApp code running on the Eos mainnet must be open source. (Eos Constitution: Article VII) Telos will allow developers to designate original portions of their code as proprietary."
+      footnotes:
+    - heading: "Lower Cost DApp Deployment"
+      content:
+        - "The Telos network will manage RAM requirements in a way that scales with actual usage. This will limit early RAM hoarding and keep the cost of deploying DApps more affordable."
+      footnotes:
+    - heading: "Fewer Network Pauses"
+      content:
+        - "The Telos network uses a block producer system that swaps all standbys into block production on a daily basis to prove that all are capable of producing blocks whenever called on. This system also allows any block producer that is not operational to be temporarily swapped out after missing just 30 minutes (15 consecutive blocks) as opposed to 3 hours on the Eos mainnet. This reduces the risk of mandatory network pauses due to 6 block producers becoming inactive at any given time."
+      footnotes:
+    - heading: "Enhanced Security"
+      content:
+        - "Telos expands on the security of the Eos network by adding enforced minimum technical and information disclosure requirements for Telos block producers."
+        - "All Telos block producers and standbys are required to have a node on the BP private testnet where new patches can be tested before implementation*. This increases network security by revealing new bugs prior to implementation and allows for better update coordination among block producers to reduce the incidents of dead chains."
+      footnotes: "(* except emergency security patches for known exploits.)"
+    - heading: "Public Testnet Operated by Block Producers"
+      content:
+        - "All Telos block producers and standbys are required to contribute a node to a full and open testnet identical to the Telos mainnet. This aids app development and testing."
+      footnotes:
+    - heading: "Telos/Eos Mainnet Compatibility"
+      content:
+        - "The Telos network runs the same software as the Eos mainnet, so DApps written for Eos can run on Telos. The only code changes on the Telos network relate to how BPs are paid, selected, and temporarily removed from service due to noncompliance. All other differences result from genesis snapshot modifications, constitutional changes, and organizational principals."
+      footnotes:
+for_holders:
+  heading: "FOR TOKEN HOLDERS"
+  intro:
+    - "Telos tokens (TLOS) have advantages over EOS tokens:"
+  items:
+    - heading: "Meaningful Voting For All"
+      content:
+        - "The Telos genesis token ownership caps all genesis accounts at 40,000 TLOS tokens. Telos Foundation-owned addresses cannot vote. As a result, Telos token ownership is one of the most proportionate of any cryptocurrency network. Telos members have a much more equal say in the governance of the network than Eos members."
+      footnotes:
+    - heading: "Higher Equity Per Token"
+      content:
+        - "Each EOS token represents 1/1,000,0000,000 of the total value of the Eos network. Because Telos has fewer tokens, each TLOS token represents approximately 1/300,000,000* of the value of the Telos network. That is more than 3X the network ownership percentage for the same number of tokens."
+      footnotes: "(* Depending on the total number of Exchanges that activate TLOS token distribution for their EOS token owners.)"
+    - heading: "Developer Focus Builds Value"
+      content:
+        - "The value of any Eos-based network will ultimately reflect the network’s usefulness to developers in deploying DApps. Telos offers additional value to developers through features like lower DApp deployment costs and the ability to deploy proprietary code. These features may make the Telos network more attractive and more valuable to developers over time."
+      footnotes:
+    - heading: "Lower Inflation"
+      content:
+        - "Eos inflation is set at 5% per year. Telos will aim for inflation of 2.5% per year. TLOS token inflation will be as much as 50% that of EOS tokens."
+      footnotes:
+    - heading: "Pre-activation Resolution of Stolen Tokens"
+      content:
+        - "The Telos Foundation and ABPs will provide a smart contract to allow any EOS holders who had tokens stolen to prove their ownership prior to Telos mainnet launch. This will return the tokens to their rightful owners and prevent additional members from unwittingly purchasing tokens that may later be frozen due to theft."
+      footnotes:
+for_producers:
+  heading: "FOR BLOCK PRODUCERS"
+  intro:
+    - "Block producers validate transactions, provide network security, and perform crucial governance roles on the blockchain. In order to attract the best possible block producers to the Telos network, we have enacted the following improvements:"
+  items:
+    - heading: "Equitable Payout Model"
+      content:
+        - "The Telos block producer system is comprised of 21 block producers and 30 standbys, organized by rank based on user votes. Every block producer will be paid the same daily share of the Telos 1% inflation. Every standby block producer (up to 30) will receive one half the amount that the top 21 block producers receive. Every standby block producer will rotate into active block production every 3 days to “earn their keep” and prove that they are constantly available to fulfill their responsibilities. Block producers will be penalized for any missed blocks and statistics will be furnished to Telos voters."
+      footnotes:
+    - heading: "Equitable Voting"
+      content:
+        - "In the Eos voting system, “whales” can vote in any block producer they choose. Telos does not have whales and therefore block producers need only convince the broad collective of TLOS token holders of their strong candidacy."
+      footnotes:
+    - heading: "Smart Contract Enforced Block Producer Requirements"
+      content:
+        - "Telos maintains minimum standards for block producers to be eligible candidates. These standards are based on security, server capacity, information disclosure, and participation in the public and private testnet. These standards will be enforced by smart contract from the time of mainnet activation and any block producer candidate that is not in compliance will not be capable of serving, regardless of votes. All other block producer candidates will automatically rise up the block producer ranks to fill in until the minimum requirements are met."
+      footnotes:
+    - heading: "Regular Downtime for Node Maintenance"
+      content:
+        - "Standby block producers will prove their reliability by rotating into block production for several hours every 3 days on a semi-regular schedule. This will give primary block producers frequent opportunities to take down nodes for maintenance and upgrades. This significantly reduces the cost of operation. This system also ensures all standbys are constantly ready to fulfill their duties."
+      footnotes:
