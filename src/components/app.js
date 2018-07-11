@@ -11,8 +11,12 @@ class App extends Component {
 
 	componentDidMount(){
 		//on initial mount, will check local storage for language setting.  If none found, default to english
-
-		this.props.selectLanguage('en');
+		const localLanguage = window.localStorage.getItem('telos_language');
+		if(localLanguage){
+			this.props.selectLanguage(localLanguage);	
+		}else{
+			this.props.selectLanguage('en');
+		}
 	}
 
 	render(){

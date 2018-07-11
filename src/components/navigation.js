@@ -2,6 +2,7 @@ import React from 'react';
 import {Navbar, Nav, NavItem} from 'react-bootstrap';
 import logo from '../img/Telos_MarketingSite_TelosLogo_500px.png';
 import '../styles/navigation.css';
+import LanguageToggle from './language_toggle';
 
 const Navigation = () => {
 
@@ -20,6 +21,7 @@ const Navigation = () => {
 				<NavItem>
 					MONITOR
 				</NavItem>
+				<LanguageToggle />
 			</Nav>
 		  </Navbar.Collapse>
 		</Navbar>

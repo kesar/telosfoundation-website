@@ -1,0 +1,10 @@
+@media screen and (min-width: 767px){
+	.language_toggle_li {
+		padding: 38px 15px;
+	}
+}
+
+.language_toggle {
+	border: none;
+	background-color: transparent;
+}
