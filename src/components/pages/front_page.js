@@ -14,27 +14,50 @@ import eosukio from '../../img/partner_logos/logo_eosukio.png';
 
 import '../../styles/front_page.css';
 
-const FrontPage = () => {
+const FrontPage = ({landing_page}) => {
+	
+	const { intro_heading,
+			intro_content,
+			developers_heading,
+			developers_content,
+			dpos_heading,
+			dpos_content,
+			gov_heading,
+			gov_content,
+			white_paper_heading,
+			white_paper_content,
+			partners_heading } = landing_page;
 
 	return (
 		<div>
-			<Intro />
-			<IconsText />
-			<WhitePaper />
-			<Partners />
+			<Intro
+				intro_heading={intro_heading}
+				intro_content={intro_content} />
+			<IconsText
+				developers_heading={developers_heading}
+				developers_content={developers_content}
+				dpos_heading={dpos_heading}
+				dpos_content={dpos_content}
+				gov_heading={gov_heading}
+				gov_content={gov_content} />
+			<WhitePaper
+				white_paper_heading={white_paper_heading}
+				white_paper_content={white_paper_content} />
+			<Partners
+				partners_heading={partners_heading} />
 		</div>
 	);
 };
 
-const Intro = () => {
+const Intro = ({intro_heading, intro_content}) => {
 
 	return (
 		<section id='front_page_intro'>
 			<Grid>
 				<Row>
 					<Col sm={6}>
-						<h1>DPoS Perfected</h1>
-						<p>Delegated proof of stake is the future of smart-contract blockchains.  We are EOS based, but we’re taking steps to make this the most decentralized currency around.  Our main focus is limiting the effects of whales in the eco-system, to control the price of RAM and to create a better system of governance.</p>
+						<h1>{intro_heading}</h1>
+						<p>{intro_content}</p>
 					</Col>
 					<Col sm={6}>
 						<img src={chart} alt='chart' className='img-responsive' />
@@ -45,7 +68,7 @@ const Intro = () => {
 	);
 };
 
-const IconsText = () => {
+const IconsText = ({developers_heading, developers_content, dpos_heading, dpos_content, gov_heading, gov_content}) => {
 	return (
 		<section id='front_page_icons'>
 			<Grid>
@@ -58,8 +81,8 @@ const IconsText = () => {
 							duration={0.4}>
 							<img src={icon_dapps} alt="dapps" className='img-responsive front_page_icons_img' />
 							<div className='icons_text'>
-								<h2>For Developers</h2>
-								<p>By controlling the price of RAM as well as not forcing all software to be open-sourced, we have a much more developer-friendly contract environment.</p>
+								<h2>{developers_heading}</h2>
+								<p>{developers_content}</p>
 							</div>
 						</ScrollAnimation>
 					</Col>
@@ -72,9 +95,8 @@ const IconsText = () => {
 							delay={250}>
 							<img src={icon_dpos} alt="dpos" className='img-responsive front_page_icons_img' />
 							<div className='icons_text'>
-								<h2>DPoS Speed</h2>
-								<p>
-	For a moder smart-contract blockchain to thrive it needs to be scalable and fast.  We feel that the delegated-proof-of-stake EOSIO software creates a great base for this and that is the future of blockchains.</p>
+								<h2>{dpos_heading}</h2>
+								<p>{dpos_content}</p>
 							</div>
 						</ScrollAnimation>
 
@@ -88,8 +110,8 @@ const IconsText = () => {
 							delay={500}>
 							<img src={icon_governance} alt="governance" className='img-responsive front_page_icons_img' />
 							<div className='icons_text'>
-								<h2>Governance</h2>
-								<p>By having an active constitution, creating the Telos Foundation and setting strict qualifications for block producers, we have created a cohesive group for governance.</p>
+								<h2>{gov_heading}</h2>
+								<p>{gov_content}</p>
 							</div>
 						</ScrollAnimation>
 
@@ -100,7 +122,7 @@ const IconsText = () => {
 	);
 };
 
-const WhitePaper = () => {
+const WhitePaper = ({white_paper_heading, white_paper_content}) => {
 
 	return (
 		<section id='white_paper'>
@@ -115,9 +137,8 @@ const WhitePaper = () => {
 									duration={0.5}>
 									
 									<div className='white_paper_text'>
-										<h1>Download the<br /> white paper</h1>
-										<p>Please take a few minutes and look through our white paper to see for yourself.  We believe that we’ve got some great ideas that will help create the best blockchain available.
-	</p>
+										<h1 dangerouslySetInnerHTML={{__html: white_paper_heading}}></h1>
+										<p>{white_paper_content}</p>
 									</div>
 								</ScrollAnimation>
 							</Col>
@@ -143,11 +164,11 @@ const WhitePaper = () => {
 	);
 };
 
-const Partners = () => {
+const Partners = ({partners_heading}) => {
 	return (
 		<section id='partners'>
 			<header className='text-center'>
-				<h1>Meet our Partners</h1>
+				<h1>{partners_heading}</h1>
 			</header>
 			<Grid>
 				<div className='partners_container'>

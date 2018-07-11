@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Header from './header';
 import Body from './body';
 import Footer from './footer';
-import {selectLanguage} from '../actions/index';
+import {selectLanguage} from '../actions';
 import {connect} from 'react-redux';
 
 import axios from 'axios';
@@ -10,11 +10,13 @@ import axios from 'axios';
 class App extends Component {
 
 	componentDidMount(){
-		selectLanguage('english');
+		//on initial mount, will check local storage for language setting.  If none found, default to english
+
+		this.props.selectLanguage('en');
 	}
 
 	render(){
-		console.log(this.props);
+		console.log(this.props.site_content);
 		return (
 			<div className='app'>
 				<Header />
