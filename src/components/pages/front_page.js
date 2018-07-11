@@ -9,7 +9,6 @@ import white_paper from '../../img/white_paper_pdf_solid.png';
 //partners logos
 import eos_detroit from '../../img/partner_logos/logo_eosdetroit_small.png';
 import eos_metal from '../../img/partner_logos/logo_eosmetal.png';
-import blocksmith from '../../img/partner_logos/logo_blocksmith.png';
 import dutcheos from '../../img/partner_logos/logo_dutcheos.png';
 import eosukio from '../../img/partner_logos/logo_eosukio.png';
 
