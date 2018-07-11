@@ -1,0 +1,15 @@
+{
+  "landing_page": {
+  	"intro_heading": "DPoS Perfected",
+  	"intro_content": "Delegated Proof of Stake is the future of smart-contract blockchains. We combine the blazing fast execution and scalability of EOSIO software in with true decentralization that makes DPoS sustainable. Telos will have the most even money supply distribution of any blockchain. This token distribution improves governance so the network is more secure and sustainable.",
+  	"developers_heading": "Developer Focus",
+  	"developers_content": "Telos exists to provide a secure, stable, cost-effective network for deploying world class DApps. Developers can expect affordable RAM prices and the ability to launch open-source or proprietary smart contracts with no transaction fees.",
+  	"dpos_heading": "DPoS Speed",
+  	"dpos_content": "The Telos network handles up to 50,000 transactions per second for blazing fast transactions and massive scalability. This means DApps can reach a worldwide audience at the fastest average transaction speed of any blockchain—just 1.5 seconds!",
+  	"gov_heading": "Good Governance",
+  	"gov_content": "Telos has a rich governance system from the Constitution to ongoing block producer elections, to worker proposal funding and dispute adjudication. No other blockchain offers the cohesive governance of Telos.",
+  	"white_paper_heading": "Download the white paper",
+  	"white_paper_content": "Read the Telos white paper to judge for yourself.  We are out to create the best blockchain ever. Join us and build on Telos.",
+  	"partners_heading": "Meet our Partners"
+  }
+}

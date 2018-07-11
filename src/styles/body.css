@@ -1,0 +1,11 @@
+.main {
+	position: relative;
+	top: 200px;
+}
+
+@media screen and (max-width: 767px){
+	.main {
+		top: 100px;
+		margin-bottom: -100px;
+	}
+}
