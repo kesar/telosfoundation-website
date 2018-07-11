@@ -18,10 +18,10 @@ const Navigation = () => {
 		  </Navbar.Header>
 		  <Navbar.Collapse>
 			<Nav pullRight>
+				<LanguageToggle />
 				<NavItem>
 					MONITOR
 				</NavItem>
-				<LanguageToggle />
 			</Nav>
 		  </Navbar.Collapse>
 		</Navbar>

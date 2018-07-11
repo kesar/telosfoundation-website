@@ -1,10 +1,24 @@
-@media screen and (min-width: 767px){
+.navbar-nav > .language_toggle_li {
+	padding: 38px 15px;
+	display: flex;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px){
 	.language_toggle_li {
-		padding: 38px 15px;
+		padding: 8px 7px;
 	}
+}
+
+.language_toggle_flag {
+	height: 14px;
 }
 
 .language_toggle {
 	border: none;
 	background-color: transparent;
+}
+
+.language_toggle:focus {
+	outline: transparent;
 }
