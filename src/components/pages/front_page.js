@@ -168,11 +168,6 @@ const Partners = () => {
 						</a>
 					</div>
 					<div className='partner'>
-						<a href='https://eosblocksmith.io/' target='_blank' rel='noopener noreferrer'>
-							<img src={blocksmith} alt='blocksmith' className='partner_logo' />
-						</a>
-					</div>
-					<div className='partner'>
 						<a href='https://dutcheos.io/' target='_blank' rel='noopener noreferrer'>
 							<img src={dutcheos} alt='dutch eos' className='partner_logo' />
 						</a>
