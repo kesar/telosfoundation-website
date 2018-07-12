@@ -9,10 +9,63 @@ import white_paper from '../../img/white_paper_pdf_solid.png';
 //partners logos
 import eos_detroit from '../../img/partner_logos/logo_eosdetroit_small.png';
 import eos_metal from '../../img/partner_logos/logo_eosmetal.png';
-import dutcheos from '../../img/partner_logos/logo_dutcheos.png';
-import eosukio from '../../img/partner_logos/logo_eosukio.png';
+import dutcheos from '../../img/partner_logos/logo_ketendutch.png';
+import eosukio from '../../img/partner_logos/logo_eosukio2.png';
+import eosbarcelona from '../../img/partner_logos/logo_eosbarcelona.png';
+import eosvan from '../../img/partner_logos/logo_eosvan.png';
+import goodblock from '../../img/partner_logos/logo_goodblock.png';
 
 import '../../styles/front_page.css';
+
+const partnersArr = [
+	{
+		name: 'eos detroit',
+		logo: eos_detroit,
+		url: 'https://eosdetroit.io/'
+	},
+	{
+		name: 'eos metal',
+		logo: eos_metal,
+		url: 'https://eosmetal.io'
+	},
+	{
+		name: 'eosuk io',
+		logo: eosukio,
+		url: 'https://eosuk.io/'
+	},
+	{
+		name: 'dutch eos',
+		logo: dutcheos,
+		url: 'https://dutcheos.io'
+	},
+	{
+		name: 'eos barcelona',
+		logo: eosbarcelona,
+		url: 'http://eosbarcelona.com/'
+	},
+	{
+		name: 'eos van',
+		logo: eosvan,
+		url: 'http://www.eosvan.io/'
+	},
+	{
+		name: 'good block',
+		logo: goodblock,
+		url: '#'
+	},
+	{
+		name: 'infinityblock',
+		url: '#'
+	},
+	{
+		name: 'Telos Labs',
+		url: '#'
+	},
+	{
+		name: 'Sukesh Tedla',
+		url: '#'
+	}
+];
 
 const FrontPage = ({landing_page}) => {
 	
@@ -26,6 +79,7 @@ const FrontPage = ({landing_page}) => {
 			gov_content,
 			white_paper_heading,
 			white_paper_content,
+			github_text,
 			partners_heading } = landing_page;
 
 	return (
@@ -42,7 +96,8 @@ const FrontPage = ({landing_page}) => {
 				gov_content={gov_content} />
 			<WhitePaper
 				white_paper_heading={white_paper_heading}
-				white_paper_content={white_paper_content} />
+				white_paper_content={white_paper_content}
+				github_text={github_text} />
 			<Partners
 				partners_heading={partners_heading} />
 		</div>
@@ -56,11 +111,22 @@ const Intro = ({intro_heading, intro_content}) => {
 			<Grid>
 				<Row>
 					<Col sm={6}>
-						<h1>{intro_heading}</h1>
-						<p>{intro_content}</p>
+						<ScrollAnimation
+							animateOnce={true}
+							animateIn='fadeIn'
+							duration={0.4} >
+							<h1>{intro_heading}</h1>
+							<p>{intro_content}</p>
+						</ScrollAnimation>
 					</Col>
 					<Col sm={6}>
-						<img src={chart} alt='chart' className='img-responsive' />
+						<ScrollAnimation
+							animateOnce={true}
+							animateIn='fadeIn'
+							duration={0.4}
+							delay={250} >
+							<img src={chart} alt='chart' className='img-responsive' />
+						</ScrollAnimation>
 					</Col>
 				</Row>
 			</Grid>
@@ -122,7 +188,7 @@ const IconsText = ({developers_heading, developers_content, dpos_heading, dpos_c
 	);
 };
 
-const WhitePaper = ({white_paper_heading, white_paper_content}) => {
+const WhitePaper = ({white_paper_heading, white_paper_content, github_text}) => {
 
 	return (
 		<section id='white_paper'>
@@ -134,11 +200,12 @@ const WhitePaper = ({white_paper_heading, white_paper_content}) => {
 								<ScrollAnimation
 									animateOnce={true}
 									animateIn='fadeIn'
-									duration={0.5}>
+									duration={0.4}>
 									
 									<div className='white_paper_text'>
 										<h1 dangerouslySetInnerHTML={{__html: white_paper_heading}}></h1>
 										<p>{white_paper_content}</p>
+										<h3>{github_text}</h3><a href='https://github.com/Telos-Foundation' target='_blank' rel='noopener noreferrer'>https://github.com/Telos-Foundation</a>
 									</div>
 								</ScrollAnimation>
 							</Col>
@@ -146,7 +213,7 @@ const WhitePaper = ({white_paper_heading, white_paper_content}) => {
 								<ScrollAnimation
 									animateOnce={true}
 									animateIn='fadeIn'
-									duration={0.5}
+									duration={0.4}
 									delay={250}>
 
 									<div className='white_paper_link'>
@@ -165,6 +232,7 @@ const WhitePaper = ({white_paper_heading, white_paper_content}) => {
 };
 
 const Partners = ({partners_heading}) => {
+	const partner = partnersArr[0];
 	return (
 		<section id='partners'>
 			<header className='text-center'>
@@ -172,26 +240,15 @@ const Partners = ({partners_heading}) => {
 			</header>
 			<Grid>
 				<div className='partners_container'>
-					<div className='partner'>
-						<a href='https://eosdetroit.io/' target='_blank' rel='noopener noreferrer'>
-							<img src={eos_detroit} alt='eos detroit' className='partner_logo' />
-						</a>
-					</div>
-					<div className='partner'>
-						<a href='https://eosmetal.io/' target='_blank' rel='noopener noreferrer'>
-							<img src={eos_metal} alt='eos metal' className='partner_logo' />
-						</a>
-					</div>
-					<div className='partner'>
-						<a href='https://eosuk.io/' target='_blank' rel='noopener noreferrer'>
-							<img src={eosukio} alt='eosuk io' className='partner_logo' />
-						</a>
-					</div>
-					<div className='partner'>
-						<a href='https://dutcheos.io/' target='_blank' rel='noopener noreferrer'>
-							<img src={dutcheos} alt='dutch eos' className='partner_logo' />
-						</a>
-					</div>
+					{partnersArr.map((partner, i) => {
+						return (
+							<div className='partner' key={i}>
+								<a href={partner.url} target='_blank' rel='noopenter noreferrer'>
+									{partner.logo ? <img src={partner.logo} alt={partner.name} className='partner_logo' /> : <p>{partner.name}</p>}
+								</a>
+							</div>
+						);
+					})}
 				</div>
 			</Grid>
 		</section>
