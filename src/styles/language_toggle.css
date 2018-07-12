@@ -22,3 +22,7 @@
 .language_toggle:focus {
 	outline: transparent;
 }
+
+.language_toggle option {
+	text-transform: uppercase;
+}

@@ -29,7 +29,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-
-/*<NavItem onClick={() => window.location = 'http://monitor.telosfoundation.io'}>
-					MONITOR
-				</NavItem>*/

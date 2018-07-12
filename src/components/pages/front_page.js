@@ -50,20 +50,16 @@ const partnersArr = [
 	},
 	{
 		name: 'good block',
-		logo: goodblock,
-		url: '#'
+		logo: goodblock
 	},
 	{
-		name: 'infinityblock',
-		url: '#'
+		name: 'infinityblock'
 	},
 	{
-		name: 'Telos Labs',
-		url: '#'
+		name: 'Telos Labs'
 	},
 	{
-		name: 'Sukesh Tedla',
-		url: '#'
+		name: 'Sukesh Tedla'
 	}
 ];
 
@@ -243,9 +239,13 @@ const Partners = ({partners_heading}) => {
 					{partnersArr.map((partner, i) => {
 						return (
 							<div className='partner' key={i}>
-								<a href={partner.url} target='_blank' rel='noopenter noreferrer'>
-									{partner.logo ? <img src={partner.logo} alt={partner.name} className='partner_logo' /> : <p>{partner.name}</p>}
-								</a>
+								{partner.url ? 
+									<a href={partner.url} target='_blank' rel='noopenter noreferrer'>
+										{partner.logo ? <img src={partner.logo} alt={partner.name} className='partner_logo' /> : <p>{partner.name}</p>}
+									</a>
+									: 
+									partner.logo ? <img src={partner.logo} alt={partner.name} className='partner_logo' /> : <p>{partner.name}</p>
+								}
 							</div>
 						);
 					})}

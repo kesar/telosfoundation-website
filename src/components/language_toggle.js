@@ -48,8 +48,8 @@ class LanguageToggle extends Component {
 					onChange={this.handleChange}
 					value={this.props.site_content.language}>
 					<option value='en'>ENGLISH</option>
-					<option value='pt-br'>PORTUGESE-BR</option>
-					<option value='mandarin'>MANDARIN</option>
+					<option value='pt-br'>PORTUGUÊS</option>
+					<option value='mandarin'>中文</option>
 				</select>
 			</li>
 		);
