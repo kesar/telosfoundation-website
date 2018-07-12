@@ -14,6 +14,7 @@ import eosukio from '../../img/partner_logos/logo_eosukio2.png';
 import eosbarcelona from '../../img/partner_logos/logo_eosbarcelona.png';
 import eosvan from '../../img/partner_logos/logo_eosvan.png';
 import goodblock from '../../img/partner_logos/logo_goodblock.png';
+import infinitybloc from '../../img/partner_logos/logo_infinitybloc.png';
 
 import '../../styles/front_page.css';
 
@@ -53,7 +54,8 @@ const partnersArr = [
 		logo: goodblock
 	},
 	{
-		name: 'infinityblock'
+		name: 'infinitybloc',
+		logo: infinitybloc
 	},
 	{
 		name: 'Telos Labs'
