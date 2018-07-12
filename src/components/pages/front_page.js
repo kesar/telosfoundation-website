@@ -15,6 +15,8 @@ import eosbarcelona from '../../img/partner_logos/logo_eosbarcelona.png';
 import eosvan from '../../img/partner_logos/logo_eosvan.png';
 import goodblock from '../../img/partner_logos/logo_goodblock.png';
 import infinitybloc from '../../img/partner_logos/logo_infinitybloc.png';
+import teloslabs from '../../img/partner_logos/logo_teloslabs.png';
+import sukesh from '../../img/partner_logos/sukesh.png';
 
 import '../../styles/front_page.css';
 
@@ -58,10 +60,12 @@ const partnersArr = [
 		logo: infinitybloc
 	},
 	{
-		name: 'Telos Labs'
+		name: 'Telos Labs',
+		logo: teloslabs
 	},
 	{
-		name: 'Sukesh Tedla'
+		name: 'Sukesh Tedla',
+		logo: sukesh
 	}
 ];
 
