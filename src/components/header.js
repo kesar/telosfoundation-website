@@ -1,5 +1,4 @@
 import React from 'react';
-import {Grid, Col} from 'react-bootstrap';
 import '../styles/header.css';
 import header_background from '../img/Telos_MarketingSite_Header_2400px_White.png';
 import Navigation from './navigation';

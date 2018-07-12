@@ -5,6 +5,7 @@ import english_flag from '../img/flags/en.png';
 import brazil_flag from '../img/flags/pt-br.png';
 import china_flag from '../img/flags/china.png';
 import spain_flag from '../img/flags/spain.png';
+import korea_flag from '../img/flags/korea.png';
 import '../styles/language_toggle.css';
 
 class LanguageToggle extends Component {
@@ -35,6 +36,9 @@ class LanguageToggle extends Component {
 					break;
 				case 'spanish':
 					flag = spain_flag;
+					break;
+				case 'korean':
+					flag = korea_flag;
 					break;
 				default:
 					flag = english_flag;

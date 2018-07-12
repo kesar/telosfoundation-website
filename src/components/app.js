@@ -5,8 +5,6 @@ import Footer from './footer';
 import {selectLanguage} from '../actions';
 import {connect} from 'react-redux';
 
-import axios from 'axios';
-
 class App extends Component {
 
 	componentDidMount(){
@@ -20,7 +18,6 @@ class App extends Component {
 	}
 
 	render(){
-		console.log(this.props.site_content);
 		return (
 			<div className='app'>
 				<Header />

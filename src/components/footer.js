@@ -14,7 +14,7 @@ const Footer = () => {
 						<div className='footer_social'>
 							<ul>
 								<li><a href='https://twitter.com/HelloTelos' target='_blank' rel='noopener noreferrer'><i className='fa fa-twitter'></i></a></li>
-								<li><a href='https://t.me/TheTelosFoundation' target='_blank' rel='noopenter noreferrer'><i className='fa fa-telegram'></i></a></li>
+								<li><a href='https://t.me/TheTelosFoundation' target='_blank' rel='noopener noreferrer'><i className='fa fa-telegram'></i></a></li>
 								<li><a href='https://github.com/Telos-Foundation' target='_blank' rel='noopener noreferrer'><i className='fa fa-github'></i></a></li>
 							</ul>
 						</div>
