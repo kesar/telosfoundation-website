@@ -1,0 +1,17 @@
+{
+  "language": "spanish",
+  "landing_page": {
+  	"intro_heading": "DPoS Perfeccionado",
+  	"intro_content": "Delegated Proof of Stake es el futuro de las blockchains con smart contracts. Combinamos la rápida ejecución y la escalabilidad del software EOSIO, con la verdadera descentralización que hace sostenible DPoS. Telos tendrá la mayor cantidad de monedas distribuidas equitativamente de entre todas las blockchains. Esta distribución de tokens mejora la gobernabilidad. De manera que la red es mucho más segura y sostenible.",
+  	"developers_heading": "Orientación a programadores",
+  	"developers_content": "Telos existe para proporcionar una red estable, y de coste reducido, en la que se puedan desplegar DAPPS de la máxima calidad. Los desarrolladores de DAPPS pueden esperar tener RAM asequible, y la posibilidad de desplegar contratos open source o propietarios, sin coste por transacción.",
+  	"dpos_heading": "Velocidad DPoS",
+  	"dpos_content": "La red Telos puede gestionar 50.000 transacciones por segundo, con gran escalabilidad. Esto significa que las DAPPS pueden llegar a todo una gran cantidad de audiencia, con un tiempo medio de transacción que es el más rápido de todas las blockchains: solo 1.5 segundos!",
+  	"gov_heading": "Buena Gobernanza",
+  	"gov_content": "Telos tiene un rico sistema de gobernanza: desde la Constitución, las elecciones de productores de bloques, el fondo para iniciativas (workers proposal fund) hasta el sistema de arbitraje y disputa. No hay otra blockchain que tenga una gobernanza tan cohesionada como la de Telos.",
+  	"white_paper_heading": "Descarga el white paper",
+  	"white_paper_content": "Lee el white paper de Telos y juzga por ti mismo. Estamos a punto de crear la mejor blockchain que jamás ha existido. Únete a nosotros y construye Telos.",
+    "github_text": "Visita nuestro Github",
+  	"partners_heading": "conoce a nuestros socios"
+  }
+}

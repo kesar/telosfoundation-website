@@ -16,8 +16,9 @@ import eosvan from '../../img/partner_logos/logo_eosvan.png';
 import goodblock from '../../img/partner_logos/logo_goodblock.png';
 import infinitybloc from '../../img/partner_logos/logo_infinitybloc.png';
 import teloslabs from '../../img/partner_logos/logo_teloslabs.png';
-import sukesh from '../../img/partner_logos/sukesh.png';
 import eosworld from '../../img/partner_logos/logo_eosworld.png';
+import eosgreen from '../../img/partner_logos/logo_eosgreen.png';
+import fuzzy from '../../img/partner_logos/logo_fuzzy.png';
 
 import '../../styles/front_page.css';
 
@@ -70,8 +71,12 @@ const partnersArr = [
 		url: 'https://eostheworld.io/'
 	},
 	{
-		name: 'Sukesh Tedla',
-		logo: sukesh
+		name: 'eos green',
+		logo: eosgreen
+	},
+	{
+		name: 'fuzzy',
+		logo: fuzzy
 	}
 ];
 

@@ -4,6 +4,7 @@ import {selectLanguage} from '../actions';
 import english_flag from '../img/flags/en.png';
 import brazil_flag from '../img/flags/pt-br.png';
 import china_flag from '../img/flags/china.png';
+import spain_flag from '../img/flags/spain.png';
 import '../styles/language_toggle.css';
 
 class LanguageToggle extends Component {
@@ -32,6 +33,9 @@ class LanguageToggle extends Component {
 				case 'mandarin':
 					flag = china_flag;
 					break;
+				case 'spanish':
+					flag = spain_flag;
+					break;
 				default:
 					flag = english_flag;
 					break;
@@ -50,6 +54,7 @@ class LanguageToggle extends Component {
 					<option value='en'>ENGLISH</option>
 					<option value='pt-br'>PORTUGUÊS</option>
 					<option value='mandarin'>中文</option>
+					<option value='spanish'>ESPAÑOL</option>
 				</select>
 			</li>
 		);
