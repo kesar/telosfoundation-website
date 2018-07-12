@@ -146,6 +146,11 @@
 	}
 }
 
+.partner p {
+	text-align: center;
+	margin-top: 1em;
+}
+
 .partner_logo {
 	max-width: 100%;
 	display: block;

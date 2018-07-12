@@ -19,9 +19,9 @@ const Navigation = () => {
 		  <Navbar.Collapse>
 			<Nav pullRight>
 				<LanguageToggle />
-				<NavItem>
-					MONITOR
-				</NavItem>
+				<li>
+					<a href="http://monitor.telosfoundation.io">MONITOR</a>
+				</li>
 			</Nav>
 		  </Navbar.Collapse>
 		</Navbar>
@@ -29,3 +29,7 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+/*<NavItem onClick={() => window.location = 'http://monitor.telosfoundation.io'}>
+					MONITOR
+				</NavItem>*/
