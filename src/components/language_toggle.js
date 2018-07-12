@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import {selectLanguage} from '../actions';
 import english_flag from '../img/flags/en.png';
 import brazil_flag from '../img/flags/pt-br.png';
+import china_flag from '../img/flags/china.png';
 import '../styles/language_toggle.css';
 
 class LanguageToggle extends Component {
@@ -28,6 +29,9 @@ class LanguageToggle extends Component {
 				case 'pt-br':
 					flag = brazil_flag;
 					break;
+				case 'mandarin':
+					flag = china_flag;
+					break;
 				default:
 					flag = english_flag;
 					break;
@@ -45,6 +49,7 @@ class LanguageToggle extends Component {
 					value={this.props.site_content.language}>
 					<option value='en'>ENGLISH</option>
 					<option value='pt-br'>PORTUGESE-BR</option>
+					<option value='mandarin'>MANDARIN</option>
 				</select>
 			</li>
 		);
