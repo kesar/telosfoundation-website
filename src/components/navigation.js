@@ -20,7 +20,7 @@ const Navigation = () => {
 			<Nav pullRight>
 				<LanguageToggle />
 				<li>
-					<a href="http://monitor.telosfoundation.io">MONITOR</a>
+					<a href="http://testnet.telosfoundation.io/">TESTNET</a>
 				</li>
 			</Nav>
 		  </Navbar.Collapse>

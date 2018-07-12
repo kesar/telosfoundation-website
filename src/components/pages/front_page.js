@@ -17,6 +17,7 @@ import goodblock from '../../img/partner_logos/logo_goodblock.png';
 import infinitybloc from '../../img/partner_logos/logo_infinitybloc.png';
 import teloslabs from '../../img/partner_logos/logo_teloslabs.png';
 import sukesh from '../../img/partner_logos/sukesh.png';
+import eosworld from '../../img/partner_logos/logo_eosworld.png';
 
 import '../../styles/front_page.css';
 
@@ -62,6 +63,11 @@ const partnersArr = [
 	{
 		name: 'Telos Labs',
 		logo: teloslabs
+	},
+	{
+		name: 'Eos World',
+		logo: eosworld,
+		url: 'https://eostheworld.io/'
 	},
 	{
 		name: 'Sukesh Tedla',
@@ -219,7 +225,7 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text}) => 
 									delay={250}>
 
 									<div className='white_paper_link'>
-										<a href='resources/Telos Whitepaper - draft D.pdf' target='_blank' rel='noopener noreferrer'>
+										<a href='/resources/telos_white_paper_7_12.pdf' target='_blank' rel='noopener noreferrer'>
 											<img src={white_paper} alt='white paper pdf' className='img-responsive front_page_pdf' />
 										</a>
 									</div>
