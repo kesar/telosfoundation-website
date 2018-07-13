@@ -59,6 +59,7 @@ class LanguageToggle extends Component {
 					<option value='pt-br'>PORTUGUÊS</option>
 					<option value='mandarin'>中文</option>
 					<option value='spanish'>ESPAÑOL</option>
+					<option value='korean'>한국어</option>
 				</select>
 			</li>
 		);
