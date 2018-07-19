@@ -230,7 +230,7 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text}) => 
 									delay={250}>
 
 									<div className='white_paper_link'>
-										<a href='http://telosfoundation.io/resources/telos_white_paper_7_12.pdf' target='_blank' rel='noopener noreferrer'>
+										<a href='http://telosfoundation.io/resources/telos_white_paper_7_17.pdf' target='_blank' rel='noopener noreferrer'>
 											<img src={white_paper} alt='white paper pdf' className='img-responsive front_page_pdf' />
 										</a>
 									</div>
