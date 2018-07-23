@@ -20,6 +20,9 @@ const Navigation = () => {
 			<Nav pullRight>
 				<LanguageToggle />
 				<li>
+					<a href='https://medium.com/@teloslogical'>BLOG</a>
+				</li>
+				<li>
 					<a href="http://testnet.telosfoundation.io/">TESTNET</a>
 				</li>
 			</Nav>
