@@ -19,6 +19,7 @@ import teloslabs from '../../img/partner_logos/logo_teloslabs.png';
 import eosworld from '../../img/partner_logos/logo_eosworld.png';
 import eosgreen from '../../img/partner_logos/logo_eosgreen.png';
 import fuzzy from '../../img/partner_logos/logo_fuzzy.png';
+import caleos from '../../img/partner_logos/logo_caleos.png';
 
 import '../../styles/front_page.css';
 
@@ -55,7 +56,8 @@ const partnersArr = [
 	},
 	{
 		name: 'good block',
-		logo: goodblock
+		logo: goodblock,
+		url: 'http://goodblock.io'
 	},
 	{
 		name: 'infinitybloc',
@@ -77,6 +79,11 @@ const partnersArr = [
 	{
 		name: 'fuzzy',
 		logo: fuzzy
+	},
+	{
+		name: 'caleos',
+		logo: caleos,
+		url: 'https://caleos.io/'
 	}
 ];
 
