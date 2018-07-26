@@ -20,6 +20,9 @@ import eosworld from '../../img/partner_logos/logo_eosworld.png';
 import eosgreen from '../../img/partner_logos/logo_eosgreen.png';
 import fuzzy from '../../img/partner_logos/logo_fuzzy.png';
 import caleos from '../../img/partner_logos/logo_caleos.png';
+import eos_in_space from '../../img/partner_logos/logo_eosspace.png';
+import eos_sweden from '../../img/partner_logos/logo_eossweden.png';
+import eos_miami from '../../img/partner_logos/logo_eosmiami.png';
 
 import '../../styles/front_page.css';
 
@@ -84,7 +87,22 @@ const partnersArr = [
 		name: 'caleos',
 		logo: caleos,
 		url: 'https://caleos.io/'
-	}
+	},
+	{
+		name: 'eos in space',
+		logo: eos_in_space,
+		url: 'https://eosin.space/#telos'
+	},
+	{
+		name: 'eos miami',
+		logo: eos_miami,
+		url: 'http://eos.miami'
+	},
+	{
+		name: 'eos sweden',
+		logo: eos_sweden,
+		url: 'https://eossweden.eu/'
+	}	
 ];
 
 const FrontPage = ({landing_page}) => {
