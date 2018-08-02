@@ -12,3 +12,14 @@ I think that's it.
 If it's a short, wide logo, resize image to 250px wide.  If it's pretty tall, you want it to be smaller.  150px tall seems to work most of the time.
 
 Import image into front_page.js component, add image, url, and name to partnersArr array.  The name will be used as the alt attribute in the image.  If there is no image, it will display the name as a link.  If there is no url, it will display just the image or text.  There must be a name, or there will be an error.
+
+
+## Building
+
+Commands are same as create-react-app, build with:
+
+```
+npm run build
+```
+
+Then just copy the build folder to the website.
