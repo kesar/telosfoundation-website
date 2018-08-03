@@ -23,6 +23,10 @@ import caleos from '../../img/partner_logos/logo_caleos.png';
 import eos_in_space from '../../img/partner_logos/logo_eosspace.png';
 import eos_sweden from '../../img/partner_logos/logo_eossweden.png';
 import eos_miami from '../../img/partner_logos/logo_eosmiami.png';
+import hellenicos from '../../img/partner_logos/logo_hellenicos.png';
+import discover_telos from '../../img/partner_logos/logo_discovertelos.png';
+import zmeta from '../../img/partner_logos/logo_zmeta.png';
+import blindbloc from '../../img/partner_logos/logo_blindbloc.png';
 
 import '../../styles/front_page.css';
 
@@ -102,7 +106,24 @@ const partnersArr = [
 		name: 'eos sweden',
 		logo: eos_sweden,
 		url: 'https://eossweden.eu/'
-	}	
+	},
+	{
+		name: 'hellenic open systems',
+		logo: hellenicos
+	},
+	{
+		name: 'discover telos',
+		logo: discover_telos
+	},
+	{
+		name: 'z meta',
+		logo: zmeta
+	},
+	{
+		name: 'blind bloc',
+		logo: blindbloc,
+		url: 'https://www.blindblocart.io/'
+	}
 ];
 
 const FrontPage = ({landing_page}) => {
@@ -255,7 +276,7 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text}) => 
 									delay={250}>
 
 									<div className='white_paper_link'>
-										<a href='http://telosfoundation.io/resources/telos_white_paper_7_17.pdf' target='_blank' rel='noopener noreferrer'>
+										<a href='http://resources.telosfoundation.io/telos_white_paper_7_17.pdf' target='_blank' rel='noopener noreferrer'>
 											<img src={white_paper} alt='white paper pdf' className='img-responsive front_page_pdf' />
 										</a>
 									</div>
