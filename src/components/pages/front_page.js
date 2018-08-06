@@ -1,6 +1,7 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
+
 import chart from '../../img/Telos_MarketingSite_Chart_1000px.png';
 import icon_dapps from '../../img/Telos_MarketingSite_Icon_dapps_200px.png';
 import icon_dpos from '../../img/Telos_MarketingSite_Icon_dpos_200px.png';
@@ -126,7 +127,7 @@ const partnersArr = [
 	}
 ];
 
-const FrontPage = ({landing_page}) => {
+const FrontPage = ({landing_page, language}) => {
 	
 	const { intro_heading,
 			intro_content,
@@ -156,7 +157,8 @@ const FrontPage = ({landing_page}) => {
 			<WhitePaper
 				white_paper_heading={white_paper_heading}
 				white_paper_content={white_paper_content}
-				github_text={github_text} />
+				github_text={github_text}
+				language={language} />
 			<Partners
 				partners_heading={partners_heading} />
 		</div>
@@ -247,7 +249,20 @@ const IconsText = ({developers_heading, developers_content, dpos_heading, dpos_c
 	);
 };
 
-const WhitePaper = ({white_paper_heading, white_paper_content, github_text}) => {
+const WhitePaper = ({white_paper_heading, white_paper_content, github_text, language}) => {
+
+	let wp_url;
+	switch(language){
+		case 'en':
+			wp_url = 'http://resources.telosfoundation.io/telos_white_paper_7_17.pdf';
+			break;
+		case 'korean':
+			wp_url = 'http://resources.telosfoundation.io/텔로스 WP_Korean_20180803.pdf';
+			break;
+		default:
+			wp_url = 'http://resources.telosfoundation.io/telos_white_paper_7_17.pdf';
+			break;
+	}
 
 	return (
 		<section id='white_paper'>
@@ -276,7 +291,7 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text}) => 
 									delay={250}>
 
 									<div className='white_paper_link'>
-										<a href='http://resources.telosfoundation.io/telos_white_paper_7_17.pdf' target='_blank' rel='noopener noreferrer'>
+										<a href={wp_url} target='_blank' rel='noopener noreferrer'>
 											<img src={white_paper} alt='white paper pdf' className='img-responsive front_page_pdf' />
 										</a>
 									</div>

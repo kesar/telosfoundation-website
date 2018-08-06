@@ -7,7 +7,7 @@ const Body = ({site_content}) => {
 	if(!site_content) return <div>waiting...</div>;
 	return (
 		<main className='main'>
-			<FrontPage landing_page={site_content.landing_page} />
+			<FrontPage landing_page={site_content.landing_page} language={site_content.language} />
 		</main>
 	);
 };
