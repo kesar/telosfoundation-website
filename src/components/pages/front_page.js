@@ -28,6 +28,8 @@ import hellenicos from '../../img/partner_logos/logo_hellenicos.png';
 import discover_telos from '../../img/partner_logos/logo_discovertelos.png';
 import zmeta from '../../img/partner_logos/logo_zmeta.png';
 import blindbloc from '../../img/partner_logos/logo_blindbloc.png';
+import csx from '../../img/partner_logos/logo_csx.png';
+import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
 
 import '../../styles/front_page.css';
 
@@ -124,6 +126,15 @@ const partnersArr = [
 		name: 'blind bloc',
 		logo: blindbloc,
 		url: 'https://www.blindblocart.io/'
+	},
+	{
+		name: 'eos csx',
+		logo: csx,
+		url: 'https://www.csx.io'
+	},
+	{
+		name: 'telos russia',
+		logo: telos_russia,
 	}
 ];
 
