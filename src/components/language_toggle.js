@@ -6,6 +6,7 @@ import brazil_flag from '../img/flags/pt-br.png';
 import china_flag from '../img/flags/china.png';
 import spain_flag from '../img/flags/spain.png';
 import korea_flag from '../img/flags/korea.png';
+import russia_flag from '../img/flags/russia.png';
 import '../styles/language_toggle.css';
 
 class LanguageToggle extends Component {
@@ -40,6 +41,9 @@ class LanguageToggle extends Component {
 				case 'korean':
 					flag = korea_flag;
 					break;
+				case 'russian':
+					flag = russia_flag;
+					break;
 				default:
 					flag = english_flag;
 					break;
@@ -60,6 +64,7 @@ class LanguageToggle extends Component {
 					<option value='mandarin'>中文</option>
 					<option value='spanish'>ESPAÑOL</option>
 					<option value='korean'>한국어</option>
+					<option value='russian'>РУССКИЙ</option>
 				</select>
 			</li>
 		);
