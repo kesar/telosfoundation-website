@@ -2,11 +2,11 @@ import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 
-import chart from '../../img/Telos_MarketingSite_Chart_1000px.png';
 import icon_dapps from '../../img/Telos_MarketingSite_Icon_dapps_200px.png';
 import icon_dpos from '../../img/Telos_MarketingSite_Icon_dpos_200px.png';
 import icon_governance from '../../img/Telos_MarketingSite_Icon_governance_200px.png';
 import white_paper from '../../img/white_paper_pdf_solid.png';
+
 //partners logos
 import eos_detroit from '../../img/partner_logos/logo_eosdetroit_small.png';
 import eos_metal from '../../img/partner_logos/logo_eosmetal.png';
@@ -30,6 +30,14 @@ import zmeta from '../../img/partner_logos/logo_zmeta.png';
 import blindbloc from '../../img/partner_logos/logo_blindbloc.png';
 import csx from '../../img/partner_logos/logo_csx.png';
 import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
+
+//charts
+import chart_ch from '../../img/charts/Telos_MarketingSite_Chart_1000px_CH.png';
+import chart_en from '../../img/charts/Telos_MarketingSite_Chart_1000px_EN.png';
+import chart_kr from '../../img/charts/Telos_MarketingSite_Chart_1000px_KR.png';
+import chart_pg from '../../img/charts/Telos_MarketingSite_Chart_1000px_PG.png';
+import chart_rn from '../../img/charts/Telos_MarketingSite_Chart_1000px_RN.png';
+import chart_sp from '../../img/charts/Telos_MarketingSite_Chart_1000px_SP.png';
 
 import '../../styles/front_page.css';
 
@@ -71,7 +79,8 @@ const partnersArr = [
 	},
 	{
 		name: 'infinitybloc',
-		logo: infinitybloc
+		logo: infinitybloc,
+		url: 'https://www.infinitybloc.io/'
 	},
 	{
 		name: 'Telos Labs',
@@ -84,7 +93,8 @@ const partnersArr = [
 	},
 	{
 		name: 'eos green',
-		logo: eosgreen
+		logo: eosgreen,
+		url: 'http://eosgreen.io/'
 	},
 	{
 		name: 'fuzzy',
@@ -157,7 +167,8 @@ const FrontPage = ({landing_page, language}) => {
 		<div>
 			<Intro
 				intro_heading={intro_heading}
-				intro_content={intro_content} />
+				intro_content={intro_content}
+				language={language} />
 			<IconsText
 				developers_heading={developers_heading}
 				developers_content={developers_content}
@@ -176,7 +187,32 @@ const FrontPage = ({landing_page, language}) => {
 	);
 };
 
-const Intro = ({intro_heading, intro_content}) => {
+const Intro = ({intro_heading, intro_content, language}) => {
+
+	let localizedChart = '';
+	switch(language){
+		case 'en':
+			localizedChart = chart_en;
+			break;
+		case 'korean':
+			localizedChart = chart_kr;
+			break;
+		case 'mandarin':
+			localizedChart = chart_ch;
+			break;
+		case 'pt-br':
+			localizedChart = chart_pg;
+			break;
+		case 'russian':
+			localizedChart = chart_rn;
+			break;
+		case 'spanish':
+			localizedChart = chart_sp;
+			break;
+		default:
+			localizedChart = chart_en;
+			break;
+	}
 
 	return (
 		<section id='front_page_intro'>
@@ -197,7 +233,7 @@ const Intro = ({intro_heading, intro_content}) => {
 							animateIn='fadeIn'
 							duration={0.4}
 							delay={250} >
-							<img src={chart} alt='chart' className='img-responsive' />
+							<img src={localizedChart} alt='chart' className='img-responsive' />
 						</ScrollAnimation>
 					</Col>
 				</Row>
@@ -265,13 +301,13 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text, lang
 	let wp_url;
 	switch(language){
 		case 'en':
-			wp_url = 'http://resources.telosfoundation.io/telos_white_paper_7_17.pdf';
+			wp_url = 'http://resources.telosfoundation.io/telos_white_paper_8_15_18.pdf';
 			break;
 		case 'korean':
 			wp_url = 'http://resources.telosfoundation.io/텔로스 WP_Korean_20180803.pdf';
 			break;
 		default:
-			wp_url = 'http://resources.telosfoundation.io/telos_white_paper_7_17.pdf';
+			wp_url = 'http://resources.telosfoundation.io/telos_white_paper_8_15_18.pdf';
 			break;
 	}
 
