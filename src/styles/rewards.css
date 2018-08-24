@@ -1,0 +1,122 @@
+.rewards {
+	margin-bottom: 150px;
+}
+
+#rewards_intro {
+	padding-bottom: 35px;
+}
+
+#rewards_intro h1 {
+	font-size: 4.5em;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+#rewards_intro h2 {
+	font-size: 5em;
+	font-weight: 600;
+	margin-top: 15px;
+}
+
+#rewards_intro .btn-primary {
+	background-color: #ed4a2e;
+	border-color: transparent;
+	transition: background-color 0.15s ease;
+	font-size: 2em;
+	padding: 5px 8px;
+	border-radius: 15px;
+}
+
+#rewards_intro .btn-primary:hover {
+	background-color: #872311;
+}
+
+#rewards_intro .btn-primary:active,
+#rewards_intro .btn-primary:focus {
+	outline: transparent;
+}
+
+#rewards_description {
+	padding-bottom: 35px;
+}
+
+#rewards_description header {
+	background: #c2beae;
+	padding: 25px 0;
+	margin-bottom: 50px;
+}
+
+#rewards_description h2 {
+	color: #ffffff;
+	margin: 0;
+	font-size: 2.25em;
+}
+
+#rewards_description h3 {
+	margin-bottom: 35px;
+}
+
+#rewards_table thead tr {
+	background-color: #625a51;
+}
+
+#rewards_table thead th {
+	color: #ffffff;
+}
+
+#rewards_table td {
+	vertical-align: middle;
+	text-align: center;
+	border-color: #625a51;
+}
+
+#rewards_table tr td:first-child,
+#rewards_table tr th:first-child {
+	border-left: none;
+}
+
+#rewards_table tr td:last-child,
+#rewards_table tr th:last-child {
+	border-right: none;
+}
+
+#rewards_table tbody tr:last-child td {
+	border-bottom: none;
+}
+
+#rewards_table td ul {
+	margin: 0;
+	padding: 0;
+}
+
+#rewards_table td li {
+	list-style-type: none;
+	text-align: center;
+	font-size: 1em;
+	white-space: nowrap;
+}
+
+#rewards_table .table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: #dedcd3;
+}
+
+.reward_response_container {
+	min-height: 400px;
+	display: flex;
+	flex-direction: center;
+	justify-content: center;
+}
+
+.rewards_form button[type="submit"] {
+	background-color: #ed4a2e;
+	border-color: transparent;
+	color: #ffffff;
+	transition: background-color 0.15s ease;
+	display: block;
+	width: 100%;
+}
+
+.rewards_form button[type="submit"]:hover {
+	background-color: #872311;
+}

@@ -148,6 +148,10 @@ const partnersArr = [
 	}
 ];
 
+//white papers
+const wp_en = 'http://resources.telosfoundation.io/telos_white_paper_8_15_18.pdf';
+const wp_kr = 'http://resources.telosfoundation.io/텔로스 WP_Korean_20180803.pdf';
+
 const FrontPage = ({landing_page, language}) => {
 	
 	const { intro_heading,
@@ -301,13 +305,13 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text, lang
 	let wp_url;
 	switch(language){
 		case 'en':
-			wp_url = 'http://resources.telosfoundation.io/telos_white_paper_8_15_18.pdf';
+			wp_url = wp_en;
 			break;
 		case 'korean':
-			wp_url = 'http://resources.telosfoundation.io/텔로스 WP_Korean_20180803.pdf';
+			wp_url = wp_kr;
 			break;
 		default:
-			wp_url = 'http://resources.telosfoundation.io/telos_white_paper_8_15_18.pdf';
+			wp_url = wp_en;
 			break;
 	}
 

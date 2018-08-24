@@ -4,6 +4,7 @@ import Body from './body';
 import Footer from './footer';
 import {selectLanguage} from '../actions';
 import {connect} from 'react-redux';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 class App extends Component {
 
@@ -19,11 +20,13 @@ class App extends Component {
 
 	render(){
 		return (
-			<div className='app'>
-				<Header />
-				<Body />
-				<Footer />
-			</div>
+			<Router>
+				<div className='app'>
+					<Header />
+					<Body />
+					<Footer />
+				</div>
+			</Router>
 		);
 	}
 }
