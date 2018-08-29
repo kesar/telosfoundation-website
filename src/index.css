@@ -10,7 +10,7 @@ p {
   margin-bottom: 1.3em;
 }
 
-a,p, select, option, li, td {
+a,p, select, option, li, td, th {
   font-size: 1.2em;
 }
 

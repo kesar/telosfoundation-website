@@ -30,9 +30,6 @@ const Navigation = (props) => {
 					<a href='https://medium.com/@teloslogical'>BLOG</a>
 				</li>
 				<li>
-					<a href="http://testnet.telosfoundation.io/">TESTNET</a>
-				</li>
-				{/*<li>
 					<a 
 						href="/rewards"
 						onClick={e => {
@@ -42,7 +39,10 @@ const Navigation = (props) => {
 					>
 						REWARDS
 					</a>
-				</li>*/}
+				</li>				
+				<li>
+					<a href="http://testnet.telosfoundation.io/">TESTNET</a>
+				</li>
 			</Nav>
 		  </Navbar.Collapse>
 		</Navbar>

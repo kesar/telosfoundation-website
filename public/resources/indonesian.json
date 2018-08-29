@@ -1,0 +1,17 @@
+{
+  "language": "indonesian",
+  "landing_page": {
+  	"intro_heading": "DPoS Disempurnakan",
+  	"intro_content": "Delegated Proof of Stake adalah masa depan kontrak cerdas blockchain. Kami menggabungkan eksekusi cepat dan skalabilitas perangkat software EOSIO dengan desentralisasi sejati yang membuat DPoS berkelanjutan. Telos akan memiliki distribusi suplai uang yang paling adil daripada segala blockchain. Distribusi token ini meningkatkan kinerja sistem tata kelola sehingga jaringan tersebut akan lebih aman dan berkelanjutan.",
+  	"developers_heading": "Fokus Pengembang para Developer",
+  	"developers_content": "Telos hadir untuk menyediakan jaringan yang aman, stabil, dan hemat biaya untuk menyebarkan DApps kelas dunia. Pengembang dapat mengharapkan harga RAM yang terjangkau dan kemampuan untuk meluncurkan kontrak cerdas open-source ataupun kontrak cerdas kepemilikan tanpa biaya transaksi.",
+  	"dpos_heading": "Kecepatan DPoS",
+  	"dpos_content": "Jaringan Telos dapat menangani hingga 50.000 transaksi per detik untuk transaksi cepat dan skalabilitas luas. Ini berarti DApps dapat menjangkau pemirsa di seluruh dunia dengan kecepatan transaksi rata-rata tercepat dari setiap blockchain — hanya 1,5 detik!",
+  	"gov_heading": "Pemerintahan yang bagus",
+  	"gov_content": "Telos memiliki sistem kinerja tata kelola yang suburb dan produktif dari Konstitusi hingga pemilihan produsen blok yang sedang berlangsung, hingga pendanaan proposal pekerja dan ajudikasi perselisihan. Tidak ada blockchain lain yang menawarkan kinerja tata kelola Telos yang kompatibel dan sepadan.",
+  	"white_paper_heading": "Unduh kertas putih",
+  	"white_paper_content": "Bacalah White Paper Telos untuk menilai sendiri. Kami sedang membuat blockchain terbaik. Bergabunglah dengan kami dan membangunlah di Telos.",
+  	"github_text": "Kunjungilah situs Github kami",
+    "partners_heading": "Temui mitra kami"
+  }
+}

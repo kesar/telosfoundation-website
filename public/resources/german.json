@@ -1,0 +1,17 @@
+{
+  "language": "german",
+  "landing_page": {
+  	"intro_heading": "DPos Perfektioniert",
+  	"intro_content": "Der delegierte Anteilsnachweis als Konsensus Mechanismus, ist die Zukunft smart-contract basierter Blockchain-Netzwerke. Telos bietet eine nachhaltige Lösung, in dem wir die Geschwindigkeit und Skalierbarkeit der EOSIO Software mit echter Dezentralisierung vereinen. Telos hat die gerechteste, und gleichmäßigste Geldverteilung aller Blockchainprojekte, und ist somit vor Korruption des politischen Prozesses geschützt, was mehr Sicherheit und Tragfähigkeit bedeutet.",
+  	"developers_heading": "Entwickler Fokus",
+  	"developers_content": "Die Telos Plattform existiert zum Zweck der sicheren, stabilen und kosteneffizienten Anwendung von smart-contract basierten Lösungen und dezentralisierten Apps. Günstige RAM Preise erlauben Entwicklern sowohl open-source also auch proprietäre Programme zu schreiben, welche ohne Transaktionskosten laufen können.",
+  	"dpos_heading": "Geschwindigkeit",
+  	"dpos_content": "Das Telos Netzwerk kann eine Rekordgeschwindigkeit von 50'000 Transaktionen pro Sekunde erreichen, was zu massiver Skalierbarkeit führt. Dank des schnellsten dezentralisierten Netzwerkes aller Zeiten, können DApps weltweite Reichweite erziehen, mit nur 1.5 Sekunden pro Blockverifizierung.",
+  	"gov_heading": "Gute Verwaltung",
+  	"gov_content": "Telos hat ein reiches Verwaltungssystem, welches von einer Konstitution, bis hin zu regelmäßigen Wahlen von Blockproduzenten und Werkanträgen reicht. Kein anderes Blockchain Netzwerk bietet mehr interne Führungsstruktur und Disputresolution.",
+  	"white_paper_heading": "Lesen sie unser Witepaper",
+  	"white_paper_content": "Lesen sie das Whitepaper und entscheiden sie selbst. Wir wollen die beste Blockchain aller Zeiten erschaffen. Helfen sie uns, Telos zu bauen.",
+  	"github_text": "Besuchen sie unseren Github",
+    "partners_heading": "unsere Partner"
+  }
+}

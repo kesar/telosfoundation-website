@@ -28,15 +28,17 @@ export default class Rewards extends Component {
 								md={5}
 								sm={6}
 							>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate mauris turpis. Duis commodo aliquet rutrum. Maecenas interdum, sem ac sollicitudin fermentum, ante ex ultrices dui, non blandit justo ante a orci. In convallis, enim efficitur dictum facilisis, lectus odio pretium nisl, auctor viverra dui ligula non arcu. In ullamcorper orci ac velit suscipit faucibus. Pellentesque vitae molestie velit. Mauris vitae lorem lectus.</p>
-								<p>Mauris ullamcorper scelerisque posuere. Suspendisse pretium commodo tempus. Suspendisse sed libero ante. Vivamus aliquam, est vel convallis ultricies, mi quam vestibulum neque, non facilisis nunc quam at leo. Fusce id elit aliquam, placerat neque vitae, feugiat nulla. Aliquam sit amet ex laoreet, imperdiet nisl sed, porta mi. Vivamus sit amet magna justo.</p>
+								<p>Telos is a community-led alternative to EOS. We need you to help spread the word and make the Telos Network a success. You can share in the 1 million TLOS community rewards pool.</p>
+								<p>Joining is easy. Read the rules below, then sign up with your user name for the services where you want to promote Telos. You can make videos, articles, tweets, posts, tutorials—just about anything that helps spread the word. Meetups, community management and more is all available and receives rewards both for the initial action <em>and</em> when people engage with you by liking, clapping, attending, viewing, whatever.</p>
+								<p>Once the Telos Network activates, you can submit a final list of your community engagement for your tokens. You can either supply us with your account name, or send us a Telos public key and new account name and we will create the account for you and fill it with your rewards!</p>
+								<p>Telos is a blockchain where your voice matters, so use that voice to tell everyone about the world changing advantages of the Telos Network.</p>
 							</Col>
 							<Col
 								md={7}
 								sm={6}
 							>
 								<ResponsiveEmbed a16by9>
-									<iframe src="https://www.youtube.com/embed/GSDSvhgHyW8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									<iframe src="https://www.youtube.com/embed/fCpQ21Xm1CM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 								</ResponsiveEmbed>
 								<div className='text-center'>
 									<h2>Join Us Today!</h2>
@@ -79,7 +81,7 @@ const RewardsDescription = () => {
 					<Col md={4}>
 						<ul>
 							<li>All items subject to change and investigation.  Gaming the system or getting rewards on a technicality will not be allowed.</li>
-							<li>Participants must register with the system via email and/or portal, providing their user names in the various platforms.</li>
+							<li>Participants must register with the system via portal, providing their user names in the various platforms.</li>
 							<li>After network activation, participants will submit a final list of links and an address according to our future template and we will verify.</li>
 						</ul>
 					</Col>

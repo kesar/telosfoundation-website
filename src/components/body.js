@@ -1,6 +1,8 @@
 import React from 'react';
 import FrontPage from './pages/front_page';
+import RewardsPlaceholder from './pages/rewards_placeholder';
 import Rewards from './pages/rewards';
+import RewardsTranslate from './pages/rewards_translate'; //component that uses json file, ready for localization
 import {connect} from 'react-redux';
 import {Switch, Route, withRouter} from 'react-router-dom';
 import '../styles/body.css';
@@ -11,7 +13,9 @@ const Body = ({site_content}) => {
 		<main className='main'>
 
 			<Switch>
-				<Route path='/rewards' component={Rewards} />
+				<Route path='/rewards_translate' component={RewardsTranslate} />
+				<Route path='/rewards' component={RewardsTranslate} />
+				<Route path='/rewards_draft' component={RewardsTranslate} />
 				<Route path='/' render={() => <FrontPage landing_page={site_content.landing_page} language={site_content.language} />} />
 			</Switch>
 		</main>
