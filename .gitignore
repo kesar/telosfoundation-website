@@ -26,3 +26,6 @@ notes.txt
 build.zip
 
 package-lock.json
+
+# may as well hide this
+/src/config
