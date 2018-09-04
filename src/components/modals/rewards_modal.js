@@ -122,21 +122,6 @@ export default class RewardsModal extends Component {
 	}
 
 	//validation functions
-	/*
-	getUsernameValidationState(){
-		const {username, usernameTouched} = this.state;
-		if(!usernameTouched) return null;
-		if(username === '') return 'error';
-		return 'success';
-	}
-
-	getPlatformValidationState(){
-		const {platform, platformTouched} = this.state;
-		if(!platformTouched) return null;
-		if(platform === '') return 'error';
-		return 'success';
-	}*/
-
 	getEmailValidationState(){
 		const {email, emailTouched} = this.state;
 		if(!emailTouched) return null;
