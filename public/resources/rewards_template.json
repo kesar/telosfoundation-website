@@ -12,32 +12,30 @@
 			"cta_text": "SIGN UP HERE"
 		},
 		"description": {
-			"main_heading": "Community Rewards",
+			"main_heading": "Community Rewards Information",
 			"sub_heading": "Max Payout per participant: 10,000 TLOS",
 			"column_one": [
 				"All items subject to change and investigation. Gaming the system or getting rewards on a technicality will not be allowed.",
-				"Participants must register with the system via portal, providing their user names in the various platforms.",
-				"After network activation, participants will submit a final list of links and an address according to our future template and we will verify."
+				"Participants must register with the system portal above, providing their user names in the various platforms.",
+				"After network activation, participants will submit a final list of links and addresses for verification. Email instructions will be sent to all registered users prior to activation."
 			],
 			"column_two": [
-				"Submissions must be completed in a given timeframe, TBD. (e.g. 2 weeks after activation?)",
-				"Payment to the participant timing TBD. (e.g. 2 weeks after submission deadline?)",
+				"Submissions must be received within one week of Telos network activation",
 				"All participants who earn tokens will receive a free Telos Address!",
-				"All post have to have links to an official Telos website or Telos social media site."
+				"All posts must include links to an official Telos website or Telos social media page:"
 			],
 			"column_three": [
-				"All judges determinations are final and cannot be appealed or arbitrated.",
-				"There is a possibility for a professional social media or video channel person to go over the 10,000 reward limit. These cases will be brought up ahead of time and reviewed BEFORE the participant submits for rewards.",
-				"If the amount earned by participants exceeds the 1 million TLOS allocated, then all timely submissions will be reduced in like percentage to pay each participant a pro rata share."
+				"All judges' determinations are final and cannot be appealed or arbitrated.",
+				"If the total amount earned by participants exceeds the 1 million TLOS allocated, then all timely submissions will be reduced in like percentage to pay each participant a pro rata share."
 			]
 		},
 		"table": {
 			"table_headings": {
-				"site_category": "Site Category",
-				"task_category": "Task Category",
+				"site_category": "Category",
+				"task_category": "Example Channels",
 				"task": "Specific Task",
 				"tier_reward": "Task Tier - Reward",
-				"proof": "Proof Req."
+				"proof": "Required Proof"
 			},
 			"table_rows": [
 				{
@@ -45,11 +43,26 @@
 					"task_category": "Vimeo, Youtube, etc",
 					"task": "Post Online Video",
 					"tier_reward": [
-						"1 post - 10",
-						"10 - 100 views - 25",
-						"100 - 250 views - 75",
-						"250 - 500 views - 100",
-						"500+ views - 150"
+						{
+							"tier": "1 post",
+							"reward": 10
+						},
+						{
+							"tier": "10 - 100 views",
+							"reward": 25
+						},
+						{
+							"tier": "100 - 250 views",
+							"reward": 75
+						},
+						{
+							"tier": "250 - 500 views",
+							"reward": 100
+						},
+						{
+							"tier": "500+",
+							"reward": 150
+						}
 					],
 					"proof": "Link"
 				},
@@ -58,7 +71,10 @@
 					"task_category": "Tutorial Video Bonus",
 					"task": "Videos that demonstrate how to do something Telos-related (generally how to use a wallet, app, node, etc) in a clear, concise, positive manner",
 					"tier_reward": [
-						"Double the value of a general purpose video"
+						{
+							"tier": null,
+							"reward": "Double the value of a general purpose video"
+						}
 					],
 					"proof": "Link"
 				},
@@ -67,12 +83,30 @@
 					"task_category": "Facebook, LinkedIn, Google+, VK, Oknaklassniki, QQ, QZone Posts (and",
 					"task": "Post on site",
 					"tier_reward": [
-						"1 post - 5",
-						"1 - 10 Likes - 10",
-						"11 - 25 Likes - 25",
-						"25 - 75 Likes - 50",
-						"76 - 500 Likes - 75",
-						"500+ Likes - 125"
+						{
+							"tier": "1 post",
+							"reward": 5
+						},
+						{
+							"tier": "1 - 10 Likes",
+							"reward": 10
+						},
+						{
+							"tier": "11 - 25 Likes",
+							"reward": 25
+						},
+						{
+							"tier": "26 - 75 Likes",
+							"reward": 50
+						},
+						{
+							"tier": "76 - 500 Likes",
+							"reward": 75
+						},
+						{
+							"tier": "500+ Likes",
+							"reward": 125
+						}
 					],
 					"proof": "Link"
 				},
@@ -81,12 +115,30 @@
 					"task_category": "Twitter, Weibo Posts (and similar public messaging services",
 					"task": "Post on Twitter",
 					"tier_reward": [
-						"1 post - 3",
-						"1 - 10 Likes/Retweets - 10",
-						"11 - 25 Likes/Retweets - 15",
-						"25 - 75 Likes/Retweets - 30",
-						"76 - 150 Likes/Retweets - 75",
-						"150+ Likes/Retweets - 150"
+						{
+							"tier": "1 post",
+							"reward": 3
+						},
+						{
+							"tier": "1 - 10 Likes/Retweets",
+							"reward": 10
+						},
+						{
+							"tier": "11 - 25 Likes/Retweets",
+							"reward": 15
+						},
+						{
+							"tier": "26 - 75 Likes/Retweets",
+							"reward": 30
+						},
+						{
+							"tier": "76 - 150 Likes/Retweets",
+							"reward": 75
+						},
+						{
+							"tier": "150+ Likes/Retweets",
+							"reward": 150
+						}
 					],
 					"proof": "Link"
 				},
@@ -95,7 +147,10 @@
 					"task_category": "Medium, Steemit, Reddit, Baidu Tieba article writing",
 					"task": "Post on Medium or Steemit and similar blogging sites including > 250 word posts/responses on Reddit.",
 					"tier_reward": [
-						"1 post - 50"
+						{
+							"tier": "1 post",
+							"reward": 50
+						}
 					],
 					"proof": "Link"
 				},
@@ -104,8 +159,14 @@
 					"task_category": "Forum or Chat posts",
 					"task": "Post or reply on site",
 					"tier_reward": [
-						"1 post - 10",
-						"1 replay (no repeats) - 3"
+						{
+							"tier": "1 post",
+							"reward": 10
+						},
+						{
+							"tier": "1 replay (no repeats)",
+							"reward": 3
+						}
 					],
 					"proof": "Link to forum with username"
 				},
@@ -114,7 +175,10 @@
 					"task_category": "Unforseen but usable content",
 					"task": "Technology tools (Blockchain explorers, tools kits, etc.",
 					"tier_reward": [
-						"Unknown - Case by case"
+						{
+							"tier": "Unknown",
+							"reward": "Case by case"
+						}
 					],
 					"proof": "Case by case"
 				},
@@ -123,7 +187,10 @@
 					"task_category": "Quora, Technical and Tutorial articles",
 					"task": "Creating an article meant to demonstrate how to do something on Telos and/or EOSIO programming that also prominently mentions Telos specifically in a neutral or positive light",
 					"tier_reward": [
-						"1 post - 50"
+						{
+							"tier": "1 post",
+							"reward": 50
+						}
 					],
 					"proof": "Link"
 				},
@@ -132,7 +199,10 @@
 					"task_category": "Instagram, image posts/work",
 					"task": "Graphic content, infographics, gifs, memes",
 					"tier_reward": [
-						"1 post - 50"
+						{
+							"tier": "1 post",
+							"reward": 50
+						}
 					],
 					"proof": "Link"
 				},
@@ -141,11 +211,26 @@
 					"task_category": "Forum Admin",
 					"task": "Managing a forum group top to bottom, keeping it on target, posting relevant articles, replying, etc",
 					"tier_reward": [
-						"3 - 10 Users - 25",
-						"11 - 50 Users - 50",
-						"51 - 100 Users - 100",
-						"101 - 250 Users - 150",
-						"251+ Users - 200"
+						{
+							"tier": "3 - 10 Users",
+							"reward": 25
+						},
+						{
+							"tier": "11 - 50 Users",
+							"reward": 50
+						},
+						{
+							"tier": "51 - 100 Users",
+							"reward": 100
+						},
+						{
+							"tier": "101 - 250 Users",
+							"reward": 150
+						},
+						{
+							"tier": "251+ Users",
+							"reward": 200
+						}
 					],
 					"proof": "Link to forum with username and details of work"
 				},
@@ -154,11 +239,26 @@
 					"task_category": "Meetups, etc.",
 					"task": "Create or speak at a Meetup or similar social group",
 					"tier_reward": [
-						"1 - 2 attendees - 50",
-						"3 - 5 attendees - 75",
-						"6 - 10 attendees - 100",
-						"11 - 20 attendees - 125",
-						"21+ attendees - 150"
+						{
+							"tier": "1 - 2 attendees",
+							"reward": 50
+						},
+						{
+							"tier": "3 - 5 attendees",
+							"reward": 75
+						},
+						{
+							"tier": "6 - 10 attendees",
+							"reward": 100
+						},
+						{
+							"tier": "11 - 20 attendees",
+							"reward": 125
+						},
+						{
+							"tier": "21+ attendees",
+							"reward": 150
+						}
 					],
 					"proof": "Photos, Link to invite"
 				}

@@ -15,7 +15,7 @@ export default class RewardsTranslate extends Component {
 		};
 	}
 
-	//gonna get this through props though
+	//gonna get this through props once there are other translations
 	componentDidMount(){
 		axios.get('/resources/rewards_template.json')
 		.then(res => {
@@ -95,31 +95,37 @@ const RewardsDescription = ({description}) => {
 				</Row>
 				<Row>
 					<Col md={4}>
-						<ul>
+						<ol>
 							{
 								description.column_one.map((item, i) => {
 									return <li key={i}>{item}</li>;
 								})
 							}
-						</ul>
+						</ol>
 					</Col>
 					<Col md={4}>
-						<ul>
+						<ol start='4'>
 							{
 								description.column_two.map((item, i) => {
 									return <li key={i}>{item}</li>;
 								})
 							}
+						</ol>
+						<ul className='rewards_social_links'>
+							<li><a href='https://telosfoundation.io/' target='_blank' rel='noopener noreferrer'>https://telosfoundation.io/</a></li>
+							<li><a href='https://twitter.com/HelloTelos' target='_blank' rel='noopener noreferrer'>https://twitter.com/HelloTelos</a></li>
+							<li><a href='https://t.me/HelloTelos' target='_blank' rel='noopener noreferrer'>https://t.me/HelloTelos</a></li>
+							<li><a href='https://www.youtube.com/channel/UC1eRSAt81jUf7zM4hsy5S5Q?view_as=subscriber' target='_blank' rel='noopener noreferrer'>https://www.youtube.com/channel/UC1eRSAt81jUf7zM4hsy5S5Q?view_as=subscriber</a></li>
 						</ul>
 					</Col>
 					<Col md={4}>
-						<ul>
+						<ol start='7'>
 							{
 								description.column_three.map((item, i) => {
 									return <li key={i}>{item}</li>;
 								})
 							}
-						</ul>
+						</ol>
 					</Col>
 				</Row>
 			</Grid>
@@ -154,13 +160,21 @@ const RewardsTable = ({table}) => {
 												<td>{row.task_category}</td>
 												<td>{row.task}</td>
 												<td>
-													<ul>
-														{
-															row.tier_reward.map((item, j) => {
-																return <li key={j}>{item}</li>;
-															})
-														}
-													</ul>
+													{
+														row.tier_reward.map((item, j) => {
+															if(item.tier === null){
+																return <span key={j}>{item.reward}</span>;
+															}
+															return (
+																<table key={j} className='tier_reward_table'>
+																	<tr>
+																		<td>{item.tier}</td>
+																		<td>{item.reward}</td>
+																	</tr>
+																</table>
+															);
+														})
+													}
 												</td>
 												<td>{row.proof}</td>
 											</tr>

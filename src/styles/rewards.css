@@ -2,6 +2,12 @@
 	margin-bottom: 150px;
 }
 
+@media screen and (max-width: 991px){
+	.rewards ol {
+		margin-bottom: 0;
+	}
+}
+
 #rewards_intro {
 	padding-bottom: 35px;
 }
@@ -62,6 +68,15 @@
 	margin-bottom: 35px;
 }
 
+.rewards_social_links {
+	padding-left: 60px;
+}
+
+.rewards_social_links a {
+	font-size: 1em;
+	word-wrap: break-word;
+}
+
 #rewards_table thead tr {
 	background-color: #625a51;
 }
@@ -76,6 +91,12 @@
 	vertical-align: middle;
 	text-align: center;
 	border-color: #625a51;
+}
+
+@media screen and (max-width: 767px){
+	#rewards_table td {
+		white-space: normal;
+	}
 }
 
 #rewards_table tr td:first-child,
@@ -94,10 +115,29 @@
 
 #rewards_table tbody tr td:nth-child(3){
 	width: 350px;
+	padding: 15px;
+}
+
+#rewards_table tbody tr td:nth-child(4){
+	width: 250px;
 }
 
 #rewards_table tbody tr td:nth-child(5){
 	width:150px;
+}
+
+@media screen and (max-width: 767px){
+	#rewards_table tbody tr td:nth-child(3){
+		width: auto;
+	}
+
+	#rewards_table tbody tr td:nth-child(4){
+		width: auto;
+	}
+
+	#rewards_table tbody tr td:nth-child(5){
+		width: auto;
+	}
 }
 
 #rewards_table td ul {
@@ -114,6 +154,22 @@
 
 #rewards_table .table-striped>tbody>tr:nth-of-type(odd) {
 	background-color: #dedcd3;
+}
+
+#rewards_table .tier_reward_table {
+	width: 100%;
+}
+
+#rewards_table .tier_reward_table td {
+	font-size: 1em;
+}
+
+#rewards_table .tier_reward_table > tr td:nth-child(1) {
+	text-align: left;
+}
+
+#rewards_table .tier_reward_table > tr td:nth-child(2) {
+	text-align: right;
 }
 
 .reward_response_container {

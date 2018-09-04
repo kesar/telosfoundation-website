@@ -30,6 +30,7 @@ import zmeta from '../../img/partner_logos/logo_zmeta.png';
 import blindbloc from '../../img/partner_logos/logo_blindbloc.png';
 import csx from '../../img/partner_logos/logo_csx.png';
 import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
+import amplified from '../../img/partner_logos/logo_amplified.png';
 
 //charts
 import chart_ch from '../../img/charts/Telos_MarketingSite_Chart_1000px_CH.png';
@@ -145,6 +146,10 @@ const partnersArr = [
 	{
 		name: 'telos russia',
 		logo: telos_russia,
+	},
+	{
+		name: 'telos amplified',
+		logo: amplified
 	}
 ];
 

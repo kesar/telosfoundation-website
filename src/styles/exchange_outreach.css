@@ -1,0 +1,120 @@
+.exchange_outreach {
+	margin-bottom: 150px;
+}
+
+#exchange_intro {
+	padding-bottom: 75px;
+}
+
+#exchange_intro h1 {
+	text-align: center;
+	font-size: 4.5em;
+	margin-bottom: 35px;
+}
+
+#exchange_intro img {
+	margin-top: 35px;
+}
+
+@media screen and (max-width: 767px){
+	#exchange_intro h1 {
+		font-size: 3em;
+	}
+}
+
+#exchange_intro em {
+	font-weight: 600;
+	font-style: italic;
+}
+
+#exchange_rules h3 {
+	margin-bottom: 35px;
+}
+
+@media screen and (max-width: 991px){
+	#exchange_rules ol {
+		margin-bottom: 0;
+	}
+}
+
+#exchange_participation {
+	padding-bottom: 50px;
+}
+
+#exchange_participation h2 {
+	font-size: 2.25em;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+#exchange_participation li {
+	margin-bottom: 1em;
+}
+
+#exchange_participation .sublist {
+	margin-top: 1em;
+}
+
+#exchange_participation .sublist li {
+	font-size: 1em;
+	font-weight: 600;
+	list-style-type: none;
+	margin-bottom: 0;
+}
+
+#exchange_register header {
+	background: #c2beae;
+	padding: 25px 0;
+	margin-bottom: 50px;
+	text-align: center;	
+}
+
+#exchange_register h2 {
+	color: #ffffff;
+	margin: 0;
+	font-size: 2.25em;
+}
+
+#exchange_form {
+	width: 100%;
+	min-height: 1000px;
+}
+
+.exchange_reward_table {
+	width: 500px;
+	max-width: 100%;
+}
+
+.exchange_reward_table tbody > tr td {
+	border-color: #625a51;
+}
+
+.exchange_reward_table tbody > tr:last-child td {
+	border-bottom: none;
+}
+
+.exchange_reward_table tbody > tr td:nth-child(1){
+	border-left: none;
+}
+
+.exchange_reward_table tbody > tr td:nth-child(2){
+	border-right: none;
+}
+
+.exchange_reward_table thead tr {
+	background-color: #625a51;
+}
+
+.exchange_reward_table thead th {
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.exchange_reward_table tbody tr td:nth-child(2){
+	text-align: center;
+}
+
+.exchange_reward_table .table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: #dedcd3;
+}
