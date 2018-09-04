@@ -1,0 +1,20 @@
+.rewards_form fieldset {
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.rewards_form fieldset legend {
+	display: inline-block;
+	width: auto;
+	margin-left: 15px;
+	border-bottom: none;
+}
+
+.platform_and_username {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.rewards_form .btn-group {
+	margin-top: 15px;
+}

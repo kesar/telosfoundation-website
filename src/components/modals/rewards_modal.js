@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Modal, Button, FormGroup, FormControl, Checkbox} from 'react-bootstrap';
+import {Modal, Button, ButtonGroup, FormGroup, FormControl, Checkbox} from 'react-bootstrap';
 import axios from 'axios';
+import '../../styles/rewards_modal.css';
 
 import {FORM_SUBMIT_ENDPOINT} from '../../config/constants';
 
@@ -9,29 +10,46 @@ export default class RewardsModal extends Component {
 		super();
 
 		this.state = {
-			username: '',
 			email: '',
-			platform: '',
+			platforms: [
+				{
+					platform: '',
+					username: ''
+				}
+			],
 			termsAccepted: false,
 			formSubmitted: false,
-			usernameTouched: false,
 			emailTouched: false,
-			platformTouched: false,
 			termsAcceptedTouched: false
 		};
 		this.handleEmailChange = this.handleEmailChange.bind(this);
 		this.handleCheckmarkChange = this.handleCheckmarkChange.bind(this);
-		this.handlePlatformChange = this.handlePlatformChange.bind(this);
 		this.handleUsernameChange = this.handleUsernameChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleAddPlatform = this.handleAddPlatform.bind(this);
+		this.handleRemovePlatform = this.handleRemovePlatform.bind(this);
 	}
 
 	onHandleClose(){
 		this.props.onHide();
 	}
 
-	handleUsernameChange(e){
-		this.setState({username: e.target.value});
+	handlePlatformChange(e, idx){
+		const {platforms} = this.state;
+		const newPlatforms = platforms.map((pf, i) => {
+			if(i !== idx) return pf;
+			return {...pf, platform: e.target.value};
+		});
+		this.setState({platforms: newPlatforms});
+	}
+
+	handleUsernameChange(e, idx){
+		const {platforms} = this.state;
+		const newPlatforms = platforms.map((pf, i) => {
+			if(i !== idx) return pf;
+			return {...pf, username: e.target.value};
+		});
+		this.setState({platforms: newPlatforms});
 	}
 
 	handleCheckmarkChange(e){
@@ -42,32 +60,52 @@ export default class RewardsModal extends Component {
 		this.setState({email: e.target.value});
 	}
 
-	handlePlatformChange(e){
-		this.setState({platform: e.target.value});
+	handleAddPlatform(){
+		const {platforms} = this.state;
+		this.setState({
+			platforms: platforms.concat(
+				{
+					platform: '',
+					username: ''
+				}
+			)
+		});
+	}
+
+	handleRemovePlatform(){
+		const {platforms} = this.state;
+		if(platforms.length < 2) return;
+		platforms.pop();
+		this.setState({platforms: platforms});
 	}
 
 	handleSubmit(e){
 		e.preventDefault();
-		const {username, email, platform, termsAccepted} = this.state;
+		const {email, platforms, termsAccepted} = this.state;
 		if(
-			!username ||
 			!email ||
-			!platform ||
 			!termsAccepted
 		){
 			this.setState({
-				usernameTouched: true,
 				emailTouched: true,
-				platformTouched: true,
 				termsAcceptedTouched: true
 			});
 			return;
 		}
 
+		//seperate platform and username into arrays
+		const platformsArr = platforms.map(pf => {
+			return pf.platform.trim();
+		});
+
+		const usernamesArr = platforms.map(pf => {
+			return pf.username.trim();
+		});
+
 		const formData = {
 			email: email.trim(),
-			platform: platform.trim(),
-			username: username.trim(),
+			platform: platformsArr,
+			username: usernamesArr,
 			termsAccepted: termsAccepted			
 		};
 
@@ -84,6 +122,7 @@ export default class RewardsModal extends Component {
 	}
 
 	//validation functions
+	/*
 	getUsernameValidationState(){
 		const {username, usernameTouched} = this.state;
 		if(!usernameTouched) return null;
@@ -96,7 +135,7 @@ export default class RewardsModal extends Component {
 		if(!platformTouched) return null;
 		if(platform === '') return 'error';
 		return 'success';
-	}
+	}*/
 
 	getEmailValidationState(){
 		const {email, emailTouched} = this.state;
@@ -129,26 +168,45 @@ export default class RewardsModal extends Component {
 						onFocus={() => this.setState({emailTouched: true})} />
 					<FormControl.Feedback />
 				</FormGroup>
-				<FormGroup validationState={this.getPlatformValidationState()}>
-					<FormControl
-						required
-						type='text'
-						value={platform}
-						placeholder='Your platform'
-						onChange={this.handlePlatformChange}
-						onFocus={() => this.setState({platformTouched: true})} />
-					<FormControl.Feedback />
-				</FormGroup>
-				<FormGroup validationState = {this.getUsernameValidationState()}>
-			    	<FormControl
-			    		required
-			        	type='text'
-			            value={username}
-			            placeholder='Username on platform'
-			            onChange={this.handleUsernameChange}
-			            onFocus={() => this.setState({usernameTouched: true})} />
-			        <FormControl.Feedback />
-				</FormGroup>
+				{
+					this.state.platforms.map((platformInputs, idx) => {
+						return (
+							<fieldset key={idx}>
+								<legend>Platform</legend>
+								<div className='platform_and_username'>
+									<FormGroup>
+										<FormControl
+											required
+											type='text'
+											value={platformInputs.platform}
+											placeholder='Your platform(s)'
+											onChange={e => this.handlePlatformChange(e, idx)} />
+										<FormControl.Feedback />
+									</FormGroup>
+									<FormGroup>
+								    	<FormControl
+								    		required
+								        	type='text'
+								            value={platformInputs.username}
+								            placeholder='Username on platform(s)'
+								            onChange={e => this.handleUsernameChange(e, idx)} />
+								        <FormControl.Feedback />
+									</FormGroup>
+								</div>
+							</fieldset>
+						);
+					})
+				}
+				<div className='text-right'>
+					<ButtonGroup>
+						<Button onClick={this.handleAddPlatform}>
+							Add Platform
+						</Button>
+						<Button onClick={this.handleRemovePlatform}>
+							Remove Platform
+						</Button>
+					</ButtonGroup>
+				</div>
 				<FormGroup validationState={this.getTermsValidationState()}>
 					<Checkbox
 						required
