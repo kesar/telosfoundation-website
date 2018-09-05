@@ -5,6 +5,11 @@
 	border-top: none;
 }
 
+.navbar-nav {
+	display: flex;
+	align-items: center;
+}
+
 .navbar-brand {
 	height: auto;
 }
@@ -24,4 +29,24 @@
 .navbar-toggle {
 	position: relative;
 	top: 15px;
+}
+
+@media screen and (min-width: 768px){
+	.navbar-nav > li.rewards_nav_item > a {
+		padding: 10px 15px;
+		color: #fff;
+		background-color: #c2beae;
+		border-radius: 4px;
+		transition: background-color 0.25s ease;
+	}
+
+	.navbar-nav > li.rewards_nav_item > a:hover,
+	.navbar-nav > li.rewards_nav_item > a:active {
+		color: #fff;
+		background-color: #635a51;
+	}
+	.navbar-nav > li.rewards_nav_item > a:focus {
+		color: #fff;
+		background-color: #c2beae;
+	}
 }

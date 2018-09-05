@@ -28,9 +28,12 @@ const Navigation = (props) => {
 				<LanguageToggle />
 				<li>
 					<a href='https://medium.com/@teloslogical'>BLOG</a>
-				</li>
+				</li>			
 				<li>
-					<a 
+					<a href="http://testnet.telosfoundation.io/">TESTNET</a>
+				</li>
+				<li className='rewards_nav_item'>
+					<a
 						href="/rewards"
 						onClick={e => {
 							e.preventDefault();
@@ -39,9 +42,6 @@ const Navigation = (props) => {
 					>
 						REWARDS
 					</a>
-				</li>				
-				<li>
-					<a href="http://testnet.telosfoundation.io/">TESTNET</a>
 				</li>
 			</Nav>
 		  </Navbar.Collapse>
