@@ -5,9 +5,11 @@
 	border-top: none;
 }
 
-.navbar-nav {
-	display: flex;
-	align-items: center;
+@media screen and (min-width: 768px){
+	.navbar-nav {
+		display: flex;
+		align-items: center;
+	}
 }
 
 .navbar-brand {
@@ -35,18 +37,19 @@
 	.navbar-nav > li.rewards_nav_item > a {
 		padding: 10px 15px;
 		color: #fff;
-		background-color: #c2beae;
+		background-color: #8F8B7B;
 		border-radius: 4px;
+		box-shadow: 0 3px 12px -1px rgba(0, 0, 0, 0.2);
 		transition: background-color 0.25s ease;
 	}
 
 	.navbar-nav > li.rewards_nav_item > a:hover,
 	.navbar-nav > li.rewards_nav_item > a:active {
 		color: #fff;
-		background-color: #635a51;
+		background-color: #5C5848;
 	}
 	.navbar-nav > li.rewards_nav_item > a:focus {
 		color: #fff;
-		background-color: #c2beae;
+		background-color: #8F8B7B;
 	}
 }

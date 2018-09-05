@@ -17,6 +17,17 @@
 .language_toggle {
 	border: none;
 	background-color: transparent;
+	text-align-last: right;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.language_toggle:-ms-expand {
+	display: none;
 }
 
 .language_toggle:focus {

@@ -205,7 +205,7 @@ export default class RewardsModal extends Component {
 				<Button
 					type='submit'
 				>
-					Submit
+					Join
 				</Button>
 			</form>
 		);

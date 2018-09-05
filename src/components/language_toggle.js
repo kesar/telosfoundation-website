@@ -66,7 +66,6 @@ class LanguageToggle extends Component {
 		if(!this.props.site_content) return <div></div>;
 		return (
 			<li className='language_toggle_li'>
-				<img src={get_flag()} alt='language flag' className='language_toggle_flag' /> 
 				<select
 					className='language_toggle'
 					onChange={this.handleChange}
@@ -81,6 +80,7 @@ class LanguageToggle extends Component {
 					<option value='german'>DEUTSCHE</option>
 					<option value='indonesian'>BAHASA INDONESIA</option>
 				</select>
+				<img src={get_flag()} alt='language flag' className='language_toggle_flag' />
 			</li>
 		);
 	}
