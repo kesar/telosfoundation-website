@@ -53,3 +53,24 @@
 		background-color: #8F8B7B;
 	}
 }
+
+.hamburger {
+	position: relative;
+	top: 3px;
+}
+
+.hamburger:focus {
+	outline: transparent;
+}
+
+@media screen and (max-width: 767px){
+	.hamburger {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.navbar-nav>li.side_nav_item_mobile {
+		display: none;
+	}
+}

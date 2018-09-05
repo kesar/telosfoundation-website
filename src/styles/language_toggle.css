@@ -4,7 +4,7 @@
 	align-items: center;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 	.navbar-nav > .language_toggle_li {
 		padding: 8px 7px;
 	}
@@ -17,7 +17,6 @@
 .language_toggle {
 	border: none;
 	background-color: transparent;
-	text-align-last: right;
 	-webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
@@ -28,6 +27,13 @@
 
 .language_toggle:-ms-expand {
 	display: none;
+}
+
+@media screen and (min-width: 768px){
+	.language_toggle {
+		text-align-last: right;
+		text-align: right;
+	}	
 }
 
 .language_toggle:focus {

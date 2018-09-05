@@ -6,4 +6,9 @@
 	position: fixed;
 	width: 100%;
 	z-index: 1000;
+	transition: transform 0.5s ease;
+}
+
+.side_nav_open .main_header {
+	transform: translateX(-300px);
 }

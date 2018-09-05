@@ -3,6 +3,7 @@ import FrontPage from './pages/front_page';
 import ExchangeOutreach from './pages/exchange_outreach';
 import RewardsTranslate from './pages/rewards_translate'; //component that uses json file, ready for localization
 import Checklist from './pages/checklist';
+import Download from './pages/download';
 import {connect} from 'react-redux';
 import {Switch, Route, withRouter} from 'react-router-dom';
 import '../styles/body.css';
@@ -17,6 +18,7 @@ const Body = ({site_content}) => {
 				<Route path='/exchange_outreach' component={ExchangeOutreach} />
 				<Route path='/iwantmytlos' component={ExchangeOutreach} />
 				<Route path='/launch' component={Checklist} />
+				<Route path='/download' component={Download} />
 				<Route path='/' render={() => <FrontPage landing_page={site_content.landing_page} language={site_content.language} />} />
 			</Switch>
 		</main>

@@ -26,7 +26,8 @@
 			],
 			"column_three": [
 				"All judges' determinations are final and cannot be appealed or arbitrated.",
-				"If the total amount earned by participants exceeds the 1 million TLOS allocated, then all timely submissions will be reduced in like percentage to pay each participant a pro rata share."
+				"If the total amount earned by participants exceeds the 1 million TLOS allocated, then all timely submissions will be reduced in like percentage to pay each participant a pro rata share.",
+				"Participants may not also claim rewards from the Telos Founders Rewards Pool. They can only be a member of one or the other."
 			]
 		},
 		"table": {

@@ -2,9 +2,11 @@ import React, {Component} from 'react';
 import Header from './header';
 import Body from './body';
 import Footer from './footer';
-import {selectLanguage} from '../actions';
+import {selectLanguage, toggleSideNav} from '../actions';
 import {connect} from 'react-redux';
 import {BrowserRouter as Router} from 'react-router-dom';
+import SideNavigation from './side_navigation';
+import '../styles/app.css';
 
 class App extends Component {
 
@@ -16,15 +18,18 @@ class App extends Component {
 		}else{
 			this.props.selectLanguage('en');
 		}
+
+		this.props.toggleSideNav(false);
 	}
 
 	render(){
 		return (
 			<Router>
-				<div className='app'>
+				<div className={`app ${this.props.side_nav_open ? 'side_nav_open' : ''}`}>
 					<Header />
 					<Body />
 					<Footer />
+					<SideNavigation />
 				</div>
 			</Router>
 		);
@@ -32,7 +37,10 @@ class App extends Component {
 }
 
 function mapStateToProps(state){
-	return {site_content: state.site_content};
+	return {
+		site_content: state.site_content,
+		side_nav_open: state.side_nav_open
+	};
 }
 
-export default connect(mapStateToProps, {selectLanguage})(App);
+export default connect(mapStateToProps, {selectLanguage, toggleSideNav})(App);
