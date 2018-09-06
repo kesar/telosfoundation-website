@@ -22,7 +22,7 @@
 
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
 	.navbar-nav > li > a {
 		padding: 40px 15px;
 	}
@@ -60,9 +60,15 @@
 	}
 }
 
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+	border-top: 0;
+}
+
 .hamburger {
 	position: relative;
 	top: 3px;
+	transform: scale(0.65);
 }
 
 .hamburger:focus {
