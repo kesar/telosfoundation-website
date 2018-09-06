@@ -12,22 +12,39 @@ class Navigation extends Component {
 
 	constructor(props){
 		super(props);
+
+		this.state = {
+			mobileOpen: false
+		};
+		this.handleToggleClick = this.handleToggleClick.bind(this);
+
+	}
+
+	handleToggleClick(){
+		this.setState({mobileOpen: !this.state.mobileOpen});
+	}
+
+	//close navbars when item clicked
+	handleCloseNav(){
+		this.props.toggleSideNav(false);
+		this.setState({mobileOpen: false});
 	}
 
 	render(){
 		const {side_nav_open} = this.props;
+		const {mobileOpen} = this.state;
 
 		return (
-			<Navbar fluid={true} collapseOnSelect>
+			<Navbar fluid={true} expanded={mobileOpen}>
 			  <Navbar.Header>
-			    <Navbar.Toggle />
+			    <Navbar.Toggle onClick={this.handleToggleClick} />
 			    <Navbar.Brand>
 			      <a 
 			      	href='/'
 			      	onClick={e => {
 			      		e.preventDefault();
 			      		this.props.history.push('/');
-			      		this.props.toggleSideNav(false);
+			      		this.handleCloseNav();
 			      	}}
 			      >
 			      	<img src={logo} alt='logo' className='logo' />
@@ -49,7 +66,7 @@ class Navigation extends Component {
 							onClick={e => {
 								e.preventDefault();
 								this.props.history.push('/rewards');
-								this.props.toggleSideNav(false);
+								this.handleCloseNav();
 							}}
 						>
 							REWARDS
@@ -75,6 +92,7 @@ class Navigation extends Component {
 							onClick={e => {
 								e.preventDefault();
 								this.props.history.push('/launch');
+								this.handleCloseNav();
 							}}
 						>
 							LAUNCH CHECKLIST
