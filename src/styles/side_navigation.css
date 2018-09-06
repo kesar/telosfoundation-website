@@ -28,6 +28,10 @@
 	color: #ed4a2e;
 	text-decoration: none;
 }
+.side_nav li > a:focus {
+	color: #fff;
+	text-decoration: none;
+}
 
 .side_nav header {
 	padding: 40px;

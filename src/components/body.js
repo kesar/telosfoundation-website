@@ -18,7 +18,7 @@ const Body = ({site_content}) => {
 				<Route path='/exchange_outreach' component={ExchangeOutreach} />
 				<Route path='/iwantmytlos' component={ExchangeOutreach} />
 				<Route path='/launch' component={Checklist} />
-				<Route path='/download' component={Download} />
+				<Route path='/downloads' render={() => <Download language={site_content.language} />} />
 				<Route path='/' render={() => <FrontPage landing_page={site_content.landing_page} language={site_content.language} />} />
 			</Switch>
 		</main>

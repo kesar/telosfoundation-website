@@ -27,6 +27,7 @@ class Navigation extends Component {
 			      	onClick={e => {
 			      		e.preventDefault();
 			      		this.props.history.push('/');
+			      		this.props.toggleSideNav(false);
 			      	}}
 			      >
 			      	<img src={logo} alt='logo' className='logo' />
@@ -48,6 +49,7 @@ class Navigation extends Component {
 							onClick={e => {
 								e.preventDefault();
 								this.props.history.push('/rewards');
+								this.props.toggleSideNav(false);
 							}}
 						>
 							REWARDS
@@ -72,10 +74,10 @@ class Navigation extends Component {
 							href='/launch' 
 							onClick={e => {
 								e.preventDefault();
-								this.props.push('/launch');
+								this.props.history.push('/launch');
 							}}
 						>
-							Launch Checklist
+							LAUNCH CHECKLIST
 						</a>
 					</li>
 					{/*<li className='side_nav_item_mobile'>

@@ -21,7 +21,7 @@ const SideNavigation = (props) => {
 							props.toggleSideNav(false);
 						}}
 					>
-						Launch Checklist
+						LAUNCH CHECKLIST
 					</a>
 				</li>
 				{/*<li>

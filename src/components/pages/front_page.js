@@ -32,6 +32,9 @@ import csx from '../../img/partner_logos/logo_csx.png';
 import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
 import amplified from '../../img/partner_logos/logo_amplified.png';
 
+//white papers
+import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN} from '../../config/constants';
+
 //charts
 import chart_ch from '../../img/charts/Telos_MarketingSite_Chart_1000px_CH.png';
 import chart_en from '../../img/charts/Telos_MarketingSite_Chart_1000px_EN.png';
@@ -152,10 +155,6 @@ const partnersArr = [
 		logo: amplified
 	}
 ];
-
-//white papers
-const wp_en = 'http://resources.telosfoundation.io/telos_white_paper_8_15_18.pdf';
-const wp_kr = 'http://resources.telosfoundation.io/텔로스 WP_Korean_20180803.pdf';
 
 const FrontPage = ({landing_page, language}) => {
 	
@@ -310,13 +309,13 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text, lang
 	let wp_url;
 	switch(language){
 		case 'en':
-			wp_url = wp_en;
+			wp_url = WHITE_PAPER_ENGLISH;
 			break;
 		case 'korean':
-			wp_url = wp_kr;
+			wp_url = WHITE_PAPER_KOREAN;
 			break;
 		default:
-			wp_url = wp_en;
+			wp_url = WHITE_PAPER_ENGLISH;
 			break;
 	}
 
