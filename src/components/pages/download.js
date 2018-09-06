@@ -17,7 +17,11 @@ const Download = ({language}) => {
 					<Col md={12}>
 						<div className='download_intro'>
 							<h1>Downloads</h1>
-							<h2>Below you will find download links for Telos compatible wallets, and PDFs for the Telos Whitepaper, Telos Style Guide, as well as the Telos Governance Documents.</h2>
+							<Row>
+								<Col md={10} mdOffset={1}>
+									<h2>Below you will find download links for Telos compatible wallets, and PDFs for the Telos Whitepaper, Telos Style Guide, as well as the Telos Governance Documents.</h2>
+								</Col>
+							</Row>
 						</div>
 						<Wallets />
 						<Documents language={language} />

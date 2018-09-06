@@ -9,6 +9,37 @@
 	transition: transform 0.5s ease;
 }
 
+.main_header_mobile {
+	background-size: 100% 100%;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 50px;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	transition: transform 0.5s ease;
+	display: none;
+}
+
+@media screen and (max-width: 767px){
+	.main_header {
+		display: none;
+	}
+
+	.main_header_mobile {
+		display: block;
+	}
+}
+
+.header_mobile_bottom {
+	height: 50px;
+	width: 100%;
+	background-size: 100% 100%;
+	display: block;
+	position: absolute;
+	top: 100%;
+}
+
 .side_nav_open .main_header {
 	transform: translateX(-300px);
 }

@@ -9,7 +9,11 @@ const Checklist = () => {
 				<Col md={12}>
 					<div className='checklist'>
 						<h1>Launch Prerequisites Checklist</h1>
-						<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
+						<Row>
+							<Col md={10} mdOffset={1}>
+								<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
+							</Col>
+						</Row>
 						<DevelopmentCode />
 						<Governance />
 						<Contracts />
