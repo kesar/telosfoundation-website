@@ -24,18 +24,18 @@ const SideNavigation = (props) => {
 						LAUNCH CHECKLIST
 					</a>
 				</li>
-				{/*<li>
+				<li>
 					<a
-						href='/download'
+						href='/downloads'
 						onClick={e => {
 							e.preventDefault();
-							props.history.push('/download');
+							props.history.push('/downloads');
 							props.toggleSideNav(false);
 						}}
 					>
-						Download
+						DOWNLOADS
 					</a>
-				</li>*/}
+				</li>
 			</ul>
 		</nav>
 	);

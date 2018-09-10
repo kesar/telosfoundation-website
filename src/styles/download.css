@@ -36,6 +36,13 @@
 	text-align: center;
 }
 
+#download_wallets h3 {
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+
 #download_wallets > .row {
 	padding-top: 50px;
 }

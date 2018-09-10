@@ -98,17 +98,18 @@ class Navigation extends Component {
 							LAUNCH CHECKLIST
 						</a>
 					</li>
-					{/*<li className='side_nav_item_mobile'>
+					<li className='side_nav_item_mobile'>
 						<a
-							href='/download'
+							href='/downloads'
 							onClick={e => {
 								e.preventDefault();
-								this.props.push('/download');
+								this.props.history.push('/downloads');
+								this.handleCloseNav();
 							}}
 						>
-							Download
+							DOWNLOADS
 						</a>
-					</li>*/}
+					</li>
 				</Nav>
 			  </Navbar.Collapse>
 			</Navbar>

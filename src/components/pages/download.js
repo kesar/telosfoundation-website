@@ -8,7 +8,6 @@ import '../../styles/download.css';
 
 const sg_en = 'http://resources.telosfoundation.io/Telos_Style Guide_2018.pdf';
 
-
 const Download = ({language}) => {
 	return (
 		<div className='download_page'>
@@ -19,7 +18,7 @@ const Download = ({language}) => {
 							<h1>Downloads</h1>
 							<Row>
 								<Col md={10} mdOffset={1}>
-									<h2>Below you will find download links for Telos compatible wallets, and PDFs for the Telos Whitepaper, Telos Style Guide, as well as the Telos Governance Documents.</h2>
+									<h2>Download all the documents and tools that you need to join the Telos Network.</h2>
 								</Col>
 							</Row>
 						</div>
@@ -38,17 +37,23 @@ const Wallets = () => {
 			<h2>Telos Wallets</h2>
 			<hr />
 			<Row>
+				<Col md={10} mdOffset={1}>
+					<h3>Choose a wallet to store and trade your TLOS tokens.</h3>
+				</Col>
 				<Col sm={5}>
 					<img src={sqrl_logo} alt='squirrel wallet logo' className='img-responsive' />
 				</Col>
 				<Col sm={7}>
 					<div className='squirrel_content'>
-						<p>Fill your cheeks with Telos using our Squirrel wallet.  Need the real copy later.</p>
-						<Button
-							bsStyle='primary'
-							bsSize='large'>
+						<p>Sqrl is a fully functional light wallet designed for the TELOS blockchain. This application can be used to connect to a remote TELOS API endpoint to perform producer voting actions and common wallet commands.</p>
+						<a 
+							href='https://github.com/Telos-Foundation/Sqrl' 
+							className='btn btn-lg btn-primary' 
+							target='_blank' 
+							rel='noopener noreferrer'
+						>
 							DOWNLOAD
-						</Button>
+						</a>
 					</div>
 				</Col>
 			</Row>
@@ -79,7 +84,7 @@ const Documents = ({language}) => {
 					<div className='download_document_container'>
 						<div className='download_document'>
 							<a href={wp_url}>White Paper</a>
-							<p>Read the white paper to judge for yourself.  We are out to create the best blockchain ever.  Join us and build on Telos.</p>
+							<p>We are out to create the best blockchain ever - read the white paper to judge for yourself. Join us and build on Telos.</p>
 						</div>
 						<a href={wp_url}>
 							<img src={pdf_img} alt='' />
@@ -88,7 +93,7 @@ const Documents = ({language}) => {
 					<div className='download_document_container'>
 						<div className='download_document'>
 							<a href={sg_en}>Telos Style Guide</a>
-							<p>A style guide featuring logos, color pallets, and fonts used for the Telos Foundation</p>
+							<p>A style guide featuring Telos Foundation logos, color palettes and fonts for brand use.</p>
 						</div>
 						<a href={sg_en}>
 							<img src={pdf_img} alt='' />

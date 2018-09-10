@@ -31,6 +31,7 @@ import blindbloc from '../../img/partner_logos/logo_blindbloc.png';
 import csx from '../../img/partner_logos/logo_csx.png';
 import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
 import amplified from '../../img/partner_logos/logo_amplified.png';
+import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
 
 //white papers
 import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN} from '../../config/constants';
@@ -153,6 +154,10 @@ const partnersArr = [
 	{
 		name: 'telos amplified',
 		logo: amplified
+	},
+	{
+		name: 'telos venezuela',
+		logo: venezuela
 	}
 ];
 

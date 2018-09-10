@@ -81,7 +81,7 @@
 				},
 				{
 					"site_category": "Social Media",
-					"task_category": "Facebook, LinkedIn, Google+, VK, Oknaklassniki, QQ, QZone Posts (and",
+					"task_category": "Facebook, LinkedIn, Google+, VK, Oknaklassniki, QQ, QZone Posts (and similar social sites)",
 					"task": "Post on site",
 					"tier_reward": [
 						{
@@ -113,7 +113,7 @@
 				},
 				{
 					"site_category": "Micro-Blogging",
-					"task_category": "Twitter, Weibo Posts (and similar public messaging services",
+					"task_category": "Twitter, Weibo Posts (and similar public messaging services)",
 					"task": "Post on Twitter",
 					"tier_reward": [
 						{
@@ -174,7 +174,7 @@
 				{
 					"site_category": "Misc. Content",
 					"task_category": "Unforseen but usable content",
-					"task": "Technology tools (Blockchain explorers, tools kits, etc.",
+					"task": "Technology tools (Blockchain explorers, tools kits, etc.)",
 					"tier_reward": [
 						{
 							"tier": "Unknown",
