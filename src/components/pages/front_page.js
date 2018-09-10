@@ -162,7 +162,8 @@ const partnersArr = [
 	},
 	{
 		name: 'telos madrid',
-		logo: madrid
+		logo: madrid,
+		url: 'https://telosmadrid.io/'
 	}
 ];
 

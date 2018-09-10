@@ -157,8 +157,8 @@ const RewardsTable = ({table}) => {
 										return (
 											<tr key={i}>
 												<td>{row.site_category}</td>
-												<td>{row.task_category}</td>
-												<td>{row.task}</td>
+												<td dangerouslySetInnerHTML={{__html: row.task_category}}></td>
+												<td dangerouslySetInnerHTML={{__html: row.task}}></td>
 												<td>
 													{
 														row.tier_reward.map((item, j) => {

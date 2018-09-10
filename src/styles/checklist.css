@@ -80,3 +80,17 @@
 	font-size: 1em;
 	list-style-type: disc;
 }
+
+#checklist_legend {
+	padding: 35px 0;
+}
+
+.legend_column {
+	text-align: center;
+}
+
+.legend_column img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}

@@ -25,7 +25,7 @@ const ExchangeIntro = () => {
 						<p>Millions of the ERC-20 EOS tokens held on exchanges, went unregistered.  When Telos launches,  of the total potential number of tokens that can be created approximately 44% could be held on exchanges.  Those in the community who opted to keep their ERC-20 EOS tokens on an exchange can still get their TLOS tokens. In addition anyone can earn more by encouraging and calling out for those exchange(s) to list TLOS.</p>
 						<p>
 							<em>
-								Note: In order to receive their Free TLOS tokens, community members who opted to keep their ERC-20 Tokens on an exchange during the Genesis Snapshot, the exchange must agree to list TLOS.  This is an opportunity to be rewarded for using your influence to get those tokens. Payouts for this campaign will be paid according to the following guidelines:
+								Note: In order to receive their Free TLOS tokens for community members, who opted to keep their ERC-20 Tokens on an exchange during the Genesis Snapshot, the exchange must agree to list TLOS.  This is an opportunity to be rewarded for using your influence to get those tokens. Payouts for this campaign will be paid according to the following guidelines:
 							</em>
 						</p>	
 					</Col>
@@ -85,9 +85,9 @@ const ExchangeParticipation = () => {
 							<li>
 								Community members will need to contact the exchanges, via the following social media channels to request their tokens:
 								<ul className='sublist'>
-									<li>Facebook</li>
-									<li>Twitter</li>
-									<li>Weibo</li>
+									<li><a href='https://facebook.com' target='_blank' rel='noopener noreferrer'>Facebook</a></li>
+									<li><a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>Twitter</a></li>
+									<li><a href='https://www.weibo.com/' target='_blank' rel='noopener noreferrer'>Weibo</a></li>
 								</ul>
 							</li>
 							<li>
@@ -113,7 +113,7 @@ const ExchangeParticipation = () => {
 							<li>
 								This rewards campaign will run from:
 								<ul className='sublist'>
-									<li>00:00 UTC August 31, 2018 to 23:59 UTC September 14</li>
+									<li>00:00 UTC August 31, 2018 to 23:59 UTC September 20</li>
 								</ul>
 							</li>
 							<li>

@@ -83,6 +83,10 @@
 	word-wrap: break-word;
 }
 
+#rewards_table a {
+	font-size: 1em;
+}
+
 #rewards_table thead tr {
 	background-color: #625a51;
 }

@@ -1,5 +1,8 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
+import not_started_icon from '../../img/checklist/gng_list_no_circle.png';
+import in_progress_icon from '../../img/checklist/gng_list_in-progress.png';
+import completed_icon from '../../img/checklist/gng_list_yes.png';
 import '../../styles/checklist.css';
 
 const Checklist = () => {
@@ -14,6 +17,7 @@ const Checklist = () => {
 								<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
 							</Col>
 						</Row>
+						<ChecklistLegend />
 						<DevelopmentCode />
 						<Governance />
 						<Contracts />
@@ -23,6 +27,37 @@ const Checklist = () => {
 				</Col>
 			</Row>
 		</Grid>
+	);
+};
+
+const ChecklistLegend = () => {
+	return (
+		<section id='checklist_legend'>
+			<Row>
+				<Col sm={10} smOffset={1}>
+					<Row>
+						<Col xs={4}>
+							<div className='legend_column'>
+								<img src={not_started_icon} alt='legend completed icon' className='img-responsive' />
+								<h4>In Progress</h4>
+							</div>
+						</Col>
+						<Col xs={4}>
+							<div className='legend_column'>
+								<img src={in_progress_icon} alt='legend in-progress icon' className='img-responsive' />
+								<h4>Functional/In Testing</h4>
+							</div>
+						</Col>
+						<Col xs={4}>
+							<div className='legend_column'>
+								<img src={completed_icon} alt='legend completed icon' className='img-responsive' />
+								<h4>Completed & Tested</h4>
+							</div>
+						</Col>
+					</Row>
+				</Col>
+			</Row>
+		</section>
 	);
 };
 
