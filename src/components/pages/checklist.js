@@ -36,8 +36,8 @@ const DevelopmentCode = () => {
 				<li className='yes'>Claim rewards improvements</li>
 				<li className='yes'>Inverse-weighted voting</li>
 				<li className='yes'>BP rewards (EBPs receive X, Standby BPs receive 50% of X)</li>
-				<li className='no'>Removal of non-producing BPs</li>
-				<li className='no'>Scheduled standby BP rotations</li>
+				<li className='in_progress'>Removal of non-producing BPs</li>
+				<li className='in_progress'>Scheduled standby BP rotations</li>
 				<li className='no'>Rewrite regproducer to include BP json format</li>
 				<li className='no'>Refactor unit tests</li>
 				<li className='no'>Validate chain functionality</li>
