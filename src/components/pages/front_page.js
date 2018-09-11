@@ -154,7 +154,8 @@ const partnersArr = [
 	},
 	{
 		name: 'telos amplified',
-		logo: amplified
+		logo: amplified,
+		url: 'https://amplified.software/'
 	},
 	{
 		name: 'telos venezuela',

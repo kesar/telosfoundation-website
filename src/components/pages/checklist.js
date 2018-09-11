@@ -11,7 +11,7 @@ const Checklist = () => {
 			<Row>
 				<Col md={12}>
 					<div className='checklist'>
-						<h1>Launch Prerequisites Checklist</h1>
+						<h1>Launch Checklist</h1>
 						<Row>
 							<Col md={10} mdOffset={1}>
 								<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
