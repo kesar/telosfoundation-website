@@ -1,13 +1,15 @@
 ## Adding a language:
 first value in json object is "language".  value must match file name.  For example, en.json, "language": "en", spanish.json, "language": "spanish"
 
-add option to select in language_toggle component.  Option value = language.  example:
+add option to select in `src/components/language_toggle.js` component.  Option value = language.  example:
 
 ``` html
 <option value='en'>ENGLISH</option>
 ```
 
-import flag into language_toggle component, and add it to the switch statement in the get_flag function.
+Get a flag icon and put it in `/src/img/flags/`.  I use [iconfinder](https://www.iconfinder.com/iconsets/142-mini-country-flags-16x16px) to get the flags.  I have mostly been naming the flag png after the country, such as `china.png`.  There's no naming requirement like in the json file, though.
+
+Import flag into language_toggle component, and add it to the switch statement in the get_flag function.
 
 
 ``` javascript
@@ -34,7 +36,7 @@ Import image into front_page.js component, add image, url, and name to partnersA
 
 ## Updating the white paper
 
-The white paper goes in `/public/resources/wp_master`.  Filename must be `telos_white_paper_<language>.pdf`, `like telos_white_paper_english.pdf` for example.  If you add a translated version, add the full path to `/src/config/constants.js`: 
+The white paper goes in `/public/resources/wp_master`.  Filename must be `telos_white_paper_<language>.pdf`, like `telos_white_paper_english.pdf` for example.  If you add a translated version, add the full path to `/src/config/constants.js`: 
 
 ``` javascript
 const wp_version_code = 'v1.2_8152018';
