@@ -37,33 +37,33 @@ Import image into front_page.js component, add image, url, and name to partnersA
 The white paper goes in `/public/resources/wp_master`.  Filename must be `telos_white_paper_<language>.pdf`, `like telos_white_paper_english.pdf` for example.  If you add a translated version, add the full path to `/src/config/constants.js`: 
 
 ``` javascript
-const wp\_version_code = 'v1.2\_8152018';
+const wp_version_code = 'v1.2_8152018';
 
-export const WHITE\_PAPER\_NEWLANGUAGE = \`http://resources.telosfoundation.io/wp\_master/telos\_white\_paper\_new\_language.pdf?${wp\_version\_code}\`;
+export const WHITE_PAPER_NEWLANGUAGE = `http://resources.telosfoundation.io/wp_master/telos_white_paper_new_language.pdf?${wp_version_code}`;
 ```
 
-You should update the version code as well.  I've been following the convention of v<version number>\_<date>.  The only thing it's used for is to prevent browsers from pulling up the cached version after we update it; if you give out the link directly, omit the version: `http://resources.telosfoundation.io/wp\_master/telos\_white_paper\_new_language.pdf`
+You should update the version code as well.  I've been following the convention of v{version number}_{date}.  The only thing it's used for is to prevent browsers from pulling up the cached version after we update it; if you give out the link directly, omit the version: `http://resources.telosfoundation.io/wp_master/telos_white_paper_new_language.pdf`
 
 Then, add it to `/src/components/pages/front_page.js`:
 
 ``` javascript
 //white papers
-import {WHITE\_PAPER\_ENGLISH, WHITE\_PAPER\_KOREAN, WHITE\_PAPER\_NEWLANGUAGE} from '../../config/constants';
+import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN, WHITE_PAPER_NEWLANGUAGE} from '../../config/constants';
 
 ...
 
-const WhitePaper = ({white\_paper\_heading, white\_paper\_content, github_text, language}) => {
+const WhitePaper = ({white_paper_heading, white_paper_content, github_text, language}) => {
 
-	let wp\_url;
+	let wp_url;
 	switch(language){
 		case 'en':
-			wp\_url = WHITE\_PAPER\_ENGLISH;
+			wp_url = WHITE_PAPER_ENGLISH;
 			break;
 		case 'korean':
-			wp\_url = WHITE\_PAPER\_KOREAN;
+			wp_url = WHITE_PAPER_KOREAN;
 			break;
 		case 'newlanguage':
-			wp\_url = WHITE\_PAPER\_NEWLANGUAGE;
+			wp_url = WHITE_PAPER_NEWLANGUAGE;
 			break;
 			...
 ```
@@ -71,21 +71,21 @@ const WhitePaper = ({white\_paper\_heading, white\_paper\_content, github_text, 
 Also update the downloads page at `/src/components/pages/download.js`:
 
 ``` javascript
-import {WHITE\_PAPER\_ENGLISH, WHITE\_PAPER\_KOREAN, WHITE\_PAPER\_NEWLANGUAGE} from '../../config/constants';
+import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN, WHITE_PAPER_NEWLANGUAGE} from '../../config/constants';
 
 ...
 
 const Documents = ({language}) => {
-	let wp\_url;
+	let wp_url;
 	switch(language){
 		case 'en':
-			wp\_url = WHITE\_PAPER\_ENGLISH;
+			wp_url = WHITE_PAPER_ENGLISH;
 			break;
 		case 'korean':
-			wp\_url = WHITE\_PAPER\_KOREAN;
+			wp_url = WHITE_PAPER_KOREAN;
 			break;
 		case 'newlanguage':
-			wp\_url = WHITE\_PAPER\_NEWLANGUAGE;
+			wp_url = WHITE_PAPER_NEWLANGUAGE;
 			break;
 			...
 ```
