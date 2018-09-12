@@ -137,7 +137,7 @@ export default class RewardsModal extends Component {
 	}
 
 	renderForm(){
-		const {username, email, termsAccepted, platform} = this.state;
+		const {email, termsAccepted} = this.state;
 		return (
 			<form 
 				className='rewards_form'

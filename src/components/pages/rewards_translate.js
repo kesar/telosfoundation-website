@@ -54,7 +54,7 @@ export default class RewardsTranslate extends Component {
 								sm={6}
 							>
 								<ResponsiveEmbed a16by9>
-									<iframe src="https://www.youtube.com/embed/1XJjGqzS1AU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									<iframe title='Rewards Program Video' src='https://www.youtube.com/embed/1XJjGqzS1AU' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>
 								</ResponsiveEmbed>
 								<div className='text-center'>
 									<h2>{rewards_page.intro.join_us}</h2>

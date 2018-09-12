@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Row, Col, Button} from 'react-bootstrap';
+import {Grid, Row, Col} from 'react-bootstrap';
 import BannerModal from '../modals/banner_modal';
 import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 import pdf_img from '../../img/download_pdf_icon.png';
@@ -162,67 +162,6 @@ class Documents extends Component {
 								<p>Splash Banner art for use in online articles about Telos.</p>
 							</div>
 							<Row>
-								{/*<Col sm={6}>
-									<img 
-										src={banner_one} 
-										alt='banner one' 
-										className='download_banner'
-										onClick={e => {
-											e.preventDefault();
-											this.setState({
-												downloadModalOpen: true,
-												displayBanner: banner_one,
-												downloadBanner: 'http://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_1.jpg',
-												downloadBannerName: 'Splash Banner_Telos-Medium_generic_1.jpg'
-											});
-										}} />
-								</Col>
-								<Col sm={6}>
-									<img 
-										src={banner_two} 
-										alt='banner two' 
-										className='download_banner'
-										onClick={e => {
-											e.preventDefault();
-											this.setState({
-												downloadModalOpen: true,
-												displayBanner: banner_two,
-												downloadBanner: 'http://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_2.jpg',
-												downloadBannerName: 'Splash Banner_Telos-Medium_generic_2.jpg'
-											});
-										}} />
-								</Col>
-								<Col sm={6}>
-									<img 
-										src={banner_three} 
-										alt='banner three' 
-										className='download_banner'
-										onClick={e => {
-											e.preventDefault();
-											this.setState({
-												downloadModalOpen: true,
-												displayBanner: banner_three,
-												downloadBanner: 'http://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_3.jpg',
-												downloadBannerName: 'Splash Banner_Telos-Medium_generic_3.jpg'
-											});
-										}} />
-								</Col>
-								<Col sm={6}>
-									<img 
-										src={banner_four} 
-										alt='banner four' 
-										className='download_banner'
-										onClick={e => {
-											e.preventDefault();
-											this.setState({
-												downloadModalOpen: true,
-												displayBanner: banner_four,
-												downloadBanner: 'http://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_4.jpg',
-												downloadBannerName: 'Splash Banner_Telos-Medium_generic_4.jpg'
-											});
-										}} />
-								</Col>*/}
-
 								{
 									splashBanners.map(banner => {
 										return (

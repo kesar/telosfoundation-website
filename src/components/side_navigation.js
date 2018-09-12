@@ -9,7 +9,7 @@ const SideNavigation = (props) => {
 	return (
 		<nav className='side_nav'>
 			<header>
-				<img src={telos_logo} className='img-responsive' />
+				<img src={telos_logo} className='img-responsive' alt='side nav logo' />
 			</header>
 			<ul>
 				<li>

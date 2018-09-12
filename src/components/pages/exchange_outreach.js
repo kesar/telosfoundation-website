@@ -1,7 +1,6 @@
 import React from 'react';
 import {Grid, Row, Col, Table} from 'react-bootstrap';
 import '../../styles/exchange_outreach.css';
-import {Link} from 'react-router-dom';
 import hashtag_graphic from '../../img/hashtag_graphic.jpg';
 
 const ExchangeOutreach = () => {
@@ -178,7 +177,7 @@ const ExchangeRegister = () => {
 			<Grid>
 				<Row>
 					<Col md={8} mdOffset={2}>
-						<iframe id='exchange_form' src="https://docs.google.com/forms/d/e/1FAIpQLScB3lI_rlEKDesueqnTAwstid9EjnRI-Ruer9Vu6fCOpsXpAw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+						<iframe id='exchange_form' title='Exchange Form' src="https://docs.google.com/forms/d/e/1FAIpQLScB3lI_rlEKDesueqnTAwstid9EjnRI-Ruer9Vu6fCOpsXpAw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 					</Col>
 				</Row>
 			</Grid>

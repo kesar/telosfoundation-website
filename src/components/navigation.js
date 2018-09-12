@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import {Navbar, Nav, NavItem} from 'react-bootstrap';
+import {Navbar, Nav} from 'react-bootstrap';
 import logo from '../img/Telos_MarketingSite_TelosLogo_500px.png';
 import '../styles/hamburgers.css';
 import '../styles/navigation.css';
 import LanguageToggle from './language_toggle';
-import {Link, withRouter} from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 import {toggleSideNav} from '../actions';
 import {connect} from 'react-redux';
 
@@ -35,7 +35,11 @@ class Navigation extends Component {
 		const {mobileOpen} = this.state;
 
 		return (
-			<Navbar fluid={true} expanded={mobileOpen}>
+			<Navbar
+				fluid={true}
+				expanded={mobileOpen}
+				onToggle={() => {}}
+			>
 			  <Navbar.Header>
 			    <Navbar.Toggle onClick={this.handleToggleClick} />
 			    <Navbar.Brand>
