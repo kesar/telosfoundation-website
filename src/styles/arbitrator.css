@@ -1,0 +1,113 @@
+.arbitrators {
+	padding-bottom: 150px;
+}
+
+.arbitrators a {
+	color: #f3853e;
+	text-decoration: underline;
+	font-size: 1em;
+	transition: color 0.25s ease;
+}
+
+.arbitrators a:hover,
+.arbitrators a:active {
+	color: #C0520B;
+}
+
+.arbitrators a:focus {
+	color: #f3853e;
+}
+
+.arbitrators hr {
+	border-top: 2px solid #c1b399;
+}
+
+#arbitrator_intro h1 {
+	font-size: 4.5em;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+@media screen and (max-width: 767px){
+	#arbitrator_intro h1 {
+		font-size: 3em;
+	}
+}
+
+#arbitrator_intro .btn-primary {
+	background-color: #ed4a2e;
+	border-color: transparent;
+	transition: background-color 0.15s ease;
+	font-size: 2em;
+	padding: 5px 8px;
+	border-radius: 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+#arbitrator_intro .btn-primary:hover {
+	background-color: #872311;
+	color: #fff;
+	text-decoration: none;
+}
+
+#arbitrator_intro .btn-primary:active,
+#arbitrator_intro .btn-primary:focus {
+	outline: transparent;
+	color: #fff;
+	text-decoration: none;
+}
+
+.arbitrator_intro_contact {
+	text-align: center;
+	padding: 75px 0 50px 0;
+}
+
+.arbitrator_intro_contact h3 {
+	margin-top: 0;
+	margin-bottom: 35px;
+}
+
+#arbitrator_candidates h2 {
+	text-align: center;
+}
+
+#arbitrator_candidates .candidate_list {
+	padding-top: 35px;
+}
+
+.arbitrator_candidate {
+	margin-bottom: 50px;
+}
+
+.arbitrator_candidate_image_container {
+	padding-right: 15px;
+}
+
+@media screen and (max-width: 767px){
+	.arbitrator_candidate_image_container {
+		padding-right: 0;
+	}
+}
+
+.arbitrator_candidate_image {
+	width: 300px;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 767px){
+	.arbitrator_candidate_image {
+		margin-bottom: 35px;
+	}
+}
+
+.arbitrator_candidate_content h3 {
+	margin-top: 0;
+}
+
+.arbitrator_candidate_content .candidate_vote_name {
+	color: #f3853e;
+}
