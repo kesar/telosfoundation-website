@@ -115,7 +115,7 @@ const RewardsDescription = ({description}) => {
 							<li><a href='https://telosfoundation.io/' target='_blank' rel='noopener noreferrer'>https://telosfoundation.io/</a></li>
 							<li><a href='https://twitter.com/HelloTelos' target='_blank' rel='noopener noreferrer'>https://twitter.com/HelloTelos</a></li>
 							<li><a href='https://t.me/HelloTelos' target='_blank' rel='noopener noreferrer'>https://t.me/HelloTelos</a></li>
-							<li><a href='https://www.youtube.com/channel/UC1eRSAt81jUf7zM4hsy5S5Q?view_as=subscriber' target='_blank' rel='noopener noreferrer'>https://www.youtube.com/channel/UC1eRSAt81jUf7zM4hsy5S5Q?view_as=subscriber</a></li>
+							<li><a href='https://www.youtube.com/c/TheTelosNetwork' target='_blank' rel='noopener noreferrer'>https://www.youtube.com/c/TheTelosNetwork</a></li>
 						</ul>
 					</Col>
 					<Col md={4}>

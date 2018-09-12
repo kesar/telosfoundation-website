@@ -58,7 +58,7 @@ class Navigation extends Component {
 						<a href='https://medium.com/@teloslogical'>BLOG</a>
 					</li>			
 					<li>
-						<a href="http://testnet.telosfoundation.io/">TESTNET</a>
+						<a href="https://testnet.telosfoundation.io/">TESTNET</a>
 					</li>
 					<li className='rewards_nav_item'>
 						<a

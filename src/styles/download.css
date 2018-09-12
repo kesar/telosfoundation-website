@@ -70,7 +70,7 @@
 	align-items: center;
 }
 
-.download_document_container img {
+.download_document_container img.download_icon {
 	width: 125px;
 	max-width: 100%;
 }
@@ -85,6 +85,45 @@
 	.download_document {
 		max-width: 66.667%;
 		flex: 0 0 66.667%;
+	}
+}
+
+.download_banner_container {
+
+}
+
+.download_banner_container a {
+	color: #f3853e;
+	text-decoration: underline;
+	font-size: 2em;
+	transition: color 0.25s ease;
+}
+
+.download_banner_container a:hover,
+.download_banner_container a:active {
+	color: #C0520B;
+}
+
+.download_banner_container a:focus {
+	color: #f3853e;
+}
+
+.download_banner_description h3 {
+	color: #f3853e;
+	text-decoration: underline;
+	font-size: 2em;
+	font-weight: 400;
+}
+
+.download_banner_container img.download_banner {
+	max-width: 100%;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+	.download_banner_container img.download_banner {
+		margin-bottom: 15px;
 	}
 }
 
@@ -127,4 +166,26 @@
 
 #download_documents > .row {
 	padding-top: 50px;
+}
+
+.banner_modal_img {
+	width: 100%;
+}
+
+.banner_download_btn.btn-primary {
+	background-color: #ed4a2e;
+	border-color: transparent;
+	transition: background-color 0.15s ease;
+	font-size: 2em;
+	padding: 5px 8px;
+	border-radius: 15px;
+}
+
+.banner_download_btn.btn-primary:hover {
+	background-color: #872311;
+}
+
+.banner_download_btn.btn-primary:active,
+.banner_download_btn.btn-primary:focus {
+	outline: transparent;
 }
