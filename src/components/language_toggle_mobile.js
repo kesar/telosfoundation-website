@@ -65,7 +65,7 @@ class LanguageToggle extends Component {
 
 		if(!this.props.site_content) return <div></div>;
 		return (
-			<li className='language_toggle_li'>
+			<li className='language_toggle_li_mobile'>
 				<select
 					className='language_toggle'
 					onChange={this.handleChange}

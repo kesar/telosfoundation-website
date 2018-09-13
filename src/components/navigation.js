@@ -3,7 +3,8 @@ import {Navbar, Nav} from 'react-bootstrap';
 import logo from '../img/Telos_MarketingSite_TelosLogo_500px.png';
 import '../styles/hamburgers.css';
 import '../styles/navigation.css';
-import LanguageToggle from './language_toggle';
+import LanguageToggleDesktop from './language_toggle_desktop';
+import LanguageToggle from './language_toggle_mobile';
 import {withRouter} from 'react-router-dom';
 import {toggleSideNav} from '../actions';
 import {connect} from 'react-redux';
@@ -57,6 +58,7 @@ class Navigation extends Component {
 			  </Navbar.Header>
 			  <Navbar.Collapse>
 				<Nav pullRight>
+					<LanguageToggleDesktop />
 					<LanguageToggle />
 					<li>
 						<a href='https://medium.com/@teloslogical'>BLOG</a>
