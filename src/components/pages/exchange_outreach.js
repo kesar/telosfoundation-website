@@ -21,12 +21,12 @@ const ExchangeIntro = () => {
 				<Row>
 					<Col md={8}>
 						<h1>Telos Hashtag Campaign</h1>
-						<p>Millions of the ERC-20 EOS tokens held on exchanges, went unregistered.  When Telos launches,  of the total potential number of tokens that can be created approximately 44% could be held on exchanges.  Those in the community who opted to keep their ERC-20 EOS tokens on an exchange can still get their TLOS tokens. In addition anyone can earn more by encouraging and calling out for those exchange(s) to list TLOS.</p>
+						<p>Millions of the ERC-20 EOS tokens held on exchanges went unregistered, but we are determined to ensure that every TLOS holder can access their tokens.</p>
+						<p>When the Telos network launches, approximately 44% of potential tokens could be held on exchanges. Community members who kept their ERC-20 EOS tokens on an exchange during the Genesis Snapshot will receive their free TLOS tokens only if their exchange agrees to list TLOS.</p>
+						<p>Be rewarded for using your influence to get TLOS tokens listed your cryptocurrency exchange. Anyone, including those who opted to keep their ERC-20 EOS tokens on an exchange during the Genesis snapshot, can participate in our hashtag campaign to spread the word and earn additional TLOS tokens.</p>	
 						<p>
-							<em>
-								Note: In order to receive their Free TLOS tokens for community members, who opted to keep their ERC-20 Tokens on an exchange during the Genesis Snapshot, the exchange must agree to list TLOS.  This is an opportunity to be rewarded for using your influence to get those tokens. Payouts for this campaign will be paid according to the following guidelines:
-							</em>
-						</p>	
+							<em>Payouts for this campaign will be paid according to the following guidelines:</em>
+						</p>
 					</Col>
 					<Col md={4}>
 						<img className='img-responsive' src={hashtag_graphic} alt='hashtag campaign' />
@@ -82,7 +82,7 @@ const ExchangeParticipation = () => {
 						<h2>How to Participate</h2>
 						<ul>
 							<li>
-								Community members will need to contact the exchanges, via the following social media channels to request their tokens:
+								Community members will need to contact the exchanges via the following social media channels to request their tokens:
 								<ul className='sublist'>
 									<li><a href='https://facebook.com' target='_blank' rel='noopener noreferrer'>Facebook</a></li>
 									<li><a href='https://twitter.com' target='_blank' rel='noopener noreferrer'>Twitter</a></li>
@@ -93,7 +93,7 @@ const ExchangeParticipation = () => {
 								Using the following hashtags:  <strong>#IWantMyTLOS</strong>, <strong>#HelloTelos</strong> and <strong>#TLOS</strong>
 							</li>
 							<li>
-								Participants must also tag at least one exchange with their official account name @officialname. If your exchange is not listed below simply look it up on your desired platform. Suggested exchanges are:
+								Tag at least one exchange with their official account name @officialname. If your exchange is not listed below, simply look it up on your desired platform. Suggested exchanges are:
 								<ul className='sublist'>
 									<li>@Binance (Twitter)</li>
 									<li>@Bitfinex (Twitter)</li>

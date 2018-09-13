@@ -76,12 +76,12 @@ const DevelopmentCode = () => {
 				<li className='yes'>Inverse-weighted voting</li>
 				<li className='yes'>BP rewards (EBPs receive X, Standby BPs receive 50% of X)</li>
 				<li className='in_progress'>Removal of non-producing BPs</li>
-				<li className='in_progress'>Scheduled standby BP rotations</li>
-				<li className='no'>Rewrite regproducer to include BP json format</li>
-				<li className='no'>Refactor unit tests</li>
+				<li className='yes'>Scheduled standby BP rotations</li>
+				<li className='in_progress'>Rewrite regproducer to include BP json format</li>
+				<li className='no'>Enforce BP minimums</li>
+				<li className='in_progress'>Refactor unit tests</li>
 				<li className='no'>Validate chain functionality</li>
 				<li className='no'>Test chain security</li>
-				<li className='no'>Enforce BP minimums</li>
 			</ul>
 		</section>
 	);
@@ -117,7 +117,7 @@ const Contracts = () => {
 						<li>Arbitration mechanisms (voting, candidates, etc.)</li>
 					</ul>
 				</li>
-				<li className='no'>Worker proposal contract</li>
+				<li className='in_progress'>Worker proposal contract</li>
 				<li className='no'>BP Adjudication contract</li>
 			</ul>
 		</section>

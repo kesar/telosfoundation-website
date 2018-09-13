@@ -1,5 +1,7 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
+import meeting_icon from '../../img/meeting_icon.png';
+import gavel_icon from '../../img/gavel_icon.png';
 
 import '../../styles/arbitrator.css';
 
@@ -23,6 +25,8 @@ const arbitratorMail = {
 	body: 'Dear Members of the Telos Network,%0D%0A%0D%0AI am a legal professional who is interested in joining the Telos Network as an Arbitrator. Please send me more information about the role requirements, selection process, contract terms and compensation.%0D%0A%0D%0AThank you,%0D%0A%0D%0A[Signature]'
 };
 
+const ARBITRATION_DOCUMENT = 'http://resources.telosfoundation.io/Telos Network Arbitration Process.pdf';
+
 const Arbitrator = () => {
 	return (
 		<div className='arbitrators'>
@@ -45,11 +49,19 @@ const ArbitratorIntro = () => {
 			<Row>
 				<Col md={12}>
 					<h1>Network Arbitrator Program</h1>
-					<p>The Telos Network is the world’s first governed blockchain with arbitrators elected by its members. We are looking for legal professionals from around the world to help us build this system into the model for all future blockchain governance and arbitration.</p>
-					<p>Arbitrators may be individuals, teams, or firms who nominate themselves by executing the regarbitrator contract. Arbitrators are selected by the votes of TLOS token-holders and are paid arbitration fees in TLOS. At launch, this page will hold the campaign statements of every arbitrator candidate to facilitate voting. At present, the site shows sample statements and statements from any who notify us of their intent to campaign.</p>
-					<p>Arbitration on Telos follows the process documented in the <a href='#'>Telos Arbitration Process Document</a>.</p>
-					<p>Arbitrators must meet the <a href='#'>Telos Arbitrators Minimum Requirements</a>.</p>
-					<p>Arbitrators agree to the terms of the <a href='#'>regarbitrator human-language contract</a>.</p>
+					
+					<div className='intro_row'>
+						<img src={gavel_icon} alt='' className='gavel_icon' />
+						<p>The Telos Network is the world’s first governed blockchain with arbitrators elected by its members. We are looking for legal professionals from around the world to help us build this system into the model for all future blockchain governance and arbitration.</p>
+					</div>
+					<div className='intro_row'>
+						<p>Arbitrators may be individuals, teams, or firms who nominate themselves by executing the regarbitrator contract. Arbitrators are selected by the votes of TLOS token-holders and are paid arbitration fees in TLOS. At launch, this page will hold the campaign statements of every arbitrator candidate to facilitate voting. At present, the site shows sample statements and statements from any who notify us of their intent to campaign.</p>
+						<img src={meeting_icon} alt='' className='meeting_icon' />
+					</div>
+					
+					<p>Arbitration on Telos follows the process documented in the <a href={ARBITRATION_DOCUMENT} target='_blank' rel='noopener noreferrer'>Telos Arbitration Process Document</a>.</p>
+					<p>Arbitrators must meet the <a href='#' target='_blank' rel='noopener noreferrer'>Telos Arbitrators Minimum Requirements</a>.</p>
+					<p>Arbitrators agree to the terms of the <a href='#' target='_blank' rel='noopener noreferrer'>regarbitrator human-language contract</a>.</p>
 					<div className='arbitrator_intro_contact'>
 						<h3>If you are interested in becoming an arbitrator on the Telos Network, please contact us.</h3>
 						<a href={`mailto:${address}?subject=${subject}&body=${body}`} className='btn btn-lg btn-primary'>CONTACT US</a>
