@@ -1,10 +1,14 @@
 .language_toggle_li_desktop {
 	position: relative;
-	padding: 0 15px;
+	padding: 38px 15px;
 	font-size: 1.2em;
 	display: block;
-	padding-top: 38px;
-	padding-bottom: 38px;
+}
+
+@media screen and (max-width: 800px){
+	.language_toggle_li_desktop {
+		padding: 38px 8px;
+	}
 }
 
 @media screen and (max-width: 767px) {

@@ -116,6 +116,18 @@ class Navigation extends Component {
 							DOWNLOADS
 						</a>
 					</li>
+					<li className='side_nav_item_mobile'>
+						<a
+							href='/arbitrators'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/arbitrators');
+								this.handleCloseNav();
+							}}
+						>
+							ARBITRATOR PROGRAM
+						</a>
+					</li>
 				</Nav>
 			  </Navbar.Collapse>
 			</Navbar>

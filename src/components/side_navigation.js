@@ -36,6 +36,18 @@ const SideNavigation = (props) => {
 						DOWNLOADS
 					</a>
 				</li>
+				<li>
+					<a
+						href='/arbitrators'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/arbitrators');
+							props.toggleSideNav(false);
+						}}
+					>
+						ARBITRATOR PROGRAM
+					</a>
+				</li>
 			</ul>
 		</nav>
 	);

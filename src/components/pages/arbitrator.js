@@ -25,7 +25,9 @@ const arbitratorMail = {
 	body: 'Dear Members of the Telos Network,%0D%0A%0D%0AI am a legal professional who is interested in joining the Telos Network as an Arbitrator. Please send me more information about the role requirements, selection process, contract terms and compensation.%0D%0A%0D%0AThank you,%0D%0A%0D%0A[Signature]'
 };
 
-const ARBITRATION_DOCUMENT = 'http://resources.telosfoundation.io/Telos Network Arbitration Process.pdf';
+//const ARBITRATION_DOCUMENT = 'http://resources.telosfoundation.io/Telos Network Arbitration Process.pdf';
+
+const ARBITRATION_DOCUMENT_LINK = 'https://medium.com/@teloslogical/fyc-telos-network-arbitration-process-e4ed6f9e4ace';
 
 const Arbitrator = () => {
 	return (
@@ -59,9 +61,9 @@ const ArbitratorIntro = () => {
 						<img src={meeting_icon} alt='' className='meeting_icon' />
 					</div>
 					
-					<p>Arbitration on Telos follows the process documented in the <a href={ARBITRATION_DOCUMENT} target='_blank' rel='noopener noreferrer'>Telos Arbitration Process Document</a>.</p>
-					<p>Arbitrators must meet the <a href='#' target='_blank' rel='noopener noreferrer'>Telos Arbitrators Minimum Requirements</a>.</p>
-					<p>Arbitrators agree to the terms of the <a href='#' target='_blank' rel='noopener noreferrer'>regarbitrator human-language contract</a>.</p>
+					<p>Arbitration on Telos follows the process documented in the <a href={ARBITRATION_DOCUMENT_LINK} target='_blank' rel='noopener noreferrer'>Telos Arbitration Process Document</a>.</p>
+					<p>Arbitrators must meet the <span className='orange'>Telos Arbitrators Minimum Requirements</span>. (Coming soon)</p>
+					<p>Arbitrators agree to the terms of the <span className='orange'>regarbitrator human-language contract</span>. (Coming soon)</p>
 					<div className='arbitrator_intro_contact'>
 						<h3>If you are interested in becoming an arbitrator on the Telos Network, please contact us.</h3>
 						<a href={`mailto:${address}?subject=${subject}&body=${body}`} className='btn btn-lg btn-primary'>CONTACT US</a>
@@ -110,7 +112,7 @@ const ArbitratorCandidate = ({cand_name, cand_vote_name, cand_description, cand_
 				</Col>
 				<Col md={9} sm={8}>
 					<div className='arbitrator_candidate_content'>
-						<h3>{cand_name}</h3>
+						<h3>{cand_name} <span className='orange'>(Example)</span></h3>
 						<h4>{cand_description}</h4>
 						<p>{cand_statement}</p>
 						<p>Vote for: <span className='candidate_vote_name'>{cand_vote_name}</span></p>
