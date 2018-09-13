@@ -86,6 +86,8 @@ class LanguageToggleDesktop extends Component {
 					onClick={e => {
 						e.preventDefault();
 						this.props.selectLanguage(lang.value);
+						//write to local storage
+						window.localStorage.setItem('telos_language', lang.value);
 						this.setState({languageToggleOpen: false});
 					}}
 				>
