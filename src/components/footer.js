@@ -37,7 +37,7 @@ export default class Footer extends Component {
 						<Col sm={4}>
 							<div className='footer_links'>
 								<ul>
-									{/*<li>
+									<li>
 										<a 
 											href='#'
 											onClick={e => {
@@ -48,7 +48,7 @@ export default class Footer extends Component {
 										>
 											Privacy Policy
 										</a>
-									</li>*/}
+									</li>
 									<li>
 										<a href='mailto:hello@telosfoundation.io'>hello@telosfoundation.io</a>
 									</li>
