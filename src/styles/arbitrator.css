@@ -60,16 +60,6 @@
 	text-decoration: none;
 }
 
-#arbitrator_intro .gavel_icon {
-	width: 150px;
-	margin-right: 35px;
-}
-
-#arbitrator_intro .meeting_icon {
-	width: 100px;
-	margin-left: 50px;
-}
-
 @media screen and (max-width: 767px){
 	#arbitrator_intro .gavel_icon {
 		display: none;
@@ -81,15 +71,29 @@
 }
 
 #arbitrator_intro .intro_row {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-start;
 	margin-bottom: 1.3em;
+	display: block;
+	overflow: hidden;
 }
 
-#arbitrator_intro .intro_row:last-child {
-	margin-bottom: 0;
+#arbitrator_intro .intro_row p {
+	display: inline;
+}
+
+#arbitrator_intro .gavel_icon {
+	display: inline;
+	width: 150px;
+	height: auto;
+	float: left;
+	margin-right: 35px;
+}
+
+#arbitrator_intro .meeting_icon {
+	display: inline;
+	width: 100px;
+	height: auto;
+	float: right;
+	margin-left: 50px;
 }
 
 .arbitrator_intro_contact {

@@ -110,7 +110,6 @@ class LanguageToggleDesktop extends Component {
 				>
 					{currentLanguage.name}
 				</span>
-				{/*this.state.languageToggleOpen ? <div className='language_menu'>{languageMenu}</div> : ''*/}
 				<CSSTransition
 					in={this.state.languageToggleOpen}
 					timeout={250}
