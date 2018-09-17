@@ -50,7 +50,7 @@ const ArbitratorIntro = () => {
 		<section id='arbitrator_intro'>
 			<Row>
 				<Col md={12}>
-					<h1>Network Arbitrator Program</h1>
+					<h1>Arbitrator Program</h1>
 					
 					<div className='intro_row'>
 						<img src={gavel_icon} alt='' className='gavel_icon' />

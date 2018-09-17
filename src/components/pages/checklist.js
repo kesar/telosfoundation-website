@@ -136,7 +136,7 @@ const Tools = () => {
 						<li>Validate Wallet Security</li>
 					</ul>
 				</li>
-				<li className='no'>Block Explorer</li>
+				<li className='in_progress'>Block Explorer</li>
 			</ul>
 		</section>
 	);
