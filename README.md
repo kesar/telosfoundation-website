@@ -1,7 +1,9 @@
 ## Adding a language:
 first value in json object is "language".  value must match file name.  For example, en.json, "language": "en", spanish.json, "language": "spanish"
 
-add option to select in `src/components/language_toggle.js` component.  Option value = language.  example:
+#### Mobile
+
+add option to select in `src/components/language_toggle_mobile.js` component.  Option value = language.  example:
 
 ``` html
 <option value='en'>ENGLISH</option>
@@ -25,6 +27,20 @@ const get_flag = () => {
 			break;
 			...
 ```
+
+#### Desktop
+
+In the `language_toggle_desktop.js` component, import the flag.  Add the language and flag to the languageOptions array:
+
+``` javascript
+{
+	value: 'en',
+	name: 'ENGLISH',
+	flag: english_flag
+}
+```
+
+where 'ENGLISH' is what will be displayed in the language options menu, and 'en' is the name of the language/json file.
 
 I think that's it.
 
