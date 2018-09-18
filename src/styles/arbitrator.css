@@ -60,16 +60,6 @@
 	text-decoration: none;
 }
 
-@media screen and (max-width: 767px){
-	#arbitrator_intro .gavel_icon {
-		display: none;
-	}
-
-	#arbitrator_intro .meeting_icon {
-		display: none;
-	}
-}
-
 #arbitrator_intro .intro_row {
 	margin-bottom: 1.3em;
 	display: block;
@@ -94,6 +84,16 @@
 	height: auto;
 	float: right;
 	margin-left: 50px;
+}
+
+@media screen and (max-width: 767px){
+	#arbitrator_intro .gavel_icon {
+		display: none;
+	}
+
+	#arbitrator_intro .meeting_icon {
+		display: none;
+	}
 }
 
 .arbitrator_intro_contact {

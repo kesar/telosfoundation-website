@@ -14,7 +14,12 @@ const arbitratorCandidates = [
 		cand_vote_name: 'arbmikesmith',
 		cand_description: 'Licensed Attorney, Maine Bar Association, USA.',
 		cand_statement: 'I am passionate about law and blockchain. Serving as one of the first arbitrators on Telos would allow me to bridge these interests. I graduated from the University of Vermont Law School where I served on law review. I work with a number of computer software companies in my practice. I have been involved in blockchain since late 2016 as an investor and POS staker. I admit that this area is still somewhat new to me but I will strive to be honest and fair, to hear from all parties in a case, and to seek to thoroughly understand the technical issues involved in any case before ruling.',
-		cand_image: face_placeholder
+		cand_image: face_placeholder,
+		cand_languages: [
+			'English',
+			'Spanish',
+			'Tagalog'
+		]
 	}
 ];
 
@@ -90,7 +95,8 @@ const ArbitratorCandidates = () => {
 										cand_vote_name={arb.cand_vote_name}
 										cand_description={arb.cand_description}
 										cand_statement={arb.cand_statement}
-										cand_image={arb.cand_image} />
+										cand_image={arb.cand_image}
+										cand_languages={arb.cand_languages} />
 								);
 							})
 						}
@@ -101,7 +107,7 @@ const ArbitratorCandidates = () => {
 	);
 };
 
-const ArbitratorCandidate = ({cand_name, cand_vote_name, cand_description, cand_statement, cand_image}) => {
+const ArbitratorCandidate = ({cand_name, cand_vote_name, cand_description, cand_statement, cand_image, cand_languages}) => {
 	return (
 		<div className='arbitrator_candidate'>
 			<Row>
@@ -115,6 +121,8 @@ const ArbitratorCandidate = ({cand_name, cand_vote_name, cand_description, cand_
 						<h3>{cand_name} <span className='orange'>(Example)</span></h3>
 						<h4>{cand_description}</h4>
 						<p>{cand_statement}</p>
+						<p>Languages:  {cand_languages.join(', ')}
+						</p>
 						<p>Vote for: <span className='candidate_vote_name'>{cand_vote_name}</span></p>
 					</div>
 				</Col>
