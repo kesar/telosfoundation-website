@@ -5,6 +5,7 @@ import RewardsTranslate from './pages/rewards_translate'; //component that uses 
 import Checklist from './pages/checklist';
 import Download from './pages/download';
 import Arbitrator from './pages/arbitrator';
+import RewardsSubmission from './pages/rewards_submission';
 import {connect} from 'react-redux';
 import {Switch, Route, withRouter} from 'react-router-dom';
 import '../styles/body.css';
@@ -15,6 +16,7 @@ const Body = ({site_content}) => {
 		<main className='main'>
 
 			<Switch>
+				<Route path='/rewards/submission' component={RewardsSubmission} />
 				<Route path='/rewards' component={RewardsTranslate} />
 				<Route path='/exchange_outreach' component={ExchangeOutreach} />
 				<Route path='/iwantmytlos' component={ExchangeOutreach} />
