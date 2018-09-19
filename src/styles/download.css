@@ -28,7 +28,7 @@
 }
 
 #download_wallets {
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 }
 
 #download_wallets h2,
@@ -40,11 +40,72 @@
 	font-size: 1.5em;
 	text-align: center;
 	font-weight: 400;
-	margin-bottom: 25px;
+	margin-bottom: 125px;
+}
+
+@media screen and (max-width: 767px){
+	#download_wallets h3 {
+		margin-bottom: 75px;
+	}
 }
 
 #download_wallets > .row {
 	padding-top: 50px;
+}
+
+#download_wallets .download_buttons {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#download_wallets .download_buttons li {
+	flex: 0 0 50%;
+	max-width: 50%;
+}
+
+#download_wallets .download_buttons li:nth-child(2n + 1) {
+	padding-right: 15px;
+}
+
+#download_wallets .download_buttons li:nth-child(2n) {
+	padding-left: 15px;
+}
+
+.download_page #download_wallets .btn-primary {
+	background-color: #ed4a2e;
+	border-color: transparent;
+	transition: background-color 0.15s ease;
+	font-size: 1.5em;
+	padding: 5px 0;
+	border-radius: 12px;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+.download_page #download_wallets .btn-primary:hover {
+	background-color: #872311;
+}
+
+.download_page #download_wallets .btn-primary:active,
+.download_page #download_wallets .btn-primary:focus {
+	outline: transparent;
+}
+
+@media screen and (max-width: 767px){
+	.download_page #download_wallets .btn-primary {
+		font-size: 1.25em;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.download_page #download_wallets .btn-primary {
+		font-size: 1.12em;
+	}	
 }
 
 .download_document_container a {
@@ -147,12 +208,12 @@
 
 .squirrel_content {
 	text-align: center;
-	padding-top: 100px;
+	/*padding-top: 100px;*/
 }
 
 @media screen and (max-width: 767px){
 	.squirrel_content {
-		padding-top: 25px;
+		/*padding-top: 25px;*/
 	}
 }
 

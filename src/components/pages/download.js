@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Row, Col} from 'react-bootstrap';
+import {Grid, Row, Col, ButtonGroup} from 'react-bootstrap';
 import BannerModal from '../modals/banner_modal';
 import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 import pdf_img from '../../img/download_pdf_icon.png';
@@ -81,14 +81,42 @@ const Wallets = () => {
 				<Col sm={7}>
 					<div className='squirrel_content'>
 						<p>Sqrl is a fully functional light wallet designed for the TELOS blockchain. This application can be used to connect to a remote TELOS API endpoint to perform producer voting actions and common wallet commands.</p>
-						<a 
-							href='https://github.com/Telos-Foundation/Sqrl' 
-							className='btn btn-lg btn-primary' 
-							target='_blank' 
-							rel='noopener noreferrer'
-						>
-							DOWNLOAD
-						</a>
+						<ul className='download_buttons'>
+							<li>
+								<a
+									href='https://github.com/Telos-Foundation/Sqrl/archive/0.5.2.tar.gz'
+									className='btn btn-primary'
+								>
+									<i className='fa fa-linux'></i>  DOWNLOAD
+								</a>
+							</li>
+							<li>
+								<a
+									href='https://github.com/Telos-Foundation/Sqrl/releases/download/0.5.2/mac-Sqrl-0.5.2.dmg'
+									className='btn btn-primary'
+								>
+									<i className='fa fa-apple'></i>  DOWNLOAD
+								</a>
+							</li>
+							<li>
+								<a
+									href='https://github.com/Telos-Foundation/Sqrl/releases/download/0.5.2/win-Sqrl-0.5.2.exe'
+									className='btn btn-primary'
+								>
+									<i className='fa fa-windows'></i>  DOWNLOAD
+								</a>
+							</li>
+							<li>
+								<a 
+									href='https://github.com/Telos-Foundation/Sqrl' 
+									className='btn btn-primary' 
+									target='_blank' 
+									rel='noopener noreferrer'
+								>
+									<i className='fa fa-github'></i>  SOURCE
+								</a>
+							</li>
+						</ul>
 					</div>
 				</Col>
 			</Row>
