@@ -70,7 +70,6 @@ class LanguageToggleDesktop extends Component {
 	}
 
 	render(){
-		console.log(this.state.languageToggleOpen);
 		if(!this.props.site_content){
 			return <div></div>;
 		}

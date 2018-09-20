@@ -1,0 +1,135 @@
+.token_recovery {
+	padding-bottom: 150px;
+}
+
+.token_recovery ul li {
+	font-size: 1em;
+}
+
+.token_recovery li p {
+	font-size: 1em;
+}
+
+.token_recovery a {
+	color: #f3853e;
+	text-decoration: none;
+	font-size: 1em;
+	transition: color 0.25s ease;
+}
+
+.token_recovery a:hover,
+.token_recovery a:active {
+	color: #C0520B;
+	text-decoration: underline;
+}
+
+.token_recovery a:focus {
+	color: #f3853e;
+}
+
+#token_recovery_intro {
+	margin-bottom: 35px;
+}
+
+#token_recovery_intro h1 {
+	font-size: 4.5em;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+@media screen and (max-width: 767px){
+	#token_recovery_intro h1 {
+		font-size: 3em;
+	}
+}
+
+.recovery_steps {
+	padding-top: 50px;
+}
+
+@media screen and (max-width: 991px){
+	.recovery_steps {
+		margin-left: -40px;
+	}
+}
+
+.recovery_step img {
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+
+.recovery_step h4 {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+#token_recovery_process_one {
+	padding-bottom: 50px;
+}
+
+.process_section h3 {
+	text-align: center;
+	font-size: 2.5em;
+	margin-bottom: 20px;
+} 
+
+.process_section header {
+	background: #c2beae;
+	padding: 25px 0;
+	margin-bottom: 25px;
+}
+
+.process_section h2 {
+	margin: 0;
+	color: #fff;
+}
+
+.process_section li {
+	font-size: 24px;
+	overflow-wrap: break-word;
+  	word-wrap: break-word;
+}
+
+.process_section li ul li {
+	list-style-type: disc;
+}
+
+.process_message {
+	color: #b6ab97;
+	font-size: 18px;
+	padding: 18px 0;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.process_message ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.process_section .process_message ul li {
+	font-size: 18px;
+	list-style-type: none;
+}
+
+.ether_screenshots .recovery_step {
+	margin-left: -40px;
+}
+
+@media screen and (max-width: 991px){
+	.ether_screenshots .recovery_step {
+		margin-left: -80px;
+	}
+}
+
+.token_recovery_password {
+	padding: 150px 0;
+	min-height: 1000px;
+}
