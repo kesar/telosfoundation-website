@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
     "react": "^16.4.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^0.32.1",

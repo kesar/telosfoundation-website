@@ -75,7 +75,7 @@ const DevelopmentCode = () => {
 				<li className='yes'>Claim rewards improvements</li>
 				<li className='yes'>Inverse-weighted voting</li>
 				<li className='yes'>BP rewards (EBPs receive X, Standby BPs receive 50% of X)</li>
-				<li className='in_progress'>Removal of non-producing BPs</li>
+				<li className='yes'>Removal of non-producing BPs</li>
 				<li className='yes'>Scheduled standby BP rotations</li>
 				<li className='in_progress'>Rewrite regproducer to include BP json format</li>
 				<li className='no'>Enforce BP minimums</li>
@@ -129,7 +129,7 @@ const Tools = () => {
 		<section id='tools_cl'>
 			<h3>Tools</h3>
 			<ul className='top_level'>
-				<li className='in_progress with_sublevel'>
+				<li className='yes with_sublevel'>
 					Wallet App
 					<ul className='sub_level'>
 						<li>Validate Voting Transactions in wallet</li>
@@ -153,9 +153,9 @@ const Miscellaneous = () => {
 				<li className='no'>Telos Foundation System</li>
 				<li className='in_progress'>Launch group rewards system</li>
 				<li className='yes'>Verified capped genesis snapshot</li>
-				<li className='no'>At least 40 BP candidates have successfully participated in test launches</li>
+				<li className='in_progress'>At least 40 BP candidates have successfully participated in test launches</li>
 				<li className='no'>Launching ABPs agreed upon (six across globe)</li>
-				<li className='no'>Lost tokens processed</li>
+				<li className='in_progress'>Lost tokens processed</li>
 				<li className='no'>Two testnets up, public and private staging testnet</li>
 				<li className='no'>Define final TLOS token balance (EOS snapshot + Rewards +/- lost/compromised keys)</li>
 			</ul>
