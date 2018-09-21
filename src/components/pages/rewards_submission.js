@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
-import {Grid, Row, Col, ButtonGroup, Button, FormGroup, FormControl} from 'react-bootstrap';
+import {Grid, Row, Col, ButtonGroup, Button, FormGroup, FormControl, Checkbox} from 'react-bootstrap';
 import '../../styles/rewards_submission.css';
+
+const FORM_SUBMIT_ENDPOINT = 'http://localhost:8080/api/v1/submissions/create';
 
 export default class RewardsSubmission extends Component {
 
@@ -28,6 +30,7 @@ export default class RewardsSubmission extends Component {
 		this.handlePlatformChange = this.handlePlatformChange.bind(this);
 		this.handleUrlChange = this.handleUrlChange.bind(this);
 		this.handleDetailsChange = this.handleDetailsChange.bind(this);
+		this.handleTermsChange = this.handleTermsChange.bind(this);
 
 		this.handleAddSubmission = this.handleAddSubmission.bind(this);
 		this.handleRemoveSubmission = this.handleRemoveSubmission.bind(this);
@@ -71,6 +74,10 @@ export default class RewardsSubmission extends Component {
 			return {...sub, details: e.target.value};
 		});
 		this.setState({submissions: newSubmissions});
+	}
+
+	handleTermsChange(e){
+		this.setState({termsAccepted: e.target.value});
 	}
 
 	handleAddSubmission(){
@@ -161,7 +168,8 @@ export default class RewardsSubmission extends Component {
 
 	render(){
 		const {
-			email
+			email,
+			termsAccepted
 		} = this.state;
 
 		return (
@@ -182,7 +190,16 @@ export default class RewardsSubmission extends Component {
 								</FormGroup>
 
 								{this.getSubmissions()}
-							
+								
+								<FormGroup>
+									<Checkbox
+										required
+										checked={termsAccepted}
+										onChange={this.handleTermsChange}
+									>
+										I Accept the TLOS Rewards terms
+									</Checkbox>
+								</FormGroup>
 								<div className='text-right'>
 									<ButtonGroup>
 										<Button
