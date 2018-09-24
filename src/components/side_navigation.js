@@ -48,6 +48,18 @@ const SideNavigation = (props) => {
 						ARBITRATOR PROGRAM
 					</a>
 				</li>
+				<li>
+					<a
+						href='/recovery'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/recovery');
+							props.toggleSideNav(false);
+						}}
+					>
+						TOKEN RECOVERY
+					</a>
+				</li>
 			</ul>
 		</nav>
 	);

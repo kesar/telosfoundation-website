@@ -14,31 +14,31 @@ import banner_four from '../../img/banners/Splash Banner_Telos-Medium_generic_4_
 import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN} from '../../config/constants';
 import '../../styles/download.css';
 
-const sg_en = 'http://resources.telosfoundation.io/Telos_Style Guide_2018.pdf';
+const sg_en = 'https://resources.telosfoundation.io/Telos_Style Guide_2018.pdf';
 
 const splashBanners = [
 	{
 		name: 'banner one',
 		image: banner_one,
-		download: 'http://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_1.jpg',
+		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_1.jpg',
 		downloadName: 'Splash Banner_Telos-Medium_generic_1.jpg'
 	},
 	{
 		name: 'banner two',
 		image: banner_two,
-		download: 'http://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_2.jpg',
+		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_2.jpg',
 		downloadName: 'Splash Banner_Telos-Medium_generic_2.jpg'
 	},
 	{
 		name: 'banner three',
 		image: banner_three,
-		download: 'http://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_3.jpg',
+		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_3.jpg',
 		downloadName: 'Splash Banner_Telos-Medium_generic_3.jpg'
 	},
 	{
 		name: 'banner four',
 		image: banner_four,
-		download: 'http://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_4.jpg',
+		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_4.jpg',
 		downloadName: 'Splash Banner_Telos-Medium_generic_4.jpg'
 	}
 ];
@@ -177,10 +177,10 @@ class Documents extends Component {
 						</div>
 						<div className='download_document_container'>
 							<div className='download_document'>
-								<a href='http://resources.telosfoundation.io/Telos_Logos_and_Icons.zip'>Telos Logo and Icon</a>
+								<a href='https://resources.telosfoundation.io/Telos_Logos_and_Icons.zip'>Telos Logo and Icon</a>
 								<p>A package containing an assortment of file sizes and types for the Telos logo and icon.</p>
 							</div>
-							<a href='http://resources.telosfoundation.io/Telos_Logos_and_Icons.zip'>
+							<a href='https://resources.telosfoundation.io/Telos_Logos_and_Icons.zip'>
 								<img src={zip_img} alt='' className='download_icon' />
 							</a>
 						</div>

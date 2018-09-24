@@ -128,6 +128,18 @@ class Navigation extends Component {
 							ARBITRATOR PROGRAM
 						</a>
 					</li>
+					<li className='side_nav_item_mobile'>
+						<a
+							href='/recovery'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/recovery');
+								this.handleCloseNav();
+							}}
+						>
+							TOKEN RECOVERY
+						</a>
+					</li>
 				</Nav>
 			  </Navbar.Collapse>
 			</Navbar>

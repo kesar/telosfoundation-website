@@ -33,6 +33,8 @@ import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
 import amplified from '../../img/partner_logos/logo_amplified.png';
 import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
 import madrid from '../../img/partner_logos/logo_telos_madrid.png';
+import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
+import telos_dac from '../../img/partner_logos/logo_telos_dac.png';
 
 //white papers
 import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN} from '../../config/constants';
@@ -165,6 +167,14 @@ const partnersArr = [
 		name: 'telos madrid',
 		logo: madrid,
 		url: 'https://telosmadrid.io/'
+	},
+	{
+		name: 'telos dac',
+		logo: telos_dac
+	},
+	{
+		name: 'telos ny',
+		logo: telos_ny
 	}
 ];
 
