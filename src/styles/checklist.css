@@ -43,6 +43,7 @@
 	background-size: auto 18px;
 	background-position: center left;
 	list-style-type: none;
+	position: relative;
 }
 
 .checklist ul.top_level > li.with_sublevel {
@@ -101,4 +102,32 @@
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 15px;
+}
+
+.checklist .info_links {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline;
+	position:absolute;
+	top: -4px;
+}
+
+.checklist .info_links li {
+	display: inline;
+	padding-left: 12px;
+	font-size: 1em;
+}
+
+.checklist .info_links a {
+	
+}
+
+.checklist .info_links img {
+	width: 12px;
+	margin-top: -1px;
+}
+
+.checklist .info_links .fa {
+	font-size: 14px;
 }
