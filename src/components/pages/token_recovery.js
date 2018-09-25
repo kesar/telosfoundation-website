@@ -46,7 +46,7 @@ const recovery_steps = [
 	},
 	{
 		image: step_eight,
-		caption: 'Create your account'
+		caption: 'Creating an account is not necessary, you just need your new keys!'
 	}
 ];
 
@@ -66,59 +66,6 @@ const TokenRecovery = () => {
 		</div>
 	);
 };
-
-// const salt = bcrypt.genSaltSync(10);
-// const RECOVERY_PASSWORD = '$2a$10$GfJotbQ/cy0rg856aCgOGuf1TE3/5Mc/qjMPjoSGLTLthjW8LDKrC';
-
-// class TokenRecovery extends Component {
-
-// 	constructor(){
-// 		super();
-
-// 		this.state = {
-// 			candidate: '',
-// 			passed: false
-// 		};
-// 		this.handleSubmit = this.handleSubmit.bind(this);
-// 	}
-
-// 	handleSubmit(){
-// 		this.setState({
-// 			passed: bcrypt.compareSync(this.state.candidate, RECOVERY_PASSWORD)
-// 		});
-// 	}
-
-// 	render(){
-// 		const {passed, candidate} = this.state;
-
-// 		if(!passed){
-// 			return (
-// 				<div className='token_recovery_password'>
-// 					<Grid>
-// 						<Row>
-// 							<Col md={8} mdOffset={2}>
-// 								<div className='form-group'>
-// 									<input type='password' className='form-control' placeholder='Enter password to view token recovery page' value={candidate} onChange={e => this.setState({candidate: e.target.value})} />
-// 								</div>
-// 								<div className='form-group'>
-// 									<button className='btn btn-default' onClick={this.handleSubmit}>Submit Password</button>
-// 								</div>
-// 							</Col>
-// 						</Row>
-// 					</Grid>
-// 				</div>
-// 			);
-// 		}
-
-// 		return (
-// 			<div className='token_recovery'>
-// 				<TokenRecoveryIntro />
-// 				<TokenRecoveryProcessOne />
-// 				<TokenRecoveryProcessTwo />
-// 			</div>
-// 		);
-// 	}
-// }
 
 const TokenRecoveryIntro = () => {
 	return (
