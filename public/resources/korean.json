@@ -68,11 +68,11 @@
       "import_wallet": "네트워크가 시작되면 SQRL을 통해 지갑을 가져옵니다."
     },
     "recovery_form": {
-      "heading": "Please enter your information",
-      "email_label": "Email (Optional, in case there is a problem)",
-      "ethereum_label": "Ethereum address where your EOS was stored, where we see your pasted-in message",
-      "generated_label": "Newly generated Telos (or EOS) address where you would like your TLOS to be sent",
-      "response": "Thanks for your information."
+      "heading": "본인의 정보를 입력해주세요.",
+      "email_label": "이메일 (문제 발생 시 필요한 이메일)",
+      "ethereum_label": "복사된 메시지를 볼 수 있는 EOS가 저장된 지갑주소",
+      "generated_label": "TLOS를 수령 받고자 하는 새로 생선된 Telos (또는 EOS) 지갑 주소",
+      "response": "감사합니다."
     }
   }
 }
