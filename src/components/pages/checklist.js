@@ -107,12 +107,10 @@ const DevelopmentCode = () => {
 					Enforce BP minimums
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/4' />
 				</li>
-				<li className='in_progress'>
+				<li className='yes'>
 					Refactor unit tests
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/24' />
 				</li>
-				<li className='no'>Validate chain functionality</li>
-				<li className='no'>Test chain security</li>
 			</ul>
 		</section>
 	);
@@ -178,7 +176,7 @@ const Tools = () => {
 						<li>Validate Wallet Security</li>
 					</ul>
 				</li>
-				<li className='in_progress'>Block Explorer</li>
+				<li className='yes'>Block Explorer</li>
 			</ul>
 		</section>
 	);
@@ -189,14 +187,13 @@ const Miscellaneous = () => {
 		<section id='misc_cl'>
 			<h3>Miscellaneous</h3>
 			<ul className='top_level'>
-				<li className='no'>Include snapshot accounts</li>
-				<li className='no'>Validate snapshot accounts</li>
+				<li className='in_progress'>Include snapshot accounts</li>
 				<li className='yes'>
 					Community rewards system
 					<InfoLinks telos_link='https://telosfoundation.io/rewards' />
 				</li>
 				<li className='no'>Telos Foundation System</li>
-				<li className='in_progress'>Launch group rewards system</li>
+				<li className='yes'>Launch group rewards system</li>
 				<li className='yes'>Verified capped genesis snapshot</li>
 				<li className='in_progress'>At least 40 BP candidates have successfully participated in test launches</li>
 				<li className='no'>Launching ABPs agreed upon (six across globe)</li>
@@ -204,8 +201,8 @@ const Miscellaneous = () => {
 					Lost tokens processed
 					<InfoLinks telos_link='https://telosfoundation.io/recovery' />
 				</li>
-				<li className='no'>Two testnets up, public and private staging testnet</li>
-				<li className='no'>Define final TLOS token balance (EOS snapshot + Rewards +/- lost/compromised keys)</li>
+				<li className='in_progress'>Two testnets up, public and private staging testnet</li>
+				<li className='in_progress'>Define final TLOS token balance (EOS snapshot + Rewards +/- lost/compromised keys)</li>
 			</ul>
 		</section>
 	);
