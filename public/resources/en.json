@@ -51,8 +51,8 @@
         "step": "Go to: <a href='https://www.myetherwallet.com/signmsg.html' target='_blank' rel='noopener noreferrer'>www.myetherwallet.com/signmsg.html</a>",
         "sign_in": "Sign in and select the Ethereum wallet that held your EOS tokens.",
         "copy_paste": "Copy/paste this message:",
-        "message": "As the cryptographically verified owner of ethereum address listed below (\"Ethereum Address\"), I attest that I did own the EOS tokens listed on the EOS ERC-20 snapshot associated with this address and that I hereby request that the public key for my account be changed to the new EOS public key below (“New EOS Public Key”) or the Telos Network address equivalent for my corresponding account on the Telos Network. I agree to release the Telos Network and its Members - as well as the members of any blockchain project that may subsequently use this same value snapshot in the future - from any claim arising from this request. The cryptographic signature of this document constitutes my legal digital signature in all jurisdictions.",
-        "etherum": "Ethereum Address:",
+        "message": "As the cryptographically verified owner of ethereum address listed below (\"Ethereum Address\"), I attest that I did own the EOS tokens listed on the EOS ERC-20 snapshot associated with this address and that I hereby request that the public key for my account be changed to the new EOS public key below (\"New EOS Public Key\") or the Telos Network address equivalent for my corresponding account on the Telos Network. I agree to release the Telos Network and its Members - as well as the members of any blockchain project that may subsequently use this same value snapshot in the future - from any claim arising from this request. The cryptographic signature of this document constitutes my legal digital signature in all jurisdictions.",
+        "ethereum": "Ethereum Address:",
         "public_key": "New EOS Public Key:",
         "screenshot_caption": "Enter your own Ethereum address where you held your EOS tokens in \"Ethereum Address\" and your new SQRL public key into \"New EOS Public Key\"",
         "email_us": "Email us your information so we can research your claim."
@@ -69,9 +69,10 @@
     },
     "recovery_form": {
       "heading": "Please enter your information",
-      "email_placholder": "Email (Optional)",
-      "ethereum_placeholder": "Ethereum Address",
-      "generated_placeholder": "Newly generated EOS or TLOS public key"
+      "email_label": "Email (Optional, in case there is a problem)",
+      "ethereum_label": "Ethereum address where your EOS was stored, where we see your pasted-in message",
+      "generated_label": "Newly generated Telos (or EOS) address where you would like your TLOS to be sent",
+      "response": "Thanks for your information."
     }
   }
 }

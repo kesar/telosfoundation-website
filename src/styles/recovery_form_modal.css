@@ -16,3 +16,11 @@
 .recovery_form .btn-primary:focus {
 	outline: transparent;
 }
+
+.recovery_form_response {
+	min-height: 187px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}

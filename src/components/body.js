@@ -5,8 +5,8 @@ import RewardsTranslate from './pages/rewards_translate'; //component that uses 
 import Checklist from './pages/checklist';
 import Download from './pages/download';
 import Arbitrator from './pages/arbitrator';
-import TokenRecovery from './pages/token_recovery';
-//import TokenRecovery from './pages/token_recovery_translate';
+//import TokenRecovery from './pages/token_recovery';
+import TokenRecovery from './pages/token_recovery_translate';
 import {connect} from 'react-redux';
 import {Switch, Route, withRouter} from 'react-router-dom';
 import '../styles/body.css';
@@ -23,8 +23,8 @@ const Body = ({site_content}) => {
 				<Route path='/launch' component={Checklist} />
 				<Route path='/downloads' render={() => <Download language={site_content.language} />} />
 				<Route path='/arbitrators' component={Arbitrator} />
-				{/*<Route path='/recovery' render={() => <TokenRecovery token_recovery={site_content.token_recovery} language={site_content.language} />} />*/}
-				<Route path='/recovery' component={TokenRecovery} />
+				<Route path='/recovery' render={() => <TokenRecovery token_recovery={site_content.token_recovery} language={site_content.language} />} />
+				{/*<Route path='/recovery' component={TokenRecovery} />*/}
 				<Route path='/' render={() => <FrontPage landing_page={site_content.landing_page} language={site_content.language} />} />
 			</Switch>
 		</main>

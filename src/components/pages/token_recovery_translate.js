@@ -68,7 +68,9 @@ const TokenRecovery = ({language, token_recovery}) => {
 	return (
 		<div className='token_recovery'>
 			<TokenRecoveryIntro intro={token_recovery.intro} />
-			<TokenRecoveryProcessOne process={token_recovery.process_one} />
+			<TokenRecoveryProcessOne
+				process={token_recovery.process_one}
+				recovery_form={token_recovery.recovery_form} />
 			<TokenRecoveryProcessTwo process={token_recovery.process_two} />
 		</div>
 	);
@@ -104,7 +106,10 @@ class TokenRecoveryProcessOne extends Component {
 	}
 
 	render(){
-		const {process} = this.props;
+		const {
+			process,
+			recovery_form
+		} = this.props;
 		const {
 			step_two,
 			step_three
@@ -195,7 +200,10 @@ class TokenRecoveryProcessOne extends Component {
 						</Col>
 					</Row>
 				</Grid>
-				<RecoveryFormModal show={this.state.showFormModal} onHide={() => this.setState({showFormModal: false})} />
+				<RecoveryFormModal
+					show={this.state.showFormModal}
+					onHide={() => this.setState({showFormModal: false})}
+					recovery_form={recovery_form} />
 			</section>
 		);
 	}

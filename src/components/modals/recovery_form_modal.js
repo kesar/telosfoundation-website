@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
-import {Modal, FormGroup, FormControl, Button} from 'react-bootstrap';
+import {Modal, FormGroup, FormControl, ControlLabel, Button} from 'react-bootstrap';
+import axios from 'axios';
+import {RECOVERY_FORM_ENDPOINT} from '../../config/constants';
+
 import '../../styles/recovery_form_modal.css';
 
 export default class RecoveryFormModal extends Component {
@@ -15,14 +18,43 @@ export default class RecoveryFormModal extends Component {
 
 		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleEmailChange = this.handleEmailChange.bind(this);
-		this.handleEtherumChange = this.handleEtherumChange.bind(this);
+		this.handleEthereumChange = this.handleEthereumChange.bind(this);
 		this.handleGeneratedChange = this.handleGeneratedChange.bind(this);
 	}
 
 	handleSubmit(e){
 		e.preventDefault();
 		//validate and submit
-		console.log(JSON.stringify(this.state));
+
+		const {
+			email,
+			ethereumAddress,
+			newlyGenerated
+		} = this.state;
+
+		//validation will go here.
+		if(
+			ethereumAddress == '' ||
+			newlyGenerated == ''
+		){
+			alert('need both keys');
+			return;
+		}
+
+		const formData = {
+			email: email.trim(),
+			ethereumAddress: ethereumAddress.trim(),
+			generatedPublicKey: newlyGenerated.trim()
+		};
+
+		axios.post(
+			RECOVERY_FORM_ENDPOINT,
+			formData
+		).then(res => {
+			console.log(res.data);
+			this.setState({formSubmitted: true});
+		})
+		.catch(error => console.log(error));
 	}
 
 	handleEmailChange(e){
@@ -31,7 +63,7 @@ export default class RecoveryFormModal extends Component {
 		});
 	}
 
-	handleEtherumChange(e){
+	handleEthereumChange(e){
 		this.setState({
 			ethereumAddress: e.target.value
 		});
@@ -43,54 +75,96 @@ export default class RecoveryFormModal extends Component {
 		});
 	}
 
+	renderForm(){
+		const {
+			email_placeholder,
+			ethereum_placeholder,
+			generated_placeholder,
+			email_label,
+			ethereum_label,
+			generated_label
+		} = this.props.recovery_form;
+
+		return (
+        	<div className='recovery_form'>
+            	<form onSubmit={this.handleSubmit}>
+            		<FormGroup>
+            			<ControlLabel
+            				htmlFor='email'
+            			>
+            				{email_label}
+            			</ControlLabel>
+            			<FormControl
+            				id='email'
+            				required={false}
+            				type='email'
+            				value={this.state.email}
+            				onChange={this.handleEmailChange}
+            			/>
+            		</FormGroup>
+            		<FormGroup>
+            			<ControlLabel
+            				htmlFor='ethereumAddress'
+            			>
+            				{ethereum_label}
+            			</ControlLabel>
+            			<FormControl
+            				id='ethereumAddress'
+            				required={true}
+            				type='text'
+            				value={this.state.ethereumAddress}
+            				onChange={this.handleEthereumChange}
+            			/>
+            		</FormGroup>
+            		<FormGroup>
+            			<ControlLabel
+            				htmlFor='generatedKey'
+            			>
+            				{generated_label}
+            			</ControlLabel>
+            			<FormControl
+            				id='generatedKey'
+            				required={true}
+            				type='text'
+            				value={this.state.newlyGenerated}
+            				onChange={this.handleGeneratedChange}
+            			/>
+            		</FormGroup>
+            		<Button 
+            			type='submit'
+            			bsSize='large'
+            			bsStyle='primary'
+            		>
+            			SUBMIT
+            		</Button>
+            	</form>
+        	</div>
+		);
+	}
+
+	renderSubmissionResponse(){
+		const {response} = this.props.recovery_form;
+
+		return (
+			<div className='recovery_form_response'>
+				<h4>{response}</h4>
+			</div>
+		);
+	}
+
 	render(){
+		const {heading} = this.props.recovery_form;
+
 		return (
             <Modal
             	show={this.props.show}
             	onHide={this.props.onHide}
             >
                 <Modal.Header closeButton>
-                    <Modal.Title>Please enter your information</Modal.Title>
+                    <Modal.Title>{heading}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                	<div className='recovery_form'>
-	                	<form onSubmit={this.handleSubmit}>
-	                		<FormGroup>
-	                			<FormControl 
-	                				required={false}
-	                				type='email'
-	                				value={this.state.email}
-	                				placeholder='Email (Optional)'
-	                				onChange={this.handleEmailChange}
-	                			/>
-	                		</FormGroup>
-	                		<FormGroup>
-	                			<FormControl
-	                				required={true}
-	                				type='text'
-	                				value={this.state.ethereumAddress}
-	                				placeholder='Ethereum Address'
-	                				onChange={this.handleEtherumChange}
-	                			/>
-	                		</FormGroup>
-	                		<FormGroup>
-	                			<FormControl
-	                				required={true}
-	                				type='text'
-	                				value={this.state.newlyGenerated}
-	                				placeholder='Newly generated EOS or TLOS public key'
-	                				onChange={this.handleGeneratedChange}
-	                			/>
-	                		</FormGroup>
-	                		<Button 
-	                			type='submit'
-	                			bsSize='large'
-	                			bsStyle='primary'
-	                		>
-	                			SUBMIT
-	                		</Button>
-	                	</form>
-                	</div>
+                	{this.state.formSubmitted ? this.renderSubmissionResponse() : this.renderForm() }
                 </Modal.Body>
             </Modal>
 		);
