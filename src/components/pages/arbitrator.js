@@ -24,7 +24,7 @@ const arbitratorCandidates = [
 	// }
 	{
 		cand_name: 'Marc-Roger Gagné',
-		cand_vote_name: 'arbmarcroger',
+		cand_vote_name: 'arbmarkgagne',
 		cand_description: 'CCIE, CCII, CIPP/G/C, MAPP',
 		cand_statement: [
 			'Marc-Roger Gagné is a prolific Data Governance Advocate who resides in Ottawa, Canada. Throughout the span of nearly two decades, Marc-Roger has been dedicated to providing top-notch policy advice for government and corporate clients alike. He is a member of the Board of Directors of the Privacy and Access Council of Canada since 2010 and a Member of the International Association of Privacy Professionals (817631). Additionally, he holds membership at the Compliance, Governance & Oversight Council, the Law Society of Upper Canada.',
@@ -35,7 +35,8 @@ const arbitratorCandidates = [
 		cand_languages: [
 			'English',
 			'French'
-		]
+		],
+		cand_country: 'Canada'
 	}
 ];
 
@@ -49,6 +50,8 @@ const arbitratorMail = {
 //const ARBITRATION_DOCUMENT = 'http://resources.telosfoundation.io/Telos Network Arbitration Process.pdf';
 
 const ARBITRATION_DOCUMENT_LINK = 'https://medium.com/@teloslogical/fyc-telos-network-arbitration-process-e4ed6f9e4ace';
+const MINIMUM_REQUIREMENTS_LINK = 'https://resources.telosfoundation.io/arbitrator_documents/Telos Arbitrator Minimum Requirements.pdf';
+const REGARB_LINK = 'https://resources.telosfoundation.io/arbitrator_documents/Telos regarb Human-language Contract.pdf';
 
 const Arbitrator = () => {
 	return (
@@ -83,8 +86,8 @@ const ArbitratorIntro = () => {
 					</div>
 					
 					<p>Arbitration on Telos follows the process documented in the <a href={ARBITRATION_DOCUMENT_LINK} target='_blank' rel='noopener noreferrer'>Telos Arbitration Process Document</a>.</p>
-					<p>Arbitrators must meet the <span className='orange'>Telos Arbitrators Minimum Requirements</span>. (Coming soon)</p>
-					<p>Arbitrators agree to the terms of the <span className='orange'>regarbitrator human-language contract</span>. (Coming soon)</p>
+					<p>Arbitrators must meet the <a href={MINIMUM_REQUIREMENTS_LINK} target='_blank' rel='noopener noreferrer'>Telos Arbitrators Minimum Requirements</a>.</p>
+					<p>Arbitrators agree to the terms of the <a href={REGARB_LINK} target='_blank' rel='noopener noreferrer'>regarbitrator human-language contract</a>.</p>
 					<div className='arbitrator_intro_contact'>
 						<h3>If you are interested in becoming an arbitrator on the Telos Network, please contact us.</h3>
 						<a href={`mailto:${address}?subject=${subject}&body=${body}`} className='btn btn-lg btn-primary'>CONTACT US</a>
@@ -112,7 +115,8 @@ const ArbitratorCandidates = () => {
 										cand_description={arb.cand_description}
 										cand_statement={arb.cand_statement}
 										cand_image={arb.cand_image}
-										cand_languages={arb.cand_languages} />
+										cand_languages={arb.cand_languages}
+										cand_country={arb.cand_country} />
 								);
 							})
 						}
@@ -123,7 +127,17 @@ const ArbitratorCandidates = () => {
 	);
 };
 
-const ArbitratorCandidate = ({cand_name, cand_vote_name, cand_description, cand_statement, cand_image, cand_languages}) => {
+const ArbitratorCandidate = (
+		{
+			cand_name,
+			cand_vote_name,
+			cand_description,
+			cand_statement,
+			cand_image,
+			cand_languages,
+			cand_country
+		}
+	) => {
 	return (
 		<div className='arbitrator_candidate'>
 			<Row>
@@ -137,8 +151,8 @@ const ArbitratorCandidate = ({cand_name, cand_vote_name, cand_description, cand_
 						<h3>{cand_name}</h3>
 						<h4>{cand_description}</h4>
 						{cand_statement.map((par, i) => <p key={i}>{par}</p>)}
-						<p>Languages:  {cand_languages.join(', ')}
-						</p>
+						<p>Languages: &nbsp;&nbsp;{cand_languages.join(', ')}</p>
+						<p>Country: &nbsp;&nbsp;{cand_country}</p>
 						<p>Vote for: <span className='candidate_vote_name'>{cand_vote_name}</span></p>
 					</div>
 				</Col>

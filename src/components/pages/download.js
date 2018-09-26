@@ -151,39 +151,62 @@ class Documents extends Component {
 				break;
 		}
 
+		const downloadDocuments = [
+			{
+				document_type: 'pdf',
+				url: wp_url,
+				link_text: 'White Paper',
+				description: 'We are out to create the best blockchain ever - read the white paper to judge for yourself. Join us and build on Telos.'
+			},
+			{
+				document_type: 'pdf',
+				url: 'https://resources.telosfoundation.io/TELOS Electronic Press Kit 25SEPT18.pdf',
+				link_text: 'Electronic Press Kit',
+				description: 'Everything you need to know about Telos in one PDF.'
+			},
+			{
+				document_type: 'pdf',
+				url: sg_en,
+				link_text: 'Telos Style Guide',
+				description: 'A style guide featuring Telos Foundation logos, color palettes and fonts for brand use.'
+			},
+			{
+				document_type: 'zip',
+				url: 'https://resources.telosfoundation.io/Telos_Logos_and_Icons.zip',
+				link_text: 'Telos Logo and Icon',
+				description: 'A package containing an assortment of file sizes and types for the Telos logo and icon.'
+			}
+		];
+
 		return (
 			<section id='download_documents'>
 				<h2>Documents</h2>
 				<hr />
 				<Row>
 					<Col md={8} mdOffset={2}>
-						<div className='download_document_container'>
-							<div className='download_document'>
-								<a href={wp_url}>White Paper</a>
-								<p>We are out to create the best blockchain ever - read the white paper to judge for yourself. Join us and build on Telos.</p>
-							</div>
-							<a href={wp_url}>
-								<img src={pdf_img} alt='' className='download_icon' />
-							</a>
-						</div>
-						<div className='download_document_container'>
-							<div className='download_document'>
-								<a href={sg_en}>Telos Style Guide</a>
-								<p>A style guide featuring Telos Foundation logos, color palettes and fonts for brand use.</p>
-							</div>
-							<a href={sg_en}>
-								<img src={pdf_img} alt='' className='download_icon' />
-							</a>
-						</div>
-						<div className='download_document_container'>
-							<div className='download_document'>
-								<a href='https://resources.telosfoundation.io/Telos_Logos_and_Icons.zip'>Telos Logo and Icon</a>
-								<p>A package containing an assortment of file sizes and types for the Telos logo and icon.</p>
-							</div>
-							<a href='https://resources.telosfoundation.io/Telos_Logos_and_Icons.zip'>
-								<img src={zip_img} alt='' className='download_icon' />
-							</a>
-						</div>
+						{
+							downloadDocuments.map((doc, i) => {
+								if(doc.document_type === 'pdf'){
+									return (
+										<DownloadDocumentPDF
+											key={i}
+											url={doc.url}
+											link_text={doc.link_text}
+											description={doc.description} />
+									);
+								}else{
+									//right now we only have pdf and zip, but might have others in the future.
+									return (
+										<DownloadDocumentZIP
+											key={i}
+											url={doc.url}
+											link_text={doc.link_text}
+											description={doc.description} />
+									);
+								}
+							})
+						}
+
 						<div className='download_banner_container'>
 							<div className='download_banner_description'>
 								<h3>Telos Article Splash Banners</h3>
@@ -225,5 +248,33 @@ class Documents extends Component {
 		);
 	}
 }
+
+const DownloadDocumentPDF = (props) => {
+	return (
+		<div className='download_document_container'>
+			<div className='download_document'>
+				<a href={props.url} target='_blank' rel='noopener noreferrer'>{props.link_text}</a>
+				<p>{props.description}</p>
+			</div>
+			<a href={props.url} target='_blank' rel='noopener noreferrer'>
+				<img src={pdf_img} alt='pdf download icon' className='download_icon' /> 
+			</a>
+		</div>
+	);
+};
+
+const DownloadDocumentZIP = (props) => {
+	return (
+		<div className='download_document_container'>
+			<div className='download_document'>
+				<a href={props.url}>{props.link_text}</a>
+				<p>{props.description}</p>
+			</div>
+			<a href={props.url}>
+				<img src={zip_img} alt='zip download icon' className='download_icon' />
+			</a>
+		</div>
+	);
+};
 
 export default Download;
