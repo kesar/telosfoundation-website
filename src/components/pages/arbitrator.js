@@ -6,20 +6,37 @@ import gavel_icon from '../../img/gavel_icon.png';
 import '../../styles/arbitrator.css';
 
 //images
-import face_placeholder from '../../img/arbitrator/placeholder-female.png';
+//import face_placeholder from '../../img/arbitrator/placeholder-female.png';
+import marc_roger from '../../img/arbitrator/marc-roger.jpg';
 
 const arbitratorCandidates = [
+	// {
+	// 	cand_name: 'Michael Smith, esq.',
+	// 	cand_vote_name: 'arbmikesmith',
+	// 	cand_description: 'Licensed Attorney, Maine Bar Association, USA.',
+	// 	cand_statement: 'I am passionate about law and blockchain. Serving as one of the first arbitrators on Telos would allow me to bridge these interests. I graduated from the University of Vermont Law School where I served on law review. I work with a number of computer software companies in my practice. I have been involved in blockchain since late 2016 as an investor and POS staker. I admit that this area is still somewhat new to me but I will strive to be honest and fair, to hear from all parties in a case, and to seek to thoroughly understand the technical issues involved in any case before ruling.',
+	// 	cand_image: face_placeholder,
+	// 	cand_languages: [
+	// 		'English',
+	// 		'Spanish',
+	// 		'Tagalog'
+	// 	]
+	// }
 	{
-		cand_name: 'Michael Smith, esq.',
-		cand_vote_name: 'arbmikesmith',
-		cand_description: 'Licensed Attorney, Maine Bar Association, USA.',
-		cand_statement: 'I am passionate about law and blockchain. Serving as one of the first arbitrators on Telos would allow me to bridge these interests. I graduated from the University of Vermont Law School where I served on law review. I work with a number of computer software companies in my practice. I have been involved in blockchain since late 2016 as an investor and POS staker. I admit that this area is still somewhat new to me but I will strive to be honest and fair, to hear from all parties in a case, and to seek to thoroughly understand the technical issues involved in any case before ruling.',
-		cand_image: face_placeholder,
+		cand_name: 'Marc-Roger Gagné',
+		cand_vote_name: 'arbmarkgagne',
+		cand_description: 'CCIE, CCII, CIPP/G/C, MAPP',
+		cand_statement: [
+			'Marc-Roger Gagné is a prolific Data Governance Advocate who resides in Ottawa, Canada. Throughout the span of nearly two decades, Marc-Roger has been dedicated to providing top-notch policy advice for government and corporate clients alike. He is a member of the Board of Directors of the Privacy and Access Council of Canada since 2010 and a Member of the International Association of Privacy Professionals (817631). Additionally, he holds membership at the Compliance, Governance & Oversight Council, the Law Society of Upper Canada.',
+			'Marc-Roger’s accreditations are many. In 2011 he was recognized as a Master Access and Privacy Professional (MAPP), the highest designation in the Privacy  community. He also holds accreditations as a CIPP, CIPP/G, CIPP/C, Certified Cyber Threat Analyst (CCTA), Certified Cyber Intelligence Investigator (CCII), Certified Human Trafficking Investigator (CHTI) and Certified Cyber Threat Forensic Investigator (CTFI). His key competencies lie in Litigation, Privacy, Breach Management and Training Programs, Policy Development, Information Management, Informational Technology, Data Analytics.',
+			'Combining his vast knowledgebase along with his integrity, Marc-Roger is a well-recognized and respected professional who has integrated numerous innovative strategies into everything that he does in the privacy, data protection, and legal services fields.'
+		],
+		cand_image: marc_roger,
 		cand_languages: [
 			'English',
-			'Spanish',
-			'Tagalog'
-		]
+			'French'
+		],
+		cand_country: 'Canada'
 	}
 ];
 
@@ -33,6 +50,8 @@ const arbitratorMail = {
 //const ARBITRATION_DOCUMENT = 'http://resources.telosfoundation.io/Telos Network Arbitration Process.pdf';
 
 const ARBITRATION_DOCUMENT_LINK = 'https://medium.com/@teloslogical/fyc-telos-network-arbitration-process-e4ed6f9e4ace';
+const MINIMUM_REQUIREMENTS_LINK = 'https://resources.telosfoundation.io/arbitrator_documents/Telos Arbitrator Minimum Requirements.pdf';
+const REGARB_LINK = 'https://resources.telosfoundation.io/arbitrator_documents/Telos regarb Human-language Contract.pdf';
 
 const Arbitrator = () => {
 	return (
@@ -67,8 +86,8 @@ const ArbitratorIntro = () => {
 					</div>
 					
 					<p>Arbitration on Telos follows the process documented in the <a href={ARBITRATION_DOCUMENT_LINK} target='_blank' rel='noopener noreferrer'>Telos Arbitration Process Document</a>.</p>
-					<p>Arbitrators must meet the <span className='orange'>Telos Arbitrators Minimum Requirements</span>. (Coming soon)</p>
-					<p>Arbitrators agree to the terms of the <span className='orange'>regarbitrator human-language contract</span>. (Coming soon)</p>
+					<p>Arbitrators must meet the <a href={MINIMUM_REQUIREMENTS_LINK} target='_blank' rel='noopener noreferrer'>Telos Arbitrators Minimum Requirements</a>.</p>
+					<p>Arbitrators agree to the terms of the <a href={REGARB_LINK} target='_blank' rel='noopener noreferrer'>regarbitrator human-language contract</a>.</p>
 					<div className='arbitrator_intro_contact'>
 						<h3>If you are interested in becoming an arbitrator on the Telos Network, please contact us.</h3>
 						<a href={`mailto:${address}?subject=${subject}&body=${body}`} className='btn btn-lg btn-primary'>CONTACT US</a>
@@ -96,7 +115,8 @@ const ArbitratorCandidates = () => {
 										cand_description={arb.cand_description}
 										cand_statement={arb.cand_statement}
 										cand_image={arb.cand_image}
-										cand_languages={arb.cand_languages} />
+										cand_languages={arb.cand_languages}
+										cand_country={arb.cand_country} />
 								);
 							})
 						}
@@ -107,7 +127,17 @@ const ArbitratorCandidates = () => {
 	);
 };
 
-const ArbitratorCandidate = ({cand_name, cand_vote_name, cand_description, cand_statement, cand_image, cand_languages}) => {
+const ArbitratorCandidate = (
+		{
+			cand_name,
+			cand_vote_name,
+			cand_description,
+			cand_statement,
+			cand_image,
+			cand_languages,
+			cand_country
+		}
+	) => {
 	return (
 		<div className='arbitrator_candidate'>
 			<Row>
@@ -118,11 +148,11 @@ const ArbitratorCandidate = ({cand_name, cand_vote_name, cand_description, cand_
 				</Col>
 				<Col md={9} sm={8}>
 					<div className='arbitrator_candidate_content'>
-						<h3>{cand_name} <span className='orange'>(Example)</span></h3>
+						<h3>{cand_name}</h3>
 						<h4>{cand_description}</h4>
-						<p>{cand_statement}</p>
-						<p>Languages:  {cand_languages.join(', ')}
-						</p>
+						{cand_statement.map((par, i) => <p key={i}>{par}</p>)}
+						<p>Languages: &nbsp;&nbsp;{cand_languages.join(', ')}</p>
+						<p>Country: &nbsp;&nbsp;{cand_country}</p>
 						<p>Vote for: <span className='candidate_vote_name'>{cand_vote_name}</span></p>
 					</div>
 				</Col>
