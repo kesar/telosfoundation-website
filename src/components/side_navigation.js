@@ -60,6 +60,18 @@ const SideNavigation = (props) => {
 						TOKEN RECOVERY
 					</a>
 				</li>
+				<li>
+					<a
+						href='/iwantmytlos'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/iwantmytlos');
+							props.toggleSideNav(false);
+						}}
+					>
+						#IWANTMYTLOS
+					</a>
+				</li>
 			</ul>
 		</nav>
 	);

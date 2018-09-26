@@ -140,6 +140,18 @@ class Navigation extends Component {
 							TOKEN RECOVERY
 						</a>
 					</li>
+					<li className='side_nav_item_mobile'>
+						<a
+							href='/iwantmytlos'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/iwantmytlos');
+								this.handleCloseNav();
+							}}
+						>
+							#IWANTMYTLOS
+						</a>
+					</li>
 				</Nav>
 			  </Navbar.Collapse>
 			</Navbar>

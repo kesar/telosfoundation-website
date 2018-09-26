@@ -112,7 +112,7 @@ const ExchangeParticipation = () => {
 							<li>
 								This rewards campaign will run from:
 								<ul className='sublist'>
-									<li>00:00 UTC August 31, 2018 to 23:59 UTC September 20</li>
+									<li>Ongoing until announced</li>
 								</ul>
 							</li>
 							<li>
