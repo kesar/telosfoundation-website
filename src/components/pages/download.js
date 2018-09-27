@@ -163,7 +163,7 @@ class Documents extends Component {
 			},
 			{
 				document_type: 'pdf',
-				url: 'https://resources.telosfoundation.io/TELOS Electronic Press Kit 25SEPT18.pdf',
+				url: 'https://resources.telosfoundation.io/TELOS Electronic Press Kit 27SEPT18.pdf',
 				link_text: 'Electronic Press Kit',
 				description: 'Everything you need to know about Telos in one PDF.'
 			},

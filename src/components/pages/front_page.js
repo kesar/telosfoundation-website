@@ -35,6 +35,7 @@ import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
 import madrid from '../../img/partner_logos/logo_telos_madrid.png';
 import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
 import telos_dac from '../../img/partner_logos/logo_telos_dac.png';
+import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
 
 //white papers
 import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN, WHITE_PAPER_CHINESE} from '../../config/constants';
@@ -161,7 +162,8 @@ const partnersArr = [
 	},
 	{
 		name: 'telos venezuela',
-		logo: venezuela
+		logo: venezuela,
+		url: 'https://www.telosvenezuela.com/'
 	},
 	{
 		name: 'telos madrid',
@@ -175,6 +177,11 @@ const partnersArr = [
 	{
 		name: 'telos ny',
 		logo: telos_ny
+	},
+	{
+		name: 'telos canton',
+		logo: telos_canton,
+		url: 'https://teloscanton.io/'
 	}
 ];
 

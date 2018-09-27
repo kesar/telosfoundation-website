@@ -1,0 +1,150 @@
+.dapps {
+	padding-bottom: 150px;
+}
+
+#dapps_intro h1 {
+	font-size: 4.5em;
+	margin-bottom: 25px;
+}
+
+@media screen and (max-width: 767px){
+	#dapps_intro h1 {
+		font-size: 3em;
+	}
+}
+
+#dapps_intro h2 {
+	font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px){
+	#dapps_intro h2 {
+		font-size: 1.75em;
+	}
+}
+
+#dapps_intro .intro_buttons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px){
+	#dapps_intro .intro_buttons {
+		flex-direction: column;
+	}
+}
+
+#dapps_intro .intro_buttons .btn-primary {
+	background-color: #ed4a2e;
+	border-color: transparent;
+	transition: background-color 0.15s ease;
+	font-size: 2em;
+	padding: 5px 15px;
+	border-radius: 50px;
+	min-width: 225px;
+	margin-bottom: 10px;
+}
+
+#dapps_intro .intro_buttons .btn-primary:hover {
+	background-color: #872311;
+}
+
+#dapps_intro .intro_buttons .btn-primary:active,
+#dapps_intro .intro_buttons .btn-primary:focus {
+	outline: transparent;
+}
+
+@media screen and (max-width: 767px){
+	#dapps_intro .intro_buttons .btn-primary {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 767px){
+	#dapps_intro .button_container {
+		margin-bottom: 25px;
+	}
+
+	#dapps_intro .button_container:last-child {
+		margin-bottom: 0;
+	}
+}
+
+#dapps_intro .button_container {
+	text-align: center;
+	padding: 0 15px;
+}
+
+#dapps_slider {
+	overflow: hidden;
+}
+
+#dapps_slider header {
+	background: #c2beae;
+	padding: 25px 0;
+	text-align: center;
+}
+
+#dapps_slider header h2 {
+	margin: 0;
+	color: #fff;
+}
+
+.dapps_slide {
+	background: #625a51;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.dapps_slide p {
+	color: #fff;
+}
+
+.dapps_slide h4 {
+	color: #fff;
+	font-size: 2.5em;
+}
+
+.dapps_slide img {
+	flex: 0 0 40%;
+	max-width: 40%;
+}
+
+@media screen and (max-width: 1100px){
+	.dapps_slide img {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+.dapps_slide .slide_content_container {
+	flex: 0 0 60%;
+	max-width: 50%;
+	padding: 50px 35px;
+}
+
+@media screen and (max-width: 1100px){
+	.dapps_slide .slide_content_container {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+.dapps_slide .slide_content {
+	width: 500px;
+}
+
+@media screen and (max-width: 1100px){
+	.dapps_slide .slide_content {
+		width: auto;
+	}	
+}
+
