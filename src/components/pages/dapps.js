@@ -51,7 +51,29 @@ const dappSections = [
 		heading: 'Powerful performance for DApp development',
 		img: powerful,
 		paragraphs: [
-		
+			'Telos facilitates incredibly fast and free transactions to establish a stable and affordable market for DApp development. RAM supply will be scaled with actual ussage in order to ensure affordability and prevent hoarding. Telos tokens have more than three times the resource utility of EOS, and developers will be able to purchase and stake resources such as CPU and bandwidth on behalf of users.'
+		]
+	},
+	{
+		heading: 'Secure and robust network',
+		img: secure,
+		paragraphs: [
+			'Telos expands on the EOS network by enforcing additional disclosure requirements and rigorous backup testing for Telos block producers, who must maintain a full and open testnet in order to support DApp development. Nonfunctioning block producers are temporarily swapped out after missing just 30 minutes, as opposed to 3 hours on the EOS mainnet, so that developers encounter fewer pauses and problems without compromising security. Fair play ensures all active and standby block producers are ready to produce at all times for maximum performance and stability.'
+		]
+	},
+	{
+		heading: 'DApps can be proprietary code',
+		img: proprietary,
+		paragraphs: [
+			'Protect your intellectual property with Telos. Unlike EOS, Telos will not force developers to open source their code in order to support commercial DApps. However, those that received funds from the network (block producers, adjudicators, code contributors, etc.) within the last 6 months must designate any DApps as open source.'
+		]
+	},
+	{
+		heading: 'Decentralized Governance and Arbitration',
+		img: decentralized,
+		paragraphs: [
+			'Telos has the most decentralized ownership of any blockchain existing today. No individual or entity will start with, or is likely to ever own, even one percent of the Telos blockchain. Telos\' decentralized voting system ensures that the blockchain is guided by the will of the community and the steady hand of the most competent block producers.',
+			'Telos will have a fully developed and ratified Network Operating Agreement and Telos Arbitration Organization (TAO) upon launch. These entities will ensure that conflicts are resolved in a timely manner so that developers can focus on DApps instead of disputes.'
 		]
 	}
 ];
@@ -62,6 +84,7 @@ const DAppsPage = () => {
 		<div className='dapps'>
 			<DAppsIntro />
 			<DAppsSlider />
+			<DAppContent />
 		</div>
 	);
 };
@@ -159,13 +182,36 @@ const DAppSlide = (props) => {
 
 const DAppContent = () => {
 	return (
-		<div></div>
+		<section id='dapp_content'>
+			<Grid>
+			{
+				dappSections.map((sect, i) => {
+					return (
+						<DAppSection
+							img={sect.img}
+							heading={sect.heading}
+							paragraphs={sect.paragraphs} />
+					);
+				})
+			}
+			</Grid>
+		</section>
 	);
 };
 
 const DAppSection = (props) => {
 	return (
-		<div></div>
+			<Row>
+				<Col md={10} mdOffset={1}>
+					<div className='content_container'>
+						<img src={props.img} alt='' />
+						<div className='content_section'>
+							<h3>{props.heading}</h3>
+							{props.paragraphs.map((par, i) => <p key={i}>{par}</p>)}
+						</div>
+					</div>
+				</Col>
+			</Row>
 	);
 };
 
