@@ -13,6 +13,7 @@ export default class RecoveryFormModal extends Component {
 			email: '',
 			ethereumAddress: '',
 			newlyGenerated: '',
+			signature: '',
 			formSubmitted: false
 		};
 
@@ -20,6 +21,7 @@ export default class RecoveryFormModal extends Component {
 		this.handleEmailChange = this.handleEmailChange.bind(this);
 		this.handleEthereumChange = this.handleEthereumChange.bind(this);
 		this.handleGeneratedChange = this.handleGeneratedChange.bind(this);
+		this.handleSignatureChange = this.handleSignatureChange.bind(this);
 	}
 
 	handleSubmit(e){
@@ -29,7 +31,8 @@ export default class RecoveryFormModal extends Component {
 		const {
 			email,
 			ethereumAddress,
-			newlyGenerated
+			newlyGenerated,
+			signature
 		} = this.state;
 
 		//validation will go here.
@@ -44,7 +47,8 @@ export default class RecoveryFormModal extends Component {
 		const formData = {
 			email: email.trim(),
 			ethereumAddress: ethereumAddress.trim(),
-			generatedPublicKey: newlyGenerated.trim()
+			generatedPublicKey: newlyGenerated.trim(),
+			signature: signature.trim()
 		};
 
 		axios.post(
@@ -75,14 +79,18 @@ export default class RecoveryFormModal extends Component {
 		});
 	}
 
+	handleSignatureChange(e){
+		this.setState({
+			signature: e.target.value
+		});
+	}
+
 	renderForm(){
 		const {
-			email_placeholder,
-			ethereum_placeholder,
-			generated_placeholder,
 			email_label,
 			ethereum_label,
-			generated_label
+			generated_label,
+			signature_label
 		} = this.props.recovery_form;
 
 		return (
@@ -129,6 +137,19 @@ export default class RecoveryFormModal extends Component {
             				value={this.state.newlyGenerated}
             				onChange={this.handleGeneratedChange}
             			/>
+            		</FormGroup>
+            		<FormGroup>
+            			<ControlLabel
+            				htmlFor='signature'
+            			>
+            				{signature_label}
+            			</ControlLabel>
+            			<textarea
+            				id='signature'
+            				className='form-control'
+            				value={this.state.signature}
+            				onChange={this.handleSignatureChange}
+            			></textarea>
             		</FormGroup>
             		<Button 
             			type='submit'

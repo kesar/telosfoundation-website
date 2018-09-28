@@ -55,6 +55,9 @@
         "ethereum": "Ethereum 주소 :",
         "public_key": "새로운 EOS 공개 키 :",
         "screenshot_caption": "\"Ethereum Address\"에 EOS 토큰을두고 자신의 Ethereum 주소를 입력하고 \"New EOS Public Key\"에 새로운 SQRL 공개 키를 입력하십시오",
+        "screenshot_caption_two": "Log into the wallet that has your Ethereum account where your EOS tokens where held.",
+        "screenshot_caption_three": "Sign the pasted message with the Ethereum address and new Telos Public Key (or an EOS key you want to use).",
+        "screenshot_caption_four": "Copy this Signature text and send it in the form below",        
         "email_us": "조사 할 수 있도록 귀하의 정보를 이메일로 보내주십시오."
       }
     },
@@ -72,6 +75,7 @@
       "email_label": "이메일 (문제 발생 시 필요한 이메일)",
       "ethereum_label": "복사된 메시지를 볼 수 있는 EOS가 저장된 지갑주소",
       "generated_label": "TLOS를 수령 받고자 하는 새로 생선된 Telos (또는 EOS) 지갑 주소",
+      "signature_label": "Paste the signature text here.",
       "response": "감사합니다."
     }
   }

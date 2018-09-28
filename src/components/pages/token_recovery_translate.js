@@ -13,6 +13,9 @@ import step_seven from '../../img/token_recovery/step_7.jpg';
 import step_eight from '../../img/token_recovery/step_8.jpg';
 import ether_screenshot_one from '../../img/token_recovery/ether_screenshot_1.jpg';
 import ether_screenshot_two from '../../img/token_recovery/ether_screenshot_2.jpg';
+import ether_screenshot_three from '../../img/token_recovery/ether_screenshot_3.png';
+import ether_screenshot_four from '../../img/token_recovery/ether_screenshot_4.jpg';
+import ether_screenshot_five from '../../img/token_recovery/ether_screenshot_5.jpg';
 
 const recovery_steps = [
 	{
@@ -177,7 +180,31 @@ class TokenRecoveryProcessOne extends Component {
 													<Row>
 														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
 															<img src={ether_screenshot_two} alt='ether screenshot two' />
-															<h4>{step_three.caption}</h4>
+															<h4>{step_three.screenshot_caption}</h4>
+														</Col>
+													</Row>
+												</div>
+												<div className='recovery_step'>
+													<Row>
+														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
+															<img src={ether_screenshot_three} alt='ether screenshot two' />
+															<h4>{step_three.screenshot_caption_two}</h4>
+														</Col>
+													</Row>
+												</div>
+												<div className='recovery_step'>
+													<Row>
+														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
+															<img src={ether_screenshot_four} alt='ether screenshot two' />
+															<h4>{step_three.screenshot_caption_three}</h4>
+														</Col>
+													</Row>
+												</div>
+												<div className='recovery_step'>
+													<Row>
+														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
+															<img src={ether_screenshot_five} alt='ether screenshot two' />
+															<h4>{step_three.screenshot_caption_four}</h4>
 														</Col>
 													</Row>
 												</div>

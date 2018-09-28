@@ -163,7 +163,7 @@ const partnersArr = [
 	{
 		name: 'telos venezuela',
 		logo: venezuela,
-		url: 'https://www.telosvenezuela.com/'
+		url: 'https://www.telosvenezuela.com'
 	},
 	{
 		name: 'telos madrid',
@@ -181,7 +181,7 @@ const partnersArr = [
 	{
 		name: 'telos canton',
 		logo: telos_canton,
-		url: 'https://teloscanton.io/'
+		url: 'https://teloscanton.io'
 	}
 ];
 

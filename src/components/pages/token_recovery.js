@@ -102,7 +102,7 @@ const TokenRecoveryProcessOne = () => {
 						<ol>
 							<li>Download the Sqrl wallet from <Link to='/downloads'>telosfoundation.io/downloads</Link></li>
 							<li>
-								Generate new keys for a new Telos account:
+								Generate new keys to send us:
 								<div className='recovery_steps'>
 									{
 										recovery_steps.map((step, i) => {
@@ -125,7 +125,7 @@ const TokenRecoveryProcessOne = () => {
 								<ul>
 									<li>Sign in and select the Ethereum wallet that held your EOS tokens.</li>
 									<li>
-										Copy/paste this message:
+										Copy/paste this message and add your Ethereum public key and your new Telos Public Key  (or an EOS key you want to use):
 										<div className='process_message'>
 											<p>As the cryptographically verified owner of ethereum address listed below ("Ethereum Address"), I attest that I did own the EOS tokens listed on the EOS ERC-20 snapshot associated with this address and that I hereby request that the public key for my account be changed to the new EOS public key below (“New EOS Public Key”) or the Telos Network address equivalent for my corresponding account on the Telos Network. I agree to release the Telos Network and its Members - as well as the members of any blockchain project that may subsequently use this same value snapshot in the future - from any claim arising from this request. The cryptographic signature of this document constitutes my legal digital signature in all jurisdictions.</p>
 											<ul>

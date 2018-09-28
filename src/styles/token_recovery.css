@@ -133,3 +133,7 @@
 	padding: 150px 0;
 	min-height: 1000px;
 }
+
+.recovery_form textarea {
+	min-height: 200px;
+}

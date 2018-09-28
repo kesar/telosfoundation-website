@@ -5,7 +5,6 @@ import RewardsTranslate from './pages/rewards_translate'; //component that uses 
 import Checklist from './pages/checklist';
 import Download from './pages/download';
 import Arbitrator from './pages/arbitrator';
-//import TokenRecovery from './pages/token_recovery';
 import TokenRecovery from './pages/token_recovery_translate';
 import DAppsPage from './pages/dapps';
 import {connect} from 'react-redux';
