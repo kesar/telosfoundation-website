@@ -56,7 +56,7 @@
         "public_key": "New EOS Public Key:",
         "screenshot_caption": "Enter your own Ethereum address where you held your EOS tokens in \"Ethereum Address\" and your new SQRL public key into \"New EOS Public Key\"",
         "screenshot_caption_two": "Log into the wallet that has your Ethereum account where your EOS tokens where held.",
-        "screenshow_caption_three": "Sign the pasted message with the Ethereum address and new Telos Public Key (or an EOS key you want to use).",
+        "screenshot_caption_three": "Sign the pasted message with the Ethereum address and new Telos Public Key (or an EOS key you want to use).",
         "screenshot_caption_four": "Copy this Signature text and send it in the form below",        
         "email_us": "Email us your information so we can research your claim."
       }
@@ -75,6 +75,7 @@
       "email_label": "Email (Optional, in case there is a problem)",
       "ethereum_label": "Ethereum address where your EOS was stored, where we see your pasted-in message",
       "generated_label": "Newly generated Telos (or EOS) address where you would like your TLOS to be sent",
+      "signature_label": "Paste the signature text here.",
       "response": "Thanks for your information."
     }
   }  
