@@ -46,7 +46,7 @@
 	transition: background-color 0.15s ease;
 	font-size: 2em;
 	padding: 5px 15px;
-	border-radius: 50px;
+	border-radius: 15px;
 	min-width: 225px;
 	margin-bottom: 10px;
 }
