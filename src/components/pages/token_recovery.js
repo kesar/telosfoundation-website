@@ -20,10 +20,10 @@ const recovery_steps = [
 		image: step_one,
 		caption: 'Open up the Sqrl wallet.'
 	},
-	{
+	/*{
 		image: step_two,
 		caption: 'Select "Telos Testnet"'
-	},
+	},*/
 	{
 		image: step_three,
 		caption: 'Click "Create New Account"'

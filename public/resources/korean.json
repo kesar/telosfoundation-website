@@ -59,7 +59,8 @@
         "screenshot_caption_three": "Sign the pasted message with the Ethereum address and new Telos Public Key (or an EOS key you want to use).",
         "screenshot_caption_four": "Copy this Signature text and send it in the form below",        
         "email_us": "조사 할 수 있도록 귀하의 정보를 이메일로 보내주십시오."
-      }
+      },
+      "process_note": "Note:  No one from Telos will every ask for your private key! If you get an email from us it will only be to help you go through this process again to make sure it works."
     },
     "process_two": {
       "heading": "프로세스 2",

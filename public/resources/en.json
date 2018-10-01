@@ -33,17 +33,16 @@
         "Be sure to save the private key associated with your new public key. This is how you will access your account! Once you send the message, please send us the Ethereum address and EOS public key you recorded. We will verify the message and change the keys.",
         "Follow the instructions below:"
       ],
-      "step_one": "Download the Sqrl wallet from <a href='https://telosfoundation.io/downloads' target='_blank' rel='noopener noreferrer'>telosfoundation.io/downloads</a>",
+      "step_one": "Use any EOS or Telos wallet, Scatter, Greymass, etc..  We are using SQRL here to demonstrate how to generate a set of keys.",
       "step_two": {
-        "step": "Generate new keys to send us:",
+        "step": "Generate a new set of keys.  (These are for a Telos account.)",
         "screenshot_captions": [
           "Open up the Sqrl wallet.",
-          "Select \"Telos Testnet\"",
-          "Click \"Create New Account\"",
-          "Enter your account name",
+          "Click \"Create New Account\" to get to the next screen. You do not need a new account.",
+          "Enter a made-up account name.  Any 12 digit account name/number will do.",
           "Generate \"Owner Public Key\"",
           "Copy \"Owner Public Key\" into \"Active Public Key\" field",
-          "Copy/Paste your Keys to a safe place! Offline storage is recommended.",
+          "Copy/Paste your Keys to a safe place!<br /> Offline storage is recommended.",
           "Creating an account is not necessary, you just need your new keys!"
         ]
       },
@@ -58,8 +57,9 @@
         "screenshot_caption_two": "Log into the wallet that has your Ethereum account where your EOS tokens where held.",
         "screenshot_caption_three": "Sign the pasted message with the Ethereum address and new Telos Public Key (or an EOS key you want to use).",
         "screenshot_caption_four": "Copy this Signature text and send it in the form below",
-        "email_us": "Email us your information so we can research your claim."
-      }
+        "email_us": "Send us your information so we can research your claim."
+      },
+      "process_note": "Note:  No one from Telos will every ask for your private key! If you get an email from us it will only be to help you go through this process again to make sure it works."
     },
     "process_two": {
       "heading": "PROCESS 2",

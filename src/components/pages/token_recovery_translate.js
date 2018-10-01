@@ -10,7 +10,7 @@ import step_four from '../../img/token_recovery/step_4.png';
 import step_five from '../../img/token_recovery/step_5.png';
 import step_six from '../../img/token_recovery/step_6.png';
 import step_seven from '../../img/token_recovery/step_7.jpg';
-import step_eight from '../../img/token_recovery/step_8.jpg';
+import step_eight from '../../img/token_recovery/step_8x.png';
 import ether_screenshot_one from '../../img/token_recovery/ether_screenshot_1.jpg';
 import ether_screenshot_two from '../../img/token_recovery/ether_screenshot_2.jpg';
 import ether_screenshot_three from '../../img/token_recovery/ether_screenshot_3.png';
@@ -22,10 +22,10 @@ const recovery_steps = [
 		image: step_one,
 		caption: 'Open up the Sqrl wallet.'
 	},
-	{
+	/*{
 		image: step_two,
 		caption: 'Select "Telos Testnet"'
-	},
+	},*/
 	{
 		image: step_three,
 		caption: 'Click "Create New Account"'
@@ -146,7 +146,8 @@ class TokenRecoveryProcessOne extends Component {
 														<Row>
 															<Col md={8} mdOffset={2} sm={10} smOffset={1}>
 																<img src={step.image} alt='recovery step' />
-																<h4>{step_two.screenshot_captions[i]}</h4>
+																{/*<h4>{step_two.screenshot_captions[i]}</h4>*/}
+																<h4 dangerouslySetInnerHTML={{__html: step_two.screenshot_captions[i]}} />
 															</Col>
 														</Row>
 													</div>
@@ -224,6 +225,7 @@ class TokenRecoveryProcessOne extends Component {
 									</ul>
 								</li>
 							</ol>
+							<p><em>{process.process_note}</em></p>
 						</Col>
 					</Row>
 				</Grid>
