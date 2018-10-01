@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col, Button, ButtonGroup} from 'react-bootstrap';
+import ScrollAnimation from 'react-animate-on-scroll';
 import Slider from 'react-slick';
 import dapps_currency from '../../img/dapps/currency_and_commerce.jpg';
 import dapps_gig from '../../img/dapps/gig_economy.jpg';
@@ -10,6 +11,9 @@ import compatibility from '../../img/dapps/compatibility.png';
 import powerful from '../../img/dapps/powerful.png';
 import proprietary from '../../img/dapps/proprietary.png';
 import secure from '../../img/dapps/secure.png';
+
+import arrow_next from '../../img/dapps/arrow_next_white.png';
+import arrow_prev from '../../img/dapps/arrow_prev_white.png';
 
 import '../../styles/dapps.css';
 
@@ -135,6 +139,17 @@ class DAppsSlider extends Component {
 		this.state = {
 
 		};
+
+		this.handleNext = this.handleNext.bind(this);
+		this.handlePrevious = this.handlePrevious.bind(this);
+	}
+
+	handleNext(){
+		this.slider.slickNext();
+	}
+
+	handlePrevious(){
+		this.slider.slickPrev();
 	}
 
 	render(){
@@ -143,7 +158,16 @@ class DAppsSlider extends Component {
 			infinite: true,
 			speed: 500,
 			slidesToShow: 1,
-			slidesToScroll: 1
+			slidesToScroll: 1,
+			adaptiveHeight: true
+		};
+
+		const nextStyle = {
+			backgroundImage: `url(${arrow_next})`
+		};
+
+		const prevStyle = {
+			backgroundImage: `url(${arrow_prev})`
 		};
 
 		return (
@@ -151,7 +175,10 @@ class DAppsSlider extends Component {
 				<header>
 					<h2>The Future on DApps on Telos</h2>
 				</header>
-				<Slider {...settings}>
+				<Slider 
+					{...settings}
+					ref={el => this.slider = el}
+				>
 					{dappsSlides.map((slide, i) => {
 						return (
 							<DAppSlide
@@ -161,15 +188,27 @@ class DAppsSlider extends Component {
 						);
 					})}
 				</Slider>
+				<button
+					className='slider_arrow previous'
+					style={prevStyle}
+					onClick={this.handlePrevious} />
+				<button
+					className='slider_arrow next'
+					style={nextStyle}
+					onClick={this.handleNext} />
 			</section>
 		);
 	}
 }
 
 const DAppSlide = (props) => {
+	const slideImageStyle = {
+		backgroundImage: `url(${props.img})`
+	};
+
 	return (
 		<div className='dapps_slide'>
-			<img src={props.img} alt='' />
+			<div className='slide_image' style={slideImageStyle}></div>
 			<div className='slide_content_container'>
 				<div className='slide_content'>
 					<h4>{props.heading}</h4>
@@ -190,7 +229,8 @@ const DAppContent = () => {
 						<DAppSection
 							img={sect.img}
 							heading={sect.heading}
-							paragraphs={sect.paragraphs} />
+							paragraphs={sect.paragraphs}
+							order={i} />
 					);
 				})
 			}
@@ -201,6 +241,11 @@ const DAppContent = () => {
 
 const DAppSection = (props) => {
 	return (
+		<ScrollAnimation
+			animateOnce={true}
+			animateIn='fadeIn'
+			duration={0.4}
+		>
 			<Row>
 				<Col md={10} mdOffset={1}>
 					<div className='content_container'>
@@ -212,6 +257,7 @@ const DAppSection = (props) => {
 					</div>
 				</Col>
 			</Row>
+		</ScrollAnimation>
 	);
 };
 
