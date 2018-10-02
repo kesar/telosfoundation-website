@@ -120,8 +120,20 @@
 }
 
 .checklist .info_links a {
-	
+	color: #625a51;
+	transition: opacity 0.25s ease;
 }
+
+.checklist .info_links a:active,
+.checklist .info_links a:hover,
+.checklist .info_links a:focus {
+	color: #625a51;
+}
+
+.checklist .info_links a:hover {
+	opacity: 0.8;
+}
+
 
 .checklist .info_links img {
 	width: 12px;
