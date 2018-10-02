@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
 import RecoveryFormModal from '../modals/recovery_form_modal';
 import '../../styles/token_recovery.css';
 import step_one from '../../img/token_recovery/step_1.png';
@@ -22,10 +21,6 @@ const recovery_steps = [
 		image: step_one,
 		caption: 'Open up the Sqrl wallet.'
 	},
-	/*{
-		image: step_two,
-		caption: 'Select "Telos Testnet"'
-	},*/
 	{
 		image: step_three,
 		caption: 'Click "Create New Account"'
@@ -51,13 +46,6 @@ const recovery_steps = [
 		caption: 'Create your account'
 	}
 ];
-
-const recoveryMail = {
-	address: 'hello@telosfoundation.io',
-	subject: 'Key Recovery',
-	body: 'I just filled out my lost key info and submitted it. Here is my Ethereum account and my new Public Key:'
-};
-
 
 const TokenRecovery = ({language, token_recovery}) => {
 	if(!token_recovery){
