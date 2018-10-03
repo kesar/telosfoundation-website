@@ -15,14 +15,19 @@ a,p, select, option, li, td, th {
 }
 
 a {
-  color: #625a51;
-  transition: color 0.15s ease;
+  color: #f3853e;
+  text-decoration: none;
+  transition: color 0.25s ease;
 }
 
 a:hover,
-a:focus,
 a:active {
-  color: #47423b;
+  color: #C0520B;
+  text-decoration: underline;
+}
+
+a:focus {
+  color: #f3853e;
 }
 
 h1, h2, h3, h4 {

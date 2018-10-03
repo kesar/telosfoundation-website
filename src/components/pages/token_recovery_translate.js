@@ -3,7 +3,6 @@ import {Grid, Row, Col} from 'react-bootstrap';
 import RecoveryFormModal from '../modals/recovery_form_modal';
 import '../../styles/token_recovery.css';
 import step_one from '../../img/token_recovery/step_1.png';
-import step_two from '../../img/token_recovery/step_2.png';
 import step_three from '../../img/token_recovery/step_3.png';
 import step_four from '../../img/token_recovery/step_4.png';
 import step_five from '../../img/token_recovery/step_5.png';

@@ -5,6 +5,8 @@ import {RECOVERY_FORM_ENDPOINT} from '../../config/constants';
 
 import '../../styles/recovery_form_modal.css';
 
+const alphaNumbericRegex = new RegExp(/^[a-zA-Z0-9_\-]+$/);
+
 export default class RecoveryFormModal extends Component {
 
 	constructor(props){
@@ -14,6 +16,8 @@ export default class RecoveryFormModal extends Component {
 			ethereumAddress: '',
 			newlyGenerated: '',
 			signature: '',
+			ethereumAddressTouched: false,
+			newlyGeneratedTouched: false,
 			formSubmitted: false
 		};
 
@@ -37,10 +41,13 @@ export default class RecoveryFormModal extends Component {
 
 		//validation will go here.
 		if(
-			ethereumAddress == '' ||
-			newlyGenerated == ''
+			!this.getEthereumValidationState() ||
+			!this.getGeneratedValidationState()
 		){
-			alert('need both keys');
+			this.setState({
+				ethereumAddressTouched: true,
+				newlyGeneratedTouched: true
+			});
 			return;
 		}
 
@@ -85,6 +92,39 @@ export default class RecoveryFormModal extends Component {
 		});
 	}
 
+	/*validation states*/
+	getEthereumValidationState(){
+		const {ethereumAddress, ethereumAddressTouched} = this.state;
+		if(!ethereumAddressTouched) return null;
+
+		if(ethereumAddress.slice(0, 2) !== '0x') return 'error';
+
+		if(
+			!alphaNumbericRegex.test(ethereumAddress) ||
+			ethereumAddress.length !== 42
+		){
+			return 'error';
+		}
+		return 'success';
+	}
+
+	getGeneratedValidationState(){
+		const {newlyGenerated, newlyGeneratedTouched} = this.state;
+		if(!newlyGeneratedTouched) return null;
+
+		if(!alphaNumbericRegex.test(newlyGenerated)) return 'error';
+
+		if(newlyGenerated.slice(0, 4) === 'TLOS'){
+			if(newlyGenerated.length === 54) return 'success';
+			return 'error';
+		}else if(newlyGenerated.slice(0, 3) === 'EOS'){
+			if(newlyGenerated.length === 53) return 'success';
+			return 'error';
+		}else{
+			return 'error';
+		}
+	}
+
 	renderForm(){
 		const {
 			email_label,
@@ -110,7 +150,7 @@ export default class RecoveryFormModal extends Component {
             				onChange={this.handleEmailChange}
             			/>
             		</FormGroup>
-            		<FormGroup>
+            		<FormGroup validationState = {this.getEthereumValidationState()}>
             			<ControlLabel
             				htmlFor='ethereumAddress'
             			>
@@ -121,10 +161,12 @@ export default class RecoveryFormModal extends Component {
             				required={true}
             				type='text'
             				value={this.state.ethereumAddress}
+            				placeholder='ex: 0x3770054Fa2X911s743143754a1900w9216m2So14'
             				onChange={this.handleEthereumChange}
+            				onFocus={() => this.setState({ethereumAddressTouched: true})}
             			/>
             		</FormGroup>
-            		<FormGroup>
+            		<FormGroup validationState = {this.getGeneratedValidationState()}>
             			<ControlLabel
             				htmlFor='generatedKey'
             			>
@@ -135,7 +177,9 @@ export default class RecoveryFormModal extends Component {
             				required={true}
             				type='text'
             				value={this.state.newlyGenerated}
+            				placeholder='ex: TLOS3sTEi9o2e8Qe1MFijlsUIDpAER4wHhXYgEsOeeW8POrUgiKDFe'
             				onChange={this.handleGeneratedChange}
+            				onFocus={() => this.setState({newlyGeneratedTouched: true})}
             			/>
             		</FormGroup>
             		<FormGroup>

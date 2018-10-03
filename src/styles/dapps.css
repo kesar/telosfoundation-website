@@ -25,6 +25,15 @@
 	}
 }
 
+#dapps_intro .button_container {
+	text-align: center;
+	padding: 0 15px;
+}
+
+#dapps_intro .button_container p {
+	margin-bottom: 5px;
+}
+
 #dapps_intro .intro_buttons {
 	display: flex;
 	flex-direction: row;
@@ -74,11 +83,6 @@
 	#dapps_intro .button_container:last-child {
 		margin-bottom: 0;
 	}
-}
-
-#dapps_intro .button_container {
-	text-align: center;
-	padding: 0 15px;
 }
 
 #dapps_slider {
@@ -220,7 +224,7 @@
 	left: 0;
 }
 
-.slider_arrow.previous::before {
+/*.slider_arrow.previous::before {
 	content: " ";
 	position: absolute;
 	top: 0;
@@ -230,13 +234,13 @@
 	z-index: -1;
 	background: #000;
 	background: linear-gradient(90deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 100%);
-}
+}*/
 
 .slider_arrow.next {
 	right: 0;
 }
 
-.slider_arrow.next::before {
+/*.slider_arrow.next::before {
 	content: " ";
 	position: absolute;
 	top: 0;
@@ -246,7 +250,7 @@
 	z-index: -1;
 	background: #000;
 	background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);	
-}
+}*/
 
 #dapp_content .content_container {
 	display: flex;

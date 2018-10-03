@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Row, Col, Button, ButtonGroup} from 'react-bootstrap';
+import {Grid, Row, Col, Button} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Slider from 'react-slick';
 import dapps_currency from '../../img/dapps/currency_and_commerce.jpg';
@@ -113,6 +113,7 @@ const DAppsIntro = () => {
 									TUTORIALS
 								</Button>
 								<p>Learn how to build your DApp on the Telos network.</p>
+								<small>(Coming soon)</small>
 							</div>
 							<div className='button_container'>
 								<Button
@@ -122,6 +123,7 @@ const DAppsIntro = () => {
 									SMART CONTRACT TEMPLATES
 								</Button>
 								<p>Write smart contracts that perform basic Telos functions such as exchanging tokens and casting votes.</p>
+								<small>(Coming soon)</small>
 							</div>
 						</div>
 					</Col>
@@ -158,7 +160,9 @@ class DAppsSlider extends Component {
 			speed: 500,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			adaptiveHeight: true
+			adaptiveHeight: true,
+			autoplay: true,
+			autoplaySpeed: 10000
 		};
 
 		const nextStyle = {

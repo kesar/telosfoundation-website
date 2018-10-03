@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Row, Col, ButtonGroup} from 'react-bootstrap';
+import {Grid, Row, Col} from 'react-bootstrap';
 import BannerModal from '../modals/banner_modal';
 import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 import pdf_img from '../../img/download_pdf_icon.png';

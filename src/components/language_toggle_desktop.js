@@ -78,7 +78,7 @@ class LanguageToggleDesktop extends Component {
 		//get language object from array
 		const currentLanguage = languageOptions[languageOptions.findIndex(item => item.value === language)];
 
-		const languageMenu = languageOptions.filter(lng => lng.value != language).map((lang, i) => {
+		const languageMenu = languageOptions.filter(lng => lng.value !== language).map((lang, i) => {
 			return (
 				<div 
 					className='language_option_container'
