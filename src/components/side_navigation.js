@@ -72,6 +72,18 @@ const SideNavigation = (props) => {
 						#IWANTMYTLOS
 					</a>
 				</li>
+				<li>
+					<a
+						href='/dapps'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/dapps');
+							props.toggleSideNav(false);
+						}}
+					>
+						DAPP DEVELOPMENT
+					</a>
+				</li>
 			</ul>
 		</nav>
 	);

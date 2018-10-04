@@ -152,6 +152,18 @@ class Navigation extends Component {
 							#IWANTMYTLOS
 						</a>
 					</li>
+					<li className='side_nav_item_mobile'>
+						<a
+							href='/dapps'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/dapps');
+								this.handleCloseNav();
+							}}
+						>
+							DAPP DEVELOPMENT
+						</a>
+					</li>
 				</Nav>
 			  </Navbar.Collapse>
 			</Navbar>

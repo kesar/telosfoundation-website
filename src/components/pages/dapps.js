@@ -2,11 +2,13 @@ import React, {Component} from 'react';
 import {Grid, Row, Col, Button} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Slider from 'react-slick';
+import {Helmet} from 'react-helmet';
+
 import dapps_currency from '../../img/dapps/currency_and_commerce.jpg';
 import dapps_gig from '../../img/dapps/gig_economy.jpg';
 import dapps_records from '../../img/dapps/records_and_info.jpg';
 
-import decentralized from '../../img/dapps/decentralized.png';
+import decentralized from '../../img/dapps/decentralized_LARGE.png';
 import compatibility from '../../img/dapps/compatibility.png';
 import powerful from '../../img/dapps/powerful.png';
 import proprietary from '../../img/dapps/proprietary.png';
@@ -68,7 +70,7 @@ const dappSections = [
 		heading: 'DApps can be proprietary code',
 		img: proprietary,
 		paragraphs: [
-			'Protect your intellectual property with Telos. Unlike EOS, Telos will not force developers to open source their code in order to support commercial DApps.'
+			'Protect your intellectual property with Telos. Unlike EOS, Telos will not force all developers to open source their contract code. This allows commercial dApp makers to keep other developers from simply copying their work.'
 		]
 	},
 	{
@@ -85,6 +87,9 @@ const dappSections = [
 const DAppsPage = () => {
 	return (
 		<div className='dapps'>
+			<Helmet>
+				<title>Telos DApps Development</title>
+			</Helmet>
 			<DAppsIntro />
 			<DAppsSlider />
 			<DAppContent />
@@ -109,6 +114,7 @@ const DAppsIntro = () => {
 								<Button
 									bsSize='large'
 									bsStyle='primary'
+									disabled
 								>
 									TUTORIALS
 								</Button>
@@ -119,6 +125,7 @@ const DAppsIntro = () => {
 								<Button
 									bsSize='large'
 									bsStyle='primary'
+									disabled
 								>
 									SMART CONTRACT TEMPLATES
 								</Button>
