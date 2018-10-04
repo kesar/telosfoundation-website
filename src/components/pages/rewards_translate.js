@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col, ResponsiveEmbed, Button, Table} from 'react-bootstrap';
 import RewardsModal from '../modals/rewards_modal';
+import {Helmet} from 'react-helmet';
 import axios from 'axios';
 import '../../styles/rewards.css';
 
@@ -31,6 +32,10 @@ export default class RewardsTranslate extends Component {
 
 		return (
 			<div className='rewards'>
+				<Helmet>
+					<title>Telos Rewards Program</title>
+					<meta name="description" content="Telos is a community-led alternative to EOS. We need you to help spread the word and make the Telos Network a success. You can share in the 1 million TLOS community rewards pool." />
+				</Helmet>
 				<section id='rewards_intro'>
 					<Grid>
 						<Row>

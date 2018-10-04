@@ -70,31 +70,43 @@
 	display: inline;
 }
 
-#arbitrator_intro .gavel_icon {
-	display: inline;
-	width: 150px;
-	height: auto;
-	float: left;
-	margin-right: 35px;
-}
-
-#arbitrator_intro .meeting_icon {
-	display: inline;
-	width: 100px;
-	height: auto;
-	float: right;
-	margin-left: 50px;
+#arbitrator_intro .triple_icon_desktop {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
 }
 
 @media screen and (max-width: 767px){
-	#arbitrator_intro .gavel_icon {
-		display: none;
-	}
-
-	#arbitrator_intro .meeting_icon {
+	#arbitrator_intro .triple_icon_desktop {
 		display: none;
 	}
 }
+
+#arbitrator_intro .triple_icon_mobile {
+	display: none;
+	margin: 0 auto;
+	width: 350px;
+	max-width: 100%;
+}
+
+@media screen and (max-width: 767px){
+	#arbitrator_intro .triple_icon_mobile {
+		display: block;
+		margin-bottom: 25px;
+	}
+}
+
+/*#arbitrator_intro .intro_downloads {
+	text-align: center;
+}
+
+#arbitrator_intro .intro_downloads p {
+	margin-bottom: 0.25em;
+}
+
+#arbitrator_intro .intro_downloads a {
+	text-decoration: underline;
+}*/
 
 .arbitrator_intro_contact {
 	text-align: center;
@@ -151,4 +163,54 @@
 
 .orange {
 	color: #f3853e;
+}
+
+
+.arbitrator_document_container a {
+	color: #f3853e;
+	text-decoration: underline;
+	font-size: 2em;
+	transition: color 0.25s ease;
+}
+
+.arbitrator_document_container a:hover,
+.arbitrator_document_container a:active {
+	color: #C0520B;
+}
+
+.arbitrator_document_container a:focus {
+	color: #f3853e;
+}
+
+.arbitrator_document_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.arbitrator_document_container img.arbitrator_download_icon {
+	width: 125px;
+	max-width: 100%;
+}
+
+.arbitrator_document {
+	padding-right: 25px;
+	max-width: 80%;
+	flex: 0 0 80%;
+}
+
+@media screen and (max-width: 500px){
+	.arbitrator_document {
+		max-width: 66.667%;
+		flex: 0 0 66.667%;
+	}
+}
+
+#arbitrator_intro .intro_downloads .arbitrator_document_container {
+	padding-bottom: 50px;
+}
+
+#arbitrator_intro .intro_downloads .arbitrator_document_container:last-child {
+	padding-bottom: 0;
 }

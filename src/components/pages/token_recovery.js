@@ -20,10 +20,10 @@ const recovery_steps = [
 		image: step_one,
 		caption: 'Open up the Sqrl wallet.'
 	},
-	{
+	/*{
 		image: step_two,
 		caption: 'Select "Telos Testnet"'
-	},
+	},*/
 	{
 		image: step_three,
 		caption: 'Click "Create New Account"'
@@ -46,7 +46,7 @@ const recovery_steps = [
 	},
 	{
 		image: step_eight,
-		caption: 'Create your account'
+		caption: 'Creating an account is not necessary, you just need your new keys!'
 	}
 ];
 
@@ -66,59 +66,6 @@ const TokenRecovery = () => {
 		</div>
 	);
 };
-
-// const salt = bcrypt.genSaltSync(10);
-// const RECOVERY_PASSWORD = '$2a$10$GfJotbQ/cy0rg856aCgOGuf1TE3/5Mc/qjMPjoSGLTLthjW8LDKrC';
-
-// class TokenRecovery extends Component {
-
-// 	constructor(){
-// 		super();
-
-// 		this.state = {
-// 			candidate: '',
-// 			passed: false
-// 		};
-// 		this.handleSubmit = this.handleSubmit.bind(this);
-// 	}
-
-// 	handleSubmit(){
-// 		this.setState({
-// 			passed: bcrypt.compareSync(this.state.candidate, RECOVERY_PASSWORD)
-// 		});
-// 	}
-
-// 	render(){
-// 		const {passed, candidate} = this.state;
-
-// 		if(!passed){
-// 			return (
-// 				<div className='token_recovery_password'>
-// 					<Grid>
-// 						<Row>
-// 							<Col md={8} mdOffset={2}>
-// 								<div className='form-group'>
-// 									<input type='password' className='form-control' placeholder='Enter password to view token recovery page' value={candidate} onChange={e => this.setState({candidate: e.target.value})} />
-// 								</div>
-// 								<div className='form-group'>
-// 									<button className='btn btn-default' onClick={this.handleSubmit}>Submit Password</button>
-// 								</div>
-// 							</Col>
-// 						</Row>
-// 					</Grid>
-// 				</div>
-// 			);
-// 		}
-
-// 		return (
-// 			<div className='token_recovery'>
-// 				<TokenRecoveryIntro />
-// 				<TokenRecoveryProcessOne />
-// 				<TokenRecoveryProcessTwo />
-// 			</div>
-// 		);
-// 	}
-// }
 
 const TokenRecoveryIntro = () => {
 	return (
@@ -155,7 +102,7 @@ const TokenRecoveryProcessOne = () => {
 						<ol>
 							<li>Download the Sqrl wallet from <Link to='/downloads'>telosfoundation.io/downloads</Link></li>
 							<li>
-								Generate new keys for a new Telos account:
+								Generate new keys to send us:
 								<div className='recovery_steps'>
 									{
 										recovery_steps.map((step, i) => {
@@ -178,7 +125,7 @@ const TokenRecoveryProcessOne = () => {
 								<ul>
 									<li>Sign in and select the Ethereum wallet that held your EOS tokens.</li>
 									<li>
-										Copy/paste this message:
+										Copy/paste this message and add your Ethereum public key and your new Telos Public Key  (or an EOS key you want to use):
 										<div className='process_message'>
 											<p>As the cryptographically verified owner of ethereum address listed below ("Ethereum Address"), I attest that I did own the EOS tokens listed on the EOS ERC-20 snapshot associated with this address and that I hereby request that the public key for my account be changed to the new EOS public key below (“New EOS Public Key”) or the Telos Network address equivalent for my corresponding account on the Telos Network. I agree to release the Telos Network and its Members - as well as the members of any blockchain project that may subsequently use this same value snapshot in the future - from any claim arising from this request. The cryptographic signature of this document constitutes my legal digital signature in all jurisdictions.</p>
 											<ul>

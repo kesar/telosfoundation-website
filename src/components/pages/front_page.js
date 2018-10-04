@@ -33,9 +33,12 @@ import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
 import amplified from '../../img/partner_logos/logo_amplified.png';
 import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
 import madrid from '../../img/partner_logos/logo_telos_madrid.png';
+import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
+import telos_dac from '../../img/partner_logos/logo_telos_dac.png';
+import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
 
 //white papers
-import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN} from '../../config/constants';
+import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN, WHITE_PAPER_CHINESE} from '../../config/constants';
 
 //charts
 import chart_ch from '../../img/charts/Telos_MarketingSite_Chart_1000px_CH.png';
@@ -159,12 +162,26 @@ const partnersArr = [
 	},
 	{
 		name: 'telos venezuela',
-		logo: venezuela
+		logo: venezuela,
+		url: 'https://www.telosvenezuela.com'
 	},
 	{
 		name: 'telos madrid',
 		logo: madrid,
 		url: 'https://telosmadrid.io/'
+	},
+	{
+		name: 'telos dac',
+		logo: telos_dac
+	},
+	{
+		name: 'telos ny',
+		logo: telos_ny
+	},
+	{
+		name: 'telos canton',
+		logo: telos_canton,
+		url: 'https://teloscanton.io'
 	}
 ];
 
@@ -325,6 +342,9 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text, lang
 			break;
 		case 'korean':
 			wp_url = WHITE_PAPER_KOREAN;
+			break;
+		case 'mandarin':
+			wp_url = WHITE_PAPER_CHINESE;
 			break;
 		default:
 			wp_url = WHITE_PAPER_ENGLISH;

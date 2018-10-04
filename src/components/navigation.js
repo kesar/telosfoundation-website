@@ -64,7 +64,7 @@ class Navigation extends Component {
 						<a href='https://medium.com/@teloslogical'>BLOG</a>
 					</li>			
 					<li>
-						<a href="https://testnet.telosfoundation.io/">TESTNET</a>
+						<a href="http://testnet.telosfoundation.io/">TESTNET</a>
 					</li>
 					<li className='rewards_nav_item'>
 						<a
@@ -126,6 +126,42 @@ class Navigation extends Component {
 							}}
 						>
 							ARBITRATOR PROGRAM
+						</a>
+					</li>
+					<li className='side_nav_item_mobile'>
+						<a
+							href='/recovery'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/recovery');
+								this.handleCloseNav();
+							}}
+						>
+							TOKEN RECOVERY
+						</a>
+					</li>
+					<li className='side_nav_item_mobile'>
+						<a
+							href='/iwantmytlos'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/iwantmytlos');
+								this.handleCloseNav();
+							}}
+						>
+							#IWANTMYTLOS
+						</a>
+					</li>
+					<li className='side_nav_item_mobile'>
+						<a
+							href='/dapps'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/dapps');
+								this.handleCloseNav();
+							}}
+						>
+							DAPP DEVELOPMENT
 						</a>
 					</li>
 				</Nav>

@@ -48,6 +48,42 @@ const SideNavigation = (props) => {
 						ARBITRATOR PROGRAM
 					</a>
 				</li>
+				<li>
+					<a
+						href='/recovery'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/recovery');
+							props.toggleSideNav(false);
+						}}
+					>
+						TOKEN RECOVERY
+					</a>
+				</li>
+				<li>
+					<a
+						href='/iwantmytlos'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/iwantmytlos');
+							props.toggleSideNav(false);
+						}}
+					>
+						#IWANTMYTLOS
+					</a>
+				</li>
+				<li>
+					<a
+						href='/dapps'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/dapps');
+							props.toggleSideNav(false);
+						}}
+					>
+						DAPP DEVELOPMENT
+					</a>
+				</li>
 			</ul>
 		</nav>
 	);

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import {Grid, Row, Col, ButtonGroup} from 'react-bootstrap';
+import {Grid, Row, Col} from 'react-bootstrap';
 import BannerModal from '../modals/banner_modal';
+import {Helmet} from 'react-helmet';
 import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 import pdf_img from '../../img/download_pdf_icon.png';
 import zip_img from '../../img/download_zip_icon.png';
@@ -11,34 +12,34 @@ import banner_three from '../../img/banners/Splash Banner_Telos-Medium_generic_3
 import banner_four from '../../img/banners/Splash Banner_Telos-Medium_generic_4_display.jpg';
 
 //white papers
-import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN} from '../../config/constants';
+import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN, WHITE_PAPER_CHINESE} from '../../config/constants';
 import '../../styles/download.css';
 
-const sg_en = 'http://resources.telosfoundation.io/Telos_Style Guide_2018.pdf';
+const sg_en = 'https://resources.telosfoundation.io/Telos_Style Guide_2018.pdf';
 
 const splashBanners = [
 	{
 		name: 'banner one',
 		image: banner_one,
-		download: 'http://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_1.jpg',
+		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_1.jpg',
 		downloadName: 'Splash Banner_Telos-Medium_generic_1.jpg'
 	},
 	{
 		name: 'banner two',
 		image: banner_two,
-		download: 'http://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_2.jpg',
+		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_2.jpg',
 		downloadName: 'Splash Banner_Telos-Medium_generic_2.jpg'
 	},
 	{
 		name: 'banner three',
 		image: banner_three,
-		download: 'http://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_3.jpg',
+		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_3.jpg',
 		downloadName: 'Splash Banner_Telos-Medium_generic_3.jpg'
 	},
 	{
 		name: 'banner four',
 		image: banner_four,
-		download: 'http://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_4.jpg',
+		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_4.jpg',
 		downloadName: 'Splash Banner_Telos-Medium_generic_4.jpg'
 	}
 ];
@@ -46,6 +47,10 @@ const splashBanners = [
 const Download = ({language}) => {
 	return (
 		<div className='download_page'>
+			<Helmet>
+				<title>Telos Downloads</title>
+				<meta name="description" content="Download all the documents and tools that you need to join the Telos Network." />
+			</Helmet>
 			<Grid>
 				<Row>
 					<Col md={12}>
@@ -146,10 +151,40 @@ class Documents extends Component {
 			case 'korean':
 				wp_url = WHITE_PAPER_KOREAN;
 				break;
+			case 'mandarin':
+				wp_url = WHITE_PAPER_CHINESE;
+				break;
 			default:
 				wp_url = WHITE_PAPER_ENGLISH;
 				break;
 		}
+
+		const downloadDocuments = [
+			{
+				document_type: 'pdf',
+				url: wp_url,
+				link_text: 'White Paper',
+				description: 'We are out to create the best blockchain ever - read the white paper to judge for yourself. Join us and build on Telos.'
+			},
+			{
+				document_type: 'pdf',
+				url: 'https://resources.telosfoundation.io/TELOS Electronic Press Kit _final_9.28.18.pdf',
+				link_text: 'Electronic Press Kit',
+				description: 'Everything you need to know about Telos in one PDF.'
+			},
+			{
+				document_type: 'pdf',
+				url: sg_en,
+				link_text: 'Telos Style Guide',
+				description: 'A style guide featuring Telos Foundation logos, color palettes and fonts for brand use.'
+			},
+			{
+				document_type: 'zip',
+				url: 'https://resources.telosfoundation.io/Telos_Logos_and_Icons.zip',
+				link_text: 'Telos Logo and Icon',
+				description: 'A package containing an assortment of file sizes and types for the Telos logo and icon.'
+			}
+		];
 
 		return (
 			<section id='download_documents'>
@@ -157,33 +192,29 @@ class Documents extends Component {
 				<hr />
 				<Row>
 					<Col md={8} mdOffset={2}>
-						<div className='download_document_container'>
-							<div className='download_document'>
-								<a href={wp_url}>White Paper</a>
-								<p>We are out to create the best blockchain ever - read the white paper to judge for yourself. Join us and build on Telos.</p>
-							</div>
-							<a href={wp_url}>
-								<img src={pdf_img} alt='' className='download_icon' />
-							</a>
-						</div>
-						<div className='download_document_container'>
-							<div className='download_document'>
-								<a href={sg_en}>Telos Style Guide</a>
-								<p>A style guide featuring Telos Foundation logos, color palettes and fonts for brand use.</p>
-							</div>
-							<a href={sg_en}>
-								<img src={pdf_img} alt='' className='download_icon' />
-							</a>
-						</div>
-						<div className='download_document_container'>
-							<div className='download_document'>
-								<a href='http://resources.telosfoundation.io/Telos_Logos_and_Icons.zip'>Telos Logo and Icon</a>
-								<p>A package containing an assortment of file sizes and types for the Telos logo and icon.</p>
-							</div>
-							<a href='http://resources.telosfoundation.io/Telos_Logos_and_Icons.zip'>
-								<img src={zip_img} alt='' className='download_icon' />
-							</a>
-						</div>
+						{
+							downloadDocuments.map((doc, i) => {
+								if(doc.document_type === 'pdf'){
+									return (
+										<DownloadDocumentPDF
+											key={i}
+											url={doc.url}
+											link_text={doc.link_text}
+											description={doc.description} />
+									);
+								}else{
+									//right now we only have pdf and zip, but might have others in the future.
+									return (
+										<DownloadDocumentZIP
+											key={i}
+											url={doc.url}
+											link_text={doc.link_text}
+											description={doc.description} />
+									);
+								}
+							})
+						}
+
 						<div className='download_banner_container'>
 							<div className='download_banner_description'>
 								<h3>Telos Article Splash Banners</h3>
@@ -225,5 +256,33 @@ class Documents extends Component {
 		);
 	}
 }
+
+const DownloadDocumentPDF = (props) => {
+	return (
+		<div className='download_document_container'>
+			<div className='download_document'>
+				<a href={props.url} target='_blank' rel='noopener noreferrer'>{props.link_text}</a>
+				<p>{props.description}</p>
+			</div>
+			<a href={props.url} target='_blank' rel='noopener noreferrer'>
+				<img src={pdf_img} alt='pdf download icon' className='download_icon' /> 
+			</a>
+		</div>
+	);
+};
+
+const DownloadDocumentZIP = (props) => {
+	return (
+		<div className='download_document_container'>
+			<div className='download_document'>
+				<a href={props.url}>{props.link_text}</a>
+				<p>{props.description}</p>
+			</div>
+			<a href={props.url}>
+				<img src={zip_img} alt='zip download icon' className='download_icon' />
+			</a>
+		</div>
+	);
+};
 
 export default Download;

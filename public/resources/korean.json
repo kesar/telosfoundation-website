@@ -13,5 +13,71 @@
   	"white_paper_content": "Telos 백서를 읽고 본인이 판단하는 몫만 남았습니다. 저희는 지금까지 없었던 블락체인을 구현해보고자 하며 저희 Telos 프로젝트에 동참해주시면 감사하겠습니다.",
     "github_text": "Github 방문",
   	"partners_heading": "우리의 파트너들"
+  },
+  "token_recovery": {
+    "intro": {
+      "heading": "Telos 잃어버린 키 복구 포털",
+      "content": [
+        "EOS에서 키가 분실 되었습니까? Telos는 곧 나오는 Telos sharedrop에서 적절한 소유자가 TLOS 토큰을 받게 하고자 합니다.",
+        "Telos는 원래 EOS ERC-20 스냅 샷 (계정 당 최대 40,000 개)을 기준으로 EOS 제네시스와 동일한 키 및 계정 이름을 사용하여 TLOS 토큰 1 : 1을 제공합니다. 키를 잃어 버리거나 손상된 사람은 Telos 체인에서 키를 교체할 수 있습니다. 그렇기에 저희는 EOS 제네시스 시점에 토큰을 보유한 사람들 에게 텔로스 네트워크 내에선 필요 시 키를 수정할 수 있는 방안을 고려하도록 건의하고 있습니다.",
+        "키 교체 절차는 Telos 메인 넷이 시작되기 전에 발생해야합니다. Telos는 원래의 ERC-20 스냅 샷을 사용하기 때문에 EOS가 시작된 후 계정에 발생한 피싱 또는 기타 키 손실을 우회하여 해당 키를 보유한 Ethereum 주소를 기반으로 소유권을 확인할 수 있습니다. EOS 계정을 잃어버린 사람이 새로운 Telos 계정을 관리 할 수 ​​있도록 특별한 시간을 가지고자 합니다.",
+        "확실히 말씀 드리고 싶은 부분은 Telos는 Telos 블록 체인에서 손실되거나 손상된 계정 만 보호 할 수 있습니다. 유감스럽게도 EOS 계정에서 생긴 문제는 저희가 어떻게 할 수 있는 부분이 없습니다."
+      ] 
+    },
+    "process_one": {
+      "two_processes_heading": "키 복구에는 두 가지 프로세스가 있습니다.",
+      "heading": "프로세스 1",
+      "process_intro": [
+        "EOS ERC-20 토큰을 등록했지만 나중에 키를 분실하거나 손상된 사용자를위한 프로세스입니다. 98 %의 사용자에게 적용되므로 적절한 방법 일 것입니다.",
+        "스냅 샷에서 EOS 토큰을 보유한 동일한 주소에서 Ethereum 블록 체인의 메시지에 서명을 진행합니다. 이 메시지에는 사용자가 선택하는 지갑에서 새로운 퍼블릭 키가 포함 되어 있습니다. Sqrl예제를 보시고 따라하시면 됩니다. Sq기을 통해 EOS 또는 TLOS로 시작하는 퍼블릭 키를 생성할 수 있습니다.",
+        "퍼블릭 키의 프라이벗 키를 꼭 저장하시고 저희에게 이더리움 주소와 OES 퍼블릭 키를 전송해주세요. 저희쪽에서 메시지를 확인하고 키를 변경해드리겠습니다.",
+        "밑에 따라하세요:"
+      ],
+      "step_one": "<a href='https://telosfoundation.io/downloads' target='_blank' rel='noopener noreferrer'>telosfoundation.io/downloads</a> 에서 sqrl지갑을 다운받으세요",
+      "step_two": {
+        "step": "새로운 텔로스 계정에서 새로운 키를 생성하세요.",
+        "screenshot_captions": [
+          "Sqrl 지갑 열기",
+          "\"텔로스 테스트넷\" 선택",
+          "\"새로운 계정 생성\" 선택",
+          "계정이름 기입",
+          "\"본인 퍼블릭 키\" 생성",
+          "\"본인 퍼블릭 키\"를 카피해서 \"퍼블릭 키 활성화\" 칸에 기입",
+          "키를 저장해서 안전한 곳에 보관하세요! 오프라인에 보관하시길 추천합니다.",
+          "계정 생성"
+        ]
+      },
+      "step_three": {
+        "step": "가기: <a href='https://www.myetherwallet.com/signmsg.html' target='_blank' rel='noopener noreferrer'>www.myetherwallet.com/signmsg.html</a>",
+        "sign_in": "로그인하여 EOS 토큰을 보유한 Ethereum 지갑을 선택하십시오.",
+        "copy_paste": "이 메시지를 복사하여 붙여 넣기 :",
+        "message": "암호호된 ethereum 주소 소유자 ( \"Ethereum Address\")로서 본인은이 주소와 관련된 EOS ERC-20 스냅 샷에 찍힌 EOS 토큰을 소유하고 있으며 이에 따라 본인의 계정에 대한 공개 키를 요청합니다. 아래의 새로운 EOS 공개 키 ( \"New EOS Public Key\") 또는 Telos 네트워크의 해당 계정에 해당하는 Telos 네트워크 주소로 변경하고자 합니다.  본인은이 요청을 통해 Telos Network 및 그 회원 (향후 동일한 가치의 스냅 샷을 나중에 사용할 수있는 블록 체인 프로젝트 포함)에 공개하는 데 동의합니다. 이 문서의 암호화 서명은 법적인 디지털 서명이며 모든 법관할 지역에서 유효합니다.",
+        "ethereum": "Ethereum 주소 :",
+        "public_key": "새로운 EOS 공개 키 :",
+        "screenshot_caption": "\"Ethereum Address\"에 EOS 토큰을두고 자신의 Ethereum 주소를 입력하고 \"New EOS Public Key\"에 새로운 SQRL 공개 키를 입력하십시오",
+        "screenshot_caption_two": "Log into the wallet that has your Ethereum account where your EOS tokens where held.",
+        "screenshot_caption_three": "Sign the pasted message with the Ethereum address and new Telos Public Key (or an EOS key you want to use).",
+        "screenshot_caption_four": "Copy this Signature text and send it in the form below",        
+        "email_us": "조사 할 수 있도록 귀하의 정보를 이메일로 보내주십시오."
+      },
+      "process_note": "Note:  No one from Telos will every ask for your private key! If you get an email from us it will only be to help you go through this process again to make sure it works."
+    },
+    "process_two": {
+      "heading": "프로세스 2",
+      "process_intro": [
+        "이 과정은 제네시스 스냅 샷 이전에 블록 1로 EOS ERC-20 토큰을 등록한 적이없는 사람들을위한 것입니다. 비공개 키를 입력해야하기 때문에 EOS Authority로 연결됩니다. EOS Autority는블록 생산자이며 검증프로세스를 개발했으며 이는EOS 네트워크와 TELOS 네트워크 모두에서 구동이 가능합니다."
+      ],
+      "eos_auth": "EOS Authority 웹 사이트로 이동하십시오 :",
+      "save_keys": "SQRL 지갑 계좌에 해당 키를 저장하십시오.",
+      "import_wallet": "네트워크가 시작되면 SQRL을 통해 지갑을 가져옵니다."
+    },
+    "recovery_form": {
+      "heading": "본인의 정보를 입력해주세요.",
+      "email_label": "이메일 (문제 발생 시 필요한 이메일)",
+      "ethereum_label": "복사된 메시지를 볼 수 있는 EOS가 저장된 지갑주소",
+      "generated_label": "TLOS를 수령 받고자 하는 새로 생선된 Telos (또는 EOS) 지갑 주소",
+      "signature_label": "Paste the signature text here.",
+      "response": "감사합니다."
+    }
   }
 }

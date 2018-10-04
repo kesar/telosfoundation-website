@@ -29,3 +29,5 @@ package-lock.json
 
 # may as well hide this
 /src/config
+
+/public/resources/.well-known
