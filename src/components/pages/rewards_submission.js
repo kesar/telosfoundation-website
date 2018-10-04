@@ -153,7 +153,7 @@ export default class RewardsSubmission extends Component {
 							<textarea
 								className='form-control'
 								value={submissionInputs.details}
-								placeholder='Please provide any additional details that will help us evaluate your submission'
+								placeholder='Please provide any additional details that will help us evaluate your submission (optional in most cases)'
 								onChange={e => this.handleDetailsChange(e, idx)}
 							>
 							</textarea>
