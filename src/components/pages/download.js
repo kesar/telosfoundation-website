@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import BannerModal from '../modals/banner_modal';
+import {Helmet} from 'react-helmet';
 import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 import pdf_img from '../../img/download_pdf_icon.png';
 import zip_img from '../../img/download_zip_icon.png';
@@ -46,6 +47,10 @@ const splashBanners = [
 const Download = ({language}) => {
 	return (
 		<div className='download_page'>
+			<Helmet>
+				<title>Telos Downloads</title>
+				<meta name="description" content="Download all the documents and tools that you need to join the Telos Network." />
+			</Helmet>
 			<Grid>
 				<Row>
 					<Col md={12}>

@@ -1,5 +1,6 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
+import {Helmet} from 'react-helmet';
 import triple_icon_desktop from '../../img/arbitrator/triple_icon.png';
 import triple_icon_mobile from '../../img/arbitrator/triple_icon_horizontal.png';
 import pdf_img from '../../img/download_pdf_icon.png';
@@ -63,6 +64,10 @@ const arbitratorDocuments = [
 const Arbitrator = () => {
 	return (
 		<div className='arbitrators'>
+			<Helmet>
+				<title>Telos Arbitrator Program</title>
+				<meta name="description" content="The Telos Network is the world’s first governed blockchain with arbitrators elected by its members. We are looking for legal professionals from around the world to help us build this system into the model for all future blockchain governance and arbitration." />
+			</Helmet>
 			<Grid>
 				<Row>
 					<Col md={10} mdOffset={1}>

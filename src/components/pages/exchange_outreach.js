@@ -1,11 +1,16 @@
 import React from 'react';
 import {Grid, Row, Col, Table} from 'react-bootstrap';
+import {Helmet} from 'react-helmet';
 import '../../styles/exchange_outreach.css';
 import hashtag_graphic from '../../img/hashtag_graphic.jpg';
 
 const ExchangeOutreach = () => {
 	return (
 		<div className='exchange_outreach'>
+			<Helmet>
+				<title>Telos Hashtag Campaign</title>
+				<meta name="description" content="Be rewarded for using your influence to get TLOS tokens listed your cryptocurrency exchange. Anyone, including those who opted to keep their ERC-20 EOS tokens on an exchange during the Genesis snapshot, can participate in our hashtag campaign to spread the word and earn additional TLOS tokens." />
+			</Helmet>
 			<ExchangeIntro />
 			<ExchangeRules />
 			<ExchangeParticipation />

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import RecoveryFormModal from '../modals/recovery_form_modal';
+import {Helmet} from 'react-helmet';
 import '../../styles/token_recovery.css';
 import step_one from '../../img/token_recovery/step_1.png';
 import step_three from '../../img/token_recovery/step_3.png';
@@ -57,6 +58,10 @@ const TokenRecovery = ({language, token_recovery}) => {
 
 	return (
 		<div className='token_recovery'>
+			<Helmet>
+				<title>Token Recovery</title>
+				<meta name="description" content="Were your keys lost or compromised on EOS? Telos wants to make sure the proper owners receive their TLOS tokens in our upcoming Telos sharedrop!" />
+			</Helmet>
 			<TokenRecoveryIntro intro={token_recovery.intro} />
 			<TokenRecoveryProcessOne
 				process={token_recovery.process_one}

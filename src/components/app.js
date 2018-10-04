@@ -6,6 +6,7 @@ import {selectLanguage, toggleSideNav} from '../actions';
 import {connect} from 'react-redux';
 import {BrowserRouter as Router} from 'react-router-dom';
 import SideNavigation from './side_navigation';
+import {Helmet} from 'react-helmet';
 import '../styles/app.css';
 
 class App extends Component {
@@ -26,6 +27,9 @@ class App extends Component {
 		return (
 			<Router>
 				<div className={`app ${this.props.side_nav_open ? 'side_nav_open' : ''}`}>
+					<Helmet>
+						<title>Telos Foundation</title>
+					</Helmet>
 					<Header />
 					<Body />
 					<Footer />

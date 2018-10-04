@@ -1,5 +1,6 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
+import {Helmet} from 'react-helmet';
 import not_started_icon from '../../img/checklist/gng_list_no_circle.png';
 import in_progress_icon from '../../img/checklist/gng_list_in-progress.png';
 import completed_icon from '../../img/checklist/gng_list_yes.png';
@@ -9,6 +10,10 @@ import '../../styles/checklist.css';
 const Checklist = () => {
 	return (
 		<Grid>
+			<Helmet>
+				<title>Telos Launch Checklist</title>
+				<meta name="description" content="List of features and functions are considered essential and must be completed and tested in order for Telos to launch." />
+			</Helmet>
 			<Row>
 				<Col md={12}>
 					<div className='checklist'>
@@ -196,7 +201,7 @@ const Miscellaneous = () => {
 				<li className='yes'>Launch group rewards system</li>
 				<li className='yes'>Verified capped genesis snapshot</li>
 				<li className='in_progress'>At least 40 BP candidates have successfully participated in test launches</li>
-				<li className='no'>Launching ABPs agreed upon (six across globe)</li>
+				<li className='no'>Agree upon ABP launch group (six across globe)</li>
 				<li className='in_progress'>
 					Lost tokens processed
 					<InfoLinks telos_link='https://telosfoundation.io/recovery' />
