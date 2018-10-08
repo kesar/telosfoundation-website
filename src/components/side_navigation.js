@@ -84,6 +84,18 @@ const SideNavigation = (props) => {
 						DAPP DEVELOPMENT
 					</a>
 				</li>
+				<li>
+					<a
+						href='/governance'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/governance');
+							props.toggleSideNav(false);
+						}}
+					>
+						GOVERNANCE
+					</a>
+				</li>
 			</ul>
 		</nav>
 	);

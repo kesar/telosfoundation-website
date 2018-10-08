@@ -164,6 +164,18 @@ class Navigation extends Component {
 							DAPP DEVELOPMENT
 						</a>
 					</li>
+					<li className='side_nav_item_mobile'>
+						<a
+							href='/governance'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/governance');
+								this.handleCloseNav();
+							}}
+						>
+							GOVERNANCE
+						</a>
+					</li>
 				</Nav>
 			  </Navbar.Collapse>
 			</Navbar>

@@ -7,6 +7,7 @@ import Download from './pages/download';
 import Arbitrator from './pages/arbitrator';
 import TokenRecovery from './pages/token_recovery_translate';
 import DAppsPage from './pages/dapps';
+import Governance from './pages/governance';
 import {connect} from 'react-redux';
 import {Switch, Route, withRouter} from 'react-router-dom';
 import '../styles/body.css';
@@ -25,6 +26,7 @@ const Body = ({site_content}) => {
 				<Route path='/arbitrators' component={Arbitrator} />
 				<Route path='/dapps' component={DAppsPage} />
 				<Route path='/recovery' render={() => <TokenRecovery token_recovery={site_content.token_recovery} language={site_content.language} />} />
+				<Route path='/governance' component={Governance} />
 				<Route path='/' render={() => <FrontPage landing_page={site_content.landing_page} language={site_content.language} />} />
 			</Switch>
 		</main>

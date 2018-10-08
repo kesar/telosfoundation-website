@@ -44,7 +44,7 @@ const arbitratorDocuments = [
 	{
 		name: 'Telos Arbitration Process Document',
 		description: 'This document outlines how the arbitration of disputes and interventions to change account or contract values will be administered on the Telos Network.',
-		url: 'https://medium.com/@teloslogical/fyc-telos-network-arbitration-process-e4ed6f9e4ace',
+		url: 'https://resources.telosfoundation.io/arbitrator_documents/Telos Network Arbitration Process.pdf',
 		type: 'link'
 	},
 	{
