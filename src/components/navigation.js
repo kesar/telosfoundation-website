@@ -106,14 +106,14 @@ class Navigation extends Component {
 					</li>
 					<li className='side_nav_item_mobile'>
 						<a
-							href='/downloads'
+							href='/governance'
 							onClick={e => {
 								e.preventDefault();
-								this.props.history.push('/downloads');
+								this.props.history.push('/governance');
 								this.handleCloseNav();
 							}}
 						>
-							DOWNLOADS
+							GOVERNANCE
 						</a>
 					</li>
 					<li className='side_nav_item_mobile'>
@@ -126,6 +126,30 @@ class Navigation extends Component {
 							}}
 						>
 							ARBITRATOR PROGRAM
+						</a>
+					</li>
+					<li className='side_nav_item_mobile'>
+						<a
+							href='/dapps'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/dapps');
+								this.handleCloseNav();
+							}}
+						>
+							DAPP DEVELOPMENT
+						</a>
+					</li>
+					<li className='side_nav_item_mobile'>
+						<a
+							href='/downloads'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/downloads');
+								this.handleCloseNav();
+							}}
+						>
+							DOWNLOADS
 						</a>
 					</li>
 					<li className='side_nav_item_mobile'>
@@ -150,30 +174,6 @@ class Navigation extends Component {
 							}}
 						>
 							#IWANTMYTLOS
-						</a>
-					</li>
-					<li className='side_nav_item_mobile'>
-						<a
-							href='/dapps'
-							onClick={e => {
-								e.preventDefault();
-								this.props.history.push('/dapps');
-								this.handleCloseNav();
-							}}
-						>
-							DAPP DEVELOPMENT
-						</a>
-					</li>
-					<li className='side_nav_item_mobile'>
-						<a
-							href='/governance'
-							onClick={e => {
-								e.preventDefault();
-								this.props.history.push('/governance');
-								this.handleCloseNav();
-							}}
-						>
-							GOVERNANCE
 						</a>
 					</li>
 				</Nav>

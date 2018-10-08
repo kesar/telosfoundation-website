@@ -26,14 +26,14 @@ const SideNavigation = (props) => {
 				</li>
 				<li>
 					<a
-						href='/downloads'
+						href='/governance'
 						onClick={e => {
 							e.preventDefault();
-							props.history.push('/downloads');
+							props.history.push('/governance');
 							props.toggleSideNav(false);
 						}}
 					>
-						DOWNLOADS
+						GOVERNANCE
 					</a>
 				</li>
 				<li>
@@ -46,6 +46,30 @@ const SideNavigation = (props) => {
 						}}
 					>
 						ARBITRATOR PROGRAM
+					</a>
+				</li>
+				<li>
+					<a
+						href='/dapps'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/dapps');
+							props.toggleSideNav(false);
+						}}
+					>
+						DAPP DEVELOPMENT
+					</a>
+				</li>				
+				<li>
+					<a
+						href='/downloads'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/downloads');
+							props.toggleSideNav(false);
+						}}
+					>
+						DOWNLOADS
 					</a>
 				</li>
 				<li>
@@ -70,30 +94,6 @@ const SideNavigation = (props) => {
 						}}
 					>
 						#IWANTMYTLOS
-					</a>
-				</li>
-				<li>
-					<a
-						href='/dapps'
-						onClick={e => {
-							e.preventDefault();
-							props.history.push('/dapps');
-							props.toggleSideNav(false);
-						}}
-					>
-						DAPP DEVELOPMENT
-					</a>
-				</li>
-				<li>
-					<a
-						href='/governance'
-						onClick={e => {
-							e.preventDefault();
-							props.history.push('/governance');
-							props.toggleSideNav(false);
-						}}
-					>
-						GOVERNANCE
 					</a>
 				</li>
 			</ul>
