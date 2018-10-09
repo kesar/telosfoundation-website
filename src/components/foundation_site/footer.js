@@ -2,18 +2,19 @@ import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 
 import background from '../../img/foundation_site/footer_background.png';
+import svg_background from '../../img/foundation_site/TFG_Header_Footer.svg';
 import logo_wire from '../../img/foundation_site/logo_wire.png';
 import '../../styles/foundation_site/footer.css';
 
 const footerStyle = {
-	backgroundImage: `url(${background})`
+	backgroundImage: `url(${svg_background})`
 };
+
 
 const Footer = () => {
 	return (
 		<footer
 			className='foundation_footer'
-			style={footerStyle}
 		>
 			<Grid fluid>
 				<div className='footer_row'>
@@ -33,6 +34,7 @@ const Footer = () => {
 					</div>
 				</div>
 			</Grid>
+			<div className='footer_background' style={footerStyle}></div>
 		</footer>
 	);
 };

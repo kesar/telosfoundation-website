@@ -7,3 +7,7 @@
 	width: 55px;
 	max-width: 100%;
 }
+
+.foundation_header .content_container {
+	padding: 0 20px;
+}
