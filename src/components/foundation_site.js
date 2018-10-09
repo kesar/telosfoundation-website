@@ -11,7 +11,9 @@ const FoundationSite = () => {
 	return (
 		<div>
 			<Header />
-			<Board />
+			<main className='foundation_site_main'>
+				<Board />
+			</main>
 			<Footer />
 		</div>
 	);
