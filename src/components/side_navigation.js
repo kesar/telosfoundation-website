@@ -4,6 +4,7 @@ import {toggleSideNav} from '../actions';
 import {withRouter} from 'react-router-dom';
 import '../styles/side_navigation.css';
 import telos_logo from '../img/Telos_MarketingSite_TelosLogo_500px.png';
+import logo_w_text from '../img/logo_w_text.png';
 
 const SideNavigation = (props) => {
 	return (
@@ -97,6 +98,9 @@ const SideNavigation = (props) => {
 					</a>
 				</li>
 			</ul>
+			<footer>
+				<img src={logo_w_text} alt='side nav logo' />
+			</footer>
 		</nav>
 	);
 };
