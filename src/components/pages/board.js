@@ -7,6 +7,11 @@ import azad_halim from '../../img/foundation_site/azad_halim.png';
 import beth from '../../img/foundation_site/beth.png';
 import jt_buice from '../../img/foundation_site/jt_buice.png';
 import robert_james from '../../img/foundation_site/robert_james.jpg';
+import jan_smit from '../../img/foundation_site/Jan Smit.jpg';
+import jesse_schulman from '../../img/foundation_site/Jesse Schulman.jpg';
+import marlon_williams from '../../img/foundation_site/Marlon Williams.jpg';
+import josep_rosich from '../../img/foundation_site/josep_rosich.png';
+import jerry_huff from '../../img/foundation_site/jerry_huff.png';
 
 import '../../styles/board.css';
 
@@ -15,6 +20,7 @@ const interimNominees = [
 		name: 'Jan Smit',
 		organization: 'DutchEOS',
 		nominatedBy: 'Douglas Horn, GoodBlock',
+		portrait: jan_smit,
 		bio: [
 			'Jan is a respected member of the Telos Contributors Group. DutchEOS was one of the original 12 organizations who participated in the Telos announcement. Since that time, Jan has contributed to several working groups and visibly represented Telos at the London Hackathon and blockchain conference in September, along with the rest of the DutchEOS team. Jan has a background in investing and has agreed to be bound by the trading restrictions regarding secrecy and trading TLOS RAM on his own account or that of his organization while serving as the RAM Administration Director. He has demonstrated progressive and thoughtful ideas about the subject of resource management in Telos and has proven himself to be diligent contributor to the Telos community. I believe Jan will make an excellent RAM Administration Director to guide us through the launch of the Telos Blockchain Network.'
 		]
@@ -36,6 +42,7 @@ const boardNominees = [
 		name: 'Marlon Williams',
 		organization: 'EOS Detroit',
 		nominatedBy: 'Peter Bue, GoodBlock',
+		portrait: marlon_williams,
 		bio: [
 			'Marlon is the founder of EOS Miami. He’s also CEO of Fenero, a cloud-based call center software company and Qubicles, an EOSIO-based marketplace for connecting call centers with customer service, sales and support talent in a global meritocracy-based system. Marlon has served as Treasurer for the Miami-Dade County Public Schools S.T.E.M. Advisory Board; President of the South Florida Chapter of the Society for Information Management; and is a current Board Member of the South Florida Digital Alliance.',
 			'He co-chairs the Telos Development Working Group and have lead efforts to adopt multi-chain support in eosjs and eosjs-ecc, as well as development of Telos\' official wallet, Sqrl.',
@@ -59,6 +66,88 @@ const boardNominees = [
 		nominatedBy: 'Josep Rosich, EOS Barcelona',
 		bio: [
 			'J.T. Buice (pronounced Bise) is a Technical IT Director with broad competencies in all areas of IT Infrastructure including LAN and WAN networking, server architecture (UNIX & Windows), mass storage, and telecommunications. Since 2015, Buice has served as Director of Technology for Kainos Technologies, a managed services provider business he co-founded bringing fast and efficient high technology solutions and support to the state of Texas. Before Kainos, Buice joined Space Exploration Technologies (SpaceX) as IT Manager to deliver always-on IT that enabled SpaceX to serve commercial and government entities in furthering the exploration of space with an end goal to make life multi-planetary. Having joined the Telos Community immediately following its announcement, Buice has jumped headlong in with one of the greatest blockchain communities in existence and is honored to be nominated for the Telos Foundation’s board of directors.'
+		]
+	},
+	{
+		name: 'Jerry Huff',
+		organization: 'BlindBlocArt',
+		nominatedBy: 'Ed Silva, GoodBlock',
+		portrait: jerry_huff,
+		bio: [
+			'Jerry has been in the computer industry since 1972, either repairing, building, or administrating.',
+			'He has a B.S. in Computer Science from California State University, Stanislaus.',
+			'He is and always has been a problem solver and is looking forward to bringing his vast experience to Telos. He has held jobs in manufacturing and service, been an Operations Manager, and co-founded a 3rd party service company where he was President and CFO. This gives him a very broad view how things should be run, and a very level-headed approach to solving problems.'
+		]
+	},
+	{
+		name: 'Rob Konsdorf',
+		organization: 'EOS Detroit',
+		nominatedBy: 'James Davis, GoodBlock',
+		bio: [
+			'Rob Konsdorf (a.k.a @robrigo) hails from the Bitshares and Steem communities. Having studied and worked toward the proliferation of blockchain networks since 2014, Rob is a natural fit for rallying a cross-disciplinary team together to accelerate the adoption of EOSIO and its applications. As an avid proponent of the transformative force of decentralized networks, he decided to focus on his passion of evangelizing and participating in the decentralist movement full time last year. With a degree in Computer Science and background in Software Engineering, Rob has worn many hats over the years working on product development, education and operations.'
+		]
+	},
+	{
+		name: 'Chen Li',
+		organization: 'Telos Vancouver',
+		nominatedBy: 'Beth Farnham, GoodBlock',
+		bio: [
+			'Chen Li was one of the original members of the Telos Contributors Group. He has put in countless hours of outreach to Chinese exchanges, DApps, and users and has performed many of the Chinese document translations. Chen has also contributed to the development working groups. His outreach to the Chinese community is of enormous value to the network.',
+			'Chen started programming in high school and won 1st Prize in the National Olympiad in Informatics (NOIP) at the age of 18. Over the past 15 years, he has successfully implemented and deployed various projets ranging from Global Navigation Satellite Reflectometry to Network Monitoring System for large-scaled enterprises. With his experience in development and dev ops, Chen is committed to contributing his technical skills to the Telos community.'
+		]
+	},
+	{
+		name: 'Josep Rosich',
+		organization: 'EOS Barcelona',
+		nominatedBy: 'Douglas Horn, GoodBlock',
+		portrait: josep_rosich,
+		bio: [
+			'An original public member of the Telos Contributors Group, who offered important feedback and ideas for the Telos white paper before it was published, Josep has worked tirelessly towards the success of Telos. Josep arranged for the first exchange that listed TLOS tokens and he continues constant efforts towards onboarding more exchanges, developers, block producers, and users.'
+		]
+	},
+	{
+		name: 'Syed Mushabbar Sadiq',
+		organization: 'swedencornet',
+		selfNominated: true,
+		bio: [
+			'SYED MUSHABBAR SADIQ is an early member of the Telos Contributors Group. He is co-chair of GRC and Security Working Groups. But he is an all-rounder and spending a lot of time (day and night) in most of the working groups; including, but not limited to: Governance, Network, Maintenance, Social Media, Exchange Outreach and so on... He is obsessed with Telos and would like it to succeed in becoming the best choice for DApps in both Enterprise and Consumer domains. He has over 20 years of GRC experience (including Banking Sector).'
+		],
+		linkedIn: 'https://linkedin.com/in/mushabbar'
+	},
+	{
+		name: 'Sukesh Kumar Tedla',
+		organization: 'TelosGreen',
+		selfNominated: true,
+		bio: [
+			'Sukesh Kumar Tedla is a tech enthusiast who envisions in a fair & transparent Internet with complete freedom of choice. He works as a Blockchain Innovation Consultant for Volvo Cars and is the Regional Head & Board Member for Swedish Blockchain Association. He has 4 years of experience in ICT industry and also possesses a Masters Degree in Telecommunications. Demonstrates a good level of technical knowledge, driven to do something good for the community with a Can-Do attitude. He is an EOSIO believer since day one and an early adopter of TELOS. Together with his BP - TelosGreen, he has been working with bounty-system, Dapps-outreach and exchange-outreach groups mainly. He believes in sustainability and green tech projects.',
+			'He can bring his experience, skill-set and most important contacts in the industry to encourage the mass adoption of Telos Network. Together with Swedish Blockchain Association, he has the ability to influence a large community in the Nordic Region. He standbys with the vision of Telos Blockchain Network.'
+		],
+		linkedIn: 'https://linkedin.com/in/sukeshtedla'
+	},
+	{
+		name: 'Beth Farnham',
+		organization: 'GoodBlock',
+		nominatedBy: 'Arjen Kruithof, DutchEOS',
+		portrait: beth,
+		bio: [
+			'Beth has been the chair and driving force for many groups. We specifically think of the Telos marketing / social media group, the exchange outreach group and the translations group. In the past she has served on the boards of a number of charity / non-profit organizations. We feel her organisational and leadership skills would be a welcome addition to the board.'
+		]
+	},
+	{
+		name: 'Jim Hewitt',
+		organization: 'EOS UK',
+		nominatedBy: 'Jan Smit, DutchEOS',
+		bio: [
+			'Jim has been the chair of the main weekly Telos Launch Group meetings and an invaluable contributor to the governance working group. In addition we feel that his unique backround will be an asset to the board. Before joining EOS UK, Jim was an assistant head teacher and for the last 3 years he has managed the operations of an internet consulting practice. Jim majored in history with a focus on the industrial revolution and we expect him to be a driving force behind this "new" industrial revolution.'
+		]
+	},
+	{
+		name: 'Jesse Schulman',
+		organization: 'Caleos',
+		nominatedBy: 'Josep Rosich, EOS Barcelona',
+		portrait: jesse_schulman,
+		bio: [
+			'Jesse is an early member of the Telos Launch Group and has made a big impact as co-chair of the network maintenance group.  He is focused on the technical side of things, and has made contributions across the board such as authoring and implementing the TIP3 snapshot contract as well as helping many new BPs learn the nuances of eosio software and what it takes to get up and running on the testnet.  As co-founder of CalEOS.io, he along with his partner Don will be block producer candidates on the Telos network running their own self-funded bare metal infrastructure, they are working to learn and share as much as possible about tuning the eosio software for optimal performance, making sure users of the Telos network are billed as little CPU as possible for their transactions.'
 		]
 	}
 ];
