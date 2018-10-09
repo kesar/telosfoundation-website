@@ -16,40 +16,40 @@
   },
   "token_recovery": {
     "intro": {
-      "heading": "Telos Lost Key Recovery Portal",
+      "heading": "Telos密钥丢失的恢复途径",
       "content": [
-        "Were your keys lost or compromised on EOS? Telos wants to make sure the proper owners receive their TLOS tokens in our upcoming Telos sharedrop!",
-        "Telos will give TLOS tokens 1:1 based on the original EOS ERC-20 snapshot (up to 40,000 per account) using the same keys and account names as the EOS genesis. Unfortunately, this means that anyone whose keys were lost or compromised at that time or since that time will also need their keys replaced on the Telos chain. For this reason, we’re working to alert EOS genesis token holders that Telos will allow them to revise their keys where necessary.",
-        "The key replacement process needs to occur BEFORE the Telos mainnet launches. Because Telos is using the original ERC-20 snapshot, we can verify ownership based on the Ethereum address that held those keys and can bypass any phishing or other key loss that may have happened to accounts after EOS launched. We have a special window of time in which to help anyone who lost their EOS accounts to maintain control of their new Telos accounts.",
-        "To be clear, Telos can only protect lost or compromised genesis accounts on the Telos blockchain. Unfortunately, we have no power to aid lost key issues on EOS accounts"
+        "你的密钥丢失或被盗了？ Telos希望确保正当的持币者在即将到来的Telos投放中能获得属于他们的TLOS代币！",
+        "Telos会以EOS ERC-20快照为基准，1:1比例发放TLOS代币（最高上限为40000个）。Telos的私钥和账户名与EOS创世快照一致。 这意味着那些在EOS创世之时或之后丢失或被盗密钥的用户，需要将他们原来的密钥转换成Telos链上的。 因此，我们正努力让社区知道，在EOS创世时拥有账户的用户，在需要的时候可以修改他们在Telos上的密钥。",
+        "关键的修改替换密钥手续需要在主网启动前完成。 因为Telos使用原始的ERC-20快照，所以我们能基于持有这些密钥的以太坊地址来验证所有权，并且可以绕开在EOS启动后可能在账户上出现的任何网络钓鱼或密钥丢失。 我们有一个特殊的时间窗口，以帮助任何失去EOS账户的人能保持对新Telos账户的控制。",
+        "必须澄清，Telos只能在Telos链上保护丢失或被盗账户的权益。 可惜我们并没有权力去帮助那些丢失密钥的EOS账户。"
       ] 
     },
     "process_one": {
       "two_processes_heading": "There are two processes for Key Recovery",
-      "heading": "PROCESS 1",
+      "heading": "途径一：",
       "process_intro": [
-        "This is the process for any users who registered their EOS ERC-20 tokens but later lost their keys or had them compromised. This will apply to 98% of users so it is probably the right one for you.",
-        "You will sign a message on the Ethereum blockchain from the same address that held your EOS tokens at the snapshot. This message will include a new public key that you can generate in any wallet you choose; we show examples here using the Sqrl, the native Telos wallet. Sqrl can create a public key that begins with either EOS or TLOS; the order doesn’t matter.",
-        "Be sure to save the private key associated with your new public key. This is how you will access your account! Once you send the message, please send us the Ethereum address and EOS public key you recorded. We will verify the message and change the keys.",
-        "Follow the instructions below:"
+        "这个方式适用于任何曾经为他们的EOS ERC-20代币做过映射，但后来私钥丢失或被盗的人。 这会适用于98%的用户，所以它可能也适合你。",
+        "你需要使用你在EOS创世快照上的以太坊地址，用这个地址在以太坊区块链上为一个信息做签署操作。 这个信息（具体格式下文会提到）里包含一个新的公钥，这个公钥可以用任何同类钱包生成，这里我们用了Sqrl（Telos官方钱包）作为示例，为你展示流程。 Sqrl可以创建以EOS或者TLOS开头的公钥，先创建哪个都可以，顺序不重要。",
+        "请确保你保存了与你的公钥相关联的私钥。 有了私钥你才能使用你的账户！ 当你完成了信息签署操作后，请将信息中的以太坊地址和对应的EOS公钥发给我们（发送方法在下文的详细步骤中会提到）。 我们将验证该信息并为你更改密钥。",
+        "请按照以下指引操作："
       ],
-      "step_one": "Use any EOS or Telos wallet, Scatter, Greymass, etc..  We are using SQRL here to demonstrate how to generate a set of keys.",
+      "step_one": "使用任何支持EOS或者Telos的钱包，比如Scatter, Greymass等等。 这里我们使用 SQRL 来演示如何生成密钥对。",
       "step_two": {
-        "step": "Generate a new set of keys.  (These are for a Telos account.)",
+        "step": "生成密钥对 (这些步骤是针对Telos账户的)",
         "screenshot_captions": [
-          "Open up the Sqrl wallet.",
-          "Click \"Create New Account\" to get to the next screen. You do not need a new account.",
-          "Enter a made-up account name.  Any 12 digit account name/number will do.",
-          "Generate \"Owner Public Key\"",
-          "Copy \"Owner Public Key\" into \"Active Public Key\" field",
-          "Copy/Paste your Keys to a safe place!<br /> Offline storage is recommended.",
-          "Creating an account is not necessary, you just need your new keys!"
+          "打开 Sqrl 钱包",
+          "点击\"Create New Account\"进入下一界面。 你并不需要真的创建一个新账户。只需要生成对应密钥对即可。",
+          "起一个临时账户名， 任何12个字母或数字都行。",
+          "生成\"拥有者权限的公钥\"",
+          "将生成的\"拥有者权限的公钥\"拷贝到 Active Public Key (有效权限公钥) 中",
+          "将你的密钥对复制粘贴到安全的地方。 推荐你离线保存。",
+          "你并不需要真的创建账户，你只需要刚刚生成的密钥对！"
         ]
       },
       "step_three": {
-        "step": "Go to: <a href='https://www.myetherwallet.com/signmsg.html' target='_blank' rel='noopener noreferrer'>www.myetherwallet.com/signmsg.html</a>",
-        "sign_in": "Sign in and select the Ethereum wallet that held your EOS tokens.",
-        "copy_paste": "Copy/paste this message and add your Ethereum public key and your new Telos Public Key  (or an EOS key you want to use):",
+        "step": "访问: <a href='https://www.myetherwallet.com/signmsg.html' target='_blank' rel='noopener noreferrer'>www.myetherwallet.com/signmsg.html</a>",
+        "sign_in": "登录并选择你持有EOS代币的以太坊钱包。",
+        "copy_paste": "复制/粘贴以下信息，请注意要在信息中附上你的以太坊地址和新的Telos公钥（或EOS公钥）：",
         "message": "As the cryptographically verified owner of ethereum address listed below (\"Ethereum Address\"), I attest that I did own the EOS tokens listed on the EOS ERC-20 snapshot associated with this address and that I hereby request that the public key for my account be changed to the new EOS public key below (\"New EOS Public Key\") or the Telos Network address equivalent for my corresponding account on the Telos Network. I agree to release the Telos Network and its Members - as well as the members of any blockchain project that may subsequently use this same value snapshot in the future - from any claim arising from this request. The cryptographic signature of this document constitutes my legal digital signature in all jurisdictions.",
         "ethereum": "Ethereum Address:",
         "public_key": "New EOS Public Key:",
@@ -62,13 +62,13 @@
       "process_note": "Note:  No one from Telos will every ask for your private key! If you get an email from us it will only be to help you go through this process again to make sure it works."
     },
     "process_two": {
-      "heading": "PROCESS 2",
+      "heading": "途径二：",
       "process_intro": [
-        "This process is for people who never registered their EOS ERC-20 tokens with Block One prior to the genesis snapshot. Because you will need to enter your private ethereum keys, we are directing you to EOS Authority. They are a respected block producer and have developed a verified process that will work on the Telos network exactly as it does on the EOS network."
+        "这个方式是针对那些在创始快照之前没有在Block One映射过EOS ERC-20代币的用户。 因为你需要输入你的以太坊私钥，我们会引导你到EOS Authority。 EOS Authoriy是一个受社区尊敬的区块生产节点，他们开发了一套验证流程，对Telos和EOS区块链通用。"
       ],
-      "eos_auth": "Go to the EOS Authority web site:",
-      "save_keys": "Save those keys for your SQRL wallet account.",
-      "import_wallet": "Import wallet through SQRL once network launches."
+      "eos_auth": "访问EOS Authority网站：",
+      "save_keys": "把找回的私钥保存起来。",
+      "import_wallet": "主网启动后通过SQRL导入钱包。"
     },
     "recovery_form": {
       "heading": "Please enter your information",

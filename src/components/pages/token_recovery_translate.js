@@ -112,7 +112,7 @@ class TokenRecoveryProcessOne extends Component {
 
 		return (
 			<section id='token_recovery_process_one' className='process_section'>
-				<h3>{process.two_process_heading}</h3>
+				<h3>{process.two_processes_heading}</h3>
 				<header className='text-center'>
 					<h2>{process.heading}</h2>
 				</header>
