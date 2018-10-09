@@ -200,7 +200,7 @@ const Miscellaneous = () => {
 				<li className='no'>Telos Foundation System</li>
 				<li className='yes'>Launch group rewards system</li>
 				<li className='yes'>Verified capped genesis snapshot</li>
-				<li className='in_progress'>At least 40 BP candidates have successfully participated in test launches</li>
+				<li className='yes'>At least 40 BP candidates have successfully participated in test launches</li>
 				<li className='no'>Agree upon ABP launch group (six across globe)</li>
 				<li className='in_progress'>
 					Lost tokens processed
