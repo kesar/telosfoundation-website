@@ -176,6 +176,18 @@ class Navigation extends Component {
 							#IWANTMYTLOS
 						</a>
 					</li>
+					<li className='side_nav_item_mobile'>
+						<a
+							href='/foundation'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/foundation');
+								this.handleCloseNav();
+							}}
+						>
+							FOUNDATION
+						</a>
+					</li>
 				</Nav>
 			  </Navbar.Collapse>
 			</Navbar>

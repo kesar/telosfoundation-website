@@ -53,10 +53,10 @@
         "message": "As the cryptographically verified owner of ethereum address listed below (\"Ethereum Address\"), I attest that I did own the EOS tokens listed on the EOS ERC-20 snapshot associated with this address and that I hereby request that the public key for my account be changed to the new EOS public key below (\"New EOS Public Key\") or the Telos Network address equivalent for my corresponding account on the Telos Network. I agree to release the Telos Network and its Members - as well as the members of any blockchain project that may subsequently use this same value snapshot in the future - from any claim arising from this request. The cryptographic signature of this document constitutes my legal digital signature in all jurisdictions.",
         "ethereum": "Ethereum Address:",
         "public_key": "New EOS Public Key:",
-        "screenshot_caption": "Enter your own Ethereum address where you held your EOS tokens in \"Ethereum Address\" and your new SQRL public key into \"New EOS Public Key\"",
-        "screenshot_caption_two": "Log into the wallet that has your Ethereum account where your EOS tokens where held.",
-        "screenshot_caption_three": "Sign the pasted message with the Ethereum address and new Telos Public Key (or an EOS key you want to use).",
-        "screenshot_caption_four": "Copy this Signature text and send it in the form below",
+        "screenshot_caption": "如上图所示，在\"Ethereum Address\"左边填入你持有EOS代币的以太坊地址，在\"New Eos Public Key\"左边填入你通过SQRL钱包生成的新公钥。",
+        "screenshot_caption_two": "登入你持有EOS代币的以太坊账户钱包。",
+        "screenshot_caption_three": "点击\"Sign Message\"签署包含以太坊地址和新Telos公钥（或EOS公钥）的粘贴信息。",
+        "screenshot_caption_four": "复制签名信息（‘Signature’下面的信息）并通过以下方式发送给我们。",
         "email_us": "Send us your information so we can research your claim."
       },
       "process_note": "Note:  No one from Telos will every ask for your private key! If you get an email from us it will only be to help you go through this process again to make sure it works."
@@ -72,10 +72,10 @@
     },
     "recovery_form": {
       "heading": "Please enter your information",
-      "email_label": "Email (Optional, in case there is a problem)",
-      "ethereum_label": "Ethereum address where your EOS was stored, where we see your pasted-in message",
-      "generated_label": "Newly generated Telos (or EOS) address where you would like your TLOS to be sent",
-      "signature_label": "Paste the signature text here.",
+      "email_label": "你的邮箱地址",
+      "ethereum_label": "你的以太坊地址",
+      "generated_label": "你的最EOS公钥",
+      "signature_label": "上面提到的签名信息",
       "response": "Thanks for your information."
     }
   }

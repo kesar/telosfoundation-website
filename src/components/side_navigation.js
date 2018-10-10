@@ -99,7 +99,16 @@ const SideNavigation = (props) => {
 				</li>
 			</ul>
 			<footer>
-				<img src={logo_w_text} alt='side nav logo' />
+				<a 
+					href='/foundation'
+					onClick={e => {
+						e.preventDefault();
+						props.history.push('/foundation');
+						props.toggleSideNav(false);
+					}}
+				>
+					<img src={logo_w_text} alt='side nav logo' />
+				</a>
 			</footer>
 		</nav>
 	);

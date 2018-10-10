@@ -2,7 +2,7 @@ import React from 'react';
 import {Grid, Row, Col, Button} from 'react-bootstrap';
 import foundation_logo from '../../img/foundation_site/logo.png';
 
-import placeholder_portrait from '../../img/foundation_site/placeholder-female.png';
+import placeholder_portrait from '../../img/foundation_site/nominee_placeholder.png';
 import azad_halim from '../../img/foundation_site/azad_halim.png';
 import beth from '../../img/foundation_site/beth.png';
 import jt_buice from '../../img/foundation_site/jt_buice.png';
@@ -12,6 +12,7 @@ import jesse_schulman from '../../img/foundation_site/Jesse Schulman.jpg';
 import marlon_williams from '../../img/foundation_site/Marlon Williams.jpg';
 import josep_rosich from '../../img/foundation_site/josep_rosich.png';
 import jerry_huff from '../../img/foundation_site/jerry_huff.png';
+import rob_konsdorf from '../../img/foundation_site/eos_detroit_rob.png';
 
 import '../../styles/board.css';
 
@@ -29,6 +30,24 @@ const interimNominees = [
 
 const boardNominees = [
 	{
+		name: 'J.T. Buice',
+		organization: 'Kainos Technologies LLC',
+		portrait: jt_buice,
+		nominatedBy: 'Josep Rosich, EOS Barcelona',
+		bio: [
+			'J.T. Buice (pronounced Bise) is a Technical IT Director with broad competencies in all areas of IT Infrastructure including LAN and WAN networking, server architecture (UNIX & Windows), mass storage, and telecommunications. Since 2015, Buice has served as Director of Technology for Kainos Technologies, a managed services provider business he co-founded bringing fast and efficient high technology solutions and support to the state of Texas. Before Kainos, Buice joined Space Exploration Technologies (SpaceX) as IT Manager to deliver always-on IT that enabled SpaceX to serve commercial and government entities in furthering the exploration of space with an end goal to make life multi-planetary. Having joined the Telos Community immediately following its announcement, Buice has jumped headlong in with one of the greatest blockchain communities in existence and is honored to be nominated for the Telos Foundation’s board of directors.'
+		]
+	},
+	{
+		name: 'Beth Farnham',
+		organization: 'GoodBlock',
+		nominatedBy: 'Arjen Kruithof, DutchEOS',
+		portrait: beth,
+		bio: [
+			'Beth has been the chair and driving force for many groups. We specifically think of the Telos marketing / social media group, the exchange outreach group and the translations group. In the past she has served on the boards of a number of charity / non-profit organizations. We feel her organisational and leadership skills would be a welcome addition to the board.'
+		]
+	},
+	{
 		name: 'Azad Halim',
 		portrait: azad_halim,
 		nominatedBy: 'Josep Rosich, EOS Barcelona',
@@ -39,33 +58,11 @@ const boardNominees = [
 		]
 	},
 	{
-		name: 'Marlon Williams',
-		organization: 'EOS Detroit',
-		nominatedBy: 'Peter Bue, GoodBlock',
-		portrait: marlon_williams,
+		name: 'Jim Hewitt',
+		organization: 'EOS UK',
+		nominatedBy: 'Jan Smit, DutchEOS',
 		bio: [
-			'Marlon is the founder of EOS Miami. He’s also CEO of Fenero, a cloud-based call center software company and Qubicles, an EOSIO-based marketplace for connecting call centers with customer service, sales and support talent in a global meritocracy-based system. Marlon has served as Treasurer for the Miami-Dade County Public Schools S.T.E.M. Advisory Board; President of the South Florida Chapter of the Society for Information Management; and is a current Board Member of the South Florida Digital Alliance.',
-			'He co-chairs the Telos Development Working Group and have lead efforts to adopt multi-chain support in eosjs and eosjs-ecc, as well as development of Telos\' official wallet, Sqrl.',
-		]
-	},
-	{
-		name: 'Robert James, CEP, CECP',
-		organization: 'Echelon Compensation Partners',
-		portrait: robert_james,
-		nominatedBy: 'Rob Konsdorf, EOS Detroit',
-		bio: [
-			'Rob is a co-founding Partner at Echelon Compensation Partners, an independent compensation and corporate governance consulting firm located in Southern California.',
-			'At Echelon, Rob serves as a trusted advisor to Boards and senior management of public and privately-held businesses. He is a recognized expert on the strategy and financial structure of incentive plans, possessing in-depth knowledge of governance, regulatory compliance, SEC disclosure and tax considerations. Rob is also a Certified Executive Compensation Professional, Certified Equity Professional and holds Series 7 and Series 66 securities licenses.',
-			'Rob has assisted Telos in the development of the Bounty System by providing guidance on competitive market compensation rates for Telos contributors. Rob remains an active member of the Telos, EOS and cryptoasset communities having discovered blockchain in in late 2016.'
-		]
-	},
-	{
-		name: 'J.T. Buice',
-		organization: 'Kainos Technologies LLC',
-		portrait: jt_buice,
-		nominatedBy: 'Josep Rosich, EOS Barcelona',
-		bio: [
-			'J.T. Buice (pronounced Bise) is a Technical IT Director with broad competencies in all areas of IT Infrastructure including LAN and WAN networking, server architecture (UNIX & Windows), mass storage, and telecommunications. Since 2015, Buice has served as Director of Technology for Kainos Technologies, a managed services provider business he co-founded bringing fast and efficient high technology solutions and support to the state of Texas. Before Kainos, Buice joined Space Exploration Technologies (SpaceX) as IT Manager to deliver always-on IT that enabled SpaceX to serve commercial and government entities in furthering the exploration of space with an end goal to make life multi-planetary. Having joined the Telos Community immediately following its announcement, Buice has jumped headlong in with one of the greatest blockchain communities in existence and is honored to be nominated for the Telos Foundation’s board of directors.'
+			'Jim has been the chair of the main weekly Telos Launch Group meetings and an invaluable contributor to the governance working group. In addition we feel that his unique backround will be an asset to the board. Before joining EOS UK, Jim was an assistant head teacher and for the last 3 years he has managed the operations of an internet consulting practice. Jim majored in history with a focus on the industrial revolution and we expect him to be a driving force behind this "new" industrial revolution.'
 		]
 	},
 	{
@@ -80,11 +77,23 @@ const boardNominees = [
 		]
 	},
 	{
+		name: 'Robert James, CEP, CECP',
+		organization: 'Echelon Compensation Partners',
+		portrait: robert_james,
+		nominatedBy: 'Rob Konsdorf, EOS Detroit',
+		bio: [
+			'Rob is a co-founding Partner at Echelon Compensation Partners, an independent compensation and corporate governance consulting firm located in Southern California.',
+			'At Echelon, Rob serves as a trusted advisor to Boards and senior management of public and privately-held businesses. He is a recognized expert on the strategy and financial structure of incentive plans, possessing in-depth knowledge of governance, regulatory compliance, SEC disclosure and tax considerations. Rob is also a Certified Executive Compensation Professional, Certified Equity Professional and holds Series 7 and Series 66 securities licenses.',
+			'Rob has assisted Telos in the development of the Bounty System by providing guidance on competitive market compensation rates for Telos contributors. Rob remains an active member of the Telos, EOS and cryptoasset communities having discovered blockchain in in late 2016.'
+		]
+	},
+	{
 		name: 'Rob Konsdorf',
 		organization: 'EOS Detroit',
 		nominatedBy: 'James Davis, GoodBlock',
+		portrait: rob_konsdorf,
 		bio: [
-			'Rob Konsdorf (a.k.a @robrigo) hails from the Bitshares and Steem communities. Having studied and worked toward the proliferation of blockchain networks since 2014, Rob is a natural fit for rallying a cross-disciplinary team together to accelerate the adoption of EOSIO and its applications. As an avid proponent of the transformative force of decentralized networks, he decided to focus on his passion of evangelizing and participating in the decentralist movement full time last year. With a degree in Computer Science and background in Software Engineering, Rob has worn many hats over the years working on product development, education and operations.'
+			'Rob Konsdorf (a.k.a @robrigo) hails from the Bitshares and Steem communities. Having studied and worked toward the proliferation of blockchain networks passionately since 2014, Rob is a natural fit for rallying a cross-disciplinary team together to accelerate the adoption of EOSIO and its applications. As an avid proponent of the transformative force of decentralized networks, he decided to focus on his passion of evangelizing and building in the blockchain industry full time last year. Over this period of time, Rob has done various gigs in the blockchain industry, such as consulting for AIKON, PassageX, and Bitcash, recovering lost digital assets, launching EOSIO networks, and teaching everything he knows about blockchains to people. With a degree in Computer Science and background in Software Engineering, Rob is a hustler by nature, doing whatever it takes to get the job done.'
 		]
 	},
 	{
@@ -115,6 +124,15 @@ const boardNominees = [
 		linkedIn: 'https://linkedin.com/in/mushabbar'
 	},
 	{
+		name: 'Jesse Schulman',
+		organization: 'CalEOS',
+		nominatedBy: 'Josep Rosich, EOS Barcelona',
+		portrait: jesse_schulman,
+		bio: [
+			'Jesse is an early member of the Telos Launch Group and has made a big impact as co-chair of the network maintenance group.  He is focused on the technical side of things, and has made contributions across the board such as authoring and implementing the TIP3 snapshot contract as well as helping many new BPs learn the nuances of eosio software and what it takes to get up and running on the testnet.  As co-founder of CalEOS.io, he along with his partner Don will be block producer candidates on the Telos network running their own self-funded bare metal infrastructure, they are working to learn and share as much as possible about tuning the eosio software for optimal performance, making sure users of the Telos network are billed as little CPU as possible for their transactions.'
+		]
+	},
+	{
 		name: 'Sukesh Kumar Tedla',
 		organization: 'TelosGreen',
 		selfNominated: true,
@@ -125,29 +143,13 @@ const boardNominees = [
 		linkedIn: 'https://linkedin.com/in/sukeshtedla'
 	},
 	{
-		name: 'Beth Farnham',
-		organization: 'GoodBlock',
-		nominatedBy: 'Arjen Kruithof, DutchEOS',
-		portrait: beth,
+		name: 'Marlon Williams',
+		organization: 'EOS Miami',
+		nominatedBy: 'Peter Bue, GoodBlock',
+		portrait: marlon_williams,
 		bio: [
-			'Beth has been the chair and driving force for many groups. We specifically think of the Telos marketing / social media group, the exchange outreach group and the translations group. In the past she has served on the boards of a number of charity / non-profit organizations. We feel her organisational and leadership skills would be a welcome addition to the board.'
-		]
-	},
-	{
-		name: 'Jim Hewitt',
-		organization: 'EOS UK',
-		nominatedBy: 'Jan Smit, DutchEOS',
-		bio: [
-			'Jim has been the chair of the main weekly Telos Launch Group meetings and an invaluable contributor to the governance working group. In addition we feel that his unique backround will be an asset to the board. Before joining EOS UK, Jim was an assistant head teacher and for the last 3 years he has managed the operations of an internet consulting practice. Jim majored in history with a focus on the industrial revolution and we expect him to be a driving force behind this "new" industrial revolution.'
-		]
-	},
-	{
-		name: 'Jesse Schulman',
-		organization: 'Caleos',
-		nominatedBy: 'Josep Rosich, EOS Barcelona',
-		portrait: jesse_schulman,
-		bio: [
-			'Jesse is an early member of the Telos Launch Group and has made a big impact as co-chair of the network maintenance group.  He is focused on the technical side of things, and has made contributions across the board such as authoring and implementing the TIP3 snapshot contract as well as helping many new BPs learn the nuances of eosio software and what it takes to get up and running on the testnet.  As co-founder of CalEOS.io, he along with his partner Don will be block producer candidates on the Telos network running their own self-funded bare metal infrastructure, they are working to learn and share as much as possible about tuning the eosio software for optimal performance, making sure users of the Telos network are billed as little CPU as possible for their transactions.'
+			'Marlon is the founder of EOS Miami. He’s also CEO of Fenero, a cloud-based call center software company and Qubicles, an EOSIO-based marketplace for connecting call centers with customer service, sales and support talent in a global meritocracy-based system. Marlon has served as Treasurer for the Miami-Dade County Public Schools S.T.E.M. Advisory Board; President of the South Florida Chapter of the Society for Information Management; and is a current Board Member of the South Florida Digital Alliance.',
+			'He co-chairs the Telos Development Working Group and have lead efforts to adopt multi-chain support in eosjs and eosjs-ecc, as well as development of Telos\' official wallet, Sqrl.',
 		]
 	}
 ];
@@ -180,7 +182,7 @@ const BoardIntro = () => {
 							<p>The Telos Foundation is an apolitical body with a mission of promoting the Telos Blockchain Network. It is voted as a decentralized autonomous organization (DAO) voted by holders of Telos Foundation Voting Tokens as described in its governance document.</p>
 							<div className='text-center'>
 								<a
-									href='#'
+									href='https://resources.telosfoundation.io/Telos Foundation Governance.pdf'
 									target='_blank'
 									rel='noopener noreferrer'
 									className='btn btn-primary'
@@ -189,7 +191,7 @@ const BoardIntro = () => {
 								</a>
 							</div>
 							<p>The Telos Foundation is governed by a board of 12 elected board members who will elect an Executive Director and a RAM Administration Director.</p>
-							<p>Nominees for board member may come from anyone in the community. We encourage nominees from inside and outside the Telos Contributors Group. To Nominate someone for the board, email <a href='#'>hello@telosfoundation.io</a>. Nominees must agree to stand for election in order to be listed on this site or the ballot.</p>
+							<p>Nominees for board member may come from anyone in the community. We encourage nominees from inside and outside the Telos Contributors Group. To Nominate someone for the board, email <a href='mailto:hello@telosfoundation.io'>hello@telosfoundation.io</a>. Nominees must agree to stand for election in order to be listed on this site or the ballot.</p>
 							<p>The Telos Foundation Board elections will happen as soon as feasible after the Telos launch in order to empower voting for ongoing business such as grants.</p>
 						</div>
 					</Col>
@@ -203,12 +205,12 @@ const InterimNominees = () => {
 	return (
 		<section id='interim_nominees'>
 			<header>
-				<h2>Interim RAM Administration Director Nominees</h2>
+				<h2>Interim RAM Administration Director</h2>
 			</header>
 			<Grid>
 				<Row>
 					<Col md={10} mdOffset={1}>
-						<p className='interim_intro'>The Telos Foundation Interim RAM Administration Director manages the Telos Foundation''s efforts to stabilize the Telos RAM market by publishing a Published Guidance Price and non-binding Advice to Block Producers regarding future RAM releases.</p>
+						<p className='interim_intro'>The Telos Foundation Interim RAM Administration Director manages the Telos Foundation's efforts to stabilize the Telos RAM market by publishing a Published Guidance Price and non-binding Advice to Block Producers regarding future RAM releases. On October 9th the Telos Launch Group voted unanimously to confirm Jan as the Interim RAM Administration Director.</p>
 						{
 							interimNominees.map((nom, i) => {
 								return (
