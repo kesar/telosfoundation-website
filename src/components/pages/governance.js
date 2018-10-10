@@ -13,7 +13,7 @@ const governanceDocuments = [
 		long_description: 'The prime governing document on Telos describing the rights and responsibilities of becoming a member of the Telos Blockchain Network. It is required to opt-in to this agreement in order to access or use Telos. This agreement is the equivalent of the EOS Constitution. It differs from the EOS constitution in form: The TBNOA thoroughly defines all network parts and participants and describes governance actions such as electing block producers, amending the governance documents or submitting a worker proposal system submission. The TBNOA has inherited almost no terms from the EOS Constitution. The TBNOA includes the other five governance documents by reference and each of them adopts its definitions and terms.',
 		short_description: 'Primary governance document',
 		eos_analog: 'EOS Constitution',
-		status: 'Awaiting TCG ratification',
+		status: 'Adopted',
 		url: 'https://resources.telosfoundation.io/Operating Agreement.pdf'
 	},
 	{
@@ -31,7 +31,7 @@ const governanceDocuments = [
 		long_description: 'The \'regproducer\' contract is used by any member desiring to become a block producer candidate to nominate themselves. The human-language terms of this contract set out the responsibilities and rules for block producer candidates. This text is largely inherited from the EOS \'regproducer\' contract with much additional text added. The primary difference between the EOS and Telos versions is that while both list prohibited actions, the Telos version also documents penalties for any infractions, the method of enforcement, and the responsibility of block producers to enforce the rules on other BPs.',
 		short_description: 'Rules, responsibilities and representations of block producers',
 		eos_analog: 'EOS \'Regproducer\' Contract',
-		status: 'Awaiting TCG ratification',
+		status: 'Adopted',
 		url: 'https://resources.telosfoundation.io/Regproducer Human Language Contract.pdf'
 	},
 	{
@@ -40,7 +40,7 @@ const governanceDocuments = [
 		long_description: 'The BP Minimum Requirements is a list of disclosures, practices, equipment and networking standards that block producer candidates must adhere to in order to serve. Failure to meet the minimum requirements disqualifies a BP from service until the omission is cured, regardless of how many votes the BP has acquired. Due to the newness of the network, these requirements are described in increasingly stringent phases which the block producers can vote to move between based on 2/3 + 1 voting. EOS does not have minimum requirements or a similar document. A minimum amount of RAM is specified in the EOS \'regproducer\' contract.',
 		short_description: 'Minimum requirements to act as a block producer',
 		eos_analog: 'None',
-		status: 'In committee with Governance WG',
+		status: 'Adopted',
 		url: 'https://resources.telosfoundation.io/Block Producer Minimum Requirements (Phases 1-3).pdf'
 	},
 	{

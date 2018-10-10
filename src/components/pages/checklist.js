@@ -108,7 +108,7 @@ const DevelopmentCode = () => {
 					Rewrite regproducer to include BP json format
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/55' />
 				</li>
-				<li className='no'>
+				<li className='yes'>
 					Enforce BP minimums
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/4' />
 				</li>
@@ -126,14 +126,14 @@ const Governance = () => {
 		<section id='governance_cl'>
 			<h3>Governance</h3>
 			<ul className='top_level'>
-				<li className='in_progress'>
-					Telos network operating agreement
+				<li className='yes'>
+					Telos Blockchain network operating agreement
 					<InfoLinks telos_link='https://telosfoundation.io/downloads' />
 				</li>
-				<li className='in_progress'>Telos foundation voting tokens</li>
-				<li className='no'>TF RAM administration</li>
+				<li className='yes'>Telos foundation voting tokens</li>
+				<li className='in_progress'>TF RAM administration</li>
 				<li className='no'>Ratify final governance program</li>
-				<li className='in_progress'>Minimum BP requirements</li>
+				<li className='yes'>Minimum BP requirements</li>
 			</ul>
 		</section>
 	);
@@ -144,11 +144,11 @@ const Contracts = () => {
 		<section id='contracts_cl'>
 			<h3>Contracts</h3>
 			<ul className='top_level'>
-				<li className='in_progress'>
+				<li className='yes'>
 					Ratify/Amend contract
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/29' />
 				</li>
-				<li className='no with_sublevel'>
+				<li className='in_progress with_sublevel'>
 					Arbitration contract
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/30' />
 					<ul className='sub_level'>
@@ -162,7 +162,6 @@ const Contracts = () => {
 					Worker proposal contract
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/46' />
 				</li>
-				<li className='no'>BP Adjudication contract</li>
 			</ul>
 		</section>
 	);
@@ -206,7 +205,7 @@ const Miscellaneous = () => {
 					Lost tokens processed
 					<InfoLinks telos_link='https://telosfoundation.io/recovery' />
 				</li>
-				<li className='in_progress'>Two testnets up, public and private staging testnet</li>
+				<li className='yes'>Two testnets up, public and private staging testnet</li>
 				<li className='in_progress'>Define final TLOS token balance (EOS snapshot + Rewards +/- lost/compromised keys)</li>
 			</ul>
 		</section>

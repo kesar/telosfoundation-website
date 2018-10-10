@@ -1,7 +1,6 @@
 import React from 'react';
-import {Grid, Row, Col} from 'react-bootstrap';
+import {Grid} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-import background from '../../img/foundation_site/header_background.png';
 import svg_background from '../../img/foundation_site/TFG_Header_Footer.svg';
 import logo from '../../img/Telos_MarketingSite_TelosIcon_334px.png';
 import '../../styles/foundation_site/header.css';

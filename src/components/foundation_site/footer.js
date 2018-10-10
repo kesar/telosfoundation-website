@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import {Grid, Row, Col} from 'react-bootstrap';
+import {Grid} from 'react-bootstrap';
 import PrivacyPolicyModal from '../modals/privacy_policy_modal';
-import background from '../../img/foundation_site/footer_background.png';
 import svg_background from '../../img/foundation_site/TFG_Header_Footer.svg';
 import logo_wire from '../../img/foundation_site/logo_wire.png';
 import '../../styles/foundation_site/footer.css';
