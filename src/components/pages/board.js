@@ -13,6 +13,8 @@ import marlon_williams from '../../img/foundation_site/Marlon Williams.jpg';
 import josep_rosich from '../../img/foundation_site/josep_rosich.png';
 import jerry_huff from '../../img/foundation_site/jerry_huff.png';
 import rob_konsdorf from '../../img/foundation_site/eos_detroit_rob.png';
+import sukesh from '../../img/foundation_site/Sukesh Kumar Tedla.jpeg';
+import chen_li from '../../img/foundation_site/chen_li.png';
 
 import '../../styles/board.css';
 
@@ -44,7 +46,7 @@ const boardNominees = [
 		nominatedBy: 'Arjen Kruithof, DutchEOS',
 		portrait: beth,
 		bio: [
-			'Beth has been the chair and driving force for many groups. We specifically think of the Telos marketing / social media group, the exchange outreach group and the translations group. In the past she has served on the boards of a number of charity / non-profit organizations. We feel her organisational and leadership skills would be a welcome addition to the board.'
+			'Beth has been the chair and driving force for many groups. We specifically think of the Telos marketing / social media group, the exchange outreach group and the translations group. In the past she has served on the boards of a number of charity / non-profit organizations. We feel her organizational and leadership skills would be a welcome addition to the board.'
 		]
 	},
 	{
@@ -52,7 +54,7 @@ const boardNominees = [
 		portrait: azad_halim,
 		nominatedBy: 'Josep Rosich, EOS Barcelona',
 		bio: [
-			'Libertarian at heart and contrarian in mind yet, for the past 20 years, professionally engaged to deliver technology solutions in one of the most compliance driven industries, banking. Started my carrier as sysadmin, moved to web development during the dot com boom years, survived multiple bubbles and on few occasions learnt, the heard way, how to keep afloat. I was first exposed to EOS while investigating BitShares as a business platform, dabbled with node installations, studied it\'s governance model and closely monitored events as they unfolded to come to the conclusion that history may repeat itself with EOS, hence remained on the sidelines, until Telos came along.',
+			'Libertarian at heart and contrarian in mind yet, for the past 20 years, professionally engaged to deliver technology solutions in one of the most compliance driven industries, banking. Started my carrier as sysadmin, moved to web development during the dot com boom years, survived multiple bubbles and on few occasions learned, the hard way, how to keep afloat. I was first exposed to EOS while investigating BitShares as a business platform, dabbled with node installations, studied it\'s governance model and closely monitored events as they unfolded to come to the conclusion that history may repeat itself with EOS, hence remained on the sidelines, until Telos came along.',
 			'EOSIO is a very promising technology, some call it Blockchain 3. Within a few months of its launch, we started witnessing the conception of a number projects that are based on this very young open source software, each with their own specific mixed offering of governance, vision to reach out to the global community and deliver a solution within in their own space. Telos is one such project, it\'s a special one with many talented people collaborating to make it work for the people who believe in fairness and rewarding those who contribute to the wider community.',
 			'I expect Telos to stay with us for a long time, I see further collaboration and positive contribution to the ever increasing number of EOSIO based projects. That in itself, is the best thing that could have happened to EOS.'
 		]
@@ -100,6 +102,7 @@ const boardNominees = [
 		name: 'Chen Li',
 		organization: 'Telos Vancouver',
 		nominatedBy: 'Beth Farnham, GoodBlock',
+		portrait: chen_li,
 		bio: [
 			'Chen Li was one of the original members of the Telos Contributors Group. He has put in countless hours of outreach to Chinese exchanges, DApps, and users and has performed many of the Chinese document translations. Chen has also contributed to the development working groups. His outreach to the Chinese community is of enormous value to the network.',
 			'Chen started programming in high school and won 1st Prize in the National Olympiad in Informatics (NOIP) at the age of 18. Over the past 15 years, he has successfully implemented and deployed various projets ranging from Global Navigation Satellite Reflectometry to Network Monitoring System for large-scaled enterprises. With his experience in development and dev ops, Chen is committed to contributing his technical skills to the Telos community.'
@@ -119,7 +122,7 @@ const boardNominees = [
 		organization: 'swedencornet',
 		selfNominated: true,
 		bio: [
-			'SYED MUSHABBAR SADIQ is an early member of the Telos Contributors Group. He is co-chair of GRC and Security Working Groups. But he is an all-rounder and spending a lot of time (day and night) in most of the working groups; including, but not limited to: Governance, Network, Maintenance, Social Media, Exchange Outreach and so on... He is obsessed with Telos and would like it to succeed in becoming the best choice for DApps in both Enterprise and Consumer domains. He has over 20 years of GRC experience (including Banking Sector).'
+			'Syed Mushabbar Sadiq is an early member of the Telos Contributors Group. He is co-chair of GRC and Security Working Groups. But he is an all-rounder and spending a lot of time (day and night) in most of the working groups; including, but not limited to: Governance, Network, Maintenance, Social Media, Exchange Outreach and so on... He is obsessed with Telos and would like it to succeed in becoming the best choice for DApps in both Enterprise and Consumer domains. He has over 20 years of GRC experience (including Banking Sector).'
 		],
 		linkedIn: 'https://linkedin.com/in/mushabbar'
 	},
@@ -135,9 +138,10 @@ const boardNominees = [
 	{
 		name: 'Sukesh Kumar Tedla',
 		organization: 'TelosGreen',
+		portrait: sukesh,
 		selfNominated: true,
 		bio: [
-			'Sukesh Kumar Tedla is a tech enthusiast who envisions in a fair & transparent Internet with complete freedom of choice. He works as a Blockchain Innovation Consultant for Volvo Cars and is the Regional Head & Board Member for Swedish Blockchain Association. He has 4 years of experience in ICT industry and also possesses a Masters Degree in Telecommunications. Demonstrates a good level of technical knowledge, driven to do something good for the community with a Can-Do attitude. He is an EOSIO believer since day one and an early adopter of TELOS. Together with his BP - TelosGreen, he has been working with bounty-system, Dapps-outreach and exchange-outreach groups mainly. He believes in sustainability and green tech projects.',
+			'Sukesh Kumar Tedla is a tech enthusiast who envisions a fair & transparent Internet with complete freedom of choice. He works as a Blockchain Innovation Consultant for Volvo Cars and is the Regional Head & Board Member for Swedish Blockchain Association. He has 4 years of experience in ICT industry and also possesses a Masters Degree in Telecommunications. Demonstrates a good level of technical knowledge, driven to do something good for the community with a Can-Do attitude. He is an EOSIO believer since day one and an early adopter of TELOS. Together with his BP - TelosGreen, he has been working with bounty-system, Dapps-outreach and exchange-outreach groups mainly. He believes in sustainability and green tech projects.',
 			'He can bring his experience, skill-set and most important contacts in the industry to encourage the mass adoption of Telos Network. Together with Swedish Blockchain Association, he has the ability to influence a large community in the Nordic Region. He standbys with the vision of Telos Blockchain Network.'
 		],
 		linkedIn: 'https://linkedin.com/in/sukeshtedla'
