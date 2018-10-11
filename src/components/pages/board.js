@@ -15,6 +15,8 @@ import jerry_huff from '../../img/foundation_site/jerry_huff.png';
 import rob_konsdorf from '../../img/foundation_site/eos_detroit_rob.png';
 import sukesh from '../../img/foundation_site/Sukesh Kumar Tedla.jpeg';
 import chen_li from '../../img/foundation_site/chen_li.png';
+import richard_erikodi from '../../img/foundation_site/Richard Bryan Erikodi.jpg';
+import syed_sadiq from '../../img/foundation_site/syed.jpg';
 
 import '../../styles/board.css';
 
@@ -38,6 +40,15 @@ const boardNominees = [
 		nominatedBy: 'Josep Rosich, EOS Barcelona',
 		bio: [
 			'J.T. Buice (pronounced Bise) is a Technical IT Director with broad competencies in all areas of IT Infrastructure including LAN and WAN networking, server architecture (UNIX & Windows), mass storage, and telecommunications. Since 2015, Buice has served as Director of Technology for Kainos Technologies, a managed services provider business he co-founded bringing fast and efficient high technology solutions and support to the state of Texas. Before Kainos, Buice joined Space Exploration Technologies (SpaceX) as IT Manager to deliver always-on IT that enabled SpaceX to serve commercial and government entities in furthering the exploration of space with an end goal to make life multi-planetary. Having joined the Telos Community immediately following its announcement, Buice has jumped headlong in with one of the greatest blockchain communities in existence and is honored to be nominated for the Telos Foundation’s board of directors.'
+		]
+	},
+	{
+		name: 'Richard Bryan Erikodi',
+		organization: 'Telos DAC',
+		nominatedBy: 'Justin Giudici, infinitybloc',
+		portrait: richard_erikodi,
+		bio: [
+			'Richard (closest friends call him Bryan) is an open source, IoT and tech enthusiast.  He holds a BSc Hons in Accounting and Management Information Systems. Over the last 22 years, Bryan has held positions at various FTSE 100 organisations and will be looking to foster good relations between the Telos blockchain and the corporate world.  Bryan is passionate about community and economic mobility.   The decentralised economy will promote this by offering a unique opportunity to develop new organisational & ownership structures as well as new economic activities.'
 		]
 	},
 	{
@@ -118,13 +129,16 @@ const boardNominees = [
 		]
 	},
 	{
-		name: 'Syed Mushabbar Sadiq',
-		organization: 'swedencornet',
-		selfNominated: true,
+		name: 'Syed Mushabbar Sadiq (CISSP, CRISC, CISM, PMP, Privacy E.)',
+		organization: 'swedencornet (Core Net AB)',
+		nominatedBy: 'Maliha, CEO swedencornet (Core Net AB)',
+		portrait: syed_sadiq,
 		bio: [
-			'Syed Mushabbar Sadiq is an early member of the Telos Contributors Group. He is co-chair of GRC and Security Working Groups. But he is an all-rounder and spending a lot of time (day and night) in most of the working groups; including, but not limited to: Governance, Network, Maintenance, Social Media, Exchange Outreach and so on... He is obsessed with Telos and would like it to succeed in becoming the best choice for DApps in both Enterprise and Consumer domains. He has over 20 years of GRC experience (including Banking Sector).'
+			'Syed is an early member of the Telos Contributors Group. He is co-chair of GRC, Security, and Marketing Working Groups. But he is an all-rounder and spending lot of time (day and night) in most of the working groups; including, but not limited to: Governance, Network Maintenance, Social Media, Exchange Outreach and so on... He is obsessed with Telos and would like it to succeed in becoming the best choice for DApps in both Enterprise and Consumer domains.',
+			'He has over 20 years of GRC (Governance, Risks, Compliance), Information Security, and Privacy experience. He comes from Nordic Biggest Bank. He has had worked in global organizations and had roles such as Director of Compliance, senior Info. Security Officer, CISO, Technical National Security and Public Safety Solutions Manager.',
+			'He holds 3 M.Sc. degrees from Sweden and has earned numerous globally recognized security certifications (e.g. CISSP, CISM, CRISC, Privacy Eagle, PMI PMP)'
 		],
-		linkedIn: 'https://linkedin.com/in/mushabbar'
+		linkedIn: 'https://www.linkedin.com/in/mushabbar'	
 	},
 	{
 		name: 'Jesse Schulman',
