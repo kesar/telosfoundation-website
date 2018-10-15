@@ -132,7 +132,7 @@ const Governance = () => {
 				</li>
 				<li className='yes'>Telos foundation voting tokens</li>
 				<li className='in_progress'>TF RAM administration</li>
-				<li className='no'>Ratify final governance program</li>
+				<li className='yes'>Ratify final governance program</li>
 				<li className='yes'>Minimum BP requirements</li>
 			</ul>
 		</section>

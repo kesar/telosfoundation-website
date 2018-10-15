@@ -1,0 +1,57 @@
+.faq {
+	padding-bottom: 150px;
+}
+
+.faq a {
+	font-size: 1em;
+}
+
+#faq_intro {
+
+}
+
+#faq_intro h1 {
+	font-size: 4.5em;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px){
+	#faq_intro h1 {
+		font-size: 3em;
+	}
+}
+
+#faq_intro h2 {
+	font-size: 2em;
+	font-weight: 400;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+@media screen and (max-width: 767px){
+	#faq_intro h2 {
+		font-size: 1.5em;
+	}
+}
+
+#faq_content {
+
+}
+
+#faq_content .question_container {
+	margin-bottom: 25px;
+}
+
+#faq_content p {
+	margin-bottom: 5px;	
+}
+
+#faq_content .question {
+	font-weight: 700;
+}
+
+#faq_content .answer .a {
+	font-weight: 700;
+}
