@@ -127,10 +127,10 @@ const Governance = () => {
 			<h3>Governance</h3>
 			<ul className='top_level'>
 				<li className='yes'>
-					Telos Blockchain network operating agreement
+					Telos Blockchain Network operating agreement
 					<InfoLinks telos_link='https://telosfoundation.io/downloads' />
 				</li>
-				<li className='yes'>Telos foundation voting tokens</li>
+				<li className='yes'>Telos Foundation voting tokens</li>
 				<li className='in_progress'>TF RAM administration</li>
 				<li className='yes'>Ratify final governance program</li>
 				<li className='yes'>Minimum BP requirements</li>
