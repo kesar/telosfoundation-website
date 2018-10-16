@@ -11,6 +11,8 @@ import russia_flag from '../img/flags/russia.png';
 import france_flag from '../img/flags/france.png';
 import germany_flag from '../img/flags/germany.png';
 import indonesia_flag from '../img/flags/indonesia.png';
+import italy_flag from '../img/flags/italy.png';
+import turkey_flag from '../img/flags/turkey.png';
 import '../styles/language_toggle_new.css';
 
 const languageOptions = [
@@ -53,6 +55,16 @@ const languageOptions = [
 		value: 'german',
 		name: 'DEUTSCHE',
 		flag: germany_flag
+	},
+	{
+		value: 'italian',
+		name: 'ITALIANO',
+		flag: italy_flag
+	},
+	{
+		value: 'turkish',
+		name: 'TÜRK',
+		flag: turkey_flag
 	},
 	{
 		value: 'indonesian',

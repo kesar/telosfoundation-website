@@ -1,19 +1,19 @@
 {
-    "language": "pt-br",
-    "landing_page": {
-        "intro_heading": "Blockchain Aperfeiçoado",
-        "intro_content": "Delegated Proof of Stake é o futuro de contrato inteligente em blockchain. Combinamos rápida execução e escalabilidade do software EOSIO com a verdadeira descentralização que torna o DPoS sustentável. Telos terá a distribuição de dinheiro mais equilibrada de qualquer outra blockchain. Esta distribuição de tokens melhora a governança para que a rede seja mais segura e sustentável.",        
-        "developers_heading": "Para desenvolvedores",
-        "developers_content": "Telos existe para fornecer uma rede segura, estável e econômica para a implementação de DApps de classe mundial. Os desenvolvedores podem esperar preços acessíveis de RAM e a capacidade de lançar contratos inteligentes open source ou proprietários sem taxas de transação.",
-        "dpos_heading": "Rápido DPoS",
-        "dpos_content": "A rede Telos processa até 50.000 transações por segundo para transações rápidas e de alta escalabilidade. Isso significa que o DApps pode atingir o público mundial com a velocidade de transação média mais rápida de qualquer blockchain - apenas 1.5 segundo!",
-        "gov_heading": "Boa Governança",
-        "gov_content": "Telos tem um sistema de governança rico desde a Constituição até eleições de produtores de bloco, financiamento de propostas de trabalhadores e adjudicação de disputas. Nenhum outro blockchain oferece uma governança coesa do Telos.",
-        "white_paper_heading": "Baixe o white paper",
-        "white_paper_content": "Leia o white paper da Telos e julgue você mesmo. Estamos aqui para criar o melhor blockchain de todos os tempos. Junte-se a nós e desenvolva o Telos.",
-        "github_text": "Visite nosso Github",
-        "partners_heading": "Conheça nossos parceiros"
-    },
+  "language": "turkish",
+  "landing_page": {
+  	"intro_heading": "Mükemmelleştirilmiş Kripto Blok Zinciri",
+  	"intro_content": "DPOS akıllı sözleşmeler olan blok zincirinin geleceğidir. EOSIO süper hızlı uygulaması ve alanının çok geniş olması sebebiyle yazılımlarıyla DPoS’ ları süreklilik arz edebilir hale getirebiliyoruz. Telos herhangi bir blok zincire uygulanabilecek en üst seviyede bir modeldir. Bu jeton dağılımı yönetebilmeyi ileri götürüyor ve çok daha güvenli ve süreklilik (sürdürebilirlik ) gösteriyor.",
+  	"developers_heading": "İlerletme / Geliştirme Odaklanması",
+  	"developers_content": "DApps uygulamaları içinde Telos’un varlığı güvenli, düşük maliyetli bir ağ bağlantısı sunar ve bu dünya çapındadır.",
+  	"dpos_heading": "DPoS’ların Hızı",
+  	"dpos_content": "Çok yoğun ve saniyede 50.000 işlemi kaldırma kapasitesi ile Telos ağ bağlantısı, dünyada bu uygulamalar içinde en hızlısıdır. Dünyanın herhangi bir yerindeki kişisel yatırımcıya ulaşması sadece 1,5 saniyedir.",
+  	"gov_heading": "İdeal Yönetilme",
+  	"gov_content": "Diğer hiçbir blok zincirinin sunamadığı iyi bir yönetimsel hali vardır. Telos çok zengin ve gücünü anayasadan alan ve blok zincirini üretenleri seçmeye, çalışanlara fon oluşturmayı hükmeder.",
+  	"white_paper_heading": "Beyaz Sayfanın Yüklenmesi",
+  	"white_paper_content": "Telos’un beyaz sayfasını okuyup kararınızı verin. Dünyanın en iyi blok zincirini oluşturduk. Telos’u kurun ve bize katılın.",
+  	"github_text": "Github’ı Ziyaret Edin",
+    "partners_heading": "İş ortaklarımızla tanışın"
+  },
   "rewards_page": {
     "intro": {
       "intro_heading": "The Community Rewards Program",
@@ -283,59 +283,59 @@
   },
   "token_recovery": {
     "intro": {
-      "heading": "Portal Telos de Recuperação de Chaves Perdidas",
+      "heading": "Telos Lost Key Recovery Portal",
       "content": [
-        "Suas chaves foram perdidas ou comprometidas na EOS? A Telos pretende garantir que os legítimos proprietários recebem seus tokens TLOS em nosso próximo sharedrop Telos!",
-        "A Telos fornecerá tokens TLOS 1:1 com base no snapshot EOS ERC-20 original (até 40.000 por conta) usando as mesmas chaves e nomes de conta que o EOS Genesis. Infelizmente, isto significa que qualquer pessoa cujas chaves estivessem perdidas ou comprometidas naquela altura, ou desde então, precisarão igualmente de ver as suas chaves substituídas na cadeia da Telos. Por esse motivo, estamos trabalhando para alertar os detentores de tokens EOS Genesis de que a Telos lhes permitirá que revisem suas chaves quando necessário.",
-        "É necessário que o processo de substituição das chaves ocorra ANTES do lançamento da rede principal Telos. Como a Telos usa o snapshot ERC-20 original, podemos verificar os legítimos proprietários com base no endereço Ethereum que continha as chaves em questão, contornando assim qualquer tentativa de phishing ou outro motivo de perda de chaves que possa ter ocorrido nas contas após o lançamento do EOS ter sido iniciado. Temos uma janela de tempo especial na qual poderemos ajudar qualquer pessoa que tnha perdido as suas contas EOS a manter o controle das suas novas contas Telos.",
-        "Para ser claro: a Telos só pode proteger contas Genesis perdidas ou comprometidas no blockchain da Telos. Infelizmente, não está ao nosso alcance ajudar a recuperar chaves perdidas em contas EOS."
+        "Were your keys lost or compromised on EOS? Telos wants to make sure the proper owners receive their TLOS tokens in our upcoming Telos sharedrop!",
+        "Telos will give TLOS tokens 1:1 based on the original EOS ERC-20 snapshot (up to 40,000 per account) using the same keys and account names as the EOS genesis. Unfortunately, this means that anyone whose keys were lost or compromised at that time or since that time will also need their keys replaced on the Telos chain. For this reason, we’re working to alert EOS genesis token holders that Telos will allow them to revise their keys where necessary.",
+        "The key replacement process needs to occur BEFORE the Telos mainnet launches. Because Telos is using the original ERC-20 snapshot, we can verify ownership based on the Ethereum address that held those keys and can bypass any phishing or other key loss that may have happened to accounts after EOS launched. We have a special window of time in which to help anyone who lost their EOS accounts to maintain control of their new Telos accounts.",
+        "To be clear, Telos can only protect lost or compromised genesis accounts on the Telos blockchain. Unfortunately, we have no power to aid lost key issues on EOS accounts"
       ] 
     },
     "process_one": {
-      "two_processes_heading": "Existem dois processos de Recuperação de Chaves",
-      "heading": "PROCESSO 1",
+      "two_processes_heading": "There are two processes for Key Recovery",
+      "heading": "PROCESS 1",
       "process_intro": [
-        "Este é o processo a seguir por todos os usuários que registraram seus tokens EOS ERC-20, mas depois perderam ou tiveram suas chaves comprometidas. Isto é aplicável a 98% dos usuários, pelo que, provavelmente, é a opção certa para você.",
-        "Você assinará uma mensagem no blockchain Ethereum a partir do mesmo endereço que continha seus tokens EOS no momento do snapshot. Esta mensagem incluirá uma nova chave pública que você poderá gerar em qualquer carteira à sua escolha; os exemplos aqui indicados usam Sqrl, a carteira nativa da Telos. A Sqrl pode criar uma chave pública que começa com EOS ou TLOS; a ordem é irrelevante.",
-        "Certifique-se de guardar a chave privada associada à sua nova chave pública. É assim que você acessará sua conta! Após enviar a mensagem, envie-nos o endereço Ethereum e a chave pública EOS que você registrou. Então verificaremos a mensagem e mudaremos as chaves.",
-        "Siga as instruções abaixo:"
+        "This is the process for any users who registered their EOS ERC-20 tokens but later lost their keys or had them compromised. This will apply to 98% of users so it is probably the right one for you.",
+        "You will sign a message on the Ethereum blockchain from the same address that held your EOS tokens at the snapshot. This message will include a new public key that you can generate in any wallet you choose; we show examples here using the Sqrl, the native Telos wallet. Sqrl can create a public key that begins with either EOS or TLOS; the order doesn’t matter.",
+        "Be sure to save the private key associated with your new public key. This is how you will access your account! Once you send the message, please send us the Ethereum address and EOS public key you recorded. We will verify the message and change the keys.",
+        "Follow the instructions below:"
       ],
-      "step_one": "Use qualquer carteira EOS ou Telos, Scatter, Greymass, etc. Neste exemplo, usaremos Sqrl para mostrar como gerar um conjunto de chaves.",
+      "step_one": "Use any EOS or Telos wallet, Scatter, Greymass, etc..  We are using SQRL here to demonstrate how to generate a set of keys.",
       "step_two": {
-        "step": "Gere um novo conjunto de chaves. (Que serão para uma conta Telos.)",
+        "step": "Generate a new set of keys.  (These are for a Telos account.)",
         "screenshot_captions": [
-          "Abra a carteira Sqrl.",
-          "Clique em \"Create New Account\" para ir para a tela seguinte. Não é necessária uma nova conta.",
-          "Digite um nome de conta inventado. Qualquer nome/número de conta com 12 dígitos servirá.",
-          "Crie \"Owner Public Key\"",
-          "Copie a \"Owner Public Key\" para o campo \"Active Public Key\" field",
-          "Copie/cole suas chaves para um local seguro! Armazenamento offline é recomendado.",
-          "Não é necessário criar uma nova conta, você apenas necessita das suas novas chaves!"
+          "Open up the Sqrl wallet.",
+          "Click \"Create New Account\" to get to the next screen. You do not need a new account.",
+          "Enter a made-up account name.  Any 12 digit account name/number will do.",
+          "Generate \"Owner Public Key\"",
+          "Copy \"Owner Public Key\" into \"Active Public Key\" field",
+          "Copy/Paste your Keys to a safe place!<br /> Offline storage is recommended.",
+          "Creating an account is not necessary, you just need your new keys!"
         ]
       },
       "step_three": {
-        "step": "Vá a: <a href='https://www.myetherwallet.com/signmsg.html' target='_blank' rel='noopener noreferrer'>www.myetherwallet.com/signmsg.html</a>",
-        "sign_in": "Inicie sessão e selecione a carteira Ethereum que continha seus tokens EOS.",
-        "copy_paste": "Copie/cole esta mensagem e junte-lhe sua chave pública Ethereum, bem como sua nova chave pública Telos (ou uma chave EOS que pretenda usar):",
-        "message": "Na qualidade de proprietário criptograficamente verificado do endereço Ethereum listado abaixo (\"Endereço Ethereum\"), atesto que possuía os tokens EOS listados no snapshot EOS ERC-20 associado a este endereço e solicito pela presente que a chave pública da minha conta seja alterada para a nova chave pública EOS abaixo (\"Nova Chave Pública EOS\") ou o endereço equivalente da Rede Telos para minha conta correspondente na Rede Telos. Eu concordo em liberar a Rede Telos e seus membros - assim como os membros de qualquer projeto de blockchain que possa subsequentemente usar este mesmo snapshot de valor no futuro - de qualquer reclamação resultante desta solicitação. A assinatura criptográfica deste documento constitui minha assinatura digital legal em todas as jurisdições.",
-        "ethereum": "Endereço Ethereum:",
-        "public_key": "Nova Chave Pública EOS:",
-        "screenshot_caption": "Digite seu endereço Ethereum, onde tinha armazenados seus tokens EOS, em \"Ethereum Address\" e sua nova chave pública Sqrl em \"New EOS Public Key\"",
-        "screenshot_caption_two": "Inicie sessão na carteira que contém sua conta Ethereum, onde seus tokens EOS estavam armazenados.",
-        "screenshot_caption_three": "Assine a mensagem copiada/colada com o endereço Ethereum e a nova Chave Pública Telos (ou uma chave EOS que pretenda usar).",
-        "screenshot_caption_four": "Copie este texto de Assinatura e envie-o através do formulário abaixo",
-        "email_us": "Envie-nos seus dados para que possamos analisar sua solicitação."
+        "step": "Go to: <a href='https://www.myetherwallet.com/signmsg.html' target='_blank' rel='noopener noreferrer'>www.myetherwallet.com/signmsg.html</a>",
+        "sign_in": "Sign in and select the Ethereum wallet that held your EOS tokens.",
+        "copy_paste": "Copy/paste this message and add your Ethereum public key and your new Telos Public Key  (or an EOS key you want to use):",
+        "message": "As the cryptographically verified owner of ethereum address listed below (\"Ethereum Address\"), I attest that I did own the EOS tokens listed on the EOS ERC-20 snapshot associated with this address and that I hereby request that the public key for my account be changed to the new EOS public key below (\"New EOS Public Key\") or the Telos Network address equivalent for my corresponding account on the Telos Network. I agree to release the Telos Network and its Members - as well as the members of any blockchain project that may subsequently use this same value snapshot in the future - from any claim arising from this request. The cryptographic signature of this document constitutes my legal digital signature in all jurisdictions.",
+        "ethereum": "Ethereum Address:",
+        "public_key": "New EOS Public Key:",
+        "screenshot_caption": "Enter your own Ethereum address where you held your EOS tokens in \"Ethereum Address\" and your new SQRL public key into \"New EOS Public Key\"",
+        "screenshot_caption_two": "Log into the wallet that has your Ethereum account where your EOS tokens where held.",
+        "screenshot_caption_three": "Sign the pasted message with the Ethereum address and new Telos Public Key (or an EOS key you want to use).",
+        "screenshot_caption_four": "Copy this Signature text and send it in the form below",
+        "email_us": "Send us your information so we can research your claim."
       },
-      "process_note": "Nota: Nunca ninguém da Telos pedirá a sua chave privada! Caso receba um email nosso, será apenas para o ajudar a levar a cabo este processo novamente, por forma a garantir que funciona."
+      "process_note": "Note:  No one from Telos will every ask for your private key! If you get an email from us it will only be to help you go through this process again to make sure it works."
     },
     "process_two": {
-      "heading": "PROCESSO 2",
+      "heading": "PROCESS 2",
       "process_intro": [
-        "Este processo é para pessoas que nunca registraram seus tokens EOS ERC-20 com o Bloco Um antes do snapshot instantâneo. Porque você precisará inserir suas chaves privadas, nós estamos direcionando você para a EOS Authority. Eles são um respeitado produtor de blocos e desenvolveram um processo verificado que funcionará na rede Telos exatamente como na rede EOS."
+        "This process is for people who never registered their EOS ERC-20 tokens with Block One prior to the genesis snapshot. Because you will need to enter your private ethereum keys, we are directing you to EOS Authority. They are a respected block producer and have developed a verified process that will work on the Telos network exactly as it does on the EOS network."
       ],
-      "eos_auth": "Visite o site da EOS Authority:",
-      "save_keys": "Guarde essas chaves na sua conta da carteira Sqrl.",
-      "import_wallet": "Importe a carteira via Sqrl quando a rede for lançada."
+      "eos_auth": "Go to the EOS Authority web site:",
+      "save_keys": "Save those keys for your SQRL wallet account.",
+      "import_wallet": "Import wallet through SQRL once network launches."
     },
     "recovery_form": {
       "heading": "Please enter your information",

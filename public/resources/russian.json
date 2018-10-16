@@ -283,59 +283,59 @@
   },
   "token_recovery": {
     "intro": {
-      "heading": "Telos Lost Key Recovery Portal",
+      "heading": "Портал восстановления потерянных ключей Telos",
       "content": [
-        "Were your keys lost or compromised on EOS? Telos wants to make sure the proper owners receive their TLOS tokens in our upcoming Telos sharedrop!",
-        "Telos will give TLOS tokens 1:1 based on the original EOS ERC-20 snapshot (up to 40,000 per account) using the same keys and account names as the EOS genesis. Unfortunately, this means that anyone whose keys were lost or compromised at that time or since that time will also need their keys replaced on the Telos chain. For this reason, we’re working to alert EOS genesis token holders that Telos will allow them to revise their keys where necessary.",
-        "The key replacement process needs to occur BEFORE the Telos mainnet launches. Because Telos is using the original ERC-20 snapshot, we can verify ownership based on the Ethereum address that held those keys and can bypass any phishing or other key loss that may have happened to accounts after EOS launched. We have a special window of time in which to help anyone who lost their EOS accounts to maintain control of their new Telos accounts.",
-        "To be clear, Telos can only protect lost or compromised genesis accounts on the Telos blockchain. Unfortunately, we have no power to aid lost key issues on EOS accounts"
+        "Были ли ваши ключи потеряны или «взломаны» на EOS? Telos хочет убедиться, что соответствующие владельцы получают свои токены TLOS в нашей предстоящей платформе Telos!",
+        "Telos предоставит токены TLOS 1:1 на основе снимков котировок EOS ERC-20 (до 40 000 на учетную запись), с использованием тех же ключей и имен учетных записей, что и генезис EOS. К сожалению, это означает, что любому, чьи ключи были потеряны или «взломаны» в то время или с того времени, также потребуется заменить ключи в цепочке Telos. По этой причине мы работаем над тем, чтобы предупредить владельцев токенов EOS генезис о том, что Telos позволит им пересмотреть свои ключи в случае необходимости.",
+        "Процесс замены ключа должен произойти ДО запуска основной сети Telos. Поскольку Telos использует оригинальный снимок котировок ERC-20, мы можем подтвердить право собственности на основе адреса Ethereum, который содержал эти ключи, и можем обойти любой «фишинг» или иную потерю ключа, которая могла произойти со счетами после запуска платформы EOS. У нас есть специальное окно времени, в котором мы помогаем любому, кто потерял свои счета EOS, сохранить контроль над своими новыми счетами Telos.",
+        "Чтобы внести ясность, Telos может защитить только потерянные или «взломанные» учетные записи генезис в блокчейне Telos. К сожалению, у нас нет возможности содействовать восстановлению потерянных ключей на счетах EOS."
       ] 
     },
     "process_one": {
-      "two_processes_heading": "There are two processes for Key Recovery",
-      "heading": "PROCESS 1",
+      "two_processes_heading": "Существует два процесса восстановления ключа",
+      "heading": "Процесс 1",
       "process_intro": [
-        "This is the process for any users who registered their EOS ERC-20 tokens but later lost their keys or had them compromised. This will apply to 98% of users so it is probably the right one for you.",
-        "You will sign a message on the Ethereum blockchain from the same address that held your EOS tokens at the snapshot. This message will include a new public key that you can generate in any wallet you choose; we show examples here using the Sqrl, the native Telos wallet. Sqrl can create a public key that begins with either EOS or TLOS; the order doesn’t matter.",
-        "Be sure to save the private key associated with your new public key. This is how you will access your account! Once you send the message, please send us the Ethereum address and EOS public key you recorded. We will verify the message and change the keys.",
-        "Follow the instructions below:"
+        "Это процесс для всех пользователей, которые зарегистрировали свои токены EOS ERC-20, но позже потеряли свои ключи или же они были «взломаны». Это относится к 98% пользователей, так что это, вероятно, правильный выбор для вас.",
+        "Вы пометите сообщение на блокчейне Ethereum с того же адреса, на котором находились ваши токены EOS на снимке котировок. Это сообщение будет включать в себя новый открытый ключ, который вы можете создать в любом кошельке, который вы выберете; мы показываем примеры здесь, используя Sqrl, исходный кошелек Telos. Sqrl может создать открытый ключ, который начинается либо с EOS, либо с TLOS; порядок не имеет значения.",
+        "Обязательно сохраните секретный ключ, связанный с вашим новым открытым ключом. Именно так вы получите доступ к своей учетной записи! Как только вы отправите сообщение, пожалуйста, пришлите нам адрес Ethereum и открытый ключ EOS, который вы записали. Мы проверим сообщение и изменим ключи.",
+        "Следуйте инструкциям ниже:"
       ],
-      "step_one": "Use any EOS or Telos wallet, Scatter, Greymass, etc..  We are using SQRL here to demonstrate how to generate a set of keys.",
+      "step_one": "Используйте любой кошелек EOS или Telos, Scatter, Greymass и т.д. Мы используем SQRL здесь, чтобы продемонстрировать, как сгенерировать набор ключей.",
       "step_two": {
-        "step": "Generate a new set of keys.  (These are for a Telos account.)",
+        "step": "Создайте новый набор ключей. (Это потребуется для счета на Telos).",
         "screenshot_captions": [
-          "Open up the Sqrl wallet.",
-          "Click \"Create New Account\" to get to the next screen. You do not need a new account.",
-          "Enter a made-up account name.  Any 12 digit account name/number will do.",
-          "Generate \"Owner Public Key\"",
-          "Copy \"Owner Public Key\" into \"Active Public Key\" field",
-          "Copy/Paste your Keys to a safe place!<br /> Offline storage is recommended.",
-          "Creating an account is not necessary, you just need your new keys!"
+          "Откройте кошелек Sqrl.",
+          "Нажмите \"Создать новую учетную запись\", чтобы перейти к следующему экрану. Вам не потребуется новая учетная запись.",
+          "Введите придуманное имя учетной записи. Подойдет любое имя учетной записи, состоящее из 12 однозначных цифр или номера.",
+          "Сгенерировать «Owner Public Key» («Открытый Ключ Владельца»)",
+          "Скопируйте «Открытый Ключ Владельца» в поле «Active Public Key» («Активный Открытый Ключ»)",
+          "Скопируйте/вставьте ключи в безопасное место!Рекомендуется использовать автономное запоминающее устройство.",
+          "Создавать аккаунт не нужно, нужны только новые ключи!"
         ]
       },
       "step_three": {
-        "step": "Go to: <a href='https://www.myetherwallet.com/signmsg.html' target='_blank' rel='noopener noreferrer'>www.myetherwallet.com/signmsg.html</a>",
-        "sign_in": "Sign in and select the Ethereum wallet that held your EOS tokens.",
-        "copy_paste": "Copy/paste this message and add your Ethereum public key and your new Telos Public Key  (or an EOS key you want to use):",
-        "message": "As the cryptographically verified owner of ethereum address listed below (\"Ethereum Address\"), I attest that I did own the EOS tokens listed on the EOS ERC-20 snapshot associated with this address and that I hereby request that the public key for my account be changed to the new EOS public key below (\"New EOS Public Key\") or the Telos Network address equivalent for my corresponding account on the Telos Network. I agree to release the Telos Network and its Members - as well as the members of any blockchain project that may subsequently use this same value snapshot in the future - from any claim arising from this request. The cryptographic signature of this document constitutes my legal digital signature in all jurisdictions.",
-        "ethereum": "Ethereum Address:",
-        "public_key": "New EOS Public Key:",
-        "screenshot_caption": "Enter your own Ethereum address where you held your EOS tokens in \"Ethereum Address\" and your new SQRL public key into \"New EOS Public Key\"",
-        "screenshot_caption_two": "Log into the wallet that has your Ethereum account where your EOS tokens where held.",
-        "screenshot_caption_three": "Sign the pasted message with the Ethereum address and new Telos Public Key (or an EOS key you want to use).",
-        "screenshot_caption_four": "Copy this Signature text and send it in the form below",
-        "email_us": "Send us your information so we can research your claim."
+        "step": "Перейти по ссылке: <a href='https://www.myetherwallet.com/signmsg.html' target='_blank' rel='noopener noreferrer'>www.myetherwallet.com/signmsg.html</a>",
+        "sign_in": "Войдите в систему и выберите кошелек Ethereum, в котором находились ваши токены EOS.",
+        "copy_paste": "Скопируйте/вставьте это сообщение и добавьте свой открытый ключ Ethereum и свой новый открытый ключ Telos (или ключ EOS, который вы хотите использовать):",
+        "message": "Как криптографически верифицированный владелец адреса Ethereum, указанный ниже (\"Ethereum -адрес\"), я подтверждаю, что я являюсь владельцем токенов EOS, описанных на снимке криптовалют EOS ERC-20, связанных с данным адресом, и что я прошу изменить открытый ключ для моей учетной записи на новый открытый ключ EOS ниже (\"Новый открытый ключ EOS\") или сетевой адрес Telos, эквивалентный моей соответствующей учетной записи в сети Telos. Я даю свое согласие освободить сеть Telos и ее членов - а также членов любого блокчейн-проекта, которые могут впоследствии использовать этот же снимок стоимости котировок в будущем - от любых притязаний, вытекающей из данного запроса. Криптографическая подпись данного документа является моей законной цифровой подписью во всех юрисдикциях.",
+        "ethereum": "Адрес Ethereum:",
+        "public_key": "Новый открытый ключ EOS:",
+        "screenshot_caption": "Введите свой собственный адрес Ethereum, где вы держали свои токены EOS в поле \"Ethereum Address\" и свой новый открытый ключ SQRL в графу \"Новый открытый ключ EOS\".",
+        "screenshot_caption_two": "Войдите в кошелек, в котором имеется ваша учетная запись Ethereum и где хранятся ваши токены EOS.",
+        "screenshot_caption_three": "Подпишите вставленное сообщение адресом Ethereum и новым открытым ключом Telos (или ключом EOS, который вы хотите использовать).",
+        "screenshot_caption_four": "Скопируйте этот текст подписи и отправьте его в форме ниже:",
+        "email_us": "Отправьте нам свою информацию, чтобы мы могли изучить вашу претензию."
       },
-      "process_note": "Note:  No one from Telos will every ask for your private key! If you get an email from us it will only be to help you go through this process again to make sure it works."
+      "process_note": "Примечание: Никто с платформы Telos не должен запрашивать ваш личный ключ! Если вы получите от нас электронное письмо, оно будет исключительно вам в помощь пройти весь процесс заново, чтобы убедиться, что все работает правильно."
     },
     "process_two": {
-      "heading": "PROCESS 2",
+      "heading": "Процесс 2",
       "process_intro": [
-        "This process is for people who never registered their EOS ERC-20 tokens with Block One prior to the genesis snapshot. Because you will need to enter your private ethereum keys, we are directing you to EOS Authority. They are a respected block producer and have developed a verified process that will work on the Telos network exactly as it does on the EOS network."
+        "Этот процесс предназначен для тех людей, которые никогда не регистрировали свои токены EOS ERC-20 с блоком Один до снимка генезис. Поскольку вам понадобится ввести свои личные ключи Ethereum, мы направим вас в EOS Authority. Они являются авторитетными блок продюсерами и разработали проверенный процесс, который будет работать в сети Telos точно так же, как и в сети EOS."
       ],
-      "eos_auth": "Go to the EOS Authority web site:",
-      "save_keys": "Save those keys for your SQRL wallet account.",
-      "import_wallet": "Import wallet through SQRL once network launches."
+      "eos_auth": "Перейдите на веб-сайт EOS Authority:",
+      "save_keys": "Сохраните эти ключи для учетной записи кошелька SQRL.",
+      "import_wallet": "Импорт кошелька через SQRL после запуска сети."
     },
     "recovery_form": {
       "heading": "Please enter your information",
