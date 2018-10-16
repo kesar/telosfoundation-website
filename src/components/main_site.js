@@ -25,7 +25,7 @@ const MainSite = ({site_content}) => {
 			<main className='main'>
 
 				<Switch>
-					<Route path='/rewards' component={RewardsTranslate} />
+					<Route path='/rewards' render={() => <RewardsTranslate rewards_page={site_content.rewards_page} language={site_content.language} />} />
 					<Route path='/exchange_outreach' component={ExchangeOutreach} />
 					<Route path='/iwantmytlos' component={ExchangeOutreach} />
 					<Route path='/launch' component={Checklist} />

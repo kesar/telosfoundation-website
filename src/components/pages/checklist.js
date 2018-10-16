@@ -7,6 +7,15 @@ import completed_icon from '../../img/checklist/gng_list_yes.png';
 import telos_logo from '../../img/checklist/logo_gray32x35.png';
 import '../../styles/checklist.css';
 
+/*TF Ram: green
+voting tokens: yellow
+inverse weighted: yellow
+remove BPs: yellow
+ratify/amend: yellow
+
+Tools:
+add "Get listed with at least one exchange": green*/
+
 const Checklist = () => {
 	return (
 		<Grid>
@@ -88,7 +97,7 @@ const DevelopmentCode = () => {
 					Claim rewards improvements
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/10' />
 				</li>
-				<li className='yes'>
+				<li className='in_progress'>
 					Inverse-weighted voting
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/7' />
 				</li>
@@ -96,7 +105,7 @@ const DevelopmentCode = () => {
 					BP rewards (EBPs receive X, Standby BPs receive 50% of X)
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/1' />
 				</li>
-				<li className='yes'>
+				<li className='in_progress'>
 					Removal of non-producing BPs
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/52' />
 				</li>
@@ -130,8 +139,8 @@ const Governance = () => {
 					Telos Blockchain Network operating agreement
 					<InfoLinks telos_link='https://telosfoundation.io/downloads' />
 				</li>
-				<li className='yes'>Telos Foundation voting tokens</li>
-				<li className='in_progress'>TF RAM administration</li>
+				<li className='in_progress'>Telos Foundation voting tokens</li>
+				<li className='yes'>TF RAM administration</li>
 				<li className='yes'>Ratify final governance program</li>
 				<li className='yes'>Minimum BP requirements</li>
 			</ul>
@@ -144,7 +153,7 @@ const Contracts = () => {
 		<section id='contracts_cl'>
 			<h3>Contracts</h3>
 			<ul className='top_level'>
-				<li className='yes'>
+				<li className='in_progress'>
 					Ratify/Amend contract
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/29' />
 				</li>
@@ -181,6 +190,7 @@ const Tools = () => {
 					</ul>
 				</li>
 				<li className='yes'>Block Explorer</li>
+				<li className='yes'>Get listed with at least one exchange</li>
 			</ul>
 		</section>
 	);

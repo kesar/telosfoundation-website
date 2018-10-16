@@ -14,6 +14,273 @@
     "github_text": "Github 방문",
   	"partners_heading": "우리의 파트너들"
   },
+  "rewards_page": {
+    "intro": {
+      "intro_heading": "The Community Rewards Program",
+      "intro_paragraphs": [
+        "Telos is a community-led alternative to EOS. We need you to help spread the word and make the Telos Network a success. You can share in the 1 million TLOS community rewards pool.",
+        "Joining is easy. Read the rules below, then sign up with your user name for the services where you want to promote Telos. You can make videos, articles, tweets, posts, tutorials—just about anything that helps spread the word. Meetups, community management and more is all available and receives rewards both for the initial action <em>and</em> when people engage with you by liking, clapping, attending, viewing, whatever.",
+        "Once the Telos Network activates, you can submit a final list of your community engagement for your tokens. You can either supply us with your account name, or send us a Telos public key and new account name and we will create the account for you and fill it with your rewards!",
+        "Telos is a blockchain where your voice matters, so use that voice to tell everyone about the world changing advantages of the Telos Network."
+      ],
+      "join_us": "Join Us Today!",
+      "cta_text": "SIGN UP HERE"
+    },
+    "description": {
+      "main_heading": "Community Rewards Information",
+      "sub_heading": "Max Payout per participant: 10,000 TLOS",
+      "column_one": [
+        "All items subject to change and investigation. Gaming the system or getting rewards on a technicality will not be allowed.",
+        "Participants must register with the system portal above, providing their user names in the various platforms.",
+        "After network activation, participants will submit a final list of links and addresses for verification. Email instructions will be sent to all registered users prior to activation."
+      ],
+      "column_two": [
+        "Submissions must be received within one week of Telos network activation",
+        "All participants who earn tokens will receive a free Telos Address!",
+        "All posts must include links to an official Telos website or Telos social media page:"
+      ],
+      "column_three": [
+        "All judges' determinations are final and cannot be appealed or arbitrated.",
+        "If the total amount earned by participants exceeds the 1 million TLOS allocated, then all timely submissions will be reduced in like percentage to pay each participant a pro rata share.",
+        "Participants may not also claim rewards from the Telos Founders Rewards Pool. They can only be a member of one or the other."
+      ]
+    },
+    "table": {
+      "table_headings": {
+        "site_category": "카테고리",
+        "task_category": "예시",
+        "task": "특정 업무",
+        "tier_reward": "업무에 따른 보상",
+        "proof": "필요 증거방식"
+      },
+      "table_rows": [
+        {
+          "site_category": "비디오",
+          "task_category": "<a href='https://vimeo.com' target='_blank' rel='noopener noreferrer'>Vimeo</a>, <a href='https://youtube.com' target='_blank' rel='noopener noreferrer'>Youtube</a>, etc",
+          "task": "온라인에 비디오 포스트",
+          "tier_reward": [
+            {
+              "tier": "1 포스트",
+              "reward": 10
+            },
+            {
+              "tier": "10 - 100 보기",
+              "reward": 25
+            },
+            {
+              "tier": "100 - 250 보기",
+              "reward": 75
+            },
+            {
+              "tier": "250 - 500 보기",
+              "reward": 100
+            },
+            {
+              "tier": "500+",
+              "reward": 150
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "비디오 (튜터리얼)",
+          "task_category": "튜터리얼 비디오 보너스",
+          "task": "Telos 관련 작업 (일반적으로 지갑, 앱, 노드 등을 사용하는 방법)을 명확하고 간결하고 긍정적 인 방식으로 수행하는 방법을 보여주는 동영상",
+          "tier_reward": [
+            {
+              "tier": null,
+              "reward": "비디오의 가치를 두배로 함"
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "소셜 미디아",
+          "task_category":"포스트와 비슷한 소셜 미디아 웹사이트",
+          "task": "웹사이트에 포스트",
+          "tier_reward": [
+            {
+              "tier": "1 포스트",
+              "reward": 5
+            },
+            {
+              "tier": "1 - 10 좋아요",
+              "reward": 10
+            },
+            {
+              "tier": "11 - 25 좋아요",
+              "reward": 25
+            },
+            {
+              "tier": "26 - 75 좋아요",
+              "reward": 50
+            },
+            {
+              "tier": "76 - 500 좋아요",
+              "reward": 75
+            },
+            {
+              "tier": "500+ 좋아요",
+              "reward": 125
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "마이크로 블로깅",
+          "task_category": "포스트 비슷한 메시징 서비스",
+          "task": "트위터에 포스트",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 3
+            },
+            {
+              "tier": "1 - 10 Likes/Retweets",
+              "reward": 10
+            },
+            {
+              "tier": "11 - 25 Likes/Retweets",
+              "reward": 15
+            },
+            {
+              "tier": "26 - 75 Likes/Retweets",
+              "reward": 30
+            },
+            {
+              "tier": "76 - 150 Likes/Retweets",
+              "reward": 75
+            },
+            {
+              "tier": "150+ Likes/Retweets",
+              "reward": 150
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "아티클 기반 포럼",
+          "task_category": "<a href=\"https:\/\/medium.com\" target=\"_blank\" rel=\"noopener noreferrer\">Medium<\/a>, <a href=\"https:\/\/steemit.com\" target=\"_blank\" rel=\"noopener noreferrer\">Steemit<\/a>, <a href=\"https:\/\/reddit.com\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit<\/a>, <a href=\"https:\/\/tieba.baidu.com\" target=\"_blank\" rel=\"noopener noreferrer\">Baidu Tieba<\/a> article writing",
+          "task": "Reddit에서> 250 개의 단어 게시물 / 응답을 포함하여 Medium 또는 Steemit 및 비슷한 블로깅 사이트에 게시하십시오.",
+          "tier_reward": [
+            {
+              "tier": "1 포스트",
+              "reward": 50
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "포럼 및 채팅",
+          "task_category": "포럼 및 채팅 포스트",
+          "task": "웹사이트에 포스트",
+          "tier_reward": [
+            {
+              "tier": "1 포스트",
+              "reward": 10
+            },
+            {
+              "tier": "1 리플레이(반복불가)",
+              "reward": 3
+            }
+          ],
+          "proof": "사용자이름과 함께 포럼 링크"
+        },
+        {
+          "site_category": "기타 컨텐츠",
+          "task_category": "예상치 못한 유용한 컨텐츠",
+          "task": "기술 툴 (블락체인 익스플로어, 툴 킷 등)",
+          "tier_reward": [
+            {
+              "tier": "불분명",
+              "reward": "케바케"
+            }
+          ],
+          "proof": "케이스 바이 케이스"
+        },
+        {
+          "site_category": "Q&A 및 기술 포럼",
+          "task_category": "Quora , 기술 및 튜터리얼 기사",
+          "task": "기사 작성은 Telos 및 / 또는 EOSIO 프로그래밍에서 Telos를 중립적 또는 긍정적 인 측면에서 두드러지게 언급하는 방법을 보여주기위한 것입니다.",
+          "tier_reward": [
+            {
+              "tier": "1 포스트",
+              "reward": 50
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "이미지 기반 소셜미디아",
+          "task_category": "<a href=\"https:\/\/instagram.com\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram<\/a>, image posts\/work",
+          "task": "그래픽 컨텐츠, 인포그래픽, gifs, memes",
+          "tier_reward": [
+            {
+              "tier": "1 포스트",
+              "reward": 50
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "소셜 미디아 어드민 작업",
+          "task_category": "포럼 어드민",
+          "task": "포럼 그룹 관리 관련 기사 작성 및 답변 달기 등",
+          "tier_reward": [
+            {
+              "tier": "3 - 10 사용자",
+              "reward": 25
+            },
+            {
+              "tier": "11 - 50  사용자",
+              "reward": 50
+            },
+            {
+              "tier": "51 - 100  사용자",
+              "reward": 100
+            },
+            {
+              "tier": "101 - 250  사용자",
+              "reward": 150
+            },
+            {
+              "tier": "251+  사용자",
+              "reward": 200
+            }
+          ],
+          "proof": "사용자이름과 함께 포럼링크와 자세한 작업 내용"
+        },
+        {
+          "site_category": "소셜 밋업",
+          "task_category": "<a href=\"https:\/\/meetup.com\" target=\"_blank\" rel=\"noopener noreferrer\">Meetups<\/a>, etc.",
+          "task": "밋업 주관 및 비슷한 소셜 그룹 창설",
+          "tier_reward": [
+            {
+              "tier": "1 - 2 참여자",
+              "reward": 50
+            },
+            {
+              "tier": "3 - 5 참여자",
+              "reward": 75
+            },
+            {
+              "tier": "6 - 10 참여자",
+              "reward": 100
+            },
+            {
+              "tier": "11 - 20 참여자",
+              "reward": 125
+            },
+            {
+              "tier": "21+ 참여자",
+              "reward": 150
+            }
+          ],
+          "proof": "사진, 초대 링크"
+        }
+      ]
+    }
+  },
   "token_recovery": {
     "intro": {
       "heading": "Telos 잃어버린 키 복구 포털",

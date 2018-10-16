@@ -14,6 +14,273 @@
   	"github_text": "Visitez notre Github",
     "partners_heading": "Rencontrez nos partenaires"
   },
+  "rewards_page": {
+    "intro": {
+      "intro_heading": "The Community Rewards Program",
+      "intro_paragraphs": [
+        "Telos is a community-led alternative to EOS. We need you to help spread the word and make the Telos Network a success. You can share in the 1 million TLOS community rewards pool.",
+        "Joining is easy. Read the rules below, then sign up with your user name for the services where you want to promote Telos. You can make videos, articles, tweets, posts, tutorials—just about anything that helps spread the word. Meetups, community management and more is all available and receives rewards both for the initial action <em>and</em> when people engage with you by liking, clapping, attending, viewing, whatever.",
+        "Once the Telos Network activates, you can submit a final list of your community engagement for your tokens. You can either supply us with your account name, or send us a Telos public key and new account name and we will create the account for you and fill it with your rewards!",
+        "Telos is a blockchain where your voice matters, so use that voice to tell everyone about the world changing advantages of the Telos Network."
+      ],
+      "join_us": "Join Us Today!",
+      "cta_text": "SIGN UP HERE"
+    },
+    "description": {
+      "main_heading": "Community Rewards Information",
+      "sub_heading": "Max Payout per participant: 10,000 TLOS",
+      "column_one": [
+        "All items subject to change and investigation. Gaming the system or getting rewards on a technicality will not be allowed.",
+        "Participants must register with the system portal above, providing their user names in the various platforms.",
+        "After network activation, participants will submit a final list of links and addresses for verification. Email instructions will be sent to all registered users prior to activation."
+      ],
+      "column_two": [
+        "Submissions must be received within one week of Telos network activation",
+        "All participants who earn tokens will receive a free Telos Address!",
+        "All posts must include links to an official Telos website or Telos social media page:"
+      ],
+      "column_three": [
+        "All judges' determinations are final and cannot be appealed or arbitrated.",
+        "If the total amount earned by participants exceeds the 1 million TLOS allocated, then all timely submissions will be reduced in like percentage to pay each participant a pro rata share.",
+        "Participants may not also claim rewards from the Telos Founders Rewards Pool. They can only be a member of one or the other."
+      ]
+    },
+    "table": {
+      "table_headings": {
+        "site_category": "Category",
+        "task_category": "Example Channels",
+        "task": "Specific Task",
+        "tier_reward": "Task Tier - Reward",
+        "proof": "Required Proof"
+      },
+      "table_rows": [
+        {
+          "site_category": "Video",
+          "task_category": "<a href='https://vimeo.com' target='_blank' rel='noopener noreferrer'>Vimeo</a>, <a href='https://youtube.com' target='_blank' rel='noopener noreferrer'>Youtube</a>, etc",
+          "task": "Post Online Video",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 10
+            },
+            {
+              "tier": "10 - 100 views",
+              "reward": 25
+            },
+            {
+              "tier": "100 - 250 views",
+              "reward": 75
+            },
+            {
+              "tier": "250 - 500 views",
+              "reward": 100
+            },
+            {
+              "tier": "500+",
+              "reward": 150
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Video (Tutorial)",
+          "task_category": "Tutorial Video Bonus",
+          "task": "Videos that demonstrate how to do something Telos-related (generally how to use a wallet, app, node, etc) in a clear, concise, positive manner",
+          "tier_reward": [
+            {
+              "tier": null,
+              "reward": "Double the value of a general purpose video"
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Social Media",
+          "task_category":"<a href=\"https:\/\/facebook.com\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook<\/a>, <a href=\"https:\/\/linkedin.com\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn<\/a>, <a href=\"https:\/\/plus.google.com\" target=\"_blank\" rel=\"noopener noreferrer\">Google+<\/a>, <a href=\"https:\/\/vk.com\" target=\"_blank\" rel=\"noopener noreferrer\">VK<\/a>, <a href=\"https:\/\/ok.ru\" target=\"_blank\" rel=\"noopener noreferrer\">Oknaklassniki<\/a>, <a href=\"https:\/\/im.qq.com\" target=\"_blank\" rel=\"noopener noreferrer\">QQ<\/a>, <a href=\"https:\/\/qzone.qq.com\/\r\n\" target=\"_blank\" rel=\"noopener noreferrer\">QZone<\/a> Posts (and similar social sites)",
+          "task": "Post on site",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 5
+            },
+            {
+              "tier": "1 - 10 Likes",
+              "reward": 10
+            },
+            {
+              "tier": "11 - 25 Likes",
+              "reward": 25
+            },
+            {
+              "tier": "26 - 75 Likes",
+              "reward": 50
+            },
+            {
+              "tier": "76 - 500 Likes",
+              "reward": 75
+            },
+            {
+              "tier": "500+ Likes",
+              "reward": 125
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Micro-Blogging",
+          "task_category": "<a href=\"https:\/\/twitter.com\" target=\"_blank\" rel=\"noopener noreferrer\">Twitter<\/a>, <a href=\"https:\/\/weibo.com\" target=\"_blank\" rel=\"noopener noreferrer\">Weibo<\/a> Posts (and similar public messaging services)",
+          "task": "Post on <a href=\"https:\/\/twitter.com\" target=\"_blank\" rel=\"noopener noreferrer\">Twitter<\/a>",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 3
+            },
+            {
+              "tier": "1 - 10 Likes/Retweets",
+              "reward": 10
+            },
+            {
+              "tier": "11 - 25 Likes/Retweets",
+              "reward": 15
+            },
+            {
+              "tier": "26 - 75 Likes/Retweets",
+              "reward": 30
+            },
+            {
+              "tier": "76 - 150 Likes/Retweets",
+              "reward": 75
+            },
+            {
+              "tier": "150+ Likes/Retweets",
+              "reward": 150
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Article-based Forums",
+          "task_category": "<a href=\"https:\/\/medium.com\" target=\"_blank\" rel=\"noopener noreferrer\">Medium<\/a>, <a href=\"https:\/\/steemit.com\" target=\"_blank\" rel=\"noopener noreferrer\">Steemit<\/a>, <a href=\"https:\/\/reddit.com\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit<\/a>, <a href=\"https:\/\/tieba.baidu.com\" target=\"_blank\" rel=\"noopener noreferrer\">Baidu Tieba<\/a> article writing",
+          "task": "Post on <a href=\"https:\/\/medium.com\" target=\"_blank\" rel=\"noopener noreferrer\">Medium<\/a> or <a href=\"https:\/\/steemit.com\" target=\"_blank\" rel=\"noopener noreferrer\">Steemit<\/a> and similar blogging sites including > 250 word posts/responses on <a href=\"https:\/\/reddit.com\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit<\/a>.",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 50
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Forums and Chats",
+          "task_category": "Forum or Chat posts",
+          "task": "Post or reply on site",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 10
+            },
+            {
+              "tier": "1 replay (no repeats)",
+              "reward": 3
+            }
+          ],
+          "proof": "Link to forum with username"
+        },
+        {
+          "site_category": "Misc. Content",
+          "task_category": "Unforseen but usable content",
+          "task": "Technology tools (Blockchain explorers, tools kits, etc.)",
+          "tier_reward": [
+            {
+              "tier": "Unknown",
+              "reward": "Case by case"
+            }
+          ],
+          "proof": "Case by case"
+        },
+        {
+          "site_category": "Q&A and Tech Forums",
+          "task_category": "<a href=\"https:\/\/www.quora.com\" target=\"_blank\" rel=\"noreferrer noopener\">Quora<\/a>, Technical and Tutorial articles",
+          "task": "Creating an article meant to demonstrate how to do something on Telos and/or EOSIO programming that also prominently mentions Telos specifically in a neutral or positive light",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 50
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Image-based Social Media",
+          "task_category": "<a href=\"https:\/\/instagram.com\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram<\/a>, image posts\/work",
+          "task": "Graphic content, infographics, gifs, memes",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 50
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Social Media Admin Work",
+          "task_category": "Forum Admin",
+          "task": "Managing a forum group top to bottom, keeping it on target, posting relevant articles, replying, etc",
+          "tier_reward": [
+            {
+              "tier": "3 - 10 Users",
+              "reward": 25
+            },
+            {
+              "tier": "11 - 50 Users",
+              "reward": 50
+            },
+            {
+              "tier": "51 - 100 Users",
+              "reward": 100
+            },
+            {
+              "tier": "101 - 250 Users",
+              "reward": 150
+            },
+            {
+              "tier": "251+ Users",
+              "reward": 200
+            }
+          ],
+          "proof": "Link to forum with username and details of work"
+        },
+        {
+          "site_category": "Physical Social Gatherings",
+          "task_category": "<a href=\"https:\/\/meetup.com\" target=\"_blank\" rel=\"noopener noreferrer\">Meetups<\/a>, etc.",
+          "task": "Create or speak at a <a href=\"https:\/\/meetup.com\" target=\"_blank\" rel=\"noopener noreferrer\">Meetup<\/a> or similar social group",
+          "tier_reward": [
+            {
+              "tier": "1 - 2 attendees",
+              "reward": 50
+            },
+            {
+              "tier": "3 - 5 attendees",
+              "reward": 75
+            },
+            {
+              "tier": "6 - 10 attendees",
+              "reward": 100
+            },
+            {
+              "tier": "11 - 20 attendees",
+              "reward": 125
+            },
+            {
+              "tier": "21+ attendees",
+              "reward": 150
+            }
+          ],
+          "proof": "Photos, Link to invite"
+        }
+      ]
+    }
+  },  
   "token_recovery": {
     "intro": {
       "heading": "Telos Lost Key Recovery Portal",

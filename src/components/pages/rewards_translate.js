@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Grid, Row, Col, ResponsiveEmbed, Button, Table} from 'react-bootstrap';
 import RewardsModal from '../modals/rewards_modal';
 import {Helmet} from 'react-helmet';
-import axios from 'axios';
 import '../../styles/rewards.css';
 
 export default class RewardsTranslate extends Component {
@@ -16,18 +15,8 @@ export default class RewardsTranslate extends Component {
 		};
 	}
 
-	//gonna get this through props once there are other translations
-	componentDidMount(){
-		axios.get('/resources/rewards_template.json')
-		.then(res => {
-			this.setState({rewards_page: res.data.rewards_page});
-		}).catch(err => {
-			console.log(err);
-		});
-	}
-
 	render(){
-		const {rewards_page} = this.state;
+		const {rewards_page} = this.props;
 		if(!rewards_page) return <div>no content yet</div>;
 
 		return (
