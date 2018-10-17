@@ -97,7 +97,7 @@ const DevelopmentCode = () => {
 					Claim rewards improvements
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/10' />
 				</li>
-				<li className='in_progress'>
+				<li className='yes'>
 					Inverse-weighted voting
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/7' />
 				</li>
