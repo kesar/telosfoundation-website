@@ -11,6 +11,7 @@ import '../../styles/arbitrator.css';
 import marc_roger from '../../img/arbitrator/marc-roger.jpg';
 import raul_sepulveda from '../../img/arbitrator/Raul Vidal y Sepulveda.jpg';
 import roberto_corretjer from '../../img/arbitrator/Roberto Corretjer.png';
+import moises_raba from '../../img/arbitrator/moises_raba.png';
 
 const arbitratorCandidates = [
 	{
@@ -57,6 +58,16 @@ const arbitratorCandidates = [
 			'English',
 			'Spanish'
 		]
+	},
+	{
+		cand_name: 'Moises Kaba III, Esq.',
+		cand_vote_name: 'arbmoiseskaba',
+		cand_statement: [
+			'Moises has been an attorney for over 30 years serving clients in both State and Federal Courts in Florida on a wide range of legal practice areas. He is a proven litigator, corporate and transactional attorney and business entrepreneur who is self-motivated, energetic and solutions-oriented with a solid record of success in all stages of his legal and business career.',
+			'Mr. Kaba received his Juris Doctorate (JD) degree from Nova Southeastern University Shepard Broad College of Law in 1985, and became admitted as a member of the Florida Bar in 1986. He also received a Bachelor Degree in Business Administration with a major in Accounting from St. Thomas University in 1983, and an Associate in Arts degree in 1982 from Miami Dade Community College. Mr. Kaba is also admitted to practice law as a member of the Federal Court Bars of the United States District Court for The Southern District Court of Florida, United States District Court For The Middle District Court of Florida and United States District Court For The Northern District of Florida.',
+			'Mr. Kaba possesses the legal talent and business acumen to lead this company to achieve the growth, development and desired results of creating a truly forward thinking and innovative community token and business model.'
+		],
+		cand_image: moises_raba
 	}
 ];
 

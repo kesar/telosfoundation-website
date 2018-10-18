@@ -19,6 +19,7 @@ import richard_erikodi from '../../img/foundation_site/Richard Bryan Erikodi.jpg
 import syed_sadiq from '../../img/foundation_site/syed.jpg';
 import jim_hewitt from '../../img/foundation_site/JimHewitt.jpg';
 import ian_panchevre from '../../img/foundation_site/Ian Panchevre.jpg';
+import james_davis from '../../img/foundation_site/James Davis.jpg';
 
 
 import '../../styles/board.css';
@@ -43,6 +44,15 @@ const boardNominees = [
 		nominatedBy: 'Josep Rosich, EOS Barcelona',
 		bio: [
 			'J.T. Buice (pronounced Bise) is a Technical IT Director with broad competencies in all areas of IT Infrastructure including LAN and WAN networking, server architecture (UNIX & Windows), mass storage, and telecommunications. Since 2015, Buice has served as Director of Technology for Kainos Technologies, a managed services provider business he co-founded bringing fast and efficient high technology solutions and support to the state of Texas. Before Kainos, Buice joined Space Exploration Technologies (SpaceX) as IT Manager to deliver always-on IT that enabled SpaceX to serve commercial and government entities in furthering the exploration of space with an end goal to make life multi-planetary. Having joined the Telos Community immediately following its announcement, Buice has jumped headlong in with one of the greatest blockchain communities in existence and is honored to be nominated for the Telos Foundation’s board of directors.'
+		]
+	},
+	{
+		name: 'James Davis',
+		organization: 'GoodBlock',
+		portrait: james_davis,
+		nominatedBy: 'Nominated by Justin Giudici, infinitybloc',
+		bio: [
+			'James has been a leader of the Telos Blockchain Network launch group since its inception. He brings over 20 years of experience as a product manager and certified scrum master who has led development teams for many large commercial brands including Disney, Marvel, Halo, and Magic: The Gathering. James was the project manager on the initial Telos public announcement and Telos Testnet “Stage 0”. As an administrator of the Telos launch group rewards pool and the Community Rewards program, James has been entrusted with ensuring a fair and equitable distribution of these core funds. James also manages the Telos Foundation website and conducts extensive community outreach through the Telos social media channels. James is a Senior Producer at GoodBlock, a Telos block producer candidate.'
 		]
 	},
 	{
@@ -129,7 +139,7 @@ const boardNominees = [
 		nominatedBy: 'Justin Giudici, InfinityBloc.io',
 		portrait: ian_panchevre,
 		bio: [
-			'Ian is the founder of Amplified Telos (www.amplified.software), a block producer and a technical contributor to Telos. Ian first became interested in blockchains while studying political science at Yale. He wrote a hundred-page thesis on the virtual politics of Bitcoin. Years later, Ian joined Intuit’s Innovation and Advanced Technologies group, where he worked as a produt manager to lead Intuit’s blockchain R&D efforts. Ian is a serial entrepreneur, having previously founded mobile and edtech startups. Ian is currently an MBA student at the Stanford Graduate School of Business.',
+			'Ian is the founder of Amplified Telos (www.amplified.software), a block producer and a technical contributor to Telos. Ian first became interested in blockchains while studying political science at Yale. He wrote a hundred-page thesis on the virtual politics of Bitcoin. Years later, Ian joined Intuit’s Innovation and Advanced Technologies group, where he worked as a product manager to lead Intuit’s blockchain R&D efforts. Ian is a serial entrepreneur, having previously founded mobile and edtech startups. Ian is currently an MBA student at the Stanford Graduate School of Business.',
 			'In addition to blockchain expertise, entrepreneurial experience, and political theory chops, Ian will bring a high ethical standard to the Telos Foundation. Ian expects the Telos Foundation to operate ethically and transparently so that it may become the gold standard among cryptocurrency foundations.'
 		],
 		linkedIn: 'https://www.linkedin.com/in/ianpanchevre/'
