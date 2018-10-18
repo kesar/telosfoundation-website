@@ -29,7 +29,7 @@ const MainSite = ({site_content}) => {
 					<Route path='/exchange_outreach' component={ExchangeOutreach} />
 					<Route path='/iwantmytlos' component={ExchangeOutreach} />
 					<Route path='/launch' component={Checklist} />
-					<Route path='/downloads' render={() => <Download language={site_content.language} />} />
+					<Route path='/downloads' render={() => <Download downloads_page={site_content.downloads_page} language={site_content.language} />} />
 					<Route path='/arbitrators' component={Arbitrator} />
 					<Route path='/dapps' component={DAppsPage} />
 					<Route path='/recovery' render={() => <TokenRecovery token_recovery={site_content.token_recovery} language={site_content.language} />} />

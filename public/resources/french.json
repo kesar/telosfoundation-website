@@ -345,5 +345,41 @@
       "signature_label": "Paste the signature text here.",
       "response": "Thanks for your information."
     }
-  } 
+  },
+  "downloads_page": {
+    "intro": {
+      "heading": "Downloads",
+      "subheading": "Download all the documents and tools that you need to join the Telos Network."
+    },
+    "wallets": {
+      "heading": "Telos Wallets",
+      "subheading": "Choose a wallet to store and trade your TLOS tokens.",
+      "sqrl_description": "Sqrl is a fully functional light wallet designed for the TELOS blockchain. This application can be used to connect to a remote TELOS API endpoint to perform producer voting actions and common wallet commands.",
+      "download": "DOWNLOAD",
+      "source": "SOURCE"
+    },
+    "documents": {
+      "heading": "Documents",
+      "white_paper": {
+        "link": "White Paper",
+        "description": "We are out to create the best blockchain ever - read the white paper to judge for yourself. Join us and build on Telos."
+      },
+      "press_kit": {
+        "link": "Electronic Press Kit",
+        "description": "Everything you need to know about Telos in one PDF."
+      },
+      "style_guide": {
+        "link": "Telos Style Guide",
+        "description": "A style guide featuring Telos Foundation logos, color palettes and fonts for brand use."
+      },
+      "logos_icons": {
+        "link": "Telos Logo and Icon",
+        "description": "A package containing an assortment of file sizes and types for the Telos logo and icon."
+      }
+    },
+    "banners": {
+      "heading": "Telos Article Splash Banners",
+      "subheading": "Splash Banner art for use in online articles about Telos."
+    }
+  }
 }
