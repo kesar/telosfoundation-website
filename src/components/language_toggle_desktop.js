@@ -63,7 +63,7 @@ const languageOptions = [
 	},
 	{
 		value: 'turkish',
-		name: 'TÜRK',
+		name: 'TÜRKÇE',
 		flag: turkey_flag
 	},
 	{

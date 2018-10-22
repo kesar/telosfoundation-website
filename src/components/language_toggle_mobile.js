@@ -87,7 +87,7 @@ class LanguageToggle extends Component {
 					<option value='french'>FRANÇAIS</option>
 					<option value='german'>DEUTSCHE</option>
 					<option value='italian'>ITALIANO</option>
-					<option value='turkish'>TÜRK</option>
+					<option value='turkish'>TÜRKÇE</option>
 					<option value='indonesian'>BAHASA INDONESIA</option>
 				</select>
 				<img src={get_flag()} alt='language flag' className='language_toggle_flag' />
