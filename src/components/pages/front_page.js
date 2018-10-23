@@ -23,7 +23,8 @@ import fuzzy from '../../img/partner_logos/logo_fuzzy.png';
 import caleos from '../../img/partner_logos/logo_caleos.png';
 import eos_in_space from '../../img/partner_logos/logo_eosspace.png';
 import eos_sweden from '../../img/partner_logos/logo_eossweden.png';
-import eos_miami from '../../img/partner_logos/logo_eosmiami.png';
+// import eos_miami from '../../img/partner_logos/logo_eosmiami.png';
+import telos_miami from '../../img/partner_logos/logo_telos_miami.png';
 import hellenicos from '../../img/partner_logos/logo_hellenicos.png';
 import discover_telos from '../../img/partner_logos/logo_discovertelos.png';
 import zmeta from '../../img/partner_logos/logo_zmeta.png';
@@ -121,9 +122,9 @@ const partnersArr = [
 		url: 'https://eosin.space/#telos'
 	},
 	{
-		name: 'eos miami',
-		logo: eos_miami,
-		url: 'http://eos.miami'
+		name: 'telos miami',
+		logo: telos_miami,
+		url: 'http://telos.miami'
 	},
 	{
 		name: 'eos sweden',

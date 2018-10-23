@@ -10,6 +10,7 @@ import banner_one from '../../img/banners/Splash Banner_Telos-Medium_generic_1_d
 import banner_two from '../../img/banners/Splash Banner_Telos-Medium_generic_2_display.jpg';
 import banner_three from '../../img/banners/Splash Banner_Telos-Medium_generic_3_display.jpg';
 import banner_four from '../../img/banners/Splash Banner_Telos-Medium_generic_4_display.jpg';
+import banner_five from '../../img/banners/Splash Banner_Telos-Medium_generic_5_display.jpg';
 
 //white papers
 import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN, WHITE_PAPER_CHINESE} from '../../config/constants';
@@ -43,6 +44,12 @@ const splashBanners = [
 		image: banner_four,
 		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_4.jpg',
 		downloadName: 'Splash Banner_Telos-Medium_generic_4.jpg'
+	},
+	{
+		name: 'banner five',
+		image: banner_five,
+		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_5.jpg',
+		downloadName: 'Splash Banner_Telos-Medium_generic_5.jpg'
 	}
 ];
 

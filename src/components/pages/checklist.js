@@ -7,15 +7,6 @@ import completed_icon from '../../img/checklist/gng_list_yes.png';
 import telos_logo from '../../img/checklist/logo_gray32x35.png';
 import '../../styles/checklist.css';
 
-/*TF Ram: green
-voting tokens: yellow
-inverse weighted: yellow
-remove BPs: yellow
-ratify/amend: yellow
-
-Tools:
-add "Get listed with at least one exchange": green*/
-
 const Checklist = () => {
 	return (
 		<Grid>
@@ -206,12 +197,12 @@ const Miscellaneous = () => {
 					Community rewards system
 					<InfoLinks telos_link='https://telosfoundation.io/rewards' />
 				</li>
-				<li className='in_progress'>Telos Foundation System</li>
+				<li className='yes'>Telos Foundation System</li>
 				<li className='yes'>Launch group rewards system</li>
 				<li className='yes'>Verified capped genesis snapshot</li>
 				<li className='yes'>At least 40 BP candidates have successfully participated in test launches</li>
-				<li className='in_progress'>Agree upon ABP launch group (six across globe)</li>
-				<li className='in_progress'>
+				<li className='yes'>Agree upon ABP launch group (six across globe)</li>
+				<li className='yes'>
 					Lost tokens processed
 					<InfoLinks telos_link='https://telosfoundation.io/recovery' />
 				</li>
