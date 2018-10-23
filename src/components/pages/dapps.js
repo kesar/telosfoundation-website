@@ -49,7 +49,7 @@ const dappSections = [
 		heading: 'EOS Compatibility',
 		img: compatibility,
 		paragraphs: [
-			'EOS.IO is currently responsible for half of all blockchain transactions and its development is expected to advance faster than older platforms like Ethereum and NEO. The Telos network runs the same EOS.IO software as EOS, so Dapps written for EOS can run on Telos. No rewrite needed!'
+			'EOSIO is currently responsible for half of all blockchain transactions and its development is expected to advance faster than older platforms like Ethereum and NEO. The Telos network runs the same EOSIO software as EOS, so Dapps written for EOS can run on Telos. No rewrite needed!'
 		]
 	},
 	{
