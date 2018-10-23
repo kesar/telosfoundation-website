@@ -129,7 +129,7 @@ const boardNominees = [
 		nominatedBy: 'Beth Farnham, GoodBlock',
 		portrait: chen_li,
 		bio: [
-			'Chen Li was one of the original members of the Telos Contributors Group. He has put in countless hours of outreach to Chinese exchanges, DApps, and users and has performed many of the Chinese document translations. Chen has also contributed to the development working groups. His outreach to the Chinese community is of enormous value to the network.',
+			'Chen Li was one of the original members of the Telos Contributors Group. He has put in countless hours of outreach to Chinese exchanges, Dapps, and users and has performed many of the Chinese document translations. Chen has also contributed to the development working groups. His outreach to the Chinese community is of enormous value to the network.',
 			'Chen started programming in high school and won 1st Prize in the National Olympiad in Informatics (NOIP) at the age of 18. Over the past 15 years, he has successfully implemented and deployed various projets ranging from Global Navigation Satellite Reflectometry to Network Monitoring System for large-scaled enterprises. With his experience in development and dev ops, Chen is committed to contributing his technical skills to the Telos community.'
 		]
 	},
@@ -159,7 +159,7 @@ const boardNominees = [
 		nominatedBy: 'Maliha, CEO swedencornet (Core Net AB)',
 		portrait: syed_sadiq,
 		bio: [
-			'Syed is an early member of the Telos Contributors Group. He is co-chair of GRC, Security, and Marketing Working Groups. But he is an all-rounder and spending lot of time (day and night) in most of the working groups; including, but not limited to: Governance, Network Maintenance, Social Media, Exchange Outreach and so on... He is obsessed with Telos and would like it to succeed in becoming the best choice for DApps in both Enterprise and Consumer domains.',
+			'Syed is an early member of the Telos Contributors Group. He is co-chair of GRC, Security, and Marketing Working Groups. But he is an all-rounder and spending lot of time (day and night) in most of the working groups; including, but not limited to: Governance, Network Maintenance, Social Media, Exchange Outreach and so on... He is obsessed with Telos and would like it to succeed in becoming the best choice for Dapps in both Enterprise and Consumer domains.',
 			'He has over 20 years of GRC (Governance, Risks, Compliance), Information Security, and Privacy experience. He comes from Nordic Biggest Bank. He has had worked in global organizations and had roles such as Director of Compliance, senior Info. Security Officer, CISO, Technical National Security and Public Safety Solutions Manager.',
 			'He holds 3 M.Sc. degrees from Sweden and has earned numerous globally recognized security certifications (e.g. CISSP, CISM, CRISC, Privacy Eagle, PMI PMP)'
 		],

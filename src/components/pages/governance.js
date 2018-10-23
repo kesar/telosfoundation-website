@@ -83,7 +83,7 @@ const GovernanceIntro = () => {
 				<Row>
 					<Col md={10} mdOffset={1}>
 						<h1>Governance Overview</h1>
-						<h3>Telos is a governed blockchain based on EOSIO - the same software that powers EOS - so that DApps can deploy on Telos and EOS with the same code. When Telos launches (as early as October 17, 2018) it will have complete documentation and operating structures such as full on-chain governance, the ability to ratify or amend the governance documents by community voting, a worker proposal system, and election of block producers and arbitrators. Below are the main elements and features of blockchain governance on Telos.</h3>
+						<h3>Telos is a governed blockchain based on EOSIO - the same software that powers EOS - so that Dapps can deploy on Telos and EOS with the same code. When Telos launches (as early as October 17, 2018) it will have complete documentation and operating structures such as full on-chain governance, the ability to ratify or amend the governance documents by community voting, a worker proposal system, and election of block producers and arbitrators. Below are the main elements and features of blockchain governance on Telos.</h3>
 					</Col>
 				</Row>
 			</Grid>
