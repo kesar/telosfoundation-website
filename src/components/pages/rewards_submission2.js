@@ -3,7 +3,7 @@ import TagsInput from 'react-tagsinput';
 import {Link} from 'react-router-dom';
 import AutosizeInput from 'react-input-autosize';
 import axios from 'axios';
-import {Grid, Row, Col, ButtonGroup, Button, FormGroup, FormControl, Checkbox} from 'react-bootstrap';
+import {Grid, Row, Col, ButtonGroup, Button, FormGroup, FormControl, Checkbox, ControlLabel} from 'react-bootstrap';
 import '../../styles/rewards_submission.css';
 
 //form submission states
@@ -18,6 +18,7 @@ export default class RewardsSubmission extends Component {
 		this.state = {
 			name: '',
 			email: '',
+			public_key: '',
 			submissions: [
 				{
 					urls: [],
@@ -32,11 +33,13 @@ export default class RewardsSubmission extends Component {
 
 		//bind handlers
 		this.handleEmailChange = this.handleEmailChange.bind(this);
+		this.handlePublicKeyChange = this.handlePublicKeyChange.bind(this);
 		this.handleNameChange = this.handleNameChange.bind(this);
 		this.handleTermsChange = this.handleTermsChange.bind(this);
 		this.handleUsernameChange = this.handleUsernameChange.bind(this);
 		this.handleDetailsChange = this.handleDetailsChange.bind(this);
 		this.handleTagsChange = this.handleTagsChange.bind(this);
+		this.handleScreenshotChange = this.handleScreenshotChange.bind(this);
 
 		this.handleAddSubmission = this.handleAddSubmission.bind(this);
 		this.handleRemoveSubmission = this.handleRemoveSubmission.bind(this);
@@ -48,6 +51,10 @@ export default class RewardsSubmission extends Component {
 
 	handleEmailChange(e){
 		this.setState({email: e.target.value});
+	}
+
+	handlePublicKeyChange(e){
+		this.setState({public_key: e.target.value});
 	}
 
 	handleTermsChange(e){
@@ -102,6 +109,15 @@ export default class RewardsSubmission extends Component {
   		this.setState({submissions: newSubmissions});
   	}
 
+  	handleScreenshotChange(e, idx){
+  		const {submissions} = this.state;
+  		const newSubmissions = submissions.map((sub, i) => {
+  			if(i !== idx) return sub;
+  			return {...sub, screenshot: e.target.files[0]};
+  		});
+  		this.setState({submissions: newSubmissions});
+  	}
+
 	getSubmissions(){
 		return this.state.submissions.map((inputs, idx) => {
 			return (
@@ -130,6 +146,12 @@ export default class RewardsSubmission extends Component {
 								onChange={e => this.handleDetailsChange(e, idx)}
 							></textarea>
 						</FormGroup>
+						<FormGroup>
+							<ControlLabel>Screenshot (ONLY for in-person meetups)</ControlLabel>
+							<FormControl
+								type='file'
+								onChange={e => this.handleScreenshotChange(e, idx)} />
+						</FormGroup>
 					</div>
 				</fieldset>
 			);
@@ -137,7 +159,7 @@ export default class RewardsSubmission extends Component {
 	}
 
 	renderForm(){
-		const {email, name, termsAccepted} = this.state;
+		const {email, name, termsAccepted, public_key} = this.state;
 
 		return (
 			<form onSubmit={this.handleSubmit}>
@@ -157,6 +179,13 @@ export default class RewardsSubmission extends Component {
 						value={email}
 						placeholder='Your email'
 						onChange={this.handleEmailChange} />
+				</FormGroup>
+				<FormGroup>
+					<FormControl
+						type='text'
+						value={public_key}
+						placeholder='Public key, if you have not yet provided one to us.'
+						onChange={this.handlePublicKeyChange} />
 				</FormGroup>
 
 				{this.getSubmissions()}
