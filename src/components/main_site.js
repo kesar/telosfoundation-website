@@ -34,7 +34,7 @@ const MainSite = ({site_content}) => {
 					<Route path='/dapps' component={DAppsPage} />
 					<Route path='/recovery' render={() => <TokenRecovery token_recovery={site_content.token_recovery} language={site_content.language} />} />
 					<Route path='/governance' component={Governance} />
-					<Route path='/faqs' component={FAQ_Page} />
+					<Route path='/faq' component={FAQ_Page} />
 					<Route path='/' render={() => <FrontPage landing_page={site_content.landing_page} language={site_content.language} />} />
 				</Switch>
 			</main>

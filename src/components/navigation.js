@@ -188,6 +188,18 @@ class Navigation extends Component {
 							FOUNDATION
 						</a>
 					</li>
+					<li className='side_nav_item_mobile'>
+						<a
+							href='/faq'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/faq');
+								this.handleCloseNav();
+							}}
+						>
+							FAQ
+						</a>
+					</li>
 				</Nav>
 			  </Navbar.Collapse>
 			</Navbar>

@@ -97,6 +97,18 @@ const SideNavigation = (props) => {
 						#IWANTMYTLOS
 					</a>
 				</li>
+				<li>
+					<a
+						href='/faq'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/faq');
+							props.toggleSideNav(false);
+						}}
+					>
+						FAQ
+					</a>
+				</li>
 			</ul>
 			<footer>
 				<a 
