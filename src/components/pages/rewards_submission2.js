@@ -41,6 +41,7 @@ export default class RewardsSubmission extends Component {
 		this.handleTagsChange = this.handleTagsChange.bind(this);
 		this.handleScreenshotChange = this.handleScreenshotChange.bind(this);
 
+		this.handleSubmit = this.handleSubmit.bind(this);
 		this.handleAddSubmission = this.handleAddSubmission.bind(this);
 		this.handleRemoveSubmission = this.handleRemoveSubmission.bind(this);
 	}
@@ -116,6 +117,21 @@ export default class RewardsSubmission extends Component {
   			return {...sub, screenshot: e.target.files[0]};
   		});
   		this.setState({submissions: newSubmissions});
+  	}
+
+  	handleSubmit(e){
+  		e.preventDefault();
+  		const {name, email, public_key, submissions, termsAccepted} = this.state;
+
+  		const sub_values = {
+  			name: name,
+  			email: email,
+  			public_key: public_key,
+  			termsAccepted: termsAccepted,
+  			submissions: submissions
+  		};
+
+  		console.log(sub_values);
   	}
 
 	getSubmissions(){
