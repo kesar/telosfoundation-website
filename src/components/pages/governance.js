@@ -6,84 +6,92 @@ import pdf_img from '../../img/download_pdf_icon.png';
 
 import '../../styles/governance.css';
 
-const governanceDocuments = [
-	{
-		long_name: 'Operating Agreement (TBNOA)',
-		short_name: 'Operating Agreement',
-		long_description: 'The prime governing document on Telos describing the rights and responsibilities of becoming a member of the Telos Blockchain Network. It is required to opt-in to this agreement in order to access or use Telos. This agreement is the equivalent of the EOS Constitution. It differs from the EOS constitution in form: The TBNOA thoroughly defines all network parts and participants and describes governance actions such as electing block producers, amending the governance documents or submitting a worker proposal system submission. The TBNOA has inherited almost no terms from the EOS Constitution. The TBNOA includes the other five governance documents by reference and each of them adopts its definitions and terms.',
-		short_description: 'Primary governance document',
-		eos_analog: 'EOS Constitution',
-		status: 'Adopted',
-		url: 'https://resources.telosfoundation.io/Operating Agreement.pdf'
-	},
-	{
-		long_name: 'Arbitration Rules & Procedures (TBNARP)',
-		short_name: 'Arbitration Rules & Procedures',
-		long_description: 'The Arbitration Rules & Procedures describes the entire process of arbitration on Telos - from filing a case to procedures for arbitration, to delivery of arbitral judges decisions to block producers for execution. The EOS analog for this is the ECAF Rules and as yet unpublished ECAF Handbook. the Telos Arbitration Rules are entirely independent from the ECAF Rules and share no text. They are also a community amendable core governance document on Telos, whereas the ECAF Rules are set and maintained by the ECAF with no mechanism for input or control from the broader EOS community.',
-		short_description: 'Rules and procedures for arbitration on Telos',
-		eos_analog: 'ECAF Rules',
-		status: 'In committee with Governance WG',
-		url: 'https://resources.telosfoundation.io/Telos Network Arbitration Process.pdf'
-	},
-	{
-		long_name: '\'regproducer\' Contract Human Language Terms (\'regproducer\')',
-		short_name: '\'Regproducer\' Contract',
-		long_description: 'The \'regproducer\' contract is used by any member desiring to become a block producer candidate to nominate themselves. The human-language terms of this contract set out the responsibilities and rules for block producer candidates. This text is largely inherited from the EOS \'regproducer\' contract with much additional text added. The primary difference between the EOS and Telos versions is that while both list prohibited actions, the Telos version also documents penalties for any infractions, the method of enforcement, and the responsibility of block producers to enforce the rules on other BPs.',
-		short_description: 'Rules, responsibilities and representations of block producers',
-		eos_analog: 'EOS \'Regproducer\' Contract',
-		status: 'Adopted',
-		url: 'https://resources.telosfoundation.io/Regproducer Human Language Contract.pdf'
-	},
-	{
-		long_name: 'Producer Minimum Requirements (BP Minimum Requirements)',
-		short_name: 'BP Minimums',
-		long_description: 'The BP Minimum Requirements is a list of disclosures, practices, equipment and networking standards that block producer candidates must adhere to in order to serve. Failure to meet the minimum requirements disqualifies a BP from service until the omission is cured, regardless of how many votes the BP has acquired. Due to the newness of the network, these requirements are described in increasingly stringent phases which the block producers can vote to move between based on 2/3 + 1 voting. EOS does not have minimum requirements or a similar document. A minimum amount of RAM is specified in the EOS \'regproducer\' contract.',
-		short_description: 'Minimum requirements to act as a block producer',
-		eos_analog: 'None',
-		status: 'Adopted',
-		url: 'https://resources.telosfoundation.io/Block Producer Minimum Requirements (Phases 1-3).pdf'
-	},
-	{
-		long_name: '\'regarb\' Contract Human Language Terms (\'regarb\')',
-		short_name: '\'Regarb\' Contract',
-		long_description: 'The \'regarb\' contract is used by any member desiring to become an arbitrator candidate to nominate themselves. The human-language terms of this contract set out the responsibilities and rules for arbitrator candidates. There is no similar document on EOS because EOS does not elect arbitrators.',
-		short_description: 'Rules, responsibilities and representations of arbitrators',
-		eos_analog: 'None',
-		status: 'In committee with Governance WG',
-		url: 'https://resources.telosfoundation.io/arbitrator_documents/Telos regarb Human-language Contract.pdf'
-	},
-	{
-		long_name: 'Arbitrator Minimum Requirements (Arbitrator Minimum Requirements)',
-		short_name: 'Arbitrator Minimums',
-		long_description: 'The Arbitrator Minimum Requirements is a list of disclosures, practices, equipment and networking standards that arbitrator candidates must adhere to in order to serve. Failure to meet the minimum requirements disqualifies an arbitrator from being assigned new cases until the omission is cured, regardless of how many votes the arbitrator candidate has acquired. Due to the newness of the network, these requirements are described in increasingly stringent phases. There is no similar document on EOS because EOS does not elect arbitrators.',
-		short_description: 'Minimum requirements to act as an arbitrator',
-		eos_analog: 'None',
-		status: 'In committee with Governance WG',
-		url: 'https://resources.telosfoundation.io/arbitrator_documents/Telos Arbitrator Minimum Requirements.pdf'
-	},
-];
+const Governance = ({governance_page}) => {
 
-const Governance = () => {
+	const {intro, documents, table} = governance_page;
+
+	const governanceDocuments = [
+		{
+			long_name: documents.documents.operating_agreement.long_name,
+			short_name: documents.documents.operating_agreement.short_name,
+			long_description: documents.documents.operating_agreement.long_description,
+			short_description: documents.documents.operating_agreement.short_description,
+			eos_analog: documents.documents.operating_agreement.eos_analog,
+			status: documents.documents.operating_agreement.status,
+			url: 'https://resources.telosfoundation.io/Operating Agreement.pdf'
+		},
+		{
+			long_name: documents.documents.arbitration_rules.long_name,
+			short_name: documents.documents.arbitration_rules.short_name,
+			long_description: documents.documents.arbitration_rules.long_description,
+			short_description: documents.documents.arbitration_rules.short_description,
+			eos_analog: documents.documents.arbitration_rules.eos_analog,
+			status: documents.documents.arbitration_rules.status,
+			url: 'https://resources.telosfoundation.io/Telos Network Arbitration Process.pdf'
+		},
+		{
+			long_name: documents.documents.regproducer_contract.long_name,
+			short_name: documents.documents.regproducer_contract.short_name,
+			long_description: documents.documents.regproducer_contract.long_description,
+			short_description: documents.documents.regproducer_contract.short_description,
+			eos_analog: documents.documents.regproducer_contract.eos_analog,
+			status: documents.documents.regproducer_contract.status,
+			url: 'https://resources.telosfoundation.io/Regproducer Human Language Contract.pdf'
+		},
+		{
+			long_name: documents.documents.bp_minimums.long_name,
+			short_name: documents.documents.bp_minimums.short_name,
+			long_description: documents.documents.bp_minimums.long_description,
+			short_description: documents.documents.bp_minimums.short_description,
+			eos_analog: documents.documents.bp_minimums.eos_analog,
+			status: documents.documents.bp_minimums.status,
+			url: 'https://resources.telosfoundation.io/Block Producer Minimum Requirements (Phases 1-3).pdf'
+		},
+		{
+			long_name: documents.documents.regarb_contract.long_name,
+			short_name: documents.documents.regarb_contract.short_name,
+			long_description: documents.documents.regarb_contract.long_description,
+			short_description: documents.documents.regarb_contract.short_description,
+			eos_analog: documents.documents.regarb_contract.eos_analog,
+			status: documents.documents.regarb_contract.status,
+			url: 'https://resources.telosfoundation.io/arbitrator_documents/Telos regarb Human-language Contract.pdf'
+		},
+		{
+			long_name: documents.documents.arbitrator_minimums.long_name,
+			short_name: documents.documents.arbitrator_minimums.short_name,
+			long_description: documents.documents.arbitrator_minimums.long_description,
+			short_description: documents.documents.arbitrator_minimums.short_description,
+			eos_analog: documents.documents.arbitrator_minimums.eos_analog,
+			status: documents.documents.arbitrator_minimums.status,
+			url: 'https://resources.telosfoundation.io/arbitrator_documents/Telos Arbitrator Minimum Requirements.pdf'
+		},
+	];
+
 	return (
 		<div className='governance'>
 			<Helmet>
 				<title>Telos Governance</title>
 			</Helmet>
-			<GovernanceIntro />
-			<GovernanceDocuments />
-			<GovernanceTable />
+			<GovernanceIntro intro={intro} />
+			<GovernanceDocuments
+				heading={documents.heading}
+				subheading={documents.subheading}
+				governanceDocuments={governanceDocuments} />
+			<GovernanceTable
+				table={table}
+				governanceDocuments={governanceDocuments} />
 		</div>
 	);
 };
 
-const GovernanceIntro = () => {
+const GovernanceIntro = ({intro}) => {
 	return (
 		<section id='governance_intro'>
 			<Grid>
 				<Row>
 					<Col md={10} mdOffset={1}>
-						<h1>Governance Overview</h1>
-						<h3>Telos is a governed blockchain based on EOSIO - the same software that powers EOS - so that Dapps can deploy on Telos and EOS with the same code. When Telos launches (as early as October 17, 2018) it will have complete documentation and operating structures such as full on-chain governance, the ability to ratify or amend the governance documents by community voting, a worker proposal system, and election of block producers and arbitrators. Below are the main elements and features of blockchain governance on Telos.</h3>
+						<h1>{intro.heading}</h1>
+						<h3>{intro.subheading}</h3>
 					</Col>
 				</Row>
 			</Grid>
@@ -91,17 +99,17 @@ const GovernanceIntro = () => {
 	);
 };
 
-const GovernanceDocuments = () => {
+const GovernanceDocuments = ({governanceDocuments, heading, subheading}) => {
 	return (
 		<section id='governance_documents'>
 			<header>
-				<h2>THE DOCUMENTS</h2>
+				<h2>{heading}</h2>
 			</header>
 			<Grid>
 				<Row>
 					<Col md={8} mdOffset={2}>
 						<h3 className='text-center'>
-							The definitions, rules, and procedures of Telos governance are contained in six documents that will be recorded on-chain and modifiable by community vote (pro rata by TLOS token ownership). These documents are:
+							{subheading}
 						</h3>
 					</Col>
 				</Row>
@@ -143,21 +151,21 @@ const GovernanceDocument = (props) => {
 	);
 };
 
-const GovernanceTable = () => {
+const GovernanceTable = ({governanceDocuments, table}) => {
 	return (
 		<section id='governance_table'>
 			<Grid>
 				<Row>
 					<Col md={10} mdOffset={1}>
-						<h2 className='text-center'>Telos Governance at a glance</h2>
+						<h2 className='text-center'>{table.heading}</h2>
 						<Table striped bordered responsive>
 							<thead>
 								<tr>
-									<th>Document</th>
-									<th>Description</th>
-									<th>EOS Analog</th>
-									<th>Status</th>
-									<th>Link</th>
+									<th>{table.table_headings.document}</th>
+									<th>{table.table_headings.description}</th>
+									<th>{table.table_headings.eos_analog}</th>
+									<th>{table.table_headings.status}</th>
+									<th>{table.table_headings.link}</th>
 								</tr>
 							</thead>
 							<tbody>

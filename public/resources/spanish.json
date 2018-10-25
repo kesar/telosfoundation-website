@@ -445,5 +445,75 @@
         ]
       }
     }
+  },
+  "governance_page": {
+    "intro": {
+      "heading": "Visión General de la Gobernabilidad",
+      "subheading": "Telos es un Blockchain basado en EOSIO – el mismo software que alimenta EOS – de modo que DApps puede implementarse en Telos y EOS con el mismo código. Cuando Telos inicie (tan pronto el 17 de Octubre del 2018), el tendrá documentación completa y estructuras de operación tales como la gobernabilidad completa en-cadena, la habilidad para ratificar o enmendar documentos de gobernabilidad por la comunidad votante, una propuesta de sistema trabajador, y elección de productores de Blocks y árbitros. Por debajo hay elementos principales y características de la gobernabilidad del Blockchain en Telos."
+    },
+    "documents": {
+      "heading": "Los Documentos",
+      "subheading": "Las definiciones, reglas, y procesos de la gobernabilidad de Telos están contenidos en seis documentos que serán grabados en-cadena y modificables por voto comunitario (pro rata por propiedad de los Tokens de TLOS). Estos documentos son:",
+      "documents": {
+        "operating_agreement": {
+          "long_name": "Acuerdo de Operación (TBNOA)",
+          "short_name": "Acuerdos de Operación",
+          "long_description": "El documento de gobernabilidad principal de Telos que describe los derechos y responsabilidades al convertirse en un miembro de la red del Blockchain de Telos. Es requerido aceptar este acuerdo a fin de entrar a Telos o utilizarlo. Este acuerdo es el equivalente a la constitución de EOS. Difiere de la constitución de EOS en forma: El TBNOA define a fondo todas las partes de la red, participantes, y describe acciones de gobernabilidad tales como elegir a los productores de Blocks, emendar los documentos de gobernabilidad o someter una aplicación de propuesta de sistema trabajador. El TBNOA ha heredado casi ningún término de la constitución de EOS. El TBNOA incluye la oferta, por referencia cinco documentos de gobernabilidad y cada uno de ellos adopta sus definiciones y términos.",
+          "short_description": "Documento de Gobernabilidad Principal",
+          "eos_analog": "Constitución EOS",
+          "status": "Adoptado"
+        },
+        "arbitration_rules": {
+          "long_name": "Reglas de Arbitrariedad y procesos (TBNARP)",
+          "short_name": "Reglas & Procesos del Arbitraje",
+          "long_description": "Las Reglas de Arbitrariedad y Procesos describe el proceso entero de arbitrariedad de Telos – desde presentar un caso de procedimientos de arbitrariedad, a entregar decisiones arbitrarias para bloquear procesos de ejecución. El análogo de EOS para este caso es la Reglamentación ECAF y el aun no publicado folleto ECAF. La Reglamentación de Arbitrariedad de Telos es completamente independientes de las Reglas ECAF, no comparten textos. Existe también un documento de gobernabilidad central modificable por la comunidad de Telos, mientras las Reglas ECAF son establecida y mantenidas por ECAF con la ausencia de un mecanismo para la entrada o control de la amplia comunidad EOS.",
+          "short_description": "Reglas y Procesos de Arbitrariedad en Telos",
+          "eos_analog": "Reglas ECAF",
+          "status": "In committee with Governance WG"
+        },
+        "regproducer_contract": {
+          "long_name": "'regproducer' Términos del Contrato de Lenguaje Humano ('regproducer')",
+          "short_name": "Contrato ‘Regproducer'",
+          "long_description": "El contrato 'regproducer' es usado por cualquier miembro aspirante a ser un candidato a productor de bloques o “Blocks” (BP) a fin de nominarse a sí mismo. Los términos del lenguaje humano de este contrato establecen las responsabilidades y reglas de los candidatos a productor de Blocks. Este texto es extensamente heredado del contrato EOS 'regproducer' pero con más textos adicionales agregados al mismo. La principal diferencia entre las versiones de EOS y Telos es que mientras ambas listas prohíben acciones, la versión Telos también documenta penalidades por infracción, el método de aplicación, y de responsabilidad de los productores de Blocks para hacer cumple las reglas a otros (BP).",
+          "short_description": "Reglas, Responsabilidades, y Representaciones de los Productores de Blocks",
+          "eos_analog": "Contrato EOS 'Regproducer'",
+          "status": "Adoptado"
+        },
+        "bp_minimums": {
+          "long_name": "Requerimientos Mínimos del Productor (Requerimientos Mínimos BP)",
+          "short_name": "Requerimientos Mínimos BP",
+          "long_description": "Los Requerimientos Mínimos BP es una lista de revelaciones, practicas, equipamiento, y estándares de red que el candidato a productor de Blocks debe adherirse a fin de servir a la red. No cumplir con los requerimientos mínimos descalifica al BP para servir en la red hasta que la omisión sea curada, independientemente de cuantos votos el BP haya adquirido. Debido a las novedades de la red, estos requerimientos son descritos en fases cada vez más estrictas en la cual el productor de Blocks puede votar para moverse en función de 2/3 + 1 voto. EOS no tiene requerimientos mínimos o un documento similar. Una mínima cantidad de RAM es especificada en el contrato EOS 'regproducer'.",
+          "short_description": "Requerimientos Mínimos para Actuar como un Productor de Blocks",
+          "eos_analog": "Ninguno",
+          "status": "Adoptado"
+        },
+        "regarb_contract": {
+          "long_name": "'regarb' Términos del Contrato de Lenguaje Humano ('regarb')",
+          "short_name": "Contrato ‘Regarb'",
+          "long_description": "El contrato 'regarb' es usado por cualquier miembro aspirante a ser un candidato a árbitro para nominarse a sí mismo. Los términos del lenguaje humano de este contrato establecen las responsabilidades y reglas de los candidatos a árbitro. No existen documentos similares en EOS debido a que EOS no elige a árbitros.",
+          "short_description": "Reglas, Responsabilidades, y Representaciones de los Árbitros",
+          "eos_analog": "Ninguno",
+          "status": "In committee with Governance WG"
+        },
+        "arbitrator_minimums": {
+          "long_name": "Requisitos Mínimos del Árbitro (Requisitos Mínimos del Árbitro)",
+          "short_name": "Requisitos Mínimos del Arbitro",
+          "long_description": "Los Requisitos Mínimos del Árbitro es una lista de revelaciones, practicas, equipamiento, y estándares de la red que el candidato a árbitro debe adherirse a fin de servir a la red. No cumplir con los requerimientos mínimos descalifica al árbitro a ser designado a nuevos casos hasta que su omisión sea curada, independientemente de cuantos votos el candidato a árbitro haya adquirido. Debido a las novedades de la red, estos requerimientos son descritos en fases cada vez más estrictas. No existen documentos similares en EOS debido a que EOS no elige a árbitros.",
+          "short_description": "Requerimientos Mínimos para actuar como Arbitro",
+          "eos_analog": "Ninguno",
+          "status": "In committee with Governance WG"
+        }
+      }
+    },
+    "table": {
+      "heading": "Gobernabilidad a simple vista de Telos",
+      "table_headings": {
+        "document": "Documento",
+        "description": "Descripción",
+        "eos_analog": "Analogía EOS",
+        "status": "Estatus",
+        "link": "Enlace"
+      }
+    }
   }
 }
