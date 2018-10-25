@@ -207,7 +207,7 @@ const Miscellaneous = () => {
 					<InfoLinks telos_link='https://telosfoundation.io/recovery' />
 				</li>
 				<li className='yes'>Two testnets up, public and private staging testnet</li>
-				<li className='in_progress'>Define final TLOS token balance (EOS snapshot + Rewards +/- lost/compromised keys)</li>
+				<li className='yes'>Define final TLOS token balance (EOS snapshot + Rewards +/- lost/compromised keys)</li>
 			</ul>
 		</section>
 	);

@@ -20,6 +20,7 @@ import syed_sadiq from '../../img/foundation_site/syed.jpg';
 import jim_hewitt from '../../img/foundation_site/JimHewitt.jpg';
 import ian_panchevre from '../../img/foundation_site/Ian Panchevre.jpg';
 import james_davis from '../../img/foundation_site/James Davis.jpg';
+import mark_cohen from '../../img/foundation_site/mark_cohen.png';
 
 
 import '../../styles/board.css';
@@ -45,6 +46,20 @@ const boardNominees = [
 		bio: [
 			'J.T. Buice (pronounced Bise) is a Technical IT Director with broad competencies in all areas of IT Infrastructure including LAN and WAN networking, server architecture (UNIX & Windows), mass storage, and telecommunications. Since 2015, Buice has served as Director of Technology for Kainos Technologies, a managed services provider business he co-founded bringing fast and efficient high technology solutions and support to the state of Texas. Before Kainos, Buice joined Space Exploration Technologies (SpaceX) as IT Manager to deliver always-on IT that enabled SpaceX to serve commercial and government entities in furthering the exploration of space with an end goal to make life multi-planetary. Having joined the Telos Community immediately following its announcement, Buice has jumped headlong in with one of the greatest blockchain communities in existence and is honored to be nominated for the Telos Foundation’s board of directors.'
 		]
+	},
+	{
+		name: 'Mark Cohen',
+		organization: 'Telos Vancouver',
+		portrait: mark_cohen,
+		nominatedBy: 'Richard Bryan, TelosDAC',
+		bio: [
+			'For more than a decade, Mark has helped build, deploy, and manage the technical infrastructure and security practices for a wide variety of organizations.',
+			'Mark is an “inclusionist”; passionate about community, decentralized governance, and making space for dissenting voices.',
+			'As a valued member of the Telos Contributors Group, Mark chairs the Onboarding workgroup, and actively contributes to the Governance, Network Maintenance, and Marketing and Social Media workgroups. He has spent countless hours helping facilitate conversations and share resources across the many various Telos working groups, to help bring about consensus.',
+			'Mark has also spearheaded much of the public facing technical documentation, authoring articles for the Telos Foundation Wiki, so as to educate and empower Telos Block Producers, through the sharing of knowledge and best practices.',
+			'Mark is the Head of Operations and Security at Telos Vancouver, Telos Block Producer candidates, and one of the original organizations who participated in the Telos announcement.'
+		],
+		linkedIn: 'https://www.linkedin.com/in/mark-cohen'
 	},
 	{
 		name: 'James Davis',

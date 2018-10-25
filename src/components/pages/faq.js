@@ -9,7 +9,7 @@ const faqs = [
 		question: 'How Do I Get My TLOS?',
 		answer: [
 			'TLOS will first be airdropped to all users with addresses in the EOS genesis snapshot, and account holders can access their TLOS tokens upon activation of the Telos Blockchain Network. If you cannot access your EOS account, recover your lost keys here:  <a href=\'https://telosfoundation.io/recovery\'>https://telosfoundation.io/recovery</a>.',
-			'You will also be able to access TLOS tokens with Sqrl, the wallet of the Telos Blockchain. Scatter and DEXEOS will be listing a TLOS/EOS pair, Chainrift will list a  TLOS/BTC pair, and more exchanges are expected to announce their support as well.',
+			'You will also be able to access TLOS tokens with Sqrl, the wallet of Telos. Scatter and DEXEOS will be listing a TLOS/EOS pair, Chainrift will list a  TLOS/BTC pair, and more exchanges are expected to announce their support as well.',
 			'<strong>Sign up for a free account here:  <a href=\'https://telosfoundation.io/downloads\'>https://telosfoundation.io/downloads</a></strong>'
 		]
 	},
