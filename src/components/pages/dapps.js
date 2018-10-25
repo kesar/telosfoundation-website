@@ -19,93 +19,28 @@ import arrow_prev from '../../img/dapps/arrow_prev_white.png';
 
 import '../../styles/dapps.css';
 
-
-const dappsSlides = [
-	{
-		img: dapps_gig,
-		heading: 'Decentralized gig economies',
-		paragraphs: [
-			'Decentralized gig economies - Telos will lead the emergence of a new and more equitable gig economy; imagine the possibilities of the next Uber or Airbnb led by community ownership and a decentralized workforce.'
-		]
-	},
-	{
-		img: dapps_currency,
-		heading: 'Currency',
-		paragraphs: [
-			'A stable currency on Telos will open up possibilities to billions of people around the world who don\'t have access to bank accounts, providing the transparency and decentralization that is needed to prevent financial meltdowns such as the 2008 economic crisis or Venezuela\'s extreme currency inflation.'
-		]
-	},
-	{
-		img: dapps_records,
-		heading: 'Decentralized records and information',
-		paragraphs: [
-			'Corruption can be prevented when records are open, transparent and immutable. Information quality can be enhanced by aligned incentive and community efforts. Telos can support vital documents including home ownership registers, medical records, or the next community encyclopedia.'
-		]
-	}
-];
-
-const dappSections = [
-	{
-		heading: 'EOS Compatibility',
-		img: compatibility,
-		paragraphs: [
-			'EOSIO is currently responsible for half of all blockchain transactions and its development is expected to advance faster than older platforms like Ethereum and NEO. The Telos network runs the same EOSIO software as EOS, so Dapps written for EOS can run on Telos. No rewrite needed!'
-		]
-	},
-	{
-		heading: 'Powerful performance for decentralized Dapp development ',
-		img: powerful,
-		paragraphs: [
-			'Telos facilitates incredibly fast and free transactions to establish a stable and affordable market for Dapp development. RAM supply will be scaled with actual usage in order to ensure affordability and prevent hoarding. Telos tokens have more than three times the resource utility of EOS, and developers will be able to purchase and stake resources such as CPU and bandwidth on behalf of users.'
-		]
-	},
-	{
-		heading: 'Secure and robust network',
-		img: secure,
-		paragraphs: [
-			'Telos expands on the EOS network by enforcing additional disclosure requirements and minimum requirements for Telos block producers, who must maintain a full and open testnet in order to support Dapp development. Nonfunctioning block producers are temporarily swapped out after missing just 30 minutes, as opposed to 3 hours on the EOS mainnet, so that developers encounter fewer pauses and problems without compromising security. Fair pay ensures all active and standby block producers are ready to produce at all times for maximum performance and stability.'
-		]
-	},
-	{
-		heading: 'Dapps can be proprietary code',
-		img: proprietary,
-		paragraphs: [
-			'Protect your intellectual property with Telos. Unlike EOS, Telos will not force all developers to open source their contract code. This allows commercial Dapp makers to keep other developers from simply copying their work.'
-		]
-	},
-	{
-		heading: 'Decentralized Governance and Arbitration',
-		img: decentralized,
-		paragraphs: [
-			'Telos has the most decentralized ownership of any blockchain existing today. No individual or entity will start with, or is likely to ever own, even one percent of the Telos blockchain. Telos’ decentralized voting system ensures that the blockchain is guided by the will of the community and the steady hand of the most competent block producers.',
-			'Telos will have a fully developed and ratified Network Operating Agreement and Telos Arbitration Organization (TAO) upon launch. These entities will ensure that conflicts are resolved in a timely manner so that developers can focus on Dapps instead of disputes.'
-		]
-	}
-];
-
-
-const DAppsPage = () => {
+const DAppsPage = ({dapps_page}) => {
 	return (
 		<div className='dapps'>
 			<Helmet>
 				<title>Telos Dapps Development</title>
 			</Helmet>
-			<DAppsIntro />
-			<DAppsSlider />
-			<DAppContent />
+			<DAppsIntro intro={dapps_page.intro} />
+			<DAppsSlider slides={dapps_page.slides} />
+			<DAppContent dapp_sections={dapps_page.dapp_sections} />
 		</div>
 	);
 };
 
-const DAppsIntro = () => {
+const DAppsIntro = ({intro}) => {
 	return (
 		<section id='dapps_intro'>
 			<Grid>
 				<Row>
 					<Col md={8} mdOffset={2}>
 						<div className='text-center'>
-							<h1>Dapp Development</h1>
-							<h2>The best network makes the best Dapps</h2>
+							<h1>{intro.heading}</h1>
+							<h2>{intro.subheading}</h2>
 						</div>
 					</Col>
 					<Col md={10} mdOffset={1}>
@@ -116,10 +51,10 @@ const DAppsIntro = () => {
 									bsStyle='primary'
 									disabled
 								>
-									TUTORIALS
+									{intro.tutorials_button}
 								</Button>
-								<p>Learn how to build your Dapp on the Telos network.</p>
-								<small>(Coming soon)</small>
+								<p>{intro.tutorials_description}</p>
+								<small>{intro.coming_soon}</small>
 							</div>
 							<div className='button_container'>
 								<Button
@@ -127,10 +62,10 @@ const DAppsIntro = () => {
 									bsStyle='primary'
 									disabled
 								>
-									SMART CONTRACT TEMPLATES
+									{intro.smart_contracts_button}
 								</Button>
-								<p>Write smart contracts that perform basic Telos functions such as exchanging tokens and casting votes.</p>
-								<small>(Coming soon)</small>
+								<p>{intro.smart_contracts_description}</p>
+								<small>{intro.coming_soon}</small>
 							</div>
 						</div>
 					</Col>
@@ -142,11 +77,8 @@ const DAppsIntro = () => {
 
 class DAppsSlider extends Component {
 
-	constructor(){
-		super();
-		this.state = {
-
-		};
+	constructor(props){
+		super(props);
 
 		this.handleNext = this.handleNext.bind(this);
 		this.handlePrevious = this.handlePrevious.bind(this);
@@ -161,6 +93,26 @@ class DAppsSlider extends Component {
 	}
 
 	render(){
+		const {slides} = this.props;
+
+		const dappsSlides = [
+			{
+				img: dapps_gig,
+				heading: slides.gigs.heading,
+				paragraphs: slides.gigs.content
+			},
+			{
+				img: dapps_currency,
+				heading: slides.currency.heading,
+				paragraphs: slides.currency.content
+			},
+			{
+				img: dapps_records,
+				heading: slides.records.heading,
+				paragraphs: slides.records.content
+			}
+		];
+
 		const settings = {
 			dots: false,
 			infinite: true,
@@ -192,6 +144,7 @@ class DAppsSlider extends Component {
 					{dappsSlides.map((slide, i) => {
 						return (
 							<DAppSlide
+								key={i}
 								img={slide.img}
 								heading={slide.heading}
 								paragraphs={slide.paragraphs} />
@@ -229,7 +182,35 @@ const DAppSlide = (props) => {
 	);
 };
 
-const DAppContent = () => {
+const DAppContent = ({dapp_sections}) => {
+	const dappSections = [
+		{
+			heading: dapp_sections.compatibility.heading,
+			img: compatibility,
+			paragraphs: dapp_sections.compatibility.content
+		},
+		{
+			heading: dapp_sections.powerful.heading,
+			img: powerful,
+			paragraphs: dapp_sections.powerful.content
+		},
+		{
+			heading: dapp_sections.secure.heading,
+			img: secure,
+			paragraphs: dapp_sections.secure.content
+		},
+		{
+			heading: dapp_sections.proprietary.heading,
+			img: proprietary,
+			paragraphs: dapp_sections.proprietary.content
+		},
+		{
+			heading: dapp_sections.decentralized.heading,
+			img: decentralized,
+			paragraphs: dapp_sections.decentralized.content
+		}
+	];
+
 	return (
 		<section id='dapp_content'>
 			<Grid>
@@ -237,6 +218,7 @@ const DAppContent = () => {
 				dappSections.map((sect, i) => {
 					return (
 						<DAppSection
+							key={i}
 							img={sect.img}
 							heading={sect.heading}
 							paragraphs={sect.paragraphs}

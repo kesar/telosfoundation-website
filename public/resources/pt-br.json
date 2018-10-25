@@ -381,5 +381,69 @@
       "heading": "Telos Article Splash Banners",
       "subheading": "Splash Banner art for use in online articles about Telos."
     }
+  },
+  "dapps_page": {
+    "intro": {
+      "heading": "Desenvolvimento de DAPPs",
+      "subheading": "A melhor rede faz os melhores DAPPs",
+      "tutorials_button": "TUTORIAIS",
+      "tutorials_description": "Aprenda a construir seu DAPP na rede Telos.",
+      "smart_contracts_button": "MODELOS DE CONTRATO INTELIGENTE",
+      "smart_contracts_description": "Crie contratos inteligentes capazes de executar funções básicas na Telos, tais como trocar tokens e votar.",
+      "coming_soon": "(Brevemente)"
+    },
+    "slides": {
+      "gigs": {
+        "heading": "Economias gig descentralizadas",
+        "content": [
+          "Economias gig descentralizadas - A Telos liderará o surgimento de uma nova e mais equitativa economia gig; imagine as possibilidades de uma próxima Uber ou Airbnb guiada por um conceito de propriedade comunitária e por uma força de trabalho descentralizada."
+        ]
+      },
+      "currency": {
+        "heading": "Moeda",
+        "content": [
+          "Uma moeda estável na Telos abrirá possibilidades para bilhões de pessoas em todo o mundo que não têm acesso a contas bancárias, proporcionando a transparência e a descentralização necessárias para evitar colapsos financeiros, como a crise econômica de 2008 ou a inflação extrema da moeda venezuelana."
+        ]
+      },
+      "records": {
+        "heading": "Informações e registros descentralizados",
+        "content": [
+          "A corrupção pode ser evitada quando os registros são abertos, transparentes e imutáveis. A qualidade da informação pode ser melhorada por via de incentivos equilibrados e esforços comunitários. A Telos pode suportar documentos vitais, incluindo registros de propriedade de imóveis, processos clínicos ou a próxima enciclopédia comunitária."
+        ]
+      }
+    },
+    "dapp_sections": {
+      "compatibility": {
+        "heading": "Compatibilidade EOS",
+        "content": [
+          "O EOS.IO é atualmente responsável por metade de todas as transações no blockchain e espera-se que seu desenvolvimento seja mais rápido que o de plataformas mais antigas, como Ethereum e NEO. A rede Telos executa o mesmo software EOS.IO que a EOS, de tal forma que os DAPPs escritos para EOS podem ser executados na Telos. Não é necessário reprogramar!"
+        ]
+      },
+      "powerful": {
+        "heading": "Elevado desempenho poderoso para o desenvolvimento descentralizado de DAPPs",
+        "content": [
+          "A Telos permite transações incrivelmente rápidas e gratuitas para estabelecer um mercado estável e acessível para o desenvolvimento de DAPPs. O fornecimento de RAM será dimensionado em função do seu uso real, a fim de garantir a acessibilidade e evitar açambarcamento. Os tokens Telos têm mais de três vezes os recursos utilitários dos EOS, e os desenvolvedores poderão adquirir e alocar-lhe recursos tais como CPU e largura de banda em nome dos usuários."
+        ]
+      },
+      "secure": {
+        "heading": "Rede segura e robusta",
+        "content": [
+          "A Telos expande-se sobre a rede EOS ao impor obrigações adicionais de informação e requisitos mínimos para os seus produtores de blocos, que devem manter uma rede de testes completa e aberta de forma a suportar o desenvolvimento de DAPPs. Os produtores de blocos não funcionais são temporariamente trocados logo após perderem apenas 30 minutos, ao contrário das 3 horas aplicáveis na rede principal EOS, para que os desenvolvedores encontrem menos períodos de pausa e menos problemas, sem comprometer a segurança. O pagamento justo garante que todos os produtores de blocos ativos e em espera estarão sempre prontos para produzir com o máximo desempenho e estabilidade."
+        ]
+      },
+      "proprietary": {
+        "heading": "Os DAPPs podem ser de código proprietário",
+        "content": [
+          "Proteja sua propriedade intelectual com a Telos. Ao contrário do EOS, a Telos não forçará todos os desenvolvedores a abrir o código dos seus contratos. Isso permite que os desenvolvedores comerciais de DAPPs evitem que outros simplesmente copiem seu trabalho."
+        ]
+      },
+      "decentralized": {
+        "heading": "Governança e Arbitragem Descentralizadas",
+        "content": [
+          "A Telos tem a propriedade mais descentralizada de qualquer blockchain existente hoje em dia. Nenhum indivíduo ou entidade começará com, ou provavelmente alguma vez deterá, sequer, um por cento do blockchain da Telos. O sistema de votação descentralizada da Telos garante que o blockchain é conduzido pela vontade da comunidade e pela mão firme dos produtores de blocos mais competentes.",
+          "Logo no seu lançamento, a Telos terá um Acordo Operacional de Rede e uma Organização de Arbitragem (TAO) completamente desenvolvidos e ratificados. Estas entidades garantirão que os conflitos serão resolvidos em tempo útil, de tal forma que os desenvolvedores possam se concentrar em DAPPs em vez de em disputas. Logo no seu lançamento, a Telos terá um Acordo Operacional de Rede e uma Organização de Arbitragem (TAO) completamente desenvolvidos e ratificados. Estas entidades garantirão que os conflitos serão resolvidos em tempo útil, de tal forma que os desenvolvedores possam se concentrar em DAPPs em vez de em disputas."
+        ]
+      }
+    }
   }
 }

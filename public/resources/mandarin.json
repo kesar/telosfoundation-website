@@ -381,5 +381,69 @@
       "heading": "Telos 文章素材图片",
       "subheading": "艺术素材图片，请在有关 Telos 的文章中使用。"
     }
+  },
+  "dapps_page": {
+    "intro": {
+      "heading": "Dapp Development",
+      "subheading": "The best network makes the best Dapps",
+      "tutorials_button": "TUTORIALS",
+      "tutorials_description": "Learn how to build your Dapp on the Telos network.",
+      "smart_contracts_button": "SMART CONTRACT TEMPLATES",
+      "smart_contracts_description": "Write smart contracts that perform basic Telos functions such as exchanging tokens and casting votes.",
+      "coming_soon": "(Coming soon)"
+    },
+    "slides": {
+      "gigs": {
+        "heading": "Decentralized gig economies",
+        "content": [
+          "Decentralized gig economies - Telos will lead the emergence of a new and more equitable gig economy; imagine the possibilities of the next Uber or Airbnb led by community ownership and a decentralized workforce."
+        ]
+      },
+      "currency": {
+        "heading": "Currency",
+        "content": [
+          "A stable currency on Telos will open up possibilities to billions of people around the world who don't have access to bank accounts, providing the transparency and decentralization that is needed to prevent financial meltdowns such as the 2008 economic crisis or Venezuela's extreme currency inflation."
+        ]
+      },
+      "records": {
+        "heading": "Decentralized records and information",
+        "content": [
+          "Corruption can be prevented when records are open, transparent and immutable. Information quality can be enhanced by aligned incentive and community efforts. Telos can support vital documents including home ownership registers, medical records, or the next community encyclopedia."
+        ]
+      }
+    },
+    "dapp_sections": {
+      "compatibility": {
+        "heading": "EOS Compatibility",
+        "content": [
+          "EOSIO is currently responsible for half of all blockchain transactions and its development is expected to advance faster than older platforms like Ethereum and NEO. The Telos network runs the same EOSIO software as EOS, so Dapps written for EOS can run on Telos. No rewrite needed!"
+        ]
+      },
+      "powerful": {
+        "heading": "Powerful performance for decentralized Dapp development",
+        "content": [
+          "Telos facilitates incredibly fast and free transactions to establish a stable and affordable market for Dapp development. RAM supply will be scaled with actual usage in order to ensure affordability and prevent hoarding. Telos tokens have more than three times the resource utility of EOS, and developers will be able to purchase and stake resources such as CPU and bandwidth on behalf of users."
+        ]
+      },
+      "secure": {
+        "heading": "Secure and robust network",
+        "content": [
+          "Telos expands on the EOS network by enforcing additional disclosure requirements and minimum requirements for Telos block producers, who must maintain a full and open testnet in order to support Dapp development. Nonfunctioning block producers are temporarily swapped out after missing just 30 minutes, as opposed to 3 hours on the EOS mainnet, so that developers encounter fewer pauses and problems without compromising security. Fair pay ensures all active and standby block producers are ready to produce at all times for maximum performance and stability."
+        ]
+      },
+      "proprietary": {
+        "heading": "Dapps can be proprietary code",
+        "content": [
+          "Protect your intellectual property with Telos. Unlike EOS, Telos will not force all developers to open source their contract code. This allows commercial Dapp makers to keep other developers from simply copying their work."
+        ]
+      },
+      "decentralized": {
+        "heading": "Decentralized Governance and Arbitration",
+        "content": [
+          "Telos has the most decentralized ownership of any blockchain existing today. No individual or entity will start with, or is likely to ever own, even one percent of the Telos blockchain. Telos’ decentralized voting system ensures that the blockchain is guided by the will of the community and the steady hand of the most competent block producers.",
+          "Telos will have a fully developed and ratified Network Operating Agreement and Telos Arbitration Organization (TAO) upon launch. These entities will ensure that conflicts are resolved in a timely manner so that developers can focus on Dapps instead of disputes."
+        ]
+      }
+    }
   }
 }
