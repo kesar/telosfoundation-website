@@ -469,7 +469,7 @@
           "long_description": "As Regras e Procedimentos de Arbitragem descrevem todo o processo de arbitragem da Telos - desde a apresentação de um caso, passando pelos procedimentos seguidos na arbitragem, até à entrega das decisões de bloquio de produtores por parte dos árbitros, para execução. O documento EOS análogo a este são as Regras ECAF e o manual ECAF, ainda não publicado. As Regras de Arbitragem da Telos são totalmente independentes das Regras ECAF e não compartilham qualquer texto. Também elas constituem um documento central de governança da Telos, modificável pela comunidade, ao pasos que as Regras ECAF são definidas e mantidas pelo ECAF, sem que possam ser impactadas por algum mecanismo de contribuição ou controle da mais ampla comunidade EOS.",
           "short_description": "Regras e procedimentos de arbitragem na Telos",
           "eos_analog": "Regras ECAF",
-          "status": "In committee with Governance WG"
+          "status": "Adotado"
         },
         "regproducer_contract": {
           "long_name": "Contrato 'regproducer' em Termos de Linguagem Humana ('regproducer')",
@@ -493,7 +493,7 @@
           "long_description": "O contrato 'regarb' é usado por qualquer membro que deseje tornar-se candidato a árbitro, para se auto-nomear para tal. Os termos em linguagem humana deste contrato estabelecem as responsabilidades e regras para os candidatos a árbitro. Não existe qualquer documento semelhante na EOS porque a EOS não elege árbitros.",
           "short_description": "Regras, responsabilidades e representações dos árbitros",
           "eos_analog": "Nenhum",
-          "status": "In committee with Governance WG"
+          "status": "Adotado"
         },
         "arbitrator_minimums": {
           "long_name": "Requisitos Mínimos do Árbitro (Requisitos Mínimos do Árbitro)",
@@ -501,7 +501,7 @@
           "long_description": "Os Requisitos Mínimos do Árbitro são uma lista de condições, práticas, equipamentos e padrões de rede que os candidatos a árbitro deverão cumprir para se tornarem elegíveis para a função. O não cumprimento dos requisitos mínimos desqualifica a atribuição de novos casos a um árbitro até que a não conformidade seja resolvida, independentemente de quantos votos o candidato tenha adquirido. Dada a novidade da rede, estes requisitos são descritos por fases, cada vez mais rigorosas. Não existe qualquer documento semelhante na EOS porque a EOS não elege árbitros.",
           "short_description": "Requisitos mínimos para atuar como árbitro",
           "eos_analog": "Nenhum",
-          "status": "In committee with Governance WG"
+          "status": "Adotado"
         }
       }
     },

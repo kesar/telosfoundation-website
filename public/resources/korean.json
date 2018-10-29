@@ -470,7 +470,7 @@
           "long_description": "The Arbitration Rules & Procedures describes the entire process of arbitration on Telos - from filing a case to procedures for arbitration, to delivery of arbitral judges decisions to block producers for execution. The EOS analog for this is the ECAF Rules and as yet unpublished ECAF Handbook. the Telos Arbitration Rules are entirely independent from the ECAF Rules and share no text. They are also a community amendable core governance document on Telos, whereas the ECAF Rules are set and maintained by the ECAF with no mechanism for input or control from the broader EOS community.",
           "short_description": "Rules and procedures for arbitration on Telos",
           "eos_analog": "ECAF Rules",
-          "status": "In committee with Governance WG"
+          "status": "Adopted"
         },
         "regproducer_contract": {
           "long_name": "'regproducer' Contract Human Language Terms ('regproducer')",
@@ -494,7 +494,7 @@
           "long_description": "The 'regarb' contract is used by any member desiring to become an arbitrator candidate to nominate themselves. The human-language terms of this contract set out the responsibilities and rules for arbitrator candidates. There is no similar document on EOS because EOS does not elect arbitrators.",
           "short_description": "Rules, responsibilities and representations of arbitrators",
           "eos_analog": "None",
-          "status": "In committee with Governance WG"
+          "status": "Adopted"
         },
         "arbitrator_minimums": {
           "long_name": "Arbitrator Minimum Requirements (Arbitrator Minimum Requirements)",
@@ -502,7 +502,7 @@
           "long_description": "The Arbitrator Minimum Requirements is a list of disclosures, practices, equipment and networking standards that arbitrator candidates must adhere to in order to serve. Failure to meet the minimum requirements disqualifies an arbitrator from being assigned new cases until the omission is cured, regardless of how many votes the arbitrator candidate has acquired. Due to the newness of the network, these requirements are described in increasingly stringent phases. There is no similar document on EOS because EOS does not elect arbitrators.",
           "short_description": "Minimum requirements to act as an arbitrator",
           "eos_analog": "None",
-          "status": "In committee with Governance WG"
+          "status": "Adopted"
         }
       }
     },

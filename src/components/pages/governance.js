@@ -18,7 +18,7 @@ const Governance = ({governance_page}) => {
 			short_description: documents.documents.operating_agreement.short_description,
 			eos_analog: documents.documents.operating_agreement.eos_analog,
 			status: documents.documents.operating_agreement.status,
-			url: 'https://resources.telosfoundation.io/Operating Agreement.pdf'
+			url: 'https://resources.telosfoundation.io/governance_documents/TBNOA_Adopted_2018-10-26.pdf'
 		},
 		{
 			long_name: documents.documents.arbitration_rules.long_name,
@@ -27,7 +27,16 @@ const Governance = ({governance_page}) => {
 			short_description: documents.documents.arbitration_rules.short_description,
 			eos_analog: documents.documents.arbitration_rules.eos_analog,
 			status: documents.documents.arbitration_rules.status,
-			url: 'https://resources.telosfoundation.io/Telos Network Arbitration Process.pdf'
+			url: 'https://resources.telosfoundation.io/governance_documents/TBNARP_Adopted_2018-10-26.pdf'
+		},
+		{
+			long_name: 'Arbitration Parameters Schedule',
+			short_name: 'Arbitration Parameters Schedule',
+			long_description: 'The Arbitration Parameters Schedule documents the initial Arbitration Parameters Schedule used to determining the base fees, number of arbitrators to be assigned to various types of Cases, and Small Claims limit amount.',
+			short_description: 'Initial Arbitration Parameters Schedule',
+			eos_analog: 'None',
+			status: 'Adopted',
+			url: 'https://resources.telosfoundation.io/governance_documents/TBNARP_Arbitration_Parameters_Schedule_Adopted_2018-10-26.pdf'
 		},
 		{
 			long_name: documents.documents.regproducer_contract.long_name,
@@ -36,7 +45,7 @@ const Governance = ({governance_page}) => {
 			short_description: documents.documents.regproducer_contract.short_description,
 			eos_analog: documents.documents.regproducer_contract.eos_analog,
 			status: documents.documents.regproducer_contract.status,
-			url: 'https://resources.telosfoundation.io/Regproducer Human Language Contract.pdf'
+			url: 'https://resources.telosfoundation.io/governance_documents/Telos Regproducer_Human-language_Contract_Adopted_2018-10-09.pdf'
 		},
 		{
 			long_name: documents.documents.bp_minimums.long_name,
@@ -45,7 +54,7 @@ const Governance = ({governance_page}) => {
 			short_description: documents.documents.bp_minimums.short_description,
 			eos_analog: documents.documents.bp_minimums.eos_analog,
 			status: documents.documents.bp_minimums.status,
-			url: 'https://resources.telosfoundation.io/Block Producer Minimum Requirements (Phases 1-3).pdf'
+			url: 'https://resources.telosfoundation.io/governance_documents/Telos_Block_Producer_Minimum_Requirements_Adopted_2018-10-09.pdf'
 		},
 		{
 			long_name: documents.documents.regarb_contract.long_name,
@@ -54,7 +63,7 @@ const Governance = ({governance_page}) => {
 			short_description: documents.documents.regarb_contract.short_description,
 			eos_analog: documents.documents.regarb_contract.eos_analog,
 			status: documents.documents.regarb_contract.status,
-			url: 'https://resources.telosfoundation.io/arbitrator_documents/Telos regarb Human-language Contract.pdf'
+			url: 'https://resources.telosfoundation.io/governance_documents/Telos_Regarb_Human-language_Contract_Adopted_2018-10-12.pdf'
 		},
 		{
 			long_name: documents.documents.arbitrator_minimums.long_name,
@@ -63,8 +72,17 @@ const Governance = ({governance_page}) => {
 			short_description: documents.documents.arbitrator_minimums.short_description,
 			eos_analog: documents.documents.arbitrator_minimums.eos_analog,
 			status: documents.documents.arbitrator_minimums.status,
-			url: 'https://resources.telosfoundation.io/arbitrator_documents/Telos Arbitrator Minimum Requirements.pdf'
+			url: 'https://resources.telosfoundation.io/governance_documents/Telos_Blockchain_Network_Arbitrator_Minimum_Requirements_Adopted_2018-10-12.pdf'
 		},
+		{
+			long_name: 'Network Data Protection Policy',
+			short_name: 'Network Data Protection Policy',
+			long_description: 'Data protection policy document for Telos Blockchain Network.',
+			short_description: 'Data protection policy',
+			eos_analog: 'None',
+			status: 'Adopted',
+			url: 'https://resources.telosfoundation.io/governance_documents/Telos_Blockchain_Network_Data_Protection_Policy_Adopted_2018-10-12.pdf'
+		}
 	];
 
 	return (

@@ -469,7 +469,7 @@
           "long_description": "Las Reglas de Arbitrariedad y Procesos describe el proceso entero de arbitrariedad de Telos – desde presentar un caso de procedimientos de arbitrariedad, a entregar decisiones arbitrarias para bloquear procesos de ejecución. El análogo de EOS para este caso es la Reglamentación ECAF y el aun no publicado folleto ECAF. La Reglamentación de Arbitrariedad de Telos es completamente independientes de las Reglas ECAF, no comparten textos. Existe también un documento de gobernabilidad central modificable por la comunidad de Telos, mientras las Reglas ECAF son establecida y mantenidas por ECAF con la ausencia de un mecanismo para la entrada o control de la amplia comunidad EOS.",
           "short_description": "Reglas y Procesos de Arbitrariedad en Telos",
           "eos_analog": "Reglas ECAF",
-          "status": "In committee with Governance WG"
+          "status": "Adoptado"
         },
         "regproducer_contract": {
           "long_name": "'regproducer' Términos del Contrato de Lenguaje Humano ('regproducer')",
@@ -493,7 +493,7 @@
           "long_description": "El contrato 'regarb' es usado por cualquier miembro aspirante a ser un candidato a árbitro para nominarse a sí mismo. Los términos del lenguaje humano de este contrato establecen las responsabilidades y reglas de los candidatos a árbitro. No existen documentos similares en EOS debido a que EOS no elige a árbitros.",
           "short_description": "Reglas, Responsabilidades, y Representaciones de los Árbitros",
           "eos_analog": "Ninguno",
-          "status": "In committee with Governance WG"
+          "status": "Adoptado"
         },
         "arbitrator_minimums": {
           "long_name": "Requisitos Mínimos del Árbitro (Requisitos Mínimos del Árbitro)",
@@ -501,7 +501,7 @@
           "long_description": "Los Requisitos Mínimos del Árbitro es una lista de revelaciones, practicas, equipamiento, y estándares de la red que el candidato a árbitro debe adherirse a fin de servir a la red. No cumplir con los requerimientos mínimos descalifica al árbitro a ser designado a nuevos casos hasta que su omisión sea curada, independientemente de cuantos votos el candidato a árbitro haya adquirido. Debido a las novedades de la red, estos requerimientos son descritos en fases cada vez más estrictas. No existen documentos similares en EOS debido a que EOS no elige a árbitros.",
           "short_description": "Requerimientos Mínimos para actuar como Arbitro",
           "eos_analog": "Ninguno",
-          "status": "In committee with Governance WG"
+          "status": "Adoptado"
         }
       }
     },
