@@ -1,0 +1,104 @@
+.block_prod_candidates {
+	margin-bottom: 150px;
+}
+
+#block_prod_intro {
+	margin-bottom: 35px;
+}
+
+#block_prod_intro h1 {
+	font-size: 4.5em;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+@media screen and (max-width: 767px){
+	#block_prod_intro h1 {
+		font-size: 3em;
+	}
+}
+
+#block_prod_intro h2 {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+#block_prod_intro a {
+	font-size: 1em;
+}
+
+#bp_candidates {
+
+}
+
+#bp_candidates header {
+	background: #c2beae;
+	padding: 25px 0;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+#bp_candidates header h2 {
+	margin: 0;
+	color: #fff;
+}
+
+@media screen and (min-width: 768px){
+	#bp_candidates .bp_candidate .row {
+		display: flex;
+		align-items: center;
+	}	
+}
+
+
+#bp_candidates .bp_candidate {
+	margin-bottom: 25px;
+	border-bottom: 3px solid #c2beae;
+	padding-bottom: 25px;
+}
+
+#bp_candidates .bp_candidate_logo {
+	max-width: 100%;
+	float: none;
+	margin-bottom: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+@media screen and (min-width: 768px){
+	#bp_candidates .bp_candidate_logo {
+		float: right;
+		margin-bottom: 0;
+	}	
+}
+
+.bp_candidate_info .bp_candidate_vote {
+	font-weight: 700;
+}
+
+.bp_candidate_info .bp_candidate_vote_name {
+	font-weight: 400;
+	color: #fe8702;
+}
+
+.bp_candidate_info h4 {
+	margin-bottom: 5px;
+}
+
+.bp_candidate_info p {
+	margin-bottom: 5px;
+}
+
+.bp_candidate_info a {
+	font-size: 1em;
+	color: #625a51;
+	text-decoration: none;
+}
+
+.bp_candidate_info a:hover,
+.bp_candidate_info a:active {
+	text-decoration: underline;
+	color: #2F271E;
+}

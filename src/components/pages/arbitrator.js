@@ -86,19 +86,19 @@ const arbitratorDocuments = [
 	{
 		name: 'Telos Arbitration Process Document',
 		description: 'This document outlines how the arbitration of disputes and interventions to change account or contract values will be administered on the Telos Network.',
-		url: 'https://resources.telosfoundation.io/arbitrator_documents/Telos Network Arbitration Process.pdf',
+		url: 'https://resources.telosfoundation.io/governance_documents/TBNARP_Adopted_2018-10-26.pdf',
 		type: 'link'
 	},
 	{
 		name: 'Telos Arbitrators Minimum Requirements',
 		description: 'All arbitrators must meet minimum requirements to ensure that they are qualified to settle disputes on the Telos Network.',
-		url: 'https://resources.telosfoundation.io/arbitrator_documents/Telos Arbitrator Minimum Requirements.pdf',
+		url: 'https://resources.telosfoundation.io/governance_documents/Telos_Blockchain_Network_Arbitrator_Minimum_Requirements_Adopted_2018-10-12.pdf',
 		type: 'pdf'
 	},
 	{
 		name: 'regarbitrator human-language contract',
 		description: 'All arbitrators must agree to fulfill the terms outlined in this smart contract.',
-		url: 'https://resources.telosfoundation.io/arbitrator_documents/Telos regarb Human-language Contract.pdf',
+		url: 'https://resources.telosfoundation.io/governance_documents/Telos_Regarb_Human-language_Contract_Adopted_2018-10-12.pdf',
 		type: 'pdf'
 	}
 ];

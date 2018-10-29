@@ -38,6 +38,8 @@ import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
 import telos_dac from '../../img/partner_logos/logo_telos_dac.png';
 import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
 import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
+import zephyr from '../../img/partner_logos/logo_zephyr.png';
+import telos_vancouver from '../../img/partner_logos/logo_telos_vancouver.png';
 
 //white papers
 import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN, WHITE_PAPER_CHINESE} from '../../config/constants';
@@ -79,9 +81,9 @@ const partnersArr = [
 		url: 'http://eosbarcelona.com/'
 	},
 	{
-		name: 'eos van',
-		logo: eosvan,
-		url: 'http://www.eosvan.io/'
+		name: 'telos vancouver',
+		logo: telos_vancouver,
+		url: 'https://www.telosvancouver.io/'
 	},
 	{
 		name: 'good block',
@@ -189,6 +191,11 @@ const partnersArr = [
 		name: 'eos impera',
 		logo: eos_impera,
 		url: 'https://eosimpera.io'
+	},
+	{
+		name: '21 zephyr',
+		logo: zephyr,
+		url: 'https://telos-21zephyr.com'
 	}
 ];
 

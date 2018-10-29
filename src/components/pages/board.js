@@ -21,6 +21,8 @@ import jim_hewitt from '../../img/foundation_site/JimHewitt.jpg';
 import ian_panchevre from '../../img/foundation_site/Ian Panchevre.jpg';
 import james_davis from '../../img/foundation_site/James Davis.jpg';
 import mark_cohen from '../../img/foundation_site/mark_cohen.png';
+import adam_zientarski from '../../img/foundation_site/Adam Zientarski.png';
+import brett_bolte from '../../img/foundation_site/Brett Bolte.jpg';
 
 
 import '../../styles/board.css';
@@ -45,6 +47,17 @@ const boardNominees = [
 		nominatedBy: 'Josep Rosich, EOS Barcelona',
 		bio: [
 			'J.T. Buice (pronounced Bise) is a Technical IT Director with broad competencies in all areas of IT Infrastructure including LAN and WAN networking, server architecture (UNIX & Windows), mass storage, and telecommunications. Since 2015, Buice has served as Director of Technology for Kainos Technologies, a managed services provider business he co-founded bringing fast and efficient high technology solutions and support to the state of Texas. Before Kainos, Buice joined Space Exploration Technologies (SpaceX) as IT Manager to deliver always-on IT that enabled SpaceX to serve commercial and government entities in furthering the exploration of space with an end goal to make life multi-planetary. Having joined the Telos Community immediately following its announcement, Buice has jumped headlong in with one of the greatest blockchain communities in existence and is honored to be nominated for the Telos Foundation’s board of directors.'
+		]
+	},
+	{
+		name: 'Brett J. Bolte, M.D.',
+		portrait: brett_bolte,
+		nominatedBy: 'Jesse Schulman, CalEOS',
+		bio: [
+			'Dr. Bolte comes to the Telos Foundation with a long career spanning multiple decades and interests including the blockchain since 2013. As a medical doctor for 30 years, Dr. Bolte has personally treated over 140,000 patients and is a sought-after expert witness in complicated, contested litigation as an expert witness.',
+			'Dr. Bolte is also the Managing Director of two multi-million dollar real estate trust corporations, and has a long history of serving on the Board of Directors of numerous organizations for over a 20+ year period. Additionally, as a musician, he has performed Rachmaninoff piano concertos to packed concert halls and standing ovations, as well being the opening act for such well-known musicians as Ray Charles, and many other well-known musicians.',
+			'Dr. Bolte has earned his M.D. degree from the University of Texas, has a Master\'s and Bachelor\'s Degrees in Music. He began his involvement in the blockchain in 2012, and, when he heard Dan Larimer\'s presentation in May, 2017, he knew that the EOSIO platform was "The One", which ultimately lead to his BP team becoming one of the original 6 founding BP members of the Telos Foundation. As chair of the Arbitration Panel, and an active participant in social media, running several Telos pages on Facebook, and other, he have participated to the fullest in the launch of the Telos project.',
+			'If elected to the Board of Directors, Dr. Bolte will, (as always), put forth incredible effort to see that the Telos Foundation project has it\'s best opportunity to achieve success and mass adoption as the world\'s premier governed blockchain.'
 		]
 	},
 	{
@@ -208,6 +221,18 @@ const boardNominees = [
 		bio: [
 			'Marlon is the founder of EOS Miami. He’s also CEO of Fenero, a cloud-based call center software company and Qubicles, an EOSIO-based marketplace for connecting call centers with customer service, sales and support talent in a global meritocracy-based system. Marlon has served as Treasurer for the Miami-Dade County Public Schools S.T.E.M. Advisory Board; President of the South Florida Chapter of the Society for Information Management; and is a current Board Member of the South Florida Digital Alliance.',
 			'He co-chairs the Telos Development Working Group and have lead efforts to adopt multi-chain support in eosjs and eosjs-ecc, as well as development of Telos\' official wallet, Sqrl.',
+		]
+	},
+	{
+		name: 'Adam Zientarski',
+		organization: 'EOS Detroit',
+		nominatedBy: 'Justin Buck',
+		portrait: adam_zientarski,
+		bio: [
+			'Adam Zientarski is the Director of Business Operations, where he is be responsible for running the day-to-day operations, developing partnerships in the Detroit and cryptocurrency communities, and representing EOS Detroit in the EOS, Telos, and Worbli communities as its governance expert.  Prior to helping found EOS Detroit, Adam was the Director of Business Development at Benzinga, a Detroit based financial tech and media firm. During his time there, he worked in many facets of the business including leading the sales team, organizing events (most notably the Benzinga Fintech Awards), web development, and salesforce architecture/administration.',
+			'Adam is currently the co-chair for the Telos governance work group and has already contributed to improving the transparency of the Telos Foundation by authoring and successfully passing TIP-12, a proposal to have Telos Foundation pay proposed and voted on separately from Telos Foundation budgets by Telos Foundation Voting Token holders.',
+			'Over his career, Adam has worked with some of the largest brands in finance to craft imaginative content and data solutions, with a particular specialty in alternative data. After leaving Benzinga, Adam became interested in the blossoming crypto and blockchain space, and has helped grow Detroit Blockchainers, Metro-Detroit’s largest blockchain meetup group through hosting live streamed educational events. Adam has also assisted companies such as BitBox with their marketing and sales process.',
+			'Adam graduated from the University of Michigan, with a Bachelors of Business Administration and a focus in entrepreneurial studies.'
 		]
 	}
 ];
