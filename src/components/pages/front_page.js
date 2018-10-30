@@ -1,6 +1,7 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
+import {Link} from 'react-router-dom';
 
 import icon_dapps from '../../img/Telos_MarketingSite_Icon_dapps_200px.png';
 import icon_dpos from '../../img/Telos_MarketingSite_Icon_dpos_200px.png';
@@ -40,6 +41,12 @@ import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
 import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
 import zephyr from '../../img/partner_logos/logo_zephyr.png';
 import telos_vancouver from '../../img/partner_logos/logo_telos_vancouver.png';
+
+//exchange logos
+import chainrift from '../../img/exchange_logos/exchange_chainrift.png';
+import dexeos from '../../img/exchange_logos/exchange_dexeos.png';
+
+import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 
 //white papers
 import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN, WHITE_PAPER_CHINESE} from '../../config/constants';
@@ -232,6 +239,8 @@ const FrontPage = ({landing_page, language}) => {
 				white_paper_content={white_paper_content}
 				github_text={github_text}
 				language={language} />
+			<Exchanges />
+			<Wallets />
 			<Partners
 				partners_heading={partners_heading} />
 		</div>
@@ -399,6 +408,77 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text, lang
 								</ScrollAnimation>
 							</Col>
 						</Row>
+					</Col>
+				</Row>
+			</Grid>
+		</section>
+	);
+};
+
+const Exchanges = () => {
+	return (
+		<section id='exchanges'>
+			<header>
+				<h1>Participating Exchanges</h1>
+			</header>
+				<div className='exchange_intro'>
+					<Grid>
+						<Row>
+							<Col md={8} mdOffset={2}>
+								<p>Buy TLOS, the Telos token, and exchange them for other currencies on these exchanges. Check back often for new exchange partnerships!</p>
+							</Col>
+						</Row>
+					</Grid>
+				</div>
+				<div className='exchange_buttons'>
+					<Grid>
+						<Row>
+							<Col md={10} mdOffset={1}>
+								<ul>
+									<li>
+										<a
+											href='https://www.chainrift.com/'
+											target='_blank'
+											rel='noopener noreferrer'
+											className='chainrift'
+										>
+											<img src={chainrift} alt='chainrift exchange' />
+										</a>
+									</li>
+									<li>
+										<a
+											href='https://dexeos.io/'
+											target='_blank'
+											rel='noopener noreferrer'
+											className='dexeos'
+										>
+											<img src={dexeos} alt='dexeos exchange' />
+										</a>
+									</li>
+								</ul>
+							</Col>
+						</Row>
+					</Grid>
+				</div>
+		</section>
+	);
+};
+
+const Wallets = () => {
+	return (
+		<section id='wallets'>
+			<header>
+				<h1>Telos Wallets</h1>
+			</header>
+			<Grid>
+				<Row>
+					<Col md={10} mdOffset={1}>
+						<div className='sqrl_wallet'>
+							<p>Store and retrieve your TLOS tokens on these wallets.<br /> Check back often for new wallet partnerships!</p>
+							<Link to='/downloads'>
+								<img src={sqrl_logo} alt='sqrl wallet' />
+							</Link>
+						</div>
 					</Col>
 				</Row>
 			</Grid>

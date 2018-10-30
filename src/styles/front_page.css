@@ -175,3 +175,113 @@
 .fadeIn {
 	animation: fadeIn;
 }
+
+#exchanges {
+	padding-bottom: 50px;
+}
+
+#exchanges header {
+	background: #c2beae;
+	padding: 25px 0;
+	margin-bottom: 50px;
+}
+
+#exchanges h1 {
+	color: #ffffff;
+	margin: 0;
+	text-align: center;
+}
+
+#exchanges .exchange_intro {
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+#exchanges .exchange_buttons {
+
+}
+
+#exchanges .exchange_buttons ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+}
+
+#exchanges .exchange_buttons li {
+	display: inline-block;
+	margin-right: 50px;
+}
+
+@media screen and (max-width: 500px){
+	#exchanges .exchange_buttons li {
+		display: block;
+		margin-right: 0;
+		margin-bottom: 25px;
+		max-width: 100%;
+	}
+
+	#exchanges .exchange_buttons li:last-child {
+		margin-bottom: 0;
+	}
+}
+
+#exchanges .exchange_buttons li:last-child {
+	margin-right: 0;
+}
+
+#exchanges .exchange_buttons a {
+	padding: 15px 12px;
+	display: block;
+	transition: background-color 0.15s ease;
+}
+
+#exchanges .exchange_buttons img {
+	
+}
+
+#exchanges .exchange_buttons .chainrift {
+	background-color: #2a2937;
+	
+}
+
+#exchanges .exchange_buttons .chainrift:hover {
+	background-color: #11101E;
+}
+
+#exchanges .exchange_buttons .dexeos {
+	background-color: #213067;
+}
+
+#exchanges .exchange_buttons .dexeos:hover {
+	background-color: #08174E;
+}
+
+#wallets {
+	padding-bottom: 25px;
+}
+
+#wallets header {
+	background: #c2beae;
+	padding: 25px 0;
+	margin-bottom: 50px;
+}
+
+#wallets h1 {
+	color: #ffffff;
+	margin: 0;
+	text-align: center;
+}
+
+#wallets .sqrl_wallet {
+	text-align: center;
+}
+
+#wallets .sqrl_wallet img {
+	width: 300px;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
