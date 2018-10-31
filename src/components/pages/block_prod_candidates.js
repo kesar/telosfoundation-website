@@ -22,16 +22,16 @@ import telos_global from '../../img/partner_logos/logo_telosglobal.png';
 // import eos_detroit from '../../img/partner_logos/logo_eosdetroit_small.png';
 // import eosukio from '../../img/partner_logos/logo_eosukio2.png';
 // import eosvan from '../../img/partner_logos/logo_eosvan.png';
-// import infinitybloc from '../../img/partner_logos/logo_infinitybloc.png';
+import infinitybloc from '../../img/partner_logos/logo_infinitybloc.png';
 // import teloslabs from '../../img/partner_logos/logo_teloslabs.png';
-// import eosworld from '../../img/partner_logos/logo_eosworld.png';
+import eosworld from '../../img/partner_logos/logo_eosworld.png';
 // import fuzzy from '../../img/partner_logos/logo_fuzzy.png';
 // import eos_in_space from '../../img/partner_logos/logo_eosspace.png';
 // import discover_telos from '../../img/partner_logos/logo_discovertelos.png';
 // import zmeta from '../../img/partner_logos/logo_zmeta.png';
 // import csx from '../../img/partner_logos/logo_csx.png';
 // import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
-// import amplified from '../../img/partner_logos/logo_amplified.png';
+import amplified from '../../img/partner_logos/logo_amplified.png';
 // import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
 // import madrid from '../../img/partner_logos/logo_telos_madrid.png';
 // import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
@@ -93,7 +93,7 @@ const Candidates = () => {
 		},
 		{
 			name: 'EOSMetal',
-			description: 'Dedicated to advanced infrastructure, we have always ran completely on bare metal for the ultimate performance of block production, we are independently funded IT professionals with over 50 years of combined IT experience. We are BP’s for Telos, EOS Mainnet and Worbli chains.',
+			description: 'We are dedicated to advanced infrastructure, run completely on bare metal and we are independently funded IT professionals with over 50 years of combined IT experience.',
 			url: 'https://eosmetal.io',
 			logo: eos_metal,
 			vote_name: 'eosmetaliobp'
@@ -104,6 +104,20 @@ const Candidates = () => {
 			url: 'https://www.telosvancouver.io',
 			logo: telos_vancouver,
 			vote_name: 'tlsvancouver'
+		},
+		{
+			name: 'infinitybloc',
+			description: 'We use fast, scalable blockchain to enable new economic models that re-distribute value creation back to the community. We call it "the fair gig economy".',
+			url: 'https://www.infinitybloc.io',
+			logo: infinitybloc,
+			vote_name: 'infinitybloc'
+		},
+		{
+			name: 'Big Iron BP',
+			description: 'Big Iron BP (formerly, EOS the World) one of 6 original Telos partners, features bare-metal, best-in-class hardware, and world-class personnel in IT and executive business.',
+			url: 'http://www.BigIron.io',
+			logo: eosworld,
+			vote_name: 'BigIronbpTex'
 		},
 		{
 			name: 'EOSGreen',
@@ -148,25 +162,32 @@ const Candidates = () => {
 			vote_name: 'octagontelos'
 		},
 		{
-			name: 'Telos-21Zephyr',
-			description: 'Telos-21Zephyr is passionate and committed to helping build the community around Telos by offering support to Telos users, and helping grow participation within the Telos community.',
-			url: 'https://telos-21zephyr.com',
-			logo: zephyr,
-			vote_name: '21zephyr1111'
+			name: 'Amplified Telos',
+			description: 'Amplified Telos is on a mission to amplify the Telos blockchain through development, testing and support on the core, Network Monitor and Worker Proposal Contract.',
+			url: 'https://amplified.software',
+			logo: amplified,
+			vote_name: 'amplifiedtls'
+		},
+		{
+			name: 'TelosDAC',
+			description: 'Our goal is to ensure that the community has a supplementary stake in the network by means of part ownership in a block producer candidate.',
+			url: 'https://telosdac.io',
+			logo: telos_dac,
+			vote_name: 'telosdacnode'
 		},
 		{
 			name: 'KainosBP',
-			description: 'Kainos Block Producers are a self-funded bare metal/cloud hybrid BP candidate headquartered in Central Texas. 10% of Kainos BP rewards will go to unboundnow.org, a non-profit working in local communities to fight human trafficking.',
+			description: 'KainosBP are a self-funded bare metal/cloud hybrid BP candidate. 10% of our rewards will go to unboundnow.org, a non-profit working in local communities to fight human trafficking.',
 			url: 'https://kainosbp.com',
 			logo: kainos,
 			vote_name: 'kainosblkpro'
 		},
 		{
-			name: 'TelosDAC',
-			description: 'Our goal is to ensure that the community has a supplementary stake in the network by means of part ownership in a block producer candidate. we will extend the reach of the Telos blockchain through community initiatives, knowledge transfer and development of enterprise ready dApps.',
-			url: 'https://telosdac.io',
-			logo: telos_dac,
-			vote_name: 'telosdacnode'
+			name: 'Telos-21Zephyr',
+			description: 'Telos-21Zephyr is passionate and committed to helping build the community around Telos by offering support to Telos users, and helping grow participation within the Telos community.',
+			url: 'https://telos-21zephyr.com',
+			logo: zephyr,
+			vote_name: '21zephyr1111'
 		},
 		{
 			name: 'TelosGlobal',

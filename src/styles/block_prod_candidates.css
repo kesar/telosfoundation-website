@@ -75,12 +75,12 @@
 }
 
 .bp_candidate_info .bp_candidate_vote {
-	font-weight: 700;
+	font-weight: 400;
 }
 
 .bp_candidate_info .bp_candidate_vote_name {
-	font-weight: 400;
-	color: #fe8702;
+	font-weight: 700;
+	color: #635a51;
 }
 
 .bp_candidate_info h4 {
