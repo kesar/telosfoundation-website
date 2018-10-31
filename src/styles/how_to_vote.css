@@ -1,0 +1,86 @@
+.how_to_vote {
+	padding-bottom: 150px;
+}
+
+.how_to_vote p > a,
+.how_to_vote li > a {
+	font-size: 1em;
+}
+
+#htv_intro {
+	margin-bottom: 35px;
+}
+
+#htv_intro h1 {
+	text-align: center;
+	font-size: 4.5em;
+}
+
+@media screen and (max-width: 767px){
+	#htv_intro h1 {
+		font-size: 3em;
+	}
+}
+
+#htv_intro h2 {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+#htv_option_one {
+	margin-bottom: 35px;
+}
+
+#htv_option_one code {
+	color: #3ecbf3;
+	font-size: 1.1em;
+	background-color: transparent;
+}
+
+#htv_option_one header {
+	background: #c2beae;
+	padding: 25px 0;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+#htv_option_one header h2 {
+	margin: 0;
+	color: #fff;
+}
+
+#htv_option_two {
+
+}
+
+#htv_option_two .option_two_intro {
+	margin-bottom: 35px;
+}
+
+#htv_option_two header {
+	background: #c2beae;
+	padding: 25px 0;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+#htv_option_two header h2 {
+	margin: 0;
+	color: #fff;
+}
+
+#htv_option_two .htv_sqrl_logo {
+	width: 150px;
+	position: absolute;
+	margin-left: 25px;
+	top: -18px;
+}
+
+#htv_option_two ol > li {
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+
+#htv_option_two li > a {
+	font-weight: 400;
+}
