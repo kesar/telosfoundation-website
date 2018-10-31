@@ -23,7 +23,8 @@ import eosgreen from '../../img/partner_logos/logo_eosgreen.png';
 import fuzzy from '../../img/partner_logos/logo_fuzzy.png';
 import caleos from '../../img/partner_logos/logo_caleos.png';
 import eos_in_space from '../../img/partner_logos/logo_eosspace.png';
-import eos_sweden from '../../img/partner_logos/logo_eossweden.png';
+// import eos_sweden from '../../img/partner_logos/logo_eossweden.png';
+import sweden_cornet from '../../img/partner_logos/logo_swedencornet.png';
 // import eos_miami from '../../img/partner_logos/logo_eosmiami.png';
 import telos_miami from '../../img/partner_logos/logo_telos_miami.png';
 import hellenicos from '../../img/partner_logos/logo_hellenicos.png';
@@ -45,6 +46,10 @@ import telos_vancouver from '../../img/partner_logos/logo_telos_vancouver.png';
 //exchange logos
 import chainrift from '../../img/exchange_logos/exchange_chainrift.png';
 import dexeos from '../../img/exchange_logos/exchange_dexeos.png';
+
+import chainrift_button from '../../img/exchange_logos/Chainrift-Button.jpg';
+import dexeos_button from '../../img/exchange_logos/DEXEOS-Button.jpg';
+import findex_button from '../../img/exchange_logos/Findex-Button.jpg';
 
 import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 
@@ -137,7 +142,7 @@ const partnersArr = [
 	},
 	{
 		name: 'eos sweden',
-		logo: eos_sweden,
+		logo: sweden_cornet,
 		url: 'https://eossweden.eu/'
 	},
 	{
@@ -421,45 +426,50 @@ const Exchanges = () => {
 			<header>
 				<h1>Participating Exchanges</h1>
 			</header>
-				<div className='exchange_intro'>
-					<Grid>
-						<Row>
-							<Col md={8} mdOffset={2}>
-								<p>Buy TLOS, the Telos token, and exchange them for other currencies on these exchanges. Check back often for new exchange partnerships!</p>
-							</Col>
-						</Row>
-					</Grid>
-				</div>
-				<div className='exchange_buttons'>
-					<Grid>
-						<Row>
-							<Col md={10} mdOffset={1}>
-								<ul>
-									<li>
-										<a
-											href='https://www.chainrift.com/'
-											target='_blank'
-											rel='noopener noreferrer'
-											className='chainrift'
-										>
-											<img src={chainrift} alt='chainrift exchange' />
-										</a>
-									</li>
-									<li>
-										<a
-											href='https://dexeos.io/'
-											target='_blank'
-											rel='noopener noreferrer'
-											className='dexeos'
-										>
-											<img src={dexeos} alt='dexeos exchange' />
-										</a>
-									</li>
-								</ul>
-							</Col>
-						</Row>
-					</Grid>
-				</div>
+			<div className='exchange_intro'>
+				<Grid>
+					<Row>
+						<Col md={8} mdOffset={2}>
+							<p>Buy TLOS, the Telos token, and exchange them for other currencies on these exchanges. Check back often for new exchange partnerships!</p>
+						</Col>
+					</Row>
+				</Grid>
+			</div>
+			<Grid>
+				<Row>
+					<Col md={10} mdOffset={1}>
+						<div className='exchange_buttons'>
+							<div className='exchange_button'>
+								<a
+									href='#'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<img src={chainrift_button} alt='chainrift' />
+								</a>
+							</div>
+							<div className='exchange_button'>
+								<a
+									href='#'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<img src={dexeos_button} alt='dexeos' />
+								</a>
+							</div>
+							<div className='exchange_button'>
+								<a
+									href='#'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<img src={findex_button} alt='findex' />
+								</a>
+							</div>	
+						</div>
+					</Col>
+				</Row>
+			</Grid>
 		</section>
 	);
 };
