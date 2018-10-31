@@ -226,8 +226,13 @@ const FrontPage = ({landing_page, language}) => {
 			github_text,
 			partners_heading } = landing_page;
 
+	const getStyle = () => {
+		if(language === 'arabic') return {direction: 'rtl'};
+		return {};
+	};
+
 	return (
-		<div>
+		<div style={getStyle()}>
 			<Intro
 				intro_heading={intro_heading}
 				intro_content={intro_content}
@@ -441,7 +446,7 @@ const Exchanges = () => {
 						<div className='exchange_buttons'>
 							<div className='exchange_button'>
 								<a
-									href='#'
+									href='https://chainrift.com'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
@@ -450,7 +455,7 @@ const Exchanges = () => {
 							</div>
 							<div className='exchange_button'>
 								<a
-									href='#'
+									href='https://dexeos.io'
 									target='_blank'
 									rel='noopener noreferrer'
 								>
@@ -459,7 +464,7 @@ const Exchanges = () => {
 							</div>
 							<div className='exchange_button'>
 								<a
-									href='#'
+									href='https://findex.pro'
 									target='_blank'
 									rel='noopener noreferrer'
 								>

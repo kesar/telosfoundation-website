@@ -13,6 +13,7 @@ import germany_flag from '../img/flags/germany.png';
 import indonesia_flag from '../img/flags/indonesia.png';
 import italy_flag from '../img/flags/italy.png';
 import turkey_flag from '../img/flags/turkey.png';
+// import yemen_flag from '../img/flags/yemen.png';
 import '../styles/language_toggle_new.css';
 
 const languageOptions = [
@@ -88,7 +89,7 @@ class LanguageToggleDesktop extends Component {
 
 		const {language} = this.props.site_content;
 		//get language object from array
-		const currentLanguage = languageOptions[languageOptions.findIndex(item => item.value === language)];
+		const currentLanguage = languageOptions[languageOptions.findIndex(item => item.value === language)] || languageOptions[0];
 
 		const languageMenu = languageOptions.filter(lng => lng.value !== language).map((lang, i) => {
 			return (
