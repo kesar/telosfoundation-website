@@ -23,6 +23,7 @@ import james_davis from '../../img/foundation_site/James Davis.jpg';
 import mark_cohen from '../../img/foundation_site/mark_cohen.png';
 import adam_zientarski from '../../img/foundation_site/Adam Zientarski.png';
 import brett_bolte from '../../img/foundation_site/Brett Bolte.jpg';
+import chijioke from '../../img/foundation_site/Chijioke Ilochonwu.jpg';
 
 
 import '../../styles/board.css';
@@ -129,6 +130,17 @@ const boardNominees = [
 			'Jerry has been in the computer industry since 1972, either repairing, building, or administrating.',
 			'He has a B.S. in Computer Science from California State University, Stanislaus.',
 			'He is and always has been a problem solver and is looking forward to bringing his vast experience to Telos. He has held jobs in manufacturing and service, been an Operations Manager, and co-founded a 3rd party service company where he was President and CFO. This gives him a very broad view how things should be run, and a very level-headed approach to solving problems.'
+		]
+	},
+	{
+		name: 'Chijioke Ilochonwu',
+		organization: 'Nobles',
+		selfNominated: true,
+		portrait: chijioke,
+		bio: [
+			'My name is Chijioke Ilochonwu. I am the owner of Nobles, a shipping and logistics company that cordinates the movement goods and services overseas with over a million dollars in gross revenue. I have a bachelors in Pure and Industrial Chemistry, originally from Nigeria. I am a naturalized citizen of the USA, but my journey to who I am and what I have become today was not an easy one. I came into United States with twenty dollars in my pocket and a big dream in my heart. I worked menial jobs to make ends meet during my first few years in the country. My faith and personal relationship with Jesus Christ has carried me since I committed my life to Him during my last year of college in 1999 and definitely sustained me through those trying years in the States. I grew up in an entrepreneurial household back in Nigeria where we don\'t work for people. When I got my first laptop when I arrived the United States, I kept saying that the computer and internet was going to change the world. My entrepreneurial journey led me to search for online businesses and through divine connections, I found a website called e-harmony.com. This was where I met my wife and we have been married for fourteen years with three lovely kids. My wife and I did not know how to do anything online, even her email address started with nointernetforme. She found the most precious person in her life, me, through the thing she distrusted the most, the internet. What irony! Eventually, I founded Nobles and my dream of owning my own online business came to be.',
+			'I thought the internet was it until I discovered Cryptocurrency and blockchain.  Again, I kept saying that this was going to change the world just like the internet changed my life. The only difference this time is that I arrived early to this game. I have a Youtube channel called FINANCIALFREEDOMCJ where I share about ideas about acheiving financial freedom, but recently focus more on Cryptocurrency projects that I am really interested in. I also write articles about projects that I am fascinated about on platforms like Trybe, Steemit, Reddit, etc.',
+			'I have been a big believer in EOSIO ecosystem since Dan Larimer introduced it in 2017 and to date it represents my largest portfolio of holdings in the Cryptospace. Having observed the limitations of other smart contract platforms, I knew EOS  was going to be the game changer. After the launch of EOS and the various issues that came up, I was bit disappointed until I heard about the Telos network. Since I discovered it, I have been fascinated with how the network and ecosystem has been progressing so much that it is the topic I mostly frequently write and make Youtube videos about now. I am excited about the technological and development partsof this ecosystem and I\'m still learning, but I am more like the average guy that believes in the power of decentralization. It\'s time to take back our data and our lives from the powers that be. As your Telos foundation board nominee, I am all for mass adoption which is really about getting the little guy off the street to be a part of this great technical revolution. I believe that the Telos network has all it takes to be a big piece of this revolution.'
 		]
 	},
 	{
