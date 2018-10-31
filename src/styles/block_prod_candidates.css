@@ -93,12 +93,12 @@
 
 .bp_candidate_info a {
 	font-size: 1em;
-	color: #625a51;
+/*	color: #625a51;*/
 	text-decoration: none;
 }
 
 .bp_candidate_info a:hover,
 .bp_candidate_info a:active {
 	text-decoration: underline;
-	color: #2F271E;
+/*	color: #2F271E;*/
 }

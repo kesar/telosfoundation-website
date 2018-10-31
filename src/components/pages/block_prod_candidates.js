@@ -14,9 +14,12 @@ import dutcheos from '../../img/partner_logos/logo_ketendutch.png';
 import hellenicos from '../../img/partner_logos/logo_hellenicos.png';
 import eos_sweden from '../../img/partner_logos/logo_eossweden.png';
 import kainos from '../../img/partner_logos/logo_kainos.png';
+import eos_metal from '../../img/partner_logos/logo_eosmetal.png';
+import sweden_cornet from '../../img/partner_logos/logo_swedencornet.png';
+import telos_dac from '../../img/partner_logos/logo_telos_dac.png';
+import telos_global from '../../img/partner_logos/logo_telosglobal.png';
 
 // import eos_detroit from '../../img/partner_logos/logo_eosdetroit_small.png';
-// import eos_metal from '../../img/partner_logos/logo_eosmetal.png';
 // import eosukio from '../../img/partner_logos/logo_eosukio2.png';
 // import eosvan from '../../img/partner_logos/logo_eosvan.png';
 // import infinitybloc from '../../img/partner_logos/logo_infinitybloc.png';
@@ -32,7 +35,6 @@ import kainos from '../../img/partner_logos/logo_kainos.png';
 // import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
 // import madrid from '../../img/partner_logos/logo_telos_madrid.png';
 // import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
-// import telos_dac from '../../img/partner_logos/logo_telos_dac.png';
 // import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
 // import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
 
@@ -90,6 +92,13 @@ const Candidates = () => {
 			vote_name: 'eosbarcelona'
 		},
 		{
+			name: 'EOSMetal',
+			description: 'Dedicated to advanced infrastructure, we have always ran completely on bare metal for the ultimate performance of block production, we are independently funded IT professionals with over 50 years of combined IT experience. We are BP’s for Telos, EOS Mainnet and Worbli chains.',
+			url: 'https://eosmetal.io',
+			logo: eos_metal,
+			vote_name: 'eosmetaliobp'
+		},
+		{
 			name: 'Telos Vancouver',
 			description: 'Telos Vancouver, an independently owned Block Producer, is building solutions to real world problems on Telos through development, education, and support of the eos.io community.',
 			url: 'https://www.telosvancouver.io',
@@ -107,13 +116,15 @@ const Candidates = () => {
 			name: 'BlindBlocArt',
 			description: 'We will be using the funds from Telos to open art studios to teach art for free to kids and people with disabilities around the world, starting small and hopefully growing to many countries.',
 			url: 'https://www.blindblocart.io',
-			logo: blindbloc
+			logo: blindbloc,
+			vote_name: 'BlindBlocArt'
 		},
 		{
 			name: 'CalEOS',
 			description: 'Caleos is a self-funded, bare metal Block Producer & dApp development team that has made substantial contributions to network mechanics & development.',
 			url: 'https://caleos.io',
-			logo: caleos
+			logo: caleos,
+			vote_name: 'caleosblocks'
 		},
 		{
 			name: 'Telos Miami',
@@ -124,9 +135,9 @@ const Candidates = () => {
 		},
 		{
 			name: 'SwedenCorNet (TELOS/EOS Sweden)',
-			description: 'SwedenCorNet places emphasis on the fundamentals of security, privacy, risk management, and compliance. We strive for decentralization and serving the masses (including YOU) is our top priority.',
+			description: 'SwedenCorNet places emphasis on the fundamentals of security, privacy, risk management, and compliance. We strive for decentralization and serving the masses (including YOU) as our top priority.',
 			url: 'https://eossweden.eu',
-			logo: eos_sweden,
+			logo: sweden_cornet,
 			vote_name: 'swedencornet'
 		},
 		{
@@ -146,9 +157,23 @@ const Candidates = () => {
 		{
 			name: 'KainosBP',
 			description: 'Kainos Block Producers are a self-funded bare metal/cloud hybrid BP candidate headquartered in Central Texas. 10% of Kainos BP rewards will go to unboundnow.org, a non-profit working in local communities to fight human trafficking.',
-			url: 'https://kainostech.com',
+			url: 'https://kainosbp.com',
 			logo: kainos,
 			vote_name: 'kainosblkpro'
+		},
+		{
+			name: 'TelosDAC',
+			description: 'Our goal is to ensure that the community has a supplementary stake in the network by means of part ownership in a block producer candidate. we will extend the reach of the Telos blockchain through community initiatives, knowledge transfer and development of enterprise ready dApps.',
+			url: 'https://telosdac.io',
+			logo: telos_dac,
+			vote_name: 'telosdacnode'
+		},
+		{
+			name: 'TelosGlobal',
+			description: 'TelosGlobal is building global infrastructure focused on geographical decentralization, robustness, and high-availability for the TELOS community.  Your vote supports this effort and we thank you for your support!',
+			url: 'https://telosglobal.io/',
+			logo: telos_global,
+			vote_name: 'telosglobal1'
 		}
 	];
 
