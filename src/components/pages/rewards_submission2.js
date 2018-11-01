@@ -12,6 +12,8 @@ const SUBMITTING = 'submitting';
 const SUBMISSION_ERROR = 'submission_error';
 const SUBMISSION_SUCCESS = 'submission_success';
 
+const DESTINATION = 'http://localhost:8080/submission/create';
+
 export default class RewardsSubmission extends Component {
 	constructor(){
 		super();
@@ -23,10 +25,10 @@ export default class RewardsSubmission extends Component {
 				{
 					urls: [],
 					username: '',
-					details: '',
-					screenshot: null
+					details: ''
 				}
 			],
+			screenshot: null,
 			termsAccepted: false,
 			formState: NOT_SUBMITTED
 		};
@@ -69,8 +71,7 @@ export default class RewardsSubmission extends Component {
 				{
 					urls: [],
 					username: '',
-					details: '',
-					screenshot: null					
+					details: ''					
 				}
 			)
 		});
@@ -110,25 +111,21 @@ export default class RewardsSubmission extends Component {
   		this.setState({submissions: newSubmissions});
   	}
 
-  	handleScreenshotChange(e, idx){
-  		const {submissions} = this.state;
-  		const newSubmissions = submissions.map((sub, i) => {
-  			if(i !== idx) return sub;
-  			return {...sub, screenshot: e.target.files[0]};
-  		});
-  		this.setState({submissions: newSubmissions});
+  	handleScreenshotChange(e){
+  		this.setState({screenshow: e.target.files[0]});
   	}
 
   	handleSubmit(e){
   		e.preventDefault();
-  		const {name, email, public_key, submissions, termsAccepted} = this.state;
+  		const {name, email, public_key, submissions, screenshot, termsAccepted} = this.state;
 
   		const sub_values = {
   			name: name,
   			email: email,
   			public_key: public_key,
   			termsAccepted: termsAccepted,
-  			submissions: submissions
+  			submissions: submissions,
+  			screenshot: screenshot
   		};
 
   		console.log(sub_values);
@@ -161,12 +158,6 @@ export default class RewardsSubmission extends Component {
 								placeholder='Please provide any additional details that will help us evaluate your submission (optional in most cases)'
 								onChange={e => this.handleDetailsChange(e, idx)}
 							></textarea>
-						</FormGroup>
-						<FormGroup>
-							<ControlLabel>Screenshot (ONLY for in-person meetups)</ControlLabel>
-							<FormControl
-								type='file'
-								onChange={e => this.handleScreenshotChange(e, idx)} />
 						</FormGroup>
 					</div>
 				</fieldset>
@@ -205,7 +196,12 @@ export default class RewardsSubmission extends Component {
 				</FormGroup>
 
 				{this.getSubmissions()}
-				
+				<FormGroup>
+					<ControlLabel>Photograph (ONLY for in-person meetups)</ControlLabel>
+					<FormControl
+						type='file'
+						onChange={this.handleScreenshotChange} />
+				</FormGroup>
 				<FormGroup>
 					<Checkbox
 						required
