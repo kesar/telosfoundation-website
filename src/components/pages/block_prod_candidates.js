@@ -192,7 +192,7 @@ const Candidates = () => {
 		{
 			name: 'TelosGlobal',
 			description: 'TelosGlobal is building global infrastructure focused on geographical decentralization, robustness, and high-availability for the TELOS community.  Your vote supports this effort and we thank you for your support!',
-			url: 'https://telosglobal.io/',
+			url: 'https://telosglobal.io',
 			logo: telos_global,
 			vote_name: 'telosglobal1'
 		}
