@@ -12,6 +12,7 @@ import marc_roger from '../../img/arbitrator/marc-roger.jpg';
 import raul_sepulveda from '../../img/arbitrator/Raul Vidal y Sepulveda.jpg';
 import roberto_corretjer from '../../img/arbitrator/Roberto Corretjer.png';
 import moises_raba from '../../img/arbitrator/moises_raba.png';
+import mark_blank from '../../img/arbitrator/mark_blankenship.jpeg';
 
 const arbitratorCandidates = [
 	{
@@ -68,6 +69,18 @@ const arbitratorCandidates = [
 			'Mr. Kaba possesses the legal talent and business acumen to lead this company to achieve the growth, development and desired results of creating a truly forward thinking and innovative community token and business model.'
 		],
 		cand_image: moises_raba
+	},
+	{
+		cand_name: 'Mark Blankenship',
+		cand_vote_name: 'arbmarkblankenship',
+		cand_statement: [
+			'Mark Blankenship is a 30 year Attorney licensed to practice in Texas and New Mexico, as well as in the United States District Court for the Northern and Western Districts of Texas.  His practice has been solely in the civil law area, representing and defending individuals as well as multinational corporations. Mark is a top rated attorney by both Martindale Hubbel and Avvo Attorney peer rating services. He has been inducted into the prestigious American Board of Trial Lawyers (ABOTA). His experience includes representing clients  jury trials and administrative proceedings. He also has extensive experience in mediation and arbitration.',
+			'In community service outside of the law, Mark was named the Outstanding School Board Member in the state of Texas for 2014. Mark’s unique experience in civil law, arbitration and mediation give him the tools to best help network members resolve disputes in a fair and expeditious manner.'
+		],
+		cand_image: mark_blank,
+		cand_languages: [
+			'English'
+		]
 	}
 ];
 
