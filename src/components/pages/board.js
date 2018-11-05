@@ -24,6 +24,7 @@ import mark_cohen from '../../img/foundation_site/mark_cohen.png';
 import adam_zientarski from '../../img/foundation_site/Adam Zientarski.png';
 import brett_bolte from '../../img/foundation_site/Brett Bolte.jpg';
 import chijioke from '../../img/foundation_site/Chijioke Ilochonwu.jpg';
+import joost from '../../img/foundation_site/Joost Voordouw.png';
 
 
 import '../../styles/board.css';
@@ -224,6 +225,16 @@ const boardNominees = [
 			'He can bring his experience, skill-set and most important contacts in the industry to encourage the mass adoption of Telos Network. Together with Swedish Blockchain Association, he has the ability to influence a large community in the Nordic Region. He standbys with the vision of Telos Blockchain Network.'
 		],
 		linkedIn: 'https://linkedin.com/in/sukeshtedla'
+	},
+	{
+		name: 'Joost Voordouw',
+		organization: 'DutchEOS',
+		portrait: joost,
+		nominatedBy: 'Chen Li, Telos Vancouver',
+		bio: [
+			'Joost is an early member of the Telos Contributors Group. DutchEOS was one of the original 12 organizations who participated in the Telos announcement. Since that time, Joost has contributed to several working groups and visibly represented Telos at the London blockchain conference in September, along with the rest of the DutchEOS team.',
+			'Joost holds a M.Sc. in Computer Science from Delft University of Technolgy. He worked for over 10 years as a technical consultant for various multinationals. In 2017 he quitted his job as a data scientist to fully focus on blockchain technology. Besides being responsible for the operations of DutchEOS, Joost is co-chairing the Telos translations workgroup as he is passionate about sharing the opportunities of Telos with a global audience.'
+		]
 	},
 	{
 		name: 'Marlon Williams',

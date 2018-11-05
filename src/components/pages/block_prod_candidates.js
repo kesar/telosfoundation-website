@@ -32,8 +32,8 @@ import eosworld from '../../img/partner_logos/logo_eosworld.png';
 // import csx from '../../img/partner_logos/logo_csx.png';
 // import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
 import amplified from '../../img/partner_logos/logo_amplified.png';
-// import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
-// import madrid from '../../img/partner_logos/logo_telos_madrid.png';
+import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
+import madrid from '../../img/partner_logos/logo_telos_madrid.png';
 // import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
 // import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
 // import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
@@ -97,6 +97,13 @@ const Candidates = () => {
 			url: 'https://eosmetal.io',
 			logo: eos_metal,
 			vote_name: 'eosmetaliobp'
+		},
+		{
+			name: 'KainosBP',
+			description: 'KainosBP are a self-funded bare metal/cloud hybrid BP candidate. 10% of our rewards will go to unboundnow.org, a non-profit working in local communities to fight human trafficking.',
+			url: 'https://kainosbp.com',
+			logo: kainos,
+			vote_name: 'kainosblkpro'
 		},
 		{
 			name: 'Telos Vancouver',
@@ -169,18 +176,25 @@ const Candidates = () => {
 			vote_name: 'amplifiedtls'
 		},
 		{
+			name: 'Telos Venezuela',
+			description: 'We are a group of System Administrators and Miners involved in blockchain since 2014. Creating a better world block by block & giving back to the community.',
+			url: 'https://www.telosvenezuela.com',
+			logo: venezuela,
+			vote_name: 'tlsvenezuela'
+		},
+		{
+			name: 'Telos Madrid',
+			description: 'Focused on producing blocks and comitted to make TELOS community grow. Baremetal. Self funded.',
+			url: 'https://www.telosmadrid.io',
+			logo: madrid,
+			vote_name: 'telosmadrid1'
+		},
+		{
 			name: 'TelosDAC',
 			description: 'Our goal is to ensure that the community has a supplementary stake in the network by means of part ownership in a block producer candidate.',
 			url: 'https://telosdac.io',
 			logo: telos_dac,
 			vote_name: 'telosdacnode'
-		},
-		{
-			name: 'KainosBP',
-			description: 'KainosBP are a self-funded bare metal/cloud hybrid BP candidate. 10% of our rewards will go to unboundnow.org, a non-profit working in local communities to fight human trafficking.',
-			url: 'https://kainosbp.com',
-			logo: kainos,
-			vote_name: 'kainosblkpro'
 		},
 		{
 			name: 'Telos-21Zephyr',

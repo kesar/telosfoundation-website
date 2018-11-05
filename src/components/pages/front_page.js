@@ -42,6 +42,7 @@ import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
 import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
 import zephyr from '../../img/partner_logos/logo_zephyr.png';
 import telos_vancouver from '../../img/partner_logos/logo_telos_vancouver.png';
+import kainos from '../../img/partner_logos/logo_kainos.png';
 
 //exchange logos
 import chainrift from '../../img/exchange_logos/exchange_chainrift.png';
@@ -208,6 +209,10 @@ const partnersArr = [
 		name: '21 zephyr',
 		logo: zephyr,
 		url: 'https://telos-21zephyr.com'
+	},
+	{
+		name: 'kainos',
+		logo: kainos
 	}
 ];
 
