@@ -1,6 +1,7 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
+import {Helmet} from 'react-helmet';
 
 import goodblock from '../../img/partner_logos/logo_goodblock.png';
 import caleos from '../../img/partner_logos/logo_caleos.png';
@@ -43,6 +44,10 @@ import '../../styles/block_prod_candidates.css';
 const BlockProducerCandidates = () => {
 	return (
 		<div className='block_prod_candidates'>
+			<Helmet>
+				<title>Telos BP Candidates</title>
+				<meta name='description' content='Directory of candidates who submitted their names for consideration as block producers on Telos and are listed in the order of when they joined the Telos testnet. This is not necessarily a complete list of block producer candidates, and being on this list is not an endorsement.' />
+			</Helmet>
 			<Intro />
 			<Candidates />
 		</div>
