@@ -12,6 +12,7 @@ import germany_flag from '../img/flags/germany.png';
 import indonesia_flag from '../img/flags/indonesia.png';
 import italy_flag from '../img/flags/italy.png';
 import turkey_flag from '../img/flags/turkey.png';
+import yemen_flag from '../img/flags/yemen.png';
 import '../styles/language_toggle.css';
 
 class LanguageToggle extends Component {
@@ -64,6 +65,9 @@ class LanguageToggle extends Component {
 				case 'indonesian':
 					flag = indonesia_flag;
 					break;
+				case 'arabic':
+					flag = yemen_flag;
+					break;
 				default:
 					flag = english_flag;
 					break;
@@ -89,6 +93,7 @@ class LanguageToggle extends Component {
 					<option value='italian'>ITALIANO</option>
 					<option value='turkish'>TÜRKÇE</option>
 					<option value='indonesian'>BAHASA INDONESIA</option>
+					<option value='arabic'>عربية</option>
 				</select>
 				<img src={get_flag()} alt='language flag' className='language_toggle_flag' />
 			</li>

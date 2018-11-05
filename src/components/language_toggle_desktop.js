@@ -13,7 +13,7 @@ import germany_flag from '../img/flags/germany.png';
 import indonesia_flag from '../img/flags/indonesia.png';
 import italy_flag from '../img/flags/italy.png';
 import turkey_flag from '../img/flags/turkey.png';
-// import yemen_flag from '../img/flags/yemen.png';
+import yemen_flag from '../img/flags/yemen.png';
 import '../styles/language_toggle_new.css';
 
 const languageOptions = [
@@ -71,6 +71,11 @@ const languageOptions = [
 		value: 'indonesian',
 		name: 'BAHASA INDONESIA',
 		flag: indonesia_flag
+	},
+	{
+		value: 'arabic',
+		name: 'عربية',
+		flag: yemen_flag
 	}
 ];
 

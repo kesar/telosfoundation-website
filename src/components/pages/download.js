@@ -14,7 +14,12 @@ import banner_five from '../../img/banners/Splash Banner_Telos-Medium_generic_5_
 import banner_six from '../../img/banners/Splash Banner_Telos-Medium_generic_6_display.jpg';
 
 //white papers
-import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN, WHITE_PAPER_CHINESE} from '../../config/constants';
+import {
+	WHITE_PAPER_ENGLISH,
+	WHITE_PAPER_KOREAN,
+	WHITE_PAPER_CHINESE,
+	WHITE_PAPER_RUSSIAN
+} from '../../config/constants';
 import '../../styles/download.css';
 
 const sg_en = 'https://resources.telosfoundation.io/Telos_Style Guide_2018.pdf';
@@ -169,6 +174,9 @@ class Documents extends Component {
 				break;
 			case 'mandarin':
 				wp_url = WHITE_PAPER_CHINESE;
+				break;
+			case 'russian':
+				wp_url = WHITE_PAPER_RUSSIAN;
 				break;
 			default:
 				wp_url = WHITE_PAPER_ENGLISH;

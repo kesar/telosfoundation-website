@@ -11,8 +11,8 @@ import white_paper from '../../img/white_paper_pdf_solid.png';
 //partners logos
 import eos_detroit from '../../img/partner_logos/logo_eosdetroit_small.png';
 import eos_metal from '../../img/partner_logos/logo_eosmetal.png';
-import dutcheos from '../../img/partner_logos/logo_ketendutch.png';
-import eosukio from '../../img/partner_logos/logo_eosukio2.png';
+import dutcheos from '../../img/partner_logos/logo_dutch_eos.png';
+import telosuk from '../../img/partner_logos/logo_telos_uk.png';
 import eosbarcelona from '../../img/partner_logos/logo_eosbarcelona.png';
 import eosvan from '../../img/partner_logos/logo_eosvan.png';
 import goodblock from '../../img/partner_logos/logo_goodblock.png';
@@ -55,7 +55,12 @@ import findex_button from '../../img/exchange_logos/Findex-Button.jpg';
 import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 
 //white papers
-import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN, WHITE_PAPER_CHINESE} from '../../config/constants';
+import { 
+	WHITE_PAPER_ENGLISH,
+	WHITE_PAPER_KOREAN,
+	WHITE_PAPER_CHINESE,
+	WHITE_PAPER_RUSSIAN
+} from '../../config/constants';
 
 //charts
 import chart_ch from '../../img/charts/Telos_MarketingSite_Chart_1000px_CH.png';
@@ -79,9 +84,9 @@ const partnersArr = [
 		url: 'https://eosmetal.io'
 	},
 	{
-		name: 'eosuk io',
-		logo: eosukio,
-		url: 'https://eosuk.io/'
+		name: 'telos uk',
+		logo: telosuk,
+		url: 'https://telosuk.io'
 	},
 	{
 		name: 'dutch eos',
@@ -383,6 +388,9 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text, lang
 			break;
 		case 'mandarin':
 			wp_url = WHITE_PAPER_CHINESE;
+			break;
+		case 'russian':
+			wp_url = WHITE_PAPER_RUSSIAN;
 			break;
 		default:
 			wp_url = WHITE_PAPER_ENGLISH;
