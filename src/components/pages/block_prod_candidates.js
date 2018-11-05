@@ -10,7 +10,7 @@ import telos_vancouver from '../../img/partner_logos/logo_telos_vancouver.png';
 import eosbarcelona from '../../img/partner_logos/logo_eosbarcelona.png';
 import eosgreen from '../../img/partner_logos/logo_eosgreen.png';
 import telos_miami from '../../img/partner_logos/logo_telos_miami.png';
-import dutcheos from '../../img/partner_logos/logo_ketendutch.png';
+import dutcheos from '../../img/partner_logos/logo_dutch_eos.png';
 import hellenicos from '../../img/partner_logos/logo_hellenicos.png';
 import eos_sweden from '../../img/partner_logos/logo_eossweden.png';
 import kainos from '../../img/partner_logos/logo_kainos.png';
@@ -20,7 +20,7 @@ import telos_dac from '../../img/partner_logos/logo_telos_dac.png';
 import telos_global from '../../img/partner_logos/logo_telosglobal.png';
 
 // import eos_detroit from '../../img/partner_logos/logo_eosdetroit_small.png';
-// import eosukio from '../../img/partner_logos/logo_eosukio2.png';
+import telosuk from '../../img/partner_logos/logo_telos_uk.png';
 // import eosvan from '../../img/partner_logos/logo_eosvan.png';
 import infinitybloc from '../../img/partner_logos/logo_infinitybloc.png';
 // import teloslabs from '../../img/partner_logos/logo_teloslabs.png';
@@ -34,7 +34,7 @@ import eosworld from '../../img/partner_logos/logo_eosworld.png';
 import amplified from '../../img/partner_logos/logo_amplified.png';
 import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
 import madrid from '../../img/partner_logos/logo_telos_madrid.png';
-// import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
+import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
 // import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
 // import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
 
@@ -78,6 +78,20 @@ const Candidates = () => {
 			vote_name: 'goodblocktls'
 		},
 		{
+			name: 'EOSMetal',
+			description: 'We are dedicated to advanced infrastructure, run completely on bare metal and we are independently funded IT professionals with over 50 years of combined IT experience.',
+			url: 'https://eosmetal.io',
+			logo: eos_metal,
+			vote_name: 'eosmetaliobp'
+		},
+		{
+			name: 'Telos UK',
+			description: 'Telos UK is headed up by Roger & Jim of EOS UK. They will serve the Telos community with the original EOS ethos of transparency, accessibility, professionalism and reliability.',
+			url: 'https://telosuk.io',
+			logo: telosuk,
+			vote_name: 'telosuknodes'
+		},
+		{
 			name: 'DutchEOS',
 			description: 'We are a self funded EOSIO Block Producer based in the Netherlands striving for maximum Reliability and Independence. DutchEOS has been a proud supporter of Telos since the start.',
 			url: 'https://dutcheos.io',
@@ -90,13 +104,6 @@ const Candidates = () => {
 			url: 'http://eos.barcelona',
 			logo: eosbarcelona,
 			vote_name: 'eosbarcelona'
-		},
-		{
-			name: 'EOSMetal',
-			description: 'We are dedicated to advanced infrastructure, run completely on bare metal and we are independently funded IT professionals with over 50 years of combined IT experience.',
-			url: 'https://eosmetal.io',
-			logo: eos_metal,
-			vote_name: 'eosmetaliobp'
 		},
 		{
 			name: 'KainosBP',
@@ -195,6 +202,13 @@ const Candidates = () => {
 			url: 'https://telosdac.io',
 			logo: telos_dac,
 			vote_name: 'telosdacnode'
+		},
+		{
+			name: 'Telos New York',
+			description: 'Telos New York, a self-funded Block Producer that is dedicated EXCLUSIVELY to the Telos Network. Our focus is to provide a high-performance infrastructure using top of the line bare metal servers.',
+			url: 'http://nytelos.com',
+			logo: telos_ny,
+			vote_name: 'telosnewyork'
 		},
 		{
 			name: 'Telos-21Zephyr',

@@ -18,7 +18,6 @@ import chen_li from '../../img/foundation_site/chen_li.png';
 import richard_erikodi from '../../img/foundation_site/Richard Bryan Erikodi.jpg';
 import syed_sadiq from '../../img/foundation_site/syed.jpg';
 import jim_hewitt from '../../img/foundation_site/JimHewitt.jpg';
-import ian_panchevre from '../../img/foundation_site/Ian Panchevre.jpg';
 import james_davis from '../../img/foundation_site/James Davis.jpg';
 import mark_cohen from '../../img/foundation_site/mark_cohen.png';
 import adam_zientarski from '../../img/foundation_site/Adam Zientarski.png';
@@ -173,17 +172,6 @@ const boardNominees = [
 			'Chen Li was one of the original members of the Telos Contributors Group. He has put in countless hours of outreach to Chinese exchanges, Dapps, and users and has performed many of the Chinese document translations. Chen has also contributed to the development working groups. His outreach to the Chinese community is of enormous value to the network.',
 			'Chen started programming in high school and won 1st Prize in the National Olympiad in Informatics (NOIP) at the age of 18. Over the past 15 years, he has successfully implemented and deployed various projets ranging from Global Navigation Satellite Reflectometry to Network Monitoring System for large-scaled enterprises. With his experience in development and dev ops, Chen is committed to contributing his technical skills to the Telos community.'
 		]
-	},
-	{
-		name: 'Ian Panchèvre',
-		organization: 'Amplified Telos',
-		nominatedBy: 'Justin Giudici, InfinityBloc.io',
-		portrait: ian_panchevre,
-		bio: [
-			'Ian is the founder of Amplified Telos (www.amplified.software), a block producer and a technical contributor to Telos. Ian first became interested in blockchains while studying political science at Yale. He wrote a hundred-page thesis on the virtual politics of Bitcoin. Years later, Ian joined Intuit’s Innovation and Advanced Technologies group, where he worked as a product manager to lead Intuit’s blockchain R&D efforts. Ian is a serial entrepreneur, having previously founded mobile and edtech startups. Ian is currently an MBA student at the Stanford Graduate School of Business.',
-			'In addition to blockchain expertise, entrepreneurial experience, and political theory chops, Ian will bring a high ethical standard to the Telos Foundation. Ian expects the Telos Foundation to operate ethically and transparently so that it may become the gold standard among cryptocurrency foundations.'
-		],
-		linkedIn: 'https://www.linkedin.com/in/ianpanchevre/'
 	},
 	{
 		name: 'Josep Rosich',
