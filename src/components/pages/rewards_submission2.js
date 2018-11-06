@@ -112,23 +112,49 @@ export default class RewardsSubmission extends Component {
   	}
 
   	handleScreenshotChange(e){
-  		this.setState({screenshow: e.target.files[0]});
+  		this.setState({screenshot: e.target.files[0]});
   	}
 
   	handleSubmit(e){
   		e.preventDefault();
   		const {name, email, public_key, submissions, screenshot, termsAccepted} = this.state;
 
+  		const urls = submissions.map(sub => sub.urls);
+  		const username = submissions.map(sub => sub.username.trim());
+  		const details = submissions.map(sub => sub.details.trim());
+
   		const sub_values = {
   			name: name,
   			email: email,
   			public_key: public_key,
   			termsAccepted: termsAccepted,
-  			submissions: submissions,
+  			links: urls,
+  			username: username,
+  			comments: details,
   			screenshot: screenshot
   		};
 
-  		console.log(sub_values);
+  		const data = new FormData();
+  		data.append('name', sub_values.name);
+  		data.append('email', sub_values.email);
+  		data.append('publicKey', sub_values.public_key);
+  		data.append('links', sub_values.links);
+  		data.append('username', sub_values.username);
+  		data.append('comments', sub_values.comments);
+  		data.append('screenshot', sub_values.screenshot);
+
+  		//console.log(sub_values);
+  		axios.post(DESTINATION, data)
+  		.then(res => console.log(res))
+  		.catch(err => console.log(err));
+
+  		/*    axios.post('http://localhost:8000/upload', data)
+      .then(function (response) {
+    this.setState({ imageURL: `http://localhost:8000/${body.file}`, uploadStatus: true });
+      })
+      .catch(function (error) {
+        console.log(error);
+      });*/
   	}
 
 	getSubmissions(){
@@ -141,8 +167,9 @@ export default class RewardsSubmission extends Component {
 							<TagsInput
 								value={inputs.urls}
 								renderInput={autosizingRenderInput}
-								inputProps={{placeholder: 'Links. Hit "ENTER" to add a URL'}}
-								onChange={tags => this.handleTagsChange(tags, idx)} />
+								inputProps={{placeholder: 'Links. Add all URLs that you wish to submit in this category.'}}
+								onChange={tags => this.handleTagsChange(tags, idx)}
+								addOnBlur />
 						</FormGroup>
 						<FormGroup>
 							<FormControl
