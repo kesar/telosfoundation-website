@@ -22,7 +22,7 @@ const Checklist = () => {
 							<Col md={10} mdOffset={1}>
 								<div className='checklist_intro'>
 									<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
-									<h2>Next go/no-go decision date: Nov 7th, 2018 16:00 UTC</h2>
+									<h2>Next go/no-go decision date: Nov 7th, 2018 17:00 UTC</h2>
 									<h4>On a yes vote, the network will launch 8 hours later at midnight UTC</h4>
 								</div>
 							</Col>
