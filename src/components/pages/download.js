@@ -10,12 +10,21 @@ import banner_one from '../../img/banners/Splash Banner_Telos-Medium_generic_1_d
 import banner_two from '../../img/banners/Splash Banner_Telos-Medium_generic_2_display.jpg';
 import banner_three from '../../img/banners/Splash Banner_Telos-Medium_generic_3_display.jpg';
 import banner_four from '../../img/banners/Splash Banner_Telos-Medium_generic_4_display.jpg';
+import banner_five from '../../img/banners/Splash Banner_Telos-Medium_generic_5_display.jpg';
+import banner_six from '../../img/banners/Splash Banner_Telos-Medium_generic_6_display.jpg';
 
 //white papers
-import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN, WHITE_PAPER_CHINESE} from '../../config/constants';
+import {
+	WHITE_PAPER_ENGLISH,
+	WHITE_PAPER_KOREAN,
+	WHITE_PAPER_CHINESE,
+	WHITE_PAPER_RUSSIAN
+} from '../../config/constants';
 import '../../styles/download.css';
 
 const sg_en = 'https://resources.telosfoundation.io/Telos_Style Guide_2018.pdf';
+//I don't know whether this will ever get translated
+const press_kit_en = 'https://resources.telosfoundation.io/presskit_master/TELOS_press_kit.pdf';
 
 const splashBanners = [
 	{
@@ -41,10 +50,22 @@ const splashBanners = [
 		image: banner_four,
 		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_4.jpg',
 		downloadName: 'Splash Banner_Telos-Medium_generic_4.jpg'
+	},
+	{
+		name: 'banner five',
+		image: banner_five,
+		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_5.jpg',
+		downloadName: 'Splash Banner_Telos-Medium_generic_5.jpg'
+	},
+	{
+		name: 'banner six',
+		image: banner_six,
+		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_6.jpg',
+		downloadName: 'Spash Banner_Telos-Medium_generic_6.jpg'
 	}
 ];
 
-const Download = ({language}) => {
+const Download = ({language, downloads_page}) => {
 	return (
 		<div className='download_page'>
 			<Helmet>
@@ -55,15 +76,15 @@ const Download = ({language}) => {
 				<Row>
 					<Col md={12}>
 						<div className='download_intro'>
-							<h1>Downloads</h1>
+							<h1>{downloads_page.intro.heading}</h1>
 							<Row>
 								<Col md={10} mdOffset={1}>
-									<h2>Download all the documents and tools that you need to join the Telos Network.</h2>
+									<h2>{downloads_page.intro.subheading}</h2>
 								</Col>
 							</Row>
 						</div>
-						<Wallets />
-						<Documents language={language} />
+						<Wallets wallets={downloads_page.wallets} />
+						<Documents documents={downloads_page.documents} banners={downloads_page.banners} language={language} />
 					</Col>
 				</Row>
 			</Grid>
@@ -71,28 +92,28 @@ const Download = ({language}) => {
 	);
 };
 
-const Wallets = () => {
+const Wallets = ({wallets}) => {
 	return (
 		<section id='download_wallets'>
-			<h2>Telos Wallets</h2>
+			<h2>{wallets.heading}</h2>
 			<hr />
 			<Row>
 				<Col md={10} mdOffset={1}>
-					<h3>Choose a wallet to store and trade your TLOS tokens.</h3>
+					<h3>{wallets.subheading}</h3>
 				</Col>
 				<Col sm={5}>
 					<img src={sqrl_logo} alt='squirrel wallet logo' className='img-responsive' />
 				</Col>
 				<Col sm={7}>
 					<div className='squirrel_content'>
-						<p>Sqrl is a fully functional light wallet designed for the TELOS blockchain. This application can be used to connect to a remote TELOS API endpoint to perform producer voting actions and common wallet commands.</p>
+						<p>{wallets.sqrl_description}</p>
 						<ul className='download_buttons'>
 							<li>
 								<a
 									href='https://github.com/Telos-Foundation/Sqrl/archive/0.5.2.tar.gz'
 									className='btn btn-primary'
 								>
-									<i className='fa fa-linux'></i>  DOWNLOAD
+									<i className='fa fa-linux'></i>  {wallets.download}
 								</a>
 							</li>
 							<li>
@@ -100,7 +121,7 @@ const Wallets = () => {
 									href='https://github.com/Telos-Foundation/Sqrl/releases/download/0.5.2/mac-Sqrl-0.5.2.dmg'
 									className='btn btn-primary'
 								>
-									<i className='fa fa-apple'></i>  DOWNLOAD
+									<i className='fa fa-apple'></i>  {wallets.download}
 								</a>
 							</li>
 							<li>
@@ -108,7 +129,7 @@ const Wallets = () => {
 									href='https://github.com/Telos-Foundation/Sqrl/releases/download/0.5.2/win-Sqrl-0.5.2.exe'
 									className='btn btn-primary'
 								>
-									<i className='fa fa-windows'></i>  DOWNLOAD
+									<i className='fa fa-windows'></i>  {wallets.download}
 								</a>
 							</li>
 							<li>
@@ -118,7 +139,7 @@ const Wallets = () => {
 									target='_blank' 
 									rel='noopener noreferrer'
 								>
-									<i className='fa fa-github'></i>  SOURCE
+									<i className='fa fa-github'></i>  {wallets.source}
 								</a>
 							</li>
 						</ul>
@@ -141,7 +162,7 @@ class Documents extends Component {
 	}
 
 	render(){
-		const {language} = this.props;
+		const {language, documents, banners} = this.props;
 
 		let wp_url;
 		switch(language){
@@ -154,6 +175,9 @@ class Documents extends Component {
 			case 'mandarin':
 				wp_url = WHITE_PAPER_CHINESE;
 				break;
+			case 'russian':
+				wp_url = WHITE_PAPER_RUSSIAN;
+				break;
 			default:
 				wp_url = WHITE_PAPER_ENGLISH;
 				break;
@@ -163,32 +187,32 @@ class Documents extends Component {
 			{
 				document_type: 'pdf',
 				url: wp_url,
-				link_text: 'White Paper',
-				description: 'We are out to create the best blockchain ever - read the white paper to judge for yourself. Join us and build on Telos.'
+				link_text: documents.white_paper.link,
+				description: documents.white_paper.description
 			},
 			{
 				document_type: 'pdf',
-				url: 'https://resources.telosfoundation.io/TELOS Electronic Press Kit _final_9.28.18.pdf',
-				link_text: 'Electronic Press Kit',
-				description: 'Everything you need to know about Telos in one PDF.'
+				url: press_kit_en,
+				link_text: documents.press_kit.link,
+				description: documents.press_kit.description
 			},
 			{
 				document_type: 'pdf',
 				url: sg_en,
-				link_text: 'Telos Style Guide',
-				description: 'A style guide featuring Telos Foundation logos, color palettes and fonts for brand use.'
+				link_text: documents.style_guide.link,
+				description: documents.style_guide.description
 			},
 			{
 				document_type: 'zip',
 				url: 'https://resources.telosfoundation.io/Telos_Logos_and_Icons.zip',
-				link_text: 'Telos Logo and Icon',
-				description: 'A package containing an assortment of file sizes and types for the Telos logo and icon.'
+				link_text: documents.logos_icons.link,
+				description: documents.logos_icons.description
 			}
 		];
 
 		return (
 			<section id='download_documents'>
-				<h2>Documents</h2>
+				<h2>{documents.heading}</h2>
 				<hr />
 				<Row>
 					<Col md={8} mdOffset={2}>
@@ -217,8 +241,8 @@ class Documents extends Component {
 
 						<div className='download_banner_container'>
 							<div className='download_banner_description'>
-								<h3>Telos Article Splash Banners</h3>
-								<p>Splash Banner art for use in online articles about Telos.</p>
+								<h3>{banners.heading}</h3>
+								<p>{banners.subheading}</p>
 							</div>
 							<Row>
 								{

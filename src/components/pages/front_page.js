@@ -1,6 +1,7 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
+import {Link} from 'react-router-dom';
 
 import icon_dapps from '../../img/Telos_MarketingSite_Icon_dapps_200px.png';
 import icon_dpos from '../../img/Telos_MarketingSite_Icon_dpos_200px.png';
@@ -10,8 +11,8 @@ import white_paper from '../../img/white_paper_pdf_solid.png';
 //partners logos
 import eos_detroit from '../../img/partner_logos/logo_eosdetroit_small.png';
 import eos_metal from '../../img/partner_logos/logo_eosmetal.png';
-import dutcheos from '../../img/partner_logos/logo_ketendutch.png';
-import eosukio from '../../img/partner_logos/logo_eosukio2.png';
+import dutcheos from '../../img/partner_logos/logo_dutch_eos.png';
+import telosuk from '../../img/partner_logos/logo_telos_uk.png';
 import eosbarcelona from '../../img/partner_logos/logo_eosbarcelona.png';
 import eosvan from '../../img/partner_logos/logo_eosvan.png';
 import goodblock from '../../img/partner_logos/logo_goodblock.png';
@@ -22,8 +23,10 @@ import eosgreen from '../../img/partner_logos/logo_eosgreen.png';
 import fuzzy from '../../img/partner_logos/logo_fuzzy.png';
 import caleos from '../../img/partner_logos/logo_caleos.png';
 import eos_in_space from '../../img/partner_logos/logo_eosspace.png';
-import eos_sweden from '../../img/partner_logos/logo_eossweden.png';
-import eos_miami from '../../img/partner_logos/logo_eosmiami.png';
+// import eos_sweden from '../../img/partner_logos/logo_eossweden.png';
+import sweden_cornet from '../../img/partner_logos/logo_swedencornet.png';
+// import eos_miami from '../../img/partner_logos/logo_eosmiami.png';
+import telos_miami from '../../img/partner_logos/logo_telos_miami.png';
 import hellenicos from '../../img/partner_logos/logo_hellenicos.png';
 import discover_telos from '../../img/partner_logos/logo_discovertelos.png';
 import zmeta from '../../img/partner_logos/logo_zmeta.png';
@@ -36,9 +39,29 @@ import madrid from '../../img/partner_logos/logo_telos_madrid.png';
 import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
 import telos_dac from '../../img/partner_logos/logo_telos_dac.png';
 import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
+import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
+import zephyr from '../../img/partner_logos/logo_zephyr.png';
+import telos_vancouver from '../../img/partner_logos/logo_telos_vancouver.png';
+import kainos from '../../img/partner_logos/logo_kainos.png';
+import telos_global from '../../img/partner_logos/logo_telosglobal.png';
+
+//exchange logos
+import chainrift from '../../img/exchange_logos/exchange_chainrift.png';
+import dexeos from '../../img/exchange_logos/exchange_dexeos.png';
+
+import chainrift_button from '../../img/exchange_logos/Chainrift-Button.jpg';
+import dexeos_button from '../../img/exchange_logos/DEXEOS-Button.jpg';
+import findex_button from '../../img/exchange_logos/Findex-Button.jpg';
+
+import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 
 //white papers
-import {WHITE_PAPER_ENGLISH, WHITE_PAPER_KOREAN, WHITE_PAPER_CHINESE} from '../../config/constants';
+import { 
+	WHITE_PAPER_ENGLISH,
+	WHITE_PAPER_KOREAN,
+	WHITE_PAPER_CHINESE,
+	WHITE_PAPER_RUSSIAN
+} from '../../config/constants';
 
 //charts
 import chart_ch from '../../img/charts/Telos_MarketingSite_Chart_1000px_CH.png';
@@ -62,9 +85,9 @@ const partnersArr = [
 		url: 'https://eosmetal.io'
 	},
 	{
-		name: 'eosuk io',
-		logo: eosukio,
-		url: 'https://eosuk.io/'
+		name: 'telos uk',
+		logo: telosuk,
+		url: 'https://telosuk.io'
 	},
 	{
 		name: 'dutch eos',
@@ -77,9 +100,9 @@ const partnersArr = [
 		url: 'http://eosbarcelona.com/'
 	},
 	{
-		name: 'eos van',
-		logo: eosvan,
-		url: 'http://www.eosvan.io/'
+		name: 'telos vancouver',
+		logo: telos_vancouver,
+		url: 'https://www.telosvancouver.io/'
 	},
 	{
 		name: 'good block',
@@ -120,13 +143,13 @@ const partnersArr = [
 		url: 'https://eosin.space/#telos'
 	},
 	{
-		name: 'eos miami',
-		logo: eos_miami,
-		url: 'http://eos.miami'
+		name: 'telos miami',
+		logo: telos_miami,
+		url: 'http://telos.miami'
 	},
 	{
 		name: 'eos sweden',
-		logo: eos_sweden,
+		logo: sweden_cornet,
 		url: 'https://eossweden.eu/'
 	},
 	{
@@ -182,6 +205,25 @@ const partnersArr = [
 		name: 'telos canton',
 		logo: telos_canton,
 		url: 'https://teloscanton.io'
+	},
+	{
+		name: 'eos impera',
+		logo: eos_impera,
+		url: 'https://eosimpera.io'
+	},
+	{
+		name: '21 zephyr',
+		logo: zephyr,
+		url: 'https://telos-21zephyr.com'
+	},
+	{
+		name: 'kainos',
+		logo: kainos
+	},
+	{
+		name: 'TelosGlobal',
+		logo: telos_global,
+		url: 'https://telosglobal.io'
 	}
 ];
 
@@ -200,8 +242,13 @@ const FrontPage = ({landing_page, language}) => {
 			github_text,
 			partners_heading } = landing_page;
 
+	const getStyle = () => {
+		if(language === 'arabic') return {direction: 'rtl'};
+		return {};
+	};
+
 	return (
-		<div>
+		<div style={getStyle()}>
 			<Intro
 				intro_heading={intro_heading}
 				intro_content={intro_content}
@@ -218,6 +265,8 @@ const FrontPage = ({landing_page, language}) => {
 				white_paper_content={white_paper_content}
 				github_text={github_text}
 				language={language} />
+			<Exchanges />
+			<Wallets />
 			<Partners
 				partners_heading={partners_heading} />
 		</div>
@@ -346,6 +395,9 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text, lang
 		case 'mandarin':
 			wp_url = WHITE_PAPER_CHINESE;
 			break;
+		case 'russian':
+			wp_url = WHITE_PAPER_RUSSIAN;
+			break;
 		default:
 			wp_url = WHITE_PAPER_ENGLISH;
 			break;
@@ -385,6 +437,82 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text, lang
 								</ScrollAnimation>
 							</Col>
 						</Row>
+					</Col>
+				</Row>
+			</Grid>
+		</section>
+	);
+};
+
+const Exchanges = () => {
+	return (
+		<section id='exchanges'>
+			<header>
+				<h1>Participating Exchanges</h1>
+			</header>
+			<div className='exchange_intro'>
+				<Grid>
+					<Row>
+						<Col md={8} mdOffset={2}>
+							<p>Buy TLOS, the Telos token, and exchange them for other currencies on these exchanges. Check back often for new exchange partnerships!</p>
+						</Col>
+					</Row>
+				</Grid>
+			</div>
+			<Grid>
+				<Row>
+					<Col md={10} mdOffset={1}>
+						<div className='exchange_buttons'>
+							<div className='exchange_button'>
+								<a
+									href='https://chainrift.com'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<img src={chainrift_button} alt='chainrift' />
+								</a>
+							</div>
+							<div className='exchange_button'>
+								<a
+									href='https://dexeos.io'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<img src={dexeos_button} alt='dexeos' />
+								</a>
+							</div>
+							<div className='exchange_button'>
+								<a
+									href='https://findex.pro'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<img src={findex_button} alt='findex' />
+								</a>
+							</div>	
+						</div>
+					</Col>
+				</Row>
+			</Grid>
+		</section>
+	);
+};
+
+const Wallets = () => {
+	return (
+		<section id='wallets'>
+			<header>
+				<h1>Telos Wallets</h1>
+			</header>
+			<Grid>
+				<Row>
+					<Col md={10} mdOffset={1}>
+						<div className='sqrl_wallet'>
+							<p>Store and retrieve your TLOS tokens on these wallets.<br /> Check back often for new wallet partnerships!</p>
+							<Link to='/downloads'>
+								<img src={sqrl_logo} alt='sqrl wallet' />
+							</Link>
+						</div>
 					</Col>
 				</Row>
 			</Grid>

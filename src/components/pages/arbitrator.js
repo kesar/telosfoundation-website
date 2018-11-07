@@ -9,6 +9,10 @@ import '../../styles/arbitrator.css';
 
 //images
 import marc_roger from '../../img/arbitrator/marc-roger.jpg';
+import raul_sepulveda from '../../img/arbitrator/Raul Vidal y Sepulveda.jpg';
+import roberto_corretjer from '../../img/arbitrator/Roberto Corretjer.png';
+import moises_raba from '../../img/arbitrator/moises_raba.png';
+import mark_blank from '../../img/arbitrator/mark_blankenship.jpeg';
 
 const arbitratorCandidates = [
 	{
@@ -26,6 +30,57 @@ const arbitratorCandidates = [
 			'French'
 		],
 		cand_country: 'Canada'
+	},
+	{
+		cand_name: 'Roberto Corretjer',
+		cand_vote_name: 'arbrobertocorretjer',
+		cand_statement: [
+			'Corporate attorney, businessman, and social entrepreneur, Roberto brings his extensive corporate and real-estate experience to the Telos Foundation Arbitration Panel.',
+			'Roberto sits on the Board of Directors of Blockchain Industries (a publically traded company, ticker symbol "BCII"), and has served as a leading corporate and real-estate attorney in Puerto Rico – negotiating real-estate settlements for some of the largest construction companies and real-estate developers in the region. He has also represented developers and investors in the acquisition and disposition of commercial and residential real-estate assets, including equity, leasehold, and debt.',
+			'Roberto’s unique presence is his bi-cultural experience in both North America and South America.',
+			'Roberto holds a Masters Degree from Northwestern University and is licensed to practice law in Washington D.C. and Puerto Rico.'
+		],
+		cand_image: roberto_corretjer,
+		cand_languages: [
+			'English',
+			'Spanish'
+		]
+	},
+	{
+		cand_name: 'Raúl Vidal y Sepúlveda',
+		cand_vote_name: 'arbraulsepulveda',
+		cand_statement: [
+			'Former Assistant Secretary for International Affairs for the Department of Economic Development and Commerce of Puerto Rico, Raul was also the lead promoter of the Island’s incentives around the world and the Director for Puerto Rico’s New York Office. As such, he attracted over $700 million in foreign direct investments to the Island.',
+			'A very strong supporter of the blockchain revolution, and a sponsor or the recent #BlockchainUnbound, #CoinAgenda, and #RestartWeek conferences on the island, several of Raul’s other successful projects include Puerto Rico’s first commercial bank in 30 years, two corporate headquarters, a major hotel and tourism investment, and the Island’s first A rated re-insurer. Recent accomplishments include the processing of high net-worth individuals under Acts 20 and 22, the very same incentives he helped develop in 2012 under Governor Luis Fortuno’s administration.',
+			'In recognition for his work on behalf of Puerto Rico’s economic development, Raul was named by the World Economic Forum as a founding Global Shaper for the San Juan Hub, and was recently invited as the first Puerto Rican to participate in the WEF’s Annual Meeting in Davos, Switzerland to speak on the role of cities as centers for economic development, and to take part in the Prime Minister of Australia’s G-20 2014 Presidency platform team.'
+		],
+		cand_image: raul_sepulveda,
+		cand_languages: [
+			'English',
+			'Spanish'
+		]
+	},
+	{
+		cand_name: 'Moises Kaba III, Esq.',
+		cand_vote_name: 'arbmoiseskaba',
+		cand_statement: [
+			'Moises has been an attorney for over 30 years serving clients in both State and Federal Courts in Florida on a wide range of legal practice areas. He is a proven litigator, corporate and transactional attorney and business entrepreneur who is self-motivated, energetic and solutions-oriented with a solid record of success in all stages of his legal and business career.',
+			'Mr. Kaba received his Juris Doctorate (JD) degree from Nova Southeastern University Shepard Broad College of Law in 1985, and became admitted as a member of the Florida Bar in 1986. He also received a Bachelor Degree in Business Administration with a major in Accounting from St. Thomas University in 1983, and an Associate in Arts degree in 1982 from Miami Dade Community College. Mr. Kaba is also admitted to practice law as a member of the Federal Court Bars of the United States District Court for The Southern District Court of Florida, United States District Court For The Middle District Court of Florida and United States District Court For The Northern District of Florida.',
+			'Mr. Kaba possesses the legal talent and business acumen to lead this company to achieve the growth, development and desired results of creating a truly forward thinking and innovative community token and business model.'
+		],
+		cand_image: moises_raba
+	},
+	{
+		cand_name: 'Mark Blankenship',
+		cand_vote_name: 'arbmarkblankenship',
+		cand_statement: [
+			'Mark Blankenship is a 30 year Attorney licensed to practice in Texas and New Mexico, as well as in the United States District Court for the Northern and Western Districts of Texas.  His practice has been solely in the civil law area, representing and defending individuals as well as multinational corporations. Mark is a top rated attorney by both Martindale Hubbel and Avvo Attorney peer rating services. He has been inducted into the prestigious American Board of Trial Lawyers (ABOTA). His experience includes representing clients  jury trials and administrative proceedings. He also has extensive experience in mediation and arbitration.',
+			'In community service outside of the law, Mark was named the Outstanding School Board Member in the state of Texas for 2014. Mark’s unique experience in civil law, arbitration and mediation give him the tools to best help network members resolve disputes in a fair and expeditious manner.'
+		],
+		cand_image: mark_blank,
+		cand_languages: [
+			'English'
+		]
 	}
 ];
 
@@ -44,19 +99,19 @@ const arbitratorDocuments = [
 	{
 		name: 'Telos Arbitration Process Document',
 		description: 'This document outlines how the arbitration of disputes and interventions to change account or contract values will be administered on the Telos Network.',
-		url: 'https://medium.com/@teloslogical/fyc-telos-network-arbitration-process-e4ed6f9e4ace',
+		url: 'https://resources.telosfoundation.io/governance_documents/TBNARP_Adopted_2018-10-26.pdf',
 		type: 'link'
 	},
 	{
 		name: 'Telos Arbitrators Minimum Requirements',
 		description: 'All arbitrators must meet minimum requirements to ensure that they are qualified to settle disputes on the Telos Network.',
-		url: 'https://resources.telosfoundation.io/arbitrator_documents/Telos Arbitrator Minimum Requirements.pdf',
+		url: 'https://resources.telosfoundation.io/governance_documents/Telos_Blockchain_Network_Arbitrator_Minimum_Requirements_Adopted_2018-10-12.pdf',
 		type: 'pdf'
 	},
 	{
 		name: 'regarbitrator human-language contract',
 		description: 'All arbitrators must agree to fulfill the terms outlined in this smart contract.',
-		url: 'https://resources.telosfoundation.io/arbitrator_documents/Telos regarb Human-language Contract.pdf',
+		url: 'https://resources.telosfoundation.io/governance_documents/Telos_Regarb_Human-language_Contract_Adopted_2018-10-12.pdf',
 		type: 'pdf'
 	}
 ];
@@ -183,6 +238,19 @@ const ArbitratorCandidate = (
 			cand_country
 		}
 	) => {
+
+	const getDescription = () => {
+		return cand_description ? <h4>{cand_description}</h4> : '';
+	};
+
+	const getCountry = () => {
+		return cand_country ? <p>Country: &nbsp;&nbsp;{cand_country}</p> : '';
+	};
+
+	const getLanguages = () => {
+		return cand_languages ? <p>Languages: &nbsp;&nbsp;{cand_languages.join(', ')}</p> : '';
+	};
+
 	return (
 		<div className='arbitrator_candidate'>
 			<Row>
@@ -194,10 +262,10 @@ const ArbitratorCandidate = (
 				<Col md={9} sm={8}>
 					<div className='arbitrator_candidate_content'>
 						<h3>{cand_name}</h3>
-						<h4>{cand_description}</h4>
+						{getDescription()}
 						{cand_statement.map((par, i) => <p key={i}>{par}</p>)}
-						<p>Languages: &nbsp;&nbsp;{cand_languages.join(', ')}</p>
-						<p>Country: &nbsp;&nbsp;{cand_country}</p>
+						{getLanguages()}
+						{getCountry()}
 						<p>Vote for: <span className='candidate_vote_name'>{cand_vote_name}</span></p>
 					</div>
 				</Col>

@@ -22,7 +22,7 @@ const Checklist = () => {
 							<Col md={10} mdOffset={1}>
 								<div className='checklist_intro'>
 									<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
-									<h2>Next go/no-go decision date: Oct 17, 2018 16:00 UTC</h2>
+									<h2>Next go/no-go decision date: Nov 7th, 2018 17:00 UTC</h2>
 									<h4>On a yes vote, the network will launch 8 hours later at midnight UTC</h4>
 								</div>
 							</Col>
@@ -108,7 +108,7 @@ const DevelopmentCode = () => {
 					Rewrite regproducer to include BP json format
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/55' />
 				</li>
-				<li className='no'>
+				<li className='yes'>
 					Enforce BP minimums
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/4' />
 				</li>
@@ -126,14 +126,14 @@ const Governance = () => {
 		<section id='governance_cl'>
 			<h3>Governance</h3>
 			<ul className='top_level'>
-				<li className='in_progress'>
-					Telos network operating agreement
+				<li className='yes'>
+					Telos Blockchain Network operating agreement
 					<InfoLinks telos_link='https://telosfoundation.io/downloads' />
 				</li>
-				<li className='in_progress'>Telos foundation voting tokens</li>
-				<li className='no'>TF RAM administration</li>
-				<li className='no'>Ratify final governance program</li>
-				<li className='in_progress'>Minimum BP requirements</li>
+				<li className='in_progress'>Telos Foundation voting tokens</li>
+				<li className='yes'>TF RAM administration</li>
+				<li className='yes'>Ratify final governance program</li>
+				<li className='yes'>Minimum BP requirements</li>
 			</ul>
 		</section>
 	);
@@ -148,7 +148,7 @@ const Contracts = () => {
 					Ratify/Amend contract
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/29' />
 				</li>
-				<li className='no with_sublevel'>
+				<li className='in_progress with_sublevel'>
 					Arbitration contract
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/30' />
 					<ul className='sub_level'>
@@ -162,7 +162,6 @@ const Contracts = () => {
 					Worker proposal contract
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/46' />
 				</li>
-				<li className='no'>BP Adjudication contract</li>
 			</ul>
 		</section>
 	);
@@ -182,6 +181,7 @@ const Tools = () => {
 					</ul>
 				</li>
 				<li className='yes'>Block Explorer</li>
+				<li className='yes'>Get listed with at least one exchange</li>
 			</ul>
 		</section>
 	);
@@ -192,22 +192,22 @@ const Miscellaneous = () => {
 		<section id='misc_cl'>
 			<h3>Miscellaneous</h3>
 			<ul className='top_level'>
-				<li className='in_progress'>Include snapshot accounts</li>
+				<li className='yes'>Include snapshot accounts</li>
 				<li className='yes'>
 					Community rewards system
 					<InfoLinks telos_link='https://telosfoundation.io/rewards' />
 				</li>
-				<li className='no'>Telos Foundation System</li>
+				<li className='yes'>Telos Foundation System</li>
 				<li className='yes'>Launch group rewards system</li>
 				<li className='yes'>Verified capped genesis snapshot</li>
-				<li className='in_progress'>At least 40 BP candidates have successfully participated in test launches</li>
-				<li className='no'>Agree upon ABP launch group (six across globe)</li>
-				<li className='in_progress'>
+				<li className='yes'>At least 40 BP candidates have successfully participated in test launches</li>
+				<li className='yes'>Agree upon ABP launch group (six across globe)</li>
+				<li className='yes'>
 					Lost tokens processed
 					<InfoLinks telos_link='https://telosfoundation.io/recovery' />
 				</li>
-				<li className='in_progress'>Two testnets up, public and private staging testnet</li>
-				<li className='in_progress'>Define final TLOS token balance (EOS snapshot + Rewards +/- lost/compromised keys)</li>
+				<li className='yes'>Two testnets up, public and private staging testnet</li>
+				<li className='yes'>Define final TLOS token balance (EOS snapshot + Rewards +/- lost/compromised keys)</li>
 			</ul>
 		</section>
 	);

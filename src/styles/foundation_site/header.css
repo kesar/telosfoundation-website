@@ -1,0 +1,13 @@
+.foundation_header {
+	background-size: 100% 100%;
+	padding: 35px 0;
+}
+
+.foundation_header .logo {
+	width: 55px;
+	max-width: 100%;
+}
+
+.foundation_header .content_container {
+	padding: 0 20px;
+}

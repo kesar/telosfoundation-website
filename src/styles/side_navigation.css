@@ -8,6 +8,7 @@
 	transform: translateX(300px);
 	transition: transform 0.5s ease;
 	z-index: 1;
+	min-height: 525px;
 }
 
 .side_nav_open .side_nav {
@@ -35,4 +36,16 @@
 
 .side_nav header {
 	padding: 40px;
+}
+
+.side_nav footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 0 40px 40px 40px;
+}
+
+.side_nav footer img {
+	max-width: 100%;
 }

@@ -1,11 +1,9 @@
 import React, {Component} from 'react';
-import Header from './header';
-import Body from './body';
-import Footer from './footer';
+import MainSite from './main_site';
+import FoundationSite from './foundation_site';
 import {selectLanguage, toggleSideNav} from '../actions';
 import {connect} from 'react-redux';
-import {BrowserRouter as Router} from 'react-router-dom';
-import SideNavigation from './side_navigation';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import {Helmet} from 'react-helmet';
 import '../styles/app.css';
 
@@ -30,10 +28,13 @@ class App extends Component {
 					<Helmet>
 						<title>Telos Foundation</title>
 					</Helmet>
-					<Header />
-					<Body />
-					<Footer />
-					<SideNavigation />
+					{/*<Header />*/}
+					<Switch>
+						<Route path='/foundation' component={FoundationSite} />
+						<Route path='/' component={MainSite} />
+					</Switch>
+					{/*<Footer />*/}
+					{/*<SideNavigation />*/}
 				</div>
 			</Router>
 		);

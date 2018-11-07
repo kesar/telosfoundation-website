@@ -4,6 +4,7 @@ import {toggleSideNav} from '../actions';
 import {withRouter} from 'react-router-dom';
 import '../styles/side_navigation.css';
 import telos_logo from '../img/Telos_MarketingSite_TelosLogo_500px.png';
+import logo_w_text from '../img/logo_w_text.png';
 
 const SideNavigation = (props) => {
 	return (
@@ -26,14 +27,14 @@ const SideNavigation = (props) => {
 				</li>
 				<li>
 					<a
-						href='/downloads'
+						href='/governance'
 						onClick={e => {
 							e.preventDefault();
-							props.history.push('/downloads');
+							props.history.push('/governance');
 							props.toggleSideNav(false);
 						}}
 					>
-						DOWNLOADS
+						GOVERNANCE
 					</a>
 				</li>
 				<li>
@@ -46,6 +47,30 @@ const SideNavigation = (props) => {
 						}}
 					>
 						ARBITRATOR PROGRAM
+					</a>
+				</li>
+				<li>
+					<a
+						href='/dapps'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/dapps');
+							props.toggleSideNav(false);
+						}}
+					>
+						DAPP DEVELOPMENT
+					</a>
+				</li>				
+				<li>
+					<a
+						href='/downloads'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/downloads');
+							props.toggleSideNav(false);
+						}}
+					>
+						DOWNLOADS
 					</a>
 				</li>
 				<li>
@@ -74,17 +99,29 @@ const SideNavigation = (props) => {
 				</li>
 				<li>
 					<a
-						href='/dapps'
+						href='/faq'
 						onClick={e => {
 							e.preventDefault();
-							props.history.push('/dapps');
+							props.history.push('/faq');
 							props.toggleSideNav(false);
 						}}
 					>
-						DAPP DEVELOPMENT
+						FAQ
 					</a>
 				</li>
 			</ul>
+			<footer>
+				<a 
+					href='/foundation'
+					onClick={e => {
+						e.preventDefault();
+						props.history.push('/foundation');
+						props.toggleSideNav(false);
+					}}
+				>
+					<img src={logo_w_text} alt='side nav logo' />
+				</a>
+			</footer>
 		</nav>
 	);
 };

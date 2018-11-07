@@ -11,6 +11,7 @@ export default class RewardsModal extends Component {
 
 		this.state = {
 			email: '',
+			publicKey: '',
 			platforms: [
 				{
 					platform: '',
@@ -23,6 +24,7 @@ export default class RewardsModal extends Component {
 			termsAcceptedTouched: false
 		};
 		this.handleEmailChange = this.handleEmailChange.bind(this);
+		this.handlePublicKeyChange = this.handlePublicKeyChange.bind(this);
 		this.handleCheckmarkChange = this.handleCheckmarkChange.bind(this);
 		this.handleUsernameChange = this.handleUsernameChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
@@ -60,6 +62,10 @@ export default class RewardsModal extends Component {
 		this.setState({email: e.target.value});
 	}
 
+	handlePublicKeyChange(e){
+		this.setState({publicKey: e.target.value});
+	}
+
 	handleAddPlatform(){
 		const {platforms} = this.state;
 		this.setState({
@@ -81,7 +87,7 @@ export default class RewardsModal extends Component {
 
 	handleSubmit(e){
 		e.preventDefault();
-		const {email, platforms, termsAccepted} = this.state;
+		const {email, platforms, termsAccepted, publicKey} = this.state;
 		if(
 			!email ||
 			!termsAccepted
@@ -104,6 +110,7 @@ export default class RewardsModal extends Component {
 
 		const formData = {
 			email: email.trim(),
+			publicKey: publicKey.trim(),
 			platform: platformsArr,
 			username: usernamesArr,
 			termsAccepted: termsAccepted			
@@ -137,7 +144,7 @@ export default class RewardsModal extends Component {
 	}
 
 	renderForm(){
-		const {email, termsAccepted} = this.state;
+		const {email, termsAccepted, publicKey} = this.state;
 		return (
 			<form 
 				className='rewards_form'
@@ -152,6 +159,13 @@ export default class RewardsModal extends Component {
 						onChange={this.handleEmailChange}
 						onFocus={() => this.setState({emailTouched: true})} />
 					<FormControl.Feedback />
+				</FormGroup>
+				<FormGroup>
+					<FormControl
+						type='text'
+						value={publicKey}
+						placeholder='Your public Eos/Telos key'
+						onChange={this.handlePublicKeyChange} />
 				</FormGroup>
 				{
 					this.state.platforms.map((platformInputs, idx) => {

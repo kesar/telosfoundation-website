@@ -4,9 +4,9 @@
         "intro_heading": "Blockchain Aperfeiçoado",
         "intro_content": "Delegated Proof of Stake é o futuro de contrato inteligente em blockchain. Combinamos rápida execução e escalabilidade do software EOSIO com a verdadeira descentralização que torna o DPoS sustentável. Telos terá a distribuição de dinheiro mais equilibrada de qualquer outra blockchain. Esta distribuição de tokens melhora a governança para que a rede seja mais segura e sustentável.",        
         "developers_heading": "Para desenvolvedores",
-        "developers_content": "Telos existe para fornecer uma rede segura, estável e econômica para a implementação de DApps de classe mundial. Os desenvolvedores podem esperar preços acessíveis de RAM e a capacidade de lançar contratos inteligentes open source ou proprietários sem taxas de transação.",
+        "developers_content": "Telos existe para fornecer uma rede segura, estável e econômica para a implementação de Dapps de classe mundial. Os desenvolvedores podem esperar preços acessíveis de RAM e a capacidade de lançar contratos inteligentes open source ou proprietários sem taxas de transação.",
         "dpos_heading": "Rápido DPoS",
-        "dpos_content": "A rede Telos processa até 50.000 transações por segundo para transações rápidas e de alta escalabilidade. Isso significa que o DApps pode atingir o público mundial com a velocidade de transação média mais rápida de qualquer blockchain - apenas 1.5 segundo!",
+        "dpos_content": "A rede Telos processa até 5.000 transações por segundo para transações rápidas e de alta escalabilidade. Isso significa que o Dapps pode atingir o público mundial com a velocidade de transação média mais rápida de qualquer blockchain - apenas 1.5 segundo!",
         "gov_heading": "Boa Governança",
         "gov_content": "Telos tem um sistema de governança rico desde a Constituição até eleições de produtores de bloco, financiamento de propostas de trabalhadores e adjudicação de disputas. Nenhum outro blockchain oferece uma governança coesa do Telos.",
         "white_paper_heading": "Baixe o white paper",
@@ -14,61 +14,328 @@
         "github_text": "Visite nosso Github",
         "partners_heading": "Conheça nossos parceiros"
     },
+  "rewards_page": {
+    "intro": {
+      "intro_heading": "The Community Rewards Program",
+      "intro_paragraphs": [
+        "Telos is a community-led alternative to EOS. We need you to help spread the word and make the Telos Network a success. You can share in the 1 million TLOS community rewards pool.",
+        "You can make videos, articles, tweets, posts, tutorials—just about anything that helps spread the word. Meetups, community management and more is all available and receives rewards both for the initial action <em>and</em> when people engage with you by liking, clapping, attending, viewing, whatever.",
+        "Once the Telos Network activates, you can submit a final list of your community engagement for your tokens. You can either supply us with your account name, or send us a Telos public key and new account name and we will create the account for you and fill it with your rewards!",
+        "Telos is a blockchain where your voice matters, so use that voice to tell everyone about the world changing advantages of the Telos Network."
+      ],
+      "join_us": "Join Us Today!",
+      "cta_text": "SIGN UP HERE"
+    },
+    "description": {
+      "main_heading": "Community Rewards Information",
+      "sub_heading": "Max Payout per participant: 10,000 TLOS",
+      "column_one": [
+        "All items subject to change and investigation. Gaming the system or getting rewards on a technicality will not be allowed.",
+        "Participants must register with the system portal above, providing their user names in the various platforms.",
+        "After network activation, participants will submit a final list of links and addresses for verification. Email instructions will be sent to all registered users prior to activation."
+      ],
+      "column_two": [
+        "Submissions must be received within one week of Telos network activation",
+        "All participants who earn tokens will receive a free Telos Address!",
+        "All posts must include links to an official Telos website or Telos social media page:"
+      ],
+      "column_three": [
+        "All judges' determinations are final and cannot be appealed or arbitrated.",
+        "If the total amount earned by participants exceeds the 1 million TLOS allocated, then all timely submissions will be reduced in like percentage to pay each participant a pro rata share.",
+        "Participants may not also claim rewards from the Telos Founders Rewards Pool. They can only be a member of one or the other."
+      ]
+    },
+    "table": {
+      "table_headings": {
+        "site_category": "Category",
+        "task_category": "Example Channels",
+        "task": "Specific Task",
+        "tier_reward": "Task Tier - Reward",
+        "proof": "Required Proof"
+      },
+      "table_rows": [
+        {
+          "site_category": "Video",
+          "task_category": "<a href='https://vimeo.com' target='_blank' rel='noopener noreferrer'>Vimeo</a>, <a href='https://youtube.com' target='_blank' rel='noopener noreferrer'>Youtube</a>, etc",
+          "task": "Post Online Video",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 10
+            },
+            {
+              "tier": "10 - 100 views",
+              "reward": 25
+            },
+            {
+              "tier": "100 - 250 views",
+              "reward": 75
+            },
+            {
+              "tier": "250 - 500 views",
+              "reward": 100
+            },
+            {
+              "tier": "500+",
+              "reward": 150
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Video (Tutorial)",
+          "task_category": "Tutorial Video Bonus",
+          "task": "Videos that demonstrate how to do something Telos-related (generally how to use a wallet, app, node, etc) in a clear, concise, positive manner",
+          "tier_reward": [
+            {
+              "tier": null,
+              "reward": "Double the value of a general purpose video"
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Social Media",
+          "task_category":"<a href=\"https:\/\/facebook.com\" target=\"_blank\" rel=\"noopener noreferrer\">Facebook<\/a>, <a href=\"https:\/\/linkedin.com\" target=\"_blank\" rel=\"noopener noreferrer\">LinkedIn<\/a>, <a href=\"https:\/\/plus.google.com\" target=\"_blank\" rel=\"noopener noreferrer\">Google+<\/a>, <a href=\"https:\/\/vk.com\" target=\"_blank\" rel=\"noopener noreferrer\">VK<\/a>, <a href=\"https:\/\/ok.ru\" target=\"_blank\" rel=\"noopener noreferrer\">Oknaklassniki<\/a>, <a href=\"https:\/\/im.qq.com\" target=\"_blank\" rel=\"noopener noreferrer\">QQ<\/a>, <a href=\"https:\/\/qzone.qq.com\/\r\n\" target=\"_blank\" rel=\"noopener noreferrer\">QZone<\/a> Posts (and similar social sites)",
+          "task": "Post on site",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 5
+            },
+            {
+              "tier": "1 - 10 Likes",
+              "reward": 10
+            },
+            {
+              "tier": "11 - 25 Likes",
+              "reward": 25
+            },
+            {
+              "tier": "26 - 75 Likes",
+              "reward": 50
+            },
+            {
+              "tier": "76 - 500 Likes",
+              "reward": 75
+            },
+            {
+              "tier": "500+ Likes",
+              "reward": 125
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Micro-Blogging",
+          "task_category": "<a href=\"https:\/\/twitter.com\" target=\"_blank\" rel=\"noopener noreferrer\">Twitter<\/a>, <a href=\"https:\/\/weibo.com\" target=\"_blank\" rel=\"noopener noreferrer\">Weibo<\/a> Posts (and similar public messaging services)",
+          "task": "Post on <a href=\"https:\/\/twitter.com\" target=\"_blank\" rel=\"noopener noreferrer\">Twitter<\/a>",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 3
+            },
+            {
+              "tier": "1 - 10 Likes/Retweets",
+              "reward": 10
+            },
+            {
+              "tier": "11 - 25 Likes/Retweets",
+              "reward": 15
+            },
+            {
+              "tier": "26 - 75 Likes/Retweets",
+              "reward": 30
+            },
+            {
+              "tier": "76 - 150 Likes/Retweets",
+              "reward": 75
+            },
+            {
+              "tier": "150+ Likes/Retweets",
+              "reward": 150
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Article-based Forums",
+          "task_category": "<a href=\"https:\/\/medium.com\" target=\"_blank\" rel=\"noopener noreferrer\">Medium<\/a>, <a href=\"https:\/\/steemit.com\" target=\"_blank\" rel=\"noopener noreferrer\">Steemit<\/a>, <a href=\"https:\/\/reddit.com\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit<\/a>, <a href=\"https:\/\/tieba.baidu.com\" target=\"_blank\" rel=\"noopener noreferrer\">Baidu Tieba<\/a> article writing",
+          "task": "Post on <a href=\"https:\/\/medium.com\" target=\"_blank\" rel=\"noopener noreferrer\">Medium<\/a> or <a href=\"https:\/\/steemit.com\" target=\"_blank\" rel=\"noopener noreferrer\">Steemit<\/a> and similar blogging sites including > 250 word posts/responses on <a href=\"https:\/\/reddit.com\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit<\/a>.",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 50
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Forums and Chats",
+          "task_category": "Forum or Chat posts",
+          "task": "Post or reply on site",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 10
+            },
+            {
+              "tier": "1 replay (no repeats)",
+              "reward": 3
+            }
+          ],
+          "proof": "Link to forum with username"
+        },
+        {
+          "site_category": "Misc. Content",
+          "task_category": "Unforseen but usable content",
+          "task": "Technology tools (Blockchain explorers, tools kits, etc.)",
+          "tier_reward": [
+            {
+              "tier": "Unknown",
+              "reward": "Case by case"
+            }
+          ],
+          "proof": "Case by case"
+        },
+        {
+          "site_category": "Q&A and Tech Forums",
+          "task_category": "<a href=\"https:\/\/www.quora.com\" target=\"_blank\" rel=\"noreferrer noopener\">Quora<\/a>, Technical and Tutorial articles",
+          "task": "Creating an article meant to demonstrate how to do something on Telos and/or EOSIO programming that also prominently mentions Telos specifically in a neutral or positive light",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 50
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Image-based Social Media",
+          "task_category": "<a href=\"https:\/\/instagram.com\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram<\/a>, image posts\/work",
+          "task": "Graphic content, infographics, gifs, memes",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 50
+            }
+          ],
+          "proof": "Link"
+        },
+        {
+          "site_category": "Social Media Admin Work",
+          "task_category": "Forum Admin",
+          "task": "Managing a forum group top to bottom, keeping it on target, posting relevant articles, replying, etc",
+          "tier_reward": [
+            {
+              "tier": "3 - 10 Users",
+              "reward": 25
+            },
+            {
+              "tier": "11 - 50 Users",
+              "reward": 50
+            },
+            {
+              "tier": "51 - 100 Users",
+              "reward": 100
+            },
+            {
+              "tier": "101 - 250 Users",
+              "reward": 150
+            },
+            {
+              "tier": "251+ Users",
+              "reward": 200
+            }
+          ],
+          "proof": "Link to forum with username and details of work"
+        },
+        {
+          "site_category": "Physical Social Gatherings",
+          "task_category": "<a href=\"https:\/\/meetup.com\" target=\"_blank\" rel=\"noopener noreferrer\">Meetups<\/a>, etc.",
+          "task": "Create or speak at a <a href=\"https:\/\/meetup.com\" target=\"_blank\" rel=\"noopener noreferrer\">Meetup<\/a> or similar social group",
+          "tier_reward": [
+            {
+              "tier": "1 - 2 attendees",
+              "reward": 50
+            },
+            {
+              "tier": "3 - 5 attendees",
+              "reward": 75
+            },
+            {
+              "tier": "6 - 10 attendees",
+              "reward": 100
+            },
+            {
+              "tier": "11 - 20 attendees",
+              "reward": 125
+            },
+            {
+              "tier": "21+ attendees",
+              "reward": 150
+            }
+          ],
+          "proof": "Photos, Link to invite"
+        }
+      ]
+    }
+  },
   "token_recovery": {
     "intro": {
-      "heading": "Telos Lost Key Recovery Portal",
+      "heading": "Portal Telos de Recuperação de Chaves Perdidas",
       "content": [
-        "Were your keys lost or compromised on EOS? Telos wants to make sure the proper owners receive their TLOS tokens in our upcoming Telos sharedrop!",
-        "Telos will give TLOS tokens 1:1 based on the original EOS ERC-20 snapshot (up to 40,000 per account) using the same keys and account names as the EOS genesis. Unfortunately, this means that anyone whose keys were lost or compromised at that time or since that time will also need their keys replaced on the Telos chain. For this reason, we’re working to alert EOS genesis token holders that Telos will allow them to revise their keys where necessary.",
-        "The key replacement process needs to occur BEFORE the Telos mainnet launches. Because Telos is using the original ERC-20 snapshot, we can verify ownership based on the Ethereum address that held those keys and can bypass any phishing or other key loss that may have happened to accounts after EOS launched. We have a special window of time in which to help anyone who lost their EOS accounts to maintain control of their new Telos accounts.",
-        "To be clear, Telos can only protect lost or compromised genesis accounts on the Telos blockchain. Unfortunately, we have no power to aid lost key issues on EOS accounts"
+        "Suas chaves foram perdidas ou comprometidas na EOS? A Telos pretende garantir que os legítimos proprietários recebem seus tokens TLOS em nosso próximo sharedrop Telos!",
+        "A Telos fornecerá tokens TLOS 1:1 com base no snapshot EOS ERC-20 original (até 40.000 por conta) usando as mesmas chaves e nomes de conta que o EOS Genesis. Infelizmente, isto significa que qualquer pessoa cujas chaves estivessem perdidas ou comprometidas naquela altura, ou desde então, precisarão igualmente de ver as suas chaves substituídas na cadeia da Telos. Por esse motivo, estamos trabalhando para alertar os detentores de tokens EOS Genesis de que a Telos lhes permitirá que revisem suas chaves quando necessário.",
+        "É necessário que o processo de substituição das chaves ocorra ANTES do lançamento da rede principal Telos. Como a Telos usa o snapshot ERC-20 original, podemos verificar os legítimos proprietários com base no endereço Ethereum que continha as chaves em questão, contornando assim qualquer tentativa de phishing ou outro motivo de perda de chaves que possa ter ocorrido nas contas após o lançamento do EOS ter sido iniciado. Temos uma janela de tempo especial na qual poderemos ajudar qualquer pessoa que tnha perdido as suas contas EOS a manter o controle das suas novas contas Telos.",
+        "Para ser claro: a Telos só pode proteger contas Genesis perdidas ou comprometidas no blockchain da Telos. Infelizmente, não está ao nosso alcance ajudar a recuperar chaves perdidas em contas EOS."
       ] 
     },
     "process_one": {
-      "two_processes_heading": "There are two processes for Key Recovery",
-      "heading": "PROCESS 1",
+      "two_processes_heading": "Existem dois processos de Recuperação de Chaves",
+      "heading": "PROCESSO 1",
       "process_intro": [
-        "This is the process for any users who registered their EOS ERC-20 tokens but later lost their keys or had them compromised. This will apply to 98% of users so it is probably the right one for you.",
-        "You will sign a message on the Ethereum blockchain from the same address that held your EOS tokens at the snapshot. This message will include a new public key that you can generate in any wallet you choose; we show examples here using the Sqrl, the native Telos wallet. Sqrl can create a public key that begins with either EOS or TLOS; the order doesn’t matter.",
-        "Be sure to save the private key associated with your new public key. This is how you will access your account! Once you send the message, please send us the Ethereum address and EOS public key you recorded. We will verify the message and change the keys.",
-        "Follow the instructions below:"
+        "Este é o processo a seguir por todos os usuários que registraram seus tokens EOS ERC-20, mas depois perderam ou tiveram suas chaves comprometidas. Isto é aplicável a 98% dos usuários, pelo que, provavelmente, é a opção certa para você.",
+        "Você assinará uma mensagem no blockchain Ethereum a partir do mesmo endereço que continha seus tokens EOS no momento do snapshot. Esta mensagem incluirá uma nova chave pública que você poderá gerar em qualquer carteira à sua escolha; os exemplos aqui indicados usam Sqrl, a carteira nativa da Telos. A Sqrl pode criar uma chave pública que começa com EOS ou TLOS; a ordem é irrelevante.",
+        "Certifique-se de guardar a chave privada associada à sua nova chave pública. É assim que você acessará sua conta! Após enviar a mensagem, envie-nos o endereço Ethereum e a chave pública EOS que você registrou. Então verificaremos a mensagem e mudaremos as chaves.",
+        "Siga as instruções abaixo:"
       ],
-      "step_one": "Use any EOS or Telos wallet, Scatter, Greymass, etc..  We are using SQRL here to demonstrate how to generate a set of keys.",
+      "step_one": "Use qualquer carteira EOS ou Telos, Scatter, Greymass, etc. Neste exemplo, usaremos Sqrl para mostrar como gerar um conjunto de chaves.",
       "step_two": {
-        "step": "Generate a new set of keys.  (These are for a Telos account.)",
+        "step": "Gere um novo conjunto de chaves. (Que serão para uma conta Telos.)",
         "screenshot_captions": [
-          "Open up the Sqrl wallet.",
-          "Click \"Create New Account\" to get to the next screen. You do not need a new account.",
-          "Enter a made-up account name.  Any 12 digit account name/number will do.",
-          "Generate \"Owner Public Key\"",
-          "Copy \"Owner Public Key\" into \"Active Public Key\" field",
-          "Copy/Paste your Keys to a safe place!<br /> Offline storage is recommended.",
-          "Creating an account is not necessary, you just need your new keys!"
+          "Abra a carteira Sqrl.",
+          "Clique em \"Create New Account\" para ir para a tela seguinte. Não é necessária uma nova conta.",
+          "Digite um nome de conta inventado. Qualquer nome/número de conta com 12 dígitos servirá.",
+          "Crie \"Owner Public Key\"",
+          "Copie a \"Owner Public Key\" para o campo \"Active Public Key\" field",
+          "Copie/cole suas chaves para um local seguro! Armazenamento offline é recomendado.",
+          "Não é necessário criar uma nova conta, você apenas necessita das suas novas chaves!"
         ]
       },
       "step_three": {
-        "step": "Go to: <a href='https://www.myetherwallet.com/signmsg.html' target='_blank' rel='noopener noreferrer'>www.myetherwallet.com/signmsg.html</a>",
-        "sign_in": "Sign in and select the Ethereum wallet that held your EOS tokens.",
-        "copy_paste": "Copy/paste this message and add your Ethereum public key and your new Telos Public Key  (or an EOS key you want to use):",
-        "message": "As the cryptographically verified owner of ethereum address listed below (\"Ethereum Address\"), I attest that I did own the EOS tokens listed on the EOS ERC-20 snapshot associated with this address and that I hereby request that the public key for my account be changed to the new EOS public key below (\"New EOS Public Key\") or the Telos Network address equivalent for my corresponding account on the Telos Network. I agree to release the Telos Network and its Members - as well as the members of any blockchain project that may subsequently use this same value snapshot in the future - from any claim arising from this request. The cryptographic signature of this document constitutes my legal digital signature in all jurisdictions.",
-        "ethereum": "Ethereum Address:",
-        "public_key": "New EOS Public Key:",
-        "screenshot_caption": "Enter your own Ethereum address where you held your EOS tokens in \"Ethereum Address\" and your new SQRL public key into \"New EOS Public Key\"",
-        "screenshot_caption_two": "Log into the wallet that has your Ethereum account where your EOS tokens where held.",
-        "screenshot_caption_three": "Sign the pasted message with the Ethereum address and new Telos Public Key (or an EOS key you want to use).",
-        "screenshot_caption_four": "Copy this Signature text and send it in the form below",
-        "email_us": "Send us your information so we can research your claim."
+        "step": "Vá a: <a href='https://www.myetherwallet.com/signmsg.html' target='_blank' rel='noopener noreferrer'>www.myetherwallet.com/signmsg.html</a>",
+        "sign_in": "Inicie sessão e selecione a carteira Ethereum que continha seus tokens EOS.",
+        "copy_paste": "Copie/cole esta mensagem e junte-lhe sua chave pública Ethereum, bem como sua nova chave pública Telos (ou uma chave EOS que pretenda usar):",
+        "message": "Na qualidade de proprietário criptograficamente verificado do endereço Ethereum listado abaixo (\"Endereço Ethereum\"), atesto que possuía os tokens EOS listados no snapshot EOS ERC-20 associado a este endereço e solicito pela presente que a chave pública da minha conta seja alterada para a nova chave pública EOS abaixo (\"Nova Chave Pública EOS\") ou o endereço equivalente da Rede Telos para minha conta correspondente na Rede Telos. Eu concordo em liberar a Rede Telos e seus membros - assim como os membros de qualquer projeto de blockchain que possa subsequentemente usar este mesmo snapshot de valor no futuro - de qualquer reclamação resultante desta solicitação. A assinatura criptográfica deste documento constitui minha assinatura digital legal em todas as jurisdições.",
+        "ethereum": "Endereço Ethereum:",
+        "public_key": "Nova Chave Pública EOS:",
+        "screenshot_caption": "Digite seu endereço Ethereum, onde tinha armazenados seus tokens EOS, em \"Ethereum Address\" e sua nova chave pública Sqrl em \"New EOS Public Key\"",
+        "screenshot_caption_two": "Inicie sessão na carteira que contém sua conta Ethereum, onde seus tokens EOS estavam armazenados.",
+        "screenshot_caption_three": "Assine a mensagem copiada/colada com o endereço Ethereum e a nova Chave Pública Telos (ou uma chave EOS que pretenda usar).",
+        "screenshot_caption_four": "Copie este texto de Assinatura e envie-o através do formulário abaixo",
+        "email_us": "Envie-nos seus dados para que possamos analisar sua solicitação."
       },
-      "process_note": "Note:  No one from Telos will every ask for your private key! If you get an email from us it will only be to help you go through this process again to make sure it works."
+      "process_note": "Nota: Nunca ninguém da Telos pedirá a sua chave privada! Caso receba um email nosso, será apenas para o ajudar a levar a cabo este processo novamente, por forma a garantir que funciona."
     },
     "process_two": {
-      "heading": "PROCESS 2",
+      "heading": "PROCESSO 2",
       "process_intro": [
-        "This process is for people who never registered their EOS ERC-20 tokens with Block One prior to the genesis snapshot. Because you will need to enter your private ethereum keys, we are directing you to EOS Authority. They are a respected block producer and have developed a verified process that will work on the Telos network exactly as it does on the EOS network."
+        "Este processo é para pessoas que nunca registraram seus tokens EOS ERC-20 com o Bloco Um antes do snapshot instantâneo. Porque você precisará inserir suas chaves privadas, nós estamos direcionando você para a EOS Authority. Eles são um respeitado produtor de blocos e desenvolveram um processo verificado que funcionará na rede Telos exatamente como na rede EOS."
       ],
-      "eos_auth": "Go to the EOS Authority web site:",
-      "save_keys": "Save those keys for your SQRL wallet account.",
-      "import_wallet": "Import wallet through SQRL once network launches."
+      "eos_auth": "Visite o site da EOS Authority:",
+      "save_keys": "Guarde essas chaves na sua conta da carteira Sqrl.",
+      "import_wallet": "Importe a carteira via Sqrl quando a rede for lançada."
     },
     "recovery_form": {
       "heading": "Please enter your information",
@@ -77,6 +344,176 @@
       "generated_label": "Newly generated Telos (or EOS) address where you would like your TLOS to be sent",
       "signature_label": "Paste the signature text here.",
       "response": "Thanks for your information."
+    }
+  },
+  "downloads_page": {
+    "intro": {
+      "heading": "Downloads",
+      "subheading": "Download all the documents and tools that you need to join the Telos Network."
+    },
+    "wallets": {
+      "heading": "Telos Wallets",
+      "subheading": "Choose a wallet to store and trade your TLOS tokens.",
+      "sqrl_description": "Sqrl is a fully functional light wallet designed for the TELOS blockchain. This application can be used to connect to a remote TELOS API endpoint to perform producer voting actions and common wallet commands.",
+      "download": "DOWNLOAD",
+      "source": "SOURCE"
+    },
+    "documents": {
+      "heading": "Documents",
+      "white_paper": {
+        "link": "White Paper",
+        "description": "We are out to create the best blockchain ever - read the white paper to judge for yourself. Join us and build on Telos."
+      },
+      "press_kit": {
+        "link": "Electronic Press Kit",
+        "description": "Everything you need to know about Telos in one PDF."
+      },
+      "style_guide": {
+        "link": "Telos Style Guide",
+        "description": "A style guide featuring Telos Foundation logos, color palettes and fonts for brand use."
+      },
+      "logos_icons": {
+        "link": "Telos Logo and Icon",
+        "description": "A package containing an assortment of file sizes and types for the Telos logo and icon."
+      }
+    },
+    "banners": {
+      "heading": "Telos Article Splash Banners",
+      "subheading": "Splash Banner art for use in online articles about Telos."
+    }
+  },
+  "dapps_page": {
+    "intro": {
+      "heading": "Desenvolvimento de DAPPs",
+      "subheading": "A melhor rede faz os melhores DAPPs",
+      "tutorials_button": "TUTORIAIS",
+      "tutorials_description": "Aprenda a construir seu DAPP na rede Telos.",
+      "smart_contracts_button": "MODELOS DE CONTRATO INTELIGENTE",
+      "smart_contracts_description": "Crie contratos inteligentes capazes de executar funções básicas na Telos, tais como trocar tokens e votar.",
+      "coming_soon": "(Brevemente)"
+    },
+    "slides": {
+      "gigs": {
+        "heading": "Economias gig descentralizadas",
+        "content": [
+          "Economias gig descentralizadas - A Telos liderará o surgimento de uma nova e mais equitativa economia gig; imagine as possibilidades de uma próxima Uber ou Airbnb guiada por um conceito de propriedade comunitária e por uma força de trabalho descentralizada."
+        ]
+      },
+      "currency": {
+        "heading": "Moeda",
+        "content": [
+          "Uma moeda estável na Telos abrirá possibilidades para bilhões de pessoas em todo o mundo que não têm acesso a contas bancárias, proporcionando a transparência e a descentralização necessárias para evitar colapsos financeiros, como a crise econômica de 2008 ou a inflação extrema da moeda venezuelana."
+        ]
+      },
+      "records": {
+        "heading": "Informações e registros descentralizados",
+        "content": [
+          "A corrupção pode ser evitada quando os registros são abertos, transparentes e imutáveis. A qualidade da informação pode ser melhorada por via de incentivos equilibrados e esforços comunitários. A Telos pode suportar documentos vitais, incluindo registros de propriedade de imóveis, processos clínicos ou a próxima enciclopédia comunitária."
+        ]
+      }
+    },
+    "dapp_sections": {
+      "compatibility": {
+        "heading": "Compatibilidade EOS",
+        "content": [
+          "O EOS.IO é atualmente responsável por metade de todas as transações no blockchain e espera-se que seu desenvolvimento seja mais rápido que o de plataformas mais antigas, como Ethereum e NEO. A rede Telos executa o mesmo software EOS.IO que a EOS, de tal forma que os DAPPs escritos para EOS podem ser executados na Telos. Não é necessário reprogramar!"
+        ]
+      },
+      "powerful": {
+        "heading": "Elevado desempenho poderoso para o desenvolvimento descentralizado de DAPPs",
+        "content": [
+          "A Telos permite transações incrivelmente rápidas e gratuitas para estabelecer um mercado estável e acessível para o desenvolvimento de DAPPs. O fornecimento de RAM será dimensionado em função do seu uso real, a fim de garantir a acessibilidade e evitar açambarcamento. Os tokens Telos têm mais de três vezes os recursos utilitários dos EOS, e os desenvolvedores poderão adquirir e alocar-lhe recursos tais como CPU e largura de banda em nome dos usuários."
+        ]
+      },
+      "secure": {
+        "heading": "Rede segura e robusta",
+        "content": [
+          "A Telos expande-se sobre a rede EOS ao impor obrigações adicionais de informação e requisitos mínimos para os seus produtores de blocos, que devem manter uma rede de testes completa e aberta de forma a suportar o desenvolvimento de DAPPs. Os produtores de blocos não funcionais são temporariamente trocados logo após perderem apenas 30 minutos, ao contrário das 3 horas aplicáveis na rede principal EOS, para que os desenvolvedores encontrem menos períodos de pausa e menos problemas, sem comprometer a segurança. O pagamento justo garante que todos os produtores de blocos ativos e em espera estarão sempre prontos para produzir com o máximo desempenho e estabilidade."
+        ]
+      },
+      "proprietary": {
+        "heading": "Os DAPPs podem ser de código proprietário",
+        "content": [
+          "Proteja sua propriedade intelectual com a Telos. Ao contrário do EOS, a Telos não forçará todos os desenvolvedores a abrir o código dos seus contratos. Isso permite que os desenvolvedores comerciais de DAPPs evitem que outros simplesmente copiem seu trabalho."
+        ]
+      },
+      "decentralized": {
+        "heading": "Governança e Arbitragem Descentralizadas",
+        "content": [
+          "A Telos tem a propriedade mais descentralizada de qualquer blockchain existente hoje em dia. Nenhum indivíduo ou entidade começará com, ou provavelmente alguma vez deterá, sequer, um por cento do blockchain da Telos. O sistema de votação descentralizada da Telos garante que o blockchain é conduzido pela vontade da comunidade e pela mão firme dos produtores de blocos mais competentes.",
+          "Logo no seu lançamento, a Telos terá um Acordo Operacional de Rede e uma Organização de Arbitragem (TAO) completamente desenvolvidos e ratificados. Estas entidades garantirão que os conflitos serão resolvidos em tempo útil, de tal forma que os desenvolvedores possam se concentrar em DAPPs em vez de em disputas. Logo no seu lançamento, a Telos terá um Acordo Operacional de Rede e uma Organização de Arbitragem (TAO) completamente desenvolvidos e ratificados. Estas entidades garantirão que os conflitos serão resolvidos em tempo útil, de tal forma que os desenvolvedores possam se concentrar em DAPPs em vez de em disputas."
+        ]
+      }
+    }
+  },
+  "governance_page": {
+    "intro": {
+      "heading": "Governança - Visão Geral",
+      "subheading": "Telos é um blockchain governado, baseado em EOSIO - o mesmo software que a EOS utiliza - para que seja possível implementar DApps na Telos e na EOS com o mesmo código. Quando a Telos for lançada (já a 31 de Outubro de 2018), possuirá documentação completa e um conjunto de estruturas operacionais, tais como governança integralmente assente na cadeia, a capacidade de ratificar ou alterar os documentos de governança por votação da comunidade, um sistema de proposta de trabalhadores e eleição de produtores de blocos e árbitros. Abaixo estão listados os principais elementos e características da governança blockchain na Telos."
+    },
+    "documents": {
+      "heading": "OS DOCUMENTOS",
+      "subheading": "As definições, regras e procedimentos da governança da Telos estão contidos em seis documentos que serão registrados na cadeia e modificáveis por voto comunitário (pro rata à propriedade de tokens TLOS). Estes documentos são:",
+      "documents": {
+        "operating_agreement": {
+          "long_name": "Acordo Operacional (TBNOA)",
+          "short_name": "Acordo Operacional",
+          "long_description": "O documento estatutário principal da Telos descreve os direitos e responsabilidades advindos de se tornar um membro da Telos Blockchain Network. É necessário aderir a este contrato para acessar ou usar a Telos. Este acordo é o equivalente da Constituição EOS, da qual difere em forma: O TBNOA define completamente todos os participantes e partes da rede, e descreve ações de governança, como a eleição de produtores de blocos, a alteração dos documentos de governança ou a submissão de uma proposta de utilização do \"Worker Proposal Fund\". O TBNOA não herdou praticamente qualquer termo da Constituição EOS. O TBNOA inclui os outros cinco documentos de governança por referência, sendo que cada um deles adota as suas definições e termos.",
+          "short_description": "Documento estatutário central",
+          "eos_analog": "Constituição EOS",
+          "status": "Adotado"
+        },
+        "arbitration_rules": {
+          "long_name": "Regras & Procedimentos de Arbitragem (TBNARP)",
+          "short_name": "Regras & Procedimentos de Arbitragem",
+          "long_description": "As Regras e Procedimentos de Arbitragem descrevem todo o processo de arbitragem da Telos - desde a apresentação de um caso, passando pelos procedimentos seguidos na arbitragem, até à entrega das decisões de bloquio de produtores por parte dos árbitros, para execução. O documento EOS análogo a este são as Regras ECAF e o manual ECAF, ainda não publicado. As Regras de Arbitragem da Telos são totalmente independentes das Regras ECAF e não compartilham qualquer texto. Também elas constituem um documento central de governança da Telos, modificável pela comunidade, ao pasos que as Regras ECAF são definidas e mantidas pelo ECAF, sem que possam ser impactadas por algum mecanismo de contribuição ou controle da mais ampla comunidade EOS.",
+          "short_description": "Regras e procedimentos de arbitragem na Telos",
+          "eos_analog": "Regras ECAF",
+          "status": "Adotado"
+        },
+        "regproducer_contract": {
+          "long_name": "Contrato 'regproducer' em Termos de Linguagem Humana ('regproducer')",
+          "short_name": "Contrato 'Regproducer'",
+          "long_description": "O contrato de 'regproducer' é usado por qualquer membro que deseje tornar-se candidato a produtor de blocos para se auto-nomar para tal. Os termos em linguagem humana deste contrato definem as regras e responsabilidades dos candidatos a produtores de blocos. Este texto é em grande parte herdado do contrato 'regproducer' da EOS, com muito texto adicionado. A principal diferença entre as versões EOS e Telos é que, enquanto ambas listam ações proibidas, a versão da Telos também documenta penalidades para as infrações, o seu método de aplicação e a responsabilidade dos produtores de blocos de garantir a aplicação das regras sobre outros produtores de blocos.",
+          "short_description": "Regras, responsabilidades e representações dos produtores de blocos",
+          "eos_analog": "Contrato  'Regproducer' EOS",
+          "status": "Adotado"
+        },
+        "bp_minimums": {
+          "long_name": "Requisitos Mínimos do Produtor de Blocos (Requisitos Mínimos do BP)",
+          "short_name": "Requisitos Mínimos do BP",
+          "long_description": "Os Requisitos Mínimos do BP são uma lista de condições, práticas, equipamentos e padrões de rede que os candidatos a produtores de blocos terão de satisfazer de modo a tornarem-se elegíveis para a função. O não cumprimento dos requisitos mínimos desqualifica o BP do serviço até que a não conformidade seja resolvida, independentemente de quantos votos o BP tenha obtido. Dada a novidade da rede, estes requisitos são descritos por fases, cada vez mais rigorosas, através das quais os produtores de blocos se podem movimentar em função de votações, sendo a votação mínima para aprovação de 2/3 dos votos contabilizados + 1. A EOS não possui requisitos mínimos ou qualquer documento semelhante. É especificada uma quantidade mínima de RAM no contrato EOS 'regproducer'.",
+          "short_description": "Requisitos mínnimos para atuar como produtor de blocos",
+          "eos_analog": "Nenhum",
+          "status": "Adotado"
+        },
+        "regarb_contract": {
+          "long_name": "Contrato 'regarb' em Termos de Linguagem Humana ('regarb')",
+          "short_name": "Contrato 'Regarb'",
+          "long_description": "O contrato 'regarb' é usado por qualquer membro que deseje tornar-se candidato a árbitro, para se auto-nomear para tal. Os termos em linguagem humana deste contrato estabelecem as responsabilidades e regras para os candidatos a árbitro. Não existe qualquer documento semelhante na EOS porque a EOS não elege árbitros.",
+          "short_description": "Regras, responsabilidades e representações dos árbitros",
+          "eos_analog": "Nenhum",
+          "status": "Adotado"
+        },
+        "arbitrator_minimums": {
+          "long_name": "Requisitos Mínimos do Árbitro (Requisitos Mínimos do Árbitro)",
+          "short_name": "Requisitos Mínimos do Árbitro",
+          "long_description": "Os Requisitos Mínimos do Árbitro são uma lista de condições, práticas, equipamentos e padrões de rede que os candidatos a árbitro deverão cumprir para se tornarem elegíveis para a função. O não cumprimento dos requisitos mínimos desqualifica a atribuição de novos casos a um árbitro até que a não conformidade seja resolvida, independentemente de quantos votos o candidato tenha adquirido. Dada a novidade da rede, estes requisitos são descritos por fases, cada vez mais rigorosas. Não existe qualquer documento semelhante na EOS porque a EOS não elege árbitros.",
+          "short_description": "Requisitos mínimos para atuar como árbitro",
+          "eos_analog": "Nenhum",
+          "status": "Adotado"
+        }
+      }
+    },
+    "table": {
+      "heading": "Síntese da Governança Telos",
+      "table_headings": {
+        "document": "Document",
+        "description": "Description",
+        "eos_analog": "EOS Analog",
+        "status": "Status",
+        "link": "Link"
+      }
     }
   }
 }

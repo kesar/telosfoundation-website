@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Grid, Row, Col, ResponsiveEmbed, Button, Table} from 'react-bootstrap';
 import RewardsModal from '../modals/rewards_modal';
 import {Helmet} from 'react-helmet';
-import axios from 'axios';
 import '../../styles/rewards.css';
 
 export default class RewardsTranslate extends Component {
@@ -16,18 +15,8 @@ export default class RewardsTranslate extends Component {
 		};
 	}
 
-	//gonna get this through props once there are other translations
-	componentDidMount(){
-		axios.get('/resources/rewards_template.json')
-		.then(res => {
-			this.setState({rewards_page: res.data.rewards_page});
-		}).catch(err => {
-			console.log(err);
-		});
-	}
-
 	render(){
-		const {rewards_page} = this.state;
+		const {rewards_page} = this.props;
 		if(!rewards_page) return <div>no content yet</div>;
 
 		return (
@@ -61,15 +50,16 @@ export default class RewardsTranslate extends Component {
 								<ResponsiveEmbed a16by9>
 									<iframe title='Rewards Program Video' src='https://www.youtube.com/embed/1XJjGqzS1AU' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>
 								</ResponsiveEmbed>
-								<div className='text-center'>
-									<h2>{rewards_page.intro.join_us}</h2>
-									<Button
+								<div className='text-center video_heading'>
+									<h2>Thanks for joining!</h2>
+									<h4>Sign-ups are now closed. Submission lists will be accepted until one week after activation, so keep earning rewards!</h4>
+									{/*<Button
 										bsStyle='primary'
 										bsSize='large'
 										onClick={() => this.setState({showRewardsModal: true})}
 									>
 										{rewards_page.intro.cta_text}
-									</Button>
+									</Button>*/}
 								</div>
 							</Col>
 						</Row>

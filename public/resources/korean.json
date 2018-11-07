@@ -4,15 +4,282 @@
   	"intro_heading": "블락체인을 완벽화 하다",
   	"intro_content": "지정 지분증명 방식(DPOS)는 미래 스마트 계약 블락체인의 핵심이 될 것입니다. 저희는 높은확장성과 빠른 거래처리 능력을 가진 EOSIO 소프트 웨어를 DPoS가 지속운영이 가능하도록 실질적인 탈중앙화 방식을 적용을 할 것입니다. Telos는 모든 블락체인에 대해 평등한 자금 분배를 할 것이며 이러한 토큰 분배를 통해 보다 네트워크가 보다 안정적이게 될 수 있습니다.",
   	"developers_heading": "개발자 중심",
-  	"developers_content": "Telos 는 DApps을 위한 세계 정상급의 안정적이고 비용절감이 가능한 네트워크를 제공하기 위해 고안되었습니다. 개발자들은 저렴한 RAM 가격을 기대할 수 있을 것이며 쉽게 오픈소스 또는 거래 수수료 없는 스마트 계약을 진행 할 수 있을 것입니다.",
+  	"developers_content": "Telos 는 Dapps을 위한 세계 정상급의 안정적이고 비용절감이 가능한 네트워크를 제공하기 위해 고안되었습니다. 개발자들은 저렴한 RAM 가격을 기대할 수 있을 것이며 쉽게 오픈소스 또는 거래 수수료 없는 스마트 계약을 진행 할 수 있을 것입니다.",
   	"dpos_heading": "DPoS 속도",
-  	"dpos_content": "Telos 네트워크는 최대 50000 TPS를 감당 할 수 있으며 이를 통해 빠른 거래처리 속도와 큰확장성을 가지고 있습니다. 이것이 의미하는 바는, 평균 최대 빠른 거래처리속도를 기준으로 했을 때 세계 모든이들에게 DApps가 도달하는 시간이 단 1.5초밖에 걸리지 않는 획기적인 속도를 가지고 있습니다!",
+  	"dpos_content": "Telos 네트워크는 최대 5000 TPS를 감당 할 수 있으며 이를 통해 빠른 거래처리 속도와 큰확장성을 가지고 있습니다. 이것이 의미하는 바는, 평균 최대 빠른 거래처리속도를 기준으로 했을 때 세계 모든이들에게 Dapps가 도달하는 시간이 단 1.5초밖에 걸리지 않는 획기적인 속도를 가지고 있습니다!",
   	"gov_heading": "안정적인 통치방식",
   	"gov_content": "Telos 는 헌법을 참고하여 BP투표, 자금조달, 분쟁조정 med에 대한 다양한 통치방식을 가지고 있으며 그 어떤 블락체인도 Telos와 같은 통치방식을 제공하지 않습니다.",
   	"white_paper_heading": "백서 다운",
   	"white_paper_content": "Telos 백서를 읽고 본인이 판단하는 몫만 남았습니다. 저희는 지금까지 없었던 블락체인을 구현해보고자 하며 저희 Telos 프로젝트에 동참해주시면 감사하겠습니다.",
     "github_text": "Github 방문",
   	"partners_heading": "우리의 파트너들"
+  },
+  "rewards_page": {
+    "intro": {
+      "intro_heading": "The Community Rewards Program",
+      "intro_paragraphs": [
+        "Telos is a community-led alternative to EOS. We need you to help spread the word and make the Telos Network a success. You can share in the 1 million TLOS community rewards pool.",
+        "You can make videos, articles, tweets, posts, tutorials—just about anything that helps spread the word. Meetups, community management and more is all available and receives rewards both for the initial action <em>and</em> when people engage with you by liking, clapping, attending, viewing, whatever.",
+        "Once the Telos Network activates, you can submit a final list of your community engagement for your tokens. You can either supply us with your account name, or send us a Telos public key and new account name and we will create the account for you and fill it with your rewards!",
+        "Telos is a blockchain where your voice matters, so use that voice to tell everyone about the world changing advantages of the Telos Network."
+      ],
+      "join_us": "Join Us Today!",
+      "cta_text": "SIGN UP HERE"
+    },
+    "description": {
+      "main_heading": "Community Rewards Information",
+      "sub_heading": "Max Payout per participant: 10,000 TLOS",
+      "column_one": [
+        "All items subject to change and investigation. Gaming the system or getting rewards on a technicality will not be allowed.",
+        "Participants must register with the system portal above, providing their user names in the various platforms.",
+        "After network activation, participants will submit a final list of links and addresses for verification. Email instructions will be sent to all registered users prior to activation."
+      ],
+      "column_two": [
+        "Submissions must be received within one week of Telos network activation",
+        "All participants who earn tokens will receive a free Telos Address!",
+        "All posts must include links to an official Telos website or Telos social media page:"
+      ],
+      "column_three": [
+        "All judges' determinations are final and cannot be appealed or arbitrated.",
+        "If the total amount earned by participants exceeds the 1 million TLOS allocated, then all timely submissions will be reduced in like percentage to pay each participant a pro rata share.",
+        "Participants may not also claim rewards from the Telos Founders Rewards Pool. They can only be a member of one or the other."
+      ]
+    },
+    "table": {
+      "table_headings": {
+        "site_category": "카테고리",
+        "task_category": "예시",
+        "task": "특정 업무",
+        "tier_reward": "업무에 따른 보상",
+        "proof": "필요 증거방식"
+      },
+      "table_rows": [
+        {
+          "site_category": "비디오",
+          "task_category": "<a href='https://vimeo.com' target='_blank' rel='noopener noreferrer'>Vimeo</a>, <a href='https://youtube.com' target='_blank' rel='noopener noreferrer'>Youtube</a>, etc",
+          "task": "온라인에 비디오 포스트",
+          "tier_reward": [
+            {
+              "tier": "1 포스트",
+              "reward": 10
+            },
+            {
+              "tier": "10 - 100 보기",
+              "reward": 25
+            },
+            {
+              "tier": "100 - 250 보기",
+              "reward": 75
+            },
+            {
+              "tier": "250 - 500 보기",
+              "reward": 100
+            },
+            {
+              "tier": "500+",
+              "reward": 150
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "비디오 (튜터리얼)",
+          "task_category": "튜터리얼 비디오 보너스",
+          "task": "Telos 관련 작업 (일반적으로 지갑, 앱, 노드 등을 사용하는 방법)을 명확하고 간결하고 긍정적 인 방식으로 수행하는 방법을 보여주는 동영상",
+          "tier_reward": [
+            {
+              "tier": null,
+              "reward": "비디오의 가치를 두배로 함"
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "소셜 미디아",
+          "task_category":"포스트와 비슷한 소셜 미디아 웹사이트",
+          "task": "웹사이트에 포스트",
+          "tier_reward": [
+            {
+              "tier": "1 포스트",
+              "reward": 5
+            },
+            {
+              "tier": "1 - 10 좋아요",
+              "reward": 10
+            },
+            {
+              "tier": "11 - 25 좋아요",
+              "reward": 25
+            },
+            {
+              "tier": "26 - 75 좋아요",
+              "reward": 50
+            },
+            {
+              "tier": "76 - 500 좋아요",
+              "reward": 75
+            },
+            {
+              "tier": "500+ 좋아요",
+              "reward": 125
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "마이크로 블로깅",
+          "task_category": "포스트 비슷한 메시징 서비스",
+          "task": "트위터에 포스트",
+          "tier_reward": [
+            {
+              "tier": "1 post",
+              "reward": 3
+            },
+            {
+              "tier": "1 - 10 Likes/Retweets",
+              "reward": 10
+            },
+            {
+              "tier": "11 - 25 Likes/Retweets",
+              "reward": 15
+            },
+            {
+              "tier": "26 - 75 Likes/Retweets",
+              "reward": 30
+            },
+            {
+              "tier": "76 - 150 Likes/Retweets",
+              "reward": 75
+            },
+            {
+              "tier": "150+ Likes/Retweets",
+              "reward": 150
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "아티클 기반 포럼",
+          "task_category": "<a href=\"https:\/\/medium.com\" target=\"_blank\" rel=\"noopener noreferrer\">Medium<\/a>, <a href=\"https:\/\/steemit.com\" target=\"_blank\" rel=\"noopener noreferrer\">Steemit<\/a>, <a href=\"https:\/\/reddit.com\" target=\"_blank\" rel=\"noopener noreferrer\">Reddit<\/a>, <a href=\"https:\/\/tieba.baidu.com\" target=\"_blank\" rel=\"noopener noreferrer\">Baidu Tieba<\/a> article writing",
+          "task": "Reddit에서> 250 개의 단어 게시물 / 응답을 포함하여 Medium 또는 Steemit 및 비슷한 블로깅 사이트에 게시하십시오.",
+          "tier_reward": [
+            {
+              "tier": "1 포스트",
+              "reward": 50
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "포럼 및 채팅",
+          "task_category": "포럼 및 채팅 포스트",
+          "task": "웹사이트에 포스트",
+          "tier_reward": [
+            {
+              "tier": "1 포스트",
+              "reward": 10
+            },
+            {
+              "tier": "1 리플레이(반복불가)",
+              "reward": 3
+            }
+          ],
+          "proof": "사용자이름과 함께 포럼 링크"
+        },
+        {
+          "site_category": "기타 컨텐츠",
+          "task_category": "예상치 못한 유용한 컨텐츠",
+          "task": "기술 툴 (블락체인 익스플로어, 툴 킷 등)",
+          "tier_reward": [
+            {
+              "tier": "불분명",
+              "reward": "케바케"
+            }
+          ],
+          "proof": "케이스 바이 케이스"
+        },
+        {
+          "site_category": "Q&A 및 기술 포럼",
+          "task_category": "Quora , 기술 및 튜터리얼 기사",
+          "task": "기사 작성은 Telos 및 / 또는 EOSIO 프로그래밍에서 Telos를 중립적 또는 긍정적 인 측면에서 두드러지게 언급하는 방법을 보여주기위한 것입니다.",
+          "tier_reward": [
+            {
+              "tier": "1 포스트",
+              "reward": 50
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "이미지 기반 소셜미디아",
+          "task_category": "<a href=\"https:\/\/instagram.com\" target=\"_blank\" rel=\"noopener noreferrer\">Instagram<\/a>, image posts\/work",
+          "task": "그래픽 컨텐츠, 인포그래픽, gifs, memes",
+          "tier_reward": [
+            {
+              "tier": "1 포스트",
+              "reward": 50
+            }
+          ],
+          "proof": "링크"
+        },
+        {
+          "site_category": "소셜 미디아 어드민 작업",
+          "task_category": "포럼 어드민",
+          "task": "포럼 그룹 관리 관련 기사 작성 및 답변 달기 등",
+          "tier_reward": [
+            {
+              "tier": "3 - 10 사용자",
+              "reward": 25
+            },
+            {
+              "tier": "11 - 50  사용자",
+              "reward": 50
+            },
+            {
+              "tier": "51 - 100  사용자",
+              "reward": 100
+            },
+            {
+              "tier": "101 - 250  사용자",
+              "reward": 150
+            },
+            {
+              "tier": "251+  사용자",
+              "reward": 200
+            }
+          ],
+          "proof": "사용자이름과 함께 포럼링크와 자세한 작업 내용"
+        },
+        {
+          "site_category": "소셜 밋업",
+          "task_category": "<a href=\"https:\/\/meetup.com\" target=\"_blank\" rel=\"noopener noreferrer\">Meetups<\/a>, etc.",
+          "task": "밋업 주관 및 비슷한 소셜 그룹 창설",
+          "tier_reward": [
+            {
+              "tier": "1 - 2 참여자",
+              "reward": 50
+            },
+            {
+              "tier": "3 - 5 참여자",
+              "reward": 75
+            },
+            {
+              "tier": "6 - 10 참여자",
+              "reward": 100
+            },
+            {
+              "tier": "11 - 20 참여자",
+              "reward": 125
+            },
+            {
+              "tier": "21+ 참여자",
+              "reward": 150
+            }
+          ],
+          "proof": "사진, 초대 링크"
+        }
+      ]
+    }
   },
   "token_recovery": {
     "intro": {
@@ -78,6 +345,176 @@
       "generated_label": "TLOS를 수령 받고자 하는 새로 생선된 Telos (또는 EOS) 지갑 주소",
       "signature_label": "Paste the signature text here.",
       "response": "감사합니다."
+    }
+  },
+  "downloads_page": {
+    "intro": {
+      "heading": "Downloads",
+      "subheading": "Download all the documents and tools that you need to join the Telos Network."
+    },
+    "wallets": {
+      "heading": "Telos Wallets",
+      "subheading": "Choose a wallet to store and trade your TLOS tokens.",
+      "sqrl_description": "Sqrl is a fully functional light wallet designed for the TELOS blockchain. This application can be used to connect to a remote TELOS API endpoint to perform producer voting actions and common wallet commands.",
+      "download": "DOWNLOAD",
+      "source": "SOURCE"
+    },
+    "documents": {
+      "heading": "Documents",
+      "white_paper": {
+        "link": "White Paper",
+        "description": "We are out to create the best blockchain ever - read the white paper to judge for yourself. Join us and build on Telos."
+      },
+      "press_kit": {
+        "link": "Electronic Press Kit",
+        "description": "Everything you need to know about Telos in one PDF."
+      },
+      "style_guide": {
+        "link": "Telos Style Guide",
+        "description": "A style guide featuring Telos Foundation logos, color palettes and fonts for brand use."
+      },
+      "logos_icons": {
+        "link": "Telos Logo and Icon",
+        "description": "A package containing an assortment of file sizes and types for the Telos logo and icon."
+      }
+    },
+    "banners": {
+      "heading": "Telos Article Splash Banners",
+      "subheading": "Splash Banner art for use in online articles about Telos."
+    }
+  },
+  "dapps_page": {
+    "intro": {
+      "heading": "Dapp Development",
+      "subheading": "The best network makes the best Dapps",
+      "tutorials_button": "TUTORIALS",
+      "tutorials_description": "Learn how to build your Dapp on the Telos network.",
+      "smart_contracts_button": "SMART CONTRACT TEMPLATES",
+      "smart_contracts_description": "Write smart contracts that perform basic Telos functions such as exchanging tokens and casting votes.",
+      "coming_soon": "(Coming soon)"
+    },
+    "slides": {
+      "gigs": {
+        "heading": "Decentralized gig economies",
+        "content": [
+          "Decentralized gig economies - Telos will lead the emergence of a new and more equitable gig economy; imagine the possibilities of the next Uber or Airbnb led by community ownership and a decentralized workforce."
+        ]
+      },
+      "currency": {
+        "heading": "Currency",
+        "content": [
+          "A stable currency on Telos will open up possibilities to billions of people around the world who don't have access to bank accounts, providing the transparency and decentralization that is needed to prevent financial meltdowns such as the 2008 economic crisis or Venezuela's extreme currency inflation."
+        ]
+      },
+      "records": {
+        "heading": "Decentralized records and information",
+        "content": [
+          "Corruption can be prevented when records are open, transparent and immutable. Information quality can be enhanced by aligned incentive and community efforts. Telos can support vital documents including home ownership registers, medical records, or the next community encyclopedia."
+        ]
+      }
+    },
+    "dapp_sections": {
+      "compatibility": {
+        "heading": "EOS Compatibility",
+        "content": [
+          "EOSIO is currently responsible for half of all blockchain transactions and its development is expected to advance faster than older platforms like Ethereum and NEO. The Telos network runs the same EOSIO software as EOS, so Dapps written for EOS can run on Telos. No rewrite needed!"
+        ]
+      },
+      "powerful": {
+        "heading": "Powerful performance for decentralized Dapp development",
+        "content": [
+          "Telos facilitates incredibly fast and free transactions to establish a stable and affordable market for Dapp development. RAM supply will be scaled with actual usage in order to ensure affordability and prevent hoarding. Telos tokens have more than three times the resource utility of EOS, and developers will be able to purchase and stake resources such as CPU and bandwidth on behalf of users."
+        ]
+      },
+      "secure": {
+        "heading": "Secure and robust network",
+        "content": [
+          "Telos expands on the EOS network by enforcing additional disclosure requirements and minimum requirements for Telos block producers, who must maintain a full and open testnet in order to support Dapp development. Nonfunctioning block producers are temporarily swapped out after missing just 30 minutes, as opposed to 3 hours on the EOS mainnet, so that developers encounter fewer pauses and problems without compromising security. Fair pay ensures all active and standby block producers are ready to produce at all times for maximum performance and stability."
+        ]
+      },
+      "proprietary": {
+        "heading": "Dapps can be proprietary code",
+        "content": [
+          "Protect your intellectual property with Telos. Unlike EOS, Telos will not force all developers to open source their contract code. This allows commercial Dapp makers to keep other developers from simply copying their work."
+        ]
+      },
+      "decentralized": {
+        "heading": "Decentralized Governance and Arbitration",
+        "content": [
+          "Telos has the most decentralized ownership of any blockchain existing today. No individual or entity will start with, or is likely to ever own, even one percent of the Telos blockchain. Telos’ decentralized voting system ensures that the blockchain is guided by the will of the community and the steady hand of the most competent block producers.",
+          "Telos will have a fully developed and ratified Network Operating Agreement and Telos Arbitration Organization (TAO) upon launch. These entities will ensure that conflicts are resolved in a timely manner so that developers can focus on Dapps instead of disputes."
+        ]
+      }
+    }
+  },
+  "governance_page": {
+    "intro": {
+      "heading": "Governance Overview",
+      "subheading": "Telos is a governed blockchain based on EOSIO - the same software that powers EOS - so that Dapps can deploy on Telos and EOS with the same code. When Telos launches (as early as November 7, 2018) it will have complete documentation and operating structures such as full on-chain governance, the ability to ratify or amend the governance documents by community voting, a worker proposal system, and election of block producers and arbitrators. Below are the main elements and features of blockchain governance on Telos."
+    },
+    "documents": {
+      "heading": "THE DOCUMENTS",
+      "subheading": "The definitions, rules, and procedures of Telos governance are contained in six documents that will be recorded on-chain and modifiable by community vote (pro rata by TLOS token ownership). These documents are:",
+      "documents": {
+        "operating_agreement": {
+          "long_name": "Operating Agreement (TBNOA)",
+          "short_name": "Operating Agreement",
+          "long_description": "The prime governing document on Telos describing the rights and responsibilities of becoming a member of the Telos Blockchain Network. It is required to opt-in to this agreement in order to access or use Telos. This agreement is the equivalent of the EOS Constitution. It differs from the EOS constitution in form: The TBNOA thoroughly defines all network parts and participants and describes governance actions such as electing block producers, amending the governance documents or submitting a worker proposal system submission. The TBNOA has inherited almost no terms from the EOS Constitution. The TBNOA includes the other five governance documents by reference and each of them adopts its definitions and terms.",
+          "short_description": "Primary governance document",
+          "eos_analog": "EOS Constitution",
+          "status": "Adopted"
+        },
+        "arbitration_rules": {
+          "long_name": "Arbitration Rules & Procedures (TBNARP)",
+          "short_name": "Arbitration Rules & Procedures",
+          "long_description": "The Arbitration Rules & Procedures describes the entire process of arbitration on Telos - from filing a case to procedures for arbitration, to delivery of arbitral judges decisions to block producers for execution. The EOS analog for this is the ECAF Rules and as yet unpublished ECAF Handbook. the Telos Arbitration Rules are entirely independent from the ECAF Rules and share no text. They are also a community amendable core governance document on Telos, whereas the ECAF Rules are set and maintained by the ECAF with no mechanism for input or control from the broader EOS community.",
+          "short_description": "Rules and procedures for arbitration on Telos",
+          "eos_analog": "ECAF Rules",
+          "status": "Adopted"
+        },
+        "regproducer_contract": {
+          "long_name": "'regproducer' Contract Human Language Terms ('regproducer')",
+          "short_name": "Regproducer Contract",
+          "long_description": "The 'regproducer' contract is used by any member desiring to become a block producer candidate to nominate themselves. The human-language terms of this contract set out the responsibilities and rules for block producer candidates. This text is largely inherited from the EOS 'regproducer' contract with much additional text added. The primary difference between the EOS and Telos versions is that while both list prohibited actions, the Telos version also documents penalties for any infractions, the method of enforcement, and the responsibility of block producers to enforce the rules on other BPs.",
+          "short_description": "Rules, responsibilities and representations of block producers",
+          "eos_analog": "EOS 'Regproducer' Contract",
+          "status": "Adopted"
+        },
+        "bp_minimums": {
+          "long_name": "Producer Minimum Requirements (BP Minimum Requirements)",
+          "short_name": "BP Minimums",
+          "long_description": "The BP Minimum Requirements is a list of disclosures, practices, equipment and networking standards that block producer candidates must adhere to in order to serve. Failure to meet the minimum requirements disqualifies a BP from service until the omission is cured, regardless of how many votes the BP has acquired. Due to the newness of the network, these requirements are described in increasingly stringent phases which the block producers can vote to move between based on 2/3 + 1 voting. EOS does not have minimum requirements or a similar document. A minimum amount of RAM is specified in the EOS 'regproducer' contract.",
+          "short_description": "Minimum requirements to act as a block producer",
+          "eos_analog": "None",
+          "status": "Adopted"
+        },
+        "regarb_contract": {
+          "long_name": "'regarb' Contract Human Language Terms ('regarb')",
+          "short_name": "'Regarb' Contract",
+          "long_description": "The 'regarb' contract is used by any member desiring to become an arbitrator candidate to nominate themselves. The human-language terms of this contract set out the responsibilities and rules for arbitrator candidates. There is no similar document on EOS because EOS does not elect arbitrators.",
+          "short_description": "Rules, responsibilities and representations of arbitrators",
+          "eos_analog": "None",
+          "status": "Adopted"
+        },
+        "arbitrator_minimums": {
+          "long_name": "Arbitrator Minimum Requirements (Arbitrator Minimum Requirements)",
+          "short_name": "Arbitrator Minimums",
+          "long_description": "The Arbitrator Minimum Requirements is a list of disclosures, practices, equipment and networking standards that arbitrator candidates must adhere to in order to serve. Failure to meet the minimum requirements disqualifies an arbitrator from being assigned new cases until the omission is cured, regardless of how many votes the arbitrator candidate has acquired. Due to the newness of the network, these requirements are described in increasingly stringent phases. There is no similar document on EOS because EOS does not elect arbitrators.",
+          "short_description": "Minimum requirements to act as an arbitrator",
+          "eos_analog": "None",
+          "status": "Adopted"
+        }
+      }
+    },
+    "table": {
+      "heading": "Telos Governance at a glance",
+      "table_headings": {
+        "document": "Document",
+        "description": "Description",
+        "eos_analog": "EOS Analog",
+        "status": "Status",
+        "link": "Link"
+      }
     }
   }
 }

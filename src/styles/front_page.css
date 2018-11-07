@@ -123,6 +123,7 @@
 	align-items: center;
 	margin-right: -15px;
 	margin-left: -15px;
+	direction: ltr;
 }
 
 .partner {
@@ -174,4 +175,86 @@
 
 .fadeIn {
 	animation: fadeIn;
+}
+
+#exchanges {
+	padding-bottom: 50px;
+}
+
+#exchanges header {
+	background: #c2beae;
+	padding: 25px 0;
+	margin-bottom: 50px;
+}
+
+#exchanges h1 {
+	color: #ffffff;
+	margin: 0;
+	text-align: center;
+}
+
+#exchanges .exchange_intro {
+	text-align: center;
+	padding-bottom: 25px;
+}
+
+#exchanges .exchange_buttons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#exchanges .exchange_buttons .exchange_button {
+	flex: 1 1 25%;
+	max-width: 25%;
+	padding: 0 25px;
+}
+
+@media screen and (max-width: 767px){
+	#exchanges .exchange_buttons .exchange_button {
+		flex: 1 1 33.33333%;
+		max-width: 33.33333%;
+		padding: 0 12px;
+	}
+}
+
+#exchanges .exchange_buttons a {
+	display: inline-block;
+}
+
+#exchanges .exchange_buttons img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+#wallets {
+	padding-bottom: 25px;
+}
+
+#wallets header {
+	background: #c2beae;
+	padding: 25px 0;
+	margin-bottom: 50px;
+}
+
+#wallets h1 {
+	color: #ffffff;
+	margin: 0;
+	text-align: center;
+}
+
+#wallets .sqrl_wallet {
+	text-align: center;
+}
+
+#wallets .sqrl_wallet a {
+	display: inline-block;
+}
+
+#wallets .sqrl_wallet img {
+	width: 300px;
+	max-width: 100%;
+	display: inline-block;
 }
