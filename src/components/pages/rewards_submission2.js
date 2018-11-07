@@ -143,18 +143,20 @@ export default class RewardsSubmission extends Component {
   		data.append('comments', sub_values.comments);
   		data.append('screenshot', sub_values.screenshot);
 
-  		//console.log(sub_values);
-  		axios.post(DESTINATION, data)
-  		.then(res => console.log(res))
-  		.catch(err => console.log(err));
 
-  		/*    axios.post('http://localhost:8000/upload', data)
-      .then(function (response) {
-    this.setState({ imageURL: `http://localhost:8000/${body.file}`, uploadStatus: true });
-      })
-      .catch(function (error) {
-        console.log(error);
-      });*/
+  		const attemptSubmission = () => {
+  			axios.post(DESTINATION, data)
+	  		.then(res => {
+	  			if(res.status === 201) this.setState({formState: SUBMISSION_SUCCESS});
+	  		})
+	  		.catch(err => {
+	  			console.log(err);
+	  			this.setState({formState: SUBMISSION_ERROR});
+	  		});
+  		};
+
+  		this.setState({formState: SUBMITTING}, attemptSubmission());
+
   	}
 
 	getSubmissions(){
@@ -261,6 +263,40 @@ export default class RewardsSubmission extends Component {
 	}
 
 	render(){
+		const getMessage = (message) => {
+			return (
+				<div className='message'>
+					<h4>{message}</h4>
+				</div>
+			);
+		};
+
+		const getSpinner = () => {
+			return (
+				<div className='spinner'>
+					<h4>submitting...</h4>
+				</div>
+			);
+		};
+
+		const renderContent = () => {
+			let displayState = null;
+			switch(this.state.formState){
+				case SUBMITTING:
+					displayState = getSpinner();
+					break;
+				case NOT_SUBMITTED:
+					displayState = this.renderForm();
+					break;
+				case SUBMISSION_ERROR:
+					displayState = getMessage('There was an error');
+					break;
+				default:
+					displayState = this.renderForm();
+					break;
+			}
+		};
+
 		return (
 			<div className='rewards_submission'>
 				<Grid>
