@@ -11,6 +11,7 @@ import Governance from './pages/governance';
 import FAQ_Page from './pages/faq';
 import BlockProducerCandidates from './pages/block_prod_candidates';
 import HowToVote from './pages/how_to_vote';
+import RewardsSubmission from './pages/rewards_submission';
 import {connect} from 'react-redux';
 import {Switch, Route, withRouter} from 'react-router-dom';
 import Header from './header';
@@ -27,6 +28,7 @@ const MainSite = ({site_content}) => {
 			<main className='main'>
 
 				<Switch>
+					<Route path='/rewards/submission' component={RewardsSubmission} />
 					<Route path='/rewards' render={() => <RewardsTranslate rewards_page={site_content.rewards_page} language={site_content.language} />} />
 					<Route path='/exchange_outreach' component={ExchangeOutreach} />
 					<Route path='/iwantmytlos' component={ExchangeOutreach} />
