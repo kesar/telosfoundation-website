@@ -110,7 +110,7 @@ const Wallets = ({wallets}) => {
 						<ul className='download_buttons'>
 							<li>
 								<a
-									href='https://github.com/Telos-Foundation/Sqrl/archive/0.5.2.tar.gz'
+									href='https://github.com/Telos-Foundation/Sqrl/releases'
 									className='btn btn-primary'
 								>
 									<i className='fa fa-linux'></i>  {wallets.download}
@@ -118,7 +118,7 @@ const Wallets = ({wallets}) => {
 							</li>
 							<li>
 								<a
-									href='https://github.com/Telos-Foundation/Sqrl/releases/download/0.5.2/mac-Sqrl-0.5.2.dmg'
+									href='https://github.com/Telos-Foundation/Sqrl/releases'
 									className='btn btn-primary'
 								>
 									<i className='fa fa-apple'></i>  {wallets.download}
@@ -126,7 +126,7 @@ const Wallets = ({wallets}) => {
 							</li>
 							<li>
 								<a
-									href='https://github.com/Telos-Foundation/Sqrl/releases/download/0.5.2/win-Sqrl-0.5.2.exe'
+									href='https://github.com/Telos-Foundation/Sqrl/releases'
 									className='btn btn-primary'
 								>
 									<i className='fa fa-windows'></i>  {wallets.download}
@@ -134,7 +134,7 @@ const Wallets = ({wallets}) => {
 							</li>
 							<li>
 								<a 
-									href='https://github.com/Telos-Foundation/Sqrl' 
+									href='https://github.com/Telos-Foundation/Sqrl/releases' 
 									className='btn btn-primary' 
 									target='_blank' 
 									rel='noopener noreferrer'
