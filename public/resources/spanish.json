@@ -6,7 +6,7 @@
   	"developers_heading": "Orientación a programadores",
   	"developers_content": "Telos existe para proporcionar una red estable, y de coste reducido, en la que se puedan desplegar DAPPS de la máxima calidad. Los desarrolladores de DAPPS pueden esperar tener RAM asequible, y la posibilidad de desplegar contratos open source o propietarios, sin coste por transacción.",
   	"dpos_heading": "Velocidad DPoS",
-  	"dpos_content": "La red Telos puede gestionar 50.000 transacciones por segundo, con gran escalabilidad. Esto significa que las DAPPS pueden llegar a todo una gran cantidad de audiencia, con un tiempo medio de transacción que es el más rápido de todas las blockchains: solo 1.5 segundos!",
+  	"dpos_content": "La red Telos puede gestionar 5.000 transacciones por segundo, con gran escalabilidad. Esto significa que las DAPPS pueden llegar a todo una gran cantidad de audiencia, con un tiempo medio de transacción que es el más rápido de todas las blockchains: solo 1.5 segundos!",
   	"gov_heading": "Buena Gobernanza",
   	"gov_content": "Telos tiene un rico sistema de gobernanza: desde la Constitución, las elecciones de productores de bloques, el fondo para iniciativas (workers proposal fund) hasta el sistema de arbitraje y disputa. No hay otra blockchain que tenga una gobernanza tan cohesionada como la de Telos.",
   	"white_paper_heading": "Descarga el white paper",
@@ -19,7 +19,7 @@
       "intro_heading": "The Community Rewards Program",
       "intro_paragraphs": [
         "Telos is a community-led alternative to EOS. We need you to help spread the word and make the Telos Network a success. You can share in the 1 million TLOS community rewards pool.",
-        "Joining is easy. Read the rules below, then sign up with your user name for the services where you want to promote Telos. You can make videos, articles, tweets, posts, tutorials—just about anything that helps spread the word. Meetups, community management and more is all available and receives rewards both for the initial action <em>and</em> when people engage with you by liking, clapping, attending, viewing, whatever.",
+        "You can make videos, articles, tweets, posts, tutorials—just about anything that helps spread the word. Meetups, community management and more is all available and receives rewards both for the initial action <em>and</em> when people engage with you by liking, clapping, attending, viewing, whatever.",
         "Once the Telos Network activates, you can submit a final list of your community engagement for your tokens. You can either supply us with your account name, or send us a Telos public key and new account name and we will create the account for you and fill it with your rewards!",
         "Telos is a blockchain where your voice matters, so use that voice to tell everyone about the world changing advantages of the Telos Network."
       ],

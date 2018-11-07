@@ -43,6 +43,7 @@ import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
 import zephyr from '../../img/partner_logos/logo_zephyr.png';
 import telos_vancouver from '../../img/partner_logos/logo_telos_vancouver.png';
 import kainos from '../../img/partner_logos/logo_kainos.png';
+import telos_global from '../../img/partner_logos/logo_telosglobal.png';
 
 //exchange logos
 import chainrift from '../../img/exchange_logos/exchange_chainrift.png';
@@ -218,6 +219,11 @@ const partnersArr = [
 	{
 		name: 'kainos',
 		logo: kainos
+	},
+	{
+		name: 'TelosGlobal',
+		logo: telos_global,
+		url: 'https://telosglobal.io'
 	}
 ];
 

@@ -6,7 +6,7 @@
   	"developers_heading": "服务于开发人员",
   	"developers_content": "Telos 的设计初衷之一是为开发者们提供安全、稳定、低成本，却足以轻松运行世界顶级Dapp的网络。同时，Telos并行支持开源和专利独有的智能合约，价格低廉内存RAM价格、0手续费，种种独有特性为你的开发提供前所未有的助力。",
   	"dpos_heading": "高速",
-  	"dpos_content": "Telos网络可以支持高达50000的TPS（每秒运行速度），这意味着超快的响应速度和巨大的扩展性。你的Dapp用户的任何操作可以在1.5秒之内同步至整个世界。",
+  	"dpos_content": "Telos网络可以支持高达5000的TPS（每秒运行速度），这意味着超快的响应速度和巨大的扩展性。你的Dapp用户的任何操作可以在1.5秒之内同步至整个世界。",
   	"gov_heading": "优秀的治理",
   	"gov_content": "Telos有用丰富而完善的治理系统：宪法、生产节点选举、工作提案基金以及纠纷裁决。Telos的治理能力比任何现有的区块链都有更强的凝聚力。",
   	"white_paper_heading": "下载白皮书",
@@ -19,7 +19,7 @@
       "intro_heading": "The Community Rewards Program",
       "intro_paragraphs": [
         "Telos is a community-led alternative to EOS. We need you to help spread the word and make the Telos Network a success. You can share in the 1 million TLOS community rewards pool.",
-        "Joining is easy. Read the rules below, then sign up with your user name for the services where you want to promote Telos. You can make videos, articles, tweets, posts, tutorials—just about anything that helps spread the word. Meetups, community management and more is all available and receives rewards both for the initial action <em>and</em> when people engage with you by liking, clapping, attending, viewing, whatever.",
+        "You can make videos, articles, tweets, posts, tutorials—just about anything that helps spread the word. Meetups, community management and more is all available and receives rewards both for the initial action <em>and</em> when people engage with you by liking, clapping, attending, viewing, whatever.",
         "Once the Telos Network activates, you can submit a final list of your community engagement for your tokens. You can either supply us with your account name, or send us a Telos public key and new account name and we will create the account for you and fill it with your rewards!",
         "Telos is a blockchain where your voice matters, so use that voice to tell everyone about the world changing advantages of the Telos Network."
       ],

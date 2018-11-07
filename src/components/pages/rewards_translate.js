@@ -50,15 +50,16 @@ export default class RewardsTranslate extends Component {
 								<ResponsiveEmbed a16by9>
 									<iframe title='Rewards Program Video' src='https://www.youtube.com/embed/1XJjGqzS1AU' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>
 								</ResponsiveEmbed>
-								<div className='text-center'>
-									<h2>{rewards_page.intro.join_us}</h2>
-									<Button
+								<div className='text-center video_heading'>
+									<h2>Thanks for joining!</h2>
+									<h4>Sign-ups are now closed. Submission lists will be accepted until one week after activation, so keep earning rewards!</h4>
+									{/*<Button
 										bsStyle='primary'
 										bsSize='large'
 										onClick={() => this.setState({showRewardsModal: true})}
 									>
 										{rewards_page.intro.cta_text}
-									</Button>
+									</Button>*/}
 								</div>
 							</Col>
 						</Row>

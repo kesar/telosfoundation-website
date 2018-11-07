@@ -96,7 +96,7 @@ const DevelopmentCode = () => {
 					BP rewards (EBPs receive X, Standby BPs receive 50% of X)
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/1' />
 				</li>
-				<li className='in_progress'>
+				<li className='yes'>
 					Removal of non-producing BPs
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/52' />
 				</li>
