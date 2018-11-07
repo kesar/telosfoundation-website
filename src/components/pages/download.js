@@ -134,7 +134,7 @@ const Wallets = ({wallets}) => {
 							</li>
 							<li>
 								<a 
-									href='https://github.com/Telos-Foundation/Sqrl/releases' 
+									href='https://github.com/Telos-Foundation/Sqrl' 
 									className='btn btn-primary' 
 									target='_blank' 
 									rel='noopener noreferrer'
