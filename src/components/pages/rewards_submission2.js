@@ -12,7 +12,7 @@ const SUBMITTING = 'submitting';
 const SUBMISSION_ERROR = 'submission_error';
 const SUBMISSION_SUCCESS = 'submission_success';
 
-const DESTINATION = 'http://localhost:8080/submission/create';
+const DESTINATION = 'http://localhost:8080/api/v1/submission/create';
 
 export default class RewardsSubmission extends Component {
 	constructor(){
@@ -128,9 +128,9 @@ export default class RewardsSubmission extends Component {
   			email: email,
   			public_key: public_key,
   			termsAccepted: termsAccepted,
-  			links: urls,
-  			username: username,
-  			comments: details,
+  			links: JSON.stringify(urls),
+  			username: JSON.stringify(username),
+  			comments: JSON.stringify(details),
   			screenshot: screenshot
   		};
 
@@ -143,10 +143,10 @@ export default class RewardsSubmission extends Component {
   		data.append('comments', sub_values.comments);
   		data.append('screenshot', sub_values.screenshot);
 
-
   		const attemptSubmission = () => {
   			axios.post(DESTINATION, data)
 	  		.then(res => {
+	  			console.log(res);
 	  			if(res.status === 201) this.setState({formState: SUBMISSION_SUCCESS});
 	  		})
 	  		.catch(err => {
@@ -225,22 +225,7 @@ export default class RewardsSubmission extends Component {
 				</FormGroup>
 
 				{this.getSubmissions()}
-				<FormGroup>
-					<ControlLabel>Photograph (ONLY for in-person meetups)</ControlLabel>
-					<FormControl
-						type='file'
-						onChange={this.handleScreenshotChange} />
-				</FormGroup>
-				<FormGroup>
-					<Checkbox
-						required
-						checked={termsAccepted}
-						onChange={this.handleTermsChange}
-					>
-						I Accept the TLOS Rewards terms
-					</Checkbox>
-				</FormGroup>
-				<div className='text-right'>
+				<div className='text-right add_categories'>
 					<ButtonGroup>
 						<Button
 							onClick={this.handleAddSubmission}
@@ -254,7 +239,23 @@ export default class RewardsSubmission extends Component {
 						</Button>
 					</ButtonGroup>
 				</div>
-
+				<FormGroup>
+					<ControlLabel>Photograph (ONLY for in-person meetups) JPG or PNG.</ControlLabel>
+					<FormControl
+						type='file'
+						accept='image/x-png,image/jpeg'
+						onChange={this.handleScreenshotChange} />
+				</FormGroup>
+				<FormGroup>
+					<Checkbox
+						required
+						checked={termsAccepted}
+						onChange={this.handleTermsChange}
+					>
+						I Accept the TLOS Rewards terms
+					</Checkbox>
+				</FormGroup>
+				<h4>REVIEW YOUR ENTRIES BEFORE SUBMITTING</h4>
 				<Button type='submit'>
 					Submit
 				</Button>
@@ -289,21 +290,25 @@ export default class RewardsSubmission extends Component {
 					displayState = this.renderForm();
 					break;
 				case SUBMISSION_ERROR:
-					displayState = getMessage('There was an error');
+					displayState = getMessage('Sorry, there was an error with your submission.  Please email us at hello@telosfoundation.io');
+					break;
+				case SUBMISSION_SUCCESS:
+					displayState = getMessage('Thank you for your submission.');
 					break;
 				default:
 					displayState = this.renderForm();
 					break;
 			}
+			return displayState;
 		};
 
 		return (
 			<div className='rewards_submission'>
 				<Grid>
 					<Row>
-						<Col md={10} mdOffset={1}>
+						<Col md={8} mdOffset={2}>
 							<SubmissionIntro />
-							{this.renderForm()}
+							{renderContent()}
 						</Col>
 					</Row>
 				</Grid>
@@ -314,19 +319,19 @@ export default class RewardsSubmission extends Component {
 
 const SubmissionIntro = () => {
 	return (
-		<div>
+		<div id='submission_intro'>
 			<h1>Rewards Submission</h1>
-			<p>Submit your information here. <strong>IMPORTANT:</strong> you will only be submitting this form once, so you should read the instructions carefully and make sure you have all the correct information.</p>
-			<p>Some notes:</p>
+			<h2>All contributions must be compiled into a single form and submitted within one week of the Telos Blockchain Network activation. Multiple forms per applicant will not be accepted.</h2>
+			<p>Use this form to submit your contributions to the Community Rewards Program and earn TLOS tokens. <strong>Prior to Network activation, make sure that you have given us a viable EOS/Telos public key so that we can create your account.</strong> Then, compile and submit all of your links and photo submissions into a single form for review within one week of the Telos Blockchain Network activation. All judges{"'"} determinations are final and cannot be appealed or arbitrated.</p>
+			<p><strong>Notes:</strong></p>
 			<ul>
-				<li>If you are going to make submissions in multiple categories, use the "Add Category/Remove Category" buttons to add/remove fields.</li>
-				<li>Please refer to the table at <Link to='/rewards'>telosfoundation.io/rewards</Link> to determine what category each submission falls under and what information is required.  You do not need to designate the category, but it helps if you group your submissions that way.</li>
-				<li>You may include multiple links in the link field, but they should be grouped by category.  Example: you have several Twitter and Youtube links to submit.  You should add the Twitter links to the link field, click the "Add Category" button, then add the Youtube links to the new links field.</li>
-				<li>Only include an image if your submission is a Physical Social Gathering.  If you believe you need to submit multiple images for a single submission (you probably do not), please include a link to an album at a site such as Flickr or Imgur.</li>
+				<li>If you are going to make submissions in multiple categories, use the "Add Category/Remove Category" buttons to add or remove fields.</li>
+				<li>Refer to the table at <Link to='/rewards'>telosfoundation.io/rewards</Link> to determine what category each submission falls under and what information is required.</li>
+				<li>You may include multiple links in the link field, but they should be grouped by category. Example: you have several Twitter and Youtube links to submit. You would first add the Twitter links to the link field. Then, you would click the "Add Category" button and add the Youtube links to the new links field.</li>
+				<li>Image files are discouraged unless they are documenting a Physical Social Gathering for a Rewards submission. Screenshots of links will not be accepted. If you believe that you need to submit multiple images in a single submission, please include a link to an album at a photo sharing site such as <a href='https://flickr.com' target='_blank' rel='noopener noreferrer'>Flickr</a> or <a href='https://imgur.com' target='_blank' rel='noopener noreferrer'>Imgur</a>.</li>
+				<li>Submitting a keyword and/or username in a social media channel for us to search is acceptable if this is a faster method for checking your posts. If you can find the links faster this way, then we can find them faster this way.  However, we will not sort through all of your links for you so only include search criteria that will yield reward-related information.</li>
 			</ul>
-			<p>Please follow these instructions carefully and include all the information for each category you wish to submit.  In most cases a link is sufficient.</p>
-			<h2>YOU WILL NOT BE ABLE TO SUBMIT THIS FORM AGAIN, SO MAKE SURE THERE ARE NO ERRRORS*</h2>
-			<small>*you can resubmit if you have to, shit happens</small>
+			<p>Please follow these instructions carefully and include all the information for each category you wish to submit. In most cases, a link is sufficient.</p>
 		</div>
 	);
 };
