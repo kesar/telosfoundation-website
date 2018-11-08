@@ -46,12 +46,13 @@ import kainos from '../../img/partner_logos/logo_kainos.png';
 import telos_global from '../../img/partner_logos/logo_telosglobal.png';
 
 //exchange logos
-import chainrift from '../../img/exchange_logos/exchange_chainrift.png';
-import dexeos from '../../img/exchange_logos/exchange_dexeos.png';
+// import chainrift from '../../img/exchange_logos/exchange_chainrift.png';
+// import dexeos from '../../img/exchange_logos/exchange_dexeos.png';
 
 import chainrift_button from '../../img/exchange_logos/Chainrift-Button.jpg';
 import dexeos_button from '../../img/exchange_logos/DEXEOS-Button.jpg';
 import findex_button from '../../img/exchange_logos/Findex-Button.jpg';
+import swaponline_button from '../../img/exchange_logos/SwapOnline-Button.jpg';
 
 import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 
@@ -490,6 +491,15 @@ const Exchanges = () => {
 									<img src={findex_button} alt='findex' />
 								</a>
 							</div>	
+							<div className='exchange_button'>
+								<a
+									href='https://swap.online'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									<img src={swaponline_button} alt='swap.online' />
+								</a>
+							</div>
 						</div>
 					</Col>
 				</Row>
