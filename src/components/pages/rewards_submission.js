@@ -170,7 +170,7 @@ export default class RewardsSubmission extends Component {
 							<TagsInput
 								value={inputs.urls}
 								renderInput={autosizingRenderInput}
-								inputProps={{placeholder: 'Links. Add all URLs that you wish to submit in this category.'}}
+								inputProps={{placeholder: 'Links. Add URLs for this category'}}
 								onChange={tags => this.handleTagsChange(tags, idx)}
 								addOnBlur />
 						</FormGroup>
@@ -253,7 +253,7 @@ export default class RewardsSubmission extends Component {
 						checked={termsAccepted}
 						onChange={this.handleTermsChange}
 					>
-						I Accept the TLOS Rewards terms
+						I accept the Telos Community Rewards terms and rules listed in the rewards web pages. 
 					</Checkbox>
 				</FormGroup>
 				<h4 style={{marginBottom: '15px'}}>REVIEW YOUR ENTRIES BEFORE SUBMITTING</h4>
@@ -305,10 +305,10 @@ export default class RewardsSubmission extends Component {
 
 		return (
 			<div className='rewards_submission'>
+				<SubmissionIntro />
 				<Grid>
 					<Row>
 						<Col md={8} mdOffset={2}>
-							<SubmissionIntro />
 							{renderContent()}
 						</Col>
 					</Row>
@@ -321,18 +321,28 @@ export default class RewardsSubmission extends Component {
 const SubmissionIntro = () => {
 	return (
 		<div id='submission_intro'>
-			<h1>Rewards Submission</h1>
-			<h2>All contributions must be compiled into a single form and submitted within one week of the Telos Blockchain Network activation. Multiple forms per applicant will not be accepted.</h2>
-			<p>Use this form to submit your contributions to the Community Rewards Program and earn TLOS tokens. <strong>Prior to Network activation, make sure that you have given us a viable EOS/Telos public key so that we can create your account.</strong> Then, compile and submit all of your links and photo submissions into a single form for review within one week of the Telos Blockchain Network activation. All judges{"'"} determinations are final and cannot be appealed or arbitrated.</p>
-			<p><strong>Notes:</strong></p>
-			<ul>
-				<li>If you are going to make submissions in multiple categories, use the "Add Category/Remove Category" buttons to add or remove fields.</li>
-				<li>Refer to the table at <Link to='/rewards'>telosfoundation.io/rewards</Link> to determine what category each submission falls under and what information is required.</li>
-				<li>You may include multiple links in the link field, but they should be grouped by category. Example: you have several Twitter and Youtube links to submit. You would first add the Twitter links to the link field. Then, you would click the "Add Category" button and add the Youtube links to the new links field.</li>
-				<li>Image files are discouraged unless they are documenting a Physical Social Gathering for a Rewards submission. Screenshots of links will not be accepted. If you believe that you need to submit multiple images in a single submission, please include a link to an album at a photo sharing site such as <a href='https://www.flickr.com' target='_blank' rel='noopener noreferrer'>Flickr</a> or <a href='https://imgur.com' target='_blank' rel='noopener noreferrer'>Imgur</a>.</li>
-				<li>Submitting a keyword and/or username in a social media channel for us to search is acceptable if this is a faster method for checking your posts. If you can find the links faster this way, then we can find them faster this way.  However, we will not sort through all of your links for you so only include search criteria that will yield reward-related information.</li>
-			</ul>
-			<p>Please follow these instructions carefully and include all the information for each category you wish to submit. In most cases, a link is sufficient.</p>
+			<Grid>
+				<Row>
+					<Col md={8} mdOffset={2}>
+						<h1>Community Rewards Submission Form</h1>
+					</Col>
+				</Row>
+				<Row>
+					<Col md={8} mdOffset={2}>
+						<h2>All contributions must be compiled into a single form and submitted within one week of the Telos Blockchain Network activation. Multiple forms per applicant will not be accepted.</h2>
+						<p>Use this form to submit your contributions to the Community Rewards Program and earn TLOS tokens. <strong>Prior to Network activation, make sure that you have given us a viable EOS/Telos public key so that we can create your account.</strong> Then, compile and submit all of your links and photo submissions into a single form for review within one week of the Telos Blockchain Network activation. All judges{"'"} determinations are final and cannot be appealed or arbitrated.</p>
+						<p><strong>Notes:</strong></p>
+						<ul>
+							<li>If you are going to make submissions in multiple categories, use the "Add Category/Remove Category" buttons to add or remove fields.</li>
+							<li>Refer to the table at <Link to='/rewards'>telosfoundation.io/rewards</Link> to determine what category each submission falls under and what information is required.</li>
+							<li>You may include multiple links in the link field, but they should be grouped by category. Example: you have several Twitter and Youtube links to submit. You would first add the Twitter links to the link field. Then, you would click the "Add Category" button and add the Youtube links to the new links field.</li>
+							<li>Image files are discouraged unless they are documenting a Physical Social Gathering for a Rewards submission. Screenshots of links will not be accepted. If you believe that you need to submit multiple images in a single submission, please include a link to an album at a photo sharing site such as <a href='https://www.flickr.com' target='_blank' rel='noopener noreferrer'>Flickr</a> or <a href='https://imgur.com' target='_blank' rel='noopener noreferrer'>Imgur</a>.</li>
+							<li>Submitting a keyword and/or username in a social media channel for us to search is acceptable if this is a faster method for checking your posts. If you can find the links faster this way, then we can find them faster this way.  However, we will not sort through all of your links for you so only include search criteria that will yield reward-related information.</li>
+						</ul>
+						<p>Please follow these instructions carefully and include all the information for each category you wish to submit. In most cases, a link is sufficient.</p>
+					</Col>
+				</Row>
+			</Grid>
 		</div>
 	);
 };

@@ -31,6 +31,10 @@
 	margin-top: 15px;
 }
 
+#rewards_intro h4 {
+	margin-bottom: 20px;
+}
+
 #rewards_intro em {
 	text-decoration: underline;
 	font-style: normal;
@@ -210,4 +214,8 @@
 
 .rewards_form button[type="submit"]:hover {
 	background-color: #872311;
+}
+
+.underline {
+	text-decoration: underline;
 }
