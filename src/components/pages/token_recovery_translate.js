@@ -8,19 +8,6 @@ import new_step_one from '../../img/token_recovery/new_step_1.png';
 import new_step_two from '../../img/token_recovery/new_step_2.png';
 import new_step_three from '../../img/token_recovery/new_step_3.png';
 
-// import step_one from '../../img/token_recovery/step_1.png';
-// import step_three from '../../img/token_recovery/step_3.png';
-// import step_four from '../../img/token_recovery/step_4.png';
-// import step_five from '../../img/token_recovery/step_5.png';
-// import step_six from '../../img/token_recovery/step_6.png';
-// import step_seven from '../../img/token_recovery/step_7.jpg';
-// import step_eight from '../../img/token_recovery/step_8x.png';
-// import ether_screenshot_one from '../../img/token_recovery/ether_screenshot_1.jpg';
-// import ether_screenshot_two from '../../img/token_recovery/ether_screenshot_2.jpg';
-// import ether_screenshot_three from '../../img/token_recovery/ether_screenshot_3.png';
-// import ether_screenshot_four from '../../img/token_recovery/ether_screenshot_4.jpg';
-// import ether_screenshot_five from '../../img/token_recovery/ether_screenshot_5.jpg';
-
 import ether_screenshot_one from '../../img/token_recovery/new_ether_screenshot_1.png'
 import ether_screenshot_two from '../../img/token_recovery/new_ether_screenshot_2.png'
 import ether_screenshot_three from '../../img/token_recovery/new_ether_screenshot_3.png'
@@ -33,37 +20,6 @@ const recovery_steps = [
 	new_step_two,
 	new_step_three
 ];
-
-// const recovery_steps = [
-// 	{
-// 		image: step_one,
-// 		caption: 'Open up the Sqrl wallet.'
-// 	},
-// 	{
-// 		image: step_three,
-// 		caption: 'Click "Create New Account"'
-// 	},
-// 	{
-// 		image: step_four,
-// 		caption: 'Enter your account name'
-// 	},
-// 	{
-// 		image: step_five,
-// 		caption: 'Generate "Owner Public Key"'
-// 	},
-// 	{
-// 		image: step_six,
-// 		caption: 'Copy "Owner Public Key" into "Active Public Key" field'
-// 	},
-// 	{
-// 		image: step_seven,
-// 		caption: 'Copy/Paste your Keys to a safe place! Offline storage is recommended.'
-// 	},
-// 	{
-// 		image: step_eight,
-// 		caption: 'Create your account'
-// 	}
-// ];
 
 const TokenRecovery = ({language, token_recovery}) => {
 	if(!token_recovery){
