@@ -49,6 +49,11 @@ export default class RewardsSubmission extends Component {
 		this.handleRemoveSubmission = this.handleRemoveSubmission.bind(this);
 	}
 
+	componentDidMount(){
+		//go to top
+		window.scrollTo(0, 0);
+	}
+
 	handleNameChange(e){
 		this.setState({name: e.target.value});
 	}
