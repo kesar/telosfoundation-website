@@ -65,8 +65,12 @@
 .recovery_step h4 {
 	text-align: center;
 	margin-bottom: 50px;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 500;
+}
+
+.recovery_step .caption_with_list {
+	text-align: left;
 }
 
 #token_recovery_process_one {
@@ -94,6 +98,10 @@
 	font-size: 24px;
 	overflow-wrap: break-word;
   	word-wrap: break-word;
+}
+
+.process_section li img {
+	max-width: 100%;
 }
 
 .process_section li ul li {
@@ -127,6 +135,10 @@
 	.ether_screenshots .recovery_step {
 		margin-left: -80px;
 	}
+}
+
+.ether_screenshot_one {
+	margin: 15px 0;
 }
 
 .token_recovery_password {

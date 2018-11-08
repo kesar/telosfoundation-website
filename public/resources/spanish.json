@@ -304,26 +304,20 @@
       "step_two": {
         "step": "Generar un nuevo set de claves. (Estas son para una cuenta Telos).",
         "screenshot_captions": [
-          "Abre la cartera Sqrl.",
-          "Click \"Crear nueva cuenta\" para acceder a la próxima pantalla. No necesitas una nueva cuenta.",
-          "Introduce un nombre de cuenta. Cualquier nombre/número de cuenta con 12 dígitos funcionara.",
-          "Generar \"Clave Publica de Propietario\"",
-          "Copiar \"Clave Publica de Propietario\" en el campo de \"Clave Publica Activa\".",
-          "Copiar/Pegar tus claves en un lugar seguro! Se recomienda almacenamiento off-line.",
-          "Crear una cuenta no es necesario, solo necesitas tus nuevas claves!"
+          "Open the Sqrl wallet and note the \"Generate Key\" button marked above.  You do not need to do anything but click this button to start",
+          "Selecting \"Generate Key\" generates a key pair instantly.  This will be the key pair used for your Telos recovery, and it will also be the key you use to access your telos after the sharedrop.",
+          "<div class=\"caption_with_list\"><p>Clicking each key will automatically copy the key to your clipboard.  This is the <strong>ONLY TIME</strong> you will be able to save your key pair.  The photo here shows the keys being copy and pasted onto notepad.  Your private key should be saved offline (in multiple safe places) and <strong>NEVER</strong> shared with anyone.  If you mistakenly closed out the keypair before saving, no worries.  Simply start the process over and save the new key pair.</p><p>To review, we have done two things up to this point:</p> <ul><li>Opened the SQRL wallet and clicked \"Generate Key\"</li><li>Saved the key pair we generated (both public and private)</li></ul><br /><p>Once you have completed the these two steps, you are done with sqrl for the purposes of this guide.  The next time you will need to use it will be after telos launches to access your TLOS tokens!</p></div>"
         ]
       },
       "step_three": {
         "step": "Ve a: <a href='https://www.myetherwallet.com/signmsg.html' target='_blank' rel='noopener noreferrer'>www.myetherwallet.com/signmsg.html</a>",
-        "sign_in": "Conéctate y selecciona la cartera Ethereum que tenía tus Tokens EOS.",
-        "copy_paste": "Copia/pega este mensaje y agrega tu clave pública de Ethereum y tu nueva clave pública de Telos (o una clave EOS que desees usar):",
+        "copy_paste": "Next, copy and paste the following into the \"message\" box (like in the screenshot below):",
         "message": "Como el propietario de la dirección de Ethereum listada abajo (\"Dirección Ethereum\"), verificado criptográficamente. Yo atestiguo que yo no era propietario de los Tokens EOS listados en los Snapshots EOS ERC-20 asociadas con esta dirección y que por la presente solicito que la clave pública para mi cuenta sea cambiada a la nueva clave EOS abajo (\"New EOS Clave Publica\") o a la dirección de la red Telos equivalente a mi cuenta correspondiente de Telos en la red Telos. Yo estoy de acuerdo en desligar a la red Telos y sus miembros –así también a los miembros de cualquier proyecto Blockchain que pueda seguidamente usar este mismo valor de Snapshot en el futuro- por cualquier reclamo originado por esta solicitud. La firma criptográfica de este documento constituye mi firma digital en todas las jurisdicciones.",
         "ethereum": "Dirección Ethereum:",
         "public_key": "Nueva Clave Pública EOS:",
-        "screenshot_caption": "Introduce tu propia dirección de Ethereum donde tú contenías tus Tokens EOS en \"Dirección Ethereum\" y tu nueva clave pública SQRL en \"Nueva Clave Publica EOS\"",
-        "screenshot_caption_two": "Entra a la carteta conteniendo tu cuenta Ethereum donde eran contenidos tus Tokens EOS.",
-        "screenshot_caption_three": "Firma el mensaje copiado con la dirección de Ethereum y la nueva Clave Publica de Telos (o la clave EOS que deseas utilizar).",
-        "screenshot_caption_four": "Copia esta Firma de texto y envíala en la siguiente forma",
+        "screenshot_caption": "<div class=\"caption_with_list\"><p>Once you have copy and pasted the message, you will need to add one PUBLIC address, or key, to each of the spaces noted in the red boxes above.<p><ul><li>Your \"Ethereum Address\" will come from the public address where your EOS was stored at the time of the genesis snapshot.  This is the same address you will be logging into to sign this message.</li><li>Your \"New Eos Key\" is the public key you generated in Sqrl in Step 1 and saved in Step 2.  Simply copy and paste it.  If you are confused, this is the top, or first key, in the third screenshot in these directions.  The one labeled \"pub\" on the notepad.</li></ul><br /><p>Next, in the area below the message, select whichever ethereum wallet your EOS tokens were in and log in.</p></div>",
+        "screenshot_caption_two": "Once you have logged into your wallet, you will arrive at a page with the option to sign the copy and pasted message with the keys you added to it.  Click \"sign message\" at the bottom.",
+        "screenshot_caption_three": "After signing the message you will arrive at the page below.  To complete the recovery process, please copy (all of) the contents of the \"signature\" box (noted in red in the screenshot), and paste them into the form below.  Please note, entering your email address in the form is the only way we can reach you if there was an issue with your recovery registration that needs to be addressed.",
         "email_us": "Envíanos tu información de modo que podamos acceder a tu reclamo."
       },
       "process_note": "Nota: Nadie de Telos te preguntara algunas vez por tu clave privada! Si tu recibes un e-mail de nosotros será solamente para asistirte en este proceso otra vez a fin de asegurarse de que está funcionando."

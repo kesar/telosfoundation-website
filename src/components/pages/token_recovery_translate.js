@@ -3,49 +3,67 @@ import {Grid, Row, Col} from 'react-bootstrap';
 import RecoveryFormModal from '../modals/recovery_form_modal';
 import {Helmet} from 'react-helmet';
 import '../../styles/token_recovery.css';
-import step_one from '../../img/token_recovery/step_1.png';
-import step_three from '../../img/token_recovery/step_3.png';
-import step_four from '../../img/token_recovery/step_4.png';
-import step_five from '../../img/token_recovery/step_5.png';
-import step_six from '../../img/token_recovery/step_6.png';
-import step_seven from '../../img/token_recovery/step_7.jpg';
-import step_eight from '../../img/token_recovery/step_8x.png';
-import ether_screenshot_one from '../../img/token_recovery/ether_screenshot_1.jpg';
-import ether_screenshot_two from '../../img/token_recovery/ether_screenshot_2.jpg';
-import ether_screenshot_three from '../../img/token_recovery/ether_screenshot_3.png';
-import ether_screenshot_four from '../../img/token_recovery/ether_screenshot_4.jpg';
-import ether_screenshot_five from '../../img/token_recovery/ether_screenshot_5.jpg';
+
+import new_step_one from '../../img/token_recovery/new_step_1.png';
+import new_step_two from '../../img/token_recovery/new_step_2.png';
+import new_step_three from '../../img/token_recovery/new_step_3.png';
+
+// import step_one from '../../img/token_recovery/step_1.png';
+// import step_three from '../../img/token_recovery/step_3.png';
+// import step_four from '../../img/token_recovery/step_4.png';
+// import step_five from '../../img/token_recovery/step_5.png';
+// import step_six from '../../img/token_recovery/step_6.png';
+// import step_seven from '../../img/token_recovery/step_7.jpg';
+// import step_eight from '../../img/token_recovery/step_8x.png';
+// import ether_screenshot_one from '../../img/token_recovery/ether_screenshot_1.jpg';
+// import ether_screenshot_two from '../../img/token_recovery/ether_screenshot_2.jpg';
+// import ether_screenshot_three from '../../img/token_recovery/ether_screenshot_3.png';
+// import ether_screenshot_four from '../../img/token_recovery/ether_screenshot_4.jpg';
+// import ether_screenshot_five from '../../img/token_recovery/ether_screenshot_5.jpg';
+
+import ether_screenshot_one from '../../img/token_recovery/new_ether_screenshot_1.png'
+import ether_screenshot_two from '../../img/token_recovery/new_ether_screenshot_2.png'
+import ether_screenshot_three from '../../img/token_recovery/new_ether_screenshot_3.png'
+import ether_screenshot_four from '../../img/token_recovery/new_ether_screenshot_4.png'
+import ether_screenshot_five from '../../img/token_recovery/new_ether_screenshot_5.jpg'
+import ether_screenshot_six from '../../img/token_recovery/new_ether_screenshot_6.jpg'
 
 const recovery_steps = [
-	{
-		image: step_one,
-		caption: 'Open up the Sqrl wallet.'
-	},
-	{
-		image: step_three,
-		caption: 'Click "Create New Account"'
-	},
-	{
-		image: step_four,
-		caption: 'Enter your account name'
-	},
-	{
-		image: step_five,
-		caption: 'Generate "Owner Public Key"'
-	},
-	{
-		image: step_six,
-		caption: 'Copy "Owner Public Key" into "Active Public Key" field'
-	},
-	{
-		image: step_seven,
-		caption: 'Copy/Paste your Keys to a safe place! Offline storage is recommended.'
-	},
-	{
-		image: step_eight,
-		caption: 'Create your account'
-	}
+	new_step_one,
+	new_step_two,
+	new_step_three
 ];
+
+// const recovery_steps = [
+// 	{
+// 		image: step_one,
+// 		caption: 'Open up the Sqrl wallet.'
+// 	},
+// 	{
+// 		image: step_three,
+// 		caption: 'Click "Create New Account"'
+// 	},
+// 	{
+// 		image: step_four,
+// 		caption: 'Enter your account name'
+// 	},
+// 	{
+// 		image: step_five,
+// 		caption: 'Generate "Owner Public Key"'
+// 	},
+// 	{
+// 		image: step_six,
+// 		caption: 'Copy "Owner Public Key" into "Active Public Key" field'
+// 	},
+// 	{
+// 		image: step_seven,
+// 		caption: 'Copy/Paste your Keys to a safe place! Offline storage is recommended.'
+// 	},
+// 	{
+// 		image: step_eight,
+// 		caption: 'Create your account'
+// 	}
+// ];
 
 const TokenRecovery = ({language, token_recovery}) => {
 	if(!token_recovery){
@@ -137,8 +155,7 @@ class TokenRecoveryProcessOne extends Component {
 													<div className='recovery_step' key={i}>
 														<Row>
 															<Col md={8} mdOffset={2} sm={10} smOffset={1}>
-																<img src={step.image} alt='recovery step' />
-																{/*<h4>{step_two.screenshot_captions[i]}</h4>*/}
+																<img src={step} alt='recovery step' />
 																<h4 dangerouslySetInnerHTML={{__html: step_two.screenshot_captions[i]}} />
 															</Col>
 														</Row>
@@ -150,8 +167,12 @@ class TokenRecoveryProcessOne extends Component {
 								</li>
 								<li>
 									<span dangerouslySetInnerHTML={{__html: step_three.step}} />
+									<Row>
+										<Col md={8} mdOffset={2}>
+											<img src={ether_screenshot_one} alt='' className='ether_screenshot_one' />
+										</Col>
+									</Row>
 									<ul>
-										<li>{step_three.sign_in}</li>
 										<li>
 											{step_three.copy_paste}
 											<div className='process_message'>
@@ -165,15 +186,7 @@ class TokenRecoveryProcessOne extends Component {
 												<div className='recovery_step'>
 													<Row>
 														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
-															<img src={ether_screenshot_one} alt='ether screenshot one' />
-														</Col>
-													</Row>
-												</div>
-												<div className='recovery_step'>
-													<Row>
-														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
-															<img src={ether_screenshot_two} alt='ether screenshot two' />
-															<h4>{step_three.screenshot_caption}</h4>
+															<img src={ether_screenshot_two} alt='ether screenshot one' />
 														</Col>
 													</Row>
 												</div>
@@ -181,7 +194,7 @@ class TokenRecoveryProcessOne extends Component {
 													<Row>
 														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
 															<img src={ether_screenshot_three} alt='ether screenshot two' />
-															<h4>{step_three.screenshot_caption_two}</h4>
+															<h4 dangerouslySetInnerHTML={{__html: step_three.screenshot_caption}}></h4>
 														</Col>
 													</Row>
 												</div>
@@ -189,7 +202,7 @@ class TokenRecoveryProcessOne extends Component {
 													<Row>
 														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
 															<img src={ether_screenshot_four} alt='ether screenshot two' />
-															<h4>{step_three.screenshot_caption_three}</h4>
+															<h4>{step_three.screenshot_caption_two}</h4>
 														</Col>
 													</Row>
 												</div>
@@ -197,7 +210,14 @@ class TokenRecoveryProcessOne extends Component {
 													<Row>
 														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
 															<img src={ether_screenshot_five} alt='ether screenshot two' />
-															<h4>{step_three.screenshot_caption_four}</h4>
+															<h4>{step_three.screenshot_caption_three}</h4>
+														</Col>
+													</Row>
+												</div>
+												<div className='recovery_step'>
+													<Row>
+														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
+															<img src={ether_screenshot_six} alt='ether screenshot two' />
 														</Col>
 													</Row>
 												</div>
