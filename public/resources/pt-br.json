@@ -509,5 +509,171 @@
         "link": "Link"
       }
     }
+  },
+  "faq_page": {
+    "intro": {
+      "heading": "Perguntas frequentes",
+      "subheading": "Estas FAQs não fornecem aconselhamento jurídico e são apenas para fins educacionais. Você pode encontrar mais informações em nosso <a href=\"https://github.com/Telos-Foundation\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> e na nossa página no <a href=\"https://medium.com/@teloslogical\" target=\"_blank\" rel=\"noopener noreferrer\">Medium</a>."
+    },
+    "faqs": [
+      {
+        "question": "Como faço para obter meu TLOS?",
+        "answer": [
+          "O TLOS será lançado primeiramente para todos os usuários com endereços no snapshot do EOS genesis, e os detentores de contas podem acessar seus tokens do TLOS após a ativação da Rede de Blockchain do Telos. Se você não conseguir acessar sua conta EOS, recupere suas chaves perdidas aqui: <a href=\"https://telosfoundation.io/recovery\">https://telosfoundation.io/recovery</a>.",
+          "Você também poderá acessar os tokens TLOS com o Sqrl, a carteira do Telos. Scatter e DEXEOS listarão um par TLOS / EOS, e a Chainrift listará um par TLOS / BTC, e mais Exchanges deverão anunciar seu suporte ao TLOS também.",
+          "<strong>Inscreva-se para obter uma conta gratuita aqui: <a href=\"https://telosfoundation.io/downloads\">https://telosfoundation.io/downloads</a></strong>"
+        ]
+      },
+      {
+        "question": "O que é o Telos?",
+        "answer": [
+          "O Telos é uma nova rede blockchain baseada no software EOSIO."
+        ]
+      },
+      {
+        "question": "Qual é a diferença entre EOS e Telos?",
+        "answer": [
+          "EOS e Telos são ambos redes que se baseiam no software EOSIO. Qualquer contrato inteligente executado em um dos sistemas deve funcionar igualmente bem no outro. O Telos modificou o snapshot do EOS genesis e algumas regras para tornar a rede mais responsável para a maioria dos detentores de token, para ser mais atraente para os desenvolvedores do DApp e para em geral processar de forma mais responsável e sustentável."
+        ]
+      },
+      {
+        "question": "O que é o TLOS?",
+        "answer": [
+          "TLOS é o nome do token que reflete a propriedade no Telos. Um token TLOS é como um token EOS, exceto que haverá cerca de 3X menos tokens TLOS do que o EOS."
+        ]
+      },
+      {
+        "question": "Se comprei tokens EOS, receberei TLOS?",
+        "answer": [
+          "Sim, se você comprou a EOS e o registrou, seus tokens TLOS estarão disponíveis para votação no lançamento da rede e para transferência ou participação assim que a rede for ativada — até 40,000 TLOS por endereço. Se os seus tokens estiverem em uma Exchange, esta deverá concordar em listar o TLOS e distribuir tokens aos proprietários para que você os receba."
+        ]
+      },
+      {
+        "question": "Você está tirando os tokens EOS das pessoas?",
+        "answer": [
+          "Não. Os proprietários de EOS terão exatamente o mesmo número de tokens EOS na rede EOS que já possuíam. Isso é o que eles adquiriram da Block.one. O Telos é um novo projeto baseado na rede EOS. O código fonte do EOS é open source e está disponível livremente para o fork. Decidimos dar um número igual de tokens TLOS para cada token EOS no snapshot da genesis, mas limitando os valores em 40,000 TLOS por endereço da genesis. Isso significa que não haverá baleias no Telos."
+        ]
+      },
+      {
+        "question": "Telos é um airdrop?",
+        "answer": [
+          "O Telos é uma rede completamente nova que usa o mesmo software operacional EOSIO da rede principal EOS com algumas pequenas modificações. Não é um airdrop. No entanto, a distribuição de tokens TLOS é semelhante a um airdrop em que qualquer pessoa que possua tokens EOS receberá novos tokens TLOS em seus endereços com base em nosso algoritmo de distribuição de token genesis."
+        ]
+      },
+      {
+        "question": "O que exatamente é o algoritmo de distribuição de token da Telos Genesis?",
+        "answer": [
+          "Simplesmente, é que todos os endereços da Telos Genesis receberão o mesmo número de tokens que os endereços EOS correspondentes mantidos no snapshot da genesis — até um máximo de 40,000 tokens. Existem algumas exceções a esta política: Endereços comprovadamente roubados, phishing ou registros errados, privando assim seus legítimos proprietários, serão restaurados para novos endereços controlados por seus legítimos proprietários; e novos tokens da genesis serão criados para compensar os Produtores de Blocos Ativos (ABPs) e estabelecer a Fundação Telos."
+        ]
+      },
+      {
+        "question": "Se você limitar o montante de TLOS para todas as contas, como os detentores de EOS podem obter o TLOS que estavam nas Exchanges?",
+        "answer": [
+          "Os produtores de blocos do TLOS conseguem criar novos tokens por um voto de 2/3 + 1. Os 6 ABPs concordam em criar novos tokens para distribuição para qualquer Exchange que possa mostrar a quantidade de EOS no snapshot e que concordarem: listar o TLOS; não votar com a conta da Exchange; e solicitar e distribuir apenas moedas suficientes para que todos os detentores de EOS no momento do snapshot recebam suas moedas com limite de 40,000 TLOS no por conta. Os ABPs terão um processo em andamento para as Exchange solicitarem a criação de tokens TLOS e prometam honrar todas as petições válidas. (Isso exigirá um voto de 5 dos 6 produtores de bloco para ser efetivado.) Uma vez que a Telos seja ativada e os produtores de blocos eleitos validem a rede, será necessário um voto de 15 dos 21 produtores de blocos para criar novos tokens para as Exchanges."
+        ]
+      },
+      {
+        "question": "Por que endereços de genesis cap em 40,000 TLOS?",
+        "answer": [
+          "Os 1050 maiores endereços EOS controlam cerca de 90% dos tokens EOS e portanto controlam totalmente a seleção de produtores de blocos, sua votação e, finalmente, toda a rede. Isso torna o sistema perigosamente centralizado. Ao limitar os endereços do snapshot da genesis a 40,000 TLOS — aproximadamente o 90º percentil de propriedade — a blockchain do Telos será uma das mais igualitariamente distribuídas entre as principais maiores blockchains . 162,930 endereços terão exatamente o mesmo número de TLOS que o  de EOS. O fornecimento total de tokens do TLOS será reduzido para aproximadamente 200-400.000.000 tokens TLOS dependendo de quantas Exchanges solicitarem a recriação de suas carteiras. Leia mais aqui: <a href=\"https://medium.com/@teloslogical/telos-token-distribution-use-of-the-eos-genesis-snapshot-why-2d849a2b0055\" target=\"_blank\" rel=\"noopener noreferrer\">Distribuição de Tokens da Telos - Uso do EOS Genesis Snapshot & Why</a>"
+        ]
+      },
+      {
+        "question": "Os endereços Telos podem ter mais de 40,000 TLOS em algum momento?",
+        "answer": [
+          "Sim. O limite de 40,000 TLOS só se aplica na genesis da rede. Os endereços podem conter qualquer quantidade de TLOS depois disso."
+        ]
+      },
+      {
+        "question": "Qual é a diferença entre o lançamento e a ativação do Telos?",
+        "answer": [
+          "O lançamento do Telos é o processo de começar a executar o Telos para permitir que os votos sejam lançados para os produtores de blocos e para a validação da rede. A ativação é o ponto em que os detentores de TLOS podem começar a transferir ou controlar seus tokens para além do processo de votação."
+        ]
+      },
+      {
+        "question": "Se os endereços das Exchanges não podem votar, meus tokens TLOS poderão votar se estiverem atualmente em uma Exchange?",
+        "answer": [
+          "Quando os tokens estiverem fora da Exchange e em seu endereço proprietário do Telos, você poderá votar com eles. Os proprietários individuais não podem votar com seus tokens mantidos nas Exchanges. Impedir a votação de contas pertencentes à Exchanges previne que as Exchanges de votem usando tokens de clientes, o que é contra as regras da Telos."
+        ]
+      },
+      {
+        "question": "Isso prejudicará a rede EOS?",
+        "answer": [
+          "A rede EOS terá sucesso ou fracasso com base em seus próprios méritos. Esperamos que seja bem-sucedida, pois, estamos todos profundamente envolvidos neste projeto. No entanto, a versão da rede primcipal do EOS revelou problemas com o sistema que serão difíceis de serem resolvidos pela blockchain do EOS. As “baleias” mostraram que geralmente apenas votam em seus próprios parceiros produtores e até usam o sistema de recompensas para prejudicar outros produtores de blocos — isso também pode ser esperado quando surgirem as propostas para os trabalhadores. A rede EOS está sob o controle de algumas contas de baleias. Oferecemos uma nova abordagem onde as vozes de todos os detentores de tokens são importantes. A Telos também espera fornecer um campo de teste para novas ideias que possam eventualmente ser adotadas pela rede principal do EOS. Desta forma, esperamos fortalecer a EOS."
+        ]
+      },
+      {
+        "question": "Se essas alterações poderiam corrigir a rede, por que o EOS não implementa?",
+        "answer": [
+          "Block.one vendeu seus tokens EOS durante a pré-venda. Eles receberam moeda fiat em troca de tokens e deram certas garantias. Eles não podem alterar facilmente os resultados de sua venda, especialmente reduzindo os tokens de seus maiores colaboradores, o que é realmente a principal mudança que corrige o sistema. O Telos é um sistema completamente novo que nunca recebeu dinheiro nem fez promessas a ninguém. Pretendemos construir uma rede usando o software EOS de código aberto (que todos ajudaram a pagar) para criar uma rede totalmente nova que represente melhor o verdadeiro propósito da EOS."
+        ]
+      },
+      {
+        "question": "Posso comprar e vender tokens TLOS? O que eles valem?",
+        "answer": [
+          "Os tokens TLOS não ganharão valor até que a rede principal do Telos seja lançada e eles possam ser negociados. Em termos práticos, o TLOS ganhará valor real quando as Exchanges os aceitarem para negociar com outras cripto moedas. Esperamos que isso aconteça porque os clientes das Exchanges exigirão que eles tenham acesso aos seus tokens. Os requisitos técnicos para listar o TLOS serão idênticos ao EOS, então esperamos pouca resistência nesse ponto. Uma vez que os tokens sejam negociados livremente nas bolsas, eles encontrarão seu valor com base na oferta e na demanda. O fornecimento do token TLOS será entre um quinto e um terço do EOS, e o Telos deve ser tão bom, ou melhor que o EOS. O Telos também não terá nenhum endereço de \"baleia\", que geralmente é responsável pela manipulação de preços em outras moedas."
+        ]
+      },
+      {
+        "question": "Vocês estão vendendo tokens TLOS?",
+        "answer": [
+          "Não estamos vendendo nenhum token TLOS. Vamos usar o EOS Snapshot com as seguintes alterações: 1) Cobertura de todos os endereços em até 40,000 tokens; 2) Criação de um processo para que endereços de Exchanges possam solicitar que os BPs criem tokens TLOS para seus proprietários no snapshot EOS listando e distribuindo tokens TLOS (até 40,000 por titular da conta); 3) Fornecer novas chaves públicas aos detentores de tokens EOS que possam provar que seus tokens foram roubados ou registrados incorretamente; 4) Adicionando 6M novos tokens para formar um Pool de Recompensas para os fundadores do Telos e outros 6M de tokens TLOS  para a Telos Foundation Ltd, para financiar as necessidades da rede que não podem ser financiadas de outra forma. Esses tokens atualmente não têm valor e só ganharão valor se os ABPs e a Fundação Telos puderem criar uma rede valiosa. A Fundação Telos se compromete a nunca votar com seus tokens."
+        ]
+      },
+      {
+        "question": "Quem são vocês e por que vocês estão lançando o Telos?",
+        "answer": [
+          "Somos um grupo de candidatos a produtores de blocos do EOS que contribuíram para o sistema, executaram testes e participaram do grupo de lançamento da rede principal do EOS , e que votou por unanimidade no lançamento da rede principal. Acreditamos na promessa do EOS, mas ficamos preocupados com o fato de que o sistema atual é profundamente defeituoso devido ao poder esmagador dos detentores de tokens EOS com participações enormes. Esperamos que o EOS possa superar esse problema, mas, enquanto isso, queremos lançar uma nova rede mais descentralizada usando a tecnologia EOS."
+        ]
+      },
+      {
+        "question": "Os produtores de bloco EOS também podem ser produtores de blocos da Telos?",
+        "answer": [
+          "Absolutamente! Esperamos que eles participem pois sabem como executar os nodes EOSIO assim como nós. Qualquer um que atender aos requisitos mínimos para um produtor de blocos da Telos pode se apresentar para votação."
+        ]
+      },
+      {
+        "question": "Os desenvolvedores podem tornar seu código privado?",
+        "answer": [
+          "Sim. Se o desenvolvedor não recebeu pagamento como produtor de bloco, revisor de código ou proposta de trabalhador da rede nos últimos seis meses, ele pode colocar o código original em um DApp como privado. Qualquer código fonte aberto no qual o DApp é construído continuará sendo de código aberto, é claro. Por outro lado, todos os contratos inteligentes executados na rede EOS devem ser de código aberto, de acordo com a Constituição da EOS."
+        ]
+      },
+      {
+        "question": "E se os usuários do Telos não quiserem usar software privado no blockchain?",
+        "answer": [
+          "Cada contrato inteligente designará se partes de seu código são privados. Os membros da Telos poderão escolher se desejam ou não trabalhar com contratos inteligentes privados, ou apenas contratos de código aberto."
+        ]
+      },
+      {
+        "question": "Como os produtores de blocos da Telos são pagos?",
+        "answer": [
+          "A Telos terá 21 ABPs e até 30 produtores em bloco de reserva compartilhando a inflação de 1% TLOS. Cada produtor de bloco receberá a mesma taxa fixa e cada produtor reserva receberá metade dessa taxa. Todos terão deduções no pagamento por blocos perdidos."
+        ]
+      },
+      {
+        "question": "A equipe que está lançando a Telos cobrará uma taxa por seu serviço?",
+        "answer": [
+          "O lançamento do Telos é um empreendimento caro e demorado. As pessoas que lançam o Telos incluem produtores de blocos, desenvolvedores, profissionais de marketing de mídia social, árbitros e outros que trabalham juntos de maneira amplamente descentralizada. Os membros do Telos Launch Group serão compensados no arquivo da genesis do TLOS. Um Pool de Recompensas de Fundadores da Telos (TFRP) será criado no arquivo da genesis da Telos contendo 6M TLOS (cerca de 1,8% da oferta de dinheiro esperada). Este fundo será distribuído entre os membros do Telos Launch Group - um grupo de associação aberto criado para criar e lançar o Telos - com base nas tarefas executadas pelos membros. O método exato de distribuição da TFRP ainda está para ser determinado, mas será formalizado antes do lançamento da rede."
+        ]
+      },
+      {
+        "question": "Vocês dizem que a Telos não terá nenhuma \"baleia\", mas os destinatários da TFRP e a Fundação Telos não se tornarão baleias?",
+        "answer": [
+          "A Fundação Telos nunca votará com seus tokens. Os fundos da TFRP serão amplamente distribuídos entre os contribuintes de uma maneira a ser determinada em breve. As distribuições acima de um certo montante serão desbloqueadas uniformemente ao longo de um período de 3 anos, semelhante ao modo como os tokens do Block.one são adquiridos. Nenhum destinatário da TFRP poderá se votar nas classificações do produtor de blocos sem a ajuda de muitos detentores de tokens do TLOS."
+        ]
+      },
+      {
+        "question": "Por que os membros do TLG estão sendo compensados?",
+        "answer": [
+          "Os membros do Telos Launch Group estão assumindo um papel central na criação e lançamento do Telos. Eles estão suportando os custos e contribuindo com o esforço para dar vida à rede. Para compensar seu trabalho e custear os custos, eles recebem novos tokens da genesis no blockchain Telos distribuído pelo Pool de Reserva dos Fundadores de Telos. Esses tokens são de valor zero na genesis e só ganharão valor se o TLG, a Fundação Telos e outros participantes puderem lançar uma rede valiosa. Essa abordagem está alinhada com os programas de recompensa comuns nos lançamentos de criptomoedas. O montante total de compensação para os muitos fundadores / beneficiários de recompensas é de ~ 1,8% da oferta esperada de tokens TLOS, o que é um número baixo para projetos de criptomoeda onde grandes quantidades de trabalho são necessárias e nenhum financiamento foi recebido."
+        ]
+      },
+      {
+        "question": "O que é a Fundação Telos?",
+        "answer": [
+          "A Fundação Telos é a organização que inicialmente lançou o Telos. Antes do lançamento da rede Telos, a Fundação Telos organizará esforços técnicos, informativos e de marketing para promover a Telos. A Fundação Telos administrará o arquivo da genesis do Telos que está sujeito à validação pelos 6 ABPs. Imediatamente após o lançamento da rede, a Fundação Telos cederá sua autoridade aos 6 ABPs a serem regidos pela Constituição da Telos e pelas regras de votação. Após o lançamento da rede, a Fundação Telos funcionará como um órgão independente de promoção e financiamento para a Telos. Sua função será pagar por projetos que não são selecionados para propostas de trabalhadores ou que ainda não podem ser financiados devido a fundos inadequados (particularmente no início da vida da rede). A Fundação Telos pode solicitar fundos de propostas de trabalhadores para reembolsar fundos utilizados com o objetivo de criar um fundo contínuo que não seja esgotado. Também procurará estabilizar os preços de RAM publicando regularmente um preço de orientação e comprando abaixo desse preço, vendendo acima dele, e oferecendo RAM para venda ou arrendamento a desenvolvedores de boa-fé que desejam se desenvolver na rede. A Fundação Telos é uma organização descentralizada que vota em seus próprios problemas através de contrato inteligente. Ele não serve nem busca qualquer posição de governança oficial e permanecerá neutra em relação a candidatos e propostas de produtores em bloco. Endereços de propriedade da Fundação Telos nunca irão votar."
+        ]
+      }
+    ]
   }
 }

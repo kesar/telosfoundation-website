@@ -38,7 +38,7 @@ const MainSite = ({site_content}) => {
 					<Route path='/dapps' render={() => <DAppsPage dapps_page={site_content.dapps_page} />} />
 					<Route path='/recovery' render={() => <TokenRecovery token_recovery={site_content.token_recovery} language={site_content.language} />} />
 					<Route path='/governance' render={() => <Governance governance_page={site_content.governance_page} />} />
-					<Route path='/faq' component={FAQ_Page} />
+					<Route path='/faq' render={() => <FAQ_Page faq_page={site_content.faq_page} />} />
 					<Route path='/candidates' component={BlockProducerCandidates} />
 					<Route path='/how_to_vote' component={HowToVote} />
 					<Route path='/' render={() => <FrontPage landing_page={site_content.landing_page} language={site_content.language} />} />
