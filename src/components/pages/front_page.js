@@ -451,7 +451,7 @@ const Exchanges = () => {
 			<header>
 				<h1>Participating Exchanges</h1>
 			</header>
-			<div className='exchange_intro'>
+			<div className='exchange_intro' style={{direction: 'ltr'}}>
 				<Grid>
 					<Row>
 						<Col md={8} mdOffset={2}>
@@ -510,7 +510,7 @@ const Exchanges = () => {
 
 const Wallets = () => {
 	return (
-		<section id='wallets'>
+		<section id='wallets' style={{direction: 'ltr'}}>
 			<header>
 				<h1>Telos Wallets</h1>
 			</header>

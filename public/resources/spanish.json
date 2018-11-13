@@ -443,7 +443,7 @@
   "governance_page": {
     "intro": {
       "heading": "Visión General de la Gobernabilidad",
-      "subheading": "Telos es un Blockchain basado en EOSIO – el mismo software que alimenta EOS – de modo que DApps puede implementarse en Telos y EOS con el mismo código. Cuando Telos inicie (tan pronto el 31 de Octubre del 2018), el tendrá documentación completa y estructuras de operación tales como la gobernabilidad completa en-cadena, la habilidad para ratificar o enmendar documentos de gobernabilidad por la comunidad votante, una propuesta de sistema trabajador, y elección de productores de Blocks y árbitros. Por debajo hay elementos principales y características de la gobernabilidad del Blockchain en Telos."
+      "subheading": "Telos es un Blockchain basado en EOSIO – el mismo software que alimenta EOS – de modo que DApps puede implementarse en Telos y EOS con el mismo código. Cuando Telos inicie (tan pronto el 20 de Noviembre del 2018), el tendrá documentación completa y estructuras de operación tales como la gobernabilidad completa en-cadena, la habilidad para ratificar o enmendar documentos de gobernabilidad por la comunidad votante, una propuesta de sistema trabajador, y elección de productores de Blocks y árbitros. Por debajo hay elementos principales y características de la gobernabilidad del Blockchain en Telos."
     },
     "documents": {
       "heading": "Los Documentos",
@@ -675,5 +675,111 @@
         ]
       }
     ]
+  },
+  "arbitrators_page": {
+    "intro": {
+      "heading": "Programa del Árbitro",
+      "body": [
+        "La Red de Telos es el primer sistema Blockchain en el mundo gobernado con árbitros elegidos por sus propios miembros. Estamos buscando profesionales de todo el mundo especialistas en asuntos legales a fin de que nos ayuden a transformar este sistema en el modelo de gobernabilidad y arbitraje de todos los futuros Blockchain.",
+        "Los árbitros pueden ser individuos, equipos o firmas que se nominan a sí mismos mediante la ejecución del contrato ‘regarbitrator’. Los árbitros son seleccionados por los votos de los propietarios de Tokens TLOS y reciben pagos en compensación por arbitraje en TLOS. En su lanzamiento, esta página contendrá las declaraciones de campaña de cada uno de los candidatos a fin de facilitar el proceso de votación. Actualmente, el sitio muestra ejemplos de declaraciones y declaraciones de aquellos que ya notifican su intención de participar."
+      ]
+    },
+    "documents": [
+      {
+        "title": "Documento del Proceso de Arbitraje de Telos",
+        "description": [
+          "Este documento describe cómo se administrará el arbitraje de disputas e intervenciones para cambiar las cuentas o los valores de contrato en la red Telos."
+        ],
+        "url": "https://resources.telosfoundation.io/governance_documents/TBNARP_Adopted_2018-10-26.pdf"
+      },
+      {
+        "title": "Requerimientos Mínimos para Árbitros de Telos",
+        "description": [
+          "Todos los árbitros deben de cumplir con los requerimientos mínimos a fin de asegurar de que ellos son calificados para resolver disputas dentro de la red Telos."
+        ],
+        "url": "https://resources.telosfoundation.io/governance_documents/Telos_Blockchain_Network_Arbitrator_Minimum_Requirements_Adopted_2018-10-12.pdf"
+      },
+      {
+        "title": "Contrato de lenguaje humano ‘regarbitrator’",
+        "description": [
+          "Todos los árbitros deben acordar cumplir con los términos especificados en este contrato inteligente."
+        ],
+        "url": "https://resources.telosfoundation.io/governance_documents/Telos_Regarb_Human-language_Contract_Adopted_2018-10-12.pdf"
+      }
+    ],
+    "contact": {
+      "heading": "Si está interesado en ser un árbitro en la red Telos, por favor contáctenos.",
+      "button_text": "CONTACT US"
+    },
+    "candidate_section": {
+      "heading": "Candidatos",
+      "languages_heading": "Lenguajes",
+      "country_heading": "País",
+      "vote_heading": "Vote por",
+      "candidates": [
+        {
+          "name": "Marc-Roger Gagné",
+          "vote_name": "arbmarkgagne",
+          "description": "CCIE, CCII, CIPP/G/C, MAPP",
+          "statement": [
+            "Marc-Roger Gagné es un prolífico defensor de la gobernabilidad de datos que reside en Ottawa, Canadá. A lo largo de casi dos décadas, Marc-Roger se ha dedicado a brindar asesoramiento político de primera clase tanto al gobierno como a clientes corporativos. Es miembro de la Junta Directiva del Consejo de Privacidad y Acceso de Canadá desde el 2010 y miembro de la Asociación Internacional de Profesionales de la Privacidad (817631). Adicionalmente, el presenta membresía en el Consejo de Cumplimiento, Gobernabilidad y Supervisión, la Sociedad de Derecho de Upper Canadá (actual Ontario).",
+            "Las acreditaciones de Marc-Roger son muchas. En 2011 él fue reconocido como un Profesional Master en Acceso y Privacidad (MAPP), la designación más alta en materia de privacidad. También cuenta con acreditaciones como CIPP, CIPP/G, CIPP/C, Analista Certificado de Amenazas Cibernéticas (CCTA), Investigador Certificado de Inteligencia Cibernética (CCII), Investigador Certificado de Tráfico Humano (CHTI) e Investigador Forense Certificado de Sus competencias clave se encuentran en Litigios, Privacidad, Bestión de Infracciones y Programas de Capacitación, Desarrollo de Políticas, Gestión de la Información, Tecnología de la Información y Análisis de Datos.",
+            "Al combinar su vasta base de conocimientos junto con su integridad, Marc-Roger es un profesional muy reconocido y respetado que ha vinculado numerosas estrategias innovadoras en todo lo que tiene que ver con privacidad, protección de datos y servicios legales."
+          ],
+          "languages": [
+            "Inglés",
+            "Francés"
+          ],
+          "country": "Canadá"
+        },
+        {
+          "name": "Roberto Corretjer",
+          "vote_name": "arbrobertocorretjer",
+          "statement": [
+            "Abogado corporativo, empresario y emprendedor social, Roberto trae su amplia experiencia corporativa y de bienes raíces al Panel de Arbitraje de la Fundación Telos.",
+            "Roberto es miembro de la junta directiva de Blockchain Industries (una empresa constituida como púbica que cotiza en la bolsa con el símbolo \"BCII\") y ha desempeñado como un destacado abogado corporativo y de bienes raíces en Puerto Rico, negociando acuerdos inmobiliarios para algunas de las empresas de construcciones más grandes de la región. Empresas y promotoras inmobiliarias de la región. También ha representado a desarrolladores e inversionistas en la adquisición y disposición de activos inmobiliarios comerciales y residenciales, incluyendo patrimonio, arrendamiento y deuda.",
+            "La presencia única de Roberto es su experiencia bicultural tanto en América del Norte como en América del Sur.",
+            "Roberto tiene una maestría de la Universidad de Northwestern y tiene licencia para ejercer la abogacía en Washington DC y Puerto Rico."
+          ],
+          "languages": [
+            "English",
+            "Spanish"
+          ]
+        },
+        {
+          "name": "Raúl Vidal y Sepúlveda",
+          "vote_name": "arbraulsepulveda",
+          "statement": [
+            "Ex secretario adjunto de Asuntos Internacionales para el Departamento de Desarrollo Económico y Comercio de Puerto Rico, Raúl también fue el principal promotor de los incentivos de la Isla en todo el mundo y el Director de la Oficina de Puerto Rico en Nueva York. Como tal, atrajo alrededor de $ 700 millones en inversiones extranjeras directas al país.",
+            "Un partidario muy fuerte de la revolución del Blockchain, y patrocinador de las recientes conferencias brindadas en la isla: #BlockchainUnbound, #CoinAgenda y #RestartWeek, entre varios de los otros proyectos exitosos de Raúl se incluyen el primer banco comercial de Puerto Rico en 30 años, dos centros corporativas, un hotel importante e inversión en turismo, y la primera reaseguradora con calificación A en la isla. Sus logros recientes incluyen el procesamiento de personas de alto valor neto de acuerdo a los Actos 20 y 22, los mismos incentivos que él ayudó a desarrollar en el 2012 bajo la administración del Gobernador Luis Fortuno.",
+            "En reconocimiento por su trabajo en favor del desarrollo económico de Puerto Rico, Raúl fue nombrado por el Foro Económico Mundial como el fundador “Global Shaper” del San Juan Hub, y fue recientemente invitado como el primer puertorriqueño en participar en la Reunión Anual del FEM (Foro Económico Mundial) en Davos, Suiza, para hablar sobre el papel de las ciudades como centros para el desarrollo económico y para participar en el equipo de la Presidencia del Primer Ministro de Australia en el G-20 2014."
+          ],
+          "languages": [
+            "Inglés",
+            "Español"
+          ]
+        },
+        {
+          "name": "Moises Kaba III, Esq.",
+          "vote_name": "arbmoiseskaba",
+          "statement": [
+            "Moises has been an attorney for over 30 years serving clients in both State and Federal Courts in Florida on a wide range of legal practice areas. He is a proven litigator, corporate and transactional attorney and business entrepreneur who is self-motivated, energetic and solutions-oriented with a solid record of success in all stages of his legal and business career.",
+            "Mr. Kaba received his Juris Doctorate (JD) degree from Nova Southeastern University Shepard Broad College of Law in 1985, and became admitted as a member of the Florida Bar in 1986. He also received a Bachelor Degree in Business Administration with a major in Accounting from St. Thomas University in 1983, and an Associate in Arts degree in 1982 from Miami Dade Community College. Mr. Kaba is also admitted to practice law as a member of the Federal Court Bars of the United States District Court for The Southern District Court of Florida, United States District Court For The Middle District Court of Florida and United States District Court For The Northern District of Florida.",
+            "Mr. Kaba possesses the legal talent and business acumen to lead this company to achieve the growth, development and desired results of creating a truly forward thinking and innovative community token and business model."
+          ]
+        },
+        {
+          "name": "Mark Blankenship",
+          "vote_name": "arbmarkblankenship",
+          "statement": [
+            "Mark Blankenship is a 30 year Attorney licensed to practice in Texas and New Mexico, as well as in the United States District Court for the Northern and Western Districts of Texas.  His practice has been solely in the civil law area, representing and defending individuals as well as multinational corporations. Mark is a top rated attorney by both Martindale Hubbel and Avvo Attorney peer rating services. He has been inducted into the prestigious American Board of Trial Lawyers (ABOTA). His experience includes representing clients  jury trials and administrative proceedings. He also has extensive experience in mediation and arbitration.",
+            "In community service outside of the law, Mark was named the Outstanding School Board Member in the state of Texas for 2014. Mark’s unique experience in civil law, arbitration and mediation give him the tools to best help network members resolve disputes in a fair and expeditious manner."
+          ],
+          "languages": [
+            "English"
+          ]          
+        }
+      ]
+    }
   }
 }

@@ -443,7 +443,7 @@
   "governance_page": {
     "intro": {
       "heading": "Обзор Управления",
-      "subheading": "Telos – это управляемый блокчейн, основанный на платформе EOSIO - таком же программном обеспечении, которое питает EOS, - таким образом, децентрализованное приложение DApps может применяться как на Telos, так и на EOS с тем же кодом. Когда Telos будет запущен (уже с 31 октября 2018 года), он будет иметь подробную документацию и операционные структуры, такие как полное управление по цепочке, возможность ратифицировать или вносить изменения в документы управления путем голосования сообщества, систему предложений наемных работников и выборы производителей блоков и арбитраторов. Ниже приведены основные элементы и особенности управления блокчейном на Telos."
+      "subheading": "Telos – это управляемый блокчейн, основанный на платформе EOSIO - таком же программном обеспечении, которое питает EOS, - таким образом, децентрализованное приложение DApps может применяться как на Telos, так и на EOS с тем же кодом. Когда Telos будет запущен (уже с 20 ноябрь 2018 года), он будет иметь подробную документацию и операционные структуры, такие как полное управление по цепочке, возможность ратифицировать или вносить изменения в документы управления путем голосования сообщества, систему предложений наемных работников и выборы производителей блоков и арбитраторов. Ниже приведены основные элементы и особенности управления блокчейном на Telos."
     },
     "documents": {
       "heading": "ДОКУМЕНТЫ",
@@ -675,5 +675,111 @@
         ]
       }
     ]
+  },
+  "arbitrators_page": {
+    "intro": {
+      "heading": "Арбитражная программа",
+      "body": [
+        "Сеть Telos является первым в мире управляемым блокчейном с арбитрами, избираемыми её членами. Мы ищем юристов со всего мира, чтобы помочь нам построить эту систему в качестве модели для будущего управления и арбитража в блокчейне.",
+        "Арбитрами могут быть отдельные лица, команды или фирмы, которые выдвигают себя, подписав контракт регарбитра. Арбитры выбираются по голосам обладателей токенов TLOS и получают оплату за арбитражную работу в TLOS. При запуске, чтобы облегчить голосование на этой странице будут размещены заявления каждого кандидата в арбитры. В настоящее время сайт показывает примеры заявлений и заявления от тех, кто информировал нас о своём намерении участвовать в выборах в качестве кандидата."
+      ]
+    },
+    "documents": [
+      {
+        "title": "Документ о процедуре арбитража Telos",
+        "description": [
+          "В этом документе описывается, как будет осуществляться арбитраж споров и вмешательств по изменению аккаунта или контракта в сети Telos."
+        ],
+        "url": "https://resources.telosfoundation.io/governance_documents/TBNARP_Adopted_2018-10-26.pdf"
+      },
+      {
+        "title": "Минимальные требования для арбитра Telos",
+        "description": [
+          "Все арбитры должны соответствовать минимальным требованиям, чтобы убедить нас, что они смогут разрешать споры в сети Telos."
+        ],
+        "url": "https://resources.telosfoundation.io/governance_documents/Telos_Blockchain_Network_Arbitrator_Minimum_Requirements_Adopted_2018-10-12.pdf"
+      },
+      {
+        "title": "Контракт регарбитра на человеческом языке",
+        "description": [
+          "Все арбитры должны согласиться выполнить условия, изложенные в этом смарт-контракте."
+        ],
+        "url": "https://resources.telosfoundation.io/governance_documents/Telos_Regarb_Human-language_Contract_Adopted_2018-10-12.pdf"
+      }
+    ],
+    "contact": {
+      "heading": "Если вы заинтересованы стать арбитром в сети Telos, свяжитесь с нами.",
+      "button_text": "CONTACT US"
+    },
+    "candidate_section": {
+      "heading": "Кандидаты",
+      "languages_heading": "Языки",
+      "country_heading": "Страна",
+      "vote_heading": "Голосуйте за",
+      "candidates": [
+        {
+          "name": "Марк-Роджер Ганье",
+          "vote_name": "arbmarkgagne",
+          "description": "CCIE, CCII, CIPP/G/C, MAPP",
+          "statement": [
+            "Марк-Роджер Ганье - успешный адвокат по управлению данными, который проживает в Оттаве, Канада. Уже почти двадцать лет Марк-Роджер предоставляет первоклассные рекомендации как для государственных, так и для корпоративных клиентов. С 2010-ого года он является членом Совета директоров канадского Консульства по конфиденциальности и доступу и является членом Международной ассоциации профессионалов в области конфиденциальности (817631). Кроме того, он является членом Совета по соблюдению, управлению и надзору - юридического общества провинции Онтарио.",
+            "У Марка-Роджера много аккредитаций. В 2011 году он был признан профессионалом в области доступа и конфиденциальности (MAPP), что является самым высоким званием в сообществе по конфиденциальности. Он также имеет аккредитацию в качестве CIPP, CIPP/G, CIPP/C, сертифицированного специалиста по кибер-угрозе (CCTA), сертифицированного следователя по киберразведке (CCII), сертифицированного следователя по вопросам торговли людьми (CHTI) и сертифицированного следователя по уголовным преступлениям (CTFI). Его ключевыми областями являются судебные разбирательства, конфиденциальность, управление нарушениями и учебные программы, разработка политики, управление информацией, информационные технологии, анализ данных.",
+            "Марк-Роджер, соединивший в себе обширную базу знаний и честность, является хорошо известным и уважаемым профессионалом, который интегрировал множество инновационных стратегий во все, чем он занимался в области конфиденциальности, защиты данных и юридических услуг."
+          ],
+          "languages": [
+            "Английский",
+            "Французский"
+          ],
+          "country": "Канада"
+        },
+        {
+          "name": "Роберто Корретьер",
+          "vote_name": "arbrobertocorretjer",
+          "statement": [
+            "Корпоративный адвокат, бизнесмен и социальный предприниматель, Роберто принесёт свой обширный опыт в области корпоративного и недвижимого имущества в Арбитражную группу фонда Telos.",
+            "Роберто заседает в Совете директоров Blockchain Industries (публично торгуемой компании, с биржевым символом «BCII»). Он работал ведущим корпоративным адвокатом и адвокатом по недвижимости в Пуэрто-Рико. Роберто договаривался о расчётах по недвижимости для некоторых крупнейших строительных компаний и застройщиков в регионе. Он также представлял застройщиков и инвесторов при приобретении и продаже коммерческой и жилой недвижимости, занимался такими вопросами, как капитал, аренда и задолженность.",
+            "Уникальность Роберто - его мультикультурный опыт, ведь он работал как в Северной, так и в Южной Америке.",
+            "Роберто обладает степенью магистра Северо-западного университета и имеет лицензию на юридическое дело в городе Вашингтон, округ Колумбия и Пуэрто-Рико."
+          ],
+          "languages": [
+            "Английский",
+            "Испанский"
+          ]
+        },
+        {
+          "name": "Рауль Видаль и Сепульведа",
+          "vote_name": "arbraulsepulveda",
+          "statement": [
+            "Рауль - бывший помощник секретаря по международным делам Департамента экономического развития и торговли Пуэрто-Рико, также был ведущим промоутером острова во всем мире и директором Нью-Йоркского офиса Пуэрто-Рико. Таким образом, он привлек более 700 миллионов долларов прямых иностранных инвестиций на остров.",
+            "Он является ярым сторонником блокчейн революции, а также спонсором недавних конференций #BlockchainUnbound, #CoinAgenda и #RestartWeek на острове. Некоторыми из других успешных проектов Рауля являются первый коммерческий банк Пуэрто-Рико за 30 лет, две корпоративные штаб-квартиры, инвестиции в отели и туризм, а также первая страховая компания уровня А на острове. Недавние достижения включают в себя обработку лиц в соответствии с Актами 20 и 22.",
+            "В знак признания его работы по экономическому развитию Пуэрто-Рико, Рауль был назван Всемирным экономическим форумом «Global Shaper» («глобальный формирователь») центра Сан-Хуан и недавно был приглашен в качестве первого пуэрториканца для участия в ежегодном совещании ВЭФ в Давосе, Швейцария, чтобы рассказать о роли городов в качестве центров экономического развития и принять участие в работе австралийского саммит G-20 в 2014 году."
+          ],
+          "languages": [
+            "Английский",
+            "Испанский"
+          ]
+        },
+        {
+          "name": "Moises Kaba III, Esq.",
+          "vote_name": "arbmoiseskaba",
+          "statement": [
+            "Moises has been an attorney for over 30 years serving clients in both State and Federal Courts in Florida on a wide range of legal practice areas. He is a proven litigator, corporate and transactional attorney and business entrepreneur who is self-motivated, energetic and solutions-oriented with a solid record of success in all stages of his legal and business career.",
+            "Mr. Kaba received his Juris Doctorate (JD) degree from Nova Southeastern University Shepard Broad College of Law in 1985, and became admitted as a member of the Florida Bar in 1986. He also received a Bachelor Degree in Business Administration with a major in Accounting from St. Thomas University in 1983, and an Associate in Arts degree in 1982 from Miami Dade Community College. Mr. Kaba is also admitted to practice law as a member of the Federal Court Bars of the United States District Court for The Southern District Court of Florida, United States District Court For The Middle District Court of Florida and United States District Court For The Northern District of Florida.",
+            "Mr. Kaba possesses the legal talent and business acumen to lead this company to achieve the growth, development and desired results of creating a truly forward thinking and innovative community token and business model."
+          ]
+        },
+        {
+          "name": "Mark Blankenship",
+          "vote_name": "arbmarkblankenship",
+          "statement": [
+            "Mark Blankenship is a 30 year Attorney licensed to practice in Texas and New Mexico, as well as in the United States District Court for the Northern and Western Districts of Texas.  His practice has been solely in the civil law area, representing and defending individuals as well as multinational corporations. Mark is a top rated attorney by both Martindale Hubbel and Avvo Attorney peer rating services. He has been inducted into the prestigious American Board of Trial Lawyers (ABOTA). His experience includes representing clients  jury trials and administrative proceedings. He also has extensive experience in mediation and arbitration.",
+            "In community service outside of the law, Mark was named the Outstanding School Board Member in the state of Texas for 2014. Mark’s unique experience in civil law, arbitration and mediation give him the tools to best help network members resolve disputes in a fair and expeditious manner."
+          ],
+          "languages": [
+            "English"
+          ]          
+        }
+      ]
+    }
   }
 }
