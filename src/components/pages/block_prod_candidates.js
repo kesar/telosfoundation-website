@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import {Helmet} from 'react-helmet';
@@ -38,20 +38,28 @@ import madrid from '../../img/partner_logos/logo_telos_madrid.png';
 import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
 // import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
 // import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
+import telos_voyager from '../../img/partner_logos/logo_telos_voyager.png';
 
 import '../../styles/block_prod_candidates.css';
 
-const BlockProducerCandidates = () => {
-	return (
-		<div className='block_prod_candidates'>
-			<Helmet>
-				<title>Telos BP Candidates</title>
-				<meta name='description' content='Directory of candidates who submitted their names for consideration as block producers on Telos and are listed in the order of when they joined the Telos testnet. This is not necessarily a complete list of block producer candidates, and being on this list is not an endorsement.' />
-			</Helmet>
-			<Intro />
-			<Candidates />
-		</div>
-	);
+class BlockProducerCandidates extends Component {
+
+	componentDidMount(){
+		window.scrollTo(0, 0);
+	}
+
+	render(){
+		return (
+			<div className='block_prod_candidates'>
+				<Helmet>
+					<title>Telos BP Candidates</title>
+					<meta name='description' content='Directory of candidates who submitted their names for consideration as block producers on Telos and are listed in the order of when they joined the Telos testnet. This is not necessarily a complete list of block producer candidates, and being on this list is not an endorsement.' />
+				</Helmet>
+				<Intro />
+				<Candidates />
+			</div>
+		);
+	}
 }
 
 const Intro = () => {
@@ -228,6 +236,13 @@ const Candidates = () => {
 			url: 'https://telosglobal.io',
 			logo: telos_global,
 			vote_name: 'telosglobal1'
+		},
+		{
+			name: 'Telos Voyager',
+			description: 'With experienced startup team members based in LA, Hawaii, and Latin America, we are focused on developing technical talent and growing the EOSIO ecosystem in emerging regions.',
+			url: 'http://telosvoyager.io',
+			logo: telos_voyager,
+			vote_name: 'telosvoyager'
 		}
 	];
 

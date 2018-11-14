@@ -27,6 +27,18 @@ const SideNavigation = (props) => {
 				</li>
 				<li>
 					<a
+						href='/candidates'
+						onClick={e => {
+							e.preventDefault();
+							props.history.push('/candidates');
+							props.toggleSideNav(false);
+						}}
+					>
+						BP CANDIDATES
+					</a>
+				</li>
+				<li>
+					<a
 						href='/governance'
 						onClick={e => {
 							e.preventDefault();

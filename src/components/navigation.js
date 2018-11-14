@@ -106,6 +106,18 @@ class Navigation extends Component {
 					</li>
 					<li className='side_nav_item_mobile'>
 						<a
+							href='/candidates'
+							onClick={e => {
+								e.preventDefault();
+								this.props.history.push('/candidates');
+								this.handleCloseNav();
+							}}
+						>
+							BP CANDIDATES
+						</a>
+					</li>
+					<li className='side_nav_item_mobile'>
+						<a
 							href='/governance'
 							onClick={e => {
 								e.preventDefault();

@@ -90,7 +90,8 @@ const boardNominees = [
 		nominatedBy: 'Justin Giudici, infinitybloc',
 		portrait: richard_erikodi,
 		bio: [
-			'Richard (closest friends call him Bryan) is an open source, IoT and tech enthusiast.  He holds a BSc Hons in Accounting and Management Information Systems. Over the last 22 years, Bryan has held positions at various FTSE 100 organisations and will be looking to foster good relations between the Telos blockchain and the corporate world.  Bryan is passionate about community and economic mobility.   The decentralised economy will promote this by offering a unique opportunity to develop new organisational & ownership structures as well as new economic activities.'
+			'Richard (closest friends call him Bryan) is an open source, IoT and tech enthusiast.  He holds a BSc Hons in Accounting and Management Information Systems. Over the last 22 years, Bryan has held positions at various FTSE 100 organisations and will be looking to foster good relations between the Telos blockchain and the corporate world.  Bryan is passionate about community and economic mobility.   The decentralised economy will promote this by offering a unique opportunity to develop new organisational & ownership structures as well as new economic activities.',
+			'Bryan brings a wealth of organisational & treasury management, financial analysis and reporting expertise to the team.  He is currently researching and developing a standard for financial reporting and audit for blockchain organisations, DAOs and DACs in this age of radical transparency.'
 		]
 	},
 	{
@@ -285,7 +286,7 @@ const BoardIntro = () => {
 								</a>
 							</div>
 							<p>The Telos Foundation is governed by a board of 12 elected board members who will elect an Executive Director and a RAM Administration Director.</p>
-							<p>Nominees for board member may come from anyone in the community. We encourage nominees from inside and outside the Telos Contributors Group. To Nominate someone for the board, email <a href='mailto:hello@telosfoundation.io'>hello@telosfoundation.io</a>. Nominees must agree to stand for election in order to be listed on this site or the ballot.</p>
+							<p>Nominations are closing November 15th, 2018. Nominees for board member may come from anyone in the community. We encourage nominees from inside and outside the Telos Contributors Group. To Nominate someone for the board, email <a href='mailto:hello@telosfoundation.io'>hello@telosfoundation.io</a>. Nominees must agree to stand for election in order to be listed on this site or the ballot.</p>
 							<p>The Telos Foundation Board elections will happen as soon as feasible after the Telos launch in order to empower voting for ongoing business such as grants.</p>
 						</div>
 					</Col>
