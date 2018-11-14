@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom';
@@ -14,7 +14,7 @@ import eos_metal from '../../img/partner_logos/logo_eosmetal.png';
 import dutcheos from '../../img/partner_logos/logo_dutch_eos.png';
 import telosuk from '../../img/partner_logos/logo_telos_uk.png';
 import eosbarcelona from '../../img/partner_logos/logo_eosbarcelona.png';
-import eosvan from '../../img/partner_logos/logo_eosvan.png';
+// import eosvan from '../../img/partner_logos/logo_eosvan.png';
 import goodblock from '../../img/partner_logos/logo_goodblock.png';
 import infinitybloc from '../../img/partner_logos/logo_infinitybloc.png';
 import teloslabs from '../../img/partner_logos/logo_teloslabs.png';
@@ -228,51 +228,57 @@ const partnersArr = [
 	}
 ];
 
-const FrontPage = ({landing_page, language}) => {
-	
-	const { intro_heading,
-			intro_content,
-			developers_heading,
-			developers_content,
-			dpos_heading,
-			dpos_content,
-			gov_heading,
-			gov_content,
-			white_paper_heading,
-			white_paper_content,
-			github_text,
-			partners_heading } = landing_page;
+class FrontPage extends Component {
+	componentDidMount(){
+		window.scrollTo(0, 0);
+	}
 
-	const getStyle = () => {
-		if(language === 'arabic') return {direction: 'rtl'};
+	getStyle(){
+		if(this.props.language === 'arabic') return {direction: 'rtl'};
 		return {};
-	};
+	}
 
-	return (
-		<div style={getStyle()}>
-			<Intro
-				intro_heading={intro_heading}
-				intro_content={intro_content}
-				language={language} />
-			<IconsText
-				developers_heading={developers_heading}
-				developers_content={developers_content}
-				dpos_heading={dpos_heading}
-				dpos_content={dpos_content}
-				gov_heading={gov_heading}
-				gov_content={gov_content} />
-			<WhitePaper
-				white_paper_heading={white_paper_heading}
-				white_paper_content={white_paper_content}
-				github_text={github_text}
-				language={language} />
-			<Exchanges />
-			<Wallets />
-			<Partners
-				partners_heading={partners_heading} />
-		</div>
-	);
-};
+	render(){
+		const { intro_heading,
+				intro_content,
+				developers_heading,
+				developers_content,
+				dpos_heading,
+				dpos_content,
+				gov_heading,
+				gov_content,
+				white_paper_heading,
+				white_paper_content,
+				github_text,
+				partners_heading } = this.props.landing_page;
+		const {language} = this.props;
+
+		return (
+			<div style={this.getStyle()}>
+				<Intro
+					intro_heading={intro_heading}
+					intro_content={intro_content}
+					language={language} />
+				<IconsText
+					developers_heading={developers_heading}
+					developers_content={developers_content}
+					dpos_heading={dpos_heading}
+					dpos_content={dpos_content}
+					gov_heading={gov_heading}
+					gov_content={gov_content} />
+				<WhitePaper
+					white_paper_heading={white_paper_heading}
+					white_paper_content={white_paper_content}
+					github_text={github_text}
+					language={language} />
+				<Exchanges />
+				<Wallets />
+				<Partners
+					partners_heading={partners_heading} />
+			</div>
+		);
+	}
+}
 
 const Intro = ({intro_heading, intro_content, language}) => {
 

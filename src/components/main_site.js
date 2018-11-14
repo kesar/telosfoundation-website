@@ -8,7 +8,7 @@ import Arbitrator from './pages/arbitrator';
 import TokenRecovery from './pages/token_recovery_translate';
 import DAppsPage from './pages/dapps';
 import Governance from './pages/governance';
-import FAQ_Page from './pages/faq';
+import FAQPage from './pages/faq';
 import BlockProducerCandidates from './pages/block_prod_candidates';
 import HowToVote from './pages/how_to_vote';
 import RewardsSubmission from './pages/rewards_submission';
@@ -38,7 +38,7 @@ const MainSite = ({site_content}) => {
 					<Route path='/dapps' render={() => <DAppsPage dapps_page={site_content.dapps_page} />} />
 					<Route path='/recovery' render={() => <TokenRecovery token_recovery={site_content.token_recovery} language={site_content.language} />} />
 					<Route path='/governance' render={() => <Governance governance_page={site_content.governance_page} />} />
-					<Route path='/faq' render={() => <FAQ_Page faq_page={site_content.faq_page} />} />
+					<Route path='/faq' render={() => <FAQPage faq_page={site_content.faq_page} />} />
 					<Route path='/candidates' component={BlockProducerCandidates} />
 					<Route path='/how_to_vote' component={HowToVote} />
 					<Route path='/' render={() => <FrontPage landing_page={site_content.landing_page} language={site_content.language} />} />

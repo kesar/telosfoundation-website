@@ -21,29 +21,36 @@ const recovery_steps = [
 	new_step_three
 ];
 
-const TokenRecovery = ({language, token_recovery}) => {
-	if(!token_recovery){
+class TokenRecovery extends Component {
+	componentDidMount(){
+		window.scrollTo(0, 0);
+	}
+
+	render(){
+		const {language, token_recovery} = this.props;
+		if(!token_recovery){
+			return (
+				<div className='token_recovery'>
+					<h4>missing translation</h4>
+				</div>
+			);
+		}
+
 		return (
 			<div className='token_recovery'>
-				<h4>missing translation</h4>
+				<Helmet>
+					<title>Token Recovery</title>
+					<meta name="description" content="Were your keys lost or compromised on EOS? Telos wants to make sure the proper owners receive their TLOS tokens in our upcoming Telos sharedrop!" />
+				</Helmet>
+				<TokenRecoveryIntro intro={token_recovery.intro} />
+				<TokenRecoveryProcessOne
+					process={token_recovery.process_one}
+					recovery_form={token_recovery.recovery_form} />
+				<TokenRecoveryProcessTwo process={token_recovery.process_two} />
 			</div>
 		);
 	}
-
-	return (
-		<div className='token_recovery'>
-			<Helmet>
-				<title>Token Recovery</title>
-				<meta name="description" content="Were your keys lost or compromised on EOS? Telos wants to make sure the proper owners receive their TLOS tokens in our upcoming Telos sharedrop!" />
-			</Helmet>
-			<TokenRecoveryIntro intro={token_recovery.intro} />
-			<TokenRecoveryProcessOne
-				process={token_recovery.process_one}
-				recovery_form={token_recovery.recovery_form} />
-			<TokenRecoveryProcessTwo process={token_recovery.process_two} />
-		</div>
-	);
-};
+}
 
 const TokenRecoveryIntro = ({intro}) => {
 	return (

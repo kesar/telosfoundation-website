@@ -65,32 +65,39 @@ const splashBanners = [
 	}
 ];
 
-const Download = ({language, downloads_page}) => {
-	return (
-		<div className='download_page'>
-			<Helmet>
-				<title>Telos Downloads</title>
-				<meta name="description" content="Download all the documents and tools that you need to join the Telos Network." />
-			</Helmet>
-			<Grid>
-				<Row>
-					<Col md={12}>
-						<div className='download_intro'>
-							<h1>{downloads_page.intro.heading}</h1>
-							<Row>
-								<Col md={10} mdOffset={1}>
-									<h2>{downloads_page.intro.subheading}</h2>
-								</Col>
-							</Row>
-						</div>
-						<Wallets wallets={downloads_page.wallets} />
-						<Documents documents={downloads_page.documents} banners={downloads_page.banners} language={language} />
-					</Col>
-				</Row>
-			</Grid>
-		</div>
-	);
-};
+class Download extends Component {
+	componentDidMount(){
+		window.scrollTo(0, 0);
+	}
+
+	render(){
+		const {language, downloads_page} = this.props;
+		return (
+			<div className='download_page'>
+				<Helmet>
+					<title>Telos Downloads</title>
+					<meta name="description" content="Download all the documents and tools that you need to join the Telos Network." />
+				</Helmet>
+				<Grid>
+					<Row>
+						<Col md={12}>
+							<div className='download_intro'>
+								<h1>{downloads_page.intro.heading}</h1>
+								<Row>
+									<Col md={10} mdOffset={1}>
+										<h2>{downloads_page.intro.subheading}</h2>
+									</Col>
+								</Row>
+							</div>
+							<Wallets wallets={downloads_page.wallets} />
+							<Documents documents={downloads_page.documents} banners={downloads_page.banners} language={language} />
+						</Col>
+					</Row>
+				</Grid>
+			</div>
+		);
+	}
+}
 
 const Wallets = ({wallets}) => {
 	return (

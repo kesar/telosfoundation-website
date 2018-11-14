@@ -13,7 +13,7 @@ import eosgreen from '../../img/partner_logos/logo_eosgreen.png';
 import telos_miami from '../../img/partner_logos/logo_telos_miami.png';
 import dutcheos from '../../img/partner_logos/logo_dutch_eos.png';
 import hellenicos from '../../img/partner_logos/logo_hellenicos.png';
-import eos_sweden from '../../img/partner_logos/logo_eossweden.png';
+// import eos_sweden from '../../img/partner_logos/logo_eossweden.png';
 import kainos from '../../img/partner_logos/logo_kainos.png';
 import eos_metal from '../../img/partner_logos/logo_eosmetal.png';
 import sweden_cornet from '../../img/partner_logos/logo_swedencornet.png';
@@ -52,7 +52,7 @@ const BlockProducerCandidates = () => {
 			<Candidates />
 		</div>
 	);
-};
+}
 
 const Intro = () => {
 	return (

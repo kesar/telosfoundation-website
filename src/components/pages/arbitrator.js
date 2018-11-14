@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
 import triple_icon_desktop from '../../img/arbitrator/triple_icon.png';
@@ -29,24 +29,32 @@ const arbitratorMail = {
 	body: 'Dear Members of the Telos Network,%0D%0A%0D%0AI am a legal professional who is interested in joining the Telos Network as an Arbitrator. Please send me more information about the role requirements, selection process, contract terms and compensation.%0D%0A%0D%0AThank you,%0D%0A%0D%0A[Signature]'
 };
 
-const Arbitrator = ({arbitrators_page}) => {
-	return (
-		<div className='arbitrators'>
-			<Helmet>
-				<title>Telos Arbitrator Program</title>
-				<meta name="description" content="The Telos Network is the world’s first governed blockchain with arbitrators elected by its members. We are looking for legal professionals from around the world to help us build this system into the model for all future blockchain governance and arbitration." />
-			</Helmet>
-			<Grid>
-				<Row>
-					<Col md={10} mdOffset={1}>
-						<ArbitratorIntro intro={arbitrators_page.intro} documents={arbitrators_page.documents} contact={arbitrators_page.contact} />
-						<ArbitratorCandidates candidate_section={arbitrators_page.candidate_section} />
-					</Col>
-				</Row>
-			</Grid>
-		</div>
-	);
-};
+class Arbitrator extends Component {
+
+	componentDidMount(){
+		window.scrollTo(0, 0);
+	}
+
+	render(){
+		const {arbitrators_page} = this.props;
+		return (
+			<div className='arbitrators'>
+				<Helmet>
+					<title>Telos Arbitrator Program</title>
+					<meta name="description" content="The Telos Network is the world’s first governed blockchain with arbitrators elected by its members. We are looking for legal professionals from around the world to help us build this system into the model for all future blockchain governance and arbitration." />
+				</Helmet>
+				<Grid>
+					<Row>
+						<Col md={10} mdOffset={1}>
+							<ArbitratorIntro intro={arbitrators_page.intro} documents={arbitrators_page.documents} contact={arbitrators_page.contact} />
+							<ArbitratorCandidates candidate_section={arbitrators_page.candidate_section} />
+						</Col>
+					</Row>
+				</Grid>
+			</div>
+		);
+	}
+}
 
 const ArbitratorIntro = ({intro, documents, contact}) => {
 	const {address, subject, body} = arbitratorMail;

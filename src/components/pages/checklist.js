@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
 import not_started_icon from '../../img/checklist/gng_list_no_circle.png';
@@ -7,38 +7,78 @@ import completed_icon from '../../img/checklist/gng_list_yes.png';
 import telos_logo from '../../img/checklist/logo_gray32x35.png';
 import '../../styles/checklist.css';
 
-const Checklist = () => {
-	return (
-		<Grid>
-			<Helmet>
-				<title>Telos Launch Checklist</title>
-				<meta name="description" content="List of features and functions are considered essential and must be completed and tested in order for Telos to launch." />
-			</Helmet>
-			<Row>
-				<Col md={12}>
-					<div className='checklist'>
-						<h1>Launch Checklist</h1>
-						<Row>
-							<Col md={10} mdOffset={1}>
-								<div className='checklist_intro'>
-									<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
-									<h2>Next go/no-go decision date: Nov 20th, 2018 17:00 UTC</h2>
-									<h4>On a yes vote, the network will launch 8 hours later at midnight UTC</h4>
-								</div>
-							</Col>
-						</Row>
-						<ChecklistLegend />
-						<DevelopmentCode />
-						<Governance />
-						<Contracts />
-						<Tools />
-						<Miscellaneous />
-					</div>
-				</Col>
-			</Row>
-		</Grid>
-	);
-};
+class Checklist extends Component {
+
+	componentDidMount(){
+		window.scrollTo(0, 0);
+	}
+
+	render(){
+		return (
+			<Grid>
+				<Helmet>
+					<title>Telos Launch Checklist</title>
+					<meta name="description" content="List of features and functions are considered essential and must be completed and tested in order for Telos to launch." />
+				</Helmet>
+				<Row>
+					<Col md={12}>
+						<div className='checklist'>
+							<h1>Launch Checklist</h1>
+							<Row>
+								<Col md={10} mdOffset={1}>
+									<div className='checklist_intro'>
+										<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
+										<h2>Next go/no-go decision date: Nov 20th, 2018 17:00 UTC</h2>
+										<h4>On a yes vote, the network will launch 8 hours later at midnight UTC</h4>
+									</div>
+								</Col>
+							</Row>
+							<ChecklistLegend />
+							<DevelopmentCode />
+							<Governance />
+							<Contracts />
+							<Tools />
+							<Miscellaneous />
+						</div>
+					</Col>
+				</Row>
+			</Grid>
+		);
+	}	
+}
+
+// const Checklist = () => {
+// 	return (
+// 		<Grid>
+// 			<Helmet>
+// 				<title>Telos Launch Checklist</title>
+// 				<meta name="description" content="List of features and functions are considered essential and must be completed and tested in order for Telos to launch." />
+// 			</Helmet>
+// 			<Row>
+// 				<Col md={12}>
+// 					<div className='checklist'>
+// 						<h1>Launch Checklist</h1>
+// 						<Row>
+// 							<Col md={10} mdOffset={1}>
+// 								<div className='checklist_intro'>
+// 									<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
+// 									<h2>Next go/no-go decision date: Nov 20th, 2018 17:00 UTC</h2>
+// 									<h4>On a yes vote, the network will launch 8 hours later at midnight UTC</h4>
+// 								</div>
+// 							</Col>
+// 						</Row>
+// 						<ChecklistLegend />
+// 						<DevelopmentCode />
+// 						<Governance />
+// 						<Contracts />
+// 						<Tools />
+// 						<Miscellaneous />
+// 					</div>
+// 				</Col>
+// 			</Row>
+// 		</Grid>
+// 	);
+// };
 
 const ChecklistLegend = () => {
 	return (

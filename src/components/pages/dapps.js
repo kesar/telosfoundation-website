@@ -19,18 +19,25 @@ import arrow_prev from '../../img/dapps/arrow_prev_white.png';
 
 import '../../styles/dapps.css';
 
-const DAppsPage = ({dapps_page}) => {
-	return (
-		<div className='dapps'>
-			<Helmet>
-				<title>Telos Dapps Development</title>
-			</Helmet>
-			<DAppsIntro intro={dapps_page.intro} />
-			<DAppsSlider slides={dapps_page.slides} />
-			<DAppContent dapp_sections={dapps_page.dapp_sections} />
-		</div>
-	);
-};
+class DAppsPage extends Component {
+	componentDidMount(){
+		window.scrollTo(0, 0);
+	}
+
+	render(){
+		const {dapps_page} = this.props;
+		return (
+			<div className='dapps'>
+				<Helmet>
+					<title>Telos Dapps Development</title>
+				</Helmet>
+				<DAppsIntro intro={dapps_page.intro} />
+				<DAppsSlider slides={dapps_page.slides} />
+				<DAppContent dapp_sections={dapps_page.dapp_sections} />
+			</div>
+		);
+	}
+}
 
 const DAppsIntro = ({intro}) => {
 	return (

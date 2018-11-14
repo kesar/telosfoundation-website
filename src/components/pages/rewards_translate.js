@@ -16,6 +16,11 @@ class RewardsTranslate extends Component {
 		};
 	}
 
+	componentDidMount(){
+		//go to top
+		window.scrollTo(0, 0);
+	}
+
 	render(){
 		const {rewards_page} = this.props;
 		if(!rewards_page) return <div>no content yet</div>;
