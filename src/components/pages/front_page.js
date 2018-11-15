@@ -336,7 +336,7 @@ const Intro = ({intro_heading, intro_content, language}) => {
 					<Col sm={6}>
 						<ScrollAnimation
 							animateOnce={true}
-							animateIn='fadeIn'
+							animateIn='fadeInUp'
 							duration={0.4} >
 							<h1>{intro_heading}</h1>
 							<p>{intro_content}</p>
@@ -345,7 +345,7 @@ const Intro = ({intro_heading, intro_content, language}) => {
 					<Col sm={6}>
 						<ScrollAnimation
 							animateOnce={true}
-							animateIn='fadeIn'
+							animateIn='fadeInUp'
 							duration={0.4}
 							delay={250} >
 							<img src={localizedChart} alt='chart' className='img-responsive' />
@@ -366,7 +366,7 @@ const IconsText = ({developers_heading, developers_content, dpos_heading, dpos_c
 
 						<ScrollAnimation
 							animateOnce={true}
-							animateIn='fadeIn'
+							animateIn='fadeInUp'
 							duration={0.4}>
 							<img src={icon_dapps} alt="dapps" className='img-responsive front_page_icons_img' />
 							<div className='icons_text'>
@@ -379,7 +379,7 @@ const IconsText = ({developers_heading, developers_content, dpos_heading, dpos_c
 
 						<ScrollAnimation
 							animateOnce={true}
-							animateIn='fadeIn'
+							animateIn='fadeInUp'
 							duration={0.4}
 							delay={250}>
 							<img src={icon_dpos} alt="dpos" className='img-responsive front_page_icons_img' />
@@ -394,7 +394,7 @@ const IconsText = ({developers_heading, developers_content, dpos_heading, dpos_c
 	
 						<ScrollAnimation
 							animateOnce={true}
-							animateIn='fadeIn'
+							animateIn='fadeInUp'
 							duration={0.4}
 							delay={500}>
 							<img src={icon_governance} alt="governance" className='img-responsive front_page_icons_img' />
@@ -441,7 +441,7 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text, lang
 							<Col sm={6}>
 								<ScrollAnimation
 									animateOnce={true}
-									animateIn='fadeIn'
+									animateIn='fadeInUp'
 									duration={0.4}>
 									
 									<div className='white_paper_text'>
@@ -454,7 +454,7 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text, lang
 							<Col sm={6}>
 								<ScrollAnimation
 									animateOnce={true}
-									animateIn='fadeIn'
+									animateIn='fadeInUp'
 									duration={0.4}
 									delay={250}>
 
@@ -485,7 +485,7 @@ const Exchanges = () => {
 						<Col md={8} mdOffset={2}>
 							<ScrollAnimation
 								animateOnce={true}
-								animateIn='fadeIn'
+								animateIn='fadeInUp'
 								duration={0.4}
 							>
 								<p>Buy TLOS, the Telos token, and exchange them for other currencies on these exchanges. Check back often for new exchange partnerships!</p>
@@ -521,7 +521,7 @@ const Exchange = (props) => {
 			<div className='exchange_button'>
 				<ScrollAnimation
 					animateOnce={true}
-					animateIn='fadeIn'
+					animateIn='fadeInUp'
 					duration={0.5}
 					delay={props.delay}
 				>
@@ -549,14 +549,14 @@ const Wallets = () => {
 						<div className='sqrl_wallet'>
 							<ScrollAnimation
 								animateOnce
-								animateIn='fadeIn'
+								animateIn='fadeInUp'
 								duration={0.4}
 							>
 								<p style={{marginBottom: 0}}>Store and retrieve your TLOS tokens on these wallets.</p>
 							</ScrollAnimation>
 							<ScrollAnimation
 								animateOnce
-								animateIn='fadeIn'
+								animateIn='fadeInUp'
 								duration={0.4}
 								delay={125}
 							>
@@ -565,7 +565,7 @@ const Wallets = () => {
 							<Link to='/downloads'>
 								<ScrollAnimation
 									animateOnce
-									animateIn='fadeIn'
+									animateIn='fadeInUp'
 									duration={0.4}
 									delay={250}
 								>
@@ -591,13 +591,20 @@ const Partners = ({partners_heading}) => {
 					{partnersArr.map((partner, i) => {
 						return (
 							<div className='partner' key={i}>
-								{partner.url ? 
-									<a href={partner.url} target='_blank' rel='noopenter noreferrer'>
-										{partner.logo ? <img src={partner.logo} alt={partner.name} className='partner_logo' /> : <p>{partner.name}</p>}
-									</a>
-									: 
-									partner.logo ? <img src={partner.logo} alt={partner.name} className='partner_logo' /> : <p>{partner.name}</p>
-								}
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeIn'
+									duration={0.1}
+									delay={i * 10}
+								>
+									{partner.url ? 
+										<a href={partner.url} target='_blank' rel='noopenter noreferrer'>
+											{partner.logo ? <img src={partner.logo} alt={partner.name} className='partner_logo' /> : <p>{partner.name}</p>}
+										</a>
+										: 
+										partner.logo ? <img src={partner.logo} alt={partner.name} className='partner_logo' /> : <p>{partner.name}</p>
+									}
+								</ScrollAnimation>
 							</div>
 						);
 					})}

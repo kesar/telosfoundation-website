@@ -242,7 +242,7 @@ const DAppSection = (props) => {
 	return (
 		<ScrollAnimation
 			animateOnce={true}
-			animateIn='fadeIn'
+			animateIn='fadeInUp'
 			duration={0.4}
 		>
 			<Row>

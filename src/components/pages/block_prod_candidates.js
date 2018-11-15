@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import {Helmet} from 'react-helmet';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import goodblock from '../../img/partner_logos/logo_goodblock.png';
 import caleos from '../../img/partner_logos/logo_caleos.png';
@@ -55,7 +56,14 @@ class BlockProducerCandidates extends Component {
 					<title>Telos BP Candidates</title>
 					<meta name='description' content='Directory of candidates who submitted their names for consideration as block producers on Telos and are listed in the order of when they joined the Telos testnet. This is not necessarily a complete list of block producer candidates, and being on this list is not an endorsement.' />
 				</Helmet>
-				<Intro />
+
+				<ScrollAnimation
+					animateOnce
+					animateIn='fadeIn'
+					duration={0.5}
+				>
+					<Intro />
+				</ScrollAnimation>
 				<Candidates />
 			</div>
 		);
@@ -264,13 +272,19 @@ const Candidates = () => {
 					<Col md={10} mdOffset={1}>
 						{bpCandidates.map((cand, i) => {
 							return (
-								<Candidate
-									key={i}
-									name={cand.name}
-									description={cand.description}
-									url={cand.url}
-									logo={cand.logo}
-									vote_name={cand.vote_name} />
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+								>
+									<Candidate
+										key={i}
+										name={cand.name}
+										description={cand.description}
+										url={cand.url}
+										logo={cand.logo}
+										vote_name={cand.vote_name} />
+								</ScrollAnimation>
 							);
 						})}
 					</Col>

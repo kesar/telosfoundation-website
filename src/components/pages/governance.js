@@ -94,7 +94,13 @@ class Governance extends Component {
 				<Helmet>
 					<title>Telos Governance</title>
 				</Helmet>
-				<GovernanceIntro intro={intro} />
+				<ScrollAnimation
+					animateOnce
+					animateIn='fadeIn'
+					duration={0.5}
+				>
+					<GovernanceIntro intro={intro} />
+				</ScrollAnimation>
 				<GovernanceDocuments
 					heading={documents.heading}
 					subheading={documents.subheading}
@@ -131,9 +137,15 @@ const GovernanceDocuments = ({governanceDocuments, heading, subheading}) => {
 			<Grid>
 				<Row>
 					<Col md={8} mdOffset={2}>
-						<h3 className='text-center'>
-							{subheading}
-						</h3>
+						<ScrollAnimation
+							animateOnce
+							animateIn='fadeInUp'
+							duration={0.4}
+						>
+							<h3 className='text-center'>
+								{subheading}
+							</h3>
+						</ScrollAnimation>
 					</Col>
 				</Row>
 				<Row>
@@ -162,7 +174,7 @@ const GovernanceDocument = (props) => {
 	return (
 		<ScrollAnimation
 			animateOnce
-			animateIn='fadeIn'
+			animateIn='fadeInUp'
 			duration={0.4}
 		>
 			<div className='document_container'>

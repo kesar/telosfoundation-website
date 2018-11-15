@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
+import ScrollAnimation from 'react-animate-on-scroll';
 import not_started_icon from '../../img/checklist/gng_list_no_circle.png';
 import in_progress_icon from '../../img/checklist/gng_list_in-progress.png';
 import completed_icon from '../../img/checklist/gng_list_yes.png';
@@ -23,22 +24,65 @@ class Checklist extends Component {
 				<Row>
 					<Col md={12}>
 						<div className='checklist'>
-							<h1>Launch Checklist</h1>
-							<Row>
-								<Col md={10} mdOffset={1}>
-									<div className='checklist_intro'>
-										<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
-										<h2>Next go/no-go decision date: Nov 20th, 2018 17:00 UTC</h2>
-										<h4>On a yes vote, the network will launch 8 hours later at midnight UTC</h4>
-									</div>
-								</Col>
-							</Row>
-							<ChecklistLegend />
-							<DevelopmentCode />
-							<Governance />
-							<Contracts />
-							<Tools />
-							<Miscellaneous />
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeIn'
+								duration={0.5}
+							>
+								<h1>Launch Checklist</h1>
+								<Row>
+									<Col md={10} mdOffset={1}>
+										<div className='checklist_intro'>
+											<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
+											<h2>Next go/no-go decision date: Nov 20th, 2018 17:00 UTC</h2>
+											<h4>On a yes vote, the network will launch 8 hours later at midnight UTC</h4>
+										</div>
+									</Col>
+								</Row>
+							</ScrollAnimation>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeIn'
+								duration={0.5}
+								delay={250}
+							>
+								<ChecklistLegend />
+							</ScrollAnimation>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeInUp'
+								duration={0.4}
+							>
+								<DevelopmentCode />
+							</ScrollAnimation>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeInUp'
+								duration={0.4}
+							>
+								<Governance />
+							</ScrollAnimation>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeInUp'
+								duration={0.4}
+							>
+								<Contracts />
+							</ScrollAnimation>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeInUp'
+								duration={0.4}
+							>
+								<Tools />
+							</ScrollAnimation>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeInUp'
+								duration={0.4}
+							>
+								<Miscellaneous />
+							</ScrollAnimation>
 						</div>
 					</Col>
 				</Row>
@@ -46,39 +90,6 @@ class Checklist extends Component {
 		);
 	}	
 }
-
-// const Checklist = () => {
-// 	return (
-// 		<Grid>
-// 			<Helmet>
-// 				<title>Telos Launch Checklist</title>
-// 				<meta name="description" content="List of features and functions are considered essential and must be completed and tested in order for Telos to launch." />
-// 			</Helmet>
-// 			<Row>
-// 				<Col md={12}>
-// 					<div className='checklist'>
-// 						<h1>Launch Checklist</h1>
-// 						<Row>
-// 							<Col md={10} mdOffset={1}>
-// 								<div className='checklist_intro'>
-// 									<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
-// 									<h2>Next go/no-go decision date: Nov 20th, 2018 17:00 UTC</h2>
-// 									<h4>On a yes vote, the network will launch 8 hours later at midnight UTC</h4>
-// 								</div>
-// 							</Col>
-// 						</Row>
-// 						<ChecklistLegend />
-// 						<DevelopmentCode />
-// 						<Governance />
-// 						<Contracts />
-// 						<Tools />
-// 						<Miscellaneous />
-// 					</div>
-// 				</Col>
-// 			</Row>
-// 		</Grid>
-// 	);
-// };
 
 const ChecklistLegend = () => {
 	return (
