@@ -27,7 +27,7 @@ class TokenRecovery extends Component {
 	}
 
 	render(){
-		const {language, token_recovery} = this.props;
+		const {token_recovery} = this.props;
 		if(!token_recovery){
 			return (
 				<div className='token_recovery'>

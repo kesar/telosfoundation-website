@@ -30,7 +30,7 @@ import eosworld from '../../img/partner_logos/logo_eosworld.png';
 // import eos_in_space from '../../img/partner_logos/logo_eosspace.png';
 // import discover_telos from '../../img/partner_logos/logo_discovertelos.png';
 // import zmeta from '../../img/partner_logos/logo_zmeta.png';
-// import csx from '../../img/partner_logos/logo_csx.png';
+import csx from '../../img/partner_logos/logo_csx.png';
 // import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
 import amplified from '../../img/partner_logos/logo_amplified.png';
 import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
@@ -187,6 +187,13 @@ const Candidates = () => {
 			url: 'https://octagonlabs.org',
 			logo: hellenicos,
 			vote_name: 'octagontelos'
+		},
+		{
+			name: 'CSX Community',
+			description: 'Our goal is to become an active block producer to support the network, applications, and developers of the Telos blockchain.',
+			url: 'https://www.csx.io',
+			logo: csx,
+			vote_name: 'csxcommunity'
 		},
 		{
 			name: 'Amplified Telos',
