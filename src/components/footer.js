@@ -38,16 +38,15 @@ export default class Footer extends Component {
 							<div className='footer_links'>
 								<ul>
 									<li>
-										<a 
-											href='#'
+										<span
+											className='modal_toggle'
 											onClick={e => {
 												e.preventDefault();
 												this.setState({policyModalOpen: true});
-												console.log(this.state.policyModalOpen);
 											}}
 										>
 											Privacy Policy
-										</a>
+										</span>
 									</li>
 									<li>
 										<a href='mailto:hello@telosfoundation.io'>hello@telosfoundation.io</a>

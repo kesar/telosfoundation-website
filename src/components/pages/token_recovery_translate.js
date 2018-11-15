@@ -187,15 +187,15 @@ class TokenRecoveryProcessOne extends Component {
 											</div>
 										</li>
 										<li>
-											<a
-												href='#'
+											<span
+												className='modal_toggle'
 												onClick={e => {
 													e.preventDefault();
 													this.setState({showFormModal: true});
 												}}
 											>
 												{step_three.email_us}
-											</a>
+											</span>
 										</li>
 									</ul>
 								</li>

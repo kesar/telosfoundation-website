@@ -40,7 +40,7 @@ class Footer extends Component {
 						<div className='inline_links'>
 							<ul>
 								<li>
-									<a 
+									{/*<a 
 										href='#'
 										onClick={e => {
 											e.preventDefault();
@@ -49,7 +49,16 @@ class Footer extends Component {
 										}}
 									>
 										Privacy Policy
-									</a>
+									</a>*/}
+									<span
+										className='modal_toggle'
+										onClick={e => {
+											e.preventDefault();
+											this.setState({policyModalOpen: true});
+										}}
+									>
+										Privacy Policy
+									</span>
 								</li>
 								<li>
 									<a href='mailto:hello@telosfoundation.io'>hello@telosfoundation.io</a>

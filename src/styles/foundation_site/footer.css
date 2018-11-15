@@ -121,6 +121,17 @@
 	color: #fff;
 }
 
+.foundation_footer .inline_links ul li .modal_toggle {
+	font-size: 1.2em;
+	color: #fff;
+}
+
+.foundation_footer .inline_links ul li .modal_toggle:hover,
+.foundation_footer .inline_links ul li .modal_toggle:active,
+.foundation_footer .inline_links ul li .modal_toggle:focus {
+	color: #fff;
+}
+
 .foundation_footer .footer_background {
 	position: absolute;
 	top: 0;

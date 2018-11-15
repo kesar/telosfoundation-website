@@ -38,3 +38,19 @@ h1, h2, h3, h4 {
   margin-top: 0.5em;
   margin-bottom: 0.25em;
 }
+
+.modal_toggle {
+  color: #f3853e;
+  transition: color 0.25s ease;
+  cursor: pointer;
+}
+
+.modal_toggle:hover,
+.modal_toggle:active {
+  color: #C0520B;
+  text-decoration: underline;
+}
+
+.modal_toggle:focus {
+  color: #f3853e;
+}

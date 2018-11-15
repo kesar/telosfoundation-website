@@ -17,7 +17,7 @@ import eosbarcelona from '../../img/partner_logos/logo_eosbarcelona.png';
 // import eosvan from '../../img/partner_logos/logo_eosvan.png';
 import goodblock from '../../img/partner_logos/logo_goodblock.png';
 import infinitybloc from '../../img/partner_logos/logo_infinitybloc.png';
-import teloslabs from '../../img/partner_logos/logo_teloslabs.png';
+// import teloslabs from '../../img/partner_logos/logo_teloslabs.png';
 import eosworld from '../../img/partner_logos/logo_eosworld.png';
 import eosgreen from '../../img/partner_logos/logo_eosgreen.png';
 import fuzzy from '../../img/partner_logos/logo_fuzzy.png';
@@ -116,10 +116,6 @@ const partnersArr = [
 		url: 'https://www.infinitybloc.io/'
 	},
 	{
-		name: 'Telos Labs',
-		logo: teloslabs
-	},
-	{
 		name: 'Eos World',
 		logo: eosworld,
 		url: 'https://eostheworld.io/'
@@ -154,8 +150,9 @@ const partnersArr = [
 		url: 'https://eossweden.eu/'
 	},
 	{
-		name: 'hellenic open systems',
-		logo: hellenicos
+		name: 'octagon labs',
+		logo: hellenicos,
+		url: 'https://octagonlabs.org'
 	},
 	{
 		name: 'discover telos',
@@ -196,7 +193,8 @@ const partnersArr = [
 	},
 	{
 		name: 'telos dac',
-		logo: telos_dac
+		logo: telos_dac,
+		url: 'https://telosdac.io'
 	},
 	{
 		name: 'telos ny',
@@ -225,6 +223,29 @@ const partnersArr = [
 		name: 'TelosGlobal',
 		logo: telos_global,
 		url: 'https://telosglobal.io'
+	}
+];
+
+const exchangesArr = [
+	{
+		name: 'chainrift',
+		img: chainrift_button,
+		url: 'https://chainrift.com'
+	},
+	{
+		name: 'dexeos',
+		img: dexeos_button,
+		url: 'https://dexeos.io'
+	},
+	{
+		name: 'findex',
+		img: findex_button,
+		url: 'https://findex.pro'
+	},
+	{
+		name: 'swap.online',
+		img: swaponline_button,
+		url: 'https://swap.online'
 	}
 ];
 
@@ -461,7 +482,13 @@ const Exchanges = () => {
 				<Grid>
 					<Row>
 						<Col md={8} mdOffset={2}>
-							<p>Buy TLOS, the Telos token, and exchange them for other currencies on these exchanges. Check back often for new exchange partnerships!</p>
+							<ScrollAnimation
+								animateOnce={true}
+								animateIn='fadeIn'
+								duration={0.4}
+							>
+								<p>Buy TLOS, the Telos token, and exchange them for other currencies on these exchanges. Check back often for new exchange partnerships!</p>
+							</ScrollAnimation>
 						</Col>
 					</Row>
 				</Grid>
@@ -470,47 +497,42 @@ const Exchanges = () => {
 				<Row>
 					<Col md={10} mdOffset={1}>
 						<div className='exchange_buttons'>
-							<div className='exchange_button'>
-								<a
-									href='https://chainrift.com'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<img src={chainrift_button} alt='chainrift' />
-								</a>
-							</div>
-							<div className='exchange_button'>
-								<a
-									href='https://dexeos.io'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<img src={dexeos_button} alt='dexeos' />
-								</a>
-							</div>
-							<div className='exchange_button'>
-								<a
-									href='https://findex.pro'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<img src={findex_button} alt='findex' />
-								</a>
-							</div>	
-							<div className='exchange_button'>
-								<a
-									href='https://swap.online'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<img src={swaponline_button} alt='swap.online' />
-								</a>
-							</div>
+							{exchangesArr.map((ex, i) => {
+								return (
+									<Exchange
+										key={i}
+										name={ex.name}
+										img={ex.img}
+										url={ex.url}
+										delay={i * 100 + 150} />
+								);
+							})}
 						</div>
 					</Col>
 				</Row>
 			</Grid>
 		</section>
+	);
+};
+
+const Exchange = (props) => {
+	return (
+			<div className='exchange_button'>
+				<ScrollAnimation
+					animateOnce={true}
+					animateIn='fadeIn'
+					duration={0.5}
+					delay={props.delay}
+				>
+					<a
+						href={props.url}
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<img src={props.img} alt={props.name} />
+					</a>
+				</ScrollAnimation>
+			</div>
 	);
 };
 
@@ -524,9 +546,30 @@ const Wallets = () => {
 				<Row>
 					<Col md={10} mdOffset={1}>
 						<div className='sqrl_wallet'>
-							<p>Store and retrieve your TLOS tokens on these wallets.<br /> Check back often for new wallet partnerships!</p>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeIn'
+								duration={0.4}
+							>
+								<p style={{marginBottom: 0}}>Store and retrieve your TLOS tokens on these wallets.</p>
+							</ScrollAnimation>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeIn'
+								duration={0.4}
+								delay={125}
+							>
+								<p>Check back often for new wallet partnerships!</p>
+							</ScrollAnimation>
 							<Link to='/downloads'>
-								<img src={sqrl_logo} alt='sqrl wallet' />
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeIn'
+									duration={0.4}
+									delay={250}
+								>
+									<img src={sqrl_logo} alt='sqrl wallet' />
+								</ScrollAnimation>
 							</Link>
 						</div>
 					</Col>
