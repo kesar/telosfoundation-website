@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col, Table} from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import pdf_img from '../../img/download_pdf_icon.png';
 
@@ -159,17 +160,23 @@ const GovernanceDocuments = ({governanceDocuments, heading, subheading}) => {
 
 const GovernanceDocument = (props) => {
 	return (
-		<div className='document_container'>
-			<div className='document_icon_container'>
-				<a href={props.url} target='_blank' rel='noopener noreferrer'>
-					<img src={pdf_img} alt='pdf icon' className='document_icon' />
-				</a>
+		<ScrollAnimation
+			animateOnce
+			animateIn='fadeIn'
+			duration={0.4}
+		>
+			<div className='document_container'>
+				<div className='document_icon_container'>
+					<a href={props.url} target='_blank' rel='noopener noreferrer'>
+						<img src={pdf_img} alt='pdf icon' className='document_icon' />
+					</a>
+				</div>
+				<div className='document_info'>
+					<a href={props.url} target='_blank' rel='noopener noreferrer'>{props.name}</a>
+					<p>{props.description}</p>
+				</div>
 			</div>
-			<div className='document_info'>
-				<a href={props.url} target='_blank' rel='noopener noreferrer'>{props.name}</a>
-				<p>{props.description}</p>
-			</div>
-		</div>
+		</ScrollAnimation>
 	);
 };
 

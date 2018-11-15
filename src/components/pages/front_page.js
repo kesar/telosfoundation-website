@@ -198,7 +198,8 @@ const partnersArr = [
 	},
 	{
 		name: 'telos ny',
-		logo: telos_ny
+		logo: telos_ny,
+		url: 'http://nytelos.com'
 	},
 	{
 		name: 'telos canton',
