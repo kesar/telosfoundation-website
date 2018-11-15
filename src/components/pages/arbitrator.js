@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
+import ScrollAnimation from 'react-animate-on-scroll';
 import triple_icon_desktop from '../../img/arbitrator/triple_icon.png';
 import triple_icon_mobile from '../../img/arbitrator/triple_icon_horizontal.png';
 import pdf_img from '../../img/download_pdf_icon.png';
@@ -62,30 +63,54 @@ const ArbitratorIntro = ({intro, documents, contact}) => {
 		<section id='arbitrator_intro'>
 			<Row>
 				<Col md={12}>
-					<h1>{intro.heading}</h1>
-					<img src={triple_icon_mobile} alt='' className='triple_icon_mobile' />
+					<ScrollAnimation
+						animateOnce
+						animateIn='fadeIn'
+						duration={0.5}
+					>
+						<h1>{intro.heading}</h1>
+						<img src={triple_icon_mobile} alt='' className='triple_icon_mobile' />
+					</ScrollAnimation>
 					<Row>
 						<Col sm={2}>
-							<img src={triple_icon_desktop} alt='' className='triple_icon_desktop' />
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeIn'
+								duration={0.5}
+							>
+								<img src={triple_icon_desktop} alt='' className='triple_icon_desktop' />
+							</ScrollAnimation>
 						</Col>
 						<Col sm={10}>
-							<section>
-								{intro.body.map((par, i) => {
-									return (
-										<div className='intro_row' key={i}>
-											<p>{par}</p>
-										</div>
-									);
-								})}
-							</section>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeIn'
+								duration={0.5}
+							>
+								<section>
+									{intro.body.map((par, i) => {
+										return (
+											<div className='intro_row' key={i}>
+												<p>{par}</p>
+											</div>
+										);
+									})}
+								</section>
+							</ScrollAnimation>
 							<section className='intro_downloads'>
 								{documents.map((doc, i) => {
 									return (
-										<ArbitratorDocument
-											key={i}
-											name={doc.title}
-											description={doc.description}
-											url={doc.url} />
+										<ScrollAnimation
+											animateOnce
+											animateIn='fadeInUp'
+											duration={0.4}
+										>
+											<ArbitratorDocument
+												key={i}
+												name={doc.title}
+												description={doc.description}
+												url={doc.url} />
+										</ScrollAnimation>
 									);
 								})}
 							</section>
@@ -94,8 +119,14 @@ const ArbitratorIntro = ({intro, documents, contact}) => {
 					
 
 					<div className='arbitrator_intro_contact'>
-						<h3>{contact.heading}</h3>
-						<a href={`mailto:${address}?subject=${subject}&body=${body}`} className='btn btn-lg btn-primary'>{contact.button_text}</a>
+						<ScrollAnimation
+							animateOnce
+							animateIn='fadeIn'
+							duration={0.5}
+						>
+							<h3>{contact.heading}</h3>
+							<a href={`mailto:${address}?subject=${subject}&body=${body}`} className='btn btn-lg btn-primary'>{contact.button_text}</a>
+						</ScrollAnimation>
 					</div>
 				</Col>
 			</Row>
@@ -122,24 +153,37 @@ const ArbitratorCandidates = ({candidate_section}) => {
 		<section id='arbitrator_candidates'>
 			<Row>
 				<Col md={12}>
-					<h2>{candidate_section.heading}</h2>
+					<ScrollAnimation
+						animateOnce
+						animateIn='fadeIn'
+						duration={0.5}
+						delay={250}
+					>
+						<h2>{candidate_section.heading}</h2>
+					</ScrollAnimation>
 					<hr />
 					<div className='candidate_list'>
 						{
 							candidate_section.candidates.map((arb, i) => {
 								return (
-									<ArbitratorCandidate
-										key={i}
-										cand_name={arb.name}
-										cand_vote_name={arb.vote_name}
-										cand_description={arb.description}
-										cand_statement={arb.statement}
-										cand_image={arbitratorPortraits[i]}
-										cand_languages={arb.languages}
-										cand_country={arb.country}
-										languages_heading={candidate_section.languages_heading}
-										country_heading={candidate_section.country_heading}
-										vote_heading={candidate_section.vote_heading} />
+									<ScrollAnimation
+										animateOnce
+										animateIn='fadeInUp'
+										duration={0.4}
+									>
+										<ArbitratorCandidate
+											key={i}
+											cand_name={arb.name}
+											cand_vote_name={arb.vote_name}
+											cand_description={arb.description}
+											cand_statement={arb.statement}
+											cand_image={arbitratorPortraits[i]}
+											cand_languages={arb.languages}
+											cand_country={arb.country}
+											languages_heading={candidate_section.languages_heading}
+											country_heading={candidate_section.country_heading}
+											vote_heading={candidate_section.vote_heading} />
+									</ScrollAnimation>
 								);
 							})
 						}

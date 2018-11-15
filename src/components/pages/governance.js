@@ -105,9 +105,15 @@ class Governance extends Component {
 					heading={documents.heading}
 					subheading={documents.subheading}
 					governanceDocuments={governanceDocuments} />
-				<GovernanceTable
-					table={table}
-					governanceDocuments={governanceDocuments} />
+				<ScrollAnimation
+					animateOnce
+					animateIn='fadeIn'
+					duration={0.5}
+				>
+					<GovernanceTable
+						table={table}
+						governanceDocuments={governanceDocuments} />
+				</ScrollAnimation>
 			</div>
 		);
 	}
