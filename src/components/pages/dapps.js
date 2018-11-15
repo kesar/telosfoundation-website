@@ -45,35 +45,55 @@ const DAppsIntro = ({intro}) => {
 			<Grid>
 				<Row>
 					<Col md={8} mdOffset={2}>
-						<div className='text-center'>
-							<h1>{intro.heading}</h1>
-							<h2>{intro.subheading}</h2>
-						</div>
+						<ScrollAnimation
+							animateOnce
+							animateIn='fadeIn'
+							duration={0.5}
+						>
+							<div className='text-center'>
+								<h1>{intro.heading}</h1>
+								<h2>{intro.subheading}</h2>
+							</div>
+						</ScrollAnimation>
 					</Col>
 					<Col md={10} mdOffset={1}>
 						<div className='intro_buttons'>
-							<div className='button_container'>
-								<Button
-									bsSize='large'
-									bsStyle='primary'
-									disabled
-								>
-									{intro.tutorials_button}
-								</Button>
-								<p>{intro.tutorials_description}</p>
-								<small>{intro.coming_soon}</small>
-							</div>
-							<div className='button_container'>
-								<Button
-									bsSize='large'
-									bsStyle='primary'
-									disabled
-								>
-									{intro.smart_contracts_button}
-								</Button>
-								<p>{intro.smart_contracts_description}</p>
-								<small>{intro.coming_soon}</small>
-							</div>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeIn'
+								duration={0.5}
+								delay={125}
+							>
+								<div className='button_container'>
+									<Button
+										bsSize='large'
+										bsStyle='primary'
+										disabled
+									>
+										{intro.tutorials_button}
+									</Button>
+									<p>{intro.tutorials_description}</p>
+									<small>{intro.coming_soon}</small>
+								</div>
+							</ScrollAnimation>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeIn'
+								duration={0.5}
+								delay={250}
+							>
+								<div className='button_container'>
+									<Button
+										bsSize='large'
+										bsStyle='primary'
+										disabled
+									>
+										{intro.smart_contracts_button}
+									</Button>
+									<p>{intro.smart_contracts_description}</p>
+									<small>{intro.coming_soon}</small>
+								</div>
+							</ScrollAnimation>
 						</div>
 					</Col>
 				</Row>
