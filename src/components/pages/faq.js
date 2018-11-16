@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 import '../../styles/faq.css';
 
@@ -19,7 +20,13 @@ class FAQPage extends Component {
 					<title>Telos FAQs</title>
 					<meta name='description' content='Telos Foundation FAQ page.' />
 				</Helmet>
-				<FAQIntro intro={faq_page.intro} />
+				<ScrollAnimation
+					animateOnce
+					animateIn='fadeIn'
+					duration={0.5}
+				>
+					<FAQIntro intro={faq_page.intro} />
+				</ScrollAnimation>
 				<FAQContent faqs={faq_page.faqs} />
 			</div>
 		);
@@ -51,13 +58,19 @@ const FAQContent = ({faqs}) => {
 							faqs.map((faq, i) => {
 								return (
 									<div className='question_container' key={i}>
-										<p className='question'>Q: &nbsp;{faq.question}</p>
-										{
-											faq.answer.map((ans, j) => {
-												if(j === 0) return <p key={j} className='answer'><span className='a'>A:</span> &nbsp;<span dangerouslySetInnerHTML={{__html: ans}}></span></p>;
-												return <p key={j} className='answer' dangerouslySetInnerHTML={{__html: ans}}></p>;
-											})
-										}
+										<ScrollAnimation
+											animateOnce
+											animateIn='fadeInUp'
+											duration={0.4}
+										>
+											<p className='question'>Q: &nbsp;{faq.question}</p>
+											{
+												faq.answer.map((ans, j) => {
+													if(j === 0) return <p key={j} className='answer'><span className='a'>A:</span> &nbsp;<span dangerouslySetInnerHTML={{__html: ans}}></span></p>;
+													return <p key={j} className='answer' dangerouslySetInnerHTML={{__html: ans}}></p>;
+												})
+											}
+										</ScrollAnimation>
 									</div>
 								);
 							})

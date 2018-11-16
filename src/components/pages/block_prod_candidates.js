@@ -38,7 +38,7 @@ import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
 import madrid from '../../img/partner_logos/logo_telos_madrid.png';
 import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
 // import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
-// import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
+import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
 import telos_voyager from '../../img/partner_logos/logo_telos_voyager.png';
 
 import '../../styles/block_prod_candidates.css';
@@ -237,6 +237,13 @@ const Candidates = () => {
 			url: 'http://nytelos.com',
 			logo: telos_ny,
 			vote_name: 'telosnewyork'
+		},
+		{
+			name: 'EOSImpera',
+			description: 'We are EOS Impera from Italy. Our mission is to create a platform for the community that can finance the best projects proposed by the community.',
+			url: 'https://eosimpera.io',
+			logo: eos_impera,
+			vote_name: 'tlosimperabp'
 		},
 		{
 			name: 'Telos-21Zephyr',

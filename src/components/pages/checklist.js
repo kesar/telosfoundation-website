@@ -40,14 +40,7 @@ class Checklist extends Component {
 									</Col>
 								</Row>
 							</ScrollAnimation>
-							<ScrollAnimation
-								animateOnce
-								animateIn='fadeIn'
-								duration={0.5}
-								delay={250}
-							>
-								<ChecklistLegend />
-							</ScrollAnimation>
+							<ChecklistLegend />
 							<ScrollAnimation
 								animateOnce
 								animateIn='fadeInUp'
@@ -98,22 +91,43 @@ const ChecklistLegend = () => {
 				<Col sm={10} smOffset={1}>
 					<Row>
 						<Col xs={4}>
-							<div className='legend_column'>
-								<img src={not_started_icon} alt='legend completed icon' className='img-responsive' />
-								<h4>In Progress</h4>
-							</div>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeIn'
+								duration={0.5}
+								delay={125}
+							>
+								<div className='legend_column'>
+									<img src={not_started_icon} alt='legend completed icon' className='img-responsive' />
+									<h4>In Progress</h4>
+								</div>
+							</ScrollAnimation>
 						</Col>
 						<Col xs={4}>
-							<div className='legend_column'>
-								<img src={in_progress_icon} alt='legend in-progress icon' className='img-responsive' />
-								<h4>Functional/In Testing</h4>
-							</div>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeIn'
+								duration={0.5}
+								delay={250}
+							>
+								<div className='legend_column'>
+									<img src={in_progress_icon} alt='legend in-progress icon' className='img-responsive' />
+									<h4>Functional/In Testing</h4>
+								</div>
+							</ScrollAnimation>
 						</Col>
 						<Col xs={4}>
-							<div className='legend_column'>
-								<img src={completed_icon} alt='legend completed icon' className='img-responsive' />
-								<h4>Completed & Tested</h4>
-							</div>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeIn'
+								duration={0.5}
+								delay={375}
+							>
+								<div className='legend_column'>
+									<img src={completed_icon} alt='legend completed icon' className='img-responsive' />
+									<h4>Completed & Tested</h4>
+								</div>
+							</ScrollAnimation>
 						</Col>
 					</Row>
 				</Col>
