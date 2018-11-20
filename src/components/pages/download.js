@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import BannerModal from '../modals/banner_modal';
 import {Helmet} from 'react-helmet';
+import ScrollAnimation from 'react-animate-on-scroll';
+
 import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 import pdf_img from '../../img/download_pdf_icon.png';
 import zip_img from '../../img/download_zip_icon.png';
@@ -18,7 +20,8 @@ import {
 	WHITE_PAPER_ENGLISH,
 	WHITE_PAPER_KOREAN,
 	WHITE_PAPER_CHINESE,
-	WHITE_PAPER_RUSSIAN
+	WHITE_PAPER_RUSSIAN,
+	WHITE_PAPER_PORTUGESE
 } from '../../config/constants';
 import '../../styles/download.css';
 
@@ -82,12 +85,18 @@ class Download extends Component {
 					<Row>
 						<Col md={12}>
 							<div className='download_intro'>
-								<h1>{downloads_page.intro.heading}</h1>
-								<Row>
-									<Col md={10} mdOffset={1}>
-										<h2>{downloads_page.intro.subheading}</h2>
-									</Col>
-								</Row>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeIn'
+									duration={0.4}
+								>
+									<h1>{downloads_page.intro.heading}</h1>
+									<Row>
+										<Col md={10} mdOffset={1}>
+											<h2>{downloads_page.intro.subheading}</h2>
+										</Col>
+									</Row>
+								</ScrollAnimation>
 							</div>
 							<Wallets wallets={downloads_page.wallets} />
 							<Documents documents={downloads_page.documents} banners={downloads_page.banners} language={language} />
@@ -102,52 +111,104 @@ class Download extends Component {
 const Wallets = ({wallets}) => {
 	return (
 		<section id='download_wallets'>
-			<h2>{wallets.heading}</h2>
-			<hr />
+			<ScrollAnimation
+				animateOnce
+				animateIn='fadeIn'
+				duration={0.4}
+				delay={250}
+			>
+				<h2>{wallets.heading}</h2>
+				<hr />
+			</ScrollAnimation>
 			<Row>
 				<Col md={10} mdOffset={1}>
-					<h3>{wallets.subheading}</h3>
+					<ScrollAnimation
+						animateOnce
+						animateIn='fadeIn'
+						duration={0.4}
+					>
+						<h3>{wallets.subheading}</h3>
+					</ScrollAnimation>
 				</Col>
 				<Col sm={5}>
-					<img src={sqrl_logo} alt='squirrel wallet logo' className='img-responsive' />
+					<ScrollAnimation
+						animateOnce
+						animateIn='fadeInUp'
+						duration={0.4}
+					>
+						<img src={sqrl_logo} alt='squirrel wallet logo' className='img-responsive' />
+					</ScrollAnimation>
 				</Col>
-				<Col sm={7}>
+				<Col sm={7}> 
 					<div className='squirrel_content'>
-						<p>{wallets.sqrl_description}</p>
+						<ScrollAnimation
+							animateOnce
+							animateIn='fadeInUp'
+							duration={0.4}
+						>
+							<p>{wallets.sqrl_description}</p>
+						</ScrollAnimation>
 						<ul className='download_buttons'>
 							<li>
-								<a
-									href='https://github.com/Telos-Foundation/Sqrl/releases'
-									className='btn btn-primary'
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeIn'
+									duration={0.2}
 								>
-									<i className='fa fa-linux'></i>  {wallets.download}
-								</a>
+									<a
+										href='https://github.com/Telos-Foundation/Sqrl/releases'
+										className='btn btn-primary'
+									>
+										<i className='fa fa-linux'></i>  {wallets.download}
+									</a>
+								</ScrollAnimation>
 							</li>
 							<li>
-								<a
-									href='https://github.com/Telos-Foundation/Sqrl/releases'
-									className='btn btn-primary'
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeIn'
+									duration={0.2}
+									delay={50}
 								>
-									<i className='fa fa-apple'></i>  {wallets.download}
-								</a>
+									<a
+										href='https://github.com/Telos-Foundation/Sqrl/releases'
+										className='btn btn-primary'
+									>
+										<i className='fa fa-apple'></i>  {wallets.download}
+									</a>
+								</ScrollAnimation>
 							</li>
 							<li>
-								<a
-									href='https://github.com/Telos-Foundation/Sqrl/releases'
-									className='btn btn-primary'
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeIn'
+									duration={0.2}
+									delay={100}
 								>
-									<i className='fa fa-windows'></i>  {wallets.download}
-								</a>
+									<a
+										href='https://github.com/Telos-Foundation/Sqrl/releases'
+										className='btn btn-primary'
+									>
+										<i className='fa fa-windows'></i>  {wallets.download}
+									</a>
+								</ScrollAnimation>
 							</li>
 							<li>
-								<a 
-									href='https://github.com/Telos-Foundation/Sqrl' 
-									className='btn btn-primary' 
-									target='_blank' 
-									rel='noopener noreferrer'
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeIn'
+									duration={0.2}
+									delay={150}
 								>
-									<i className='fa fa-github'></i>  {wallets.source}
-								</a>
+									<a 
+										href='https://github.com/Telos-Foundation/Sqrl' 
+										className='btn btn-primary' 
+										target='_blank' 
+										rel='noopener noreferrer'
+									>
+										<i className='fa fa-github'></i>  {wallets.source}
+									</a>
+								</ScrollAnimation>
 							</li>
 						</ul>
 					</div>
@@ -185,6 +246,9 @@ class Documents extends Component {
 			case 'russian':
 				wp_url = WHITE_PAPER_RUSSIAN;
 				break;
+			case 'pt-br':
+				wp_url = WHITE_PAPER_PORTUGESE;
+				break;
 			default:
 				wp_url = WHITE_PAPER_ENGLISH;
 				break;
@@ -219,28 +283,48 @@ class Documents extends Component {
 
 		return (
 			<section id='download_documents'>
-				<h2>{documents.heading}</h2>
-				<hr />
+				<ScrollAnimation
+					animateOnce
+					animateIn='fadeInUp'
+					duration={0.4}
+				>
+					<h2>{documents.heading}</h2>
+					<hr />
+				</ScrollAnimation>
 				<Row>
 					<Col md={8} mdOffset={2}>
 						{
 							downloadDocuments.map((doc, i) => {
 								if(doc.document_type === 'pdf'){
 									return (
-										<DownloadDocumentPDF
+										<ScrollAnimation
 											key={i}
-											url={doc.url}
-											link_text={doc.link_text}
-											description={doc.description} />
+											animateOnce
+											animateIn='fadeInUp'
+											duration={0.4}
+											delay={i * 50}
+										>
+											<DownloadDocumentPDF
+												url={doc.url}
+												link_text={doc.link_text}
+												description={doc.description} />
+										</ScrollAnimation>
 									);
 								}else{
 									//right now we only have pdf and zip, but might have others in the future.
 									return (
-										<DownloadDocumentZIP
+										<ScrollAnimation
 											key={i}
-											url={doc.url}
-											link_text={doc.link_text}
-											description={doc.description} />
+											animateOnce
+											animateIn='fadeInUp'
+											duration={0.4}
+											delay={i * 50}
+										>
+											<DownloadDocumentZIP
+												url={doc.url}
+												link_text={doc.link_text}
+												description={doc.description} />
+										</ScrollAnimation>
 									);
 								}
 							})
@@ -248,27 +332,40 @@ class Documents extends Component {
 
 						<div className='download_banner_container'>
 							<div className='download_banner_description'>
-								<h3>{banners.heading}</h3>
-								<p>{banners.subheading}</p>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+								>
+									<h3>{banners.heading}</h3>
+									<p>{banners.subheading}</p>
+								</ScrollAnimation>
 							</div>
 							<Row>
 								{
-									splashBanners.map(banner => {
+									splashBanners.map((banner, i) => {
 										return (
-											<Col sm={6}>
-												<img
-													src={banner.image}
-													alt={banner.name}
-													className='download_banner'
-													onClick={e => {
-														e.preventDefault();
-														this.setState({
-															downloadModalOpen: true,
-															displayBanner: banner.image,
-															downloadBanner: banner.download,
-															downloadBannerName: banner.downloadName
-														});
-													}} />
+											<Col sm={6} key={i}>
+												<ScrollAnimation
+													animateOnce
+													animateIn='fadeIn'
+													duration={0.4}
+													delay={i * 10 + 50}
+												>
+													<img
+														src={banner.image}
+														alt={banner.name}
+														className='download_banner'
+														onClick={e => {
+															e.preventDefault();
+															this.setState({
+																downloadModalOpen: true,
+																displayBanner: banner.image,
+																downloadBanner: banner.download,
+																downloadBannerName: banner.downloadName
+															});
+														}} />
+												</ScrollAnimation>
 											</Col>
 										);
 									})
