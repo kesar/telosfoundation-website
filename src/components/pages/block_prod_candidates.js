@@ -40,6 +40,10 @@ import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
 // import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
 import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
 import telos_voyager from '../../img/partner_logos/logo_telos_voyager.png';
+import china_goingos from '../../img/partner_logos/logo_china_goingos.png';
+import telescope from '../../img/partner_logos/logo_telescope.png';
+import intasia from '../../img/partner_logos/logo_intasia.png';
+import germany from '../../img/partner_logos/logo_telos_germany.png';
 
 import '../../styles/block_prod_candidates.css';
 
@@ -265,6 +269,34 @@ const Candidates = () => {
 			url: 'http://telosvoyager.io',
 			logo: telos_voyager,
 			vote_name: 'telosvoyager'
+		},
+		{
+			name: 'Telos GoingOS',
+			description: 'Goingos is a digital team focusing on block chains and digitally encrypted currencies, dedicated to promoting good development of TELOS.',
+			url: 'http://www.goingos.org',
+			logo: china_goingos,
+			vote_name: 'telgoingos13'
+		},
+		{
+			name: 'The Teloscope',
+			description: 'With a highly competent and experienced team we are committed to achieve a high performance and reliable BP while being 100% transparent and community focused.',
+			url: 'https://theteloscope.io',
+			logo: telescope,
+			vote_name: 'theteloscope'
+		},
+		{
+			name: 'Telos Intasia',
+			description: 'Telos Intasia is based in a far-flung island called Borneo island. We are focusing on providing the best server hardware and infrastructure that contribute to the Telos system.',
+			url: 'https://ikuwara.com',
+			logo: intasia,
+			vote_name: 'telosintasia'
+		},
+		{
+			name: 'TelosGermany',
+			description: 'TelosGermany is a solid block producer candidate based out of Frankfurt (Germany). We believe in the values that Telos brings to the table and we will do our best to make Telos a success story.',
+			url: 'https://telosgermany.io',
+			logo: germany,
+			vote_name: 'telosgermany'
 		}
 	];
 
