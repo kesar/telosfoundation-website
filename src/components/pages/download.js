@@ -158,6 +158,8 @@ const Wallets = ({wallets}) => {
 									<a
 										href='https://github.com/Telos-Foundation/Sqrl/releases'
 										className='btn btn-primary'
+										target='_blank'
+										rel='noopener noreferrer'
 									>
 										<i className='fa fa-linux'></i>  {wallets.download}
 									</a>
@@ -173,6 +175,8 @@ const Wallets = ({wallets}) => {
 									<a
 										href='https://github.com/Telos-Foundation/Sqrl/releases'
 										className='btn btn-primary'
+										target='_blank'
+										rel='noopener noreferrer'
 									>
 										<i className='fa fa-apple'></i>  {wallets.download}
 									</a>
@@ -188,6 +192,8 @@ const Wallets = ({wallets}) => {
 									<a
 										href='https://github.com/Telos-Foundation/Sqrl/releases'
 										className='btn btn-primary'
+										target='_blank'
+										rel='noopener noreferrer'
 									>
 										<i className='fa fa-windows'></i>  {wallets.download}
 									</a>

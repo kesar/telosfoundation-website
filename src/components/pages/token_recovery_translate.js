@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import RecoveryFormModal from '../modals/recovery_form_modal';
 import {Helmet} from 'react-helmet';
+import ScrollAnimation from 'react-animate-on-scroll';
 import '../../styles/token_recovery.css';
 
 import new_step_one from '../../img/token_recovery/new_step_1.png';
@@ -58,14 +59,21 @@ const TokenRecoveryIntro = ({intro}) => {
 			<Grid>
 				<Row>
 					<Col md={10} mdOffset={1}>
-						<h1>{intro.heading}</h1>
-						{
-							intro.content.map((paragraph, i) => {
-								return (
-									<p key={i}>{paragraph}</p>
-								);
-							})
-						}
+						<ScrollAnimation
+							animateOnce
+							animateIn='fadeIn'
+							duration={0.4}
+						>
+							<h1>{intro.heading}</h1>
+						</ScrollAnimation>
+						<ScrollAnimation
+							animateOnce
+							animateIn='fadeIn'
+							duration={0.4}
+							delay={250}
+						>
+							{ intro.content.map((paragraph, i) => <p key={i}>{paragraph}</p>) }
+						</ScrollAnimation>
 					</Col>
 				</Row>
 			</Grid>
@@ -93,24 +101,46 @@ class TokenRecoveryProcessOne extends Component {
 
 		return (
 			<section id='token_recovery_process_one' className='process_section'>
-				<h3>{process.two_processes_heading}</h3>
+				<ScrollAnimation
+					animateOnce
+					animateIn='fadeIn'
+					duration={0.4}
+				>
+					<h3>{process.two_processes_heading}</h3>
+				</ScrollAnimation>
 				<header className='text-center'>
 					<h2>{process.heading}</h2>
 				</header>
 				<Grid>
 					<Row>
 						<Col md={10} mdOffset={1}>
-							{
-								process.process_intro.map((paragraph, i) => {
-									return (
-										<p key={i}>{paragraph}</p>
-									);
-								})
-							}
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeIn'
+								duration={0.4}
+							>
+								{ process.process_intro.map((paragraph, i) => <p key={i}>{paragraph}</p>) }
+							</ScrollAnimation>
 							<ol>
-								<li dangerouslySetInnerHTML={{__html: process.step_one}} />
+								{/*<li dangerouslySetInnerHTML={{__html: process.step_one}} />*/}
 								<li>
-									{step_two.step}
+									<ScrollAnimation
+										animateOnce
+										animateIn='fadeInUp'
+										duration={0.4}
+									>
+										<span dangerouslySetInnerHTML={{__html: process.step_one}} />
+									</ScrollAnimation>
+								</li>
+
+								<li>
+									<ScrollAnimation
+										animateOnce
+										animateIn='fadeInUp'
+										duration={0.4}
+									>
+										<span dangerouslySetInnerHTML={{__html: step_two.step}} />
+									</ScrollAnimation>
 									<div className='recovery_steps'>
 										{
 											recovery_steps.map((step, i) => {
@@ -118,8 +148,20 @@ class TokenRecoveryProcessOne extends Component {
 													<div className='recovery_step' key={i}>
 														<Row>
 															<Col md={8} mdOffset={2} sm={10} smOffset={1}>
-																<img src={step} alt='recovery step' />
-																<h4 dangerouslySetInnerHTML={{__html: step_two.screenshot_captions[i]}} />
+																<ScrollAnimation
+																	animateOnce
+																	animateIn='fadeInUp'
+																	duration={0.4}
+																>
+																	<img src={step} alt='recovery step' />
+																</ScrollAnimation>
+																<ScrollAnimation
+																	animateOnce
+																	animateIn='fadeInUp'
+																	duration={0.4}
+																>
+																	<h4 dangerouslySetInnerHTML={{__html: step_two.screenshot_captions[i]}} />
+																</ScrollAnimation>
 															</Col>
 														</Row>
 													</div>
@@ -129,78 +171,162 @@ class TokenRecoveryProcessOne extends Component {
 									</div>
 								</li>
 								<li>
-									<span dangerouslySetInnerHTML={{__html: step_three.step}} />
+									<ScrollAnimation
+										animateOnce
+										animateIn='fadeInUp'
+										duration={0.4}
+									>
+										<span dangerouslySetInnerHTML={{__html: step_three.step}} />
+									</ScrollAnimation>
 									<Row>
 										<Col md={8} mdOffset={2}>
-											<img src={ether_screenshot_one} alt='' className='ether_screenshot_one' />
+											<ScrollAnimation
+												animateOnce
+												animateIn='fadeInUp'
+												duration={0.4}
+											>
+												<img src={ether_screenshot_one} alt='' className='ether_screenshot_one' />
+											</ScrollAnimation>
 										</Col>
 									</Row>
 									<ul>
 										<li>
-											{step_three.copy_paste}
+											<ScrollAnimation
+												animateOnce
+												animateIn='fadeInUp'
+												duration={0.4}
+											>
+												<span dangerouslySetInnerHTML={{__html: step_three.copy_paste}} />
+											</ScrollAnimation>
 											<div className='process_message'>
-												<p>{step_three.message}</p>
-												<ul>
-													<li>{step_three.ethereum}</li>
-													<li>{step_three.public_key}</li>
-												</ul>
+												<ScrollAnimation
+													animateOnce
+													animateIn='fadeInUp'
+													duration={0.4}
+												>
+													<p>{step_three.message}</p>
+													<ul>
+														<li>{step_three.ethereum}</li>
+														<li>{step_three.public_key}</li>
+													</ul>
+												</ScrollAnimation>
 											</div>
 											<div className='ether_screenshots'>
 												<div className='recovery_step'>
 													<Row>
 														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
-															<img src={ether_screenshot_two} alt='ether screenshot one' />
+															<ScrollAnimation
+																animateOnce
+																animateIn='fadeInUp'
+																duration={0.4}
+															>
+																<img src={ether_screenshot_two} alt='ether screenshot one' />
+															</ScrollAnimation>
 														</Col>
 													</Row>
 												</div>
 												<div className='recovery_step'>
 													<Row>
 														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
-															<img src={ether_screenshot_three} alt='ether screenshot two' />
-															<h4 dangerouslySetInnerHTML={{__html: step_three.screenshot_caption}}></h4>
+															<ScrollAnimation
+																animateOnce
+																animateIn='fadeInUp'
+																duration={0.4}
+															>
+																<img src={ether_screenshot_three} alt='ether screenshot two' />
+															</ScrollAnimation>
+															<ScrollAnimation
+																animateOnce
+																animateIn='fadeInUp'
+																duration={0.4}
+															>
+																<h4 dangerouslySetInnerHTML={{__html: step_three.screenshot_caption}}></h4>
+															</ScrollAnimation>
 														</Col>
 													</Row>
 												</div>
 												<div className='recovery_step'>
 													<Row>
 														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
-															<img src={ether_screenshot_four} alt='ether screenshot two' />
-															<h4>{step_three.screenshot_caption_two}</h4>
+															<ScrollAnimation
+																animateOnce
+																animateIn='fadeInUp'
+																duration={0.4}
+															>
+																<img src={ether_screenshot_four} alt='ether screenshot two' />
+															</ScrollAnimation>
+															<ScrollAnimation
+																animateOnce
+																animateIn='fadeInUp'
+																duration={0.4}
+															>
+																<h4>{step_three.screenshot_caption_two}</h4>
+															</ScrollAnimation>
 														</Col>
 													</Row>
 												</div>
 												<div className='recovery_step'>
 													<Row>
 														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
-															<img src={ether_screenshot_five} alt='ether screenshot two' />
-															<h4>{step_three.screenshot_caption_three}</h4>
+															<ScrollAnimation
+																animateOnce
+																animateIn='fadeInUp'
+																duration={0.4}
+															>
+																<img src={ether_screenshot_five} alt='ether screenshot two' />
+															</ScrollAnimation>
+															<ScrollAnimation
+																animateOnce
+																animateIn='fadeInUp'
+																duration={0.4}
+															>
+																<h4>{step_three.screenshot_caption_three}</h4>
+															</ScrollAnimation>
 														</Col>
 													</Row>
 												</div>
 												<div className='recovery_step'>
 													<Row>
 														<Col md={8} mdOffset={2} sm={10} smOffset={1}>
-															<img src={ether_screenshot_six} alt='ether screenshot two' />
+															<ScrollAnimation
+																animateOnce
+																animateIn='fadeInUp'
+																duration={0.4}
+															>
+																<img src={ether_screenshot_six} alt='ether screenshot two' />
+															</ScrollAnimation>
 														</Col>
 													</Row>
 												</div>
 											</div>
 										</li>
 										<li>
-											<span
-												className='modal_toggle'
-												onClick={e => {
-													e.preventDefault();
-													this.setState({showFormModal: true});
-												}}
+											<ScrollAnimation
+												animateOnce
+												animateIn='fadeInUp'
+												duration={0.4}
 											>
-												{step_three.email_us}
-											</span>
+												<span
+													className='modal_toggle'
+													onClick={e => {
+														e.preventDefault();
+														this.setState({showFormModal: true});
+													}}
+												>
+													{step_three.email_us}
+												</span>
+											</ScrollAnimation>
 										</li>
 									</ul>
 								</li>
 							</ol>
-							<p><em>{process.process_note}</em></p>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeInUp'
+								duration={0.4}
+							>
+								<p><em>{process.process_note}</em></p>
+							</ScrollAnimation>
 						</Col>
 					</Row>
 				</Grid>
@@ -222,22 +348,50 @@ const TokenRecoveryProcessTwo = ({process}) => {
 			<Grid>
 				<Row>
 					<Col md={10} mdOffset={1}>
-						{
-							process.process_intro.map((paragraph, i) => {
-								return (
-									<p key={i}>{paragraph}</p>
-								);
-							})
-						}
+						<ScrollAnimation
+							animateOnce
+							animateIn='fadeInUp'
+							duration={0.4}
+						>
+							{ process.process_intro.map((paragraph, i) => <p key={i}>{paragraph}</p>) }
+						</ScrollAnimation>
 						<ol>
 							<li>
-								{process.eos_auth}
-								<div className='process_message'>
-									<a href='https://eosauthority.com/blog/how_to_generate_your_EOS_fallback_key_from_ethereum_private_key' target='_blank' rel='noopener noreferrer'>https://eosauthority.com/blog/how_to_generate_your_EOS_fallback_key_from_ethereum_private_key</a>
-								</div>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+								>
+									<span dangerouslySetInnerHTML={{__html: process.eos_auth}} />
+								</ScrollAnimation>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+								>
+									<div className='process_message'>
+										<a href='https://eosauthority.com/blog/how_to_generate_your_EOS_fallback_key_from_ethereum_private_key' target='_blank' rel='noopener noreferrer'>https://eosauthority.com/blog/how_to_generate_your_EOS_fallback_key_from_ethereum_private_key</a>
+									</div>
+								</ScrollAnimation>
 							</li>
-							<li>{process.save_keys}</li>
-							<li>{process.import_wallet}</li>
+							<li>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+								>
+									<span dangerouslySetInnerHTML={{__html: process.save_keys}} />
+								</ScrollAnimation>
+							</li>
+							<li>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+								>
+									<span dangerouslySetInnerHTML={{__html: process.import_wallet}} />
+								</ScrollAnimation>
+							</li>
 						</ol>
 					</Col>
 				</Row>
