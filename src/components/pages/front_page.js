@@ -44,6 +44,7 @@ import zephyr from '../../img/partner_logos/logo_zephyr.png';
 import telos_vancouver from '../../img/partner_logos/logo_telos_vancouver.png';
 import kainos from '../../img/partner_logos/logo_kainos.png';
 import telos_global from '../../img/partner_logos/logo_telosglobal.png';
+import telescope from '../../img/partner_logos/logo_telescope.png';
 
 //exchange logos
 // import chainrift from '../../img/exchange_logos/exchange_chainrift.png';
@@ -61,7 +62,8 @@ import {
 	WHITE_PAPER_ENGLISH,
 	WHITE_PAPER_KOREAN,
 	WHITE_PAPER_CHINESE,
-	WHITE_PAPER_RUSSIAN
+	WHITE_PAPER_RUSSIAN,
+	WHITE_PAPER_PORTUGESE
 } from '../../config/constants';
 
 //charts
@@ -224,6 +226,11 @@ const partnersArr = [
 		name: 'TelosGlobal',
 		logo: telos_global,
 		url: 'https://telosglobal.io'
+	},
+	{
+		name: 'the teloscope',
+		logo: telescope,
+		url: 'https://theteloscope.io'
 	}
 ];
 
@@ -426,6 +433,9 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text, lang
 			break;
 		case 'russian':
 			wp_url = WHITE_PAPER_RUSSIAN;
+			break;
+		case 'pt-br':
+			wp_url = WHITE_PAPER_PORTUGESE;
 			break;
 		default:
 			wp_url = WHITE_PAPER_ENGLISH;
