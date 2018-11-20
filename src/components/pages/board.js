@@ -1,5 +1,6 @@
 import React from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
+import ScrollAnimation from 'react-animate-on-scroll';
 import foundation_logo from '../../img/foundation_site/logo.png';
 
 import placeholder_portrait from '../../img/foundation_site/nominee_placeholder.png';
@@ -252,7 +253,13 @@ const boardNominees = [
 const Board = () => {
 	return (
 		<div className='foundation_site'>
-			<BoardIntro />
+			<ScrollAnimation
+				animateOnce
+				animateIn='fadeIn'
+				duration={0.4}
+			>
+				<BoardIntro />
+			</ScrollAnimation>
 			<InterimNominees />
 			<ExecutiveNominees />
 		</div>
@@ -305,22 +312,34 @@ const InterimNominees = () => {
 			<Grid>
 				<Row>
 					<Col md={10} mdOffset={1}>
-						<p className='interim_intro'>The Telos Foundation Interim RAM Administration Director manages the Telos Foundation's efforts to stabilize the Telos RAM market by publishing a Published Guidance Price and non-binding Advice to Block Producers regarding future RAM releases. On October 9th the Telos Launch Group voted unanimously to confirm Jan as the Interim RAM Administration Director.</p>
-						{
-							interimNominees.map((nom, i) => {
-								return (
-									<Nominee
-										key={i}
-										name={nom.name}
-										portrait={nom.portrait}
-										organization={nom.organization}
-										bio={nom.bio}
-										selfNominated={nom.selfNominated}
-										nominatedBy={nom.nominatedBy}
-										linkedIn={nom.linkedIn} />
-								);
-							})
-						}
+						<ScrollAnimation
+							animateOnce
+							animateIn='fadeInUp'
+							duration={0.4}
+						>
+							<p className='interim_intro'>The Telos Foundation Interim RAM Administration Director manages the Telos Foundation{"'"}s efforts to stabilize the Telos RAM market by publishing a Published Guidance Price and non-binding Advice to Block Producers regarding future RAM releases. On October 9th the Telos Launch Group voted unanimously to confirm Jan as the Interim RAM Administration Director.</p>
+						</ScrollAnimation>
+						<ScrollAnimation
+							animateOnce
+							animateIn='fadeInUp'
+							duration={0.4}
+						>
+							{
+								interimNominees.map((nom, i) => {
+									return (
+										<Nominee
+											key={i}
+											name={nom.name}
+											portrait={nom.portrait}
+											organization={nom.organization}
+											bio={nom.bio}
+											selfNominated={nom.selfNominated}
+											nominatedBy={nom.nominatedBy}
+											linkedIn={nom.linkedIn} />
+									);
+								})
+							}
+						</ScrollAnimation>
 					</Col>
 				</Row>
 			</Grid>
@@ -340,15 +359,21 @@ const ExecutiveNominees = () => {
 						{
 							boardNominees.map((nom, i) => {
 								return (
-									<Nominee
+									<ScrollAnimation
 										key={i}
-										name={nom.name}
-										portrait={nom.portrait}
-										organization={nom.organization}
-										bio={nom.bio}
-										selfNominated={nom.selfNominated}
-										nominatedBy={nom.nominatedBy}
-										linkedIn={nom.linkedIn} />
+										animateOnce
+										animateIn='fadeInUp'
+										duration={0.4}
+									>
+										<Nominee
+											name={nom.name}
+											portrait={nom.portrait}
+											organization={nom.organization}
+											bio={nom.bio}
+											selfNominated={nom.selfNominated}
+											nominatedBy={nom.nominatedBy}
+											linkedIn={nom.linkedIn} />
+									</ScrollAnimation>
 								);
 							})
 						}
