@@ -356,7 +356,7 @@ class Documents extends Component {
 													animateOnce
 													animateIn='fadeIn'
 													duration={0.4}
-													delay={i * 10 + 50}
+													delay={i * 50 + 50}
 												>
 													<img
 														src={banner.image}
