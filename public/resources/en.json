@@ -443,7 +443,7 @@
   "governance_page": {
     "intro": {
       "heading": "Governance Overview",
-      "subheading": "Telos is a governed blockchain based on EOSIO - the same software that powers EOS - so that Dapps can deploy on Telos and EOS with the same code. When Telos launches (as early as November 20, 2018) it will have complete documentation and operating structures such as full on-chain governance, the ability to ratify or amend the governance documents by community voting, a worker proposal system, and election of block producers and arbitrators. Below are the main elements and features of blockchain governance on Telos."
+      "subheading": "Telos is a governed blockchain based on EOSIO - the same software that powers EOS - so that Dapps can deploy on Telos and EOS with the same code. When Telos launches (as early as November 27, 2018) it will have complete documentation and operating structures such as full on-chain governance, the ability to ratify or amend the governance documents by community voting, a worker proposal system, and election of block producers and arbitrators. Below are the main elements and features of blockchain governance on Telos."
     },
     "documents": {
       "heading": "THE DOCUMENTS",
