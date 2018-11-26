@@ -153,8 +153,9 @@ const Wallets = ({wallets}) => {
 							<li>
 								<ScrollAnimation
 									animateOnce
-									animateIn='fadeIn'
-									duration={0.2}
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={100}
 								>
 									<a
 										href='https://github.com/Telos-Foundation/Sqrl/releases'
@@ -169,9 +170,9 @@ const Wallets = ({wallets}) => {
 							<li>
 								<ScrollAnimation
 									animateOnce
-									animateIn='fadeIn'
-									duration={0.2}
-									delay={50}
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={150}
 								>
 									<a
 										href='https://github.com/Telos-Foundation/Sqrl/releases'
@@ -186,9 +187,9 @@ const Wallets = ({wallets}) => {
 							<li>
 								<ScrollAnimation
 									animateOnce
-									animateIn='fadeIn'
-									duration={0.2}
-									delay={100}
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={200}
 								>
 									<a
 										href='https://github.com/Telos-Foundation/Sqrl/releases'
@@ -203,9 +204,9 @@ const Wallets = ({wallets}) => {
 							<li>
 								<ScrollAnimation
 									animateOnce
-									animateIn='fadeIn'
-									duration={0.2}
-									delay={150}
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={250}
 								>
 									<a 
 										href='https://github.com/Telos-Foundation/Sqrl' 
