@@ -21,7 +21,8 @@ import {
 	WHITE_PAPER_KOREAN,
 	WHITE_PAPER_CHINESE,
 	WHITE_PAPER_RUSSIAN,
-	WHITE_PAPER_PORTUGESE
+	WHITE_PAPER_PORTUGESE,
+	WHITE_PAPER_INDONESIAN
 } from '../../config/constants';
 import '../../styles/download.css';
 
@@ -254,6 +255,9 @@ class Documents extends Component {
 				break;
 			case 'pt-br':
 				wp_url = WHITE_PAPER_PORTUGESE;
+				break;
+			case 'indonesian':
+				wp_url = WHITE_PAPER_INDONESIAN;
 				break;
 			default:
 				wp_url = WHITE_PAPER_ENGLISH;

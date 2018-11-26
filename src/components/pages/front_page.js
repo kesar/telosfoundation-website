@@ -19,7 +19,8 @@ import goodblock from '../../img/partner_logos/logo_goodblock.png';
 import infinitybloc from '../../img/partner_logos/logo_infinitybloc.png';
 // import teloslabs from '../../img/partner_logos/logo_teloslabs.png';
 import eosworld from '../../img/partner_logos/logo_eosworld.png';
-import eosgreen from '../../img/partner_logos/logo_eosgreen.png';
+// import eosgreen from '../../img/partner_logos/logo_eosgreen.png';
+import telos_green from '../../img/partner_logos/logo_telos_green.png';
 import fuzzy from '../../img/partner_logos/logo_fuzzy.png';
 import caleos from '../../img/partner_logos/logo_caleos.png';
 import eos_in_space from '../../img/partner_logos/logo_eosspace.png';
@@ -63,7 +64,8 @@ import {
 	WHITE_PAPER_KOREAN,
 	WHITE_PAPER_CHINESE,
 	WHITE_PAPER_RUSSIAN,
-	WHITE_PAPER_PORTUGESE
+	WHITE_PAPER_PORTUGESE,
+	WHITE_PAPER_INDONESIAN
 } from '../../config/constants';
 
 //charts
@@ -123,9 +125,8 @@ const partnersArr = [
 		url: 'https://eostheworld.io/'
 	},
 	{
-		name: 'eos green',
-		logo: eosgreen,
-		url: 'http://eosgreen.io/'
+		name: 'telosgreen',
+		logo: telos_green
 	},
 	{
 		name: 'fuzzy',
@@ -436,6 +437,9 @@ const WhitePaper = ({white_paper_heading, white_paper_content, github_text, lang
 			break;
 		case 'pt-br':
 			wp_url = WHITE_PAPER_PORTUGESE;
+			break;
+		case 'indonesian':
+			wp_url = WHITE_PAPER_INDONESIAN;
 			break;
 		default:
 			wp_url = WHITE_PAPER_ENGLISH;

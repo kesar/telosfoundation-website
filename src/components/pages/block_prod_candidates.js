@@ -10,7 +10,8 @@ import zephyr from '../../img/partner_logos/logo_zephyr.png';
 import blindbloc from '../../img/partner_logos/logo_blindbloc.png';
 import telos_vancouver from '../../img/partner_logos/logo_telos_vancouver.png';
 import eosbarcelona from '../../img/partner_logos/logo_eosbarcelona.png';
-import eosgreen from '../../img/partner_logos/logo_eosgreen.png';
+// import eosgreen from '../../img/partner_logos/logo_eosgreen.png';
+import telos_green from '../../img/partner_logos/logo_telos_green.png';
 import telos_miami from '../../img/partner_logos/logo_telos_miami.png';
 import dutcheos from '../../img/partner_logos/logo_dutch_eos.png';
 import hellenicos from '../../img/partner_logos/logo_hellenicos.png';
@@ -44,6 +45,7 @@ import china_goingos from '../../img/partner_logos/logo_china_goingos.png';
 import telescope from '../../img/partner_logos/logo_telescope.png';
 import intasia from '../../img/partner_logos/logo_intasia.png';
 import germany from '../../img/partner_logos/logo_telos_germany.png';
+import central from '../../img/partner_logos/logo_telos_central.png';
 
 import '../../styles/block_prod_candidates.css';
 
@@ -159,10 +161,9 @@ const Candidates = () => {
 			vote_name: 'BigIronbpTex'
 		},
 		{
-			name: 'EOSGreen',
+			name: 'TelosGreen',
 			description: 'TelosGreen goal is to promote sustainability and enterprise adoption of Telos Blockchain Network by engaging, empowering & educating the community.',
-			url: 'http://eosgreen.io',
-			logo: eosgreen,
+			logo: telos_green,
 			vote_name: 'telosgreenbp'
 		},
 		{
@@ -297,6 +298,13 @@ const Candidates = () => {
 			url: 'https://telosgermany.io',
 			logo: germany,
 			vote_name: 'telosgermany'
+		},
+		{
+			name: 'Telos Central',
+			description: 'We strive to be the central source of information for all things Telos. We are very community focused and want to find ways to include and educate the Telos community as much as possible, while at the same time develop usable user-friendly products.',
+			url: 'http://teloscentral.com',
+			logo: central,
+			vote_name: 'teloscentral'
 		}
 	];
 
