@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import foundation_logo from '../../img/foundation_site/logo.png';
 
 import placeholder_portrait from '../../img/foundation_site/nominee_placeholder.png';
-import azad_halim from '../../img/foundation_site/azad_halim.png';
+// import azad_halim from '../../img/foundation_site/azad_halim.png';
 import beth from '../../img/foundation_site/beth.png';
 import jt_buice from '../../img/foundation_site/jt_buice.png';
 import robert_james from '../../img/foundation_site/robert_james.jpg';
@@ -17,7 +17,7 @@ import rob_konsdorf from '../../img/foundation_site/eos_detroit_rob.png';
 import sukesh from '../../img/foundation_site/Sukesh Kumar Tedla.jpeg';
 import chen_li from '../../img/foundation_site/chen_li.png';
 import richard_erikodi from '../../img/foundation_site/Richard Bryan Erikodi.jpg';
-import syed_sadiq from '../../img/foundation_site/syed.jpg';
+// import syed_sadiq from '../../img/foundation_site/syed.jpg';
 import jim_hewitt from '../../img/foundation_site/JimHewitt.jpg';
 import james_davis from '../../img/foundation_site/James Davis.jpg';
 import mark_cohen from '../../img/foundation_site/mark_cohen.png';
@@ -117,16 +117,6 @@ const boardNominees = [
 		]
 	},
 	{
-		name: 'Azad Halim',
-		portrait: azad_halim,
-		nominatedBy: 'Josep Rosich, EOS Barcelona',
-		bio: [
-			'Libertarian at heart and contrarian in mind yet, for the past 20 years, professionally engaged to deliver technology solutions in one of the most compliance driven industries, banking. Started my carrier as sysadmin, moved to web development during the dot com boom years, survived multiple bubbles and on few occasions learned, the hard way, how to keep afloat. I was first exposed to EOS while investigating BitShares as a business platform, dabbled with node installations, studied it\'s governance model and closely monitored events as they unfolded to come to the conclusion that history may repeat itself with EOS, hence remained on the sidelines, until Telos came along.',
-			'EOSIO is a very promising technology, some call it Blockchain 3. Within a few months of its launch, we started witnessing the conception of a number projects that are based on this very young open source software, each with their own specific mixed offering of governance, vision to reach out to the global community and deliver a solution within in their own space. Telos is one such project, it\'s a special one with many talented people collaborating to make it work for the people who believe in fairness and rewarding those who contribute to the wider community.',
-			'I expect Telos to stay with us for a long time, I see further collaboration and positive contribution to the ever increasing number of EOSIO based projects. That in itself, is the best thing that could have happened to EOS.'
-		]
-	},
-	{
 		name: 'Jim Hewitt',
 		organization: 'EOS UK',
 		nominatedBy: 'Jan Smit, DutchEOS',
@@ -195,18 +185,6 @@ const boardNominees = [
 		bio: [
 			'An original public member of the Telos Contributors Group, who offered important feedback and ideas for the Telos white paper before it was published, Josep has worked tirelessly towards the success of Telos. Josep arranged for the first exchange that listed TLOS tokens and he continues constant efforts towards onboarding more exchanges, developers, block producers, and users.'
 		]
-	},
-	{
-		name: 'Syed Mushabbar Sadiq (CISSP, CRISC, CISM, PMP, Privacy E.)',
-		organization: 'swedencornet (Core Net AB)',
-		nominatedBy: 'Maliha, CEO swedencornet (Core Net AB)',
-		portrait: syed_sadiq,
-		bio: [
-			'Syed is an early member of the Telos Contributors Group. He is co-chair of GRC, Security, and Marketing Working Groups. But he is an all-rounder and spending lot of time (day and night) in most of the working groups; including, but not limited to: Governance, Network Maintenance, Social Media, Exchange Outreach and so on... He is obsessed with Telos and would like it to succeed in becoming the best choice for Dapps in both Enterprise and Consumer domains.',
-			'He has over 20 years of GRC (Governance, Risks, Compliance), Information Security, and Privacy experience. He comes from Nordic Biggest Bank. He has had worked in global organizations and had roles such as Director of Compliance, senior Info. Security Officer, CISO, Technical National Security and Public Safety Solutions Manager.',
-			'He holds 3 M.Sc. degrees from Sweden and has earned numerous globally recognized security certifications (e.g. CISSP, CISM, CRISC, Privacy Eagle, PMI PMP)'
-		],
-		linkedIn: 'https://www.linkedin.com/in/mushabbar'	
 	},
 	{
 		name: 'Jesse Schulman',
