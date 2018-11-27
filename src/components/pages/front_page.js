@@ -56,7 +56,7 @@ import dexeos_button from '../../img/exchange_logos/DEXEOS-Button.jpg';
 import findex_button from '../../img/exchange_logos/Findex-Button.jpg';
 import swaponline_button from '../../img/exchange_logos/SwapOnline-Button.jpg';
 
-import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
+import sqrl_logo from '../../img/SQRL_Logo_1024px1.png';
 
 //white papers
 import { 
@@ -69,12 +69,12 @@ import {
 } from '../../config/constants';
 
 //charts
-import chart_ch from '../../img/charts/Telos_MarketingSite_Chart_1000px_CH.png';
-import chart_en from '../../img/charts/Telos_MarketingSite_Chart_1000px_EN.png';
-import chart_kr from '../../img/charts/Telos_MarketingSite_Chart_1000px_KR.png';
-import chart_pg from '../../img/charts/Telos_MarketingSite_Chart_1000px_PG.png';
-import chart_rn from '../../img/charts/Telos_MarketingSite_Chart_1000px_RN.png';
-import chart_sp from '../../img/charts/Telos_MarketingSite_Chart_1000px_SP.png';
+import chart_ch from '../../img/charts/Telos_MarketingSite_Chart_1000px_CH1.png';
+import chart_en from '../../img/charts/Telos_MarketingSite_Chart_1000px_EN1.png';
+import chart_kr from '../../img/charts/Telos_MarketingSite_Chart_1000px_KR1.png';
+import chart_pg from '../../img/charts/Telos_MarketingSite_Chart_1000px_PG1.png';
+import chart_rn from '../../img/charts/Telos_MarketingSite_Chart_1000px_RN1.png';
+import chart_sp from '../../img/charts/Telos_MarketingSite_Chart_1000px_SP1.png';
 
 import '../../styles/front_page.css';
 

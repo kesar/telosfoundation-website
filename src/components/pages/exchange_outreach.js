@@ -3,7 +3,7 @@ import {Grid, Row, Col, Table} from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../../styles/exchange_outreach.css';
-import hashtag_graphic from '../../img/hashtag_graphic.jpg';
+import hashtag_graphic from '../../img/hashtag_graphic1.png';
 
 class ExchangeOutreach extends Component {
 	componentDidMount(){
