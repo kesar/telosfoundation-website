@@ -38,7 +38,7 @@ const ExchangeIntro = () => {
 							duration={0.4}
 						>
 							<h1>Telos Hashtag Campaign</h1>
-							<p>Millions of the ERC-20 EOS tokens held on exchanges went unregistered, but we are determined to ensure that every TLOS holder can access their tokens.</p>
+							<p><strong>Sign-ups for this program are now closed.</strong> Millions of the ERC-20 EOS tokens held on exchanges went unregistered, but we are determined to ensure that every TLOS holder can access their tokens.</p>
 							<p>When the Telos network launches, approximately 44% of potential tokens could be held on exchanges. Community members who kept their ERC-20 EOS tokens on an exchange during the Genesis Snapshot will receive their free TLOS tokens only if their exchange agrees to list TLOS.</p>
 							<p>Be rewarded for using your influence to get TLOS tokens listed your cryptocurrency exchange. Anyone, including those who opted to keep their ERC-20 EOS tokens on an exchange during the Genesis snapshot, can participate in our hashtag campaign to spread the word and earn additional TLOS tokens.</p>	
 							<p>
