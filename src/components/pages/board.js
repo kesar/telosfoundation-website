@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import foundation_logo from '../../img/foundation_site/logo.png';
 
 import placeholder_portrait from '../../img/foundation_site/nominee_placeholder.png';
-// import azad_halim from '../../img/foundation_site/azad_halim.png';
+import azad_halim from '../../img/foundation_site/azad_halim.png';
 import beth from '../../img/foundation_site/beth.png';
 import jt_buice from '../../img/foundation_site/jt_buice.png';
 import robert_james from '../../img/foundation_site/robert_james.jpg';
@@ -114,6 +114,16 @@ const boardNominees = [
 			'Justin is the founder and CEO of infinitybloc.io, a founding partner and block producer on Telos. He is highly experienced for thie space having assisted a number of top block producers before and after the first EOSIO chain launched. He is a well respected community member within both Telos and the broader EOSIO community.',
 			'He  appears on a weekly tokenomics crowdcast interviewing and reviewing top EOSIO dapps. And runs regular meetup sessions to educate and incubate blockchain talent in San Francisco and Silicon Valley.',
 			'Justin led the Telos dapp outreach program pre launch and helped to deliver an impressive list of tools, wallets and dapps expected to be available from early in the chains existence. If elected, Justin will be able to continue to bring top talent to Telos and champion the needs of the networks community above all else.'
+		]
+	},
+	{
+		name: 'Azad Halim',
+		portrait: azad_halim,
+		nominatedBy: 'Josep Rosich, EOS Barcelona',
+		bio: [
+			'Libertarian at heart and contrarian in mind yet, for the past 20 years, professionally engaged to deliver technology solutions in one of the most compliance driven industries, banking. Started my carrier as sysadmin, moved to web development during the dot com boom years, survived multiple bubbles and on few occasions learned, the hard way, how to keep afloat. I was first exposed to EOS while investigating BitShares as a business platform, dabbled with node installations, studied it\'s governance model and closely monitored events as they unfolded to come to the conclusion that history may repeat itself with EOS, hence remained on the sidelines, until Telos came along.',
+			'EOSIO is a very promising technology, some call it Blockchain 3. Within a few months of its launch, we started witnessing the conception of a number projects that are based on this very young open source software, each with their own specific mixed offering of governance, vision to reach out to the global community and deliver a solution within in their own space. Telos is one such project, it\'s a special one with many talented people collaborating to make it work for the people who believe in fairness and rewarding those who contribute to the wider community.',
+			'I expect Telos to stay with us for a long time, I see further collaboration and positive contribution to the ever increasing number of EOSIO based projects. That in itself, is the best thing that could have happened to EOS.'
 		]
 	},
 	{
