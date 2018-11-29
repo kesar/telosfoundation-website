@@ -443,7 +443,7 @@
   "governance_page": {
     "intro": {
       "heading": "Visión General de la Gobernabilidad",
-      "subheading": "Telos es un Blockchain basado en EOSIO – el mismo software que alimenta EOS – de modo que DApps puede implementarse en Telos y EOS con el mismo código. Cuando Telos inicie (tan pronto el 27 de Noviembre del 2018), el tendrá documentación completa y estructuras de operación tales como la gobernabilidad completa en-cadena, la habilidad para ratificar o enmendar documentos de gobernabilidad por la comunidad votante, una propuesta de sistema trabajador, y elección de productores de Blocks y árbitros. Por debajo hay elementos principales y características de la gobernabilidad del Blockchain en Telos."
+      "subheading": "Telos es un Blockchain basado en EOSIO – el mismo software que alimenta EOS – de modo que DApps puede implementarse en Telos y EOS con el mismo código. Cuando Telos inicie (tan pronto como el 4 de diciembre de 2018), el tendrá documentación completa y estructuras de operación tales como la gobernabilidad completa en-cadena, la habilidad para ratificar o enmendar documentos de gobernabilidad por la comunidad votante, una propuesta de sistema trabajador, y elección de productores de Blocks y árbitros. Por debajo hay elementos principales y características de la gobernabilidad del Blockchain en Telos."
     },
     "documents": {
       "heading": "Los Documentos",

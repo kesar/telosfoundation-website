@@ -443,7 +443,7 @@
   "governance_page": {
     "intro": {
       "heading": "Governança - Visão Geral",
-      "subheading": "Telos é um blockchain governado, baseado em EOSIO - o mesmo software que a EOS utiliza - para que seja possível implementar DApps na Telos e na EOS com o mesmo código. Quando a Telos for lançada (já a 27 de Novembro de 2018), possuirá documentação completa e um conjunto de estruturas operacionais, tais como governança integralmente assente na cadeia, a capacidade de ratificar ou alterar os documentos de governança por votação da comunidade, um sistema de proposta de trabalhadores e eleição de produtores de blocos e árbitros. Abaixo estão listados os principais elementos e características da governança blockchain na Telos."
+      "subheading": "Telos é um blockchain governado, baseado em EOSIO - o mesmo software que a EOS utiliza - para que seja possível implementar DApps na Telos e na EOS com o mesmo código. Quando a Telos for lançada (já em 4 de dezembro de 2018), possuirá documentação completa e um conjunto de estruturas operacionais, tais como governança integralmente assente na cadeia, a capacidade de ratificar ou alterar os documentos de governança por votação da comunidade, um sistema de proposta de trabalhadores e eleição de produtores de blocos e árbitros. Abaixo estão listados os principais elementos e características da governança blockchain na Telos."
     },
     "documents": {
       "heading": "OS DOCUMENTOS",
