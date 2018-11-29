@@ -302,7 +302,7 @@ const Candidates = () => {
 		{
 			name: 'Telos Central',
 			description: 'We strive to be the central source of information for all things Telos. We are very community focused and want to find ways to include and educate the Telos community as much as possible, while at the same time develop usable user-friendly products.',
-			url: 'http://teloscentral.com',
+			url: 'https://teloscentral.com',
 			logo: central,
 			vote_name: 'teloscentral'
 		}
