@@ -15,6 +15,7 @@
 @media screen and (min-width: 767px) {
 	.main_footer {
 		top: 100px;
+		padding-bottom: 25px;
 	}
 
 	.main_footer .col-sm-4:nth-child(1){
@@ -69,7 +70,12 @@
 	}
 
 	.footer_social a {
-		color: #777;
+		/*color: #777;*/
+		color: #635a51;
+	}
+
+	.footer_social a:hover {
+		color: #30271E;
 	}
 }
 
@@ -96,6 +102,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
 	}
 
 	.footer_links ul {

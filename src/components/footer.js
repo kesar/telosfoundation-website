@@ -27,7 +27,7 @@ export default class Footer extends Component {
 							<img src={telos_icon} alt='icon' className='icon' />
 						</Col>
 						<Col sm={4}>
-							<InlineLinks />
+							<InlineLinks handleModalOpen={() => this.setState({policyModalOpen: true})} />
 						</Col>
 					</Row>
 				</Grid>
@@ -96,7 +96,7 @@ const SocialLinks = () => {
 	);
 };
 
-const InlineLinks = () => {
+const InlineLinks = (props) => {
 	return (
 		<div className='footer_links'>
 			<ul>
@@ -105,7 +105,7 @@ const InlineLinks = () => {
 						className='modal_toggle'
 						onClick={e => {
 							e.preventDefault();
-							this.setState({policyModalOpen: true});
+							props.handleModalOpen();
 						}}
 					>
 						Privacy Policy
