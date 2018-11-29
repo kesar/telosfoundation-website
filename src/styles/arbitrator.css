@@ -215,3 +215,7 @@
 #arbitrator_intro .intro_downloads .arbitrator_document_container:last-child {
 	padding-bottom: 0;
 }
+
+.arbitrator_candidate_content p li {
+	font-size: 1em;
+}

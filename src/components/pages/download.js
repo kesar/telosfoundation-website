@@ -35,37 +35,43 @@ const splashBanners = [
 		name: 'banner one',
 		image: banner_one,
 		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_1.jpg',
-		downloadName: 'Splash Banner_Telos-Medium_generic_1.jpg'
+		downloadName: 'Splash Banner_Telos-Medium_generic_1.jpg',
+		fileSize: '754 KB'
 	},
 	{
 		name: 'banner two',
 		image: banner_two,
 		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_2.jpg',
-		downloadName: 'Splash Banner_Telos-Medium_generic_2.jpg'
+		downloadName: 'Splash Banner_Telos-Medium_generic_2.jpg',
+		fileSize: '602 KB'
 	},
 	{
 		name: 'banner three',
 		image: banner_three,
 		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_3.jpg',
-		downloadName: 'Splash Banner_Telos-Medium_generic_3.jpg'
+		downloadName: 'Splash Banner_Telos-Medium_generic_3.jpg',
+		fileSize: '330 KB'
 	},
 	{
 		name: 'banner four',
 		image: banner_four,
 		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_4.jpg',
-		downloadName: 'Splash Banner_Telos-Medium_generic_4.jpg'
+		downloadName: 'Splash Banner_Telos-Medium_generic_4.jpg',
+		fileSize: '418 KB'
 	},
 	{
 		name: 'banner five',
 		image: banner_five,
 		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_5.jpg',
-		downloadName: 'Splash Banner_Telos-Medium_generic_5.jpg'
+		downloadName: 'Splash Banner_Telos-Medium_generic_5.jpg',
+		fileSize: '423 KB'
 	},
 	{
 		name: 'banner six',
 		image: banner_six,
 		download: 'https://resources.telosfoundation.io/images/banners/Splash Banner_Telos-Medium_generic_6.jpg',
-		downloadName: 'Spash Banner_Telos-Medium_generic_6.jpg'
+		downloadName: 'Spash Banner_Telos-Medium_generic_6.jpg',
+		fileSize: '599 KB'
 	}
 ];
 
@@ -233,7 +239,8 @@ class Documents extends Component {
 			downloadModalOpen: false,
 			displayBanner: '',
 			downloadBanner: '',
-			downloadBannerName: ''
+			downloadBannerName: '',
+			downloadBannerFileSize: ''
 		};
 	}
 
@@ -373,7 +380,8 @@ class Documents extends Component {
 																downloadModalOpen: true,
 																displayBanner: banner.image,
 																downloadBanner: banner.download,
-																downloadBannerName: banner.downloadName
+																downloadBannerName: banner.downloadName,
+																downloadBannerFileSize: banner.fileSize
 															});
 														}} />
 												</ScrollAnimation>
@@ -390,6 +398,7 @@ class Documents extends Component {
 					display_banner={this.state.displayBanner}
 					download_banner={this.state.downloadBanner}
 					download_banner_name={this.state.downloadBannerName}
+					download_banner_file_size={this.state.downloadBannerFileSize}
 					onHide={() => this.setState({downloadModalOpen: false})} />
 			</section>
 		);

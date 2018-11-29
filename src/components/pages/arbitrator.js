@@ -14,13 +14,15 @@ import raul_sepulveda from '../../img/arbitrator/Raul Vidal y Sepulveda.jpg';
 import roberto_corretjer from '../../img/arbitrator/Roberto Corretjer.png';
 import moises_raba from '../../img/arbitrator/moises_raba.png';
 import mark_blank from '../../img/arbitrator/mark_blankenship.jpeg';
+import fred_brown from '../../img/arbitrator/william_fred_brown.jpg';
 
 const arbitratorPortraits = [
 	marc_roger,
 	roberto_corretjer,
 	raul_sepulveda,
 	moises_raba,
-	mark_blank
+	mark_blank,
+	fred_brown
 ];
 
 //email template for contact link
@@ -233,7 +235,7 @@ const ArbitratorCandidate = (
 					<div className='arbitrator_candidate_content'>
 						<h3>{cand_name}</h3>
 						{getDescription()}
-						{cand_statement.map((par, i) => <p key={i}>{par}</p>)}
+						{cand_statement.map((par, i) => <p key={i} dangerouslySetInnerHTML={{__html: par}} />)}
 						{getLanguages()}
 						{getCountry()}
 						<p>{vote_heading}: <span className='candidate_vote_name'>{cand_vote_name}</span></p>
