@@ -109,3 +109,53 @@
   max-height: 280px;
   overflow-y: auto;
 }
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:active,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	border-color: transparent !important;
+	margin-top: 15px;
+	background-color: transparent;
+	transition: background-color 0.3s ease;
+}
+
+.navbar-default .navbar-toggle.collapsed {
+	background-color: rgba(150, 150, 150, 0.15);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	width: 22px;
+	transition: transform 0.3s ease, background-color 0.3s ease;
+	background-color: #30271E;
+}
+
+.navbar-default .navbar-toggle.collapsed .icon-bar {
+	background-color: #635a51;
+}
+
+.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(2) {
+	transform: translate3d(0,0,0) rotate(0deg);
+	width: 22px;
+}
+
+.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(3) {
+	transform: translate3d(0,0,0) rotate(0deg);
+}
+
+.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(4) {
+	transform: translate3d(0,0,0) rotate(0deg);
+	width: 22px;
+}
+
+.navbar-default .navbar-toggle .icon-bar:nth-child(2) {
+	transform: translate3d(0px,6px,0) rotate(45deg);
+	transform-origin: left top;
+	width: 11px;
+}
+
+.navbar-default .navbar-toggle .icon-bar:nth-child(4) {
+	transform: translate3d(0px,-6px,0) rotate(-45deg);
+	transform-origin: left bottom;
+	width: 11px;
+}
