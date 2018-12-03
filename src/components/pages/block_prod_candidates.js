@@ -46,6 +46,7 @@ import telescope from '../../img/partner_logos/logo_telescope.png';
 import intasia from '../../img/partner_logos/logo_intasia.png';
 import germany from '../../img/partner_logos/logo_telos_germany.png';
 import central from '../../img/partner_logos/logo_telos_central.png';
+import telos_china from '../../img/partner_logos/logo_telos_china.png';
 
 import '../../styles/block_prod_candidates.css';
 
@@ -305,6 +306,13 @@ const Candidates = () => {
 			url: 'https://teloscentral.com',
 			logo: central,
 			vote_name: 'teloscentral'
+		},
+		{
+			name: 'Telos China',
+			description: 'The Telos China is a community specializing in block chain preaching and digital currency investment. We are committed to promoting the recognition of block chains and investing in block chains.',
+			url: 'http://www.telasiachina.com',
+			logo: telos_china,
+			vote_name: 'telasiachina'
 		}
 	];
 

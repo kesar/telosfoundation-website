@@ -107,7 +107,7 @@ const boardNominees = [
 	},
 	{
 		name: 'Justin Giudici',
-		organization: 'Infinitybloc',
+		organization: 'infinitybloc',
 		nominatedBy: 'Rob Konsdorf',
 		portrait: justin_giudici,
 		bio: [
@@ -119,7 +119,7 @@ const boardNominees = [
 	{
 		name: 'Azad Halim',
 		portrait: azad_halim,
-		nominatedBy: 'Josep Rosich, EOS Barcelona',
+		nominatedBy: 'Kevin Quaintance, eosglobal.io & Dimitri C, infinitybloc',
 		bio: [
 			'Libertarian at heart and contrarian in mind yet, for the past 20 years, professionally engaged to deliver technology solutions in one of the most compliance driven industries, banking. Started my carrier as sysadmin, moved to web development during the dot com boom years, survived multiple bubbles and on few occasions learned, the hard way, how to keep afloat. I was first exposed to EOS while investigating BitShares as a business platform, dabbled with node installations, studied it\'s governance model and closely monitored events as they unfolded to come to the conclusion that history may repeat itself with EOS, hence remained on the sidelines, until Telos came along.',
 			'EOSIO is a very promising technology, some call it Blockchain 3. Within a few months of its launch, we started witnessing the conception of a number projects that are based on this very young open source software, each with their own specific mixed offering of governance, vision to reach out to the global community and deliver a solution within in their own space. Telos is one such project, it\'s a special one with many talented people collaborating to make it work for the people who believe in fairness and rewarding those who contribute to the wider community.',

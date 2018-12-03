@@ -46,6 +46,7 @@ import telos_vancouver from '../../img/partner_logos/logo_telos_vancouver.png';
 import kainos from '../../img/partner_logos/logo_kainos.png';
 import telos_global from '../../img/partner_logos/logo_telosglobal.png';
 import telescope from '../../img/partner_logos/logo_telescope.png';
+import eos_sphere from '../../img/partner_logos/logo_eos_sphere.png';
 
 //exchange logos
 // import chainrift from '../../img/exchange_logos/exchange_chainrift.png';
@@ -232,6 +233,11 @@ const partnersArr = [
 		name: 'the teloscope',
 		logo: telescope,
 		url: 'https://theteloscope.io'
+	},
+	{
+		name: 'eosphere',
+		logo: eos_sphere,
+		url: 'https://eosphere.io'
 	}
 ];
 
