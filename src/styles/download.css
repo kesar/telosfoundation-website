@@ -250,3 +250,20 @@
 .banner_download_btn.btn-primary:focus {
 	outline: transparent;
 }
+
+.download_banner_modal .modal-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.download_banner_modal .banner_meta {
+	padding-right: 25px;
+	text-align: left;
+}
+
+.download_banner_modal .banner_meta p {
+	margin: 0;
+	font-size: 1.1em;
+}

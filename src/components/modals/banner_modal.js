@@ -15,6 +15,10 @@ const BannerModal = (props) => {
                 	<img src={props.display_banner} alt='display banner' className='banner_modal_img' />
                 </Modal.Body>
                 <Modal.Footer>
+                    <div className='banner_meta'>
+                        <p>Type: <strong>JPG</strong></p>
+                        <p>Size: <strong>{props.download_banner_file_size}</strong></p>
+                    </div>
                 	<a href={props.download_banner} download={props.download_banner_name} className='btn btn-lg btn-primary banner_download_btn'>DOWNLOAD</a>
                 </Modal.Footer>
             </div>
