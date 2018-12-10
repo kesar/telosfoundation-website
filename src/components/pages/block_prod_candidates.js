@@ -47,6 +47,7 @@ import intasia from '../../img/partner_logos/logo_intasia.png';
 import germany from '../../img/partner_logos/logo_telos_germany.png';
 import central from '../../img/partner_logos/logo_telos_central.png';
 import telos_china from '../../img/partner_logos/logo_telos_china.png';
+import eos_sandiego from '../../img/partner_logos/logo_eos_sandiego.png';
 
 import '../../styles/block_prod_candidates.css';
 
@@ -313,6 +314,13 @@ const Candidates = () => {
 			url: 'http://www.telasiachina.com',
 			logo: telos_china,
 			vote_name: 'telasiachina'
+		},
+		{
+			name: 'EOS San Diego',
+			description: 'EOS San Diego is an independent team, 100% owned and funded by founders. Our focus is to add value to the TELOS blockchain by running and securing the network using the state of the art technology and growing the TELOS blockchain community.',
+			url: 'https://www.eossandiego.io',
+			logo: eos_sandiego,
+			vote_name: 'eossandiego1'
 		}
 	];
 

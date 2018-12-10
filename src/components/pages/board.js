@@ -13,7 +13,6 @@ import jesse_schulman from '../../img/foundation_site/Jesse Schulman.jpg';
 import marlon_williams from '../../img/foundation_site/Marlon Williams.jpg';
 import josep_rosich from '../../img/foundation_site/josep_rosich.png';
 import jerry_huff from '../../img/foundation_site/jerry_huff.png';
-import rob_konsdorf from '../../img/foundation_site/eos_detroit_rob.png';
 import sukesh from '../../img/foundation_site/Sukesh Kumar Tedla.jpeg';
 import chen_li from '../../img/foundation_site/chen_li.png';
 import richard_erikodi from '../../img/foundation_site/Richard Bryan Erikodi.jpg';
@@ -166,15 +165,6 @@ const boardNominees = [
 			'Rob is a co-founding Partner at Echelon Compensation Partners, an independent compensation and corporate governance consulting firm located in Southern California.',
 			'At Echelon, Rob serves as a trusted advisor to Boards and senior management of public and privately-held businesses. He is a recognized expert on the strategy and financial structure of incentive plans, possessing in-depth knowledge of governance, regulatory compliance, SEC disclosure and tax considerations. Rob is also a Certified Executive Compensation Professional, Certified Equity Professional and holds Series 7 and Series 66 securities licenses.',
 			'Rob has assisted Telos in the development of the Bounty System by providing guidance on competitive market compensation rates for Telos contributors. Rob remains an active member of the Telos, EOS and cryptoasset communities having discovered blockchain in in late 2016.'
-		]
-	},
-	{
-		name: 'Rob Konsdorf',
-		organization: 'EOS Detroit',
-		nominatedBy: 'James Davis, GoodBlock',
-		portrait: rob_konsdorf,
-		bio: [
-			'Rob Konsdorf (a.k.a @robrigo) hails from the Bitshares and Steem communities. Having studied and worked toward the proliferation of blockchain networks passionately since 2014, Rob is a natural fit for rallying a cross-disciplinary team together to accelerate the adoption of EOSIO and its applications. As an avid proponent of the transformative force of decentralized networks, he decided to focus on his passion of evangelizing and building in the blockchain industry full time last year. Over this period of time, Rob has done various gigs in the blockchain industry, such as consulting for AIKON, PassageX, and Bitcash, recovering lost digital assets, launching EOSIO networks, and teaching everything he knows about blockchains to people. With a degree in Computer Science and background in Software Engineering, Rob is a hustler by nature, doing whatever it takes to get the job done.'
 		]
 	},
 	{
