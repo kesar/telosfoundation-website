@@ -34,7 +34,7 @@ class Checklist extends Component {
 									<Col md={10} mdOffset={1}>
 										<div className='checklist_intro'>
 											<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
-											<h2>Next go/no-go decision date: Dec 4th, 2018 17:00 UTC</h2>
+											<h2>Next go/no-go decision date: Dec 8th, 2018 17:00 UTC</h2>
 											<h4>On a yes vote, the network will launch 56 hours later.</h4>
 										</div>
 									</Col>
@@ -169,7 +169,7 @@ const DevelopmentCode = () => {
 					Scheduled standby BP rotations
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/3' />
 				</li>
-				<li className='in_progress'>
+				<li className='yes'>
 					Rewrite regproducer to include BP json format
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/55' />
 				</li>
@@ -181,7 +181,7 @@ const DevelopmentCode = () => {
 					Refactor unit tests
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/24' />
 				</li>
-				<li className='in_progress'>
+				<li className='yes'>
 					IPFS
 				</li>
 			</ul>
@@ -198,7 +198,7 @@ const Governance = () => {
 					Telos Blockchain Network operating agreement
 					<InfoLinks telos_link='https://telosfoundation.io/downloads' />
 				</li>
-				<li className='in_progress'>Telos Foundation voting tokens</li>
+				<li className='yes'>Telos Foundation voting tokens</li>
 				<li className='yes'>TF RAM administration</li>
 				<li className='yes'>Ratify final governance program</li>
 				<li className='yes'>Minimum BP requirements</li>
@@ -212,11 +212,11 @@ const Contracts = () => {
 		<section id='contracts_cl'>
 			<h3>Contracts</h3>
 			<ul className='top_level'>
-				<li className='in_progress'>
+				<li className='yes'>
 					Ratify/Amend contract
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/29' />
 				</li>
-				<li className='in_progress with_sublevel'>
+				<li className='yes with_sublevel'>
 					Arbitration contract
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/30' />
 					<ul className='sub_level'>
@@ -226,7 +226,7 @@ const Contracts = () => {
 						<li>Arbitration mechanisms (voting, candidates, etc.)</li>
 					</ul>
 				</li>
-				<li className='in_progress'>
+				<li className='yes'>
 					Worker proposal contract
 					<InfoLinks github_link='https://github.com/Telos-Foundation/telos/issues/46' />
 				</li>
