@@ -5,6 +5,8 @@ import {Helmet} from 'react-helmet';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
+import scatter_logo from '../../img/scatter_logo.jpg';
+
 import pdf_img from '../../img/download_pdf_icon.png';
 import zip_img from '../../img/download_zip_icon.png';
 
@@ -137,6 +139,8 @@ const Wallets = ({wallets}) => {
 						<h3>{wallets.subheading}</h3>
 					</ScrollAnimation>
 				</Col>
+			</Row>
+			<Row>
 				<Col sm={5}>
 					<ScrollAnimation
 						animateOnce
@@ -216,6 +220,98 @@ const Wallets = ({wallets}) => {
 								>
 									<a 
 										href='https://github.com/Telos-Foundation/Sqrl' 
+										className='btn btn-primary' 
+										target='_blank' 
+										rel='noopener noreferrer'
+									>
+										<i className='fa fa-github'></i>  {wallets.source}
+									</a>
+								</ScrollAnimation>
+							</li>
+						</ul>
+					</div>
+				</Col>
+			</Row>
+			<Row>
+				<Col sm={5}>
+					<ScrollAnimation
+						animateOnce
+						animateIn='fadeInUp'
+						duration={0.4}
+					>
+						<img src={scatter_logo} alt='scatter wallet logo' className='img-responsive' />
+					</ScrollAnimation>
+				</Col>
+				<Col sm={7}>
+					<div className='squirrel_content'>
+						<ScrollAnimation
+							animateOnce
+							animateIn='fadeInUp'
+							duration={0.4}
+						>
+							<p>Signing transactions on a blockchain can be a daunting task for users. Scatter makes it easy for anyone to do, whether they know about blockchain or not.</p>
+						</ScrollAnimation>
+						<ul className='download_buttons'>
+							<li>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={100}
+								>
+									<a
+										href='https://github.com/GetScatter/ScatterDesktop/releases/'
+										className='btn btn-primary'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<i className='fa fa-linux'></i>  {wallets.download}
+									</a>
+								</ScrollAnimation>
+							</li>
+							<li>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={150}
+								>
+									<a
+										href='https://github.com/GetScatter/ScatterDesktop/releases/'
+										className='btn btn-primary'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<i className='fa fa-apple'></i>  {wallets.download}
+									</a>
+								</ScrollAnimation>
+							</li>
+							<li>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={200}
+								>
+									<a
+										href='https://github.com/GetScatter/ScatterDesktop/releases/'
+										className='btn btn-primary'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										<i className='fa fa-windows'></i>  {wallets.download}
+									</a>
+								</ScrollAnimation>
+							</li>
+							<li>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={250}
+								>
+									<a 
+										href='https://github.com/GetScatter/ScatterDesktop' 
 										className='btn btn-primary' 
 										target='_blank' 
 										rel='noopener noreferrer'

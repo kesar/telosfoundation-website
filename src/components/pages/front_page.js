@@ -56,8 +56,10 @@ import chainrift_button from '../../img/exchange_logos/Chainrift-Button.jpg';
 import dexeos_button from '../../img/exchange_logos/DEXEOS-Button.jpg';
 import findex_button from '../../img/exchange_logos/Findex-Button.jpg';
 import swaponline_button from '../../img/exchange_logos/SwapOnline-Button.jpg';
+import whaleex_button from '../../img/exchange_logos/WhaleEx-Button.jpg';
 
 import sqrl_logo from '../../img/SQRL_Logo_1024px1.png';
+import scatter_logo from '../../img/scatter_logo.jpg';
 
 //white papers
 import { 
@@ -261,6 +263,11 @@ const exchangesArr = [
 		name: 'swap.online',
 		img: swaponline_button,
 		url: 'https://swap.online'
+	},
+	{
+		name: 'whaleex',
+		img: whaleex_button,
+		url: 'https://www.whaleex.com'
 	}
 ];
 
@@ -592,6 +599,20 @@ const Wallets = () => {
 									<img src={sqrl_logo} alt='sqrl wallet' />
 								</ScrollAnimation>
 							</Link>
+							<a
+								href='https://get-scatter.com/'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={375}
+								>
+									<img src={scatter_logo} alt='scatter logo' />
+								</ScrollAnimation>
+							</a>
 						</div>
 					</Col>
 				</Row>
