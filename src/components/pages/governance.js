@@ -22,7 +22,7 @@ class Governance extends Component {
 				short_description: documents.documents.operating_agreement.short_description,
 				eos_analog: documents.documents.operating_agreement.eos_analog,
 				status: documents.documents.operating_agreement.status,
-				url: 'https://resources.telosfoundation.io/governance_documents/TBNOA_Adopted_2018-10-26.pdf'
+				url: 'https://resources.telosfoundation.io/governance_documents/TBNOA_Adopted_2018-11-20.pdf'
 			},
 			{
 				long_name: documents.documents.arbitration_rules.long_name,
@@ -58,7 +58,7 @@ class Governance extends Component {
 				short_description: documents.documents.bp_minimums.short_description,
 				eos_analog: documents.documents.bp_minimums.eos_analog,
 				status: documents.documents.bp_minimums.status,
-				url: 'https://resources.telosfoundation.io/governance_documents/Telos_Block_Producer_Minimum_Requirements_Adopted_2018-10-09.pdf'
+				url: 'https://resources.telosfoundation.io/governance_documents/Telos_Block_Producer_Minimum_Requirements_Amended_2018-12-06.pdf'
 			},
 			{
 				long_name: documents.documents.regarb_contract.long_name,
