@@ -25,6 +25,7 @@ import brett_bolte from '../../img/foundation_site/Brett Bolte.jpg';
 import chijioke from '../../img/foundation_site/Chijioke Ilochonwu.jpg';
 import joost from '../../img/foundation_site/Joost Voordouw.png';
 import justin_giudici from '../../img/foundation_site/Justin Giudici.jpg';
+import daniel_lazar from '../../img/foundation_site/daniel_lazar.png';
 
 
 import '../../styles/board.css';
@@ -165,6 +166,17 @@ const boardNominees = [
 			'Rob is a co-founding Partner at Echelon Compensation Partners, an independent compensation and corporate governance consulting firm located in Southern California.',
 			'At Echelon, Rob serves as a trusted advisor to Boards and senior management of public and privately-held businesses. He is a recognized expert on the strategy and financial structure of incentive plans, possessing in-depth knowledge of governance, regulatory compliance, SEC disclosure and tax considerations. Rob is also a Certified Executive Compensation Professional, Certified Equity Professional and holds Series 7 and Series 66 securities licenses.',
 			'Rob has assisted Telos in the development of the Bounty System by providing guidance on competitive market compensation rates for Telos contributors. Rob remains an active member of the Telos, EOS and cryptoasset communities having discovered blockchain in in late 2016.'
+		]
+	},
+	{
+		name: 'Daniel LaZar',
+		organization: 'EOS Metal',
+		portrait: daniel_lazar,
+		nominatedBy: 'Rob Konsdorf, EOS Detroit',
+		bio: [
+			'Daniel specializes in Healthcare technologies having previously worked as a first responder and now implementing Healthcare IT for the past 13 years.',
+			'Daniel previously specialized in the building of Forex trading systems before migrating fully into cryptocurrencies, he has been an amateur investor for 9 years.',
+			'Daniel became involved with cryptocurrencies as a GPU miner in 2013, primarily focused on BTC, ETH, LTC as investment vehicles.  He became interested in smart contracts and upon working with them, became involved with EOS and joined the EOSMetal team.'
 		]
 	},
 	{

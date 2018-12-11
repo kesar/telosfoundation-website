@@ -38,7 +38,7 @@ import amplified from '../../img/partner_logos/logo_amplified.png';
 import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
 import madrid from '../../img/partner_logos/logo_telos_madrid.png';
 import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
-// import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
+import telos_canton from '../../img/partner_logos/logo_telos_canton.png';
 import eos_impera from '../../img/partner_logos/logo_eosimpera.png';
 import telos_voyager from '../../img/partner_logos/logo_telos_voyager.png';
 import china_goingos from '../../img/partner_logos/logo_china_goingos.png';
@@ -244,6 +244,13 @@ const Candidates = () => {
 			url: 'http://nytelos.com',
 			logo: telos_ny,
 			vote_name: 'telosnewyork'
+		},
+		{
+			name: 'Telos Canton',
+			description: 'Telos Canton, inspired by Telos\'s ideal, adheres to the "Fair, Just, Open" principle,  and strives to make Telos Canton a complete DAO. And the Libra.Vote decentralized voting and social survey system will be developed to extend the Telos network usage.',
+			url: 'https://teloscanton.io',
+			logo: telos_canton,
+			vote_name: 'teloscantons'
 		},
 		{
 			name: 'EOSImpera',

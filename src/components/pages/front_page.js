@@ -181,6 +181,7 @@ const partnersArr = [
 	{
 		name: 'telos russia',
 		logo: telos_russia,
+		url: 'https://telosrussia.io'
 	},
 	{
 		name: 'telos amplified',
