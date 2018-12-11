@@ -33,9 +33,9 @@ class Checklist extends Component {
 								<Row>
 									<Col md={10} mdOffset={1}>
 										<div className='checklist_intro'>
-											<h2>The following list of features and functions are considered essential and must be completed and tested in order for Telos to launch</h2>
-											<h2>Next go/no-go decision date: Dec 8th, 2018 17:00 UTC</h2>
-											<h4>On a yes vote, the network will launch 56 hours later.</h4>
+											<h2>All checklist items have been completed and tested.</h2>
+											<h2>The Telos Launch Group voted unanimously to launch the Telos Mainnet on December 8th, 2018 at 17:00 UTC.</h2>
+											<h4>The launch is ongoing. More information on the launch processes is available: on <a href='https://medium.com/@teloslogical/what-happens-when-telos-votes-to-launch-d18f8bd494f' target='_blank' rel='noopener noreferrer'>Medium</a></h4>
 										</div>
 									</Col>
 								</Row>
