@@ -48,6 +48,7 @@ import germany from '../../img/partner_logos/logo_telos_germany.png';
 import central from '../../img/partner_logos/logo_telos_central.png';
 import telos_china from '../../img/partner_logos/logo_telos_china.png';
 import eos_sandiego from '../../img/partner_logos/logo_eos_sandiego.png';
+import eos_sphere from '../../img/partner_logos/logo_eos_sphere.png';
 
 import '../../styles/block_prod_candidates.css';
 
@@ -247,7 +248,7 @@ const Candidates = () => {
 		},
 		{
 			name: 'Telos Canton',
-			description: 'Telos Canton, inspired by Telos\'s ideal, adheres to the "Fair, Just, Open" principle,  and strives to make Telos Canton a complete DAO. And the Libra.Vote decentralized voting and social survey system will be developed to extend the Telos network usage.',
+			description: 'Telos Canton adheres to the "Fair, Just, Open" principle and strives to make Telos Canton a complete DAO. And the Libra.Vote decentralized voting and social survey system will be developed to extend the Telos network usage.',
 			url: 'https://teloscanton.io',
 			logo: telos_canton,
 			vote_name: 'teloscantons'
@@ -328,6 +329,13 @@ const Candidates = () => {
 			url: 'https://www.eossandiego.io',
 			logo: eos_sandiego,
 			vote_name: 'eossandiego1'
+		},
+		{
+			name: 'EOSphere',
+			description: 'EOSphere are an Australian BP, made up of professionals and EOSIO community members. They have the required technical expertise, professionalism and infrastructure as well as support the best community initiatives.',
+			url: 'https://eosphere.io',
+			logo: eos_sphere,
+			vote_name: 'eosphereiobp'
 		}
 	];
 
