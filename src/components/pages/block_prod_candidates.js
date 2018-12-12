@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {selectLanguage} from '../../actions';
 import {Helmet} from 'react-helmet';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -22,7 +24,7 @@ import sweden_cornet from '../../img/partner_logos/logo_swedencornet.png';
 import telos_dac from '../../img/partner_logos/logo_telos_dac.png';
 import telos_global from '../../img/partner_logos/logo_telosglobal.png';
 
-// import eos_detroit from '../../img/partner_logos/logo_eosdetroit_small.png';
+import eos_detroit from '../../img/partner_logos/logo_eosdetroit_small.png';
 import telosuk from '../../img/partner_logos/logo_telos_uk.png';
 // import eosvan from '../../img/partner_logos/logo_eosvan.png';
 import infinitybloc from '../../img/partner_logos/logo_infinitybloc.png';
@@ -49,6 +51,9 @@ import central from '../../img/partner_logos/logo_telos_central.png';
 import telos_china from '../../img/partner_logos/logo_telos_china.png';
 import eos_sandiego from '../../img/partner_logos/logo_eos_sandiego.png';
 import eos_sphere from '../../img/partner_logos/logo_eos_sphere.png';
+import eos_index from '../../img/partner_logos/logo_eosindex.png';
+import telos_unlimited from '../../img/partner_logos/logo_telos_unlimited.png';
+import eos_venezuela from '../../img/partner_logos/logo_eos_venezuela.png';
 
 import '../../styles/block_prod_candidates.css';
 
@@ -56,6 +61,10 @@ class BlockProducerCandidates extends Component {
 
 	componentDidMount(){
 		window.scrollTo(0, 0);
+
+		if(this.props.match.params.language){
+			this.props.selectLanguage(this.props.match.params.language);
+		}
 	}
 
 	render(){
@@ -106,6 +115,13 @@ const Candidates = () => {
 			url: 'https://goodblock.io',
 			logo: goodblock,
 			vote_name: 'goodblocktls'
+		},
+		{
+			name: 'EOS Detroit',
+			description: 'EOS Detroit\'s vision beyond serving as an infrastructure provider for EOSIO networks is to create EOSIO decentralized applications, as well as to grow the EOSIO ecosystem through education, advocacy, and outreach.',
+			url: 'https://eosdetroit.io',
+			logo: eos_detroit,
+			vote_name: 'eosiodetroit'
 		},
 		{
 			name: 'EOSMetal',
@@ -336,6 +352,27 @@ const Candidates = () => {
 			url: 'https://eosphere.io',
 			logo: eos_sphere,
 			vote_name: 'eosphereiobp'
+		},
+		{
+			name: 'EOSindex',
+			description: 'EOSindex is a 100% self-funded block producer candidate, using bare-metal infrastructure in Germany. We are the creators of eosindex.io and plan to support Telos the same way.',
+			url: 'https://eosindex.io',
+			logo: eos_index,
+			vote_name: 'bpeosindexio'
+		},
+		{
+			name: 'Telos Unlimited',
+			description: 'Telos Unlimited provides Canadian multi-location bare metal hardware combined with strategic adoption initiatives designed to engage users and boost token value.',
+			url: 'http://telosunlimited.io',
+			logo: telos_unlimited,
+			vote_name: 'telosunlimit'
+		},
+		{
+			name: 'EOSVenezuela',
+			description: 'We are an elected EOS Standby Block Producers, our mission is to promote blockchain and crypto technologies mass adoption as path for development and better future. We are community builders!',
+			url: 'https://eosvenezuela.io',
+			logo: eos_venezuela,
+			vote_name: 'eosvenezuela'
 		}
 	];
 
@@ -412,4 +449,4 @@ const Candidate = (props) => {
 	);
 };
 
-export default BlockProducerCandidates;
+export default withRouter(connect(null, {selectLanguage})(BlockProducerCandidates));

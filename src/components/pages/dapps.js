@@ -4,6 +4,10 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Slider from 'react-slick';
 import {Helmet} from 'react-helmet';
 
+import {withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {selectLanguage} from '../../actions';
+
 import dapps_currency from '../../img/dapps/currency_and_commerce.jpg';
 import dapps_gig from '../../img/dapps/gig_economy.jpg';
 import dapps_records from '../../img/dapps/records_and_info.jpg';
@@ -22,6 +26,10 @@ import '../../styles/dapps.css';
 class DAppsPage extends Component {
 	componentDidMount(){
 		window.scrollTo(0, 0);
+
+		if(this.props.match.params.language){
+			this.props.selectLanguage(this.props.match.params.language);
+		}
 	}
 
 	render(){
@@ -280,4 +288,4 @@ const DAppSection = (props) => {
 	);
 };
 
-export default DAppsPage;
+export default withRouter(connect(null, {selectLanguage})(DAppsPage));

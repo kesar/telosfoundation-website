@@ -4,6 +4,10 @@ import BannerModal from '../modals/banner_modal';
 import {Helmet} from 'react-helmet';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import {withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {selectLanguage} from '../../actions';
+
 import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 import scatter_logo from '../../img/scatter_logo.jpg';
 
@@ -80,6 +84,10 @@ const splashBanners = [
 class Download extends Component {
 	componentDidMount(){
 		window.scrollTo(0, 0);
+
+		if(this.props.match.params.language){
+			this.props.selectLanguage(this.props.match.params.language);
+		}
 	}
 
 	render(){
@@ -529,4 +537,4 @@ const DownloadDocumentZIP = (props) => {
 	);
 };
 
-export default Download;
+export default withRouter(connect(null, {selectLanguage})(Download));

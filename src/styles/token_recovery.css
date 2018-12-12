@@ -1,5 +1,7 @@
 .token_recovery {
 	padding-bottom: 150px;
+	height: 100vh;
+	min-height: 700px;
 }
 
 .token_recovery ul li {

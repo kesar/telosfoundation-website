@@ -3,6 +3,10 @@ import {Grid, Row, Col, Table} from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import {withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {selectLanguage} from '../../actions';
+
 import pdf_img from '../../img/download_pdf_icon.png';
 
 import '../../styles/governance.css';
@@ -10,6 +14,10 @@ import '../../styles/governance.css';
 class Governance extends Component {
 	componentDidMount(){
 		window.scrollTo(0, 0);
+
+		if(this.props.match.params.language){
+			this.props.selectLanguage(this.props.match.params.language);
+		}
 	}
 
 	render(){
@@ -244,4 +252,4 @@ const GovernanceTable = ({governanceDocuments, table}) => {
 	);
 };
 
-export default Governance;
+export default withRouter(connect(null, {selectLanguage})(Governance));

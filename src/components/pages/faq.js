@@ -3,6 +3,10 @@ import {Grid, Row, Col} from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+import {withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {selectLanguage} from '../../actions';
+
 import '../../styles/faq.css';
 
 class FAQPage extends Component {
@@ -10,6 +14,10 @@ class FAQPage extends Component {
 	componentDidMount(){
 		//go to top
 		window.scrollTo(0, 0);
+
+		if(this.props.match.params.language){
+			this.props.selectLanguage(this.props.match.params.language);
+		}
 	}
 
 	render(){
@@ -82,4 +90,4 @@ const FAQContent = ({faqs}) => {
 	);
 };
 
-export default FAQPage;
+export default withRouter(connect(null, {selectLanguage})(FAQPage));

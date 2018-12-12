@@ -28,7 +28,24 @@ const MainSite = ({site_content}) => {
 			<main className='main'>
 
 				<Switch>
+					
+					
+
 					<Route path='/rewards/submission' component={RewardsSubmission} />
+
+					<Route path='/:language/rewards' render={() => <RewardsTranslate rewards_page={site_content.rewards_page} language={site_content.language} />} />
+					<Route path='/:language/exchange_outreach' component={ExchangeOutreach} />
+					<Route path='/:language/iwantmytlos' component={ExchangeOutreach} />
+					<Route path='/:language/launch' component={Checklist} />
+					<Route path='/:language/downloads' render={() => <Download downloads_page={site_content.downloads_page} language={site_content.language} />} />
+					<Route path='/:language/arbitrators' render={() => <Arbitrator arbitrators_page={site_content.arbitrators_page} />} />
+					<Route path='/:language/dapps' render={() => <DAppsPage dapps_page={site_content.dapps_page} />} />
+					<Route path='/:language/recovery' render={() => <TokenRecovery token_recovery={site_content.token_recovery} />} />
+					<Route path='/:language/governance' render={() => <Governance governance_page={site_content.governance_page} />} />
+					<Route path='/:language/faq' render={() => <FAQPage faq_page={site_content.faq_page} />} />
+					<Route path='/:language/candidates' component={BlockProducerCandidates} />
+					<Route path='/:language/how_to_vote' component={HowToVote} />
+
 					<Route path='/rewards' render={() => <RewardsTranslate rewards_page={site_content.rewards_page} language={site_content.language} />} />
 					<Route path='/exchange_outreach' component={ExchangeOutreach} />
 					<Route path='/iwantmytlos' component={ExchangeOutreach} />
@@ -41,6 +58,8 @@ const MainSite = ({site_content}) => {
 					<Route path='/faq' render={() => <FAQPage faq_page={site_content.faq_page} />} />
 					<Route path='/candidates' component={BlockProducerCandidates} />
 					<Route path='/how_to_vote' component={HowToVote} />
+
+					<Route path='/:language' render={() => <FrontPage landing_page={site_content.landing_page} language={site_content.language} />} />
 					<Route path='/' render={() => <FrontPage landing_page={site_content.landing_page} language={site_content.language} />} />
 				</Switch>
 			</main>

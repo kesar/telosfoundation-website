@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {selectLanguage} from '../../actions';
 import {Helmet} from 'react-helmet';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -8,19 +10,30 @@ import sqrl_logo from '../../img/SQRL_Logo_1024px.png';
 
 import '../../styles/how_to_vote.css';
 
-const HowToVote = () => {
-	return (
-		<div className='how_to_vote'>
-			<Helmet>
-				<title>Telos How to Vote</title>
-				<meta name='description' content='Telos block producers are selected by inverse weighted voting: the more block producers you vote for, the more weight your votes carry. This encourages token holders to vote for a more diverse group of block producer candidates and discourages those who seek to vote only for themselves and their affilieates, preventing the emergence of whale accounts such as those now dominating the EOS network.' />
-			</Helmet>
-			<Intro />
-			<OptionOne />
-			<OptionTwo />
-		</div>
-	);
-};
+class HowToVote extends Component {
+	componentDidMount(){
+		//go to top
+		window.scrollTo(0, 0);
+
+		if(this.props.match.params.language){
+			this.props.selectLanguage(this.props.match.params.language);
+		}
+	}
+
+	render(){
+		return (
+			<div className='how_to_vote'>
+				<Helmet>
+					<title>Telos How to Vote</title>
+					<meta name='description' content='Telos block producers are selected by inverse weighted voting: the more block producers you vote for, the more weight your votes carry. This encourages token holders to vote for a more diverse group of block producer candidates and discourages those who seek to vote only for themselves and their affilieates, preventing the emergence of whale accounts such as those now dominating the EOS network.' />
+				</Helmet>
+				<Intro />
+				<OptionOne />
+				<OptionTwo />
+			</div>
+		);
+	}
+}
 
 const Intro = () => {
 	return (
@@ -158,4 +171,4 @@ const OptionTwo = () => {
 	);
 };
 
-export default HowToVote;
+export default withRouter(connect(null, {selectLanguage})(HowToVote));

@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import ScrollAnimation from 'react-animate-on-scroll';
-import {Link} from 'react-router-dom';
+import {Link, withRouter} from 'react-router-dom';
+
+import {connect} from 'react-redux';
+import {selectLanguage} from '../../actions';
 
 import icon_dapps from '../../img/Telos_MarketingSite_Icon_dapps_200px.png';
 import icon_dpos from '../../img/Telos_MarketingSite_Icon_dpos_200px.png';
@@ -275,6 +278,10 @@ const exchangesArr = [
 class FrontPage extends Component {
 	componentDidMount(){
 		window.scrollTo(0, 0);
+
+		if(this.props.match.params.language){
+			this.props.selectLanguage(this.props.match.params.language);
+		}
 	}
 
 	getStyle(){
@@ -656,4 +663,4 @@ const Partners = ({partners_heading}) => {
 	);
 };
 
-export default FrontPage;
+export default withRouter(connect(null, {selectLanguage})(FrontPage));

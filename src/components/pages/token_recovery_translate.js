@@ -5,6 +5,10 @@ import {Helmet} from 'react-helmet';
 import ScrollAnimation from 'react-animate-on-scroll';
 import '../../styles/token_recovery.css';
 
+import {withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {selectLanguage} from '../../actions';
+
 import new_step_one from '../../img/token_recovery/new_step_1.png';
 import new_step_two from '../../img/token_recovery/new_step_2.png';
 import new_step_three from '../../img/token_recovery/new_step_3.png';
@@ -25,6 +29,10 @@ const recovery_steps = [
 class TokenRecovery extends Component {
 	componentDidMount(){
 		window.scrollTo(0, 0);
+
+		if(this.props.match.params.language){
+			this.props.selectLanguage(this.props.match.params.language);
+		}
 	}
 
 	render(){
@@ -44,10 +52,10 @@ class TokenRecovery extends Component {
 					<meta name="description" content="Were your keys lost or compromised on EOS? Telos wants to make sure the proper owners receive their TLOS tokens in our upcoming Telos sharedrop!" />
 				</Helmet>
 				<TokenRecoveryIntro intro={token_recovery.intro} />
-				<TokenRecoveryProcessOne
+				{/*<TokenRecoveryProcessOne
 					process={token_recovery.process_one}
 					recovery_form={token_recovery.recovery_form} />
-				<TokenRecoveryProcessTwo process={token_recovery.process_two} />
+				<TokenRecoveryProcessTwo process={token_recovery.process_two} />*/}
 			</div>
 		);
 	}
@@ -56,7 +64,7 @@ class TokenRecovery extends Component {
 const TokenRecoveryIntro = ({intro}) => {
 	return (
 		<section id='token_recovery_intro'>
-			<Grid>
+			{/*<Grid>
 				<Row>
 					<Col md={10} mdOffset={1}>
 						<ScrollAnimation
@@ -64,7 +72,7 @@ const TokenRecoveryIntro = ({intro}) => {
 							animateIn='fadeIn'
 							duration={0.4}
 						>
-							<h1>{intro.heading}</h1>
+							<h1>Telos Lost Key Recovery Portal is Now Closed</h1>
 						</ScrollAnimation>
 						<ScrollAnimation
 							animateOnce
@@ -74,6 +82,13 @@ const TokenRecoveryIntro = ({intro}) => {
 						>
 							{ intro.content.map((paragraph, i) => <p key={i}>{paragraph}</p>) }
 						</ScrollAnimation>
+					</Col>
+				</Row>
+			</Grid>*/}
+			<Grid>
+				<Row>
+					<Col md={10} mdOffset={1}>
+						<h1>Telos Lost Key Recovery Portal is Now Closed.</h1>
 					</Col>
 				</Row>
 			</Grid>
@@ -400,6 +415,4 @@ const TokenRecoveryProcessTwo = ({process}) => {
 	);
 };
 
-
-
-export default TokenRecovery;
+export default withRouter(connect(null, {selectLanguage})(TokenRecovery));

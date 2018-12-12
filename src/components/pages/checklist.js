@@ -2,6 +2,11 @@ import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import {Helmet} from 'react-helmet';
 import ScrollAnimation from 'react-animate-on-scroll';
+
+import {withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {selectLanguage} from '../../actions';
+
 import not_started_icon from '../../img/checklist/gng_list_no_circle.png';
 import in_progress_icon from '../../img/checklist/gng_list_in-progress.png';
 import completed_icon from '../../img/checklist/gng_list_yes.png';
@@ -12,6 +17,10 @@ class Checklist extends Component {
 
 	componentDidMount(){
 		window.scrollTo(0, 0);
+
+		if(this.props.match.params.language){
+			this.props.selectLanguage(this.props.match.params.language);
+		}
 	}
 
 	render(){
@@ -325,4 +334,4 @@ const InfoLinks = ({github_link, telos_link}) => {
 	);
 };
 
-export default Checklist;
+export default withRouter(connect(null, {selectLanguage})(Checklist));

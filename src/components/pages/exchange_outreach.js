@@ -5,9 +5,17 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import '../../styles/exchange_outreach.css';
 import hashtag_graphic from '../../img/hashtag_graphic1.png';
 
+import {withRouter} from 'react-router-dom';
+import {selectLanguage} from '../../actions';
+import {connect} from 'react-redux';
+
 class ExchangeOutreach extends Component {
 	componentDidMount(){
 		window.scrollTo(0, 0);
+
+		if(this.props.match.params.language){
+			this.props.selectLanguage(this.props.match.params.language);
+		}
 	}
 
 	render(){
@@ -279,4 +287,4 @@ const ExchangeRegister = () => {
 	);
 };
 
-export default ExchangeOutreach;
+export default withRouter(connect(null, {selectLanguage})(ExchangeOutreach));

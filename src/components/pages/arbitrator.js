@@ -6,6 +6,10 @@ import triple_icon_desktop from '../../img/arbitrator/triple_icon.png';
 import triple_icon_mobile from '../../img/arbitrator/triple_icon_horizontal.png';
 import pdf_img from '../../img/download_pdf_icon.png';
 
+import {withRouter} from 'react-router-dom';
+import {connect} from 'react-redux';
+import {selectLanguage} from '../../actions';
+
 import '../../styles/arbitrator.css';
 
 //images
@@ -15,6 +19,7 @@ import roberto_corretjer from '../../img/arbitrator/Roberto Corretjer.png';
 import moises_raba from '../../img/arbitrator/moises_raba.png';
 import mark_blank from '../../img/arbitrator/mark_blankenship.jpeg';
 import fred_brown from '../../img/arbitrator/william_fred_brown.jpg';
+import jd_ressetar from '../../img/arbitrator/jd_ressetar.png';
 
 const arbitratorPortraits = [
 	marc_roger,
@@ -22,7 +27,8 @@ const arbitratorPortraits = [
 	raul_sepulveda,
 	moises_raba,
 	mark_blank,
-	fred_brown
+	fred_brown,
+	jd_ressetar
 ];
 
 //email template for contact link
@@ -36,6 +42,10 @@ class Arbitrator extends Component {
 
 	componentDidMount(){
 		window.scrollTo(0, 0);
+
+		if(this.props.match.params.language){
+			this.props.selectLanguage(this.props.match.params.language);
+		}
 	}
 
 	render(){
@@ -246,4 +256,4 @@ const ArbitratorCandidate = (
 	);
 };
 
-export default Arbitrator;
+export default withRouter(connect(null, {selectLanguage})(Arbitrator));
