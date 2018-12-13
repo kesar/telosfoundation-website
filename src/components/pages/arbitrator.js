@@ -20,6 +20,7 @@ import moises_raba from '../../img/arbitrator/moises_raba.png';
 import mark_blank from '../../img/arbitrator/mark_blankenship.jpeg';
 import fred_brown from '../../img/arbitrator/william_fred_brown.jpg';
 import jd_ressetar from '../../img/arbitrator/jd_ressetar.png';
+import blake_lagarde from '../../img/arbitrator/blake_lagarde.png';
 
 const arbitratorPortraits = [
 	marc_roger,
@@ -28,7 +29,8 @@ const arbitratorPortraits = [
 	moises_raba,
 	mark_blank,
 	fred_brown,
-	jd_ressetar
+	jd_ressetar,
+	blake_lagarde
 ];
 
 //email template for contact link
