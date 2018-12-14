@@ -102,3 +102,62 @@
 	text-decoration: underline;
 /*	color: #2F271E;*/
 }
+
+.sort_header {
+
+}
+
+.sort_header .sort_button {
+	background-color: #8F8B7B;
+	transition: background-color 0.25s ease;
+	position: relative;
+	color: #f7f7f7 !important;
+	outline: transparent !important;
+	font-weight: 600;
+	white-space: normal;
+}
+
+.sort_header .sort_button:hover {
+	background-color: #5C5848;
+}
+
+.sort_header .sort_button::after {
+	font-family: "FontAwesome";
+	content: "\f0dc";
+	position: absolute;
+	right: 10px;
+	color: #fff;
+}
+
+.sort_header .sort_button.compliance_sort_desc::after {
+	content: "\f0d7";
+	transform: rotateX(0);
+}
+
+.sort_header .sort_button.compliance_sort_asc::after {
+	content: "\f0d7";
+	opacity: 1;
+	transform: rotateX(180deg);
+	transition: transform 0.25s ease;
+}
+
+.compliance_checkmark {
+	width: 30px;
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.sort_toggle {
+	position: relative;
+}
+
+.sort_toggle .question_link {
+	position: absolute;
+	right: -18px;
+	bottom: 14px;
+}
+
+.compliance .sort_button::after {
+	bottom: 16px;
+}
