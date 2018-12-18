@@ -36,7 +36,7 @@ import eosworld from '../../img/partner_logos/logo_eosworld.png';
 // import zmeta from '../../img/partner_logos/logo_zmeta.png';
 import csx from '../../img/partner_logos/logo_csx.png';
 // import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
-import amplified from '../../img/partner_logos/logo_amplified.png';
+// import amplified from '../../img/partner_logos/logo_amplified.png';
 import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
 import madrid from '../../img/partner_logos/logo_telos_madrid.png';
 import telos_ny from '../../img/partner_logos/logo_telos_ny.png';
@@ -177,7 +177,7 @@ class Candidates extends Component {
 				url: 'https://dutcheos.io',
 				logo: dutcheos,
 				vote_name: 'votedutcheos',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'EOS Barcelona',
@@ -209,7 +209,7 @@ class Candidates extends Component {
 				url: 'https://www.infinitybloc.io',
 				logo: infinitybloc,
 				vote_name: 'infinitybloc',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'Big Iron BP',
@@ -264,7 +264,7 @@ class Candidates extends Component {
 				url: 'https://octagonlabs.org',
 				logo: hellenicos,
 				vote_name: 'octagontelos',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'CSX Community',
@@ -272,22 +272,6 @@ class Candidates extends Component {
 				url: 'https://www.csx.io',
 				logo: csx,
 				vote_name: 'csxcommunity',
-				compliant: false
-			},
-			{
-				name: 'Amplified Telos',
-				description: 'Amplified Telos is on a mission to amplify the Telos blockchain through development, testing and support on the core, Network Monitor and Worker Proposal Contract.',
-				url: 'https://amplified.software',
-				logo: amplified,
-				vote_name: 'amplifiedtls',
-				compliant: false
-			},
-			{
-				name: 'Telos Venezuela',
-				description: 'We are a group of System Administrators and Miners involved in blockchain since 2014. Creating a better world block by block & giving back to the community.',
-				url: 'https://www.telosvenezuela.com',
-				logo: venezuela,
-				vote_name: 'tlsvenezuela',
 				compliant: true
 			},
 			{
@@ -307,6 +291,14 @@ class Candidates extends Component {
 				compliant: true
 			},
 			{
+				name: 'Telos Venezuela',
+				description: 'We are a group of System Administrators and Miners involved in blockchain since 2014. Creating a better world block by block & giving back to the community.',
+				url: 'https://www.telosvenezuela.com',
+				logo: venezuela,
+				vote_name: 'tlsvenezuela',
+				compliant: true
+			},
+			{
 				name: 'Telos New York',
 				description: 'Telos New York, a self-funded Block Producer that is dedicated EXCLUSIVELY to the Telos Network. Our focus is to provide a high-performance infrastructure using top of the line bare metal servers.',
 				url: 'http://nytelos.com',
@@ -320,7 +312,7 @@ class Candidates extends Component {
 				url: 'https://teloscanton.io',
 				logo: telos_canton,
 				vote_name: 'teloscantons',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'EOSImpera',
@@ -328,7 +320,7 @@ class Candidates extends Component {
 				url: 'https://eosimpera.io',
 				logo: eos_impera,
 				vote_name: 'tlosimperabp',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'Telos-21Zephyr',
@@ -360,7 +352,7 @@ class Candidates extends Component {
 				url: 'http://www.goingos.org',
 				logo: china_goingos,
 				vote_name: 'telgoingos13',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'The Teloscope',
@@ -384,7 +376,7 @@ class Candidates extends Component {
 				url: 'https://telosgermany.io',
 				logo: germany,
 				vote_name: 'telosgermany',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'Telos Central',
@@ -392,7 +384,7 @@ class Candidates extends Component {
 				url: 'https://teloscentral.com',
 				logo: central,
 				vote_name: 'teloscentral',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'Telos China',
@@ -400,7 +392,7 @@ class Candidates extends Component {
 				url: 'http://www.telasiachina.com',
 				logo: telos_china,
 				vote_name: 'telasiachina',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'EOS San Diego',
@@ -448,7 +440,7 @@ class Candidates extends Component {
 				url: 'https://eosawake.io',
 				logo: eos_awake,
 				vote_name: 'eosawakeiobp',
-				compliant: false
+				compliant: true
 			},
 			{
 				name: 'Cryptosuvi',
@@ -495,10 +487,10 @@ class Candidates extends Component {
 				</header>
 				<Grid>
 					<Row>
-						<Col md={10} mdOffset={1}>
+						<Col md={12}>
 							<div className='sort_header'>
 								<Row>
-									<Col sm={2} smOffset={10}>
+									<Col md={2} mdOffset={10}>
 										<div className='sort_toggle compliance'>
 											<Button
 												onClick={this.handleComplianceClick}
@@ -580,7 +572,10 @@ const Candidate = (props) => {
 					</div>
 				</Col>
 				<Col sm={2}>
-					{compliant ? <img src={checkmark} alt='compliance checkmark' className='compliance_checkmark' /> : ''}
+					<div className='compliance_status'>
+						<p className='compliance_label'><strong>BP Minimum Requirements:</strong></p>
+						{compliant ? <img src={checkmark} alt='compliance checkmark' className='compliance_checkmark' /> : ''}
+					</div>
 				</Col>
 			</Row>
 		</div>

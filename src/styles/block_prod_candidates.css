@@ -107,6 +107,12 @@
 
 }
 
+@media screen and (max-width: 991px){
+	.sort_header {
+		margin-bottom: 25px;
+	}
+}
+
 .sort_header .sort_button {
 	background-color: #8F8B7B;
 	transition: background-color 0.25s ease;
@@ -120,6 +126,18 @@
 .sort_header .sort_button:hover {
 	background-color: #5C5848;
 }
+
+/*@media screen and (max-width: 1199px){
+	.sort_header .sort_button {
+		font-size: 0.85em;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.sort_header .sort_button {
+		font-size: 1.2em;
+	}
+}*/
 
 .sort_header .sort_button::after {
 	font-family: "FontAwesome";
@@ -152,12 +170,53 @@
 	position: relative;
 }
 
+@media screen and (max-width: 991px){
+	.sort_toggle {
+		padding: 0 10px;
+	}
+}
+
 .sort_toggle .question_link {
 	position: absolute;
 	right: -18px;
 	bottom: 14px;
 }
 
+@media screen and (max-width: 991px){
+	.sort_toggle .question_link {
+		bottom: 4px;
+		right: -8px;
+	}
+}
+
 .compliance .sort_button::after {
 	bottom: 16px;
+}
+
+@media screen and (max-width: 991px){
+	.compliance .sort_button::after {
+		bottom: 6px;
+	}
+}
+
+.compliance_label {
+	margin: 0 15px 0 0;
+}
+
+@media screen and (min-width: 768px){
+	.compliance_label {
+		display: none;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.compliance_status {
+		display: flex;
+		align-items: center;
+	}
+
+	.compliance_status img {
+		margin: 0;
+	}
 }
