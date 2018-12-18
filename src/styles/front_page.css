@@ -254,3 +254,36 @@
 	display: inline-block;
 	padding: 10px;
 }
+
+#wallets .cs_wallet {
+	position: relative;
+}
+
+#wallets .cs_wallet::after {
+	content: "*";
+	font-size: 2.5em;
+	color: #c2beae;
+	position: absolute;
+}
+
+#wallets .cs_wallets::after:hover {
+	color: #c2beae;
+}
+
+#wallets footer {
+	padding-top: 25px;
+}
+
+#wallets footer p {
+	color: #c2beae;
+}
+
+#wallets .wallet_banners {
+	text-align: left;
+}
+
+@media screen and (max-width: 1199px){
+	#wallets .wallet_banners {
+		text-align: center;
+	}
+}
