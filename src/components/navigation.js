@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Navbar, Nav} from 'react-bootstrap';
+import {Navbar, Nav, NavDropdown, MenuItem} from 'react-bootstrap';
 import logo from '../img/Telos_MarketingSite_TelosLogo_500px.png';
 import '../styles/hamburgers.css';
 import '../styles/navigation.css';
@@ -62,10 +62,27 @@ class Navigation extends Component {
 					<LanguageToggle />
 					<li>
 						<a href='https://medium.com/@teloslogical'>BLOG</a>
-					</li>			
-					<li>
-						<a href="http://testnet.telosfoundation.io/">MONITOR</a>
 					</li>
+					<NavDropdown title="MONITOR" id="basic-nav-dropdown">
+						<MenuItem 
+							onClick={(e) => {
+								e.preventDefault();
+								window.open('https://mon-test.telosfoundation.io');
+							}}
+							href="https://mon-test.telosfoundation.io"
+						>
+							TESTNET
+						</MenuItem>
+						<MenuItem
+							onClick={(e) => {
+								e.preventDefault();
+								window.open('https://monitor.telosfoundation.io');
+							}} 
+							href="https://monitor.telosfoundation.io"
+						>
+							MAINNET
+						</MenuItem>
+				    </NavDropdown>
 					<li className='rewards_nav_item'>
 						<a
 							href="/rewards"
