@@ -35,7 +35,7 @@ import eosworld from '../../img/partner_logos/logo_eosworld.png';
 // import discover_telos from '../../img/partner_logos/logo_discovertelos.png';
 // import zmeta from '../../img/partner_logos/logo_zmeta.png';
 import csx from '../../img/partner_logos/logo_csx.png';
-// import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
+import telos_russia from '../../img/partner_logos/logo_telosrussia.png';
 // import amplified from '../../img/partner_logos/logo_amplified.png';
 import venezuela from '../../img/partner_logos/logo_telos_venezuela.png';
 import madrid from '../../img/partner_logos/logo_telos_madrid.png';
@@ -188,6 +188,14 @@ class Candidates extends Component {
 				compliant: true
 			},
 			{
+				name: 'Telos Russia',
+				description: 'Our team are blockchain fans, we endeavor to have a deep understanding of EOSIO software, and we are developing wonderful DAPPs for communities.',
+				url: 'https://telosrussia.io',
+				logo: telos_russia,
+				vote_name: 'telos1russia',
+				compliant: false
+			},
+			{
 				name: 'KainosBP',
 				description: 'KainosBP are a self-funded bare metal/cloud hybrid BP candidate. 10% of our rewards will go to unboundnow.org, a non-profit working in local communities to fight human trafficking.',
 				url: 'https://kainosbp.com',
@@ -214,7 +222,7 @@ class Candidates extends Component {
 			{
 				name: 'Big Iron BP',
 				description: 'Big Iron BP (formerly, EOS the World) one of 6 original Telos partners, features bare-metal, best-in-class hardware, and world-class personnel in IT and executive business.',
-				url: 'http://www.BigIron.io',
+				url: 'http://www.bigiron.io',
 				logo: eosworld,
 				vote_name: 'BigIronbpTex',
 				compliant: false
