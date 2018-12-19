@@ -60,6 +60,7 @@ import dexeos_button from '../../img/exchange_logos/DEXEOS-Button.jpg';
 import findex_button from '../../img/exchange_logos/Findex-Button.jpg';
 import swaponline_button from '../../img/exchange_logos/SwapOnline-Button.jpg';
 import whaleex_button from '../../img/exchange_logos/WhaleEx-Button.jpg';
+import codex_button from '../../img/exchange_logos/codex_button.jpg';
 
 import sqrl_logo from '../../img/SQRL_Logo_1024px1.png';
 import scatter_logo from '../../img/scatter_logo.jpg';
@@ -274,6 +275,11 @@ const exchangesArr = [
 		name: 'whaleex',
 		img: whaleex_button,
 		url: 'https://www.whaleex.com'
+	},
+	{
+		name: 'codex',
+		img: codex_button,
+		url: 'https://codex.one'
 	}
 ];
 
