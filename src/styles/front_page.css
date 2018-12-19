@@ -240,7 +240,7 @@
 	text-align: center;
 }
 
-#wallets .sqrl_wallet {
+/*#wallets .sqrl_wallet {
 	text-align: center;
 }
 
@@ -268,17 +268,18 @@
 
 #wallets .cs_wallets::after:hover {
 	color: #c2beae;
-}
+}*/
 
 #wallets footer {
 	padding-top: 25px;
+	text-align: center;
 }
 
 #wallets footer p {
 	color: #c2beae;
 }
 
-#wallets .wallet_banners {
+/*#wallets .wallet_banners {
 	text-align: left;
 }
 
@@ -286,4 +287,53 @@
 	#wallets .wallet_banners {
 		text-align: center;
 	}
+}*/
+
+#wallets .wallet_banners {
+	width: 800px;
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+#wallets .wallet_banner {
+	flex: 1 1 50%;
+	max-width: 50%;
+	padding: 0 10px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#wallets .wallet_img_container {
+	display: inline-block;
+	position: relative;
+}
+
+#wallets .wallet_img_container img {
+	max-width: 100%;
+}
+
+#wallets .awake_banner_container img {
+	width: 175px;
+}
+
+#wallets .meow_banner_container img {
+	width: 275px;
+}
+
+#wallets .wallet_img_container.closed_source::after {
+	content: "*";
+	font-size: 2.5em;
+	position: absolute;
+	color: #c2beae;
+	right: -20px;
+	top: -5px;
+}
+
+#wallets .wallet_intro {
+	text-align: center;
 }

@@ -63,8 +63,8 @@ import whaleex_button from '../../img/exchange_logos/WhaleEx-Button.jpg';
 
 import sqrl_logo from '../../img/SQRL_Logo_1024px1.png';
 import scatter_logo from '../../img/scatter_logo.jpg';
-import awake_logo from '../../img/awake_banner.png';
-import meow_logo from '../../img/meow_banner.png';
+import awake_logo from '../../img/awake_wallet_banner.png';
+import meow_logo from '../../img/meow_wallet_banner.png';
 
 //white papers
 import { 
@@ -583,7 +583,7 @@ const Wallets = () => {
 			<Grid>
 				<Row>
 					<Col md={10} mdOffset={1}>
-						<div className='sqrl_wallet'>
+						<div className='wallet_intro'>
 							<ScrollAnimation
 								animateOnce
 								animateIn='fadeInUp'
@@ -599,75 +599,87 @@ const Wallets = () => {
 							>
 								<p>Check back often for new wallet partnerships!</p>
 							</ScrollAnimation>
-							<div className='wallet_banners'>
-								<Link to='/downloads'>
-									<ScrollAnimation
-										animateOnce
-										animateIn='fadeInUp'
-										duration={0.4}
-										delay={250}
-									>
-										<img src={sqrl_logo} alt='sqrl wallet' />
-									</ScrollAnimation>
-								</Link>
-								<a
-									href='https://get-scatter.com/'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<ScrollAnimation
-										animateOnce
-										animateIn='fadeInUp'
-										duration={0.4}
-										delay={375}
-									>
-										<img src={scatter_logo} alt='scatter logo' />
-									</ScrollAnimation>
-								</a>
-								<a
-									href='https://www.pgyer.com/awake'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<ScrollAnimation
-										animateOnce
-										animateIn='fadeInUp'
-										duration={0.4}
-										delay={500}
-									>
-										<div className='cs_wallet'>
-											<img src={awake_logo} alt='awake logo' />
-										</div>
-									</ScrollAnimation>
-								</a>
-								<a
-									href='https://altshiftdev.com/telos'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									<ScrollAnimation
-										animateOnce
-										animateIn='fadeInUp'
-										duration={0.4}
-										delay={625}
-									>
-										<div className='cs_wallet'>
-											<img src={meow_logo} alt='alt shift logo' className='cs_wallet' />
-										</div>
-									</ScrollAnimation>
-								</a>
-							</div>
-
-							<footer>
+						</div>
+						<div className='wallet_banners'>
+							<div className='wallet_banner'>
 								<ScrollAnimation
 									animateOnce
 									animateIn='fadeInUp'
-									duration={0.4}	
+									duration={0.4}
+									delay={250}
 								>
-									<p>* These closed-source applications have not been thoroughly tested by the Telos Foundation</p>
+									<div className='wallet_img_container'>
+										<Link to='/downloads'>
+											<img src={sqrl_logo} alt='sqrl wallet' />
+										</Link>
+									</div>
 								</ScrollAnimation>
-							</footer>
+							</div>
+							<div className='wallet_banner'>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={375}
+								>
+									<div className='wallet_img_container'>
+										<a
+											href='https://get-scatter.com'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<img src={scatter_logo} alt='scatter logo' />
+										</a>
+									</div>
+								</ScrollAnimation>
+							</div>
+							<div className='wallet_banner'>
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={500}
+								>
+									<div className='wallet_img_container closed_source meow_banner_container'>
+										<a
+											href='https://altshiftdev.com/telos'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<img src={meow_logo} alt='alt shift logo' />
+										</a>
+									</div>
+								</ScrollAnimation>
+							</div>
+							<div className='wallet_banner'>			
+								<ScrollAnimation
+									animateOnce
+									animateIn='fadeInUp'
+									duration={0.4}
+									delay={625}
+								>
+									<div className='wallet_img_container closed_source awake_banner_container'>
+										<a
+											href='https://www.pgyer.com/awake'
+											target='_blank'
+											rel='noopener noreferrer'
+										>
+											<img src={awake_logo} alt='awake logo' />
+										</a>
+									</div>
+								</ScrollAnimation>
+							</div>
 						</div>
+
+						<footer>
+							<ScrollAnimation
+								animateOnce
+								animateIn='fadeInUp'
+								duration={0.4}	
+							>
+								<p>* These closed-source applications have not been thoroughly tested by the Telos Foundation</p>
+							</ScrollAnimation>
+						</footer>
 					</Col>
 				</Row>
 			</Grid>
