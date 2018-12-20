@@ -67,9 +67,9 @@ class Navigation extends Component {
 						<MenuItem 
 							onClick={(e) => {
 								e.preventDefault();
-								window.open('https://mon-test.telosfoundation.io');
+								window.open('http://testnet.telosfoundation.io');
 							}}
-							href="https://mon-test.telosfoundation.io"
+							href="http://testnet.telosfoundation.io"
 						>
 							TESTNET
 						</MenuItem>
